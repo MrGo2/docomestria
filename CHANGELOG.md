@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-06-05
+
+### Changed
+- All dependencies pinned to latest stable versions with explicit upper bounds
+  before next major release to prevent silent breakage:
+  `liteparse>=2.0.5,<3`, `docling>=2.97,<3`, `pdfplumber>=0.11.9,<1`,
+  `rapidfuzz>=3.14,<4`, `python-dateutil>=2.9,<3`, `python-stdnum>=2.2,<3`,
+  `babel>=2.18,<3`, `phonenumbers>=9.0,<10`.
+
+### Added
+- New optional dependency groups in preparation for the v0.4.0 pipeline
+  orchestrator: `pipeline` (`diskcache`), `gemini` (`google-genai>=2.8`),
+  `claude` (`anthropic>=0.105`), `openai` (`openai>=2.41`).
+
 ## [0.3.0] - 2026-06-05
 
 ### Added
