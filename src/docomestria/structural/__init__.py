@@ -39,6 +39,20 @@ from .structure import (
     detect_structure,
     detect_tables,
 )
+from .lite_layout import (
+    Block,
+    Column,
+    Line,
+    PageLayout,
+    Region,
+    Run,
+    blocks_to_columns,
+    blocks_to_regions,
+    build_layout,
+    items_to_lines,
+    line_to_runs,
+    lines_to_blocks,
+)
 from .models import (
     Box,
     ClassifiedItem,
@@ -54,6 +68,20 @@ from .models import (
 )
 
 __all__ = [
+    # lite_layout — geometric pyramid
+    "Block",
+    "Column",
+    "Line",
+    "PageLayout",
+    "Region",
+    "Run",
+    "blocks_to_columns",
+    "blocks_to_regions",
+    "build_layout",
+    "items_to_lines",
+    "line_to_runs",
+    "lines_to_blocks",
+    # models
     "Box",
     "ClassifiedItem",
     "Confidence",
@@ -65,10 +93,8 @@ __all__ = [
     "StructuralExtraction",
     "Subsection",
     "Table",
+    # structure
     "attach_subsections",
-    "classify",
-    "classify_page",
-    "confidence_for",
     "detect_boxes",
     "detect_furniture_regions",
     "detect_picture_regions",
@@ -76,16 +102,23 @@ __all__ = [
     "detect_sections",
     "detect_structure",
     "detect_tables",
+    # classify
+    "classify",
+    "classify_page",
     "dominant_font_size",
+    "is_bold",
+    # candidates
     "emit_all",
     "emit_from_docling_tables",
     "emit_from_horizontal_pair",
     "emit_from_in_item_split",
     "emit_from_two_column_form",
     "emit_from_vertical_pair",
-    "is_bold",
+    # scoring
+    "confidence_for",
     "resolve_pairs",
     "score_one",
+    # extractor
     "structural_extract",
     "structural_extract_from_engines",
 ]
