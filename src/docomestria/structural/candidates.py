@@ -31,6 +31,13 @@ HORIZONTAL_Y_TOLERANCE_PT = 3.0
 # column entirely (e.g. titular vs co-titular in BBVA forms).
 HORIZONTAL_X_GAP_MAX_PT = 300.0
 
+# A 2-col Docling table is treated as a *multi-label form* — and routed to
+# E5's LiteParse-based extractor — when at least one row's left cell carries
+# this many colons. BBVA3 Titulares fuses pairs on row 1 only
+# (`'N.I.F.: 009786573G Tipo Identificación: NIF PERSONA FISICA'`); one
+# fused row is enough to indicate the column semantics are wrong throughout.
+MULTI_LABEL_CELL_MIN_COLONS = 2
+
 
 # --------------------------------------------------------------------------
 # Geometric helpers
@@ -70,6 +77,34 @@ def _subsection_title_for_row(table: Table, row_top: float, row_bottom: float) -
 # --------------------------------------------------------------------------
 # E1 — Docling 2-column tables
 # --------------------------------------------------------------------------
+
+
+def _is_multi_label_form(table: Table) -> bool:
+    """True if a 2-col table has at least one row whose left cell carries
+    multiple `:` characters.
+
+    Signal that Docling TableFormer collapsed two parallel columns of
+    independent label/value pairs into one cell string — verified on
+    BBVA3 Titulares row 1 col[0]
+    `'N.I.F.: 009786573G Tipo Identificación: NIF PERSONA FISICA'`
+    (2 colons in one cell, two logical pairs concatenated).
+
+    Any single multi-colon cell is enough — averaging across all rows
+    dilutes the signal (BBVA3 only fuses pairs on 1 of 9 rows; most rows
+    still carry a single KV correctly). When one fused row is found we
+    re-extract the whole table from LiteParse via E5 because the column
+    semantics are wrong throughout.
+    """
+    if not table.cells:
+        return False
+    n_cols = max((len(r) for r in table.cells), default=0)
+    if n_cols != 2:
+        return False
+    return any(
+        row[0].count(":") >= MULTI_LABEL_CELL_MIN_COLONS
+        for row in table.cells
+        if row
+    )
 
 
 def _cells_all_equal(cells: tuple[str, ...], start: int) -> bool:
@@ -146,6 +181,8 @@ def emit_from_docling_tables(pages: Iterable[Page]) -> tuple[PairCandidate, ...]
             n_cols = max((len(r) for r in table.cells), default=0)
             if n_cols < 2:
                 continue
+            if _is_multi_label_form(table):
+                continue  # E5 handles this table with LiteParse items
             col_headers: tuple[str, ...] | None = None
             for r, row in enumerate(table.cells):
                 if len(row) < 2:
@@ -458,6 +495,98 @@ def emit_from_horizontal_pair(
 
 
 # --------------------------------------------------------------------------
+# E5 — Two-column form extraction (LiteParse inside Docling-fused form table)
+# --------------------------------------------------------------------------
+
+
+def emit_from_two_column_form(
+    classified: Iterable[ClassifiedItem],
+    pages: Iterable[Page],
+) -> tuple[PairCandidate, ...]:
+    """Re-extract pairs from LiteParse items inside multi-label form tables.
+
+    Triggered when Docling reports a 2-col table whose cells fused two
+    parallel columns of independent `label: value` strings — `_is_multi_label_form`
+    detects this. E1 produces junk for these tables (concatenated cells
+    pointed at each other); E5 walks the LiteParse items inside the table
+    bbox instead, splits each item on its colon, and annotates the column
+    using the X centroid vs the table midline.
+
+    Verified on BBVA3 page 1 Titulares (9×2): the form has two parallel
+    columns at X≈31 (col 1, "Titular 1" data) and X≈305 (col 2, "Titular 2"
+    data). Each LiteParse item is a clean single `label: value` we can
+    split, and the column position tells us which titular it belongs to.
+
+    Labels emerge as `'N.I.F. (col 1)'`, `'N.I.F. (col 2)'`, etc. — the
+    column suffix preserves the parallel-form semantics without committing
+    to brittle titular names (which are not always present in the PDF).
+    """
+    pages = tuple(pages)
+    classified = tuple(classified)
+
+    form_tables: list[Table] = []
+    for p in pages:
+        for t in p.tables:
+            if _is_multi_label_form(t):
+                form_tables.append(t)
+    if not form_tables:
+        return ()
+
+    by_page: dict[int, list[ClassifiedItem]] = {}
+    for ci in classified:
+        by_page.setdefault(ci.page, []).append(ci)
+
+    out: list[PairCandidate] = []
+    for table in form_tables:
+        midline = table.bbox.left + table.bbox.w / 2.0
+        items_on_page = by_page.get(table.page, [])
+        for ci in items_on_page:
+            cx, cy = ci.bbox.centroid
+            if not _bbox_contains_point(table.bbox, cx, cy):
+                continue
+            # Skip items that don't look like KV at all (titles, prose).
+            if ci.kind not in (ItemKind.LABEL, ItemKind.VALUE):
+                continue
+            idx = _find_inline_colon(ci.text)
+            if idx < 0:
+                continue
+            label_part = ci.text[:idx].rstrip()
+            value_part = ci.text[idx + 1 :].lstrip()
+            if not label_part:
+                continue
+
+            col_idx = 1 if cx < midline else 2
+            annotated_label = f"{label_part} (col {col_idx})"
+
+            total = len(ci.text) or 1
+            split_frac = (idx + 1) / total
+            full = ci.bbox
+            split_x = full.left + full.w * split_frac
+            label_bbox = BBox.from_ltrb(full.left, full.top, split_x, full.bottom)
+            value_bbox = BBox.from_ltrb(split_x, full.top, full.right, full.bottom)
+
+            out.append(
+                PairCandidate(
+                    label_text=annotated_label,
+                    value_text=value_part,
+                    label_bbox=label_bbox,
+                    value_bbox=value_bbox,
+                    page=table.page,
+                    rule="L-twocol-form",
+                    features={
+                        "label_ends_with_colon": True,
+                        "column_index": col_idx,
+                        "raw_label": label_part,
+                        "value_empty": value_part.strip() in ("", "-"),
+                    },
+                    label_item=ci,
+                    value_item=ci,
+                )
+            )
+    return tuple(out)
+
+
+# --------------------------------------------------------------------------
 # Public entry point
 # --------------------------------------------------------------------------
 
@@ -477,4 +606,5 @@ def emit_all(
         emit_from_docling_tables(pages)
         + emit_from_in_item_split(classified, pages)
         + emit_from_horizontal_pair(classified, pages)
+        + emit_from_two_column_form(classified, pages)
     )

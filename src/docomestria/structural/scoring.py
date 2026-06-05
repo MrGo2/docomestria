@@ -18,6 +18,10 @@ from .models import Confidence, Pair, PairCandidate
 # ties against bare geometric pairing. See `.planning/structural-extraction-strategy.md`.
 BASE_SCORE = {
     "D-2col": 0.80,
+    "L-twocol-form": 0.78,    # LiteParse-based form re-extraction, ranked
+                              # just below D-2col because it relies on the
+                              # geometric column-split heuristic rather than
+                              # on TableFormer's matrix output.
     "L-inline-split": 0.75,
     "L-horizontal": 0.70,
     "L-vertical": 0.55,
