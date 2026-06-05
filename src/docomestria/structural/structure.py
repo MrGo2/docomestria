@@ -252,36 +252,37 @@ def _normalise_cells(cells: tuple[tuple[str, ...], ...] | None) -> str:
 def _is_shadow_duplicate(
     candidate: _TableLike, accepted: list[_TableLike]
 ) -> bool:
-    """True if `candidate` reproduces the content of an already-accepted
-    table on the same page (same row count, same col count, similar text).
+    """True if `candidate` reproduces content already present in some
+    accepted table on the same page.
 
-    Same shape + 60% normalised-content overlap is the empirical threshold
-    that catches pdfplumber's BBVA5 off-page duplicates without flagging
-    real-but-similar tables (e.g. the two `Datos Petición` / `Respuesta`
-    headed blocks in PNJ documents have very different content despite
-    sharing structural shape).
+    pdfplumber re-detects Docling tables at phantom Y coordinates (often
+    off-page, e.g. Y > 1000pt on A4) and sometimes splits one logical
+    table into several smaller pieces with whitespace-collapsed cells.
+    Both cases share text with the canonical Docling table, just with a
+    different bbox and structural shape — so the dedup matches on
+    *content subset* rather than identical shape.
+
+    A candidate is flagged when at least 50% of its non-empty normalised
+    cells already appear in any accepted table on the same page. The
+    50% threshold catches the obvious shadows (BBVA3 p1 has 7 pdfplumber
+    pieces of the 11×9 Condiciones Económicas matrix, each ≥80% subset)
+    while preserving real-but-similar tables (the PNJ judiciary
+    `Datos Petición` / `Respuesta` pair share zero cell content despite
+    similar structural shape).
     """
     if not candidate.cells:
         return False
-    cand_rows = len(candidate.cells)
-    cand_cols = max((len(r) for r in candidate.cells), default=0)
-    cand_norm = _normalise_cells(candidate.cells)
-    if not cand_norm:
+    cand_parts = {c for c in _normalise_cells(candidate.cells).split("|") if c}
+    if not cand_parts:
         return False
-    cand_parts = set(cand_norm.split("|"))
     for other in accepted:
         if other.page != candidate.page or not other.cells:
             continue
-        if len(other.cells) != cand_rows:
-            continue
-        other_cols = max((len(r) for r in other.cells), default=0)
-        if other_cols != cand_cols:
-            continue
-        other_parts = set(_normalise_cells(other.cells).split("|"))
+        other_parts = {c for c in _normalise_cells(other.cells).split("|") if c}
         if not other_parts:
             continue
-        overlap = len(cand_parts & other_parts) / max(len(cand_parts), 1)
-        if overlap >= 0.6:
+        overlap = len(cand_parts & other_parts) / len(cand_parts)
+        if overlap >= 0.5:
             return True
     return False
 
