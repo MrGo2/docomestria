@@ -40,9 +40,15 @@ PENALTY_LONG_VALUE = 0.05        # value text > 60 chars on geometric rules
 HIGH_THRESHOLD = 0.80
 MEDIUM_THRESHOLD = 0.50
 
-# Dedup window: candidates whose label_bbox left/top are within this many
-# points are considered the *same* label seen by two emitters.
-DEDUP_BBOX_TOLERANCE_PT = 4.0
+# Dedup key uses normalised text rather than bbox proximity — two candidates
+# with the same label and the same value (modulo whitespace and case) are the
+# same pair regardless of where they were detected. This handles:
+#   - Engine duplication (pdfplumber re-detecting a Docling table at a
+#     different Y on rotated/fold-out pages — observed on BBVA5 p16 glossary).
+#   - Cross-emitter agreement on a real pair, where D-2col and L-horizontal
+#     both produce the same logical pair from different geometric inputs.
+# Intentional duplicates (Titular 1 vs Titular 2 forms in BBVA: same label,
+# different values) are preserved because the value component differs.
 
 
 # --------------------------------------------------------------------------
@@ -93,20 +99,20 @@ def confidence_for(score: float) -> Confidence:
 # --------------------------------------------------------------------------
 
 
-def _dedup_key(c: PairCandidate) -> tuple[int, str, int, int]:
-    """Group candidates that look like the same label seen by 2+ emitters.
+def _normalise(text: str) -> str:
+    """Whitespace-collapsed, lowercased, colon-stripped version of `text`."""
+    return "".join(text.lower().split()).rstrip(":")
 
-    Keying on (page, normalised_label, rounded_label_left, rounded_label_top)
-    catches the case where Docling and LiteParse both report the same label
-    from slightly different bboxes.
+
+def _dedup_key(c: PairCandidate) -> tuple[int, str, str]:
+    """Group candidates representing the same logical pair.
+
+    Two candidates collapse to the same key when both their label AND value
+    normalise to the same string on the same page — preserving intentional
+    duplicates (e.g. Titular 1 / Titular 2 forms have identical labels but
+    different values) while removing parsing artefacts.
     """
-    norm_label = c.label_text.strip().rstrip(":").lower()
-    return (
-        c.page,
-        norm_label,
-        int(c.label_bbox.left // DEDUP_BBOX_TOLERANCE_PT),
-        int(c.label_bbox.top // DEDUP_BBOX_TOLERANCE_PT),
-    )
+    return (c.page, _normalise(c.label_text), _normalise(c.value_text))
 
 
 def _pick_winner(group: list[PairCandidate]) -> tuple[PairCandidate, list[str]]:

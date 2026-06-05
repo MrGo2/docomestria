@@ -15,6 +15,7 @@ into LABEL (bold) and VALUE (regular).
 
 from __future__ import annotations
 
+import re
 from collections import Counter
 from collections.abc import Iterable
 
@@ -42,6 +43,16 @@ BODY_SIZE_DELTA_PT = 1.5
 # 1-item page label everything as the wrong kind.
 MIN_ITEMS_FOR_MODE = 4
 
+# A bold item with no colon and this many words or more is almost certainly
+# prose (warning paragraph, contract clause body) and not a label. Calibrated
+# from BBVA contracts: "Tómese su tiempo y léalo atentamente..." (11 words),
+# "En MADRID, a 03 de Abril de 2019" (8 words). Real bold labels in this
+# corpus top out at 5 words ("AEAT - Consulta Actividades Economicas").
+PROSE_MIN_WORDS = 6
+
+# Pattern for list-enumeration markers ("1.", "a)", "iii.", "A.").
+_ENUMERATION_RE = re.compile(r"^[A-Za-z0-9]{1,3}[\.\)]\s*$")
+
 
 def is_bold(font_name: str | None) -> bool:
     if not font_name:
@@ -57,6 +68,36 @@ def ends_with_colon(text: str) -> bool:
     """
     stripped = text.rstrip()
     return stripped.endswith(":") or stripped.endswith("：")
+
+
+def is_meaningless_short(text: str) -> bool:
+    """True if the text is an enumeration marker or pure punctuation.
+
+    Catches "1.", "a)", "iii.", "-", "•" — items that PDFs use as visual
+    bullets but that carry no semantic key. Classifying these as BODY
+    prevents the geometric pairer from emitting nonsense like
+    `'1.' -> 'BBVA podrá exigir...'`.
+    """
+    stripped = text.strip()
+    if not stripped or len(stripped) > 4:
+        return False
+    if _ENUMERATION_RE.match(stripped):
+        return True
+    return not any(c.isalnum() for c in stripped)
+
+
+def looks_like_prose(text: str) -> bool:
+    """True if the text reads like a sentence fragment rather than a label.
+
+    Trigger: many words AND no colon. Bold paragraphs (warnings, contract
+    clauses) misclassified as LABELs are the dominant false-positive source
+    on banking contracts — this check downgrades them to BODY before
+    pairing runs.
+    """
+    stripped = text.strip()
+    if not stripped or ":" in stripped:
+        return False
+    return len(stripped.split()) >= PROSE_MIN_WORDS
 
 
 def dominant_font_size(items: Iterable[LiteItem]) -> float | None:
@@ -99,6 +140,15 @@ def classify_item(
 
     if not item.font_name and not size:
         return ClassifiedItem(item=item, kind=ItemKind.UNKNOWN, evidence=("no-font-signal",))
+
+    # Pre-checks that override the size/bold matrix below — items matching
+    # these patterns are body text regardless of formatting.
+    if is_meaningless_short(text):
+        return ClassifiedItem(item, ItemKind.BODY, ("enumeration-or-punct",))
+    if looks_like_prose(text):
+        return ClassifiedItem(
+            item, ItemKind.BODY, (f"prose-{len(text.split())}-words-no-colon",)
+        )
 
     if dominant_size is None or size is None:
         # No page-wide reference: fall back to font-only heuristic.
