@@ -34,7 +34,7 @@ from .prompts import SYSTEM_PROMPT, build_reprompt
 from .providers.base import LLMProvider, LLMResponse
 from .result import ExtractionResult
 from .retry import RetryPolicy
-from .step import PipelineStep
+from .step import DETERMINISTIC_STEP_NAMES, STEP_NAMES, PipelineStep
 
 # Type alias for the fuse hook (kept open for tests).
 FuseFn = Callable[[str | Path], FusionResult]
@@ -124,7 +124,8 @@ class Pipeline:
         *,
         lang: str,
     ) -> Iterator[PipelineStep]:
-        emitter = StepEmitter(lang=lang, callback=self.step_callback)
+        total = len(DETERMINISTIC_STEP_NAMES) if self.llm is None else len(STEP_NAMES)
+        emitter = StepEmitter(lang=lang, callback=self.step_callback, total_steps=total)
 
         yield emitter.emit("start", "system")
 

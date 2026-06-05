@@ -39,9 +39,11 @@ class StepEmitter:
         *,
         lang: str,
         callback: Callable[[PipelineStep], None] | None,
+        total_steps: int = TOTAL_STEPS,
     ) -> None:
         self.lang = lang
         self.callback = callback
+        self.total_steps = total_steps
         self._index = 0
         self._t0 = time.perf_counter()
         self._phase_start = self._t0
@@ -75,7 +77,7 @@ class StepEmitter:
             explanation=explanation_for(name, self.lang),
             engine=engine,
             step_index=self._index,
-            total_steps=TOTAL_STEPS,
+            total_steps=self.total_steps,
             elapsed_ms=elapsed_ms,
             cumulative_ms=cumulative_ms,
             bboxes=tuple(bboxes),

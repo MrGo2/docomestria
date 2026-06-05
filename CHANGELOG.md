@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-06-05
+
+### Fixed
+- `PipelineStep.total_steps` now reflects the actual step count for the active
+  mode: 9 for deterministic (`llm=None`), 13 for LLM-assisted. Previously it
+  always reported 13 regardless of mode, so UIs like `docomestria-studio`
+  showed a progress bar of `9/13` at the terminal step.
+
 ## [0.6.0] - 2026-06-05
 
 ### Added
