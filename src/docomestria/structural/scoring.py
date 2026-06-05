@@ -11,6 +11,7 @@ from __future__ import annotations
 from collections import defaultdict
 from collections.abc import Iterable
 
+from .ds import belief, combined_mass
 from .models import Confidence, Pair, PairCandidate
 
 # Base score per emitter — calibrated so the cleanest signal (Docling 2-col
@@ -85,9 +86,29 @@ def _penalty(c: PairCandidate) -> float:
     return pen
 
 
+#: Maximum lift applied via Dempster-Shafer belief on top of the additive
+#: rule-based score.  Kept tiny (≤ 0.02) so the calibrated bonus/penalty
+#: weights remain authoritative — DS is a tie-breaker, not a re-scoring.
+#: Cross-vote agreement still flows in primarily through ``resolve_pairs``
+#: (the +0.10 / +0.15 evidence bumps), which operate on the GROUPED winner.
+DS_MAX_NUDGE = 0.02
+
+
 def score_one(c: PairCandidate) -> float:
+    """Score a single candidate.
+
+    Final score = base + bonus - penalty + small DS nudge.
+
+    The DS nudge is bounded by ``DS_MAX_NUDGE`` and proportional to the
+    Dempster-Shafer combined belief over (Docling, LiteParse, pdfplumber)
+    mass functions.  Belief is high (~0.8) when at least two engines
+    explicitly support the candidate; it drops toward 0 when only one
+    engine has an opinion (the other two are ignorant).
+    """
     base = BASE_SCORE.get(c.rule, 0.40)
-    return max(0.0, min(1.0, base + _bonus(c) - _penalty(c)))
+    raw = base + _bonus(c) - _penalty(c)
+    ds_lift = DS_MAX_NUDGE * belief(combined_mass(c))
+    return max(0.0, min(1.0, raw + ds_lift))
 
 
 def confidence_for(score: float) -> Confidence:
@@ -190,7 +211,13 @@ def resolve_pairs(candidates: Iterable[PairCandidate]) -> tuple[Pair, ...]:
     for group in groups.values():
         winner, evidence = _pick_winner(group)
         score = score_one(winner)
-        if len(evidence) >= 2:
+        # Cross-vote bonus (capa 3.6).  Two engines agreeing on a pair is
+        # already a strong corroboration (+0.10); three or more engines
+        # agreeing (e.g. D-2col + L-horizontal + L-inline-split) is full
+        # agreement and earns a slightly larger bump (+0.15).
+        if len(evidence) >= 3:
+            score = min(1.0, score + 0.15)
+        elif len(evidence) >= 2:
             score = min(1.0, score + 0.10)
         conf = confidence_for(score)
         sub_title = winner.features.get("subsection_title") or None
