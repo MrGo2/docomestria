@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import pytest
+
 from docomestria.models import BBox, LiteItem
 from docomestria.structural import (
     ClassifiedItem,
@@ -12,6 +14,7 @@ from docomestria.structural import (
     emit_from_horizontal_pair,
     emit_from_in_item_split,
     emit_from_two_column_form,
+    emit_from_vertical_pair,
 )
 
 
@@ -327,3 +330,76 @@ def test_inline_split_single_colon_still_emits_one_pair():
     assert pairs[0].label_text == "Fecha de resolución"
     assert pairs[0].value_text == "14-03-2026"
     assert pairs[0].features.get("multi_colon_split") is not True
+
+
+# --------------------------------------------------------------------------
+# E4 — emit_from_vertical_pair
+# --------------------------------------------------------------------------
+
+
+def test_vertical_pair_matching_x_emits_one_candidate():
+    """A LABEL with a VALUE directly below and matching left edge → 1 candidate."""
+    label = _classified_item("Número de cuenta", x=20.0, y=100.0, w=120.0)
+    value = _classified_item(
+        "ES76 2100 1234 5600 0000 1234",
+        x=20.0,
+        y=114.0,  # top of value = label.bottom + 4pt (label h=10, so bottom=110)
+        w=180.0,
+        kind=ItemKind.VALUE,
+    )
+
+    pairs = emit_from_vertical_pair(
+        (label, value),
+        (Page(number=1, tables=()),),
+    )
+
+    assert len(pairs) == 1
+    assert pairs[0].label_text == "Número de cuenta"
+    assert pairs[0].value_text == "ES76 2100 1234 5600 0000 1234"
+    assert pairs[0].rule == "L-vertical"
+    assert pairs[0].features["y_gap"] == pytest.approx(4.0)
+
+
+def test_vertical_pair_no_value_within_y_tolerance_emits_nothing():
+    """A VALUE that is further away than VERTICAL_Y_GAP_MAX_PT is not matched."""
+    label = _classified_item("Número de cuenta", x=20.0, y=100.0, w=120.0)
+    value = _classified_item(
+        "ES76 2100 1234 5600 0000 1234",
+        x=20.0,
+        y=140.0,  # top = 140, label.bottom = 110 → gap = 30 > 24pt threshold
+        w=180.0,
+        kind=ItemKind.VALUE,
+    )
+
+    pairs = emit_from_vertical_pair(
+        (label, value),
+        (Page(number=1, tables=()),),
+    )
+
+    assert pairs == ()
+
+
+def test_vertical_pair_label_inside_table_region_emits_nothing():
+    """A LABEL whose centroid falls inside a table bbox must be excluded."""
+    table = Table(
+        bbox=BBox(x=0.0, y=0.0, w=300.0, h=200.0),
+        page=1,
+        cells=(("Número de cuenta", "ES76 2100 1234 5600 0000 1234"),),
+        source="docling",
+    )
+    # Label centroid = (20+60, 100+5) = (80, 105) — inside the table bbox
+    label = _classified_item("Número de cuenta", x=20.0, y=100.0, w=120.0)
+    value = _classified_item(
+        "ES76 2100 1234 5600 0000 1234",
+        x=20.0,
+        y=114.0,
+        w=180.0,
+        kind=ItemKind.VALUE,
+    )
+
+    pairs = emit_from_vertical_pair(
+        (label, value),
+        (Page(number=1, tables=(table,)),),
+    )
+
+    assert pairs == ()

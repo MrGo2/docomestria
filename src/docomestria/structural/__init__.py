@@ -24,6 +24,7 @@ from .candidates import (
     emit_from_horizontal_pair,
     emit_from_in_item_split,
     emit_from_two_column_form,
+    emit_from_vertical_pair,
 )
 from .classify import classify, classify_page, dominant_font_size, is_bold
 from .extractor import structural_extract, structural_extract_from_engines
@@ -81,6 +82,7 @@ __all__ = [
     "emit_from_horizontal_pair",
     "emit_from_in_item_split",
     "emit_from_two_column_form",
+    "emit_from_vertical_pair",
     "is_bold",
     "resolve_pairs",
     "score_one",

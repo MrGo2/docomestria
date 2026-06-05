@@ -26,6 +26,15 @@ from .models import ClassifiedItem, ItemKind, Page, PairCandidate, Table
 # baseline shifts on Spanish accented characters can push it to ~3pt.
 HORIZONTAL_Y_TOLERANCE_PT = 3.0
 
+# L-vertical pairing constants.  A value is accepted as the vertical partner
+# of a label when:
+#   (a) its left edge is within VERTICAL_X_TOLERANCE_PT of the label's left,
+#   (b) its top edge is at most VERTICAL_Y_GAP_MAX_PT below the label's bottom.
+# Both values are deliberately tight — vertical layouts are common in prose too,
+# so we prefer missing some pairs over producing false positives.
+VERTICAL_X_TOLERANCE_PT = 5.0
+VERTICAL_Y_GAP_MAX_PT = 24.0
+
 # A horizontal-pair value must start strictly to the RIGHT of the label's
 # right edge, with at most this much gap. Wider gaps suggest a different
 # column entirely (e.g. titular vs co-titular in BBVA forms).
@@ -1029,6 +1038,125 @@ def _bbox_union(first: BBox, *rest: BBox) -> BBox:
 
 
 # --------------------------------------------------------------------------
+# E4 — LiteParse vertical pair (LABEL on line N, VALUE directly below on N+1)
+# --------------------------------------------------------------------------
+
+
+def emit_from_vertical_pair(
+    classified: Iterable[ClassifiedItem],
+    pages: Iterable[Page],
+) -> tuple[PairCandidate, ...]:
+    """Pair each LABEL with the nearest VALUE sitting directly below it.
+
+    Typical pattern: a bold label with its value on the line immediately beneath
+    it, aligned to the same left margin — common in BBVA contract headers and
+    judicial-form section intros.
+
+    Exclusion logic mirrors `emit_from_horizontal_pair`: items inside table
+    bboxes, furniture, picture, or prose regions are skipped.  The same LABEL
+    cannot yield both a horizontal and a vertical candidate at the same time —
+    both are emitted and scoring / dedup resolves the overlap; the horizontal
+    emitter scores higher (0.70 base) than vertical (0.55 base) so L-horizontal
+    wins when both fire on the same pair.
+
+    Acceptance criteria for a (label, value) vertical pair:
+      - value.top > label.bottom  (value is strictly below)
+      - value.top - label.bottom <= VERTICAL_Y_GAP_MAX_PT
+      - abs(value.left - label.left) <= VERTICAL_X_TOLERANCE_PT
+    The closest VALUE (smallest Y gap) is selected when multiple candidates
+    satisfy the constraints.
+    """
+    pages = tuple(pages)
+    classified = tuple(classified)
+
+    table_bboxes: dict[int, list[BBox]] = {}
+    tables_by_page: dict[int, list[Table]] = {}
+    furniture: dict[int, list[BBox]] = {}
+    pictures: dict[int, list[BBox]] = {}
+    prose: dict[int, list[BBox]] = {}
+    for p in pages:
+        for t in p.tables:
+            if t.cells:
+                tables_by_page.setdefault(p.number, []).append(t)
+            if t.cells and max((len(r) for r in t.cells), default=0) >= 2:
+                table_bboxes.setdefault(p.number, []).append(t.bbox)
+        furniture[p.number] = list(p.furniture_regions)
+        pictures[p.number] = list(p.picture_regions)
+        prose[p.number] = list(p.prose_regions)
+
+    by_page: dict[int, list[ClassifiedItem]] = {}
+    for ci in classified:
+        by_page.setdefault(ci.page, []).append(ci)
+
+    out: list[PairCandidate] = []
+    for page_no, items in by_page.items():
+        d_tables = table_bboxes.get(page_no, [])
+        page_tables = tables_by_page.get(page_no, [])
+        furn = furniture.get(page_no, [])
+        pict = pictures.get(page_no, [])
+        prs = prose.get(page_no, [])
+
+        def excluded(
+            b: BBox,
+            *,
+            d_tables: list[BBox] = d_tables,
+            furn: list[BBox] = furn,
+            pict: list[BBox] = pict,
+            prs: list[BBox] = prs,
+        ) -> bool:
+            return (
+                _item_inside_any(b, d_tables)
+                or _item_inside_any(b, furn)
+                or _item_inside_any(b, pict)
+                or _item_inside_any(b, prs)
+            )
+
+        labels = [ci for ci in items if ci.kind is ItemKind.LABEL and not excluded(ci.bbox)]
+        values = [ci for ci in items if ci.kind is ItemKind.VALUE and not excluded(ci.bbox)]
+
+        for label in labels:
+            best_value: ClassifiedItem | None = None
+            best_y_gap = float("inf")
+            for value in values:
+                y_gap = value.bbox.top - label.bbox.bottom
+                if y_gap <= 0:
+                    continue  # not strictly below
+                if y_gap > VERTICAL_Y_GAP_MAX_PT:
+                    continue
+                if abs(value.bbox.left - label.bbox.left) > VERTICAL_X_TOLERANCE_PT:
+                    continue
+                if y_gap < best_y_gap:
+                    best_y_gap = y_gap
+                    best_value = value
+
+            if best_value is None:
+                continue
+            if _table_cells_contain_pair(label.text, best_value.text, page_tables):
+                continue
+
+            ends_colon = label.text.rstrip().endswith(":")
+            out.append(
+                PairCandidate(
+                    label_text=label.text.strip(),
+                    value_text=best_value.text.strip(),
+                    label_bbox=label.bbox,
+                    value_bbox=best_value.bbox,
+                    page=page_no,
+                    rule="L-vertical",
+                    features={
+                        "label_ends_with_colon": ends_colon,
+                        "y_gap": best_y_gap,
+                        "x_offset": abs(best_value.bbox.left - label.bbox.left),
+                        "value_empty": not best_value.text.strip(),
+                    },
+                    label_item=label,
+                    value_item=best_value,
+                )
+            )
+    return tuple(out)
+
+
+# --------------------------------------------------------------------------
 # Public entry point
 # --------------------------------------------------------------------------
 
@@ -1049,4 +1177,5 @@ def emit_all(
         + emit_from_in_item_split(classified, pages)
         + emit_from_horizontal_pair(classified, pages)
         + emit_from_two_column_form(classified, pages)
+        + emit_from_vertical_pair(classified, pages)
     )
