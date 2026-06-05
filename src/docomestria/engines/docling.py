@@ -28,6 +28,7 @@ def extract_docling_blocks(pdf_path: str | Path) -> list[DoclingBlock]:
     from docling_core.types.doc import (  # type: ignore[import-not-found]
         ContentLayer,
         SectionHeaderItem,
+        TableItem,
     )
 
     pipeline_options = PdfPipelineOptions(
@@ -70,6 +71,8 @@ def extract_docling_blocks(pdf_path: str | Path) -> list[DoclingBlock]:
         layer_obj = getattr(item, "content_layer", None)
         layer = layer_obj.value if hasattr(layer_obj, "value") else "body"
 
+        cells = _table_cells(item, doc) if isinstance(item, TableItem) else None
+
         blocks.append(
             DoclingBlock(
                 bbox=bbox,
@@ -79,6 +82,41 @@ def extract_docling_blocks(pdf_path: str | Path) -> list[DoclingBlock]:
                 page=page_no,
                 text=getattr(item, "text", "") or "",
                 self_ref=getattr(item, "self_ref", None),
+                cells=cells,
             )
         )
     return blocks
+
+
+def _table_cells(item: object, doc: object) -> tuple[tuple[str, ...], ...] | None:
+    """Best-effort extraction of a TableItem's cell text as a rows x cols matrix.
+
+    Uses `item.data.grid` (computed property on TableData) which returns
+    `list[list[TableCell]]`. Each cell exposes `.text` (or `_get_text(doc=...)`
+    for rich cells). Returns None on any failure to keep extraction resilient.
+    """
+    try:
+        data = getattr(item, "data", None)
+        if data is None:
+            return None
+        grid = getattr(data, "grid", None)
+        if not grid:
+            return None
+        rows: list[tuple[str, ...]] = []
+        for row in grid:
+            cells_row: list[str] = []
+            for cell in row:
+                text = ""
+                getter = getattr(cell, "_get_text", None)
+                if callable(getter):
+                    try:
+                        text = getter(doc=doc) or ""
+                    except Exception:
+                        text = getattr(cell, "text", "") or ""
+                else:
+                    text = getattr(cell, "text", "") or ""
+                cells_row.append(str(text))
+            rows.append(tuple(cells_row))
+        return tuple(rows) if rows else None
+    except Exception:
+        return None

@@ -352,3 +352,175 @@ def test_stream_extract_steps_include_raw_payload(tmp_path, monkeypatch):
     assert rects_payload[0]["rect_type"] == "checkbox"
     assert rects_payload[0]["is_filled"] is True
     assert rects_payload[0]["rect_id"] == "rect_0"
+
+
+# --------------------------------------------------------------------------- v0.6.3: table cells + contained_text
+
+
+def test_stream_blocks_payload_carries_cells_for_tables(tmp_path, monkeypatch):
+    """A Docling block of label='table' surfaces `cells` matrix in the payload."""
+    from docomestria import BBox, DoclingBlock, LiteItem, VisualRect
+    from docomestria.fusion import FusionStats
+    from docomestria.pipeline import _stream
+
+    cells = (
+        ("", "Datos Petición", ""),
+        ("Nº Procedimiento", "987-15", ""),
+    )
+    docling_blocks = [
+        DoclingBlock(
+            bbox=BBox(x=10, y=10, w=300, h=200),
+            label="table",
+            heading_level=None,
+            content_layer="body",
+            page=1,
+            text="",
+            self_ref="ref-t",
+            cells=cells,
+        )
+    ]
+
+    monkeypatch.setattr("docomestria.engines.extract_lite_items", lambda _p: [])
+    monkeypatch.setattr(
+        "docomestria.engines.extract_docling_blocks", lambda _p: docling_blocks
+    )
+    monkeypatch.setattr("docomestria.engines.extract_visual_rects", lambda _p: [])
+    monkeypatch.setattr(
+        "docomestria.fusion.fuse_from_engines",
+        lambda _l, _d, _r: FusionStats(
+            items=(), coverage=0.0, matched_to_docling=0, matched_to_box=0, total_items=0
+        ),
+    )
+
+    provider = MockProvider({"nif": "51789286W"})
+    pipe = Pipeline(schema=_schema(), llm=provider, cache_dir=None)
+    pdf = _pdf(tmp_path)
+    from docomestria.pipeline._helpers import StepEmitter
+
+    emitter = StepEmitter(lang="es", callback=None, total_steps=13)
+    steps = list(_stream.stream_extract(pipe, pdf, emitter))
+    by_name = {s.name: s for s in steps}
+
+    blocks = by_name["extract_docling"].payload["_blocks"]
+    assert blocks[0]["label"] == "table"
+    assert blocks[0]["cells"] == [
+        ["", "Datos Petición", ""],
+        ["Nº Procedimiento", "987-15", ""],
+    ]
+    # Tables don't get contained_text — they have cells instead.
+    assert "contained_text" not in blocks[0]
+
+
+def test_stream_blocks_payload_carries_contained_text_for_headers(tmp_path, monkeypatch):
+    """A non-table block surfaces `contained_text` from LiteParse items inside its bbox."""
+    from docomestria import BBox, DoclingBlock, LiteItem
+    from docomestria.fusion import FusionStats
+    from docomestria.pipeline import _stream
+
+    lite_items = [
+        LiteItem(
+            text="Consulta",
+            bbox=BBox(x=20, y=20, w=40, h=10),
+            font_name="Helvetica",
+            font_size=10.0,
+            page=1,
+        ),
+        LiteItem(
+            text="TGSS",
+            bbox=BBox(x=70, y=20, w=30, h=10),
+            font_name="Helvetica",
+            font_size=10.0,
+            page=1,
+        ),
+        LiteItem(
+            text="outside",
+            bbox=BBox(x=500, y=500, w=20, h=10),
+            font_name="Helvetica",
+            font_size=10.0,
+            page=1,
+        ),
+    ]
+    docling_blocks = [
+        DoclingBlock(
+            bbox=BBox(x=10, y=10, w=200, h=30),
+            label="section_header",
+            heading_level=1,
+            content_layer="body",
+            page=1,
+            text="Consulta TGSS",
+            self_ref="ref-h",
+        )
+    ]
+
+    monkeypatch.setattr("docomestria.engines.extract_lite_items", lambda _p: lite_items)
+    monkeypatch.setattr(
+        "docomestria.engines.extract_docling_blocks", lambda _p: docling_blocks
+    )
+    monkeypatch.setattr("docomestria.engines.extract_visual_rects", lambda _p: [])
+    monkeypatch.setattr(
+        "docomestria.fusion.fuse_from_engines",
+        lambda _l, _d, _r: FusionStats(
+            items=(), coverage=0.0, matched_to_docling=0, matched_to_box=0, total_items=0
+        ),
+    )
+
+    provider = MockProvider({"nif": "51789286W"})
+    pipe = Pipeline(schema=_schema(), llm=provider, cache_dir=None)
+    pdf = _pdf(tmp_path)
+    from docomestria.pipeline._helpers import StepEmitter
+
+    emitter = StepEmitter(lang="es", callback=None, total_steps=13)
+    steps = list(_stream.stream_extract(pipe, pdf, emitter))
+    by_name = {s.name: s for s in steps}
+
+    blocks = by_name["extract_docling"].payload["_blocks"]
+    assert blocks[0]["label"] == "section_header"
+    assert blocks[0]["contained_text"] == "Consulta TGSS"
+    assert "cells" not in blocks[0]
+
+
+def test_stream_rects_payload_carries_cells_for_tables(tmp_path, monkeypatch):
+    """A pdfplumber rect of type 'table' surfaces `cells` matrix in the payload."""
+    from docomestria import BBox, VisualRect
+    from docomestria.fusion import FusionStats
+    from docomestria.pipeline import _stream
+
+    cells = (
+        ("Header A", "Header B"),
+        ("v1", "v2"),
+    )
+    rects = [
+        VisualRect(
+            bbox=BBox(x=10, y=10, w=200, h=100),
+            is_checkbox=False,
+            is_filled=False,
+            page=1,
+            rect_id="p1-t0",
+            rect_type="table",
+            cells=cells,
+        )
+    ]
+
+    monkeypatch.setattr("docomestria.engines.extract_lite_items", lambda _p: [])
+    monkeypatch.setattr("docomestria.engines.extract_docling_blocks", lambda _p: [])
+    monkeypatch.setattr("docomestria.engines.extract_visual_rects", lambda _p: rects)
+    monkeypatch.setattr(
+        "docomestria.fusion.fuse_from_engines",
+        lambda _l, _d, _r: FusionStats(
+            items=(), coverage=0.0, matched_to_docling=0, matched_to_box=0, total_items=0
+        ),
+    )
+
+    provider = MockProvider({"nif": "51789286W"})
+    pipe = Pipeline(schema=_schema(), llm=provider, cache_dir=None)
+    pdf = _pdf(tmp_path)
+    from docomestria.pipeline._helpers import StepEmitter
+
+    emitter = StepEmitter(lang="es", callback=None, total_steps=13)
+    steps = list(_stream.stream_extract(pipe, pdf, emitter))
+    by_name = {s.name: s for s in steps}
+
+    rects_payload = by_name["extract_pdfplumber"].payload["_rects"]
+    assert rects_payload[0]["rect_type"] == "table"
+    assert rects_payload[0]["cells"] == [["Header A", "Header B"], ["v1", "v2"]]
+    assert "contained_text" not in rects_payload[0]

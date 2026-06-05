@@ -74,6 +74,24 @@ def _table_cell_bbox(cell: tuple[float, float, float, float] | None) -> BBox | N
     return BBox(x=float(x0), y=float(top), w=float(x1 - x0), h=float(bottom - top))
 
 
+def _table_cells_from(table_obj: object) -> tuple[tuple[str, ...], ...] | None:
+    """Extract a row x col matrix of cell text via the pdfplumber Table API.
+
+    Returns None when the table has no extractable text. Cells that are missing
+    are coerced to empty strings so the matrix stays rectangular.
+    """
+    try:
+        extracted = table_obj.extract()  # type: ignore[attr-defined]
+    except Exception:
+        return None
+    if not extracted:
+        return None
+    rows: list[tuple[str, ...]] = []
+    for row in extracted:
+        rows.append(tuple((cell or "") for cell in row))
+    return tuple(rows) if rows else None
+
+
 def _table_grid_from(table_obj: object) -> tuple[tuple[BBox, ...], ...]:
     """Build a row x col grid of BBoxes from a pdfplumber Table object."""
     rows = getattr(table_obj, "rows", None) or []
@@ -109,6 +127,7 @@ def extract_visual_rects(pdf_path: str | Path) -> list[VisualRect]:
                 x0, top, x1, bottom = bbox
                 tbb = BBox(x=float(x0), y=float(top), w=float(x1 - x0), h=float(bottom - top))
                 grid = _table_grid_from(table)
+                cells = _table_cells_from(table)
                 rid = f"p{page_idx}-t{tidx}"
                 rects.append(
                     VisualRect(
@@ -119,6 +138,7 @@ def extract_visual_rects(pdf_path: str | Path) -> list[VisualRect]:
                         rect_id=rid,
                         rect_type="table",
                         table_grid=grid if grid else None,
+                        cells=cells,
                     )
                 )
                 tables_bboxes.append((float(x0), float(top), float(x1), float(bottom)))

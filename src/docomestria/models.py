@@ -71,7 +71,12 @@ class LiteItem:
 
 @dataclass(frozen=True)
 class DoclingBlock:
-    """One semantic block from Docling."""
+    """One semantic block from Docling.
+
+    `cells` is populated only when this block represents a table — a rows x cols
+    matrix of cell text. Best-effort: missing or unrecoverable cell content
+    leaves `cells=None`.
+    """
 
     bbox: BBox
     label: str
@@ -80,6 +85,7 @@ class DoclingBlock:
     page: int
     text: str = ""
     self_ref: str | None = None
+    cells: tuple[tuple[str, ...], ...] | None = None
 
 
 @dataclass(frozen=True)
@@ -99,6 +105,7 @@ class VisualRect:
     rect_id: str = ""
     rect_type: str = "box"
     table_grid: tuple[tuple["BBox", ...], ...] | None = None
+    cells: tuple[tuple[str, ...], ...] | None = None
 
 
 @dataclass(frozen=True)

@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.3] - 2026-06-05
+
+### Added
+- Table cell content is now exposed in the streaming payload: Docling and
+  pdfplumber `_blocks`/`_rects` rows of type "table" carry a `cells: list[list[str]]`
+  field. Non-table blocks and rects carry `contained_text` (the LiteParse text
+  that falls inside the block's bbox). Enables drill-down UIs to render the
+  actual extracted content of any region.
+- `DoclingBlock.cells` and `VisualRect.cells` model fields — frozen-dataclass
+  additions with `None` defaults, fully backward compatible.
+
 ## [0.6.2] - 2026-06-05
 
 ### Added

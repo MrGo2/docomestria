@@ -113,7 +113,7 @@ def stream_extract(
         payload={
             "blocks_count": len(docling),
             "sample_labels": [b.label for b in docling[:3]],
-            "_blocks": _blocks_payload(docling),
+            "_blocks": _blocks_payload(docling, lite),
         },
     )
 
@@ -125,7 +125,7 @@ def stream_extract(
         payload={
             "rects_count": len(rects),
             "sample_types": [r.rect_type for r in rects[:3]],
-            "_rects": _rects_payload(rects),
+            "_rects": _rects_payload(rects, lite),
         },
     )
 
@@ -384,21 +384,51 @@ def _text_items_payload(items: Any) -> list[dict[str, Any]]:
     return out
 
 
-def _blocks_payload(blocks: Any) -> list[dict[str, Any]]:
-    """Serialize Docling blocks into JSON-safe dicts (internal, unstable)."""
+def _blocks_payload(blocks: Any, lite_items: Any = None) -> list[dict[str, Any]]:
+    """Serialize Docling blocks into JSON-safe dicts (internal, unstable).
+
+    When `lite_items` is provided, non-table blocks also carry a
+    `contained_text` field concatenating LiteParse text items whose centroid
+    falls inside the block's bbox. Table blocks carry a `cells` matrix.
+    """
+    lite_list = list(lite_items or ())
     out: list[dict[str, Any]] = []
     for b in blocks:
-        out.append(
-            {
-                "label": getattr(b, "label", "") or "",
-                "level": getattr(b, "heading_level", None),
-                "layer": getattr(b, "content_layer", "body") or "body",
-                "page": int(getattr(b, "page", 1) or 1),
-                "bbox": _bbox_quad(b.bbox),
-                "text": (getattr(b, "text", "") or "")[:120],
-            }
-        )
+        label = getattr(b, "label", "") or ""
+        cells = getattr(b, "cells", None)
+        entry: dict[str, Any] = {
+            "label": label,
+            "level": getattr(b, "heading_level", None),
+            "layer": getattr(b, "content_layer", "body") or "body",
+            "page": int(getattr(b, "page", 1) or 1),
+            "bbox": _bbox_quad(b.bbox),
+            "text": (getattr(b, "text", "") or "")[:120],
+        }
+        if cells:
+            entry["cells"] = [list(row) for row in cells]
+        else:
+            entry["contained_text"] = _contained_text(b.bbox, entry["page"], lite_list)
+        out.append(entry)
     return out
+
+
+def _contained_text(bbox: Any, page: int, lite_items: list) -> str:
+    """Concatenate LiteParse item text whose centroid sits inside `bbox`."""
+    if not lite_items:
+        return ""
+    pieces: list[str] = []
+    for it in lite_items:
+        if int(getattr(it, "page", 1) or 1) != page:
+            continue
+        ibox = getattr(it, "bbox", None)
+        if ibox is None:
+            continue
+        cx, cy = ibox.centroid
+        if bbox.contains_point(cx, cy):
+            txt = (getattr(it, "text", "") or "").strip()
+            if txt:
+                pieces.append(txt)
+    return " ".join(pieces)
 
 
 def _pairs_payload(schema: Any, bound: Any) -> list[dict[str, Any]]:
@@ -428,8 +458,13 @@ def _pairs_payload(schema: Any, bound: Any) -> list[dict[str, Any]]:
     return out
 
 
-def _rects_payload(rects: Any) -> list[dict[str, Any]]:
-    """Serialize pdfplumber visual rects into JSON-safe dicts (internal)."""
+def _rects_payload(rects: Any, lite_items: Any = None) -> list[dict[str, Any]]:
+    """Serialize pdfplumber visual rects into JSON-safe dicts (internal).
+
+    Table rects carry a `cells` matrix (rows x cols of text). Non-table rects
+    carry `contained_text` derived from LiteParse items inside the bbox.
+    """
+    lite_list = list(lite_items or ())
     out: list[dict[str, Any]] = []
     for r in rects:
         grid = getattr(r, "table_grid", None)
@@ -441,16 +476,22 @@ def _rects_payload(rects: Any) -> list[dict[str, Any]]:
                 grid_shape = f"{rows} rows x {cols} cols"
             except TypeError:
                 grid_shape = None
-        out.append(
-            {
-                "rect_id": getattr(r, "rect_id", "") or "",
-                "rect_type": getattr(r, "rect_type", "box") or "box",
-                "is_filled": bool(getattr(r, "is_filled", False)),
-                "page": int(getattr(r, "page", 1) or 1),
-                "bbox": _bbox_quad(r.bbox),
-                "table_grid": grid_shape,
-            }
-        )
+        page = int(getattr(r, "page", 1) or 1)
+        rect_type = getattr(r, "rect_type", "box") or "box"
+        cells = getattr(r, "cells", None)
+        entry: dict[str, Any] = {
+            "rect_id": getattr(r, "rect_id", "") or "",
+            "rect_type": rect_type,
+            "is_filled": bool(getattr(r, "is_filled", False)),
+            "page": page,
+            "bbox": _bbox_quad(r.bbox),
+            "table_grid": grid_shape,
+        }
+        if cells:
+            entry["cells"] = [list(row) for row in cells]
+        else:
+            entry["contained_text"] = _contained_text(r.bbox, page, lite_list)
+        out.append(entry)
     return out
 
 
