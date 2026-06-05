@@ -42,3 +42,8 @@ Thumbs.db
 # Project artifacts
 *.fused.json
 uploads/
+
+# ParseBench sample data — track scripts + INDEX.md only
+data/parsebench/pdfs/
+data/parsebench/ground_truth/
+data/parsebench/outputs/
