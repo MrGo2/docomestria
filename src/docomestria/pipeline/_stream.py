@@ -25,6 +25,7 @@ from ._helpers import (
     with_cache_hit,
 )
 from .context import build_llm_context
+from .merge import build_merged_document
 from .prompts import SYSTEM_PROMPT, build_extraction_prompt
 from .providers.base import LLMResponse
 from .result import ExtractionResult
@@ -51,7 +52,10 @@ def stream_cache_hit(
     yield emitter.emit(
         "complete",
         "system",
-        payload={"result": with_cache_hit(cached)},
+        payload={
+            "result": with_cache_hit(cached),
+            "_merged_document": build_merged_document(cached.fusion),
+        },
         is_terminal=True,
         fusion=cached.fusion,
         bound=cached.bound,
@@ -269,7 +273,12 @@ def stream_bind_and_type(
     yield emitter.emit(
         "complete",
         "system",
-        payload={"result": result, "duration_ms": duration_ms, "cost_usd": cost.usd},
+        payload={
+            "result": result,
+            "duration_ms": duration_ms,
+            "cost_usd": cost.usd,
+            "_merged_document": build_merged_document(fusion),
+        },
         is_terminal=True,
         fusion=fusion,
         bound=bound_tuple,
@@ -340,7 +349,12 @@ def stream_deterministic(
     yield emitter.emit(
         "complete",
         "system",
-        payload={"result": result, "duration_ms": duration_ms, "cost_usd": cost.usd},
+        payload={
+            "result": result,
+            "duration_ms": duration_ms,
+            "cost_usd": cost.usd,
+            "_merged_document": build_merged_document(fusion),
+        },
         is_terminal=True,
         fusion=fusion,
         bound=bound_tuple,

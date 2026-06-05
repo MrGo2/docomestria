@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.4] - 2026-06-05
+
+### Added
+- `_merged_document` payload on the `complete` step containing the document
+  rebuilt from Docling structure + LiteParse character formatting: blocks in
+  reading order, each carrying spans with text, font_name, font_size, and
+  derived `is_bold` / `is_italic` flags. Tables carry per-cell span lists.
+- New helper module `docomestria.pipeline.merge` with
+  `build_merged_document(fusion)` plus `is_bold(font_name)` /
+  `is_italic(font_name)` font-name heuristics.
+
 ## [0.6.3] - 2026-06-05
 
 ### Added
