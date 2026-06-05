@@ -84,18 +84,30 @@ class DoclingBlock:
 
 @dataclass(frozen=True)
 class VisualRect:
-    """A vector rectangle detected by pdfplumber."""
+    """A vector rectangle detected by pdfplumber.
+
+    `rect_type` is one of: "box" | "table" | "checkbox" | "signature_field".
+    `table_grid` is the list of cell bboxes per row, only set when
+    `rect_type == "table"`. `is_checkbox` is kept for backward compatibility
+    with v0.2.0 callers but is equivalent to `rect_type == "checkbox"`.
+    """
 
     bbox: BBox
     is_checkbox: bool
     is_filled: bool
     page: int
     rect_id: str = ""
+    rect_type: str = "box"
+    table_grid: tuple[tuple["BBox", ...], ...] | None = None
 
 
 @dataclass(frozen=True)
 class FusedItem:
-    """A LiteParse item enriched with Docling semantics and pdfplumber structure."""
+    """A LiteParse item enriched with Docling semantics and pdfplumber structure.
+
+    When the item falls inside a detected table cell, `table_id`, `table_row`,
+    `table_col`, and `cell_bbox` are populated.
+    """
 
     text: str
     bbox: BBox
@@ -108,3 +120,7 @@ class FusedItem:
     page: int
     match_method: str  # "centroid" | "iou" | "none"
     match_score: float
+    table_id: str | None = None
+    table_row: int | None = None
+    table_col: int | None = None
+    cell_bbox: BBox | None = None

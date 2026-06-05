@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "docomestria"
-version = "0.2.0"
+version = "0.3.0"
 description = "Fuse LiteParse v2, Docling, and pdfplumber for richer PDF extraction with semantic and visual layout awareness"
 readme = "README.md"
 license = { text = "MIT" }
@@ -35,12 +35,22 @@ dependencies = [
 llm = [
     "rapidfuzz>=3.0",
 ]
+transform = [
+    "python-dateutil>=2.8",
+    "python-stdnum>=1.19",
+    "babel>=2.12",
+    "phonenumbers>=8.13",
+]
 dev = [
     "pytest>=8.0",
     "ruff>=0.6",
     "pre-commit>=3.7",
     "reportlab>=4.0",
     "rapidfuzz>=3.0",
+    "python-dateutil>=2.8",
+    "python-stdnum>=1.19",
+    "babel>=2.12",
+    "phonenumbers>=8.13",
 ]
 
 [project.urls]

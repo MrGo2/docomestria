@@ -96,3 +96,49 @@ values bound to semantic blocks that are unlikely to hold data, such as
 
 The layer is LLM-agnostic — Gemini, Claude, OpenAI, or local models all work
 as long as they return JSON. Install with `pip install docomestria[llm]`.
+
+## Typed extraction layer (optional)
+
+The `docomestria.transform` sub-package turns `BoundValue`s into `TypedValue`s
+while preserving the original bbox, page, and source-item provenance.
+
+```mermaid
+flowchart LR
+    FR[FusionResult] --> B[bind_provenance]
+    B --> BV[list BoundValue]
+    BV --> S[Schema.apply]
+    FR --> S
+    S --> TV[dict TypedValue]
+    TV --> T[TypedValue.trace]
+    FR --> T
+    T --> PT[ProvenanceTrace]
+```
+
+A `TypedValue` carries:
+
+- `normalized` — the typed payload (e.g. a `date`, `Decimal`, `Money`, `bool`)
+- `raw` — the original string the LLM produced
+- `bbox`, `page`, `source_items` — copied verbatim from the `BoundValue`
+- `confidence` — combined `match_score * transform_score`
+- `issues` — typed flags such as `nif_checksum_mismatch`, `invalid_date`,
+  `currency_ambiguous`, `required_field_missing`
+
+Transformers are pure functions: `(raw, *, context) -> (normalized, score,
+issues)`. The optional `TransformContext` carries the upstream `BoundValue`
+and the full `FusionResult`, which is what lets checkbox transformers read
+`VisualRect.is_filled`.
+
+## Provenance traceability
+
+`TypedValue.trace(fusion_result)` returns a `ProvenanceTrace` whose `chains`
+walk every source `FusedItem` back to:
+
+- the `LiteItem`s that produced the text (font name and size are recoverable),
+- the `DoclingBlock` whose semantics matched (e.g. `list_item`, `table_cell`),
+- the enclosing `VisualRect`,
+- the `TableCellRef` when the item lives in a detected table (with row/column
+  headers materialized from the table's first row and column),
+- a `section_path` that walks up nested boxes.
+
+This makes "show me the exact pixels and font that produced this typed
+value" a one-liner.

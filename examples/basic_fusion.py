@@ -1,4 +1,5 @@
 """Minimal example: fuse a PDF and print one line per text item."""
+
 from __future__ import annotations
 
 import sys
@@ -8,7 +9,8 @@ from docomestria import fuse
 
 
 def main(pdf_path: str) -> int:
-    items = fuse(pdf_path)
+    result = fuse(pdf_path)
+    items = result.items
     print(f"fused {len(items)} text items from {Path(pdf_path).name}")
     for it in items[:20]:
         section = it.section_title or "-"

@@ -29,7 +29,8 @@ from docomestria.llm import (
 
 def main(pdf_path: str) -> int:
     # 1. Extract from PDF (3-engine fusion).
-    items = fuse(pdf_path)
+    result = fuse(pdf_path)
+    items = list(result.items)
     print(f"fused {len(items)} items from {Path(pdf_path).name}")
 
     # 2. Pseudo-code for the actual LLM call (kept out of the library to keep

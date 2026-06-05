@@ -49,3 +49,19 @@ rendered in Arial-Bold 12pt."*
   exact pixels and the exact font that produced it.
 - **OCR-free pipelines** — for digital PDFs you get all of the above without
   rasterizing a single page.
+
+## Why typed extraction with bbox preservation
+
+LLMs are great at pulling raw strings out of forms but terrible at
+*structured* output: ask for a date and you might get `"06 de Diciembre"`,
+`"6/12/26"`, or `"December 6th"`. Ask for an amount and the currency may or
+may not be there. Ask for a Spanish NIF and you may get an invalid checksum.
+
+Docomestria's transform layer normalizes the raw strings to typed Python
+values (`date`, `Decimal`, `Money`, validated `str`, `bool`, ...) while
+keeping the original `bbox`, `page`, and source-item indices attached. That
+means every typed value still answers "where in the PDF did this come from?"
+— so you can render highlights on the original page, audit hallucinations,
+or feed downstream OCR-quality metrics. Format-level issues (`invalid_date`,
+`nif_checksum_mismatch`, `currency_ambiguous`) surface explicitly rather
+than crashing the pipeline.

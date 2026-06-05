@@ -10,7 +10,10 @@ Fuse [LiteParse v2](https://pypi.org/project/liteparse/), [Docling](https://pypi
 ## Install
 
 ```bash
-pip install docomestria
+pip install docomestria             # core
+pip install docomestria[llm]        # + LLM provenance binding
+pip install docomestria[transform]  # + typed value extraction
+pip install docomestria[llm,transform]
 ```
 
 ## Usage
@@ -18,10 +21,13 @@ pip install docomestria
 ```python
 from docomestria import fuse
 
-items = fuse("contract.pdf")
-for item in items:
+result = fuse("contract.pdf")
+for item in result.items:
     print(item.section_title, "->", item.text)
 ```
+
+> Breaking change in v0.3.0 — `fuse()` now returns a `FusionResult`. If you
+> upgraded from v0.2.0, use `fuse(pdf).items` to recover the old list shape.
 
 Each returned `FusedItem` carries:
 
@@ -44,6 +50,38 @@ No single PDF engine sees the whole picture. Docomestria stitches their views to
 | Checkbox detection                 |     -     |    -    |    yes     |
 
 The combined output answers questions none of the engines can answer alone, such as: *"this list item lives inside the box titled DATOS PERSONALES DEL TITULAR and is rendered in Arial-Bold 12pt."*
+
+## Typed extraction (optional)
+
+Convert raw strings to typed Python values (dates, `Decimal`, `Money`, IBAN,
+NIF, ...) while keeping the bbox and page provenance attached:
+
+```python
+from docomestria import fuse
+from docomestria.llm import bind_provenance
+from docomestria.transform import Schema, Field, transformers as tr
+
+result = fuse("contract.pdf")
+llm_output = {"nif": "51789286W", "fecha": "06 de Diciembre", "importe": "1.234,56 EUR"}
+
+bound = bind_provenance(llm_output, result.items)
+
+schema = Schema({
+    "nif":     Field(tr.nif_es, required=True),
+    "fecha":   Field(tr.date_es_long),
+    "importe": Field(tr.amount_eur),
+})
+
+typed = schema.apply(bound, result)
+nif = typed["nif"]
+print(nif.normalized, nif.confidence, nif.issues)
+print("bbox:", nif.bbox, "page:", nif.page)
+
+trace = nif.trace(result)
+print("section:", " > ".join(trace.chains[0].section_path))
+```
+
+Install: `pip install docomestria[transform,llm]`.
 
 ## LLM provenance (optional)
 
