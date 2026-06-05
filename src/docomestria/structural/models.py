@@ -194,6 +194,7 @@ class Page:
     tables: tuple[Table, ...] = ()
     furniture_regions: tuple[BBox, ...] = ()
     picture_regions: tuple[BBox, ...] = ()
+    prose_regions: tuple[BBox, ...] = ()
 
 
 @dataclass(frozen=True)

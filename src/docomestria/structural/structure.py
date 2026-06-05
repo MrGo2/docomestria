@@ -35,6 +35,17 @@ SUBHEADER_WIDTH_TOLERANCE_PT = 6.0
 # a table is more likely a body region than a header strip.
 SUBHEADER_MAX_HEIGHT_PT = 30.0
 
+# A Docling text block long enough to count as a prose paragraph. Calibrated
+# from BBVA contracts: real KV labels live in tables or as short standalone
+# strings; body paragraphs ("En consecuencia, en cada liquidación...") start
+# around 100 chars. Set conservatively to avoid flagging short captions.
+PROSE_TEXT_MIN_CHARS = 60
+
+# A Docling list_item long enough to count as a clause sub-bullet. Lower
+# than text-block because list items often pack a single thought into one
+# line ("Cuota Sin nómina domiciliada: considerando el Interés...").
+PROSE_LIST_ITEM_MIN_CHARS = 40
+
 
 # --------------------------------------------------------------------------
 # Helpers
@@ -111,6 +122,32 @@ def detect_furniture_regions(docling_blocks: Iterable[DoclingBlock]) -> tuple[BB
 def detect_picture_regions(docling_blocks: Iterable[DoclingBlock]) -> tuple[BBox, ...]:
     """BBoxes of every Docling block with label='picture' (logos, figures)."""
     return tuple(blk.bbox for blk in docling_blocks if blk.label == "picture")
+
+
+def detect_prose_regions(docling_blocks: Iterable[DoclingBlock]) -> tuple[BBox, ...]:
+    """Bboxes of paragraph-style regions that should not emit KV pairs.
+
+    Docling already labels paragraphs and clause sub-bullets — `text` blocks
+    are body prose, `list_item` blocks are typically clause numbering with
+    explanatory content. When their content is long enough to be more than
+    a caption, we treat the whole region as a no-emit zone so the inline-
+    colon split rule (E2) and the horizontal-pair rule (E3) don't fire on
+    items that look label-like but are really part of a sentence.
+
+    Verified on BBVA5 page 14: the two false-positive pairs
+    `1. - Cuota Sin nómina domiciliada → considerando el Interés Nominal`
+    `2. - Cuota Con Nómina → considerando que se aplica el Interés`
+    live inside Docling `list_item` blocks at Y=183 and Y=219 — they are
+    footnote explanations, not key/value pairs.
+    """
+    regions: list[BBox] = []
+    for blk in docling_blocks:
+        text_len = len((blk.text or "").strip())
+        if blk.label == "text" and text_len >= PROSE_TEXT_MIN_CHARS:
+            regions.append(blk.bbox)
+        elif blk.label == "list_item" and text_len >= PROSE_LIST_ITEM_MIN_CHARS:
+            regions.append(blk.bbox)
+    return tuple(regions)
 
 
 # --------------------------------------------------------------------------
@@ -433,6 +470,7 @@ def detect_structure(
         sections = detect_sections(d)
         furniture = detect_furniture_regions(d)
         pictures = detect_picture_regions(d)
+        prose = detect_prose_regions(d)
         boxes = detect_boxes(p)
         tables = detect_tables(d, p)
         tables = attach_subsections(tables, boxes, tuple(l))
@@ -445,6 +483,7 @@ def detect_structure(
                 tables=tables,
                 furniture_regions=furniture,
                 picture_regions=pictures,
+                prose_regions=prose,
             )
         )
     return tuple(result)

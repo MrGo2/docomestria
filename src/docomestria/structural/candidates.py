@@ -302,6 +302,7 @@ def emit_from_in_item_split(
     # PATRIMONIAL p4 sits at Y=109, h=105 — the same band as the Datos
     # Petición block on page 1).
     docling_table_bboxes_by_page: dict[int, list[BBox]] = {}
+    prose_by_page: dict[int, list[BBox]] = {}
     for p in pages:
         for t in p.tables:
             if (
@@ -310,6 +311,7 @@ def emit_from_in_item_split(
                 and max((len(r) for r in t.cells), default=0) >= 2
             ):
                 docling_table_bboxes_by_page.setdefault(p.number, []).append(t.bbox)
+        prose_by_page[p.number] = list(p.prose_regions)
 
     out: list[PairCandidate] = []
     for ci in classified:
@@ -318,6 +320,8 @@ def emit_from_in_item_split(
         page_tables = docling_table_bboxes_by_page.get(ci.page, [])
         if _item_inside_any(ci.bbox, page_tables):
             continue
+        if _item_inside_any(ci.bbox, prose_by_page.get(ci.page, [])):
+            continue  # inside a paragraph / list_item — not a real KV pair
         idx = _find_inline_colon(ci.text)
         if idx < 0:
             continue
@@ -380,6 +384,7 @@ def emit_from_horizontal_pair(
     docling_table_bboxes: dict[int, list[BBox]] = {}
     furniture: dict[int, list[BBox]] = {}
     pictures: dict[int, list[BBox]] = {}
+    prose: dict[int, list[BBox]] = {}
     for p in pages:
         for t in p.tables:
             if t.source in ("docling", "fused") and t.cells and max(
@@ -388,6 +393,7 @@ def emit_from_horizontal_pair(
                 docling_table_bboxes.setdefault(p.number, []).append(t.bbox)
         furniture[p.number] = list(p.furniture_regions)
         pictures[p.number] = list(p.picture_regions)
+        prose[p.number] = list(p.prose_regions)
 
     by_page: dict[int, list[ClassifiedItem]] = {}
     for ci in classified:
@@ -398,12 +404,14 @@ def emit_from_horizontal_pair(
         d_tables = docling_table_bboxes.get(page_no, [])
         furn = furniture.get(page_no, [])
         pict = pictures.get(page_no, [])
+        prs = prose.get(page_no, [])
 
         def excluded(b: BBox) -> bool:
             return (
                 _item_inside_any(b, d_tables)
                 or _item_inside_any(b, furn)
                 or _item_inside_any(b, pict)
+                or _item_inside_any(b, prs)
             )
 
         labels = [ci for ci in items if ci.kind is ItemKind.LABEL and not excluded(ci.bbox)]
