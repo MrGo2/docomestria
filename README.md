@@ -5,36 +5,96 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Tests](https://github.com/MrGo2/docomestria/actions/workflows/tests.yml/badge.svg)](https://github.com/MrGo2/docomestria/actions/workflows/tests.yml)
 
-Fuse [LiteParse v2](https://pypi.org/project/liteparse/), [Docling](https://pypi.org/project/docling/), and [pdfplumber](https://pypi.org/project/pdfplumber/) into a single enriched PDF extraction. Each text item is tagged with its font metadata, its semantic role (`section_header`, `list_item`, `table`, ...), and the visual box that encloses it on the page.
+Fuse [LiteParse v2](https://pypi.org/project/liteparse/), [Docling](https://pypi.org/project/docling/), and [pdfplumber](https://pypi.org/project/pdfplumber/) into a single enriched PDF extraction. Then route the result through your favorite LLM, bind the output back to bounding boxes, and type the values — all from one `Pipeline.run(pdf)` call.
 
 ## Install
 
 ```bash
-pip install docomestria             # core
-pip install docomestria[llm]        # + LLM provenance binding
-pip install docomestria[transform]  # + typed value extraction
-pip install docomestria[llm,transform]
+pip install docomestria[openrouter,transform,llm,pipeline]   # recommended default
+pip install docomestria                                       # core only
+pip install docomestria[gemini]                               # native Gemini
+pip install docomestria[claude]                               # native Anthropic
+pip install docomestria[openai]                               # native OpenAI
 ```
 
-## Usage
+## Quickstart with OpenRouter
+
+OpenRouter gives you one API key for 200+ models, built-in fallback chains, and accurate per-call cost reporting. It is the recommended default for new projects.
 
 ```python
-from docomestria import fuse
+import os
+from docomestria.pipeline import Pipeline
+from docomestria.pipeline.providers import OpenRouter
+from docomestria.transform import Schema, Field, transformers as tr
 
-result = fuse("contract.pdf")
-for item in result.items:
-    print(item.section_title, "->", item.text)
+schema = Schema({
+    "nif":            Field(tr.nif_es),
+    "fecha_contrato": Field(tr.date_es_long),
+})
+
+llm = OpenRouter(
+    api_key=os.environ["OPENROUTER_API_KEY"],
+    models=(
+        "google/gemini-2.5-flash-lite",   # cheapest, primary
+        "anthropic/claude-haiku-4.5",     # fallback if Google fails
+    ),
+    route="fallback",
+)
+
+pipe = Pipeline(schema=schema, llm=llm)
+extraction = pipe.run("contract.pdf")
+
+print(extraction.typed_fields["nif"].normalized)
+print(f"cost: ${extraction.cost.usd:.6f}  model: {extraction.cost.model_used}")
 ```
 
-> Breaking change in v0.3.0 — `fuse()` now returns a `FusionResult`. If you
-> upgraded from v0.2.0, use `fuse(pdf).items` to recover the old list shape.
+See [examples/openrouter_pipeline.py](examples/openrouter_pipeline.py) for a full end-to-end run.
 
-Each returned `FusedItem` carries:
+### Why OpenRouter as the default?
 
-- the original text and bounding box
-- font name and size (from LiteParse)
-- semantic label and heading level (from Docling)
-- the enclosing visual box and its inferred section title (from pdfplumber)
+| Concern               | OpenRouter                             | Native provider SDKs                |
+|-----------------------|----------------------------------------|-------------------------------------|
+| API keys to manage    | One                                    | One per vendor                      |
+| Model switching       | Change a string                        | Swap SDK + rewrite call             |
+| Fallback chains       | Built in                               | Build it yourself                   |
+| Cost reporting        | Actual cost in each response           | Estimated from a local price table  |
+| Latency               | Slightly higher (extra hop)            | Direct                              |
+| Vendor-only features  | Limited                                | Full (Claude prompt cache, etc.)    |
+
+Verified model IDs at release time:
+- `google/gemini-2.5-flash-lite` — $0.10/M in, $0.40/M out (cheapest)
+- `anthropic/claude-haiku-4.5` — $1/M in, $5/M out
+- `openai/gpt-5-nano` — $0.05/M in, $0.40/M out
+- `openai/gpt-5-mini` — $0.25/M in, $2/M out
+
+## Native providers (alternatives)
+
+Prefer a direct SDK? All three return the same `LLMResponse` and slot into `Pipeline`.
+
+```python
+from docomestria.pipeline.providers import GeminiFlashLite, Claude, OpenAINative
+
+llm = GeminiFlashLite(api_key=os.environ["GEMINI_API_KEY"])
+# or
+llm = Claude(api_key=os.environ["ANTHROPIC_API_KEY"])
+# or
+llm = OpenAINative(api_key=os.environ["OPENAI_API_KEY"])
+```
+
+See [docs/providers.md](docs/providers.md) for a full comparison.
+
+## What you get back
+
+`Pipeline.run()` returns an `ExtractionResult` with:
+
+- `typed_fields: dict[str, TypedValue]` — normalized typed values with bbox + page provenance
+- `issues: tuple[ProvenanceIssue, ...]` — hallucinations and role mismatches detected
+- `fusion: FusionResult` — the underlying three-engine fused view
+- `bound: tuple[BoundValue, ...]` — LLM outputs bound back to FusedItems
+- `cost: CostReport` — tokens in/out plus actual USD
+- `duration_ms`, `cache_hit`, `llm_calls`
+
+Call `extraction.trace(field_key)` for the full chain from typed value down to LiteItem + DoclingBlock + VisualRect + table cell.
 
 ## Why fusion?
 
@@ -51,56 +111,19 @@ No single PDF engine sees the whole picture. Docomestria stitches their views to
 
 The combined output answers questions none of the engines can answer alone, such as: *"this list item lives inside the box titled DATOS PERSONALES DEL TITULAR and is rendered in Arial-Bold 12pt."*
 
-## Typed extraction (optional)
+## Lower-level building blocks
 
-Convert raw strings to typed Python values (dates, `Decimal`, `Money`, IBAN,
-NIF, ...) while keeping the bbox and page provenance attached:
+If you want only fusion (no LLM), use `fuse()` directly:
 
 ```python
 from docomestria import fuse
-from docomestria.llm import bind_provenance
-from docomestria.transform import Schema, Field, transformers as tr
 
 result = fuse("contract.pdf")
-llm_output = {"nif": "51789286W", "fecha": "06 de Diciembre", "importe": "1.234,56 EUR"}
-
-bound = bind_provenance(llm_output, result.items)
-
-schema = Schema({
-    "nif":     Field(tr.nif_es, required=True),
-    "fecha":   Field(tr.date_es_long),
-    "importe": Field(tr.amount_eur),
-})
-
-typed = schema.apply(bound, result)
-nif = typed["nif"]
-print(nif.normalized, nif.confidence, nif.issues)
-print("bbox:", nif.bbox, "page:", nif.page)
-
-trace = nif.trace(result)
-print("section:", " > ".join(trace.chains[0].section_path))
+for item in result.items:
+    print(item.section_title, "->", item.text)
 ```
 
-Install: `pip install docomestria[transform,llm]`.
-
-## LLM provenance (optional)
-
-Bind LLM-extracted outputs back to their source in the PDF and detect hallucinations:
-
-```python
-from docomestria import fuse
-from docomestria.llm import bind_provenance, detect_hallucinations
-
-items = fuse("contract.pdf")
-llm_output = {"nif": "51789286W", "name": "Claudio Alejandro"}
-
-bound = bind_provenance(llm_output, items)
-issues = detect_hallucinations(bound)
-```
-
-Install: `pip install docomestria[llm]`
-
-Works with any LLM (Gemini, Claude, OpenAI, local) — pass any JSON dict.
+For typed extraction without the orchestrator, use the layers manually — `bind_provenance` + `Schema.apply`. See [docs/architecture.md](docs/architecture.md).
 
 ## Architecture
 
@@ -112,16 +135,14 @@ flowchart LR
     LP --> F((fuse))
     DL --> F
     PP --> F
-    F --> R[list FusedItem]
+    F --> CTX[build LLM context]
+    CTX --> LLM[LLM via OpenRouter]
+    LLM --> BIND[bind_provenance]
+    BIND --> SC[Schema.apply]
+    SC --> ER[ExtractionResult]
 ```
 
-For each LiteParse text item, `fuse()`:
-
-1. finds the smallest containing Docling block (centroid first, IoU fallback);
-2. finds the smallest containing pdfplumber rectangle and records its id;
-3. picks the largest-font item inside each enclosing box as the box title.
-
-See [docs/architecture.md](docs/architecture.md) and [docs/why-fusion.md](docs/why-fusion.md) for the rationale.
+See [docs/architecture.md](docs/architecture.md), [docs/providers.md](docs/providers.md), and [docs/why-fusion.md](docs/why-fusion.md).
 
 ## Examples
 

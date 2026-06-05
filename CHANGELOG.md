@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-06-05
+
+### Added
+- `docomestria.pipeline` orchestrator — `Pipeline` class that runs
+  fuse → LLM → bind → schema in one call.
+- OpenRouter provider as the recommended default (one API key, 200+ models,
+  built-in fallback chains, accurate per-call cost reporting via OpenRouter's
+  `usage.cost` field).
+- Native providers: `GeminiFlashLite`, `Claude`, `OpenAINative` for users who
+  prefer direct SDKs. All SDK imports are lazy.
+- `RetryPolicy` with `none`/`linear`/`exponential` backoff for transient
+  `LLMRateLimitError` / `LLMTimeoutError`.
+- `DiskCache` and `MemoryCache` backends keyed by
+  (pdf SHA256, schema repr, model id).
+- `ExtractionResult` with cost tracking (tokens + USD), `duration_ms`,
+  `cache_hit`, and `llm_calls` counters; `.trace(field)` convenience.
+- Re-prompt logic for hallucinations (`on_hallucination="retry_llm"`) and
+  low-confidence fields (`on_low_confidence_field=<threshold>`).
+- `examples/openrouter_pipeline.py` showing end-to-end usage.
+- New `openrouter` optional dependency group (reuses the `openai` SDK).
+- `docs/providers.md` comparing OpenRouter vs native providers.
+
+### Changed
+- README now leads with the OpenRouter quickstart — native providers
+  documented as alternatives.
+- Top-level `docomestria` package re-exports `Pipeline`, `ExtractionResult`,
+  `RetryPolicy`, and `CostReport` lazily so the core import stays light.
+
 ## [0.3.1] - 2026-06-05
 
 ### Changed
@@ -79,7 +107,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Optional `pair_labels_to_values()` helper for form-like layouts.
 - Examples and architecture documentation.
 
-[Unreleased]: https://github.com/MrGo2/docomestria/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/MrGo2/docomestria/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/MrGo2/docomestria/compare/v0.3.1...v0.4.0
+[0.3.1]: https://github.com/MrGo2/docomestria/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/MrGo2/docomestria/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/MrGo2/docomestria/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/MrGo2/docomestria/releases/tag/v0.1.0

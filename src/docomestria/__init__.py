@@ -9,13 +9,17 @@ from .result import FusionResult, ProvenanceChain, ProvenanceTrace, TableCellRef
 
 __all__ = [
     "BBox",
+    "CostReport",
     "DoclingBlock",
+    "ExtractionResult",
     "FusedItem",
     "FusionResult",
     "FusionStats",
     "LiteItem",
+    "Pipeline",
     "ProvenanceChain",
     "ProvenanceTrace",
+    "RetryPolicy",
     "TableCellRef",
     "VisualRect",
     "fuse",
@@ -23,4 +27,17 @@ __all__ = [
     "pair_labels_to_values",
 ]
 
-__version__ = "0.3.1"
+__version__ = "0.4.0"
+
+
+def __getattr__(name: str):
+    """Lazy re-exports from the optional `pipeline` sub-package.
+
+    Keeps `from docomestria import Pipeline` working without forcing the
+    pipeline-only deps at core import time.
+    """
+    if name in {"Pipeline", "ExtractionResult", "RetryPolicy", "CostReport"}:
+        from . import pipeline as _pipe
+
+        return getattr(_pipe, name)
+    raise AttributeError(f"module 'docomestria' has no attribute {name!r}")

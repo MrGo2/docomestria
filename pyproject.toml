@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "docomestria"
-version = "0.3.1"
+version = "0.4.0"
 description = "Fuse LiteParse v2, Docling, and pdfplumber for richer PDF extraction with semantic and visual layout awareness"
 readme = "README.md"
 license = { text = "MIT" }
@@ -53,6 +53,9 @@ claude = [
 openai = [
     "openai>=2.41,<3",
 ]
+openrouter = [
+    "openai>=2.41,<3",
+]
 dev = [
     "pytest>=9.0,<10",
     "ruff>=0.15,<0.16",
@@ -64,6 +67,7 @@ dev = [
     "babel>=2.18,<3",
     "phonenumbers>=9.0,<10",
     "diskcache>=5.6.3,<6",
+    "openai>=2.41,<3",
 ]
 
 [project.urls]

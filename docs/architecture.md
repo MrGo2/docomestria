@@ -142,3 +142,40 @@ walk every source `FusedItem` back to:
 
 This makes "show me the exact pixels and font that produced this typed
 value" a one-liner.
+
+## Pipeline orchestration (v0.4.0)
+
+The `Pipeline` class wraps fuse → LLM → bind → schema → trace into a single
+`run(pdf_path)` call.
+
+```mermaid
+flowchart TD
+    PDF[PDF file] --> F[fuse three engines]
+    F --> CTX[build_llm_context<br/>drop furniture, group by section]
+    CTX --> P[build_extraction_prompt]
+    P --> LLM[LLMProvider.complete<br/>OpenRouter / Gemini / Claude / OpenAI]
+    LLM --> J[parse JSON]
+    J --> B[bind_provenance]
+    B --> H{hallucinations<br/>or low conf?}
+    H -- yes, retry --> P
+    H -- no --> V[detect issues]
+    V --> S[Schema.apply]
+    S --> ER[ExtractionResult<br/>typed_fields + cost + trace]
+```
+
+Cache lookup happens before fusion: the key is the SHA256 of the PDF bytes
+plus the schema repr plus the LLM model identifier. A cache hit returns the
+prior `ExtractionResult` with `cache_hit=True` and no LLM call.
+
+Retries apply to the LLM call only: transient errors
+(`LLMRateLimitError`, `LLMTimeoutError` by default) are retried with linear
+or exponential backoff.
+
+The re-prompt step is opt-in via the `Pipeline` constructor:
+
+- `on_hallucination="retry_llm"` — if any field's value cannot be located
+  in the source, prompt the LLM again with a stricter instruction.
+- `on_low_confidence_field=0.7` — if any field matched below this score,
+  re-prompt for those fields specifically.
+
+See [providers.md](providers.md) for the provider matrix.
