@@ -17,6 +17,7 @@ __all__ = [
     "FusionStats",
     "LiteItem",
     "Pipeline",
+    "PipelineStep",
     "ProvenanceChain",
     "ProvenanceTrace",
     "RetryPolicy",
@@ -27,7 +28,7 @@ __all__ = [
     "pair_labels_to_values",
 ]
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"
 
 
 def __getattr__(name: str):
@@ -36,7 +37,7 @@ def __getattr__(name: str):
     Keeps `from docomestria import Pipeline` working without forcing the
     pipeline-only deps at core import time.
     """
-    if name in {"Pipeline", "ExtractionResult", "RetryPolicy", "CostReport"}:
+    if name in {"Pipeline", "PipelineStep", "ExtractionResult", "RetryPolicy", "CostReport"}:
         from . import pipeline as _pipe
 
         return getattr(_pipe, name)

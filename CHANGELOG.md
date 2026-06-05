@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-06-05
+
+### Added
+- `Pipeline.stream(pdf_path)` yields `PipelineStep` per phase for observable
+  step-by-step execution (foundation for the upcoming `docomestria-studio`
+  viewer).
+- `PipelineStep` dataclass with `name`, `title`, ES/EN `explanation`,
+  `engine`, `step_index` / `total_steps`, `elapsed_ms` / `cumulative_ms`,
+  `bboxes` touched, partial state (`fusion`, `bound`, `issues`,
+  `typed_fields`), and a `progress` property.
+- `Pipeline.step_callback` optional callback fired for every step in both
+  `run()` and `stream()` (observability without changing API style).
+- `Pipeline.parallel_extract` flag — when `True`, surface a single bundled
+  `extract_all` step instead of three sequential extract steps.
+- 13 canonical step names with ES/EN explanations, plus a `cache_hit`
+  short-circuit step when the result is already cached.
+
+### Changed
+- `Pipeline.run()` is now internally implemented on top of `stream()`. No
+  external API change — same `ExtractionResult` returned. Verified by
+  regression tests against the v0.4.0 behaviour.
+
 ## [0.4.0] - 2026-06-05
 
 ### Added
@@ -107,7 +129,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Optional `pair_labels_to_values()` helper for form-like layouts.
 - Examples and architecture documentation.
 
-[Unreleased]: https://github.com/MrGo2/docomestria/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/MrGo2/docomestria/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/MrGo2/docomestria/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/MrGo2/docomestria/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/MrGo2/docomestria/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/MrGo2/docomestria/compare/v0.2.0...v0.3.0

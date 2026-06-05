@@ -1,31 +1,37 @@
-"""`Pipeline` — fuse → context → LLM → bind → schema → trace, in one call."""
+"""`Pipeline` — fuse → context → LLM → bind → schema → trace, in one call.
+
+The orchestrator exposes two complementary entry points:
+
+- `Pipeline.run(pdf)` — run to completion, return a single `ExtractionResult`.
+- `Pipeline.stream(pdf)` — yield one `PipelineStep` per phase so UIs and
+  observability tools can react to intermediate state. `run()` is implemented
+  on top of `stream()` so both APIs produce identical results.
+
+Per-phase implementations live in `_stream.py`; small pure helpers (JSON
+parsing, cost aggregation, issue collection, timing/step emission) live in
+`_helpers.py`. This module is the public composition + caching surface.
+"""
 
 from __future__ import annotations
 
-import json
-import re
-import time
-from collections.abc import Callable
+from collections.abc import Callable, Iterator
 from pathlib import Path
-from typing import Any, Literal
+from typing import Any
 
-from ..llm.models import BoundValue, ProvenanceIssue
+from ..llm.models import BoundValue
 from ..llm.provenance import bind_provenance
-from ..llm.validation import detect_hallucinations, detect_role_mismatches
 from ..result import FusionResult
+from ._helpers import HallucinationPolicy, StepEmitter, llm_id, parse_json, with_cache_hit
+from ._stream import stream_bind_and_type, stream_cache_hit, stream_extract, stream_llm
 from .cache import CacheBackend, DiskCache, build_cache_key
-from .context import build_llm_context
-from .prompts import SYSTEM_PROMPT, build_extraction_prompt, build_reprompt
+from .prompts import SYSTEM_PROMPT, build_reprompt
 from .providers.base import LLMProvider, LLMResponse
-from .result import CostReport, ExtractionResult
+from .result import ExtractionResult
 from .retry import RetryPolicy
+from .step import PipelineStep
 
 # Type alias for the fuse hook (kept open for tests).
 FuseFn = Callable[[str | Path], FusionResult]
-
-HallucinationPolicy = Literal["flag", "drop", "retry_llm"]
-
-JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(.+?)\s*```", re.DOTALL)
 
 
 class Pipeline:
@@ -47,6 +53,8 @@ class Pipeline:
         on_hallucination: HallucinationPolicy = "flag",
         on_low_confidence_field: float = 0.0,
         fuse_fn: FuseFn | None = None,
+        parallel_extract: bool = False,
+        step_callback: Callable[[PipelineStep], None] | None = None,
     ) -> None:
         self.schema = schema
         self.llm = llm
@@ -54,6 +62,9 @@ class Pipeline:
         self.on_hallucination = on_hallucination
         self.on_low_confidence_field = on_low_confidence_field
         self._fuse_fn = fuse_fn
+        self.parallel_extract = parallel_extract
+        self.step_callback = step_callback
+        self._last_cache_key: str | None = None
         if cache is not None:
             self.cache: CacheBackend | None = cache
         elif cache_dir is None:
@@ -64,51 +75,70 @@ class Pipeline:
     # ----------------------------------------------------------------- API
 
     def run(self, pdf_path: str | Path) -> ExtractionResult:
-        started = time.perf_counter()
-        cache_key = self._cache_key(pdf_path)
+        """Run the pipeline to completion and return an `ExtractionResult`.
 
-        cached = self._cache_get(cache_key)
+        Internally implemented on top of `stream()`: we consume every step,
+        keep the terminal one, and build the result from its captured state.
+        """
+        terminal: PipelineStep | None = None
+        cached: ExtractionResult | None = None
+        for step in self._stream_internal(pdf_path, lang="es"):
+            if step.name == "cache_hit":
+                cached = step.payload.get("result")
+            if step.is_terminal:
+                terminal = step
         if cached is not None:
-            return _with_cache_hit(cached)
+            return with_cache_hit(cached)
+        if terminal is None:  # pragma: no cover — stream always emits complete
+            raise RuntimeError("Pipeline.stream() did not yield a terminal step")
+        return terminal.payload["result"]
 
-        fusion = self._fuse(pdf_path)
-        context = build_llm_context(fusion.items)
-        prompt = build_extraction_prompt(self.schema, context)
+    def stream(
+        self,
+        pdf_path: str | Path,
+        *,
+        lang: str = "es",
+    ) -> Iterator[PipelineStep]:
+        """Run the pipeline as a sequence of observable steps.
 
-        llm_calls: list[LLMResponse] = []
-        response = self._call_llm(SYSTEM_PROMPT, prompt)
-        llm_calls.append(response)
-        parsed = _parse_json(response.text)
+        Yields one `PipelineStep` per phase. Consumer code can iterate at its
+        own pace — pull manually for a Next-button UI, or simply
+        `for step in pipe.stream(...): ...` for streaming progress.
 
-        bound = bind_provenance(parsed, list(fusion.items))
-        bound, llm_calls = self._maybe_reprompt(bound, fusion, context, llm_calls)
-
-        issues = _collect_issues(
-            bound,
-            policy=self.on_hallucination,
-            low_conf_threshold=self.on_low_confidence_field,
-        )
-        if self.on_hallucination == "drop":
-            bound = _drop_hallucinations(bound)
-
-        typed = self.schema.apply(bound, fusion)
-        cost = _aggregate_cost(llm_calls)
-        duration_ms = int((time.perf_counter() - started) * 1000)
-
-        result = ExtractionResult(
-            typed_fields=typed,
-            issues=tuple(issues),
-            fusion=fusion,
-            bound=tuple(bound),
-            cost=cost,
-            duration_ms=duration_ms,
-            cache_hit=False,
-            llm_calls=len(llm_calls),
-        )
-        self._cache_set(cache_key, result)
-        return result
+        The final step has `is_terminal=True` and carries full state in
+        `fusion`, `bound`, `issues`, `typed_fields`.
+        """
+        yield from self._stream_internal(pdf_path, lang=lang)
 
     # ------------------------------------------------------------ internals
+
+    def _stream_internal(
+        self,
+        pdf_path: str | Path,
+        *,
+        lang: str,
+    ) -> Iterator[PipelineStep]:
+        emitter = StepEmitter(lang=lang, callback=self.step_callback)
+
+        yield emitter.emit("start", "system")
+
+        self._last_cache_key = self._cache_key(pdf_path)
+        cached = self._cache_get(self._last_cache_key)
+        yield emitter.emit(
+            "cache_check",
+            "system",
+            payload={"cache_enabled": self.cache is not None, "hit": cached is not None},
+        )
+
+        if cached is not None:
+            yield from stream_cache_hit(emitter, cached)
+            return
+
+        fusion = yield from stream_extract(self, pdf_path, emitter)
+        parsed, llm_calls, context = yield from stream_llm(self, emitter, fusion)
+        yield from stream_bind_and_type(self, emitter, fusion, parsed, llm_calls, context)
+
+    # --------------------------------------------------------- LLM helpers
 
     def _fuse(self, pdf_path: str | Path) -> FusionResult:
         if self._fuse_fn is not None:
@@ -148,7 +178,7 @@ class Pipeline:
         )
         response = self._call_llm(SYSTEM_PROMPT, prompt)
         llm_calls.append(response)
-        parsed = _parse_json(response.text)
+        parsed = parse_json(response.text)
         bound = bind_provenance(parsed, list(fusion.items))
         return bound, llm_calls
 
@@ -157,7 +187,7 @@ class Pipeline:
     def _cache_key(self, pdf_path: str | Path) -> str | None:
         if self.cache is None:
             return None
-        return build_cache_key(pdf_path, repr(self.schema), _llm_id(self.llm))
+        return build_cache_key(pdf_path, repr(self.schema), llm_id(self.llm))
 
     def _cache_get(self, key: str | None) -> ExtractionResult | None:
         if self.cache is None or key is None:
@@ -168,89 +198,6 @@ class Pipeline:
         if self.cache is None or key is None:
             return
         self.cache.set(key, value)
-
-
-# ---------------------------------------------------------------- helpers
-
-
-def _llm_id(llm: LLMProvider) -> str:
-    """Stable string identifier for the LLM, used in the cache key."""
-    model = getattr(llm, "model", None)
-    models = getattr(llm, "models", None)
-    if model:
-        return f"{type(llm).__name__}:{model}"
-    if models:
-        return f"{type(llm).__name__}:{'|'.join(models)}"
-    return type(llm).__name__
-
-
-def _parse_json(text: str) -> dict[str, Any]:
-    """Best-effort JSON extraction from an LLM response.
-
-    Strips markdown fences if present; falls back to locating the first
-    balanced object.
-    """
-    candidate = text.strip()
-    fence = JSON_FENCE_RE.search(candidate)
-    if fence:
-        candidate = fence.group(1).strip()
-    try:
-        data = json.loads(candidate)
-    except json.JSONDecodeError:
-        # Try to slice the first {...} block.
-        start = candidate.find("{")
-        end = candidate.rfind("}")
-        if start == -1 or end == -1 or end <= start:
-            return {}
-        try:
-            data = json.loads(candidate[start : end + 1])
-        except json.JSONDecodeError:
-            return {}
-    if not isinstance(data, dict):
-        return {}
-    return data
-
-
-def _collect_issues(
-    bound: list[BoundValue],
-    *,
-    policy: HallucinationPolicy,
-    low_conf_threshold: float,
-) -> list[ProvenanceIssue]:
-    issues: list[ProvenanceIssue] = []
-    threshold = low_conf_threshold if low_conf_threshold > 0 else 0.7
-    issues.extend(detect_hallucinations(bound, require_score=threshold))
-    issues.extend(detect_role_mismatches(bound))
-    if policy == "drop":
-        issues = [iss for iss in issues if iss.issue_type != "hallucination"]
-    return issues
-
-
-def _drop_hallucinations(bound: list[BoundValue]) -> list[BoundValue]:
-    return [bv for bv in bound if bv.match_method != "not_found"]
-
-
-def _aggregate_cost(calls: list[LLMResponse]) -> CostReport:
-    if not calls:
-        return CostReport(tokens_in=0, tokens_out=0, usd=0.0, model_used="", breakdown=())
-    tokens_in = sum(c.tokens_in for c in calls)
-    tokens_out = sum(c.tokens_out for c in calls)
-    usd = sum(c.usd for c in calls)
-    breakdown = tuple((c.model_used, c.usd) for c in calls)
-    return CostReport(
-        tokens_in=tokens_in,
-        tokens_out=tokens_out,
-        usd=round(usd, 8),
-        model_used=calls[-1].model_used,
-        breakdown=breakdown,
-    )
-
-
-def _with_cache_hit(result: ExtractionResult) -> ExtractionResult:
-    """Return a copy of `result` with `cache_hit=True`."""
-    from dataclasses import replace
-
-    return replace(result, cache_hit=True)
 
 
 __all__ = ["Pipeline"]

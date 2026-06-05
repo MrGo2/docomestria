@@ -72,6 +72,16 @@ def main(pdf_path: str) -> None:
         for issue in extraction.issues:
             print(f"  [{issue.severity}] {issue.field_name}: {issue.detail}")
 
+    # --- Stream API (for UIs) ---
+    print("\n--- Streaming run ---")
+    for step in pipe.stream(pdf_path):
+        print(f"[{step.step_index}/{step.total_steps}] {step.title} ({step.elapsed_ms} ms)")
+        if step.payload:
+            for k, v in step.payload.items():
+                if k == "result":
+                    continue
+                print(f"    {k}: {v}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

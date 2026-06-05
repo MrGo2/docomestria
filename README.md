@@ -50,6 +50,19 @@ print(f"cost: ${extraction.cost.usd:.6f}  model: {extraction.cost.model_used}")
 
 See [examples/openrouter_pipeline.py](examples/openrouter_pipeline.py) for a full end-to-end run.
 
+### Streaming API (for UIs and telemetry)
+
+Iterate the pipeline step by step. Each `PipelineStep` carries explanation text (ES/EN), elapsed time, the bboxes produced, and partial state (`fusion`, `bound`, `issues`, `typed_fields` as they become available).
+
+```python
+for step in pipe.stream("contract.pdf"):
+    print(f"[{step.step_index}/{step.total_steps}] {step.title}  {step.elapsed_ms} ms")
+```
+
+Prefer a callback over iteration? Pass `step_callback=...` to the `Pipeline` constructor; it fires for every step in both `run()` and `stream()`.
+
+This is the API consumed by `docomestria-studio`, an interactive visual viewer for non-technical users.
+
 ### Why OpenRouter as the default?
 
 | Concern               | OpenRouter                             | Native provider SDKs                |
