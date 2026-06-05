@@ -238,17 +238,53 @@ scorer:
 | Q3 | Docling label conflict with LiteParse format | Both contribute; classify uses LiteParse, structure uses Docling |
 | Q4 | Tables seen by Docling but not pdfplumber | E1 still runs on Docling-only tables; no penalty |
 
-## Next steps
+## Implementation status (v0.7.0 MVP — shipped)
 
-1. **Write `structure.py`** — section/box/furniture/table-boundary detection
-2. **Write `candidates.py`** with the 4 emitters
-3. **Write `scoring.py`** with the rules above
-4. **Write `extractor.py`** to wire it all together
-5. **Validate against**:
-   - LABORAL.pdf — expected ≥ 13/14 Respuesta pairs correctly (Docling baseline)
-   - PATRIMONIAL.pdf — expected ≥ 35/38 pairs correct (vs Azure 29/38)
-   - 1 more PDF from Carlos as out-of-distribution check
-6. **Then** run against ParseBench table/text/layout splits for broader eval
+All eight planned stages plus extensions delivered. Final pair counts:
+
+| PDF | Pairs | HIGH | Regression | Notes |
+|---|---:|---:|---|---|
+| LABORAL | 15 | 15 | 12/12 ✅ | Full Respuesta table + Datos Petición |
+| PATRIMONIAL | 36 | 36 | 8/8 ✅ | 4 pages, all Servicios + Datos Personales |
+| BBVA3 Tarjeta | 21 | 21 | — | 14 form pairs + 5 interest + 2 inline |
+| BBVA4 Repsol+Crédito | 34 | 34 | — | Form + interest + inline + multipage |
+| BBVA5 Préstamo | 25 | 25 | — | TAE Sin/Con + Cuota + Comisiones |
+
+Modules under `src/docomestria/structural/`:
+
+- `models.py` — frozen dataclasses + enums
+- `classify.py` — ItemKind detection from font + position
+- `structure.py` — sections, tables, sub-sections, prose / furniture /
+  picture regions, shadow-table dedup
+- `candidates.py` — five emitters (D-2col / L-inline-split / L-horizontal
+  / L-twocol-form / L-vertical reserved)
+- `scoring.py` — rule-based scorer, dedup, Confidence bands
+- `extractor.py` — `structural_extract(pdf_path)` public API
+
+Validation scripts under `scripts/`:
+
+- `download_parsebench_sample.py` — 15 ParseBench PDFs + ground truth
+- `run_engines_on_sample.py` — idempotent engine runner
+- `build_comparison_view.py` — side-by-side PDF + engine outputs HTML view
+- `validate_classify.py` / `validate_structure.py` / `validate_extract.py`
+- `build_index.py` — INDEX.md summary table
+
+## Remaining work for v0.7.1 / v0.8.0
+
+1. **Multi-colon item split** — `'Tipo Identificación: NIF PERSONA FISICA
+   N.I.F.: 009786573G'` currently splits on first colon only; should
+   split into 2 pairs using right-column labels as boundary hints.
+2. **pdfplumber off-page shadow guard** — drop pdfplumber tables whose
+   bbox.top is below the bottom-most LiteParse Y on the page. Requires
+   carrying page heights through the model.
+3. **L-vertical emitter** — label-above-value-below geometric pairing
+   for layouts that have no grid. Reserved slot is wired in scoring.
+4. **Unit tests** — pytest suite per module mirroring `tests/`.
+5. **Documented public API** — README + sphinx-style docstrings on the
+   `structural_extract` entry point.
+6. **ParseBench broad eval** — current validation uses 5 hand-curated
+   Spanish PDFs; broader runs against ParseBench's table/text/layout
+   splits will surface failure modes in other document domains.
 
 ## Validated counter-examples (always-on regression set)
 

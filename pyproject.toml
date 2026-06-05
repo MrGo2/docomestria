@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "docomestria"
-version = "0.6.4"
+version = "0.7.0"
 description = "Fuse LiteParse v2, Docling, and pdfplumber for richer PDF extraction with semantic and visual layout awareness"
 readme = "README.md"
 license = { text = "MIT" }
