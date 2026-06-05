@@ -139,13 +139,21 @@ def _gmm_buckets(sizes: list[float], dominant: float) -> dict[str, float]:
     collapse the label/value band entirely).
     """
     # Lazy import -- sklearn is listed in [stats] optional dep.
+    import warnings  # noqa: PLC0415
+
+    from sklearn.exceptions import ConvergenceWarning  # noqa: PLC0415
     from sklearn.mixture import GaussianMixture  # noqa: PLC0415
 
     import numpy as np  # noqa: PLC0415
 
     X = np.array(sizes).reshape(-1, 1)
     gmm = GaussianMixture(n_components=3, random_state=0, n_init=3)
-    gmm.fit(X)
+    with warnings.catch_warnings():
+        # Degenerate inputs (single-size pages, near-duplicate sizes) trigger
+        # ConvergenceWarning. We handle the collapse by clamping below, so
+        # the warning is noise, not signal.
+        warnings.simplefilter("ignore", ConvergenceWarning)
+        gmm.fit(X)
 
     means = gmm.means_.flatten()
     stds = gmm.covariances_.flatten() ** 0.5
