@@ -1,0 +1,1096 @@
+{
+  "pdf": "azuredemo__PATRIMONIAL.pdf",
+  "engine": "pdfplumber",
+  "elapsed_seconds": 0.185,
+  "count": 26,
+  "items": [
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 109.0,
+        "w": 555.0,
+        "h": 100.0
+      },
+      "is_checkbox": false,
+      "is_filled": false,
+      "page": 1,
+      "rect_id": "p1-t0",
+      "rect_type": "table",
+      "table_grid": [
+        [
+          {
+            "x": 20.0,
+            "y": 109.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 129.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 149.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 169.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 189.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ]
+      ],
+      "cells": [
+        [
+          "Datos Petición"
+        ],
+        [
+          "Nº Procedimiento: 987/2015"
+        ],
+        [
+          "Nº Documento: X6573514E"
+        ],
+        [
+          "Ejercicio fiscal: 2025"
+        ],
+        [
+          "Fecha de emisión: 17 d’abr. 2026 17:12"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 219.0,
+        "w": 555.0,
+        "h": 294.0
+      },
+      "is_checkbox": false,
+      "is_filled": false,
+      "page": 1,
+      "rect_id": "p1-t1",
+      "rect_type": "table",
+      "table_grid": [
+        [
+          {
+            "x": 20.0,
+            "y": 219.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 239.0,
+            "w": 555.0,
+            "h": 27.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 266.0,
+            "w": 555.0,
+            "h": 27.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 293.0,
+            "w": 555.0,
+            "h": 27.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 320.0,
+            "w": 555.0,
+            "h": 27.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 347.0,
+            "w": 555.0,
+            "h": 27.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 374.0,
+            "w": 555.0,
+            "h": 27.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 401.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 421.0,
+            "w": 555.0,
+            "h": 38.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 459.0,
+            "w": 555.0,
+            "h": 27.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 486.0,
+            "w": 555.0,
+            "h": 27.0
+          }
+        ]
+      ],
+      "cells": [
+        [
+          "Servicios Consultados"
+        ],
+        [
+          "AEAT - Consulta\n0001 Operación Correcta. No existen datos.\nPercepciones:"
+        ],
+        [
+          "AEAT - Consulta Actividades\n0001 Operación Correcta. No existen datos.\nEconomicas:"
+        ],
+        [
+          "AEAT - CuentasAmpliadas\n0001 Operación Correcta. No existen datos.\n(mod. 196):"
+        ],
+        [
+          "AEAT - Consulta Fondos\n0001 Operación Correcta. No existen datos.\nInversion:"
+        ],
+        [
+          "DFNavarra - Consulta\n0001 Operación Correcta. No existen datos.\nCapacidad Economica:"
+        ],
+        [
+          "SEPE - Consulta\n0001 Operación Correcta. No existen datos.\nPrestaciones:"
+        ],
+        [
+          "DGP - Consulta DNI: Ok"
+        ],
+        [
+          "INSS - Consulta Prestaciones\nTarjeta Social Digital: Ok"
+        ],
+        [
+          "Entidades Financieras -\nOk\nConsultas por NIF:"
+        ],
+        [
+          "DFGuipuzcoa - Consulta\n0001 Operacion Correcta. No existen datos.\nCapacidad Economica:"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 523.0,
+        "w": 555.0,
+        "h": 240.0
+      },
+      "is_checkbox": false,
+      "is_filled": false,
+      "page": 1,
+      "rect_id": "p1-t2",
+      "rect_type": "table",
+      "table_grid": [
+        [
+          {
+            "x": 20.0,
+            "y": 523.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 543.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 563.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 583.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 603.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 623.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 643.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 663.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 683.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 703.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 723.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 743.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ]
+      ],
+      "cells": [
+        [
+          "DGP - Consulta DNI"
+        ],
+        [
+          "Datos Personales"
+        ],
+        [
+          "Nombre: GHEORGHE ADRIAN"
+        ],
+        [
+          "Primer Apellido: OPREA"
+        ],
+        [
+          "Segundo Apellido:"
+        ],
+        [
+          "DNI: X6573514E"
+        ],
+        [
+          "Nacionalidad: RUMANIA"
+        ],
+        [
+          "Sexo: M"
+        ],
+        [
+          "Datos Nacimiento"
+        ],
+        [
+          "Localidad: CLUJ"
+        ],
+        [
+          "Provincia: ROU"
+        ],
+        [
+          "Nombre del padre: GHEORGHE"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 109.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 1,
+      "rect_id": "p1-r0",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 219.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 1,
+      "rect_id": "p1-r1",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 523.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 1,
+      "rect_id": "p1-r2",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 543.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 1,
+      "rect_id": "p1-r3",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 683.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 1,
+      "rect_id": "p1-r4",
+      "rect_type": "signature_field",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 99.0,
+        "w": 555.0,
+        "h": 340.0
+      },
+      "is_checkbox": false,
+      "is_filled": false,
+      "page": 2,
+      "rect_id": "p2-t0",
+      "rect_type": "table",
+      "table_grid": [
+        [
+          {
+            "x": 20.0,
+            "y": 99.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 119.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 139.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 159.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 179.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 199.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 219.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 239.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 259.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 279.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 299.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 319.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 339.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 359.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 379.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 399.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 419.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ]
+      ],
+      "cells": [
+        [
+          "Nombre de la madre: MARIA"
+        ],
+        [
+          "Fecha de nacimiento: 10/02/1978"
+        ],
+        [
+          "Dirección"
+        ],
+        [
+          "Localidad: TERRASSA"
+        ],
+        [
+          "Provincia: BARCELONA"
+        ],
+        [
+          "Código postal: 08227"
+        ],
+        [
+          "Domicilio: AVENIDA MADRID, 238 PBJ"
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          ""
+        ],
+        [
+          "Otros datos"
+        ],
+        [
+          "Fecha de expedición: 30/11/2011"
+        ],
+        [
+          "Equipo de expedición:"
+        ],
+        [
+          "Fecha de caducidad: 01/01/9999"
+        ],
+        [
+          "Número de soporte: C02572648"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 139.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 2,
+      "rect_id": "p2-r0",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 339.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 2,
+      "rect_id": "p2-r1",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 109.0,
+        "w": 555.0,
+        "h": 140.0
+      },
+      "is_checkbox": false,
+      "is_filled": false,
+      "page": 3,
+      "rect_id": "p3-t0",
+      "rect_type": "table",
+      "table_grid": [
+        [
+          {
+            "x": 20.0,
+            "y": 109.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 129.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 149.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 169.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 189.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 209.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 229.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ]
+      ],
+      "cells": [
+        [
+          "INSS - Consulta Prestaciones Tarjeta Social Digital"
+        ],
+        [
+          "Titular"
+        ],
+        [
+          "Nombre: GHEORGHE ADRIAN"
+        ],
+        [
+          "Primer apellido: OPREA"
+        ],
+        [
+          "Segundo apellido: ---"
+        ],
+        [
+          "Teléfono: 631723839"
+        ],
+        [
+          "Sin Prestaciones"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 109.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 3,
+      "rect_id": "p3-r0",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 129.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 3,
+      "rect_id": "p3-r1",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 229.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 3,
+      "rect_id": "p3-r2",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 109.0,
+        "w": 555.0,
+        "h": 105.0
+      },
+      "is_checkbox": false,
+      "is_filled": false,
+      "page": 4,
+      "rect_id": "p4-t0",
+      "rect_type": "table",
+      "table_grid": [
+        [
+          {
+            "x": 20.0,
+            "y": 109.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 129.0,
+            "w": 555.0,
+            "h": 20.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 149.0,
+            "w": 100.0,
+            "h": 27.0
+          },
+          {
+            "x": 120.0,
+            "y": 149.0,
+            "w": 65.0,
+            "h": 27.0
+          },
+          {
+            "x": 185.0,
+            "y": 149.0,
+            "w": 65.0,
+            "h": 27.0
+          },
+          {
+            "x": 250.0,
+            "y": 149.0,
+            "w": 65.0,
+            "h": 27.0
+          },
+          {
+            "x": 315.0,
+            "y": 149.0,
+            "w": 65.0,
+            "h": 27.0
+          },
+          {
+            "x": 380.0,
+            "y": 149.0,
+            "w": 65.0,
+            "h": 27.0
+          },
+          {
+            "x": 445.0,
+            "y": 149.0,
+            "w": 65.0,
+            "h": 27.0
+          },
+          {
+            "x": 510.0,
+            "y": 149.0,
+            "w": 65.0,
+            "h": 27.0
+          }
+        ],
+        [
+          {
+            "x": 20.0,
+            "y": 176.0,
+            "w": 555.0,
+            "h": 38.0
+          }
+        ]
+      ],
+      "cells": [
+        [
+          "Entidades Financieras - Consultas por NIF",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Lista de productos",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "IBAN",
+          "Entidad",
+          "Producto",
+          "Fecha\napertura",
+          "Tipo\nintervención",
+          "Saldo",
+          "Divisa",
+          "Fecha valor"
+        ],
+        [
+          "Su solicitud a las entidades financieras está realizada pero faltan entidades por\nresponder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a\nEEFF.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 109.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r0",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 129.0,
+        "w": 555.0,
+        "h": 20.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r1",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 149.0,
+        "w": 100.0,
+        "h": 27.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r2",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 120.0,
+        "y": 149.0,
+        "w": 65.0,
+        "h": 27.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r3",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 185.0,
+        "y": 149.0,
+        "w": 65.0,
+        "h": 27.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r4",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 250.0,
+        "y": 149.0,
+        "w": 65.0,
+        "h": 27.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r5",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 315.0,
+        "y": 149.0,
+        "w": 65.0,
+        "h": 27.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r6",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 380.0,
+        "y": 149.0,
+        "w": 65.0,
+        "h": 27.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r7",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 445.0,
+        "y": 149.0,
+        "w": 65.0,
+        "h": 27.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r8",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 510.0,
+        "y": 149.0,
+        "w": 65.0,
+        "h": 27.0
+      },
+      "is_checkbox": false,
+      "is_filled": true,
+      "page": 4,
+      "rect_id": "p4-r9",
+      "rect_type": "box",
+      "table_grid": null,
+      "cells": null
+    }
+  ]
+}

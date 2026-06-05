@@ -82,3 +82,4 @@ packages = ["src/docomestria"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra -q"
+pythonpath = ["src"]

@@ -108,7 +108,7 @@ def _normalise(text: str) -> str:
     return "".join(text.lower().split()).rstrip(":")
 
 
-def _dedup_key(c: PairCandidate) -> tuple[int, str, str]:
+def _dedup_key(c: PairCandidate) -> tuple[int, str, str, int | None]:
     """Group candidates representing the same logical pair.
 
     Two candidates collapse to the same key when both their label AND value
@@ -116,7 +116,7 @@ def _dedup_key(c: PairCandidate) -> tuple[int, str, str]:
     duplicates (e.g. Titular 1 / Titular 2 forms have identical labels but
     different values) while removing parsing artefacts.
     """
-    return (c.page, _normalise(c.label_text), _normalise(c.value_text))
+    return (c.page, _normalise(c.label_text), _normalise(c.value_text), c.column_index)
 
 
 def _pick_winner(group: list[PairCandidate]) -> tuple[PairCandidate, list[str]]:
@@ -125,11 +125,42 @@ def _pick_winner(group: list[PairCandidate]) -> tuple[PairCandidate, list[str]]:
     Highest score wins; ties broken by emitter base score (so D-2col beats
     L-horizontal on a tie). Evidence aggregates every rule that fired for
     this label — we use that to bump confidence when 2+ rules agree.
+
+    For presentation, when the winning candidate's label is a whitespace-
+    collapsed variant (e.g. `'PrimeraTarjetaEmitida'` extracted from a
+    pdfplumber cell where the PDF tokeniser dropped spaces) and another
+    candidate in the group carries the readable form (`'Primera Tarjeta
+    Emitida'`), we adopt the readable label/bbox while keeping the winner's
+    score and rule. The candidates share the same normalised key, so this
+    is a cosmetic choice — never a semantic one.
     """
     scored = sorted(
         group, key=lambda c: (score_one(c), BASE_SCORE.get(c.rule, 0)), reverse=True
     )
     winner = scored[0]
+
+    readable = max(
+        group,
+        key=lambda c: (
+            c.label_text.count(" "),
+            len(c.label_text),
+            c.value_text.count(" "),
+        ),
+    )
+    if readable is not winner and readable.label_text.count(" ") > winner.label_text.count(" "):
+        winner = PairCandidate(
+            label_text=readable.label_text,
+            value_text=readable.value_text if readable.value_text.count(" ") >= winner.value_text.count(" ") else winner.value_text,
+            label_bbox=readable.label_bbox,
+            value_bbox=readable.value_bbox,
+            page=winner.page,
+            rule=winner.rule,
+            features=winner.features,
+            label_item=winner.label_item,
+            value_item=winner.value_item,
+            column_index=winner.column_index,
+        )
+
     evidence = []
     seen: set[str] = set()
     for c in scored:
@@ -175,6 +206,7 @@ def resolve_pairs(candidates: Iterable[PairCandidate]) -> tuple[Pair, ...]:
                 evidence=tuple(evidence),
                 section_title=None,  # filled by extractor.py with page sections
                 subsection_title=sub_title if isinstance(sub_title, str) else None,
+                column_index=winner.column_index,
             )
         )
 

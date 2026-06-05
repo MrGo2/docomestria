@@ -1,0 +1,1056 @@
+{
+  "captured_at": "2026-06-05T18:40:45Z",
+  "git_sha": "3ace7021ecf86b41f3f1433946d1937a16b8c6e3",
+  "git_dirty": true,
+  "stems": {
+    "azuredemo__LABORAL": {
+      "high_count": 15,
+      "high_pairs": [
+        {
+          "label": "Nº Procedimiento",
+          "value": "987-15",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Nº Documento",
+          "value": "X6573514E",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Fecha de emisión",
+          "value": "17 d’abr. 2026 17:14",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Titular:",
+          "value": "GHEORGHE ADRIAN OPREA ---",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Nº Seguridad Social:",
+          "value": "341005311371",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Situación actual:",
+          "value": "BAJA",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Fecha Situación:",
+          "value": "31.05.2019",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "CCC:",
+          "value": "",
+          "rule": "D-2col",
+          "score": 0.95,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Razón Social/Convenio/Régimen:",
+          "value": "RGIMEN ESPECIAL TRABAJADORES AUTNOMOS",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "NIF/CIF - Domicilio de Empresa:",
+          "value": "No Consta",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Fecha Alta:",
+          "value": "10.04.2018",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Fecha Efecto:",
+          "value": "10.04.2018",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Tipo Contrato:",
+          "value": "",
+          "rule": "D-2col",
+          "score": 0.95,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Coeficiente Tiempo parcial:",
+          "value": "0",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Grupo Cotización:",
+          "value": "",
+          "rule": "D-2col",
+          "score": 0.95,
+          "page": 1,
+          "column_index": null
+        }
+      ]
+    },
+    "azuredemo__PATRIMONIAL": {
+      "high_count": 35,
+      "high_pairs": [
+        {
+          "label": "Nº Procedimiento",
+          "value": "987/2015",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Nº Documento",
+          "value": "X6573514E",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Ejercicio fiscal",
+          "value": "2025",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Fecha de emisión",
+          "value": "17 d’abr. 2026 17:12",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "AEAT - Consulta Percepciones:",
+          "value": "0001 Operación Correcta. No existen datos.",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "AEAT - Consulta Actividades Economicas:",
+          "value": "0001 Operación Correcta. No existen datos.",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "AEAT - CuentasAmpliadas (mod. 196):",
+          "value": "0001 Operación Correcta. No existen datos.",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "AEAT - Consulta Fondos Inversion:",
+          "value": "0001 Operación Correcta. No existen datos.",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "DFNavarra - Consulta Capacidad Economica:",
+          "value": "0001 Operación Correcta. No existen datos.",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "SEPE - Consulta Prestaciones:",
+          "value": "0001 Operación Correcta. No existen datos.",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "DGP - Consulta DNI:",
+          "value": "Ok",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "INSS - Consulta Prestaciones Tarjeta Social Digital:",
+          "value": "Ok",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Entidades Financieras - Consultas por NIF:",
+          "value": "Ok",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "DFGuipuzcoa - Consulta Capacidad Economica:",
+          "value": "0001 Operacion Correcta. No existen datos.",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Nombre:",
+          "value": "GHEORGHE ADRIAN",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Primer Apellido:",
+          "value": "OPREA",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Segundo Apellido:",
+          "value": "",
+          "rule": "D-2col",
+          "score": 0.95,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "DNI:",
+          "value": "X6573514E",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Nacionalidad:",
+          "value": "RUMANIA",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Sexo:",
+          "value": "M",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Localidad:",
+          "value": "CLUJ",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Provincia:",
+          "value": "ROU",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Nombre del padre:",
+          "value": "GHEORGHE",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Nombre de la madre:",
+          "value": "MARIA",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 2,
+          "column_index": null
+        },
+        {
+          "label": "Fecha de nacimiento:",
+          "value": "10/02/1978",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 2,
+          "column_index": null
+        },
+        {
+          "label": "Localidad:",
+          "value": "TERRASSA",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 2,
+          "column_index": null
+        },
+        {
+          "label": "Provincia:",
+          "value": "BARCELONA",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 2,
+          "column_index": null
+        },
+        {
+          "label": "Código postal:",
+          "value": "08227",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 2,
+          "column_index": null
+        },
+        {
+          "label": "Domicilio:",
+          "value": "AVENIDA MADRID, 238 PBJ",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 2,
+          "column_index": null
+        },
+        {
+          "label": "Fecha de expedición:",
+          "value": "30/11/2011",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 2,
+          "column_index": null
+        },
+        {
+          "label": "Fecha de caducidad:",
+          "value": "01/01/9999",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 2,
+          "column_index": null
+        },
+        {
+          "label": "Número de soporte:",
+          "value": "C02572648",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 2,
+          "column_index": null
+        },
+        {
+          "label": "Nombre:",
+          "value": "GHEORGHE ADRIAN",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Primer apellido:",
+          "value": "OPREA",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Teléfono:",
+          "value": "631723839",
+          "rule": "L-horizontal",
+          "score": 0.85,
+          "page": 3,
+          "column_index": null
+        }
+      ]
+    },
+    "azuredemo__BBVA3": {
+      "high_count": 21,
+      "high_pairs": [
+        {
+          "label": "Contrato Marco de Operaciones Bancarias versión",
+          "value": "0006",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Contrato Núm.",
+          "value": "0182 - 0539 - 0615 - 00000028350350",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Tipo Identificación",
+          "value": "NIF PERSONA FISICA",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "N.I.F.",
+          "value": "009786573G",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Tipo Identificación",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "N.I.F.",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Nombre y apellidos",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Nombre y apellidos",
+          "value": "JULIO ALVAREZ SALGUERO",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Límite Diario de Disposiciones de Efectivo en Cajeros",
+          "value": "1.000,00",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Límite Diario de Disposiciones de Efectivo en Cajeros",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "a Crédito (Cajeros y/o oficinas)",
+          "value": "900,00",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "a Crédito (Cajeros y/o oficinas)",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Clave Restricción",
+          "value": "SIN RESTRICCIONES",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Clave Restricción",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Sistema de reembolso",
+          "value": "TOTAL",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Límite de Crédito",
+          "value": "900,00",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Importes en",
+          "value": "EUR",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Pago Personalizado",
+          "value": "18,0000",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Cuenta de Crédito de la Tarjeta/Pago Aplazado",
+          "value": "22,8000",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Pago Total (para disposiciones de efectivo y/o traspasos a cuenta de domiciliación de pagos)",
+          "value": "22,8000",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Moratorio, sobre cuotas Vencidas y no satisfechas",
+          "value": "Detalle en cláusula de Intereses",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        }
+      ]
+    },
+    "azuredemo__BBVA4": {
+      "high_count": 32,
+      "high_pairs": [
+        {
+          "label": "Contrato Núm.",
+          "value": "0182 - 0977 - 0615 - 00000030895134",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Tipo Identificación",
+          "value": "NIF QUE COMIENCEN CON X Y Z",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "N.I.F.",
+          "value": "X3669812R",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Tipo Identificación",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "N.I.F.",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Nombre y apellidos",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Nombre y apellidos",
+          "value": "PABLO JAVIER CALVO",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Límite Diario de Disposiciones de Efectivo en Cajeros",
+          "value": "1.000,00",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Límite Diario de Disposiciones de Efectivo en Cajeros",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "a Crédito (Cajeros y/o oficinas)",
+          "value": "0,00",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "a Crédito (Cajeros y/o oficinas)",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Clave Restricción",
+          "value": "SIN RESTRICCIONES",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Clave Restricción",
+          "value": "-",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Sistema de reembolso",
+          "value": "CANTIDAD FIJA 20,00",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 2
+        },
+        {
+          "label": "Límite de Crédito",
+          "value": "600,00",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Importes en",
+          "value": "EUR",
+          "rule": "L-twocol-form",
+          "score": 0.88,
+          "page": 1,
+          "column_index": 1
+        },
+        {
+          "label": "Primera Tarjeta Emitida",
+          "value": "43,00",
+          "rule": "D-2col",
+          "score": 0.9,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Pago Personalizado",
+          "value": "18,0000",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Cuenta de Crédito de la Tarjeta/Pago Aplazado",
+          "value": "17,5200",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Pago Total (para disposiciones de efectivo y/o traspasos a cuenta de domiciliación de pagos)",
+          "value": "17,5200",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Moratorio, sobre cuotas Vencidas y no satisfechas",
+          "value": "Detalle en cláusula de Intereses",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "Comisiónporretiradadeefectivo\nmediantetarjetaencajeros\nautomaticosyenoficinas",
+          "value": "Adébito",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "RestodeTarjetas",
+          "value": "20,00",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "CajerosGrupoBBVAenEspaña",
+          "value": "0,0000 0,00",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "CajerosdeentidadesdistintasdelGrupoBBVAen\nEspaña",
+          "value": "Nota1 Nota1",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "CajerosfueradeEspaña",
+          "value": "4,5000 3,00",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "OficinasdelGrupoBBVAenEspaña",
+          "value": "0,0000 0,00",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "OficinasenotrasEntidadesenelcorrespondiente\nesquemademediosdepago",
+          "value": "5,0000 3,00",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "OficinasdeotrasEntidadesNacionalesyPaises\nU.E.(enEuros)",
+          "value": "5,0000 3,00",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "OficinasdeEntidadesenelExtranjeroyU.E.\n(noEuro)",
+          "value": "5,0000 3,00",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 1,
+          "column_index": null
+        },
+        {
+          "label": "NIF TITULAR 1",
+          "value": "X3669812R",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 11,
+          "column_index": null
+        },
+        {
+          "label": "NIF TITULAR 2",
+          "value": "-",
+          "rule": "L-inline-split",
+          "score": 0.85,
+          "page": 11,
+          "column_index": null
+        }
+      ]
+    },
+    "azuredemo__BBVA5": {
+      "high_count": 25,
+      "high_pairs": [
+        {
+          "label": "Importe Total del Préstamo (Importe en letra y número)",
+          "value": "29.000,00 Veintinueve mil euros",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Fecha Entrada en Vigor",
+          "value": "29-03-2021",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Vencimiento Final",
+          "value": "31-03-2029",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Entrega del Importe del Préstamo (mediante Abono en Cuenta )",
+          "value": "ABONO EN CUENTA 0182-0719-22-0201514439",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Interés Nominal de Demora",
+          "value": "Tipo de Interés Nominal + 2 puntos",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Comisión de Apertura",
+          "value": "2,3000%",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Comisión de Cancelación Anticipada Total",
+          "value": "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación.",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Comisión de Cancelación Anticipada Parcial",
+          "value": "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación.",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Interés Nominal Anual",
+          "value": "11,2000%",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": 1
+        },
+        {
+          "label": "Interés Nominal Anual",
+          "value": "10,2000%",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": 2
+        },
+        {
+          "label": "TAE",
+          "value": "12,6020%",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": 1
+        },
+        {
+          "label": "TAE",
+          "value": "11,4813%",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": 2
+        },
+        {
+          "label": "Importe Total Adeudado (Importe Total + Intereses + Gastos)",
+          "value": "44.794,73€",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": 1
+        },
+        {
+          "label": "Importe Total Adeudado (Importe Total + Intereses + Gastos)",
+          "value": "43.299,05€",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": 2
+        },
+        {
+          "label": "Cuota",
+          "value": "458,68€",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": 1
+        },
+        {
+          "label": "Cuota",
+          "value": "443,13€",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": 2
+        },
+        {
+          "label": "Gasto Reclamación Posiciones Deudoras",
+          "value": "30,00 euros",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Domiciliación de Cuotas",
+          "value": "CUENTA 0182-0719-22-0201514439 BBVA OVIEDO-PRIMO DE RIVERA PL. PRIMO RIVERA, 3",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 3,
+          "column_index": null
+        },
+        {
+          "label": "Acción declarativa",
+          "value": "Dirigirse al Juez para solicitar que se pronuncie sobre la validez del Contrato o alguna parte del mismo.",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 16,
+          "column_index": null
+        },
+        {
+          "label": "Acción ejecutiva",
+          "value": "Dirigirse al Juez para solicitar que ordene al condenado a ejecutar una obligación, en el caso de este Contrato, al pago de la deuda.",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 16,
+          "column_index": null
+        },
+        {
+          "label": "Compensación",
+          "value": "Es una figura jurídica que regula nuestro Código Civil como una de las formas de extinguir las obligaciones entre partes, y que tiene lugar cuando dos personas son recíprocamente acreedor y deudor la una de la otra. En el caso de este Contrato, Usted es el deudor de BBVA por el importe total adeudado y BBVA es el acreedor por igual importe. Ej: Usted tiene una deuda con BBVA de 1000€ y un depósito por importe de 1500€. Si Usted no paga, BBVA puede cobrarse su deuda con el importe del depósito de su propiedad hasta los 1000€.",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 16,
+          "column_index": null
+        },
+        {
+          "label": "Derecho de reembolso",
+          "value": "Es el derecho de los titulares de participaciones de Fondos de Inversión de pedir la liquidación de su inversión de modo que se le abone la cuantía equivalente al valor liquidativo de las participaciones al momento de solicitar su reembolso.",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 16,
+          "column_index": null
+        },
+        {
+          "label": "Intereses de demora",
+          "value": "Es la cantidad que BBVA le cobra si se retrasa en el pago de alguna de las cuotas que figure en el calendario de pagos.",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 16,
+          "column_index": null
+        },
+        {
+          "label": "Período de carencia",
+          "value": "Es un periodo de tiempo, normalmente en los meses siguientes a la firma del Contrato, en los que quien recibe el préstamo e inicia el pago de las cuotas periódicas, no está devolviendo el importe prestado, sino únicamente los intereses de ese período. Para gozar de este derecho debería pactarse expresamente en su Contrato si fuera el caso.",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 16,
+          "column_index": null
+        },
+        {
+          "label": "Procedimiento ejecutivo",
+          "value": "Es el proceso ante el Juez para ejercer una acción ejecutiva encaminada a obtener el pago de una deuda. Es un procedimiento muy ágil en el que sólo se pueden realizar alegaciones concretas previstas por la ley para evitar el pago. La iniciación de un procedimiento ejecutivo tiene como requisito legal que haya un título ejecutivo.",
+          "rule": "D-2col",
+          "score": 0.8,
+          "page": 16,
+          "column_index": null
+        }
+      ]
+    }
+  }
+}

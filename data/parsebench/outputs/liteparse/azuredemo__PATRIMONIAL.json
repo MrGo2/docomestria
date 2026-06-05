@@ -1,0 +1,1748 @@
+{
+  "pdf": "azuredemo__PATRIMONIAL.pdf",
+  "engine": "liteparse",
+  "elapsed_seconds": 0.076,
+  "count": 145,
+  "items": [
+    {
+      "text": "PLATAFORMA DE",
+      "bbox": {
+        "x": 88.0,
+        "y": 36.3349609375,
+        "w": 60.662017822265625,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "SERVICIOS DEL",
+      "bbox": {
+        "x": 88.0,
+        "y": 44.4749755859375,
+        "w": 54.0679931640625,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "PUNTO NEUTRO",
+      "bbox": {
+        "x": 88.0,
+        "y": 52.625,
+        "w": 56.0,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Consulta Integral Patrimonio",
+      "bbox": {
+        "x": 217.82000732421875,
+        "y": 51.52001953125,
+        "w": 191.365966796875,
+        "h": 15.62396240234375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 14.0,
+      "page": 1
+    },
+    {
+      "text": "JUDICIAL",
+      "bbox": {
+        "x": 88.0,
+        "y": 60.76495361328125,
+        "w": 32.277000427246094,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Datos Petición",
+      "bbox": {
+        "x": 255.82000732421875,
+        "y": 112.59002685546875,
+        "w": 83.35198974609375,
+        "h": 13.3919677734375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 12.0,
+      "page": 1
+    },
+    {
+      "text": "Nº Procedimiento: 987/2015",
+      "bbox": {
+        "x": 180.0,
+        "y": 133.6500244140625,
+        "w": 130.3699951171875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Nº Documento: X6573514E",
+      "bbox": {
+        "x": 180.0,
+        "y": 153.6500244140625,
+        "w": 126.469970703125,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Ejercicio fiscal: 2025",
+      "bbox": {
+        "x": 180.0,
+        "y": 173.6500244140625,
+        "w": 97.83999633789062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Fecha de emisión: 17 d’abr. 2026 17:12",
+      "bbox": {
+        "x": 180.0,
+        "y": 193.6500244140625,
+        "w": 181.2099609375,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Servicios Consultados",
+      "bbox": {
+        "x": 232.80999755859375,
+        "y": 222.59002685546875,
+        "w": 129.37200927734375,
+        "h": 13.3919677734375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 12.0,
+      "page": 1
+    },
+    {
+      "text": "AEAT - Consulta",
+      "bbox": {
+        "x": 89.11000061035156,
+        "y": 241.34002685546875,
+        "w": 78.88999938964844,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "0001 Operación Correcta. No existen datos.",
+      "bbox": {
+        "x": 180.0,
+        "y": 247.1300048828125,
+        "w": 195.08999633789062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Percepciones:",
+      "bbox": {
+        "x": 99.63999938964844,
+        "y": 252.98004150390625,
+        "w": 68.36000061035156,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "AEAT - Consulta Actividades",
+      "bbox": {
+        "x": 30.200000762939453,
+        "y": 268.34002685546875,
+        "w": 137.79998779296875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "0001 Operación Correcta. No existen datos.",
+      "bbox": {
+        "x": 180.0,
+        "y": 274.1300048828125,
+        "w": 195.08999633789062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Economicas:",
+      "bbox": {
+        "x": 105.76000213623047,
+        "y": 279.98004150390625,
+        "w": 62.240013122558594,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "AEAT - CuentasAmpliadas",
+      "bbox": {
+        "x": 41.869998931884766,
+        "y": 295.34002685546875,
+        "w": 126.12998962402344,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "0001 Operación Correcta. No existen datos.",
+      "bbox": {
+        "x": 180.0,
+        "y": 301.1300048828125,
+        "w": 195.08999633789062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "(mod. 196):",
+      "bbox": {
+        "x": 114.66000366210938,
+        "y": 306.98004150390625,
+        "w": 53.34001159667969,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "AEAT - Consulta Fondos",
+      "bbox": {
+        "x": 50.220001220703125,
+        "y": 322.34002685546875,
+        "w": 117.77999877929688,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "0001 Operación Correcta. No existen datos.",
+      "bbox": {
+        "x": 180.0,
+        "y": 328.1300048828125,
+        "w": 195.08999633789062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Inversion:",
+      "bbox": {
+        "x": 120.20999908447266,
+        "y": 333.9800109863281,
+        "w": 47.790000915527344,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "DFNavarra - Consulta",
+      "bbox": {
+        "x": 65.76000213623047,
+        "y": 349.34002685546875,
+        "w": 102.23999786376953,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "0001 Operación Correcta. No existen datos.",
+      "bbox": {
+        "x": 180.0,
+        "y": 355.1300048828125,
+        "w": 195.08999633789062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Capacidad Economica:",
+      "bbox": {
+        "x": 57.970001220703125,
+        "y": 360.9800109863281,
+        "w": 110.02998352050781,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "SEPE - Consulta",
+      "bbox": {
+        "x": 89.6500015258789,
+        "y": 376.34002685546875,
+        "w": 78.3499984741211,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "0001 Operación Correcta. No existen datos.",
+      "bbox": {
+        "x": 180.0,
+        "y": 382.1300048828125,
+        "w": 195.08999633789062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Prestaciones:",
+      "bbox": {
+        "x": 102.41999816894531,
+        "y": 387.9800109863281,
+        "w": 65.58000183105469,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "DGP - Consulta DNI:",
+      "bbox": {
+        "x": 71.33000183105469,
+        "y": 405.6600036621094,
+        "w": 96.67001342773438,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Ok",
+      "bbox": {
+        "x": 180.0,
+        "y": 405.6300048828125,
+        "w": 12.779998779296875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "INSS - Consulta Prestaciones",
+      "bbox": {
+        "x": 27.959999084472656,
+        "y": 423.02001953125,
+        "w": 140.03997802734375,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Tarjeta Social Digital:",
+      "bbox": {
+        "x": 66.30000305175781,
+        "y": 434.6600036621094,
+        "w": 101.69999694824219,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Ok",
+      "bbox": {
+        "x": 180.0,
+        "y": 434.6300048828125,
+        "w": 12.779998779296875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Ok Entidades Financieras -",
+      "bbox": {
+        "x": 55.7400016784668,
+        "y": 461.34002685546875,
+        "w": 137.0399932861328,
+        "h": 16.949951171875
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Consultas por NIF:",
+      "bbox": {
+        "x": 78.55000305175781,
+        "y": 472.9800109863281,
+        "w": 89.45001220703125,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "DFGuipuzcoa - Consulta",
+      "bbox": {
+        "x": 51.880001068115234,
+        "y": 488.34002685546875,
+        "w": 116.1199951171875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "0001 Operacion Correcta. No existen datos.",
+      "bbox": {
+        "x": 180.0,
+        "y": 494.1300048828125,
+        "w": 195.08999633789062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Capacidad Economica:",
+      "bbox": {
+        "x": 57.970001220703125,
+        "y": 499.9800109863281,
+        "w": 110.02998352050781,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "DGP - Consulta DNI",
+      "bbox": {
+        "x": 241.5,
+        "y": 526.5900268554688,
+        "w": 112.00799560546875,
+        "h": 13.39202880859375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 12.0,
+      "page": 1
+    },
+    {
+      "text": "Datos Personales",
+      "bbox": {
+        "x": 255.5399932861328,
+        "y": 547.6600341796875,
+        "w": 83.91999816894531,
+        "h": 11.159912109375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Nombre:",
+      "bbox": {
+        "x": 126.88999938964844,
+        "y": 567.6600341796875,
+        "w": 41.11000061035156,
+        "h": 11.159912109375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "GHEORGHE ADRIAN",
+      "bbox": {
+        "x": 180.0,
+        "y": 567.6300048828125,
+        "w": 98.89999389648438,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Primer Apellido:",
+      "bbox": {
+        "x": 90.76000213623047,
+        "y": 587.6600341796875,
+        "w": 77.23999786376953,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "OPREA",
+      "bbox": {
+        "x": 180.0,
+        "y": 587.6300048828125,
+        "w": 35.02000427246094,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Segundo Apellido:",
+      "bbox": {
+        "x": 79.66000366210938,
+        "y": 607.6600341796875,
+        "w": 88.34001159667969,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "DNI:",
+      "bbox": {
+        "x": 147.4499969482422,
+        "y": 627.6600341796875,
+        "w": 20.550003051757812,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "X6573514E",
+      "bbox": {
+        "x": 180.0,
+        "y": 627.6300048828125,
+        "w": 52.25999450683594,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Nacionalidad:",
+      "bbox": {
+        "x": 102.43000030517578,
+        "y": 647.6600341796875,
+        "w": 65.56999969482422,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "RUMANIA",
+      "bbox": {
+        "x": 180.0,
+        "y": 647.6300048828125,
+        "w": 46.1199951171875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Sexo:",
+      "bbox": {
+        "x": 140.77000427246094,
+        "y": 667.6600341796875,
+        "w": 27.229995727539062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "M",
+      "bbox": {
+        "x": 180.0,
+        "y": 667.6300048828125,
+        "w": 8.330001831054688,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Datos Nacimiento",
+      "bbox": {
+        "x": 255.27000427246094,
+        "y": 687.6600341796875,
+        "w": 84.45997619628906,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Localidad:",
+      "bbox": {
+        "x": 117.98999786376953,
+        "y": 707.6600341796875,
+        "w": 50.01000213623047,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "CLUJ",
+      "bbox": {
+        "x": 180.0,
+        "y": 707.6300048828125,
+        "w": 25.0,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Provincia:",
+      "bbox": {
+        "x": 119.6500015258789,
+        "y": 727.6599731445312,
+        "w": 48.349998474121094,
+        "h": 11.1600341796875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "ROU",
+      "bbox": {
+        "x": 180.0,
+        "y": 727.6300048828125,
+        "w": 22.220001220703125,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Nombre del padre:",
+      "bbox": {
+        "x": 79.6500015258789,
+        "y": 747.6599731445312,
+        "w": 88.3499984741211,
+        "h": 11.1600341796875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "GHEORGHE",
+      "bbox": {
+        "x": 180.0,
+        "y": 747.6300048828125,
+        "w": 58.339996337890625,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los",
+      "bbox": {
+        "x": 32.0,
+        "y": 771.27001953125,
+        "w": 516.5637817382812,
+        "h": 6.69598388671875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 1
+    },
+    {
+      "text": "casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5",
+      "bbox": {
+        "x": 32.0,
+        "y": 778.25,
+        "w": 527.5739135742188,
+        "h": 6.69598388671875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 1
+    },
+    {
+      "text": "de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta",
+      "bbox": {
+        "x": 32.0,
+        "y": 785.22998046875,
+        "w": 507.22772216796875,
+        "h": 6.696044921875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 1
+    },
+    {
+      "text": "información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "bbox": {
+        "x": 32.0,
+        "y": 792.219970703125,
+        "w": 396.5158996582031,
+        "h": 6.696044921875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 1
+    },
+    {
+      "text": "17/04/26 17:13",
+      "bbox": {
+        "x": 20.0,
+        "y": 806.3599853515625,
+        "w": 53.37599182128906,
+        "h": 8.92803955078125
+      },
+      "font_name": "Helvetica",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Página 1 de 4",
+      "bbox": {
+        "x": 490.29998779296875,
+        "y": 806.3599853515625,
+        "w": 49.37200927734375,
+        "h": 8.92803955078125
+      },
+      "font_name": "Helvetica",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "PLATAFORMA DE",
+      "bbox": {
+        "x": 88.0,
+        "y": 36.3349609375,
+        "w": 60.662017822265625,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 2
+    },
+    {
+      "text": "SERVICIOS DEL",
+      "bbox": {
+        "x": 88.0,
+        "y": 44.4749755859375,
+        "w": 54.0679931640625,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 2
+    },
+    {
+      "text": "PUNTO NEUTRO",
+      "bbox": {
+        "x": 88.0,
+        "y": 52.625,
+        "w": 56.0,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 2
+    },
+    {
+      "text": "Consulta Integral Patrimonio",
+      "bbox": {
+        "x": 217.82000732421875,
+        "y": 51.52001953125,
+        "w": 191.365966796875,
+        "h": 15.62396240234375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 14.0,
+      "page": 2
+    },
+    {
+      "text": "JUDICIAL",
+      "bbox": {
+        "x": 88.0,
+        "y": 60.76495361328125,
+        "w": 32.277000427246094,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 2
+    },
+    {
+      "text": "Nombre de la madre:",
+      "bbox": {
+        "x": 68.52999877929688,
+        "y": 103.6600341796875,
+        "w": 99.47000122070312,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "MARIA",
+      "bbox": {
+        "x": 180.0,
+        "y": 103.6300048828125,
+        "w": 31.67999267578125,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Fecha de nacimiento:",
+      "bbox": {
+        "x": 65.75,
+        "y": 123.6600341796875,
+        "w": 102.25001525878906,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "10/02/1978",
+      "bbox": {
+        "x": 180.0,
+        "y": 123.6300048828125,
+        "w": 50.040008544921875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Dirección",
+      "bbox": {
+        "x": 274.7099914550781,
+        "y": 143.6600341796875,
+        "w": 45.569976806640625,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Localidad:",
+      "bbox": {
+        "x": 117.98999786376953,
+        "y": 163.6600341796875,
+        "w": 50.01000213623047,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "TERRASSA",
+      "bbox": {
+        "x": 180.0,
+        "y": 163.6300048828125,
+        "w": 53.910003662109375,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Provincia:",
+      "bbox": {
+        "x": 119.6500015258789,
+        "y": 183.6600341796875,
+        "w": 48.349998474121094,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "BARCELONA",
+      "bbox": {
+        "x": 180.0,
+        "y": 183.6300048828125,
+        "w": 61.69000244140625,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Código postal:",
+      "bbox": {
+        "x": 98.0,
+        "y": 203.6600341796875,
+        "w": 70.00001525878906,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "08227",
+      "bbox": {
+        "x": 180.0,
+        "y": 203.6300048828125,
+        "w": 27.800003051757812,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Domicilio:",
+      "bbox": {
+        "x": 119.66000366210938,
+        "y": 223.6600341796875,
+        "w": 48.339996337890625,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "AVENIDA MADRID, 238 PBJ",
+      "bbox": {
+        "x": 180.0,
+        "y": 223.6300048828125,
+        "w": 129.47998046875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Otros datos",
+      "bbox": {
+        "x": 269.44000244140625,
+        "y": 343.6600036621094,
+        "w": 56.1199951171875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Fecha de expedición:",
+      "bbox": {
+        "x": 66.30000305175781,
+        "y": 363.6600036621094,
+        "w": 101.70001220703125,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "30/11/2011",
+      "bbox": {
+        "x": 180.0,
+        "y": 363.6300048828125,
+        "w": 50.040008544921875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Equipo de expedición:",
+      "bbox": {
+        "x": 61.310001373291016,
+        "y": 383.6600036621094,
+        "w": 106.69000244140625,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Fecha de caducidad:",
+      "bbox": {
+        "x": 69.08000183105469,
+        "y": 403.6600036621094,
+        "w": 98.91999816894531,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "01/01/9999",
+      "bbox": {
+        "x": 180.0,
+        "y": 403.6300048828125,
+        "w": 50.040008544921875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "Número de soporte:",
+      "bbox": {
+        "x": 72.98999786376953,
+        "y": 423.6600036621094,
+        "w": 95.01000213623047,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "C02572648",
+      "bbox": {
+        "x": 180.0,
+        "y": 423.6300048828125,
+        "w": 51.69999694824219,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 2
+    },
+    {
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los",
+      "bbox": {
+        "x": 32.0,
+        "y": 771.27001953125,
+        "w": 516.5637817382812,
+        "h": 6.69598388671875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 2
+    },
+    {
+      "text": "casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5",
+      "bbox": {
+        "x": 32.0,
+        "y": 778.25,
+        "w": 527.5739135742188,
+        "h": 6.69598388671875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 2
+    },
+    {
+      "text": "de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta",
+      "bbox": {
+        "x": 32.0,
+        "y": 785.22998046875,
+        "w": 507.22772216796875,
+        "h": 6.696044921875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 2
+    },
+    {
+      "text": "información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "bbox": {
+        "x": 32.0,
+        "y": 792.219970703125,
+        "w": 396.5158996582031,
+        "h": 6.696044921875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 2
+    },
+    {
+      "text": "17/04/26 17:13",
+      "bbox": {
+        "x": 20.0,
+        "y": 806.3599853515625,
+        "w": 53.37599182128906,
+        "h": 8.92803955078125
+      },
+      "font_name": "Helvetica",
+      "font_size": 8.0,
+      "page": 2
+    },
+    {
+      "text": "Página 2 de 4",
+      "bbox": {
+        "x": 490.29998779296875,
+        "y": 806.3599853515625,
+        "w": 49.37200927734375,
+        "h": 8.92803955078125
+      },
+      "font_name": "Helvetica",
+      "font_size": 8.0,
+      "page": 2
+    },
+    {
+      "text": "PLATAFORMA DE",
+      "bbox": {
+        "x": 88.0,
+        "y": 36.3349609375,
+        "w": 60.662017822265625,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 3
+    },
+    {
+      "text": "SERVICIOS DEL",
+      "bbox": {
+        "x": 88.0,
+        "y": 44.4749755859375,
+        "w": 54.0679931640625,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 3
+    },
+    {
+      "text": "PUNTO NEUTRO",
+      "bbox": {
+        "x": 88.0,
+        "y": 52.625,
+        "w": 56.0,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 3
+    },
+    {
+      "text": "Consulta Integral Patrimonio",
+      "bbox": {
+        "x": 217.82000732421875,
+        "y": 51.52001953125,
+        "w": 191.365966796875,
+        "h": 15.62396240234375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 14.0,
+      "page": 3
+    },
+    {
+      "text": "JUDICIAL",
+      "bbox": {
+        "x": 88.0,
+        "y": 60.76495361328125,
+        "w": 32.277000427246094,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 3
+    },
+    {
+      "text": "INSS - Consulta Prestaciones Tarjeta Social Digital",
+      "bbox": {
+        "x": 152.7899932861328,
+        "y": 112.59002685546875,
+        "w": 289.427978515625,
+        "h": 13.3919677734375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 12.0,
+      "page": 3
+    },
+    {
+      "text": "Titular",
+      "bbox": {
+        "x": 282.2200012207031,
+        "y": 133.6600341796875,
+        "w": 30.69000244140625,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "Nombre:",
+      "bbox": {
+        "x": 126.88999938964844,
+        "y": 153.6600341796875,
+        "w": 41.11000061035156,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "GHEORGHE ADRIAN",
+      "bbox": {
+        "x": 180.0,
+        "y": 153.6300048828125,
+        "w": 98.89999389648438,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "Primer apellido:",
+      "bbox": {
+        "x": 92.41999816894531,
+        "y": 173.6600341796875,
+        "w": 75.58000183105469,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "OPREA",
+      "bbox": {
+        "x": 180.0,
+        "y": 173.6300048828125,
+        "w": 35.02000427246094,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "Segundo apellido:",
+      "bbox": {
+        "x": 81.31999969482422,
+        "y": 193.6600341796875,
+        "w": 86.68001556396484,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "---",
+      "bbox": {
+        "x": 180.0,
+        "y": 193.6300048828125,
+        "w": 9.990005493164062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "Teléfono:",
+      "bbox": {
+        "x": 123.0,
+        "y": 213.6600341796875,
+        "w": 45.0,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "631723839",
+      "bbox": {
+        "x": 180.0,
+        "y": 213.6300048828125,
+        "w": 50.040008544921875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "Sin Prestaciones",
+      "bbox": {
+        "x": 257.2099914550781,
+        "y": 233.6600341796875,
+        "w": 80.58999633789062,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 3
+    },
+    {
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los",
+      "bbox": {
+        "x": 32.0,
+        "y": 771.27001953125,
+        "w": 516.5637817382812,
+        "h": 6.69598388671875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 3
+    },
+    {
+      "text": "casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5",
+      "bbox": {
+        "x": 32.0,
+        "y": 778.25,
+        "w": 527.5739135742188,
+        "h": 6.69598388671875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 3
+    },
+    {
+      "text": "de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta",
+      "bbox": {
+        "x": 32.0,
+        "y": 785.22998046875,
+        "w": 507.22772216796875,
+        "h": 6.696044921875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 3
+    },
+    {
+      "text": "información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "bbox": {
+        "x": 32.0,
+        "y": 792.219970703125,
+        "w": 396.5158996582031,
+        "h": 6.696044921875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 3
+    },
+    {
+      "text": "17/04/26 17:13",
+      "bbox": {
+        "x": 20.0,
+        "y": 806.3599853515625,
+        "w": 53.37599182128906,
+        "h": 8.92803955078125
+      },
+      "font_name": "Helvetica",
+      "font_size": 8.0,
+      "page": 3
+    },
+    {
+      "text": "Página 3 de 4",
+      "bbox": {
+        "x": 490.29998779296875,
+        "y": 806.3599853515625,
+        "w": 49.37200927734375,
+        "h": 8.92803955078125
+      },
+      "font_name": "Helvetica",
+      "font_size": 8.0,
+      "page": 3
+    },
+    {
+      "text": "PLATAFORMA DE",
+      "bbox": {
+        "x": 88.0,
+        "y": 36.3349609375,
+        "w": 60.662017822265625,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 4
+    },
+    {
+      "text": "SERVICIOS DEL",
+      "bbox": {
+        "x": 88.0,
+        "y": 44.4749755859375,
+        "w": 54.0679931640625,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 4
+    },
+    {
+      "text": "PUNTO NEUTRO",
+      "bbox": {
+        "x": 88.0,
+        "y": 52.625,
+        "w": 56.0,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 4
+    },
+    {
+      "text": "Consulta Integral Patrimonio",
+      "bbox": {
+        "x": 217.82000732421875,
+        "y": 51.52001953125,
+        "w": 191.365966796875,
+        "h": 15.62396240234375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 14.0,
+      "page": 4
+    },
+    {
+      "text": "JUDICIAL",
+      "bbox": {
+        "x": 88.0,
+        "y": 60.76495361328125,
+        "w": 32.277000427246094,
+        "h": 7.81201171875
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 7.0,
+      "page": 4
+    },
+    {
+      "text": "Entidades Financieras - Consultas por NIF",
+      "bbox": {
+        "x": 176.8000030517578,
+        "y": 112.59002685546875,
+        "w": 241.39198303222656,
+        "h": 13.3919677734375
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 12.0,
+      "page": 4
+    },
+    {
+      "text": "Lista de productos",
+      "bbox": {
+        "x": 252.77000427246094,
+        "y": 133.6600341796875,
+        "w": 89.46000671386719,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica-Bold",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "IBAN",
+      "bbox": {
+        "x": 58.33000183105469,
+        "y": 157.1300048828125,
+        "w": 23.339996337890625,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "Entidad",
+      "bbox": {
+        "x": 135.5399932861328,
+        "y": 157.1300048828125,
+        "w": 33.90998840332031,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "Producto",
+      "bbox": {
+        "x": 197.49000549316406,
+        "y": 157.1300048828125,
+        "w": 40.02000427246094,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "Fecha",
+      "bbox": {
+        "x": 268.6099853515625,
+        "y": 151.32000732421875,
+        "w": 27.790008544921875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "Tipo",
+      "bbox": {
+        "x": 337.7699890136719,
+        "y": 151.32000732421875,
+        "w": 19.449981689453125,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "Saldo",
+      "bbox": {
+        "x": 399.7099914550781,
+        "y": 157.1300048828125,
+        "w": 25.57000732421875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "Divisa",
+      "bbox": {
+        "x": 463.8900146484375,
+        "y": 157.1300048828125,
+        "w": 27.220001220703125,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "Fecha valor",
+      "bbox": {
+        "x": 516.3800048828125,
+        "y": 157.1300048828125,
+        "w": 52.3800048828125,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "apertura",
+      "bbox": {
+        "x": 263.8800048828125,
+        "y": 162.95001220703125,
+        "w": 37.239990234375,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "intervención",
+      "bbox": {
+        "x": 320.5400085449219,
+        "y": 162.95001220703125,
+        "w": 53.910003662109375,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "Su solicitud a las entidades financieras está realizada pero faltan entidades por",
+      "bbox": {
+        "x": 180.0,
+        "y": 178.0,
+        "w": 350.869873046875,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "responder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a",
+      "bbox": {
+        "x": 180.0,
+        "y": 189.6300048828125,
+        "w": 386.85992431640625,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "EEFF.",
+      "bbox": {
+        "x": 180.0,
+        "y": 201.27001953125,
+        "w": 28.339996337890625,
+        "h": 11.15997314453125
+      },
+      "font_name": "Helvetica",
+      "font_size": 10.0,
+      "page": 4
+    },
+    {
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los",
+      "bbox": {
+        "x": 32.0,
+        "y": 771.27001953125,
+        "w": 516.5637817382812,
+        "h": 6.69598388671875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 4
+    },
+    {
+      "text": "casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5",
+      "bbox": {
+        "x": 32.0,
+        "y": 778.25,
+        "w": 527.5739135742188,
+        "h": 6.69598388671875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 4
+    },
+    {
+      "text": "de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta",
+      "bbox": {
+        "x": 32.0,
+        "y": 785.22998046875,
+        "w": 507.22772216796875,
+        "h": 6.696044921875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 4
+    },
+    {
+      "text": "información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "bbox": {
+        "x": 32.0,
+        "y": 792.219970703125,
+        "w": 396.5158996582031,
+        "h": 6.696044921875
+      },
+      "font_name": "Helvetica",
+      "font_size": 6.0,
+      "page": 4
+    },
+    {
+      "text": "17/04/26 17:13",
+      "bbox": {
+        "x": 20.0,
+        "y": 806.3599853515625,
+        "w": 53.37599182128906,
+        "h": 8.92803955078125
+      },
+      "font_name": "Helvetica",
+      "font_size": 8.0,
+      "page": 4
+    },
+    {
+      "text": "Página 4 de 4",
+      "bbox": {
+        "x": 490.29998779296875,
+        "y": 806.3599853515625,
+        "w": 49.37200927734375,
+        "h": 8.92803955078125
+      },
+      "font_name": "Helvetica",
+      "font_size": 8.0,
+      "page": 4
+    }
+  ]
+}

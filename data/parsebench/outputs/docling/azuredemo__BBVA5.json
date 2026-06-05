@@ -1,0 +1,4433 @@
+{
+  "pdf": "azuredemo__BBVA5.pdf",
+  "engine": "docling",
+  "elapsed_seconds": 1.811,
+  "count": 287,
+  "items": [
+    {
+      "bbox": {
+        "x": 143.566707,
+        "y": 449.87309300000004,
+        "w": 4.8493591160221,
+        "h": 365.375686
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción",
+      "self_ref": "#/texts/0",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 149.0675,
+        "y": 753.5040180000001,
+        "w": 4.8493591160221,
+        "h": 61.744760999999926
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/1",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.014404296875,
+        "y": 286.10736083984375,
+        "w": 84.30413818359375,
+        "h": 26.5450439453125
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/pictures/0",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.30181884765625,
+        "y": 279.5708312988281,
+        "w": 168.14898681640625,
+        "h": 31.6885986328125
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/pictures/1",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.50238600000006,
+        "y": 401.2990089999998,
+        "w": 322.0868040000001,
+        "h": 44.26953812154699
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Contrato de Préstamo Personal Bonificado",
+      "self_ref": "#/texts/2",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 179.25119400000008,
+        "y": 465.3428089999998,
+        "w": 309.71720300000004,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Contrato de Préstamo Personal nº 0182-5132-0083-00000000003752",
+      "self_ref": "#/texts/3",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.70077699999996,
+        "y": 513.496423,
+        "w": 349.07122099999975,
+        "h": 56.8266165745855
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "El documento que va a leer a continuación es un Contrato con BBVA para recibir un servicio bancario. No dude en pedirnos aclaraciones de lo que no entienda. Al final de este documento encontrará una explicación más detallada de los términos que encontrará señalizados con este símbolo para facilitar su comprensión.",
+      "self_ref": "#/texts/4",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 187.50237599999997,
+        "y": 619.1060209999999,
+        "w": 216.66640099999995,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 1,
+      "text": "El Contrato está compuesto por cinco partes:",
+      "self_ref": "#/texts/5",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 187.50237599999994,
+        "y": 647.9060199999999,
+        "w": 176.2131999999999,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Identificación de las partes contratantes",
+      "self_ref": "#/texts/6",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 187.5023789999999,
+        "y": 662.3060199999999,
+        "w": 171.74800099999993,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Condiciones económicas del préstamo",
+      "self_ref": "#/texts/7",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 187.50238699999989,
+        "y": 676.7060199999999,
+        "w": 101.71879999999999,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Condiciones generales",
+      "self_ref": "#/texts/8",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 187.50238699999989,
+        "y": 691.1060199999998,
+        "w": 109.48879999999997,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Condiciones particulares",
+      "self_ref": "#/texts/9",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 187.50238699999989,
+        "y": 705.5060199999998,
+        "w": 37.23000000000002,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Glosario",
+      "self_ref": "#/texts/10",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 187.502386,
+        "y": 731.9012209999999,
+        "w": 376.14199799999983,
+        "h": 32.82181657458557
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Tómese su tiempo y léalo atentamente. Asegúrese de que la información sobre Usted es correcta y de que ha comprendido el contenido de todo el Contrato. Usted lo firmará al final como manifestación de su conformidad con el mismo.",
+      "self_ref": "#/texts/11",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.748811000000103,
+        "y": 827.5288209999998,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/12",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.8488120000002,
+        "y": 827.5288209999998,
+        "w": 55.59519899999998,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "Página 1 de 16",
+      "self_ref": "#/texts/13",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 2,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/14",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.08641052246094,
+        "y": 22.44835090637207,
+        "w": 83.94984436035156,
+        "h": 25.916696548461914
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "",
+      "self_ref": "#/pictures/2",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.48065185546875,
+        "y": 16.01325798034668,
+        "w": 167.90277099609375,
+        "h": 30.954225540161133
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "",
+      "self_ref": "#/pictures/3",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 92.21720300000004,
+        "w": 168.53240000000005,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Nº 0182-5132-0083-00000000003752",
+      "self_ref": "#/texts/15",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 120.35480300000006,
+        "w": 249.42119700000023,
+        "h": 8.817016574585523
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "self_ref": "#/texts/16",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359900000004,
+        "y": 144.35240399999998,
+        "w": 263.44359599999996,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Por una parte, su nombre y apellidos (en adelante 'Usted'):",
+      "self_ref": "#/texts/17",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 178.22680100000002,
+        "w": 78.55400000000003,
+        "h": 12.343823204419891
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "TITULARES",
+      "self_ref": "#/texts/18",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 191.779199,
+        "y": 275.59398799999997,
+        "w": 80.93080100000003,
+        "h": 8.982622574585776
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "011075308A NIF",
+      "self_ref": "#/texts/19",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 266.248798,
+        "y": 314.59638700000005,
+        "w": 63.90319900000003,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "CENERA, 42",
+      "self_ref": "#/texts/20",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 266.248798,
+        "y": 343.093988,
+        "w": 27.80000000000001,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "33600",
+      "self_ref": "#/texts/21",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 191.779199,
+        "y": 357.34278800000004,
+        "w": 135.81039800000002,
+        "h": 8.831422574585588
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "MIERES DEL CAMINO Plaza",
+      "self_ref": "#/texts/22",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 246.00239700000003,
+        "y": 261.345191,
+        "w": 27.230000000000018,
+        "h": 8.81701657458575
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "JULIA",
+      "self_ref": "#/texts/23",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 276.746396,
+        "y": 231.34279200000003,
+        "w": 37.23000000000002,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "PRIETO",
+      "self_ref": "#/texts/24",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 276.746396,
+        "y": 247.09639200000004,
+        "w": 45.57000000000011,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "ALVAREZ",
+      "self_ref": "#/texts/25",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.999997,
+        "y": 207.87799300000006,
+        "w": 105.0272,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Sus Datos Personales",
+      "self_ref": "#/texts/26",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.999999,
+        "y": 232.55959400000006,
+        "w": 69.46000000000004,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Primer apellido",
+      "self_ref": "#/texts/27",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.999999,
+        "y": 246.95959400000004,
+        "w": 80.05000000000001,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Segundo apellido",
+      "self_ref": "#/texts/28",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 191.779199,
+        "y": 261.35959400000013,
+        "w": 35.56000000000003,
+        "h": 8.817016574585523
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Nombre",
+      "self_ref": "#/texts/29",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.999999,
+        "y": 299.757195,
+        "w": 60.56200000000001,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Su Domicilio",
+      "self_ref": "#/texts/30",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.999999,
+        "y": 314.157195,
+        "w": 68.89000000000004,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Domicilio fiscal",
+      "self_ref": "#/texts/31",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.999999,
+        "y": 342.957194,
+        "w": 63.920000000000016,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Código postal",
+      "self_ref": "#/texts/32",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.5023710000001,
+        "y": 390.4988000000001,
+        "w": 337.3643970000001,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Por otra parte, Banco Bilbao Vizcaya Argentaria S.A., (en adelante 'BBVA'):",
+      "self_ref": "#/texts/33",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.999983,
+        "y": 417.34039900000005,
+        "w": 343.508,
+        "h": 32.81461657458567
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "BBVA tiene su domicilio en la Plaza San Nicolás, número 4 de Bilbao. Su número es el 0182 en el Registro Especial de Instituciones Financieras de España y está sujeto a supervisión y control del Banco de España.",
+      "self_ref": "#/texts/34",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.50237000000016,
+        "y": 468.3451970000001,
+        "w": 127.28639800000002,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "En representación de BBVA:",
+      "self_ref": "#/texts/35",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.50236700000013,
+        "y": 492.3355970000001,
+        "w": 10.0,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "D.",
+      "self_ref": "#/texts/36",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.50236700000013,
+        "y": 516.3259970000001,
+        "w": 10.0,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "D.",
+      "self_ref": "#/texts/37",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 2,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/38",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848801,
+        "y": 827.528779,
+        "w": 55.59519899999998,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 2,
+      "text": "Página 2 de 16",
+      "self_ref": "#/texts/39",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 3,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/40",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.08984375,
+        "y": 22.379863739013672,
+        "w": 83.91561889648438,
+        "h": 25.950767517089844
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "",
+      "self_ref": "#/pictures/4",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.58203125,
+        "y": 15.89278507232666,
+        "w": 167.78045654296875,
+        "h": 31.016837120056152
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "",
+      "self_ref": "#/pictures/5",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 89.73880199999996,
+        "w": 262.093198,
+        "h": 12.343823204419891
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Condiciones Económicas del Préstamo",
+      "self_ref": "#/texts/41",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 176.56448364257812,
+        "y": 109.82891845703125,
+        "w": 384.7948913574219,
+        "h": 517.7764282226562
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "",
+      "self_ref": "#/tables/0",
+      "cells": [
+        [
+          "Importe Total del Préstamo (Importe en letra y número)",
+          "29.000,00 Veintinueve mil euros",
+          "29.000,00 Veintinueve mil euros",
+          "29.000,00 Veintinueve mil euros"
+        ],
+        [
+          "Fecha Entrada en Vigor",
+          "29-03-2021",
+          "29-03-2021",
+          "29-03-2021"
+        ],
+        [
+          "Vencimiento Final",
+          "31-03-2029",
+          "31-03-2029",
+          "31-03-2029"
+        ],
+        [
+          "Entrega del Importe del Préstamo (mediante Abono en Cuenta )",
+          "ABONO EN CUENTA 0182-0719-22-0201514439",
+          "ABONO EN CUENTA 0182-0719-22-0201514439",
+          "ABONO EN CUENTA 0182-0719-22-0201514439"
+        ],
+        [
+          "Interés Nominal de Demora",
+          "Tipo de Interés Nominal + 2 puntos",
+          "Tipo de Interés Nominal + 2 puntos",
+          "Tipo de Interés Nominal + 2 puntos"
+        ],
+        [
+          "Comisión de Apertura",
+          "2,3000%",
+          "Mínimo",
+          "euros"
+        ],
+        [
+          "Comisión de Cancelación Anticipada Total",
+          "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación.",
+          "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación.",
+          "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación."
+        ],
+        [
+          "Comisión de Cancelación Anticipada Parcial",
+          "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación.",
+          "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación.",
+          "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación."
+        ],
+        [
+          "",
+          "Sin nómina",
+          "Con nómina",
+          "Con nómina"
+        ],
+        [
+          "Interés Nominal Anual",
+          "11,2000%",
+          "10,2000%",
+          "10,2000%"
+        ],
+        [
+          "TAE",
+          "12,6020%",
+          "11,4813%",
+          "11,4813%"
+        ],
+        [
+          "Importe Total Adeudado (Importe Total + Intereses + Gastos)",
+          "44.794,73€",
+          "43.299,05€",
+          "43.299,05€"
+        ],
+        [
+          "Cuota",
+          "458,68€",
+          "443,13€",
+          "443,13€"
+        ],
+        [
+          "Gasto Reclamación Posiciones Deudoras",
+          "30,00 euros",
+          "30,00 euros",
+          "30,00 euros"
+        ],
+        [
+          "Domiciliación de Cuotas",
+          "CUENTA 0182-0719-22-0201514439 BBVA OVIEDO-PRIMO DE RIVERA PL. PRIMO RIVERA, 3",
+          "CUENTA 0182-0719-22-0201514439 BBVA OVIEDO-PRIMO DE RIVERA PL. PRIMO RIVERA, 3",
+          "CUENTA 0182-0719-22-0201514439 BBVA OVIEDO-PRIMO DE RIVERA PL. PRIMO RIVERA, 3"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 3,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/42",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848801,
+        "y": 827.528779,
+        "w": 55.59519899999998,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 3,
+      "text": "Página 3 de 16",
+      "self_ref": "#/texts/43",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 4,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/44",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.86216735839844,
+        "y": 22.499357223510742,
+        "w": 84.29853820800781,
+        "h": 25.989126205444336
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "",
+      "self_ref": "#/pictures/6",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75364500000023,
+        "y": 84.09559300000001,
+        "w": 178.91319800000002,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Amortización / Calendario de Pagos",
+      "self_ref": "#/texts/45",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25120000000004,
+        "y": 105.40039999999999,
+        "w": 317.83480599999996,
+        "h": 19.105816574585674
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Usted tiene que abonar 96 cuotas fijas de 458,68 euros a satisfacer mensualmente desde el 30-04-2021 hasta el 31-03-2029.",
+      "self_ref": "#/texts/46",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25119600000016,
+        "y": 136.2668,
+        "w": 343.3604089999998,
+        "h": 49.97221657458567
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "No obstante, desde la 'Fecha de Entrada en Vigor' del préstamo hasta el día 31-05-2021, BBVA le aplicará una reducción 1,0000 puntos porcentuales, por lo que durante ese plazo el importe de las cuotas será de 443,13 €, más un pago único en concepto de 'Intereses de Ajuste' de 24,31014 €, a satisfacer el 31-03-2021 según lo que Usted ha contratado.",
+      "self_ref": "#/texts/47",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25121500000023,
+        "y": 197.9996,
+        "w": 321.19400200000007,
+        "h": 60.26101657458571
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "BBVA revisará el día 31-05-2021, y después al vencimiento de cada semestre sucesivo contado desde ese día, las condiciones de bonificación que Usted cumpla y que se recogen en el apartado 3 Condiciones Particulares, y en función de ello aplicará durante el semestre siguiente a la fecha de revisión el tipo de interés que corresponda según el epígrafe 'Condiciones Económicas'.",
+      "self_ref": "#/texts/48",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 344.134791,
+        "w": 244.01880699999992,
+        "h": 15.870629834254146
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 4,
+      "text": "CONDICIONES GENERALES",
+      "self_ref": "#/texts/49",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75360100000003,
+        "y": 376.16639100000003,
+        "w": 203.36400100000006,
+        "h": 10.580419889502764
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 4,
+      "text": "1. Objeto del Contrato de préstamo.",
+      "self_ref": "#/texts/50",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358999999986,
+        "y": 401.58679100000006,
+        "w": 372.98400899999984,
+        "h": 56.82661657458573
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "1.1. En esta parte del Contrato se desarrollan las condiciones generales para la contratación de un préstamo personal. Con su firma, Usted está aceptando estas condiciones que no han sido negociadas individualmente, junto con las condiciones particulares del préstamo que serán aplicables, de acuerdo con la Ley 7/1998 sobre condiciones Generales de Contratación.",
+      "self_ref": "#/texts/51",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753584,
+        "y": 473.5867910000002,
+        "w": 375.73999599999996,
+        "h": 56.826616574585614
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "1.2. Un préstamo personal es un Contrato por el que BBVA le entrega una cantidad de dinero que Usted ha solicitado (importe del préstamo) y que se compromete a devolver, junto con un interés. El préstamo también genera comisiones y gastos. Por lo tanto, Usted asume con BBVA una deuda por la cantidad prestada más los intereses, comisiones y gastos que tiene que pagar (el importe total adeudado).",
+      "self_ref": "#/texts/52",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75354800000008,
+        "y": 545.5867910000002,
+        "w": 373.4912259999999,
+        "h": 32.82181657458557
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "1.3. El Contrato tiene una duración limitada que va desde la fecha de la entrega del importe del préstamo hasta la fecha máxima para la devolución del dinero prestado (Vencimiento Final).",
+      "self_ref": "#/texts/53",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75353899999993,
+        "y": 593.5819910000001,
+        "w": 369.068001,
+        "h": 32.82181657458557
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "1.4. En las condiciones particulares de este Contrato están las condiciones de bonificación de intereses de su préstamo, que serán revisadas por BBVA cada seis meses.",
+      "self_ref": "#/texts/54",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75351400000005,
+        "y": 641.5771910000001,
+        "w": 377.98001299999993,
+        "h": 32.82181657458557
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "1.5. BBVA le ha concedido este préstamo después de analizar su capacidad de devolución en virtud de su información personal y financiera. Usted no puede ceder o transmitir total o parcialmente este Contrato sin consentimiento expreso de BBVA.",
+      "self_ref": "#/texts/55",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7534960000001,
+        "y": 689.572391,
+        "w": 380.160814,
+        "h": 56.8266165745855
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "1.6. El Contrato se formaliza a través de una póliza que, en su caso, se firma con la intervención de un Notario para que pueda tener la consideración de título ejecutivo . Usted y BBVA acuerdan desde ahora que también se consideren título ejecutivo las copias autorizadas o testimonios notariales de la póliza que BBVA solicite para iniciar el procedimiento ejecutivo.",
+      "self_ref": "#/texts/56",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.5370788574219,
+        "y": 16.12999725341797,
+        "w": 167.85214233398438,
+        "h": 30.853702545166016
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "",
+      "self_ref": "#/pictures/7",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 4,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/57",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848801,
+        "y": 827.528779,
+        "w": 55.59519899999998,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 4,
+      "text": "Página 4 de 16",
+      "self_ref": "#/texts/58",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 5,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/59",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.66224670410156,
+        "y": 22.10220718383789,
+        "w": 84.68684387207031,
+        "h": 27.754589080810547
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "",
+      "self_ref": "#/pictures/8",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.41668701171875,
+        "y": 15.918508529663086,
+        "w": 168.177978515625,
+        "h": 31.46980094909668
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "",
+      "self_ref": "#/pictures/9",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75361500000008,
+        "y": 101.96880399999998,
+        "w": 312.103199,
+        "h": 10.580419889502764
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 5,
+      "text": "2. Costes del Contrato: intereses, comisiones y gastos",
+      "self_ref": "#/texts/60",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.251205,
+        "y": 122.59400300000004,
+        "w": 63.36439899999999,
+        "h": 8.817016574585523
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 5,
+      "text": "2.1. Intereses",
+      "self_ref": "#/texts/61",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.251205,
+        "y": 146.58440299999995,
+        "w": 349.053595,
+        "h": 32.82181657458568
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "El interés, es lo que paga Usted a BBVA a cambio de que le preste dinero y se denomina interés nominal anual. Para su cálculo, ver el apartado '2.Amortización' de las 'Condiciones Particulares del Contrato'.",
+      "self_ref": "#/texts/62",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.251205,
+        "y": 199.09400300000004,
+        "w": 360.712809,
+        "h": 44.824216574585535
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "Si Usted no cumple en el plazo establecido el pago de las cuotas periódicas, y estas se encuentren vencidas y no satisfechas, deberá abonar a BBVA además los intereses de demora por tal retraso, que se detallan en el apartado de las Condiciones Económicas del Préstamo.",
+      "self_ref": "#/texts/63",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25120299999998,
+        "y": 247.096403,
+        "w": 337.93600599999996,
+        "h": 20.819416574585716
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "El interés nominal de demora es igual al Interés Nominal Anual aplicado a la operación en el momento de su vencimiento más dos puntos porcentuales.",
+      "self_ref": "#/texts/64",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25119600000022,
+        "y": 285.342798,
+        "w": 365.1852089999996,
+        "h": 56.82661657458573
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "Los intereses de demora se calculan y liquidan igual que los intereses ordinarios pero por días naturales y por meses o fracción en su caso, y siempre por períodos vencidos acumulables al principal en sus fechas de liquidación, capitalizándose los intereses vencidos y no satisfechos de forma que aumenten el importe del préstamo, devengando nuevos intereses al tipo moratorio establecido.",
+      "self_ref": "#/texts/65",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.251205,
+        "y": 366.349989,
+        "w": 78.91439899999997,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 5,
+      "text": "2.2. Comisiones.",
+      "self_ref": "#/texts/66",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.251205,
+        "y": 394.091608,
+        "w": 361.30440499999986,
+        "h": 44.824216574585705
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "Las comisiones son cantidades que BBVA cobra por prestarle este servicio de préstamo o cuando se dan algunas circunstancias a lo largo del período que dure el Contrato y que se encuentran detalladas en el apartado 'Condiciones Económicas del Préstamo':",
+      "self_ref": "#/texts/67",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25120200000003,
+        "y": 460.10121,
+        "w": 362.40559599999983,
+        "h": 44.81701657458564
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "A. La comisión de apertura. Es la cantidad que cobra BBVA por las gestiones efectuadas para formalizar y poner el importe prestado a su disposición. Esta comisión se puede pagar de una sola vez al firmarse el Contrato y también puede financiarse, añadiendo dicha comisión al importe del préstamo.",
+      "self_ref": "#/texts/68",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25118800000013,
+        "y": 522.345178,
+        "w": 366.7544179999998,
+        "h": 104.83621657458536
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "B. La comisión de cancelación anticipada . Es la cantidad que cobra BBVA cada vez que Usted decide anticipar el pago de toda su deuda o de una parte. Si la cancelación anticipada es total, dicha comisión no podrá ser superior al 1% del importe del préstamo reembolsado anticipadamente, si el periodo restante entre el reembolso anticipado y la terminación acordada del préstamo es superior a un año. Si el periodo no supera el año la comisión no podrá ser superior al 0,5% del importe del préstamo reembolsado anticipadamente. Sin perjuicio de lo anterior, en uno u otro caso el Banco podrá percibir un mínimo de 11,50 Euros en concepto de coste administrativo de cancelación.",
+      "self_ref": "#/texts/69",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.251205,
+        "y": 660.35478,
+        "w": 56.13439900000003,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 5,
+      "text": "2.3. Gastos.",
+      "self_ref": "#/texts/70",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.251205,
+        "y": 683.43078,
+        "w": 351.85479899999973,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "La concesión del préstamo puede causar estos gastos que Usted debe abonar:",
+      "self_ref": "#/texts/71",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.2512099999999,
+        "y": 705.58518,
+        "w": 365.74199599999986,
+        "h": 30.971416574585646
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "A. Los gastos notariales de la firma del Contrato, cuando intervenga un notario, Estos gastos variarán según el importe prestado y serán calculados por el Notario. De modo informativo, le indicamos a continuación los aranceles oficiales:",
+      "self_ref": "#/texts/72",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 5,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/73",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848801,
+        "y": 827.528779,
+        "w": 55.59519899999998,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 5,
+      "text": "Página 5 de 16",
+      "self_ref": "#/texts/74",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 6,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/75",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.97439575195312,
+        "y": 22.37560272216797,
+        "w": 84.2635498046875,
+        "h": 26.204830169677734
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "",
+      "self_ref": "#/pictures/10",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.5635681152344,
+        "y": 16.0153751373291,
+        "w": 167.91867065429688,
+        "h": 31.10533332824707
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "",
+      "self_ref": "#/pictures/11",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75120300000003,
+        "y": 86.60120199999994,
+        "w": 321.2616019999999,
+        "h": 20.812216574585705
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "De modo informativo, le indicamos a continuación los aranceles oficiales establecidos legalmente:",
+      "self_ref": "#/texts/76",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75120300000006,
+        "y": 122.60120300000005,
+        "w": 309.03639999999996,
+        "h": 8.817016574585523
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "a) Cuando el importe no exceda de 6.010,12 euros: 90,151816 euros.",
+      "self_ref": "#/texts/77",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75120400000003,
+        "y": 134.596403,
+        "w": 337.92999800000007,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "b) Por el exceso comprendido entre 6.010,13 y 30.050,61 euros: 4,5 por mil.",
+      "self_ref": "#/texts/78",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75119700000005,
+        "y": 146.59880299999998,
+        "w": 348.4923980000001,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "c) Por el exceso comprendido entre 30.050,62 y 60.101,21 euros: 1,50 por mil.",
+      "self_ref": "#/texts/79",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75118200000009,
+        "y": 158.60120300000005,
+        "w": 340.70919600000013,
+        "h": 8.817016574585523
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "d) Por el exceso comprendido entre 60.101,22 y 150.253,03 euros: 1 por mil.",
+      "self_ref": "#/texts/80",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75116800000018,
+        "y": 170.596403,
+        "w": 336.275594,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "e) Por el exceso comprendido entre 150.253,04 y 601.012,10 euros: 0,5 por mil.",
+      "self_ref": "#/texts/81",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75116000000037,
+        "y": 194.60120299999994,
+        "w": 336.8372069999999,
+        "h": 20.812216574585705
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "f) Por lo que excede de 601.012,10 euros hasta 6.010.121,04 euros: 0,3 por mil.",
+      "self_ref": "#/texts/82",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75116000000037,
+        "y": 218.59880299999998,
+        "w": 340.73759799999993,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "Por lo que excede de 6.010.121,04 euros el Notario percibirá la cantidad que libremente acuerde con el Banco y el Prestatario.",
+      "self_ref": "#/texts/83",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.7511750000005,
+        "y": 254.59880399999997,
+        "w": 314.06879599999996,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "Además, al arancel que se calcule según esa escala se le aplicará una reducción de un 25%.",
+      "self_ref": "#/texts/84",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75116600000058,
+        "y": 290.59880499999997,
+        "w": 341.85560899999996,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "· Sin perjuicio de lo establecido en el citado Arancel, los honorarios serán por cuenta de Usted.",
+      "self_ref": "#/texts/85",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.251205,
+        "y": 328.8524,
+        "w": 359.0183959999997,
+        "h": 20.812216574585648
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "B. Los tributos o gravámenes sobre el Contrato que por ley no le correspondan a BBVA si los hubiera.",
+      "self_ref": "#/texts/86",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25121300000006,
+        "y": 364.852401,
+        "w": 270.6820000000001,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "C. Los gastos derivados de la fianza en caso de constituirse.",
+      "self_ref": "#/texts/87",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25119800000044,
+        "y": 388.850002,
+        "w": 363.52760599999993,
+        "h": 44.81701657458558
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "D. Los gastos de la primera copia autorizada o testimonio notarial de la póliza que BBVA solicite para iniciar, en su caso, el procedimiento ejecutivo , salvo que por disposición legal deban ser asumidos por BBVA. Si BBVA los adelantase, el prestatario deberá resarcirlos.",
+      "self_ref": "#/texts/88",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.2512070000004,
+        "y": 448.84760299999994,
+        "w": 347.98961199999997,
+        "h": 44.81701657458564
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "E. Los gastos por el cumplimiento, comunicación o terminación de las obligaciones de este Contrato, a excepción de las costas judiciales, cuyo pago serán de quien determinen los jueces y Tribunales en el correspondiente procedimiento judicial.",
+      "self_ref": "#/texts/89",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.2512140000006,
+        "y": 508.852404,
+        "w": 361.161205,
+        "h": 68.81461657458567
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "F . Los gastos de correo por el envío periódico por parte del Banco a su domicilio postal de la información detallada de las cuotas de su préstamo. Las tarifas para este envío serán las establecidas en cada momento por la Sociedad Estatal de Correos y Telégrafos S.A, que puede consultar en http://www.correos.es. Usted puede darse de alta en \"Correspondencia Virtual\" en bbva.es para acceder a esta información de manera gratuita.",
+      "self_ref": "#/texts/90",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25120000000004,
+        "y": 595.101179,
+        "w": 365.71840299999997,
+        "h": 80.81701657458564
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "G. Gastos por reclamación de posiciones deudoras. En caso de que Usted haya impagado alguna cuota, BBVA le informará mediante el envío de mensajes a través de la app de BBVA, www.bbva.es, correo electrónico, mensaje a su teléfono móvil, cualquier notificación de correo tradicional, por teléfono, mediante gestiones de nuestras oficinas o de colaboradores de BBVA. El Banco le recordará la necesidad de pagar las cuotas pendientes para evitarle un perjuicio económico.",
+      "self_ref": "#/texts/91",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.2512040000002,
+        "y": 679.096379,
+        "w": 360.1700039999999,
+        "h": 44.81701657458564
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 6,
+      "text": "El Banco le cobrará el Gasto de Reclamación de Posiciones Deudoras que figura en el apartado de 'Condiciones Económicas del Préstamo', para compensarse por las mencionadas gestiones. Cobrará el Gasto solo una vez por las gestiones realizadas en la reclamación de cada nuevo saldo.",
+      "self_ref": "#/texts/92",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 6,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/93",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848801,
+        "y": 827.528779,
+        "w": 55.59519899999998,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 6,
+      "text": "Página 6 de 16",
+      "self_ref": "#/texts/94",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 7,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/95",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.9163055419922,
+        "y": 22.465072631835938,
+        "w": 84.26432800292969,
+        "h": 26.082500457763672
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "",
+      "self_ref": "#/pictures/12",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.5624694824219,
+        "y": 16.106550216674805,
+        "w": 167.88265991210938,
+        "h": 30.939477920532227
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "",
+      "self_ref": "#/pictures/13",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.251205,
+        "y": 86.60120199999994,
+        "w": 344.0292019999998,
+        "h": 20.812216574585705
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "2.4. Usted tiene en su oficina y en www.bbva.es las Tarifas de Condiciones, Comisiones y Gastos repercutibles a clientes de BBVA .",
+      "self_ref": "#/texts/96",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.25118100000003,
+        "y": 132.35000300000002,
+        "w": 355.96,
+        "h": 32.81461657458556
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "2.5. Todos los costes del Contrato son adeudados en la cuenta donde se domicilian las cuotas periódicas que se indican en las 'Condiciones Económicas del Préstamo'.",
+      "self_ref": "#/texts/97",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.751205,
+        "y": 179.60360500000002,
+        "w": 328.48879699999986,
+        "h": 20.81221657458559
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "que el Contrato de préstamo se mantenga vigente durante el período de tiempo acordado,",
+      "self_ref": "#/texts/98",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.751212,
+        "y": 203.60120500000005,
+        "w": 329.615996,
+        "h": 20.819416574585603
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "que todas las partes firmantes cumplan las obligaciones pactadas en las condiciones y plazos previstos",
+      "self_ref": "#/texts/99",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75119800000004,
+        "y": 227.59880499999997,
+        "w": 354.08840499999997,
+        "h": 20.819416574585603
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "que pueden aplicarse bonificaciones al tipo de interés según lo contratado por Usted.",
+      "self_ref": "#/texts/100",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.75121800000008,
+        "y": 251.60360500000002,
+        "w": 221.21999499999984,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "y que se dispone del importe total del préstamo.",
+      "self_ref": "#/texts/101",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 300.408007,
+        "w": 92.0376,
+        "h": 10.580419889502764
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 7,
+      "text": "3. Sus derechos",
+      "self_ref": "#/texts/102",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 325.8284070000001,
+        "w": 173.41919699999988,
+        "h": 8.81701657458558
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 7,
+      "text": "3.1. El derecho a desistir del préstamo.",
+      "self_ref": "#/texts/103",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358800000004,
+        "y": 349.81880700000005,
+        "w": 377.42801,
+        "h": 44.824216574585705
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "Usted puede desistir de este Contrato en un plazo de 14 días naturales desde su firma sin necesidad de indicar el motivo y sin penalización alguna. Para ello, deberá notificarlo, en el plazo señalado a la dirección de la oficina de BBVA que consta en el apartado 'Domiciliación de Cuotas' (de las Condiciones Económicas del Préstamo).",
+      "self_ref": "#/texts/104",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358599999993,
+        "y": 409.81640700000014,
+        "w": 380.185609,
+        "h": 44.824216574585705
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "En el caso que Usted ejercite su derecho de desistimiento deberá devolver a BBVA el importe prestado más el interés acumulado sobre dicho importe, entre la fecha de entrega del préstamo y la de su devolución, en un plazo máximo de 30 días desde el envío de la comunicación del desistimiento a BBVA.",
+      "self_ref": "#/texts/105",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7535860000002,
+        "y": 469.81400700000023,
+        "w": 371.8532169999997,
+        "h": 32.82181657458568
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "El interés acumulado se calculará sobre la base de Interés Nominal Anual acordado de conformidad con la cláusula 'Amortización' de las 'Condiciones Particulares del Préstamo'.",
+      "self_ref": "#/texts/106",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7535860000002,
+        "y": 517.8092070000002,
+        "w": 366.3103989999999,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "En caso de que el préstamo tenga vinculado un seguro, el ejercicio del derecho de desistimiento del préstamo supondrá la extinción del seguro.",
+      "self_ref": "#/texts/107",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358500000021,
+        "y": 553.8020070000002,
+        "w": 200.65959799999996,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 7,
+      "text": "3.2. El derecho de cancelar anticipadamente.",
+      "self_ref": "#/texts/108",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75357400000024,
+        "y": 577.7924070000003,
+        "w": 336.838412,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "Usted puede poner fin al presente Contrato previa cancelación de todas sus obligaciones pendientes.",
+      "self_ref": "#/texts/109",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75357400000024,
+        "y": 613.7852070000002,
+        "w": 372.48243699999995,
+        "h": 56.8266165745855
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "Usted puede anticipar la devolución de una parte o de todo el importe del préstamo de modo que se liquiden las obligaciones derivadas del Contrato. Usted debe comunicarlo al BBVA al menos un día hábil antes de la fecha en que desee cancelar y por escrito, en la oficina de BBVA indicada en este Contrato, en el apartado 'Domiciliación de Cuotas' de las 'Condiciones Económicas del Préstamo'.",
+      "self_ref": "#/texts/110",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7536140000003,
+        "y": 685.7852070000001,
+        "w": 379.60839599999986,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "Si ha optado por una cancelación parcial , puede elegir para la deuda restante entre:",
+      "self_ref": "#/texts/111",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.74879700000037,
+        "y": 709.7756070000002,
+        "w": 312.35640000000006,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "Reducir el plazo del préstamo y mantener la misma cuota periódica.",
+      "self_ref": "#/texts/112",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.7487880000004,
+        "y": 721.7708070000001,
+        "w": 252.3279980000001,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "b . Reducir la cuota periódica y mantener el mismo plazo.",
+      "self_ref": "#/texts/113",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358200000048,
+        "y": 745.7612070000001,
+        "w": 380.76481,
+        "h": 32.82181657458557
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 7,
+      "text": "Cuando la amortización parcial suponga modificación de la cuantía o plazo de las cuotas establecidas, estas cuotas quedarán modificadas en la cuantía o plazo que les corresponda, sin que ello suponga novación alguna del Contrato, pudiendo BBVA",
+      "self_ref": "#/texts/114",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 7,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/115",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848801,
+        "y": 827.528779,
+        "w": 55.59519899999998,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 7,
+      "text": "Página 7 de 16",
+      "self_ref": "#/texts/116",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 8,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/117",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7828369140625,
+        "y": 22.32143211364746,
+        "w": 84.48834228515625,
+        "h": 26.729398727416992
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "",
+      "self_ref": "#/pictures/14",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 86.60119799999995,
+        "w": 140.07160199999998,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "exigir su constancia por escrito.",
+      "self_ref": "#/texts/118",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75357500000024,
+        "y": 110.59159799999998,
+        "w": 364.61121199999985,
+        "h": 56.826616574585614
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "Si el plan de amortización contemplase una cuota final superior a las demás, las amortizaciones parciales que se efectúen darán lugar necesariamente a la disminución del importe de las cuotas pendientes, excepto de la cuota final que mantendrá su importe, no variando el número de cuotas y manteniéndose el plazo total del Contrato.",
+      "self_ref": "#/texts/119",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75355600000012,
+        "y": 182.59159799999998,
+        "w": 363.5120029999998,
+        "h": 68.82901657458558
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "La cancelación anticipada de un préstamo con un contrato de seguro vinculado al mismo conllevará también la extinción del seguro. Igualmente, si Usted ejerce el derecho de desistimiento del seguro vinculado a ese préstamo, ese desistimiento supondrá también la cancelación anticipada del préstamo. En ambos casos Usted tendrá derecho a la devolución de la prima no consumida en los términos que establezca la póliza de seguro.",
+      "self_ref": "#/texts/120",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7535590000001,
+        "y": 266.59399799999994,
+        "w": 374.08720200000005,
+        "h": 20.819416574585716
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "BBVA tiene derecho a percibir la comisión de cancelación anticipada explicada en el apartado 2.2. y detallada en las 'Condiciones Económicas del Préstamo'.",
+      "self_ref": "#/texts/121",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 302.58678599999996,
+        "w": 376.864015,
+        "h": 56.826616574585785
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "En caso de cancelación anticipada, usted. tendrá derecho a la devolución de una parte proporcional de la comisión de apertura. El cálculo de esta parte proporcional a devolver tendrá en cuenta el importe amortizado sobre el total pendiente y podrá realizarse de una de las dos formas que se detallan a continuación, dependiendo de las características del préstamo:",
+      "self_ref": "#/texts/122",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.80164400000012,
+        "y": 374.58678600000013,
+        "w": 357.2476019999998,
+        "h": 68.82901657458575
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "Para préstamos con cuotas mensuales constantes y con tipo de interés superior al 0%: El porcentaje de menores intereses a pagar como consecuencia de la cancelación anticipada, sobre del importe total de intereses pactados al inicio del préstamo, será el mismo porcentaje que se aplique a la comisión de apertura para calcular la parte a devolver además del porcentaje de importe cancelado sobre el importe pendiente.",
+      "self_ref": "#/texts/123",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 201.80163500000018,
+        "y": 458.58918600000027,
+        "w": 350.5720100000002,
+        "h": 44.824216574585705
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "Para resto de préstamos: El porcentaje a devolver será proporcional al plazo que va desde la fecha de cancelación hasta la fecha pactada de vencimiento del contrato sobre el plazo total pactado de duración del contrato y al importe cancelado sobre el importe pendiente.",
+      "self_ref": "#/texts/124",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 518.586816,
+        "w": 225.10079799999994,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 8,
+      "text": "3.3. El derecho a ser informado sobre el préstamo.",
+      "self_ref": "#/texts/125",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75360600000002,
+        "y": 542.577216,
+        "w": 382.397602,
+        "h": 44.824216574585535
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "BBVA le informará periódicamente sobre la amortización y liquidación de intereses de su préstamo, de modo que pueda conocer, entre otros detalles, toda la información económica sobre el importe del préstamo que haya devuelto, el saldo pendiente y los intereses liquidados.",
+      "self_ref": "#/texts/126",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75362400000017,
+        "y": 590.5796159999999,
+        "w": 371.86321,
+        "h": 32.82181657458557
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "Usted tiene derecho a solicitar información sin coste alguno sobre su préstamo en cualquier momento y a recibir un nuevo calendario de pagos si, en el ejercicio de su derecho, decide efectuar una anticipación del pago.",
+      "self_ref": "#/texts/127",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75363400000018,
+        "y": 638.5748159999998,
+        "w": 235.103196,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 8,
+      "text": "3.4 . El derecho a presentar una queja o reclamación.",
+      "self_ref": "#/texts/128",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75362700000017,
+        "y": 650.5700159999998,
+        "w": 349.013598,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "BBVA pone a su disposición un Servicio de Atención al Cliente al que puede dirigirse para presentar cualquier queja o reclamación:",
+      "self_ref": "#/texts/129",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 245.25363000000027,
+        "y": 686.5628159999998,
+        "w": 146.12799999999993,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 8,
+      "text": "Servicio de Atención al Cliente",
+      "self_ref": "#/texts/130",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 245.25362300000018,
+        "y": 698.5580159999997,
+        "w": 187.98759800000005,
+        "h": 32.807416574585545
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "Apartado de correos 1598. 28080 Madrid E-mail: servicioatencioncliente@bbva.com Teléfono gratuito: 900812679",
+      "self_ref": "#/texts/131",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7536110000002,
+        "y": 746.5388159999997,
+        "w": 369.62240099999985,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "Asimismo, puede dirigirse al Defensor del Cliente , de conformidad con el procedimiento disponible en cualquiera de las oficinas de BBVA y en www.bbva.es.",
+      "self_ref": "#/texts/132",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.50579833984375,
+        "y": 16.034915924072266,
+        "w": 167.9708251953125,
+        "h": 31.12175750732422
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 8,
+      "text": "",
+      "self_ref": "#/pictures/15",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 8,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/133",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848801,
+        "y": 827.528779,
+        "w": 55.59519899999998,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 8,
+      "text": "Página 8 de 16",
+      "self_ref": "#/texts/134",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 9,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/135",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.03646850585938,
+        "y": 22.391399383544922,
+        "w": 84.14920043945312,
+        "h": 26.16390609741211
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "",
+      "self_ref": "#/pictures/16",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.5212097167969,
+        "y": 16.11371421813965,
+        "w": 167.75137329101562,
+        "h": 30.830881118774414
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "",
+      "self_ref": "#/pictures/17",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 243.748795,
+        "y": 86.59400300000004,
+        "w": 150.57040399999997,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 9,
+      "text": "Oficina del Defensor del Cliente",
+      "self_ref": "#/texts/136",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 243.74878899999993,
+        "y": 98.589203,
+        "w": 190.076006,
+        "h": 20.81221657458559
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "Apartado de Correos 14460. 28080 Madrid E-mail: defensordelcliente@bbva.com",
+      "self_ref": "#/texts/137",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358799999995,
+        "y": 134.57480299999997,
+        "w": 372.97521399999994,
+        "h": 44.82421657458565
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "Si la respuesta no hubiera sido satisfactoria o hubiera transcurrido un plazo de dos meses desde la presentación de su escrito sin haber recibido respuesta, podrá dirigirse al Servicio de Reclamaciones del Banco de España (Calle Alcalá 48, 28014 Madrid).",
+      "self_ref": "#/texts/138",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7535960000002,
+        "y": 182.57720299999994,
+        "w": 342.3920029999999,
+        "h": 20.819416574585716
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "BBVA no está adherido a una junta arbitral de consumo para la resolución de conflictos relacionados con este Contrato.",
+      "self_ref": "#/texts/139",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358700000015,
+        "y": 229.13520299999993,
+        "w": 115.37760000000009,
+        "h": 10.580419889502764
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 9,
+      "text": "4. Sus obligaciones.",
+      "self_ref": "#/texts/140",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 254.55559700000003,
+        "w": 254.53079699999995,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "4.1. La obligación de devolver el importe del préstamo.",
+      "self_ref": "#/texts/141",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359899999998,
+        "y": 278.54599700000006,
+        "w": 372.97199799999987,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "Usted se obliga a restituir el importe del préstamo según el calendario de pagos que se pacta.",
+      "self_ref": "#/texts/142",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75360500000005,
+        "y": 302.5435970000001,
+        "w": 344.637596,
+        "h": 20.819416574585716
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "Este calendario puede fijar un período inicial en el que únicamente se paguen intereses (período de carencia ).",
+      "self_ref": "#/texts/143",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 338.536401,
+        "w": 292.870798,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "4.2. La obligación de pagar los intereses, comisiones y gastos.",
+      "self_ref": "#/texts/144",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358999999997,
+        "y": 373.092001,
+        "w": 146.03519999999997,
+        "h": 10.580419889502764
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 9,
+      "text": "5. Los derechos de BBVA",
+      "self_ref": "#/texts/145",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358999999997,
+        "y": 398.512401,
+        "w": 236.22759999999994,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "5.1. El derecho a vencer anticipadamente el Contrato",
+      "self_ref": "#/texts/146",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359499999996,
+        "y": 422.50280100000003,
+        "w": 383.22000199999997,
+        "h": 20.81941657458566
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "-BBVA podrá exigir el pago total de la deuda cuando se produzcan las circunstancias que se describen a continuación:",
+      "self_ref": "#/texts/147",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.74879399999998,
+        "y": 458.4956010000001,
+        "w": 356.83119699999975,
+        "h": 44.824216574585705
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "Durante la primera mitad de duración del préstamo, si Usted incumple el pago de tres cuotas mensuales o, si la periodicidad de las cuotas es diferente, un número de cuotas que sea, al menos, equivalente a la cuantía de tres cuotas mensuales.",
+      "self_ref": "#/texts/148",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.0503970000002,
+        "y": 518.4932010000001,
+        "w": 361.83519499999977,
+        "h": 44.824216574585535
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "Durante la segunda mitad de duración del préstamo, si Usted incumple el pago de seis cuotas mensuales o, si la periodicidad de las cuotas es diferente, un número de cuotas que sea, al menos, equivalente a la cuantía de seis cuotas mensuales.",
+      "self_ref": "#/texts/149",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.05040300000041,
+        "y": 578.490801,
+        "w": 354.7572060000001,
+        "h": 56.8266165745855
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "Si BBVA comprueba que Usted ha aportado información falsa, tanto si es información que BBVA le solicitó para analizar la concesión del préstamo, como si se trata información esencial solicitada durante la vigencia del préstamo para conocer su capacidad de pago o cuando no faciliten a BBVA la documentación esencial para conocer su situación jurídica o financiera si les fuera requerida.",
+      "self_ref": "#/texts/150",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75364000000081,
+        "y": 650.4908009999999,
+        "w": 369.08240799999976,
+        "h": 20.819416574585603
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "Si Usted incumple las obligaciones de pago derivadas de este Contrato, acepta que:",
+      "self_ref": "#/texts/151",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.00003200000089,
+        "y": 686.4836009999999,
+        "w": 342.947206,
+        "h": 20.819416574585603
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "BBVA pueda considerar vencido de pleno derecho el préstamo y exigirle el pago de todo el importe pendiente.",
+      "self_ref": "#/texts/152",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.0000210000009,
+        "y": 722.4764009999999,
+        "w": 349.6192099999998,
+        "h": 20.819416574585603
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "El impago puede causarle otras graves consecuencias, por ejemplo la venta forzosa o la dificultad para obtener un crédito.",
+      "self_ref": "#/texts/153",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75361400000094,
+        "y": 758.4692009999999,
+        "w": 210.66639800000002,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 9,
+      "text": "5.2. El derecho a reclamar el pago de la deuda.",
+      "self_ref": "#/texts/154",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 9,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/155",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848801,
+        "y": 827.528779,
+        "w": 55.59519899999998,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 9,
+      "text": "Página 9 de 16",
+      "self_ref": "#/texts/156",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 10,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/157",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.78163146972656,
+        "y": 22.475324630737305,
+        "w": 84.48789978027344,
+        "h": 26.496858596801758
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "",
+      "self_ref": "#/pictures/18",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.5307922363281,
+        "y": 16.070940017700195,
+        "w": 168.02615356445312,
+        "h": 31.114011764526367
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "",
+      "self_ref": "#/pictures/19",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 86.60120199999994,
+        "w": 380.1992059999999,
+        "h": 44.81701657458575
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "BBVA tiene derecho a iniciar un proceso judicial contra Usted mediante el ejercicio de una acción declarativa o ejecutiva para recuperar el principal, intereses, comisiones y gastos que Usted le deba por este contrato si se dan los supuestos que motivan el vencimiento anticipado que se establecen en el apartado 5.1.",
+      "self_ref": "#/texts/158",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 149.60119999999995,
+        "w": 377.4160049999999,
+        "h": 56.812216574585705
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "Usted y BBVA acuerdan que la cantidad exigible en el procedimiento ejecutivo sea el saldo deudor resultante de la liquidación efectuada por BBVA de acuerdo con lo pactado en este Contrato. Este acuerdo se hace para que el procedimiento ejecutivo pueda tramitarse teniendo en cuenta el saldo de las operaciones derivadas de este contrato, en la forma prevista en el artículo 572 de la Ley de Enjuiciamiento Civil.",
+      "self_ref": "#/texts/159",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359800000024,
+        "y": 223.84760399999993,
+        "w": 376.84120599999994,
+        "h": 32.82181657458568
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "BBVA presentará ante el Juzgado la póliza de préstamo intervenida por el Notario (el título ejecutivo) y la certificación de la cantidad total adeudada conforme a lo previsto en el artículo 573 de la Ley de Enjuiciamiento Civil.",
+      "self_ref": "#/texts/160",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359500000027,
+        "y": 271.842804,
+        "w": 130.61199699999995,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 10,
+      "text": "5.3. El derecho a compensar.",
+      "self_ref": "#/texts/161",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359000000026,
+        "y": 295.833204,
+        "w": 342.404001,
+        "h": 20.812216574585705
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "Usted responde de las obligaciones previstas en este Contrato con todos sus bienes presentes y futuros.",
+      "self_ref": "#/texts/162",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359900000024,
+        "y": 331.81880400000006,
+        "w": 381.843205,
+        "h": 68.82901657458575
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "La deuda que Usted asume por este Contrato puede ser compensada por BBVA con cualquier saldo que Usted tenga a su favor, tal y como se contempla en el art.1195 del Código Civil y siguientes. Esto significa que si Usted no paga, BBVA puede cobrar el préstamo con el importe que tenga a su favor en una cuenta, en un depósito, o en un fondo de inversión o que proceda de otro Contrato que haya firmado con BBVA del que se derive para Usted un saldo a su favor.",
+      "self_ref": "#/texts/163",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 415.828413,
+        "w": 380.1776189999998,
+        "h": 56.81221657458565
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "Si la compensación se realiza con importes en efectivo en otras cuentas, BBVA la realiza de forma directa; si son valores depositados en BBVA, con la firma de este contrato, Usted está otorgando a BBVA un mandato para que proceda a venderlos en tales situaciones. Si se trata de fondos de inversión, BBVA ejercerá en su representación el derecho de reembolso .",
+      "self_ref": "#/texts/164",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359699999996,
+        "y": 502.07000100000005,
+        "w": 380.1872029999998,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "El saldo a favor de BBVA para compensar con la deuda puede pertenecer solo a uno, a algunos o a todos los que han recibido el préstamo.",
+      "self_ref": "#/texts/165",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358100000005,
+        "y": 538.062801,
+        "w": 381.8840079999999,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "5.4. El derecho a decidir a qué deudas pendientes aplica las cantidades que reciba de Usted o queden disponibles a favor de BBVA.",
+      "self_ref": "#/texts/166",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75356500000015,
+        "y": 574.055601,
+        "w": 381.8772109999998,
+        "h": 44.824216574585535
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "BBVA aplicará las cantidades recibidas o que queden disponibles a favor del BBVA, en primer lugar, a las deudas a las que sea de aplicación el tipo de interés de demora y en segundo lugar a las deudas a las que sea de aplicación el tipo de interés nominal anual.",
+      "self_ref": "#/texts/167",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753578,
+        "y": 634.053201,
+        "w": 382.4136109999999,
+        "h": 32.82181657458557
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "5.5. Usted autoriza a BBVA a poder ceder a un tercero su posición contractual en este Contrato, quien así subrogado asumirá todas las Condiciones del mismo en sustitución de BBVA.",
+      "self_ref": "#/texts/168",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7535660000001,
+        "y": 682.0484009999999,
+        "w": 379.6304059999999,
+        "h": 32.82181657458557
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "Asimismo, BBVA podrá ceder en cualquier momento, a un tercero, los derechos de crédito derivados de su Contrato. Dicha cesión le será comunicada en el momento en que se realice.",
+      "self_ref": "#/texts/169",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7535640000001,
+        "y": 740.6088009999997,
+        "w": 95.34960000000001,
+        "h": 10.580419889502764
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 10,
+      "text": "6. Afianzamiento",
+      "self_ref": "#/texts/170",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7535640000001,
+        "y": 766.0292009999998,
+        "w": 375.72480200000007,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 10,
+      "text": "6.1. En garantía de la operación de Préstamo que en este Contrato se formaliza, los fiadores, garantizan, con carácter solidario, de suerte que BBVA pueda dirigirse indistintamente contra Usted, contra todos los fiadores o contra uno solo de ellos, y con renuncia expresa a los beneficios de excusión, división y orden, el cumplimiento de todas las obligaciones y responsabilidades dimanantes de esta Contrato, cuyas cláusulas se dan aquí por reproducidas, haciendo extensivas las alusiones que se hacen de la parte prestataria a los garantes; cuyo afianzamiento se regirá por las siguientes normas:",
+      "self_ref": "#/texts/171",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 10,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/172",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 508.399186,
+        "y": 827.528779,
+        "w": 60.04479900000001,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 10,
+      "text": "Página 10 de 16",
+      "self_ref": "#/texts/173",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 11,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/174",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.70921325683594,
+        "y": 22.349729537963867,
+        "w": 84.66255187988281,
+        "h": 26.714204788208008
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "",
+      "self_ref": "#/pictures/20",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.5709533691406,
+        "y": 16.126922607421875,
+        "w": 167.94198608398438,
+        "h": 31.05133819580078
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "",
+      "self_ref": "#/pictures/21",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.7487680000001,
+        "y": 170.60359800000003,
+        "w": 329.6195979999998,
+        "h": 8.817016574585523
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "a) - La fianza así prestada estará vigente durante la vida de este Contrato.",
+      "self_ref": "#/texts/175",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.74876900000004,
+        "y": 194.59399799999994,
+        "w": 352.9776079999999,
+        "h": 44.82421657458565
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "b) - En la determinación del saldo, que se considerará como cantidad líquida exigible a los efectos del pago y, eventualmente, del despacho de ejecución, se procederá en idénticos términos a los prevenidos respecto de la parte deudora principal.",
+      "self_ref": "#/texts/176",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.74876400000005,
+        "y": 254.59159799999998,
+        "w": 356.2860079999998,
+        "h": 20.819416574585716
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "c) - El afianzamiento prestado por el garante, se entiende efectuado únicamente como garantía personal, sin depósito de capital e importe alguno.",
+      "self_ref": "#/texts/177",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 198.7487620000001,
+        "y": 290.5843980000001,
+        "w": 357.95320799999985,
+        "h": 32.82181657458568
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "d) - Para la práctica de las notificaciones prevenidas en la Ley de Enjuiciamiento Civil, la parte fiadora designa como domicilio el que figure reseñado como propio en el presente Contrato.",
+      "self_ref": "#/texts/178",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 338.57961400000005,
+        "w": 379.0864080000001,
+        "h": 80.83141657458577
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "6.2. El/los fiador/es deja afectos al buen fin del presente Contrato todos sus bienes presentes o futuros, y especialmente los que existan a su nombre en el Banco, quedando BBVA autorizado irrevocablemente para proceder, en caso de que aquél o aquéllos incumpla/n sus obligaciones de pago, a la aplicación de los depósitos en efectivo, a la realización de todo tipo de derechos de crédito y efectos mercantiles o títulos-valores que asimismo puedan estar depositados en el Banco, al objeto de, con su importe, atender hasta donde alcance los pagos pendientes.",
+      "self_ref": "#/texts/179",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359100000009,
+        "y": 434.5844140000002,
+        "w": 376.3103999999999,
+        "h": 32.82181657458568
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "Asimismo, el/los fiador/es autoriza/n expresamente al Banco para hacer efectiva su responsabilidad aquí asumida, en idénticos términos a los establecidos en la anterior Condición General 5.2 y 5.3.",
+      "self_ref": "#/texts/180",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75356600000026,
+        "y": 482.5796140000003,
+        "w": 365.1944019999999,
+        "h": 44.82421657458559
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "6.3. En el supuesto de que Usted fuese declarado en situación legal de concurso, el/los fiador/es acepta/n que, el voto favorable del Banco en el convenio correspondiente no modificará la responsabilidad asumida por dicho/s fiador/es en virtud de la presente garantía.",
+      "self_ref": "#/texts/181",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 541.8960129999999,
+        "w": 340.113601,
+        "h": 22.58281988950273
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 11,
+      "text": "7. Condiciones generales con información práctica sobre el Contrato.",
+      "self_ref": "#/texts/182",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75361099999998,
+        "y": 579.318813,
+        "w": 382.9864150000001,
+        "h": 44.824216574585535
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "7.1. Cualquier comunicación entre Usted y BBVA o incluso el fiador, debe efectuarse mediante el envío de un escrito dirigido a las direcciones de contacto que figuran en el apartado 'Identificación de las Partes Contratantes' para facilitar que pueda ser atendida correctamente.",
+      "self_ref": "#/texts/183",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7536360000002,
+        "y": 639.3164129999999,
+        "w": 382.9920019999997,
+        "h": 32.82181657458557
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "En el caso de que haya varios contratantes, el domicilio de contacto será el designado para el primero de ellos, en el mismo apartado de 'Identificación de las Partes Contratantes'.",
+      "self_ref": "#/texts/184",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75365300000027,
+        "y": 687.3116129999999,
+        "w": 375.16320000000013,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "El domicilio de BBVA para este Contrato será el de la oficina que figure en el mismo.",
+      "self_ref": "#/texts/185",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75364000000036,
+        "y": 711.3020129999999,
+        "w": 336.82800499999996,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "Las comunicaciones entre BBVA y Usted relacionadas con este Contrato se realizarán en castellano, salvo que nos indique otra lengua.",
+      "self_ref": "#/texts/186",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7536380000004,
+        "y": 747.2948129999999,
+        "w": 377.4291999999998,
+        "h": 32.82181657458557
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 11,
+      "text": "7.2. BBVA está supervisado en el desarrollo de sus actividades bancarias en España por el Banco de España, calle Alcalá nº 48, 28014 Madrid y la Comisión Nacional del Mercado de Valores, calle Edison 4, 28006 Madrid.",
+      "self_ref": "#/texts/187",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 11,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/188",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 508.399186,
+        "y": 827.528779,
+        "w": 60.04479900000001,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 11,
+      "text": "Página 11 de 16",
+      "self_ref": "#/texts/189",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 12,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/190",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.6367645263672,
+        "y": 21.952943801879883,
+        "w": 84.73014831542969,
+        "h": 28.217809677124023
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 12,
+      "text": "",
+      "self_ref": "#/pictures/22",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.5553894042969,
+        "y": 16.042909622192383,
+        "w": 167.99575805664062,
+        "h": 31.46088981628418
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 12,
+      "text": "",
+      "self_ref": "#/pictures/23",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359899999995,
+        "y": 99.33799899999997,
+        "w": 381.304011,
+        "h": 68.8290165745857
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 12,
+      "text": "7.3. El Contrato está sujeto al cumplimiento del derecho español. En particular, este Contrato está sujeto al Código Civil, a la Ley 16/2011 de Contratos de Crédito al Consumo, a la Ley de Enjuiciamiento Civil en lo que se refiere al ejercicio de la acción ejecutiva que se cita en el apartado 5.2., así como a la normativa de transparencia bancaria que puede encontrar disponible en la web del Banco de España (www.bde.es).",
+      "self_ref": "#/texts/191",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 12,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/192",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 508.399186,
+        "y": 827.528779,
+        "w": 60.04479900000001,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 12,
+      "text": "Página 12 de 16",
+      "self_ref": "#/texts/193",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 13,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/194",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.0032196044922,
+        "y": 22.494260787963867,
+        "w": 83.98515319824219,
+        "h": 25.910749435424805
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "",
+      "self_ref": "#/pictures/24",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.36944580078125,
+        "y": 16.049070358276367,
+        "w": 167.86663818359375,
+        "h": 30.967809677124023
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "",
+      "self_ref": "#/pictures/25",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75362100000035,
+        "y": 90.62279599999977,
+        "w": 272.9988069999998,
+        "h": 15.87062983425426
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 13,
+      "text": "CONDICIONES PARTICULARES",
+      "self_ref": "#/texts/195",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 122.86759300000006,
+        "w": 51.126799999999974,
+        "h": 8.817016574585523
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 13,
+      "text": "1. Entrega.",
+      "self_ref": "#/texts/196",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 145.90759400000002,
+        "w": 382.81962599999986,
+        "h": 77.93701657458564
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "Según los datos del apartado 'Condiciones Económicas del Préstamo', BBVA le entrega la cantidad indicada en 'Importe total del Préstamo' en la 'Fecha de Entrada en vigor'. La entrega se hace mediante abono en la cuenta indicada en 'Entrega del Importe del Préstamo mediante'. En el momento de formalización de este contrato del préstamo, BBVA percibirá, de una sola vez, la comisión de apertura indicada en la rúbrica COMISIÓN DE APERTURA del apartado CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "self_ref": "#/texts/197",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75362899999993,
+        "y": 238.0675950000001,
+        "w": 77.23680000000004,
+        "h": 8.817016574585523
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 13,
+      "text": "2. Amortización.",
+      "self_ref": "#/texts/198",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75362899999993,
+        "y": 261.10759600000006,
+        "w": 374.05760699999996,
+        "h": 20.33701657458562
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "El Contrato de Préstamo será pagado a BBVA de conformidad con lo establecido en el apartado 'Amortización' de las 'Condiciones Económicas del Préstamo'.",
+      "self_ref": "#/texts/199",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75364400000007,
+        "y": 295.667597,
+        "w": 108.37560099999996,
+        "h": 8.81701657458575
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "Usted deberá satisfacer:",
+      "self_ref": "#/texts/200",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7536350000001,
+        "y": 318.7075980000001,
+        "w": 383.39521099999996,
+        "h": 43.37701657458558
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "Un pago en concepto de intereses de ajuste devengados desde la \"Fecha de Entrada en Vigor\" del préstamo hasta la fecha de pago de la primera cuota (que aparece en el apartado de \"Amortización\"). Dicho pago será satisfecho el día anterior a la fecha de pago de la primera cuota.",
+      "self_ref": "#/texts/201",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75363200000027,
+        "y": 376.30759900000004,
+        "w": 370.759226,
+        "h": 54.897016574585564
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "Estos intereses de ajuste se calcularán aplicando la siguiente fórmula: Principal pendiente de pago, multiplicado por el tipo de INTERÉS NOMINAL ANUAL, multiplicado por el número de días naturales comprendidos en este periodo, partido por treinta y seis mil quinientos (salvo que se trate de un año bisiesto, en cuyo caso quedará partido entre treinta y seis mil seiscientos).",
+      "self_ref": "#/texts/202",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7536580000004,
+        "y": 445.4276,
+        "w": 269.45000000000005,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "las cuotas que se indican en el apartado de \"Amortización\".",
+      "self_ref": "#/texts/203",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75362500000034,
+        "y": 468.467601,
+        "w": 374.0584340000001,
+        "h": 43.37701657458558
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "El importe de las cuotas a devolver a BBVA será el resultado de la suma del importe total del préstamo y los intereses, salvo cuando se hayan pactado periodos de carencia . En este caso, los pagos durante estos periodos serán solamente de intereses que serán calculados aplicando la fórmula siguiente:",
+      "self_ref": "#/texts/204",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75361400000037,
+        "y": 526.067602,
+        "w": 378.87801299999995,
+        "h": 54.897016574585564
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "El principal pendiente de pago multiplicado por el tipo de interés nominal anual que corresponda según lo previsto más adelante multiplicado por el número de días naturales del periodo de liquidación, partido entre treinta y seis mil quinientos (salvo que se trate de un año bisiesto, en cuyo caso quedará partido entre treinta y seis mil seiscientos).",
+      "self_ref": "#/texts/205",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75362100000035,
+        "y": 595.1876029999999,
+        "w": 346.8552049999999,
+        "h": 20.33701657458562
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "El resto de las cuotas de amortización se calculan de acuerdo con la siguiente fórmula:",
+      "self_ref": "#/texts/206",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 194.155197,
+        "y": 628.098799,
+        "w": 110.00959799999998,
+        "h": 20.812216574585705
+      },
+      "label": "formula",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "",
+      "self_ref": "#/texts/207",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.999995,
+        "y": 663.349999,
+        "w": 260.64720100000017,
+        "h": 12.561016574585665
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "I: Tipo de interés nominal x N° Días Periodo Liquidación",
+      "self_ref": "#/texts/208",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 308.03759400000007,
+        "y": 675.352399,
+        "w": 43.91759900000005,
+        "h": 8.817016574585637
+      },
+      "label": "formula",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "",
+      "self_ref": "#/texts/209",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.99998500000012,
+        "y": 689.601199,
+        "w": 186.74639899999997,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "N: Número de períodos de pago, que son:",
+      "self_ref": "#/texts/210",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.9999790000001,
+        "y": 701.596399,
+        "w": 131.15000000000003,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "Mensual: Número de Meses",
+      "self_ref": "#/texts/211",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.99998200000016,
+        "y": 713.598799,
+        "w": 155.57999999999998,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "Trimestral: Número de Trimestres",
+      "self_ref": "#/texts/212",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.99998100000016,
+        "y": 725.601199,
+        "w": 156.71159999999998,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "Semestral: Número de Semestres",
+      "self_ref": "#/texts/213",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 188.99998100000016,
+        "y": 749.5988,
+        "w": 342.11560399999996,
+        "h": 8.817016574585637
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 13,
+      "text": "N° Días Periodo de Liquidación: (30 mensual) (90 trimestral) (180 semestral).",
+      "self_ref": "#/texts/214",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 13,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/215",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 508.399186,
+        "y": 827.528779,
+        "w": 60.04479900000001,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 13,
+      "text": "Página 13 de 16",
+      "self_ref": "#/texts/216",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 14,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/217",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.05184936523438,
+        "y": 22.5349178314209,
+        "w": 84.1124267578125,
+        "h": 26.043424606323242
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "",
+      "self_ref": "#/pictures/26",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.5379638671875,
+        "y": 16.062774658203125,
+        "w": 167.81793212890625,
+        "h": 31.079681396484375
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "",
+      "self_ref": "#/pictures/27",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 86.59400300000004,
+        "w": 347.9632029999999,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "En consecuencia, en cada liquidación el interés nominal devengado se calcula aplicando la fórmula siguiente:",
+      "self_ref": "#/texts/218",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359500000002,
+        "y": 110.59160299999996,
+        "w": 378.5252009999999,
+        "h": 32.82181657458568
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "Principal pendiente de pago, multiplicado por el tipo de interés anual nominal multiplicado por el número de días comerciales del periodo de liquidación, partido por treinta y seis mil.",
+      "self_ref": "#/texts/219",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358599999998,
+        "y": 146.591592,
+        "w": 359.2640109999999,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "El importe de las cuotas detalladas en el apartado 'Condiciones Económicas del Préstamo', ha sido calculado bajo dos supuestos:",
+      "self_ref": "#/texts/220",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358599999996,
+        "y": 182.58439199999998,
+        "w": 298.4620020000001,
+        "h": 20.812216574585705
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "Cuota Sin nómina domiciliada: considerando el Interés Nominal Anual sin bonificaciones ni otras modificaciones.",
+      "self_ref": "#/texts/221",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359499999996,
+        "y": 218.56999199999996,
+        "w": 273.46199899999993,
+        "h": 20.812216574585705
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "Cuota Con Nómina: considerando que se aplica el Interés bonificado por domiciliar la nómina",
+      "self_ref": "#/texts/222",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75357300000002,
+        "y": 254.55559200000005,
+        "w": 378.532808,
+        "h": 56.82661657458573
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "Por lo tanto, el importe de las cuotas podrá verse modificado por efecto de las bonificaciones y revisiones del tipo de interés, en su caso pactadas. BBVA emitirá los recibos con cada cuota, que se adeudarán en la cuenta corriente que se indica en el apartado 'Condiciones Económicas del Préstamo'. Además, BBVA incluirá en estos recibos la cantidad que corresponda por impuestos y gastos de comunicación.",
+      "self_ref": "#/texts/223",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75360500000005,
+        "y": 326.55559200000016,
+        "w": 380.20322000000016,
+        "h": 44.824216574585705
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "Usted deberá devolver el \"Importe Total Adeudado\" detallado en las \"Condiciones Económicas\" según la opción que Usted tiene contratada (sin nómina, y con nómina) a la \"Fecha de Entrada en Vigor\", y que puede variar a lo largo de la duración del préstamo en función de la bonificación del tipo de interés aplicable en cada momento.",
+      "self_ref": "#/texts/224",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75363000000038,
+        "y": 398.5483920000002,
+        "w": 184.48360099999996,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 14,
+      "text": "3. Intereses. Bonificación de Intereses.",
+      "self_ref": "#/texts/225",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75363100000038,
+        "y": 422.5387920000002,
+        "w": 353.462404,
+        "h": 20.81941657458566
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "3.1. El tipo de interés nominal anual aplicable es el que se ha detallado en las 'Condiciones Económicas del Préstamo'.",
+      "self_ref": "#/texts/226",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 458.53161,
+        "w": 363.52640400000007,
+        "h": 20.81941657458566
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "3.2. Este tipo de interés nominal será bonificado según se dice a continuación si Usted, o cualquiera del resto de contratantes, si fueran varios :",
+      "self_ref": "#/texts/227",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75360200000011,
+        "y": 494.52441000000005,
+        "w": 256.79279900000006,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "Tuvieran domiciliada en una cuenta corriente en BBVA:",
+      "self_ref": "#/texts/228",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75360700000013,
+        "y": 506.51961000000006,
+        "w": 315.14199599999995,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "una nómina por importe neto mensual igual o superior a 600 euros.",
+      "self_ref": "#/texts/229",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75361300000014,
+        "y": 518.51481,
+        "w": 317.373994,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "una pensión por importe neto mensual igual o superior a 300 euros.",
+      "self_ref": "#/texts/230",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359200000014,
+        "y": 530.51001,
+        "w": 132.84840300000002,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "el subsidio de desempleo.",
+      "self_ref": "#/texts/231",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359400000016,
+        "y": 554.50041,
+        "w": 375.205605,
+        "h": 20.81221657458559
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "En cualquiera de estos casos, el tipo de interés nominal anual será bonificado con una reducción de 1,0000 puntos porcentuales.",
+      "self_ref": "#/texts/232",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358700000027,
+        "y": 590.48601,
+        "w": 374.0936019999999,
+        "h": 32.807416574585545
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "Para poder beneficiarse de la bonificación, Usted debe realizar la domiciliación de la nómina, pensión o subsidio en su Cuenta de BBVA mediante transferencia bancaria ordenada directamente por el empresario u organismo pagador.",
+      "self_ref": "#/texts/233",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 638.466821,
+        "w": 336.83760199999995,
+        "h": 20.81221657458559
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "3.3. Para poder beneficiarse de estas bonificaciones Usted debe cumplir las siguientes condiciones:",
+      "self_ref": "#/texts/234",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.80401599999996,
+        "y": 674.452421,
+        "w": 357.404802,
+        "h": 20.819416574585603
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "Haber mantenido la domiciliación de esos productos o servicios durante todo el semestre revisado.",
+      "self_ref": "#/texts/235",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75361799999996,
+        "y": 710.445221,
+        "w": 382.9944099999998,
+        "h": 32.81461657458556
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "Estar al corriente de pago en el préstamo cuando BBVA compruebe el cumplimiento de las condiciones de bonificación cada semestre. A estos efectos, se entenderá que Usted está al corriente de pago si:",
+      "self_ref": "#/texts/236",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.7536299999999,
+        "y": 758.4332209999999,
+        "w": 351.2703989999999,
+        "h": 20.81221657458559
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 14,
+      "text": "No ha tenido 2 impagos (estén regularizados ya o no en ese momento) en el semestre.",
+      "self_ref": "#/texts/237",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 14,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/238",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 508.399186,
+        "y": 827.528779,
+        "w": 60.04479900000001,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 14,
+      "text": "Página 14 de 16",
+      "self_ref": "#/texts/239",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 15,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/240",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.96160888671875,
+        "y": 22.469154357910156,
+        "w": 84.2052001953125,
+        "h": 26.138778686523438
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 15,
+      "text": "",
+      "self_ref": "#/pictures/28",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.55224609375,
+        "y": 16.103174209594727,
+        "w": 167.8411865234375,
+        "h": 31.15391731262207
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 15,
+      "text": "",
+      "self_ref": "#/pictures/29",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 86.59400300000004,
+        "w": 348.500801,
+        "h": 20.81221657458559
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 15,
+      "text": "No ha tenido 1 impago de más de 10 días (esté regularizado ya o no en ese momento) en el semestre.",
+      "self_ref": "#/texts/241",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359900000007,
+        "y": 117.784403,
+        "w": 264.0112019999999,
+        "h": 8.817016574585637
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 15,
+      "text": "No tiene pendiente de pago la última cuota del semestre.",
+      "self_ref": "#/texts/242",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75359500000005,
+        "y": 141.77480300000002,
+        "w": 356.2784049999999,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 15,
+      "text": "BBVA comprobará el cumplimiento de estas condiciones al vencimiento de cada semestre sucesivo contando desde el día 31-05-2021.",
+      "self_ref": "#/texts/243",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753603,
+        "y": 177.767603,
+        "w": 381.8504079999999,
+        "h": 20.819416574585603
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 15,
+      "text": "La formalización del Contrato, en ningún caso implica obligación de BBVA ni de Usted de tener que contratar todos o alguno de los productos o servicios relacionados.",
+      "self_ref": "#/texts/244",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.75358700000015,
+        "y": 213.760403,
+        "w": 379.6312019999998,
+        "h": 56.82661657458573
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 15,
+      "text": "3.4. En cualquier caso, desde la Fecha de Entrada en Vigor del préstamo hasta el día 31-05-2021, BBVA aplicará una reducción de 1,0000 puntos porcentuales al tipo de interés nominal anual, con independencia de que Usted cumpla o no a la Fecha de Entrada en Vigor las condiciones establecidas para que se dé esa bonificación del tipo de interés.",
+      "self_ref": "#/texts/245",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 177.753601,
+        "y": 285.7604,
+        "w": 376.79761599999995,
+        "h": 32.82181657458568
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 15,
+      "text": "Las partes intervinientes prestan su conformidad y aprobación a la totalidad del presente contrato formalizado en el modelo POLIZA BONIFICACION, versión 0019, en los términos, condiciones y responsabilidades que se establecen en el mismo.",
+      "self_ref": "#/texts/246",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 15,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/247",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 508.399186,
+        "y": 827.528779,
+        "w": 60.04479900000001,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 15,
+      "text": "Página 15 de 16",
+      "self_ref": "#/texts/248",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 143.818705,
+        "y": 214.836003,
+        "w": 4.8493591160221,
+        "h": 428.663997
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 16,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/249",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 178.0723419189453,
+        "y": 22.165531158447266,
+        "w": 84.14933776855469,
+        "h": 26.543312072753906
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 16,
+      "text": "",
+      "self_ref": "#/pictures/30",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 176.968994140625,
+        "y": 92.26689147949219,
+        "w": 118.44857788085938,
+        "h": 17.31610870361328
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 16,
+      "text": "",
+      "self_ref": "#/pictures/31",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 176.568115234375,
+        "y": 134.7368621826172,
+        "w": 385.43084716796875,
+        "h": 489.0332794189453
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 16,
+      "text": "",
+      "self_ref": "#/tables/1",
+      "cells": [
+        [
+          "Acción declarativa",
+          "Dirigirse al Juez para solicitar que se pronuncie sobre la validez del Contrato o alguna parte del mismo."
+        ],
+        [
+          "Acción ejecutiva",
+          "Dirigirse al Juez para solicitar que ordene al condenado a ejecutar una obligación, en el caso de este Contrato, al pago de la deuda."
+        ],
+        [
+          "Compensación",
+          "Es una figura jurídica que regula nuestro Código Civil como una de las formas de extinguir las obligaciones entre partes, y que tiene lugar cuando dos personas son recíprocamente acreedor y deudor la una de la otra. En el caso de este Contrato, Usted es el deudor de BBVA por el importe total adeudado y BBVA es el acreedor por igual importe. Ej: Usted tiene una deuda con BBVA de 1000€ y un depósito por importe de 1500€. Si Usted no paga, BBVA puede cobrarse su deuda con el importe del depósito de su propiedad hasta los 1000€."
+        ],
+        [
+          "Derecho de reembolso",
+          "Es el derecho de los titulares de participaciones de Fondos de Inversión de pedir la liquidación de su inversión de modo que se le abone la cuantía equivalente al valor liquidativo de las participaciones al momento de solicitar su reembolso."
+        ],
+        [
+          "Intereses de demora",
+          "Es la cantidad que BBVA le cobra si se retrasa en el pago de alguna de las cuotas que figure en el calendario de pagos."
+        ],
+        [
+          "Período de carencia",
+          "Es un periodo de tiempo, normalmente en los meses siguientes a la firma del Contrato, en los que quien recibe el préstamo e inicia el pago de las cuotas periódicas, no está devolviendo el importe prestado, sino únicamente los intereses de ese período. Para gozar de este derecho debería pactarse expresamente en su Contrato si fuera el caso."
+        ],
+        [
+          "Procedimiento ejecutivo",
+          "Es el proceso ante el Juez para ejercer una acción ejecutiva encaminada a obtener el pago de una deuda. Es un procedimiento muy ágil en el que sólo se pueden realizar alegaciones concretas previstas por la ley para evitar el pago. La iniciación de un procedimiento ejecutivo tiene como requisito legal que haya un título ejecutivo."
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 396.4756774902344,
+        "y": 15.908723831176758,
+        "w": 168.00082397460938,
+        "h": 31.29973030090332
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 16,
+      "text": "",
+      "self_ref": "#/pictures/32",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 827.528779,
+        "w": 186.25119800000004,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 16,
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "self_ref": "#/texts/251",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 508.399186,
+        "y": 827.528779,
+        "w": 60.04479900000001,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 16,
+      "text": "Página 16 de 16",
+      "self_ref": "#/texts/252",
+      "cells": null
+    }
+  ]
+}

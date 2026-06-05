@@ -1,0 +1,999 @@
+{
+  "pdf": "azuredemo__PATRIMONIAL.pdf",
+  "engine": "docling",
+  "elapsed_seconds": 8.648,
+  "count": 56,
+  "items": [
+    {
+      "bbox": {
+        "x": 24.252029418945312,
+        "y": 19.37567138671875,
+        "w": 124.67257690429688,
+        "h": 76.95247650146484
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/pictures/0",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 217.82,
+        "y": 54.138000000000034,
+        "w": 191.36599999999981,
+        "h": 12.950000000000045
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Consulta Integral Patrimonio",
+      "self_ref": "#/texts/1",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 19.030569076538086,
+        "y": 107.9982681274414,
+        "w": 557.1374607086182,
+        "h": 101.3280258178711
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/tables/0",
+      "cells": [
+        [
+          "Datos Petición"
+        ],
+        [
+          "Nº Procedimiento : 987/2015"
+        ],
+        [
+          "Nº Documento : X6573514E"
+        ],
+        [
+          "Ejercicio fiscal : 2025"
+        ],
+        [
+          "Fecha de emisión : 17 d'abr. 2026 17:12"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 18.913978576660156,
+        "y": 218.00733947753906,
+        "w": 557.3448104858398,
+        "h": 294.90049743652344
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/tables/1",
+      "cells": [
+        [
+          "Servicios Consultados",
+          "Servicios Consultados"
+        ],
+        [
+          "AEAT - Consulta Percepciones:",
+          "0001 Operación Correcta. No existen datos."
+        ],
+        [
+          "AEAT - Consulta Actividades Economicas:",
+          "0001 Operación Correcta. No existen datos."
+        ],
+        [
+          "AEAT - CuentasAmpliadas (mod. 196):",
+          "0001 Operación Correcta. No existen datos."
+        ],
+        [
+          "AEAT - Consulta Fondos Inversion:",
+          "0001 Operación Correcta. No existen datos."
+        ],
+        [
+          "DFNavarra - Consulta Capacidad Economica:",
+          "0001 Operación Correcta. No existen datos."
+        ],
+        [
+          "SEPE - Consulta Prestaciones:",
+          "0001 Operación Correcta. No existen datos."
+        ],
+        [
+          "DGP - Consulta DNI:",
+          "Ok"
+        ],
+        [
+          "INSS - Consulta Prestaciones Tarjeta Social Digital:",
+          "Ok"
+        ],
+        [
+          "Entidades Financieras - Consultas por NIF:",
+          "Ok"
+        ],
+        [
+          "DFGuipuzcoa - Consulta Capacidad Economica:",
+          "0001 Operacion Correcta. No existen datos."
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 18.927011489868164,
+        "y": 522.489501953125,
+        "w": 557.3760890960693,
+        "h": 240.50762939453125
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/tables/2",
+      "cells": [
+        [
+          "DGP - Consulta DNI",
+          "DGP - Consulta DNI"
+        ],
+        [
+          "Datos Personales",
+          "Datos Personales"
+        ],
+        [
+          "Nombre:",
+          "GHEORGHE ADRIAN"
+        ],
+        [
+          "Primer Apellido:",
+          "OPREA"
+        ],
+        [
+          "Segundo Apellido:",
+          ""
+        ],
+        [
+          "DNI:",
+          "X6573514E"
+        ],
+        [
+          "Nacionalidad:",
+          "RUMANIA"
+        ],
+        [
+          "Sexo:",
+          "M"
+        ],
+        [
+          "Datos Nacimiento",
+          "Datos Nacimiento"
+        ],
+        [
+          "Localidad:",
+          "CLUJ"
+        ],
+        [
+          "Provincia:",
+          "ROU"
+        ],
+        [
+          "Nombre del padre:",
+          "GHEORGHE"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 32.0,
+        "y": 772.392,
+        "w": 533.5620000000009,
+        "h": 26.5
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico.  Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "self_ref": "#/texts/2",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 807.856,
+        "w": 53.376000000000005,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "17/04/26 17:13",
+      "self_ref": "#/texts/3",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 490.3,
+        "y": 807.856,
+        "w": 49.372000000000014,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "Página 1 de 4",
+      "self_ref": "#/texts/4",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 23.86427879333496,
+        "y": 19.506879806518555,
+        "w": 125.11158180236816,
+        "h": 76.90851783752441
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "",
+      "self_ref": "#/pictures/1",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 217.82,
+        "y": 54.138000000000034,
+        "w": 191.36599999999981,
+        "h": 12.950000000000045
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Consulta Integral Patrimonio",
+      "self_ref": "#/texts/6",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 105.5,
+        "w": 31.669999999999987,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "MARIA",
+      "self_ref": "#/texts/7",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 68.53,
+        "y": 105.53000000000009,
+        "w": 99.47000000000003,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Nombre de la madre:",
+      "self_ref": "#/texts/8",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 125.5,
+        "w": 50.04000000000002,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "10/02/1978",
+      "self_ref": "#/texts/9",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 65.75,
+        "y": 125.53000000000009,
+        "w": 102.25000000000003,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Fecha de nacimiento:",
+      "self_ref": "#/texts/10",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 274.71,
+        "y": 145.5300000000001,
+        "w": 44.45999999999998,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Dirección",
+      "self_ref": "#/texts/11",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 165.5,
+        "w": 53.89999999999995,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "TERRASSA",
+      "self_ref": "#/texts/12",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 117.99,
+        "y": 165.5300000000001,
+        "w": 50.01000000000003,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Localidad:",
+      "self_ref": "#/texts/13",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 185.5,
+        "w": 61.67999999999995,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "BARCELONA",
+      "self_ref": "#/texts/14",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 119.65,
+        "y": 185.5300000000001,
+        "w": 48.349999999999994,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Provincia:",
+      "self_ref": "#/texts/15",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 205.5,
+        "w": 27.80000000000001,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "08227",
+      "self_ref": "#/texts/16",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 98.0,
+        "y": 205.5300000000001,
+        "w": 68.89000000000001,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Código postal:",
+      "self_ref": "#/texts/17",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 225.5,
+        "w": 129.4799999999999,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "AVENIDA MADRID, 238 PBJ",
+      "self_ref": "#/texts/18",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 119.66,
+        "y": 225.5300000000001,
+        "w": 48.34000000000003,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Domicilio:",
+      "self_ref": "#/texts/19",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 269.44,
+        "y": 345.53,
+        "w": 56.11999999999995,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Otros datos",
+      "self_ref": "#/texts/20",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 365.5,
+        "w": 50.04000000000002,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "30/11/2011",
+      "self_ref": "#/texts/21",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 66.3,
+        "y": 365.53,
+        "w": 100.59000000000007,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Fecha de expedición:",
+      "self_ref": "#/texts/22",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 61.31,
+        "y": 385.53,
+        "w": 105.58000000000007,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Equipo de expedición:",
+      "self_ref": "#/texts/23",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 405.5,
+        "w": 50.04000000000002,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "01/01/9999",
+      "self_ref": "#/texts/24",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 69.08,
+        "y": 405.53,
+        "w": 98.92000000000003,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Fecha de caducidad:",
+      "self_ref": "#/texts/25",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 425.5,
+        "w": 51.70000000000002,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "C02572648",
+      "self_ref": "#/texts/26",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 72.99,
+        "y": 425.53,
+        "w": 98.34000000000005,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Número de soporte:",
+      "self_ref": "#/texts/27",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 32.0,
+        "y": 772.392,
+        "w": 533.5620000000009,
+        "h": 26.5
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico.  Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "self_ref": "#/texts/28",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 807.856,
+        "w": 53.376000000000005,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 2,
+      "text": "17/04/26 17:13",
+      "self_ref": "#/texts/29",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 490.3,
+        "y": 807.856,
+        "w": 49.372000000000014,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 2,
+      "text": "Página 2 de 4",
+      "self_ref": "#/texts/30",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 24.097557067871094,
+        "y": 19.577301025390625,
+        "w": 124.95442962646484,
+        "h": 76.62127685546875
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "",
+      "self_ref": "#/pictures/2",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 217.82,
+        "y": 54.138000000000034,
+        "w": 191.36599999999981,
+        "h": 12.950000000000045
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Consulta Integral Patrimonio",
+      "self_ref": "#/texts/32",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 152.79,
+        "y": 114.83400000000006,
+        "w": 289.42800000000034,
+        "h": 11.100000000000023
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 3,
+      "text": "INSS - Consulta Prestaciones Tarjeta Social Digital",
+      "self_ref": "#/texts/33",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 282.22,
+        "y": 135.5300000000001,
+        "w": 30.559999999999945,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Titular",
+      "self_ref": "#/texts/34",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 155.5,
+        "w": 98.89999999999998,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "GHEORGHE ADRIAN",
+      "self_ref": "#/texts/35",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 126.89,
+        "y": 155.5300000000001,
+        "w": 41.11000000000003,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Nombre:",
+      "self_ref": "#/texts/36",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 175.5,
+        "w": 35.00999999999996,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "OPREA",
+      "self_ref": "#/texts/37",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 92.42,
+        "y": 175.5300000000001,
+        "w": 75.58000000000003,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Primer apellido:",
+      "self_ref": "#/texts/38",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 195.5,
+        "w": 9.990000000000038,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "---",
+      "self_ref": "#/texts/39",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 81.32,
+        "y": 195.5300000000001,
+        "w": 86.68000000000004,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Segundo apellido:",
+      "self_ref": "#/texts/40",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 180.0,
+        "y": 215.5,
+        "w": 50.04000000000002,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "631723839",
+      "self_ref": "#/texts/41",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 123.0,
+        "y": 215.5300000000001,
+        "w": 47.220000000000056,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Teléfono:",
+      "self_ref": "#/texts/42",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 257.21,
+        "y": 235.5300000000001,
+        "w": 80.58999999999997,
+        "h": 9.25
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Sin Prestaciones",
+      "self_ref": "#/texts/43",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 32.0,
+        "y": 772.392,
+        "w": 533.5620000000009,
+        "h": 26.5
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico.  Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "self_ref": "#/texts/44",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 807.856,
+        "w": 53.376000000000005,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 3,
+      "text": "17/04/26 17:13",
+      "self_ref": "#/texts/45",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 490.3,
+        "y": 807.856,
+        "w": 49.372000000000014,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 3,
+      "text": "Página 3 de 4",
+      "self_ref": "#/texts/46",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 24.282320022583008,
+        "y": 19.491165161132812,
+        "w": 124.54446220397949,
+        "h": 76.70722198486328
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "",
+      "self_ref": "#/pictures/3",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 217.82,
+        "y": 54.138000000000034,
+        "w": 191.36599999999981,
+        "h": 12.950000000000045
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Consulta Integral Patrimonio",
+      "self_ref": "#/texts/48",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 19.281164169311523,
+        "y": 108.44385528564453,
+        "w": 556.6423587799072,
+        "h": 105.52510833740234
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "",
+      "self_ref": "#/tables/3",
+      "cells": [
+        [
+          "Entidades Financieras - Consultas por NIF",
+          "Entidades Financieras - Consultas por NIF",
+          "Entidades Financieras - Consultas por NIF",
+          "Entidades Financieras - Consultas por NIF",
+          "Entidades Financieras - Consultas por NIF",
+          "Entidades Financieras - Consultas por NIF",
+          "Entidades Financieras - Consultas por NIF",
+          "Entidades Financieras - Consultas por NIF"
+        ],
+        [
+          "Lista de productos",
+          "Lista de productos",
+          "Lista de productos",
+          "Lista de productos",
+          "Lista de productos",
+          "Lista de productos",
+          "Lista de productos",
+          "Lista de productos"
+        ],
+        [
+          "IBAN",
+          "Producto",
+          "Fecha apertura",
+          "Tipo intervención",
+          "Saldo",
+          "Divisa",
+          "Fecha valor",
+          ""
+        ],
+        [
+          "",
+          "Su solicitud a las entidades financieras está realizada pero faltan entidades por responder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a EEFF.",
+          "Su solicitud a las entidades financieras está realizada pero faltan entidades por responder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a EEFF.",
+          "Su solicitud a las entidades financieras está realizada pero faltan entidades por responder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a EEFF.",
+          "Su solicitud a las entidades financieras está realizada pero faltan entidades por responder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a EEFF.",
+          "Su solicitud a las entidades financieras está realizada pero faltan entidades por responder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a EEFF.",
+          "Su solicitud a las entidades financieras está realizada pero faltan entidades por responder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a EEFF.",
+          ""
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 32.0,
+        "y": 772.392,
+        "w": 533.5620000000009,
+        "h": 26.5
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico.  Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "self_ref": "#/texts/49",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 807.856,
+        "w": 53.376000000000005,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 4,
+      "text": "17/04/26 17:13",
+      "self_ref": "#/texts/50",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 490.3,
+        "y": 807.856,
+        "w": 49.372000000000014,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 4,
+      "text": "Página 4 de 4",
+      "self_ref": "#/texts/51",
+      "cells": null
+    }
+  ]
+}

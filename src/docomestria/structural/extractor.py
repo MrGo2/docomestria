@@ -18,7 +18,7 @@ from ..engines import (
 from ..models import DoclingBlock, LiteItem, VisualRect
 from .candidates import emit_all
 from .classify import classify
-from .models import Pair, Page, StructuralExtraction
+from .models import Page, Pair, StructuralExtraction
 from .scoring import resolve_pairs
 from .structure import detect_structure
 
@@ -75,6 +75,7 @@ def structural_extract_from_engines(
                 evidence=pair.evidence,
                 section_title=section_title,
                 subsection_title=pair.subsection_title,
+                column_index=pair.column_index,
             )
         )
 

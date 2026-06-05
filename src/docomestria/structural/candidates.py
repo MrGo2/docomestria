@@ -37,6 +37,8 @@ HORIZONTAL_X_GAP_MAX_PT = 300.0
 # (`'N.I.F.: 009786573G Tipo Identificación: NIF PERSONA FISICA'`); one
 # fused row is enough to indicate the column semantics are wrong throughout.
 MULTI_LABEL_CELL_MIN_COLONS = 2
+FORM_CONTINUATION_X_TOLERANCE_PT = 8.0
+FORM_CONTINUATION_Y_GAP_MAX_PT = 16.0
 
 
 # --------------------------------------------------------------------------
@@ -51,6 +53,40 @@ def _bbox_contains_point(b: BBox, x: float, y: float) -> bool:
 def _item_inside_any(item_bbox: BBox, regions: Iterable[BBox]) -> bool:
     cx, cy = item_bbox.centroid
     return any(_bbox_contains_point(r, cx, cy) for r in regions)
+
+
+def _norm_cell_text(text: str) -> str:
+    return "".join(text.casefold().split())
+
+
+def _table_cells_contain_pair(
+    label_text: str,
+    value_text: str,
+    tables: Iterable[Table],
+) -> bool:
+    """True if (label, value) appears as adjacent cells in any Docling/fused
+    table — i.e. a table whose structure we trust.
+
+    pdfplumber-only tables are skipped because pdfplumber occasionally
+    re-detects real content at phantom off-page Y coordinates with the same
+    cell text; matching those would spuriously suppress real L-horizontal
+    pairs sitting on the actual page (BBVA4 p1 `Primera Tarjeta Emitida
+    → 43,00` regression).
+    """
+    label_key = _norm_cell_text(label_text)
+    value_key = _norm_cell_text(value_text)
+    if not label_key or not value_key:
+        return False
+
+    for table in tables:
+        if table.source not in ("docling", "fused"):
+            continue
+        for row in table.cells or ():
+            cells = [_norm_cell_text(cell) for cell in row]
+            for idx, cell in enumerate(cells):
+                if cell == label_key and value_key in cells[idx + 1:]:
+                    return True
+    return False
 
 
 def _row_y_range(table: Table, row_idx: int, n_rows: int) -> tuple[float, float]:
@@ -141,6 +177,55 @@ def _is_column_header_row(cells: tuple[str, ...]) -> bool:
     return len(seen) >= 2
 
 
+def _cell_looks_like_value(text: str) -> bool:
+    return any(ch.isdigit() for ch in text)
+
+
+def _is_mostly_upper_text(text: str) -> bool:
+    letters = [ch for ch in text if ch.isalpha()]
+    if not letters:
+        return False
+    upper = sum(ch.isupper() for ch in letters)
+    return upper / len(letters) >= 0.8
+
+
+def _is_wide_header_or_sparse_row(cells: tuple[str, ...]) -> bool:
+    """True if a row in an N-col table looks like a spanned header / section
+    title rather than a real label→value pair.
+
+    Heuristics (any one true → suppress):
+      - Col 0 empty (no label) — header rows usually carry sub-column titles
+        in cols 1..N-1; we already handle that path through
+        `_is_column_header_row`. Anything else with empty col 0 is dropped.
+      - Col 1 empty AND cols 2..N-1 empty — only col 0 has text, which means
+        the row is a wide title spanning the table (e.g. BBVA4 'COMISIONES
+        POR OTRAS OPERACIONES'). Note: a row with col 0 + col 1 populated but
+        col 2 empty is a real KV (e.g. `['Primera Tarjeta Emitida', '43,00',
+        '']` on BBVA4 p1) so we DON'T suppress those.
+      - Col 0 looks like a header (mostly uppercase) AND col 1 is not a
+        numeric value — catches cases where col 1 carries another column
+        header (e.g. `['INTERESES', 'Tipo Nominal Anual%', 'TAE %Anual']`).
+      - Col 1 looks like a column-header label (mostly uppercase, no digits)
+        AND cols 2..N-1 are empty — catches BBVA4 `['Comisión anual...',
+        'IMPORTE', '']` where col 1 announces the next column header rather
+        than carrying a value.
+    """
+    if len(cells) <= 2:
+        return False
+    if not cells[0]:
+        return True
+    if not cells[1] and not any(cells[2:]):
+        return True
+    if (
+        _is_mostly_upper_text(cells[1])
+        and not _cell_looks_like_value(cells[1])
+        and not any(cells[2:])
+    ):
+        return True
+
+    return _is_mostly_upper_text(cells[0]) and not _cell_looks_like_value(cells[1])
+
+
 def emit_from_docling_tables(pages: Iterable[Page]) -> tuple[PairCandidate, ...]:
     """Emit one candidate per row of every fused table.
 
@@ -164,10 +249,10 @@ def emit_from_docling_tables(pages: Iterable[Page]) -> tuple[PairCandidate, ...]
 
       4. **Per-column-with-header row** (col[1] != col[2], a prior
          column-header row exists)
-         Emits one pair per distinct cell, with the column header
-         appended to the label so downstream callers can distinguish
-         `'TAE (Sin nómina)' → '12,6020%'` from
-         `'TAE (Con nómina)' → '11,4813%'`.
+         Emits one pair per distinct column value with `column_index`
+         set so downstream callers can keep `'TAE' → '12,6020%' (col 1)`
+         distinct from `'TAE' → '11,4813%' (col 2)`. The column header
+         (e.g. `'Sin nómina'`) is preserved in `features['column_header']`.
 
       5. **Otherwise** — skipped for now; will be handled by a follow-up
          dense-matrix emitter.
@@ -203,11 +288,13 @@ def emit_from_docling_tables(pages: Iterable[Page]) -> tuple[PairCandidate, ...]
                 row_top, row_bottom = _row_y_range(table, r, n_rows)
                 sub_title = _subsection_title_for_row(table, row_top, row_bottom)
                 label = stripped[0]
+                if _is_wide_header_or_sparse_row(stripped):
+                    continue
 
                 # Shape 3 — consistent value across cols[1:].
                 if _cells_all_equal(row, start=1):
                     value = stripped[1]
-                    if not label and not value:
+                    if not label:
                         continue
                     out.append(_make_table_candidate(
                         table, label, value, row_top, row_bottom,
@@ -216,7 +303,7 @@ def emit_from_docling_tables(pages: Iterable[Page]) -> tuple[PairCandidate, ...]
                     ))
                     continue
 
-                # Shape 4 — per-column row with prior headers available.
+                # Shape 4 — per-column matrix row with prior headers available.
                 if col_headers is not None and label:
                     seen: dict[str, int] = {}
                     for col_idx in range(1, len(stripped)):
@@ -226,12 +313,10 @@ def emit_from_docling_tables(pages: Iterable[Page]) -> tuple[PairCandidate, ...]
                         seen[v] = col_idx
                         header = col_headers[col_idx] if col_idx < len(col_headers) else ""
                         out.append(_make_table_candidate(
-                            table,
-                            f"{label} ({header})" if header else label,
-                            v,
-                            row_top, row_bottom,
+                            table, label, v, row_top, row_bottom,
                             row_index=r, row_count=n_rows, sub_title=sub_title,
-                            column_header=header,
+                            column_header=header or None,
+                            column_index=col_idx,
                         ))
                     continue
 
@@ -259,6 +344,7 @@ def _make_table_candidate(
     sub_title: str,
     column_header: str | None,
     low_confidence: bool = False,
+    column_index: int | None = None,
 ) -> PairCandidate:
     """Construct a D-2col PairCandidate for one row.
 
@@ -286,6 +372,8 @@ def _make_table_candidate(
         features["column_header"] = column_header
     if low_confidence:
         features["unresolved_matrix"] = True
+    if column_index is not None:
+        features["column_index"] = column_index
     return PairCandidate(
         label_text=label,
         value_text=value,
@@ -294,6 +382,7 @@ def _make_table_candidate(
         page=table.page,
         rule="D-2col",
         features=features,
+        column_index=column_index,
     )
 
 
@@ -329,32 +418,27 @@ def emit_from_in_item_split(
     single-cell / inline case (Datos Petición block in LABORAL, header
     fields in BBVA contracts).
 
-    Items whose centroid falls inside a Docling-handled table (i.e. one
-    whose source includes Docling and which has a 2-col cell matrix) are
-    skipped — E1 already produced canonical candidates for them.
+    Items whose centroid falls inside a detected table are skipped — table
+    contents stay available through `Page.tables` or E1/E5-specific emitters.
     """
     pages = tuple(pages)
     # Key by page so an item on page 1 isn't suppressed by a table on page 4
     # that happens to share coordinates (Entidades Financieras 4×8 on
     # PATRIMONIAL p4 sits at Y=109, h=105 — the same band as the Datos
     # Petición block on page 1).
-    docling_table_bboxes_by_page: dict[int, list[BBox]] = {}
+    table_bboxes_by_page: dict[int, list[BBox]] = {}
     prose_by_page: dict[int, list[BBox]] = {}
     for p in pages:
         for t in p.tables:
-            if (
-                t.source in ("docling", "fused")
-                and t.cells
-                and max((len(r) for r in t.cells), default=0) >= 2
-            ):
-                docling_table_bboxes_by_page.setdefault(p.number, []).append(t.bbox)
+            if t.cells and max((len(r) for r in t.cells), default=0) >= 2:
+                table_bboxes_by_page.setdefault(p.number, []).append(t.bbox)
         prose_by_page[p.number] = list(p.prose_regions)
 
     out: list[PairCandidate] = []
     for ci in classified:
         if ci.kind is not ItemKind.LABEL:
             continue
-        page_tables = docling_table_bboxes_by_page.get(ci.page, [])
+        page_tables = table_bboxes_by_page.get(ci.page, [])
         if _item_inside_any(ci.bbox, page_tables):
             continue
         if _item_inside_any(ci.bbox, prose_by_page.get(ci.page, [])):
@@ -407,9 +491,9 @@ def emit_from_horizontal_pair(
 ) -> tuple[PairCandidate, ...]:
     """Pair each LABEL with the nearest VALUE on the same Y, to the right.
 
-    Skips items inside Docling 2-col tables (E1 already covered them) and
-    items inside furniture / picture regions. A LABEL can match at most one
-    value — the closest VALUE strictly to the right on the same Y band.
+    Skips items inside detected tables and items inside furniture / picture
+    regions. A LABEL can match at most one value — the closest VALUE strictly
+    to the right on the same Y band.
     """
     pages = tuple(pages)
     classified = tuple(classified)
@@ -418,16 +502,17 @@ def emit_from_horizontal_pair(
     # silently suppress a real pair (PATRIMONIAL bug: a 4×8 table at Y=109
     # on page 4 was suppressing the Datos Petición items on page 1 because
     # the bbox check was page-blind).
-    docling_table_bboxes: dict[int, list[BBox]] = {}
+    table_bboxes: dict[int, list[BBox]] = {}
+    tables_by_page: dict[int, list[Table]] = {}
     furniture: dict[int, list[BBox]] = {}
     pictures: dict[int, list[BBox]] = {}
     prose: dict[int, list[BBox]] = {}
     for p in pages:
         for t in p.tables:
-            if t.source in ("docling", "fused") and t.cells and max(
-                (len(r) for r in t.cells), default=0
-            ) >= 2:
-                docling_table_bboxes.setdefault(p.number, []).append(t.bbox)
+            if t.cells:
+                tables_by_page.setdefault(p.number, []).append(t)
+            if t.cells and max((len(r) for r in t.cells), default=0) >= 2:
+                table_bboxes.setdefault(p.number, []).append(t.bbox)
         furniture[p.number] = list(p.furniture_regions)
         pictures[p.number] = list(p.picture_regions)
         prose[p.number] = list(p.prose_regions)
@@ -438,12 +523,20 @@ def emit_from_horizontal_pair(
 
     out: list[PairCandidate] = []
     for page_no, items in by_page.items():
-        d_tables = docling_table_bboxes.get(page_no, [])
+        d_tables = table_bboxes.get(page_no, [])
+        page_tables = tables_by_page.get(page_no, [])
         furn = furniture.get(page_no, [])
         pict = pictures.get(page_no, [])
         prs = prose.get(page_no, [])
 
-        def excluded(b: BBox) -> bool:
+        def excluded(
+            b: BBox,
+            *,
+            d_tables: list[BBox] = d_tables,
+            furn: list[BBox] = furn,
+            pict: list[BBox] = pict,
+            prs: list[BBox] = prs,
+        ) -> bool:
             return (
                 _item_inside_any(b, d_tables)
                 or _item_inside_any(b, furn)
@@ -470,6 +563,8 @@ def emit_from_horizontal_pair(
                     best_distance = gap
                     best_value = value
             if best_value is None:
+                continue
+            if _table_cells_contain_pair(label.text, best_value.text, page_tables):
                 continue
 
             ends_colon = label.text.rstrip().endswith(":")
@@ -514,12 +609,13 @@ def emit_from_two_column_form(
 
     Verified on BBVA3 page 1 Titulares (9×2): the form has two parallel
     columns at X≈31 (col 1, "Titular 1" data) and X≈305 (col 2, "Titular 2"
-    data). Each LiteParse item is a clean single `label: value` we can
-    split, and the column position tells us which titular it belongs to.
+    data). LiteParse items may contain one or more `label: value` spans, and
+    the column position tells us which titular each span belongs to.
 
-    Labels emerge as `'N.I.F. (col 1)'`, `'N.I.F. (col 2)'`, etc. — the
-    column suffix preserves the parallel-form semantics without committing
-    to brittle titular names (which are not always present in the PDF).
+    Labels keep the visible document text (`'N.I.F.'`, `'Nombre y apellidos'`)
+    and `column_index` preserves the parallel-form semantics without
+    committing to brittle titular names (which are not always present in the
+    PDF).
     """
     pages = tuple(pages)
     classified = tuple(classified)
@@ -540,6 +636,8 @@ def emit_from_two_column_form(
     for table in form_tables:
         midline = table.bbox.left + table.bbox.w / 2.0
         items_on_page = by_page.get(table.page, [])
+        known_labels = _known_form_labels(table, items_on_page)
+        continuations = _form_value_continuations(table, items_on_page)
         for ci in items_on_page:
             cx, cy = ci.bbox.centroid
             if not _bbox_contains_point(table.bbox, cx, cy):
@@ -547,43 +645,197 @@ def emit_from_two_column_form(
             # Skip items that don't look like KV at all (titles, prose).
             if ci.kind not in (ItemKind.LABEL, ItemKind.VALUE):
                 continue
-            idx = _find_inline_colon(ci.text)
-            if idx < 0:
-                continue
-            label_part = ci.text[:idx].rstrip()
-            value_part = ci.text[idx + 1 :].lstrip()
-            if not label_part:
-                continue
-
             col_idx = 1 if cx < midline else 2
-            annotated_label = f"{label_part} (col {col_idx})"
+            continuation_items = continuations.get(id(ci), ())
 
-            total = len(ci.text) or 1
-            split_frac = (idx + 1) / total
-            full = ci.bbox
-            split_x = full.left + full.w * split_frac
-            label_bbox = BBox.from_ltrb(full.left, full.top, split_x, full.bottom)
-            value_bbox = BBox.from_ltrb(split_x, full.top, full.right, full.bottom)
+            for span_idx, span in enumerate(_inline_form_pair_spans(ci.text, known_labels)):
+                label_part, value_part, label_start, label_end, value_start, value_end = span
+                if not label_part:
+                    continue
+                if span_idx == 0 and continuation_items:
+                    continuation_text = " ".join(
+                        item.text.strip() for item in continuation_items if item.text.strip()
+                    )
+                    if continuation_text:
+                        value_part = f"{value_part} {continuation_text}".strip()
 
-            out.append(
-                PairCandidate(
-                    label_text=annotated_label,
-                    value_text=value_part,
-                    label_bbox=label_bbox,
-                    value_bbox=value_bbox,
-                    page=table.page,
-                    rule="L-twocol-form",
-                    features={
-                        "label_ends_with_colon": True,
-                        "column_index": col_idx,
-                        "raw_label": label_part,
-                        "value_empty": value_part.strip() in ("", "-"),
-                    },
-                    label_item=ci,
-                    value_item=ci,
+                label_bbox = _bbox_for_text_span(
+                    ci.bbox, label_start, label_end, len(ci.text)
                 )
-            )
+                value_bbox = _bbox_for_text_span(
+                    ci.bbox, value_start, value_end, len(ci.text)
+                )
+                if span_idx == 0 and continuation_items:
+                    value_bbox = _bbox_union(
+                        value_bbox,
+                        *(item.bbox for item in continuation_items),
+                    )
+
+                out.append(
+                    PairCandidate(
+                        label_text=label_part,
+                        value_text=value_part,
+                        label_bbox=label_bbox,
+                        value_bbox=value_bbox,
+                        page=table.page,
+                        rule="L-twocol-form",
+                        features={
+                            "label_ends_with_colon": True,
+                            "column_index": col_idx,
+                            "raw_label": label_part,
+                            "value_empty": value_part.strip() in ("", "-"),
+                        },
+                        label_item=ci,
+                        value_item=ci,
+                        column_index=col_idx,
+                    )
+                )
     return tuple(out)
+
+
+def _known_form_labels(table: Table, items_on_page: list[ClassifiedItem]) -> tuple[str, ...]:
+    labels: list[str] = []
+
+    for row in table.cells or ():
+        for cell in row:
+            idx = _find_inline_colon(cell)
+            if idx >= 0:
+                labels.append(cell[:idx].strip())
+
+    for ci in items_on_page:
+        cx, cy = ci.bbox.centroid
+        if not _bbox_contains_point(table.bbox, cx, cy):
+            continue
+        if ci.kind not in (ItemKind.LABEL, ItemKind.VALUE):
+            continue
+        idx = _find_inline_colon(ci.text)
+        if idx >= 0:
+            labels.append(ci.text[:idx].strip())
+
+    unique: list[str] = []
+    seen: set[str] = set()
+    for label in labels:
+        key = " ".join(label.split()).casefold()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        unique.append(label)
+    return tuple(unique)
+
+
+def _form_value_continuations(
+    table: Table,
+    items_on_page: list[ClassifiedItem],
+) -> dict[int, tuple[ClassifiedItem, ...]]:
+    midline = table.bbox.left + table.bbox.w / 2.0
+    form_items = [
+        ci
+        for ci in items_on_page
+        if _bbox_contains_point(table.bbox, *ci.bbox.centroid)
+        and ci.kind in (ItemKind.LABEL, ItemKind.VALUE)
+    ]
+    ordered = sorted(form_items, key=lambda ci: (ci.bbox.centroid[1], ci.bbox.left))
+
+    colon_items: list[ClassifiedItem] = []
+    continuations: dict[int, list[ClassifiedItem]] = {}
+    for ci in ordered:
+        if _find_inline_colon(ci.text) >= 0:
+            colon_items.append(ci)
+            continue
+        if not ci.text.strip():
+            continue
+
+        cx, cy = ci.bbox.centroid
+        ci_col = 1 if cx < midline else 2
+        for previous in reversed(colon_items):
+            pcx, pcy = previous.bbox.centroid
+            prev_col = 1 if pcx < midline else 2
+            if prev_col != ci_col:
+                continue
+            if cy <= pcy:
+                continue
+            if cy - pcy > FORM_CONTINUATION_Y_GAP_MAX_PT:
+                continue
+            if abs(ci.bbox.left - previous.bbox.left) > FORM_CONTINUATION_X_TOLERANCE_PT:
+                continue
+            continuations.setdefault(id(previous), []).append(ci)
+            break
+
+    return {key: tuple(value) for key, value in continuations.items()}
+
+
+def _inline_form_pair_spans(
+    text: str,
+    known_labels: tuple[str, ...],
+) -> tuple[tuple[str, str, int, int, int, int], ...]:
+    first_colon = _find_inline_colon(text)
+    if first_colon < 0:
+        return ()
+
+    label_spans: list[tuple[int, int]] = [(0, first_colon)]
+    for label in known_labels:
+        needle = f"{label}:"
+        start = 0
+        while True:
+            idx = text.find(needle, start)
+            if idx < 0:
+                break
+            if idx == 0 or text[idx - 1].isspace():
+                label_spans.append((idx, idx + len(label)))
+            start = idx + 1
+
+    ordered: list[tuple[int, int]] = []
+    for label_start, colon_idx in sorted(
+        set(label_spans),
+        key=lambda span: (span[0], -(span[1] - span[0])),
+    ):
+        if ordered and label_start < ordered[-1][1]:
+            continue
+        ordered.append((label_start, colon_idx))
+
+    out: list[tuple[str, str, int, int, int, int]] = []
+    for idx, (label_start, colon_idx) in enumerate(ordered):
+        value_start = colon_idx + 1
+        value_end = ordered[idx + 1][0] if idx + 1 < len(ordered) else len(text)
+        label_part = text[label_start:colon_idx].strip()
+        value_part = text[value_start:value_end].strip()
+        if label_part:
+            out.append((
+                label_part,
+                value_part,
+                label_start,
+                value_start,
+                value_start,
+                value_end,
+            ))
+    return tuple(out)
+
+
+def _bbox_for_text_span(
+    bbox: BBox,
+    start: int,
+    end: int,
+    total: int,
+) -> BBox:
+    total = max(total, 1)
+    start_frac = max(0.0, min(1.0, start / total))
+    end_frac = max(0.0, min(1.0, end / total))
+    return BBox.from_ltrb(
+        bbox.left + bbox.w * start_frac,
+        bbox.top,
+        bbox.left + bbox.w * end_frac,
+        bbox.bottom,
+    )
+
+
+def _bbox_union(first: BBox, *rest: BBox) -> BBox:
+    boxes = (first, *rest)
+    return BBox.from_ltrb(
+        min(b.left for b in boxes),
+        min(b.top for b in boxes),
+        max(b.right for b in boxes),
+        max(b.bottom for b in boxes),
+    )
 
 
 # --------------------------------------------------------------------------

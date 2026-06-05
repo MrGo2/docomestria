@@ -154,6 +154,7 @@ class PairCandidate:
     features: dict[str, float | bool | int | str] = field(default_factory=dict)
     label_item: ClassifiedItem | None = None
     value_item: ClassifiedItem | None = None
+    column_index: int | None = None
 
 
 @dataclass(frozen=True)
@@ -175,6 +176,7 @@ class Pair:
     evidence: tuple[str, ...]
     section_title: str | None = None
     subsection_title: str | None = None
+    column_index: int | None = None
 
 
 @dataclass(frozen=True)

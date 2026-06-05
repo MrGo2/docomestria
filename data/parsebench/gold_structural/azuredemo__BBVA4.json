@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "document_id": "azuredemo__BBVA4",
+  "document_type": "spanish_banking_repsol_credit_contract",
+  "expected_pairs": [
+    {
+      "label": "Contrato Núm.",
+      "value": "0182 - 0977 - 0615 - 00000030895134",
+      "page": 1,
+      "section": "CONTRATO DE REPSOL MAS CREDITO",
+      "confidence": "high",
+      "evidence": "L-inline-split"
+    },
+    {
+      "label": "Tipo Identificación",
+      "value": "NIF QUE COMIENCEN CON X Y Z",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 1,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "N.I.F.",
+      "value": "X3669812R",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 1,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "Nombre y apellidos",
+      "value": "PABLO JAVIER CALVO",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 1,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "Límite de Crédito",
+      "value": "600,00",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 1,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "Sistema de reembolso",
+      "value": "CANTIDAD FIJA 20,00",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 2,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "Pago Personalizado",
+      "value": "18,0000",
+      "page": 1,
+      "section": "Condiciones económicas",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Cuenta de Crédito de la Tarjeta/Pago Aplazado",
+      "value": "17,5200",
+      "page": 1,
+      "section": "Condiciones económicas",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "NIF TITULAR 1",
+      "value": "X3669812R",
+      "page": 11,
+      "section": "EL/LOS TITULAR/ES",
+      "confidence": "high",
+      "evidence": "L-inline-split"
+    }
+  ],
+  "expected_tables": [
+    {
+      "page": 1,
+      "min_rows": 2,
+      "min_cols": 2,
+      "contains_rows": [
+        ["PrimeraTarjetaEmitida", "43,00"]
+      ]
+    }
+  ],
+  "forbidden_pages": [
+    {
+      "start": 2,
+      "end": 10,
+      "reason": "condiciones_generales_prose_pages_should_not_emit_pairs"
+    }
+  ],
+  "forbidden_pairs": [
+    {
+      "label": "b) Pago Aplazado:",
+      "value": "contains:Esta modalidad permite",
+      "page": 2,
+      "reason": "clause_heading_is_not_kv"
+    },
+    {
+      "label": "Condiciones Generales",
+      "value": "contains:BBVA",
+      "page": 2,
+      "reason": "prose_section_is_not_kv"
+    },
+    {
+      "label": "NIF TITULAR 2",
+      "value": "X3669812R",
+      "page": 11,
+      "reason": "wrong_parallel_titular_column"
+    },
+    {
+      "label": "Nombre y apellidos (col 1)",
+      "value": "PABLO JAVIER CALVO",
+      "page": 1,
+      "reason": "column_suffix_should_not_be_baked_into_label_text"
+    },
+    {
+      "label": "Límite de Crédito (col 1)",
+      "value": "600,00",
+      "page": 1,
+      "reason": "column_suffix_should_not_be_baked_into_label_text"
+    },
+    {
+      "label": "Sistema de reembolso (col 2)",
+      "value": "CANTIDAD FIJA 20,00",
+      "page": 1,
+      "reason": "column_suffix_should_not_be_baked_into_label_text"
+    },
+    {
+      "label": "Tipo Identificación",
+      "value": "contains:N.I.F.: X3669812R",
+      "page": 1,
+      "column_index": 1,
+      "reason": "value_should_not_absorb_next_label"
+    },
+    {
+      "label": "",
+      "value": "% Mínimo",
+      "page": 1,
+      "reason": "blank_table_header_as_key"
+    },
+    {
+      "label": "Comisiónanualporemisióny\nmantenimientodeunatarjetadecrédito",
+      "value": "IMPORTE",
+      "page": 1,
+      "reason": "table_header_as_key"
+    }
+  ],
+  "known_gaps": []
+}

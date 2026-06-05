@@ -43,7 +43,17 @@ Thumbs.db
 *.fused.json
 uploads/
 
-# ParseBench sample data — track scripts + INDEX.md only
+# ParseBench sample data — track scripts, INDEX.md, and committed gold fixtures only
 data/parsebench/pdfs/
 data/parsebench/ground_truth/
-data/parsebench/outputs/
+data/parsebench/outputs/*
+!data/parsebench/outputs/docling/
+!data/parsebench/outputs/liteparse/
+!data/parsebench/outputs/pdfplumber/
+data/parsebench/outputs/docling/*
+data/parsebench/outputs/liteparse/*
+data/parsebench/outputs/pdfplumber/*
+!data/parsebench/outputs/docling/azuredemo__*.json
+!data/parsebench/outputs/liteparse/azuredemo__*.json
+!data/parsebench/outputs/pdfplumber/azuredemo__*.json
+data/parsebench/views/

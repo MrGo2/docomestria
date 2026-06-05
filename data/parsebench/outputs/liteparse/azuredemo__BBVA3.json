@@ -1,0 +1,4088 @@
+{
+  "pdf": "azuredemo__BBVA3.pdf",
+  "engine": "liteparse",
+  "elapsed_seconds": 0.063,
+  "count": 340,
+  "items": [
+    {
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "bbox": {
+        "x": 11.488900184631348,
+        "y": 151.6416015625,
+        "w": 6.137999534606934,
+        "h": 428.67120361328125
+      },
+      "font_name": "ArialMT",
+      "font_size": 5.5,
+      "page": 1
+    },
+    {
+      "text": "Contrato Marco de Operaciones Bancarias versión: 0006",
+      "bbox": {
+        "x": 40.49993896484375,
+        "y": 64.00389862060547,
+        "w": 215.20880126953125,
+        "h": 8.928001403808594
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "CONTRATO DE TARJETA DESPUES BBVA",
+      "bbox": {
+        "x": 186.6239471435547,
+        "y": 96.36949157714844,
+        "w": 244.73277282714844,
+        "h": 13.391998291015625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 12.0,
+      "page": 1
+    },
+    {
+      "text": "Contrato Núm.: 0182 - 0539 - 0615 - 00000028350350",
+      "bbox": {
+        "x": 377.0279541015625,
+        "y": 121.38079071044922,
+        "w": 197.45196533203125,
+        "h": 8.928001403808594
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "En ALBERIC, a 04 de Abril de 2017",
+      "bbox": {
+        "x": 28.497573852539062,
+        "y": 132.62718200683594,
+        "w": 131.60958862304688,
+        "h": 8.928009033203125
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Titulares",
+      "bbox": {
+        "x": 278.6831970214844,
+        "y": 144.69158935546875,
+        "w": 41.67999267578125,
+        "h": 11.160003662109375
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 10.0,
+      "page": 1
+    },
+    {
+      "text": "Datos Identificativos",
+      "bbox": {
+        "x": 32.99760055541992,
+        "y": 161.96109008789062,
+        "w": 83.1387939453125,
+        "h": 9.486007690429688
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.5,
+      "page": 1
+    },
+    {
+      "text": "Datos Identificativos",
+      "bbox": {
+        "x": 306.0,
+        "y": 161.96109008789062,
+        "w": 83.13882446289062,
+        "h": 9.486007690429688
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.5,
+      "page": 1
+    },
+    {
+      "text": "Tipo Identificación: NIF PERSONA FISICA N.I.F.: 009786573G",
+      "bbox": {
+        "x": 31.499969482421875,
+        "y": 181.1551971435547,
+        "w": 226.985595703125,
+        "h": 9.23760986328125
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Tipo Identificación: -",
+      "bbox": {
+        "x": 305.99993896484375,
+        "y": 181.9111785888672,
+        "w": 71.618408203125,
+        "h": 8.928009033203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "N.I.F.: -",
+      "bbox": {
+        "x": 462.72235107421875,
+        "y": 182.2063751220703,
+        "w": 10.2239990234375,
+        "h": 8.928009033203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Nombre y apellidos: JULIO ALVAREZ SALGUERO",
+      "bbox": {
+        "x": 32.24877166748047,
+        "y": 197.95999145507812,
+        "w": 180.96798706054688,
+        "h": 8.928009033203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Nombre y apellidos: -",
+      "bbox": {
+        "x": 306.74871826171875,
+        "y": 197.95997619628906,
+        "w": 75.60000610351562,
+        "h": 8.928009033203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Datos Operativos de la Tarjeta",
+      "bbox": {
+        "x": 100.43280029296875,
+        "y": 218.956298828125,
+        "w": 122.37869262695312,
+        "h": 9.486007690429688
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.5,
+      "page": 1
+    },
+    {
+      "text": "Datos Operativos de la Tarjeta",
+      "bbox": {
+        "x": 375.68157958984375,
+        "y": 218.956298828125,
+        "w": 122.37872314453125,
+        "h": 9.486007690429688
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.5,
+      "page": 1
+    },
+    {
+      "text": "Nombre y apellidos: JULIO ALVAREZ SALGUERO",
+      "bbox": {
+        "x": 32.24871826171875,
+        "y": 235.4647216796875,
+        "w": 180.96798706054688,
+        "h": 8.928009033203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Nombre y apellidos: -",
+      "bbox": {
+        "x": 306.74871826171875,
+        "y": 235.4647216796875,
+        "w": 75.60000610351562,
+        "h": 8.928009033203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Límite Diario de Disposiciones de Efectivo en Cajeros: 1.000,00",
+      "bbox": {
+        "x": 32.24871826171875,
+        "y": 254.2063751220703,
+        "w": 199.25839233398438,
+        "h": 8.927993774414062
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Límite Diario de Disposiciones de Efectivo en Cajeros: -",
+      "bbox": {
+        "x": 305.9999084472656,
+        "y": 254.2135467529297,
+        "w": 197.474365234375,
+        "h": 8.927993774414062
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Limite Mensual de Disposiciones de Efectivo",
+      "bbox": {
+        "x": 31.499908447265625,
+        "y": 277.5415954589844,
+        "w": 158.32958984375,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Limite Mensual de Disposiciones de Efectivo",
+      "bbox": {
+        "x": 305.2510681152344,
+        "y": 279.795166015625,
+        "w": 158.32958984375,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "a Crédito (Cajeros y/o oficinas): 900,00",
+      "bbox": {
+        "x": 31.499908447265625,
+        "y": 287.82318115234375,
+        "w": 138.76400756835938,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "a Crédito (Cajeros y/o oficinas): -",
+      "bbox": {
+        "x": 305.2510681152344,
+        "y": 290.0767517089844,
+        "w": 116.96401977539062,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Clave Restricción: SIN RESTRICCIONES",
+      "bbox": {
+        "x": 31.499908447265625,
+        "y": 299.9551696777344,
+        "w": 148.0511932373047,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Clave Restricción: -",
+      "bbox": {
+        "x": 305.2510986328125,
+        "y": 302.208740234375,
+        "w": 69.37200927734375,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Datos Operativos",
+      "bbox": {
+        "x": 264.4200134277344,
+        "y": 315.5586853027344,
+        "w": 70.38882446289062,
+        "h": 9.485992431640625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.5,
+      "page": 1
+    },
+    {
+      "text": "Límite de Crédito: 900,00",
+      "bbox": {
+        "x": 152.6544189453125,
+        "y": 328.00640869140625,
+        "w": 89.83999633789062,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Importes en: EUR",
+      "bbox": {
+        "x": 253.62721252441406,
+        "y": 328.00640869140625,
+        "w": 63.58717346191406,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Sistema de reembolso: TOTAL",
+      "bbox": {
+        "x": 328.3343811035156,
+        "y": 327.55389404296875,
+        "w": 112.55709838867188,
+        "h": 9.485992431640625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Domiciliación",
+      "bbox": {
+        "x": 273.48480224609375,
+        "y": 356.80029296875,
+        "w": 55.266998291015625,
+        "h": 9.485992431640625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.5,
+      "page": 1
+    },
+    {
+      "text": "Banco: 0182 Oficina: 0539 D.C: 18 Núm. Cuenta: 0201535528",
+      "bbox": {
+        "x": 181.51199340820312,
+        "y": 368.7955017089844,
+        "w": 239.18319702148438,
+        "h": 9.485992431640625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Condiciones económicas",
+      "bbox": {
+        "x": 237.44158935546875,
+        "y": 389.4854736328125,
+        "w": 126.61322021484375,
+        "h": 11.718017578125
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 10.5,
+      "page": 1
+    },
+    {
+      "text": "CUOTA ANUAL",
+      "bbox": {
+        "x": 59.248802185058594,
+        "y": 410.3650207519531,
+        "w": 51.32020568847656,
+        "h": 7.811981201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "IMPORTE",
+      "bbox": {
+        "x": 180.92880249023438,
+        "y": 410.3650207519531,
+        "w": 31.891998291015625,
+        "h": 7.811981201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "COMISIONES POR DISPOSICIÓN DE",
+      "bbox": {
+        "x": 247.5001678466797,
+        "y": 413.0538330078125,
+        "w": 147.4329071044922,
+        "h": 9.485992431640625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.5,
+      "page": 1
+    },
+    {
+      "text": "Contra Cuenta",
+      "bbox": {
+        "x": 425.1311950683594,
+        "y": 408.2769775390625,
+        "w": 48.224578857421875,
+        "h": 7.811981201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Corriente / Ahorro",
+      "bbox": {
+        "x": 419.1119689941406,
+        "y": 415.4769592285156,
+        "w": 60.281402587890625,
+        "h": 7.811981201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Contra Cuenta de",
+      "bbox": {
+        "x": 499.82403564453125,
+        "y": 413.11956787109375,
+        "w": 60.21954345703125,
+        "h": 8.481597900390625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Primera Tarjeta Emitida",
+      "bbox": {
+        "x": 33.753604888916016,
+        "y": 425.1610107421875,
+        "w": 78.19679260253906,
+        "h": 7.811981201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "40,00",
+      "bbox": {
+        "x": 182.72879028320312,
+        "y": 425.5087890625,
+        "w": 20.0159912109375,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "EFECTIVO",
+      "bbox": {
+        "x": 247.50018310546875,
+        "y": 422.0538330078125,
+        "w": 42.508514404296875,
+        "h": 9.485992431640625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.5,
+      "page": 1
+    },
+    {
+      "text": "(Débito)",
+      "bbox": {
+        "x": 436.0247802734375,
+        "y": 422.6769714355469,
+        "w": 26.438995361328125,
+        "h": 7.811981201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Tarjeta de Crédito",
+      "bbox": {
+        "x": 498.9239807128906,
+        "y": 420.319580078125,
+        "w": 61.904022216796875,
+        "h": 8.481597900390625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.599999904632568,
+      "page": 1
+    },
+    {
+      "text": "Resto de Tarjetas",
+      "bbox": {
+        "x": 33.753604888916016,
+        "y": 441.6634216308594,
+        "w": 55.25039291381836,
+        "h": 7.811981201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "20,00",
+      "bbox": {
+        "x": 182.72879028320312,
+        "y": 440.5063781738281,
+        "w": 20.0159912109375,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "%",
+      "bbox": {
+        "x": 423.1872253417969,
+        "y": 434.7535705566406,
+        "w": 7.11199951171875,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Mínimo",
+      "bbox": {
+        "x": 453.99603271484375,
+        "y": 434.7535705566406,
+        "w": 28.0,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "%",
+      "bbox": {
+        "x": 504.18719482421875,
+        "y": 434.7535705566406,
+        "w": 7.11199951171875,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Mínimo",
+      "bbox": {
+        "x": 534.2471923828125,
+        "y": 435.2503662109375,
+        "w": 28.0,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Cajeros Grupo BBVA en España",
+      "bbox": {
+        "x": 247.5,
+        "y": 448.0353698730469,
+        "w": 101.55459594726562,
+        "h": 7.811981201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "0,0000",
+      "bbox": {
+        "x": 414.5111999511719,
+        "y": 448.757568359375,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "0,00",
+      "bbox": {
+        "x": 459.8280029296875,
+        "y": 448.757568359375,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,5000",
+      "bbox": {
+        "x": 495.5111999511719,
+        "y": 448.757568359375,
+        "w": 24.464019775390625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,00",
+      "bbox": {
+        "x": 540.0792236328125,
+        "y": 448.757568359375,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "COMISIONES POR OTRAS OPERACIONES",
+      "bbox": {
+        "x": 35.25120162963867,
+        "y": 459.8650207519531,
+        "w": 141.9315948486328,
+        "h": 7.811981201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "IMPORTE",
+      "bbox": {
+        "x": 198.18719482421875,
+        "y": 463.6090087890625,
+        "w": 31.891998291015625,
+        "h": 7.811981201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Cajeros de entidades distintas del Grupo BBVA en",
+      "bbox": {
+        "x": 248.24887084960938,
+        "y": 462.7809753417969,
+        "w": 156.83120727539062,
+        "h": 7.811981201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Por Consultas en Cajeros no pertenecientes al",
+      "bbox": {
+        "x": 33.75361251831055,
+        "y": 476.2809753417969,
+        "w": 144.7803955078125,
+        "h": 7.811981201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "0,60",
+      "bbox": {
+        "x": 205.2071990966797,
+        "y": 481.00640869140625,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "España",
+      "bbox": {
+        "x": 248.24888610839844,
+        "y": 469.6425476074219,
+        "w": 23.736984252929688,
+        "h": 7.811981201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Nota 1",
+      "bbox": {
+        "x": 414.1517028808594,
+        "y": 467.7511291503906,
+        "w": 24.4495849609375,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Nota 1",
+      "bbox": {
+        "x": 454.6517028808594,
+        "y": 467.7511291503906,
+        "w": 24.4495849609375,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Nota 2",
+      "bbox": {
+        "x": 495.9004821777344,
+        "y": 467.7511291503906,
+        "w": 24.449615478515625,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Nota 2",
+      "bbox": {
+        "x": 534.9028930664062,
+        "y": 467.7511291503906,
+        "w": 24.4495849609375,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "grupo BBVA y UE en Euros",
+      "bbox": {
+        "x": 33.75361633300781,
+        "y": 484.2801818847656,
+        "w": 85.589599609375,
+        "h": 7.811981201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Cajeros fuera de España",
+      "bbox": {
+        "x": 248.24888610839844,
+        "y": 483.28656005859375,
+        "w": 77.44902038574219,
+        "h": 7.811981201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "4,5000",
+      "bbox": {
+        "x": 414.51123046875,
+        "y": 482.50396728515625,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,00",
+      "bbox": {
+        "x": 459.8280334472656,
+        "y": 482.50396728515625,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "5,0000",
+      "bbox": {
+        "x": 495.51123046875,
+        "y": 482.50396728515625,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,00",
+      "bbox": {
+        "x": 540.0792236328125,
+        "y": 482.50396728515625,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Por emisión de duplicados",
+      "bbox": {
+        "x": 35.25121307373047,
+        "y": 497.9097595214844,
+        "w": 82.10319519042969,
+        "h": 7.811981201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "4,00",
+      "bbox": {
+        "x": 205.2071990966797,
+        "y": 496.0039978027344,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Oficinas del Grupo BBVA en España",
+      "bbox": {
+        "x": 248.2489013671875,
+        "y": 499.4073791503906,
+        "w": 114.00344848632812,
+        "h": 7.811981201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "0,0000",
+      "bbox": {
+        "x": 414.51123046875,
+        "y": 499.0063781738281,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "0,00",
+      "bbox": {
+        "x": 459.8280334472656,
+        "y": 499.0063781738281,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,0000",
+      "bbox": {
+        "x": 495.51123046875,
+        "y": 499.0063781738281,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "2,50",
+      "bbox": {
+        "x": 540.0792236328125,
+        "y": 499.0063781738281,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "INTERESES",
+      "bbox": {
+        "x": 41.997589111328125,
+        "y": 519.11376953125,
+        "w": 39.676002502441406,
+        "h": 7.81201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Tipo Nominal",
+      "bbox": {
+        "x": 121.83118438720703,
+        "y": 516.7809448242188,
+        "w": 44.333412170410156,
+        "h": 7.81201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "TAE",
+      "bbox": {
+        "x": 198.50399780273438,
+        "y": 517.1553955078125,
+        "w": 14.0,
+        "h": 7.81201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Oficinas en otras Entidades ServiRed",
+      "bbox": {
+        "x": 248.2489471435547,
+        "y": 517.4073486328125,
+        "w": 116.34321594238281,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "5,0000",
+      "bbox": {
+        "x": 414.51123046875,
+        "y": 515.5087890625,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,00",
+      "bbox": {
+        "x": 459.8280334472656,
+        "y": 515.5087890625,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "5,0000",
+      "bbox": {
+        "x": 495.51123046875,
+        "y": 515.5087890625,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,00",
+      "bbox": {
+        "x": 540.0792236328125,
+        "y": 515.5087890625,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Anual %",
+      "bbox": {
+        "x": 129.2183837890625,
+        "y": 524.7801513671875,
+        "w": 27.614212036132812,
+        "h": 7.81201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "% Anual",
+      "bbox": {
+        "x": 191.6927947998047,
+        "y": 524.3554077148438,
+        "w": 27.610794067382812,
+        "h": 7.81201171875
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Oficinas de otras Entidades Nacionales y Paises",
+      "bbox": {
+        "x": 247.5000457763672,
+        "y": 530.2809448242188,
+        "w": 150.5926055908203,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Pago Personalizado",
+      "bbox": {
+        "x": 33.75358200073242,
+        "y": 538.4097290039062,
+        "w": 62.64719772338867,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "18,0000",
+      "bbox": {
+        "x": 128.03759765625,
+        "y": 538.0087890625,
+        "w": 28.912002563476562,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Detalle en cláusula",
+      "bbox": {
+        "x": 171.74880981445312,
+        "y": 534.1102905273438,
+        "w": 54.92439270019531,
+        "h": 7.2540283203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 6.5,
+      "page": 1
+    },
+    {
+      "text": "U.E. (en Euros)",
+      "bbox": {
+        "x": 247.50006103515625,
+        "y": 537.1425170898438,
+        "w": 48.23419189453125,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "5,0000",
+      "bbox": {
+        "x": 414.51123046875,
+        "y": 532.0039672851562,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,00",
+      "bbox": {
+        "x": 459.8280334472656,
+        "y": 532.0039672851562,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "5,0000",
+      "bbox": {
+        "x": 495.51123046875,
+        "y": 532.0039672851562,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,00",
+      "bbox": {
+        "x": 540.0792236328125,
+        "y": 532.0039672851562,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "específica del contrato",
+      "bbox": {
+        "x": 171.74880981445312,
+        "y": 542.1094360351562,
+        "w": 65.05729675292969,
+        "h": 7.2540283203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 6.5,
+      "page": 1
+    },
+    {
+      "text": "Oficinas de Entidades en el Extranjero y U.E.",
+      "bbox": {
+        "x": 248.24879455566406,
+        "y": 546.408935546875,
+        "w": 140.0902557373047,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "5,0000",
+      "bbox": {
+        "x": 414.51123046875,
+        "y": 548.50634765625,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,00",
+      "bbox": {
+        "x": 459.8280334472656,
+        "y": 548.50634765625,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "5,0000",
+      "bbox": {
+        "x": 495.51123046875,
+        "y": 548.50634765625,
+        "w": 24.4639892578125,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "3,00",
+      "bbox": {
+        "x": 540.0792236328125,
+        "y": 548.50634765625,
+        "w": 15.5679931640625,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Cuenta de Crédito de la",
+      "bbox": {
+        "x": 34.50238800048828,
+        "y": 554.1633911132812,
+        "w": 73.95399475097656,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "(no Euro)",
+      "bbox": {
+        "x": 248.24884033203125,
+        "y": 553.6089477539062,
+        "w": 29.18218994140625,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Tarjeta/Pago Aplazado",
+      "bbox": {
+        "x": 34.50238037109375,
+        "y": 564.1641235351562,
+        "w": 71.21659851074219,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "22,8000",
+      "bbox": {
+        "x": 128.03759765625,
+        "y": 561.257568359375,
+        "w": 28.912002563476562,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Detalle en cláusula",
+      "bbox": {
+        "x": 171.74879455566406,
+        "y": 558.1078491210938,
+        "w": 54.92439270019531,
+        "h": 7.2540283203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 6.5,
+      "page": 1
+    },
+    {
+      "text": "específica del contrato",
+      "bbox": {
+        "x": 171.74879455566406,
+        "y": 566.1071166992188,
+        "w": 65.05729675292969,
+        "h": 7.2540283203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 6.5,
+      "page": 1
+    },
+    {
+      "text": "(1) Por las retiradas de efectivo realizadas en un cajero perteneciente a una Entidad distinta del Grupo",
+      "bbox": {
+        "x": 246.7513885498047,
+        "y": 564.862548828125,
+        "w": 317.98663330078125,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "BBVA en España en Euros, BBVA repercutirá el mismo importe de la comisión cobrada por la entidad",
+      "bbox": {
+        "x": 246.75143432617188,
+        "y": 572.0625610351562,
+        "w": 315.5824890136719,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Pago Total (para",
+      "bbox": {
+        "x": 32.99760437011719,
+        "y": 586.3761596679688,
+        "w": 52.14360046386719,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "titular del cajero a BBVA. Dicho importe será informado por la entidad titular del cajero antes de la",
+      "bbox": {
+        "x": 246.75149536132812,
+        "y": 579.2625122070312,
+        "w": 303.5549011230469,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "retirada de efectivo.",
+      "bbox": {
+        "x": 246.75155639648438,
+        "y": 586.4625244140625,
+        "w": 61.492034912109375,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "disposiciones de efectivo",
+      "bbox": {
+        "x": 32.99760818481445,
+        "y": 594.8505249023438,
+        "w": 77.83399963378906,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Detalle en cláusula",
+      "bbox": {
+        "x": 171.74880981445312,
+        "y": 597.1102905273438,
+        "w": 54.92439270019531,
+        "h": 7.2540283203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 6.5,
+      "page": 1
+    },
+    {
+      "text": "(2) Por las retiradas de efectivo realizadas en un cajero perteneciente a una entidad distinta del Grupo",
+      "bbox": {
+        "x": 246.75157165527344,
+        "y": 594.1089477539062,
+        "w": 317.2161865234375,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "y/o traspasos a cuenta de",
+      "bbox": {
+        "x": 32.99760055541992,
+        "y": 603.3177490234375,
+        "w": 80.17279052734375,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "22,8000",
+      "bbox": {
+        "x": 128.03759765625,
+        "y": 602.50634765625,
+        "w": 28.912002563476562,
+        "h": 8.927978515625
+      },
+      "font_name": "ArialMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "específica del contrato",
+      "bbox": {
+        "x": 171.74880981445312,
+        "y": 605.1094360351562,
+        "w": 65.05729675292969,
+        "h": 7.2540283203125
+      },
+      "font_name": "ArialMT",
+      "font_size": 6.5,
+      "page": 1
+    },
+    {
+      "text": "BBVA en España en Euros, BBVA repercutirá el mismo importe de la comisión cobrada por la entidad",
+      "bbox": {
+        "x": 246.75155639648438,
+        "y": 601.3088989257812,
+        "w": 315.5824890136719,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "domiciliación de pagos)",
+      "bbox": {
+        "x": 32.997596740722656,
+        "y": 611.7921752929688,
+        "w": 73.15980529785156,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "titular del cajero a BBVA. Dicho importe será informado por la entidad titular del cajero antes de la",
+      "bbox": {
+        "x": 246.75161743164062,
+        "y": 608.5089111328125,
+        "w": 303.5549011230469,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "retirada de efectivo. Asimismo, BBVA le cobrara la comisión por disposición a crédito indicada para",
+      "bbox": {
+        "x": 246.75167846679688,
+        "y": 615.7089233398438,
+        "w": 307.8030090332031,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Moratorio, sobre cuotas",
+      "bbox": {
+        "x": 32.997589111328125,
+        "y": 626.66015625,
+        "w": 73.54920196533203,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Detalle en",
+      "bbox": {
+        "x": 120.75120544433594,
+        "y": 623.4129638671875,
+        "w": 31.52239990234375,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "cajeros Grupo BBVA en España . Esta comisión es adicional a la de retirada de efectivo en cajeros de",
+      "bbox": {
+        "x": 246.75167846679688,
+        "y": 622.9088745117188,
+        "w": 99.9993896484375,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Vencidas y no satisfechas",
+      "bbox": {
+        "x": 32.997589111328125,
+        "y": 633.8601684570312,
+        "w": 80.93560028076172,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "cláusula de",
+      "bbox": {
+        "x": 120.75120544433594,
+        "y": 631.4121704101562,
+        "w": 35.4176025390625,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "entidades distintas del Grupo BBVA en España.",
+      "bbox": {
+        "x": 246.75167846679688,
+        "y": 630.10888671875,
+        "w": 148.65902709960938,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Intereses",
+      "bbox": {
+        "x": 120.75121307373047,
+        "y": 639.4113159179688,
+        "w": 28.790992736816406,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "De apertura sobre excedido en el límite de crédito en tarjeta: 3,0000 %, Mínimo 6,00 euro.",
+      "bbox": {
+        "x": 31.500030517578125,
+        "y": 657.5625,
+        "w": 279.8330078125,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Por reclamación de posiciones vencidas hasta un máximo de 35,00 EUR por una sola vez.",
+      "bbox": {
+        "x": 31.500030517578125,
+        "y": 668.0601196289062,
+        "w": 281.3764343261719,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Por utilización de la Tarjeta fuera de la Zona Euro: 3,0000 % sobre el contravalor en euros.",
+      "bbox": {
+        "x": 31.500030517578125,
+        "y": 678.5576782226562,
+        "w": 282.1665954589844,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Por gestión de aplazamiento de pagos: - euros por cada operación.",
+      "bbox": {
+        "x": 31.50006103515625,
+        "y": 689.0552978515625,
+        "w": 209.010986328125,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Compensación por cancelación anticipada de deuda: - % sobre el importe cancelado anticipadamente",
+      "bbox": {
+        "x": 31.500045776367188,
+        "y": 699.5601196289062,
+        "w": 318.3709716796875,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "COMISIONES POR TRASPASO DE FONDOS",
+      "bbox": {
+        "x": 32.248809814453125,
+        "y": 711.9081420898438,
+        "w": 145.41961669921875,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "(Operaciones a Crédito)",
+      "bbox": {
+        "x": 32.248809814453125,
+        "y": 719.9073486328125,
+        "w": 74.70880889892578,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "A Cuenta Personal BBVA",
+      "bbox": {
+        "x": 32.248809814453125,
+        "y": 731.4561157226562,
+        "w": 79.39339447021484,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "3,0000 %",
+      "bbox": {
+        "x": 32.24880599975586,
+        "y": 744.5457153320312,
+        "w": 29.58700180053711,
+        "h": 7.81201171875
+      },
+      "font_name": "ArialMT",
+      "font_size": 7.0,
+      "page": 1
+    },
+    {
+      "text": "Las presentes condiciones junto con el Contrato Marco de Operaciones Bancarias que se identifica en el encabezamiento",
+      "bbox": {
+        "x": 40.5,
+        "y": 768.8573608398438,
+        "w": 506.9178466796875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 1
+    },
+    {
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "bbox": {
+        "x": 27.74871826171875,
+        "y": 799.0087280273438,
+        "w": 215.583984375,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "Página 1 de 5",
+      "bbox": {
+        "x": 512.8487548828125,
+        "y": 799.0015258789062,
+        "w": 51.14715576171875,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 1
+    },
+    {
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "bbox": {
+        "x": 11.488900184631348,
+        "y": 151.6416015625,
+        "w": 6.137999534606934,
+        "h": 428.67120361328125
+      },
+      "font_name": "ArialMT",
+      "font_size": 5.5,
+      "page": 2
+    },
+    {
+      "text": "constituyen la totalidad de las condiciones aplicables a la Tarjeta que en este Contrato se regula.",
+      "bbox": {
+        "x": 40.5,
+        "y": 78.85980224609375,
+        "w": 386.6940612792969,
+        "h": 10.043998718261719
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "TARJETAS DE CRÉDITO - Condiciones Particulares",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 95.15339660644531,
+        "w": 211.5449676513672,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "1. FUNCIONES.",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 120.23818969726562,
+        "w": 5.004001617431641,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Servicio Tarjeta de Crédito/Débito",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 137.82058715820312,
+        "w": 144.53997802734375,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Las Tarjetas podrán utilizarse para las siguientes funciones:",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 155.4029998779297,
+        "w": 239.10293579101562,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "a) Para adquirir bienes u obtener la prestación de servicios en cualquiera de los establecimientos (físicos o virtuales)",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 172.9853973388672,
+        "w": 505.4040222167969,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "adheridos al sistema VISA o MASTERCARD y SERVIRED dependiendo del tipo de tarjeta emitido.",
+      "bbox": {
+        "x": 51.74639892578125,
+        "y": 181.77659606933594,
+        "w": 394.1550598144531,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "b) Para obtener dinero en efectivo en cualquiera de las Oficinas de los Bancos y Cajas afiliados a los sistemas VISA o",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 199.35899353027344,
+        "w": 505.3320617675781,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "MASTERCARD y SERVIRED.",
+      "bbox": {
+        "x": 51.746429443359375,
+        "y": 208.1501922607422,
+        "w": 121.01399230957031,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "c) Para obtener dinero en efectivo en los Cajeros Automáticos del Banco y en los de otras Entidades cuyos Cajeros sean",
+      "bbox": {
+        "x": 42.048030853271484,
+        "y": 225.7325897216797,
+        "w": 505.4112548828125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "declarados accesibles a las Tarjetas.",
+      "bbox": {
+        "x": 51.7464599609375,
+        "y": 234.52378845214844,
+        "w": 147.5549774169922,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "d) Para realizar en los Cajeros Automáticos del Banco y del resto de entidades afiliadas al Sistema Servired, así como en los",
+      "bbox": {
+        "x": 42.04806137084961,
+        "y": 252.10618591308594,
+        "w": 505.4004211425781,
+        "h": 10.043991088867188
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "de aquellas otras entidades que lo permitan, las distintas transacciones que el Banco vaya poniendo a disposición de los",
+      "bbox": {
+        "x": 51.7464599609375,
+        "y": 260.89739990234375,
+        "w": 495.69482421875,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Titulares y/o Beneficiarios.",
+      "bbox": {
+        "x": 51.7464599609375,
+        "y": 269.6885986328125,
+        "w": 105.53398132324219,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "2. IMPORTE DE LAS OPERACIONES.",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 285.9822082519531,
+        "w": 158.031005859375,
+        "h": 10.043975830078125
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Los Titulares y los Beneficiarios aceptan como justificantes del importe de las operaciones el que se exprese en la factura",
+      "bbox": {
+        "x": 40.5,
+        "y": 303.5646057128906,
+        "w": 507.00421142578125,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "firmada por el Titular o Beneficiario a cuyo nombre este expedida la Tarjeta utilizada, el comprobante interno del Cajero",
+      "bbox": {
+        "x": 40.5,
+        "y": 312.3558044433594,
+        "w": 506.98974609375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Automático en disposiciones por este medio, el comprobante del asiento en cuenta en disposiciones por teléfono (si las",
+      "bbox": {
+        "x": 40.49993896484375,
+        "y": 321.1470031738281,
+        "w": 506.890869140625,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "hubiere) y el registro conservado en el soporte informático correspondiente en el caso de servicios telemáticos, sirviendo",
+      "bbox": {
+        "x": 40.5,
+        "y": 329.9382019042969,
+        "w": 506.9681396484375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "dichos documentos o instrumentos como justificantes de cargo y medios de prueba, en caso necesario.",
+      "bbox": {
+        "x": 40.5,
+        "y": 338.7294006347656,
+        "w": 412.6860046386719,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "En las operaciones realizadas en el extranjero en divisas distintas del euro, se considerará el importe que resulte de su",
+      "bbox": {
+        "x": 40.5,
+        "y": 356.3117980957031,
+        "w": 506.89447021484375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "contravalor en euros según cambio obtenido por los Sistemas de Pago en la fecha en que practiquen la liquidación",
+      "bbox": {
+        "x": 40.500030517578125,
+        "y": 365.1029968261719,
+        "w": 506.9015808105469,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "correspondiente, sin perjuicio de la comisión por cambio de divisa prevista anteriormente.",
+      "bbox": {
+        "x": 40.500030517578125,
+        "y": 373.8941955566406,
+        "w": 356.6340026855469,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "3. LÍMITE DE UTILIZACIÓN.",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 390.18060302734375,
+        "w": 116.51399230957031,
+        "h": 10.043975830078125
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "El Banco podrá establecer límites de utilización de las Tarjetas. Los límites de utilización, a crédito y a débito, conocidos en",
+      "bbox": {
+        "x": 40.5,
+        "y": 407.76300048828125,
+        "w": 506.9232177734375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "cada momento por los Titulares y/o Beneficiarios, no podrán ser excedidos, salvo autorización del Banco, el cual podrá",
+      "bbox": {
+        "x": 40.499969482421875,
+        "y": 416.55419921875,
+        "w": 506.9609680175781,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "concederla para favorecer, o no perjudicar, intereses de los Titulares y/o de los Beneficiarios, o de cualquiera de ellos,",
+      "bbox": {
+        "x": 40.49993896484375,
+        "y": 425.34539794921875,
+        "w": 506.8980712890625,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "aceptando todos los Titulares y Beneficiarios expresamente tal posibilidad y sus consecuencias.",
+      "bbox": {
+        "x": 40.499969482421875,
+        "y": 434.1365966796875,
+        "w": 385.66790771484375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Los Titulares se facultan recíprocamente para que cualquiera de ellos, con su sola firma, pueda solicitar la modificación de los",
+      "bbox": {
+        "x": 40.499969482421875,
+        "y": 451.718994140625,
+        "w": 506.8908386230469,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "límites de utilización, dentro de los límites mínimo y máximo establecidos en cada momento por el Banco, aceptando",
+      "bbox": {
+        "x": 40.5,
+        "y": 460.51019287109375,
+        "w": 507.0059814453125,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "expresamente, aquí y desde ahora, cualquier solicitud de modificación realizada por",
+      "bbox": {
+        "x": 40.499969482421875,
+        "y": 469.3013916015625,
+        "w": 356.556640625,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "cualquiera de ellos, así como las",
+      "bbox": {
+        "x": 406.18798828125,
+        "y": 469.3013916015625,
+        "w": 141.19561767578125,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "consecuencias que de las mismas se deriven.",
+      "bbox": {
+        "x": 40.5,
+        "y": 478.09259033203125,
+        "w": 183.57298278808594,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "El Banco podrá reducir el Límite de Crédito de la Tarjeta en el caso de incumplimiento de las obligaciones asumidas por los",
+      "bbox": {
+        "x": 40.5,
+        "y": 495.67498779296875,
+        "w": 506.87640380859375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Titulares en el contrato, previa comunicación al Titular con una antelación de 10 días, sin perjuicio de la posibilidad del Banco",
+      "bbox": {
+        "x": 40.5,
+        "y": 504.4662170410156,
+        "w": 506.964599609375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "de cancelar el contrato de Tarjeta según lo establecido en la cláusula de Duración.",
+      "bbox": {
+        "x": 40.5,
+        "y": 513.2573852539062,
+        "w": 329.66094970703125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "4. CUOTA ANUAL.",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 529.5437622070312,
+        "w": 78.51239013671875,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "La Cuota Anual que corresponda al primer año se deberá satisfacer a los cuatro (4) meses siguientes a la emisión de la",
+      "bbox": {
+        "x": 40.49999237060547,
+        "y": 547.1261596679688,
+        "w": 506.969970703125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Tarjeta. Las cuotas anuales sucesivas se percibirán al inicio de cada año contado desde su emisión.",
+      "bbox": {
+        "x": 40.499969482421875,
+        "y": 555.9173583984375,
+        "w": 400.6889953613281,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "5. COMISIONES.",
+      "bbox": {
+        "x": 42.04800033569336,
+        "y": 572.2109985351562,
+        "w": 70.01998901367188,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "En caso de cancelación anticipada parcial o total de la deuda derivada de la utilización de las Tarjetas, el Banco, en el",
+      "bbox": {
+        "x": 40.5,
+        "y": 589.7933959960938,
+        "w": 506.8836669921875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "momento de la cancelación, percibirá la comisión por cancelación anticipada establecida en el apartado CONDICIONES",
+      "bbox": {
+        "x": 40.50006103515625,
+        "y": 598.5845947265625,
+        "w": 506.8944091796875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "ECONOMICAS de la página 1.",
+      "bbox": {
+        "x": 40.50006103515625,
+        "y": 607.3757934570312,
+        "w": 120.54597473144531,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Asimismo el Banco percibirá el resto de comisiones establecidas en la citada página.",
+      "bbox": {
+        "x": 40.50006103515625,
+        "y": 624.9581909179688,
+        "w": 338.63397216796875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "6. INTERESES POR LA UTILIZACIÓN A CRÉDITO DE LAS TARJETAS.",
+      "bbox": {
+        "x": 40.5,
+        "y": 641.2445678710938,
+        "w": 297.03594970703125,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "El tipo de interés nominal anual de la Cuenta de Tarjeta de Crédito es el que figura en las CONDICIONES ECONOMICAS.",
+      "bbox": {
+        "x": 40.5,
+        "y": 658.8269653320312,
+        "w": 489.19500732421875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "En los sistemas de reembolso \"Pago Total\", \"Pago aplazado\" y \"Pago Personalizado\", se aplicará el tipo de interés que para",
+      "bbox": {
+        "x": 40.5,
+        "y": 676.4093627929688,
+        "w": 176.1156005859375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "cada caso figura en el apartado CONDICIONES ECONOMICAS de la página número 1.",
+      "bbox": {
+        "x": 40.499969482421875,
+        "y": 685.2005615234375,
+        "w": 348.1380310058594,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "En los sistemas de reembolso \"Pago Total\" se aplicará el tipo de interés que para caso figura en el apartado CONDICIONES",
+      "bbox": {
+        "x": 40.499969482421875,
+        "y": 702.782958984375,
+        "w": 506.9015808105469,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "ECONÓMICAS para disposiciones de efectivo y traspasos de efectivo desde la \"Cuenta de tarjeta de Crédito\" a la \"Cuenta de",
+      "bbox": {
+        "x": 40.499969482421875,
+        "y": 711.5741577148438,
+        "w": 506.9519958496094,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "domiciliación de Pagos\".",
+      "bbox": {
+        "x": 40.499908447265625,
+        "y": 720.3653564453125,
+        "w": 95.22900390625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Cuando se varíe el sistema de reembolso de \"Pago Aplazado\" a \"Pago Total\", el sistema de reembolso \"Pago Aplazado\" se",
+      "bbox": {
+        "x": 40.499908447265625,
+        "y": 737.94775390625,
+        "w": 317.3003845214844,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "mantendrá vigente durante todo el periodo mensual en que se produzca la variación, a los efectos de devengo y cálculo de",
+      "bbox": {
+        "x": 40.4998779296875,
+        "y": 746.7389526367188,
+        "w": 506.95928955078125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "intereses.",
+      "bbox": {
+        "x": 40.499908447265625,
+        "y": 755.5301513671875,
+        "w": 39.01499938964844,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "La fórmula de cálculo para la determinación de los intereses devengados en cada período de liquidación será la siguiente:",
+      "bbox": {
+        "x": 40.499908447265625,
+        "y": 773.112548828125,
+        "w": 506.8944396972656,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 2
+    },
+    {
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "bbox": {
+        "x": 27.74880027770996,
+        "y": 799.0087890625,
+        "w": 215.58399963378906,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 2
+    },
+    {
+      "text": "Página 2 de 5",
+      "bbox": {
+        "x": 512.8488159179688,
+        "y": 799.0015869140625,
+        "w": 51.14715576171875,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 2
+    },
+    {
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "bbox": {
+        "x": 11.488900184631348,
+        "y": 151.6416015625,
+        "w": 6.137999534606934,
+        "h": 428.67120361328125
+      },
+      "font_name": "ArialMT",
+      "font_size": 5.5,
+      "page": 3
+    },
+    {
+      "text": "importe o saldo medio, multiplicado por el tipo de interés mensual nominal establecido, multiplicado por el número de días del",
+      "bbox": {
+        "x": 40.5,
+        "y": 78.643798828125,
+        "w": 506.94842529296875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "período de liquidación, multiplicado por 12, dividido por 36.000.",
+      "bbox": {
+        "x": 40.500030517578125,
+        "y": 87.43499755859375,
+        "w": 252.12594604492188,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "La fecha de valoración que el Banco aplicará, a efectos de cálculo de intereses, a las transacciones realizadas con las",
+      "bbox": {
+        "x": 40.500030517578125,
+        "y": 105.01739501953125,
+        "w": 506.9196472167969,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Tarjetas será la fecha de cada operación.",
+      "bbox": {
+        "x": 40.50006103515625,
+        "y": 113.80859375,
+        "w": 165.58197021484375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Intereses Moratorios",
+      "bbox": {
+        "x": 40.50006103515625,
+        "y": 131.3909912109375,
+        "w": 88.52400207519531,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Las obligaciones dinerarias vencidas y no satisfechas devengarán desde el día siguiente a su vencimiento, un interés",
+      "bbox": {
+        "x": 40.50006103515625,
+        "y": 148.973388671875,
+        "w": 506.93212890625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "moratorio igual al Interés Nominal Anual aplicable a la Cuenta de Tarjeta de Crédito más dos puntos porcentuales.",
+      "bbox": {
+        "x": 40.500030517578125,
+        "y": 157.76458740234375,
+        "w": 456.2010803222656,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "7. SISTEMAS DE REEMBOLSO. IMPORTE TOTAL A PAGAR Y TAE.",
+      "bbox": {
+        "x": 40.5,
+        "y": 174.05099487304688,
+        "w": 285.54296875,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "El importe total a pagar y la Tasa Anual Equivalente (TAE) estarán en función de los Sistemas de Reembolso que admita cada",
+      "bbox": {
+        "x": 40.5,
+        "y": 191.63339233398438,
+        "w": 506.988037109375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Contrato de Tarjeta y elijan los Titulares.",
+      "bbox": {
+        "x": 40.5,
+        "y": 200.42459106445312,
+        "w": 161.55897521972656,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "(TAE)",
+      "bbox": {
+        "x": 40.5,
+        "y": 218.00698852539062,
+        "w": 23.994003295898438,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Se hace constar que la tasa o coste anual efectivo (TAE) ha sido calculada de conformidad con lo establecido en el Ley",
+      "bbox": {
+        "x": 40.5,
+        "y": 235.58938598632812,
+        "w": 506.9664306640625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "16/2011, de 24 de junio, y en la Circular del Banco de España nº 5/2012, de 27 de junio, partiendo de los siguiente supuestos:",
+      "bbox": {
+        "x": 40.500030517578125,
+        "y": 244.38058471679688,
+        "w": 503.0820617675781,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "a) Que el Contrato de Tarjeta estará vigente conforme a la duración acordada.",
+      "bbox": {
+        "x": 42.79682922363281,
+        "y": 261.9630126953125,
+        "w": 312.65093994140625,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "b) Que el Banco y el/los Titular/es cumplirán sus obligaciones con exactitud en las condiciones y en los plazos acordados en",
+      "bbox": {
+        "x": 42.79682922363281,
+        "y": 279.54541015625,
+        "w": 504.59765625,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "el Contrato.",
+      "bbox": {
+        "x": 51.74639892578125,
+        "y": 288.33660888671875,
+        "w": 46.52099609375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "c) Que el tipo de interés y las comisiones y gastos se computan al nivel fijado en el momento de la firma del Contrato.",
+      "bbox": {
+        "x": 42.79679870605469,
+        "y": 305.91900634765625,
+        "w": 469.197021484375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "d) Que se ha dispuesto del Límite de Crédito por el importe que se establece en los supuestos contemplados, al tipo de",
+      "bbox": {
+        "x": 42.79679870605469,
+        "y": 323.50140380859375,
+        "w": 504.62640380859375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "interés deudor aplicable a cada Sistema de Reembolso;",
+      "bbox": {
+        "x": 51.746368408203125,
+        "y": 332.2926025390625,
+        "w": 223.10098266601562,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "e) Que no se aplique bonificación de interés alguna.",
+      "bbox": {
+        "x": 42.79676818847656,
+        "y": 349.875,
+        "w": 207.5904083251953,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "1. Sistemas de Reembolso.",
+      "bbox": {
+        "x": 41.24879837036133,
+        "y": 366.1614074707031,
+        "w": 5.004001617431641,
+        "h": 10.043975830078125
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "En función del Tipo de Tarjeta, los Titulares podrán optar por uno o algunos de los siguientes Sistemas:",
+      "bbox": {
+        "x": 41.24879837036133,
+        "y": 383.7438049316406,
+        "w": 413.1989440917969,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "a) Pago Total: Cada mes se adeuda en la \"Cuenta de Domiciliación de Pagos\" la totalidad del saldo pendiente que refleje el",
+      "bbox": {
+        "x": 42.79679870605469,
+        "y": 401.3262023925781,
+        "w": 505.357177734375,
+        "h": 10.043975830078125
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "extracto mensual de la \"Cuenta de Tarjeta de Crédito\".",
+      "bbox": {
+        "x": 52.49517822265625,
+        "y": 410.1174011230469,
+        "w": 217.98895263671875,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Supuesto que el importe total de crédito de 900,00 Euros, dispuesto en su totalidad mediante compras en establecimientos,",
+      "bbox": {
+        "x": 52.49517822265625,
+        "y": 427.6997985839844,
+        "w": 495.743408203125,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "durante un periodo mensual, el importe total sería de 900,00 Euros, más la Cuota anual por emisión y renovación de 40,00",
+      "bbox": {
+        "x": 52.4951171875,
+        "y": 436.4909973144531,
+        "w": 495.63720703125,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Euros en caso que corresponda.",
+      "bbox": {
+        "x": 52.4951171875,
+        "y": 445.2821960449219,
+        "w": 130.06797790527344,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "En el caso de disposiciones de efectivo contra la \"Cuenta de Tarjeta de Crédito\" y/o traspasos de efectivo desde la \"Cuenta",
+      "bbox": {
+        "x": 52.4951171875,
+        "y": 462.8645935058594,
+        "w": 495.71826171875,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "de Tarjeta de Crédito\" a la \"Cuenta de Domiciliación de Pagos\" se devengará a favor del Banco un tipo de interés nominal",
+      "bbox": {
+        "x": 52.4951171875,
+        "y": 471.6557922363281,
+        "w": 495.64251708984375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "anual del 22,8000 % desde el momento de la disposición hasta el día de cierre del extracto.",
+      "bbox": {
+        "x": 52.49505615234375,
+        "y": 480.4469909667969,
+        "w": 365.68804931640625,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Supuesto que el importe total del crédito de 900,00 Euros, dispuesto en su totalidad mediante una disposición única,",
+      "bbox": {
+        "x": 52.49505615234375,
+        "y": 498.0293884277344,
+        "w": 495.65521240234375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "durante un período mensual, a un tipo de interés nominal anual 22,8000 % el importe total a pagar, sería de 917,10 más",
+      "bbox": {
+        "x": 52.49505615234375,
+        "y": 506.8205871582031,
+        "w": 495.7506103515625,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "3,33 Euros correspondientes a una doceava parte de la Cuota anual por emisión y renovación, que en su caso",
+      "bbox": {
+        "x": 52.495086669921875,
+        "y": 515.6117553710938,
+        "w": 495.7272033691406,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "corresponda. (La TAE resultante será 32,6400%).",
+      "bbox": {
+        "x": 52.495025634765625,
+        "y": 524.4029541015625,
+        "w": 198.59396362304688,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "b) Pago Aplazado: Esta modalidad permite, a su vez, las siguientes opciones:",
+      "bbox": {
+        "x": 42.796627044677734,
+        "y": 541.9853515625,
+        "w": 314.6112060546875,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "- Pago a plazos por un porcentaje mensual: Supone el reembolso mensual del 3,0000 % del saldo pendiente que refleje el",
+      "bbox": {
+        "x": 54.05023193359375,
+        "y": 559.5677490234375,
+        "w": 494.11798095703125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "extracto de la \"Cuenta de Tarjeta de Crédito\" antes de la liquidación más los intereses y comisiones devengados durante",
+      "bbox": {
+        "x": 63.74859619140625,
+        "y": 568.3589477539062,
+        "w": 484.39984130859375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "el periodo mensual correspondiente; despreciando los decimales del resultado de dicha suma. Se podrá optar por",
+      "bbox": {
+        "x": 63.74859619140625,
+        "y": 577.150146484375,
+        "w": 484.62298583984375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "cualquier otro porcentaje, superior al 3,0000 % e inferior al 100,0000 %.",
+      "bbox": {
+        "x": 63.74859619140625,
+        "y": 585.9413452148438,
+        "w": 291.6449890136719,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Supuesto el Límite de Crédito dispuesto por 900,00 Euros en compras en establecimientos durante un período mensual,",
+      "bbox": {
+        "x": 63.74859619140625,
+        "y": 603.5237426757812,
+        "w": 484.49700927734375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "al tipo de interés nominal anual del 22,8000 % y unos reembolsos mensuales del 25,0000% del importe dispuesto, el",
+      "bbox": {
+        "x": 63.74859619140625,
+        "y": 612.31494140625,
+        "w": 484.39801025390625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "importe total a pagar, en 18 meses, sería de 967,28 Euros más la Cuota anual por emisión y renovación de 40,00 Euros",
+      "bbox": {
+        "x": 63.74859619140625,
+        "y": 621.1061401367188,
+        "w": 484.46636962890625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "en caso que corresponda. (La TAE resultante será 40,3700 %)",
+      "bbox": {
+        "x": 63.748565673828125,
+        "y": 629.8973388671875,
+        "w": 255.13192749023438,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "-",
+      "bbox": {
+        "x": 54.050167083740234,
+        "y": 647.479736328125,
+        "w": 2.9970016479492188,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Pago a plazos por una cantidad fija mensual: Supone el reembolso de una cantidad fija mensual. La cifra mínima de",
+      "bbox": {
+        "x": 64.23096466064453,
+        "y": 647.479736328125,
+        "w": 483.96246337890625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "dicha cantidad fija mensual es de 12,00 euros, y se podrá elegir cualquier cantidad superior.",
+      "bbox": {
+        "x": 63.748565673828125,
+        "y": 656.2709350585938,
+        "w": 370.178955078125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Supuesto el Importe total del crédito dispuesto 900,00 euros en compras en establecimientos durante un período",
+      "bbox": {
+        "x": 63.748565673828125,
+        "y": 673.8533325195312,
+        "w": 484.5006408691406,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "mensual, a un tipo de interés nominal anual del 22,8000 % y unos reembolsos mensuales de 100,00 euros, (excepto el",
+      "bbox": {
+        "x": 63.748565673828125,
+        "y": 682.64453125,
+        "w": 484.3764953613281,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "último mes, en el que el importe de reembolso será el que resulte de la diferencia entre el importe total a pagar y la suma",
+      "bbox": {
+        "x": 63.7486572265625,
+        "y": 691.4357299804688,
+        "w": 484.504150390625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "de los reembolsos mensuales anteriores). El importe total a pagar, en 10 meses, sería de 996,07 más la Cuota anual por",
+      "bbox": {
+        "x": 63.74859619140625,
+        "y": 700.2269287109375,
+        "w": 484.5582275390625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "emisión y renovación de 40,00 euros en caso que corresponda. (La TAE resultante será 35,0300 %)",
+      "bbox": {
+        "x": 63.7486572265625,
+        "y": 709.0181274414062,
+        "w": 399.6990051269531,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Para el cálculo del importe a liquidar, tanto en la modalidad de pago aplazado por un porcentaje mensual como Pago",
+      "bbox": {
+        "x": 63.7486572265625,
+        "y": 726.6005249023438,
+        "w": 484.42144775390625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "aplazado por una cantidad fija mensual, no se tendrán en cuenta las operaciones realizadas en el mes de la liquidación.",
+      "bbox": {
+        "x": 63.748687744140625,
+        "y": 735.3917236328125,
+        "w": 478.7458801269531,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "En ambas opciones el reembolso mínimo mensual vendrá determinado por el 1,0000 % del saldo pendiente que refleje el",
+      "bbox": {
+        "x": 52.49509048461914,
+        "y": 752.97412109375,
+        "w": 495.7019958496094,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "extracto de la \"Cuenta de Tarjeta de Crédito\" antes de la liquidación (sin considerar las operaciones incluidas en el mes de",
+      "bbox": {
+        "x": 52.49505615234375,
+        "y": 761.7653198242188,
+        "w": 495.64801025390625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "liquidación pero si los excedidos del Limite de Crédito no debidos a dichas operaciones) más los intereses y comisiones",
+      "bbox": {
+        "x": 52.4949951171875,
+        "y": 770.5565185546875,
+        "w": 495.656982421875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 3
+    },
+    {
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "bbox": {
+        "x": 27.74880027770996,
+        "y": 799.0087890625,
+        "w": 215.58399963378906,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 3
+    },
+    {
+      "text": "Página 3 de 5",
+      "bbox": {
+        "x": 512.8488159179688,
+        "y": 799.0015869140625,
+        "w": 51.14715576171875,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 3
+    },
+    {
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "bbox": {
+        "x": 11.488900184631348,
+        "y": 151.6416015625,
+        "w": 6.137999534606934,
+        "h": 428.67120361328125
+      },
+      "font_name": "ArialMT",
+      "font_size": 5.5,
+      "page": 4
+    },
+    {
+      "text": "devengados durante el periodo mensual correspondiente; despreciando los decimales del resultado de dicha suma.",
+      "bbox": {
+        "x": 52.495201110839844,
+        "y": 78.643798828125,
+        "w": 461.2229309082031,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "c) Pago Personalizado: Este sistema consiste en la posibilidad de que el reembolso del importe de una operación realizada",
+      "bbox": {
+        "x": 42.79680252075195,
+        "y": 96.2261962890625,
+        "w": 505.44183349609375,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "con las Tarjetas o la totalidad del saldo mensual pendiente después de la liquidación, siempre que sea igual o superior a",
+      "bbox": {
+        "x": 52.4952392578125,
+        "y": 105.01739501953125,
+        "w": 495.74884033203125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "50,00 euros, sea realizado mediante el pago de un cierto número de cuotas fijas mensuales (comprensivas de amortización",
+      "bbox": {
+        "x": 52.4952392578125,
+        "y": 113.80859375,
+        "w": 495.64794921875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "de capital y pago de intereses). El importe de las cuotas dependerá del plazo que elijan los Titulares, dentro de un máximo",
+      "bbox": {
+        "x": 52.4952392578125,
+        "y": 122.59979248046875,
+        "w": 495.66961669921875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "de 36 cuotas y un mínimo de 3 Cualquiera de los Titulares podrá acogerse a este sistema, solicitándolo al Banco por los",
+      "bbox": {
+        "x": 52.495269775390625,
+        "y": 131.3909912109375,
+        "w": 495.6803894042969,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "medios que éste tenga establecidos. Las cuotas mensuales de reembolso, incluirán capital y los intereses correspondientes",
+      "bbox": {
+        "x": 52.4952392578125,
+        "y": 140.18218994140625,
+        "w": 495.72357177734375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "al mes de liquidación. La primera cuota exclusivamente comprenderá los intereses devengados desde la fecha de la",
+      "bbox": {
+        "x": 52.495208740234375,
+        "y": 148.973388671875,
+        "w": 495.7236022949219,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "operación o desde la fecha de la liquidación en el caso del Saldo Mensual hasta el último día del mes en curso a la fecha",
+      "bbox": {
+        "x": 52.495208740234375,
+        "y": 157.76458740234375,
+        "w": 495.5940856933594,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "que de estas últimas corresponda.",
+      "bbox": {
+        "x": 52.495269775390625,
+        "y": 166.5557861328125,
+        "w": 137.5649871826172,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "Supuesta una compra de 900,00 Euros a satisfacer en 12 meses al tipo de interés nominal anual del 18,0000 % el importe",
+      "bbox": {
+        "x": 53.24407196044922,
+        "y": 184.13818359375,
+        "w": 494.974853515625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "total a pagar sería: 990,12 Euros; más la Cuota anual por emisión y renovación de 40,00 Euros en caso de que",
+      "bbox": {
+        "x": 53.24407958984375,
+        "y": 192.92938232421875,
+        "w": 494.91363525390625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "corresponda. (La TAE resultante será 30,2600 %)",
+      "bbox": {
+        "x": 53.24407958984375,
+        "y": 201.7205810546875,
+        "w": 198.59396362304688,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "El Banco podrá poner a disposición del cliente bajo el Sistema de Rembolso Pago Personalizado la posibilidad de que el",
+      "bbox": {
+        "x": 52.49528121948242,
+        "y": 219.302978515625,
+        "w": 495.7236633300781,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "reembolso del importe de una operación realizada con las Tarjetas o la totalidad del saldo mensual sea realizado mediante",
+      "bbox": {
+        "x": 52.495330810546875,
+        "y": 228.09417724609375,
+        "w": 495.7578430175781,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "el pago de tres o seis cuotas fijas mensuales. Las cuotas mensuales de reembolso no incluirán intereses por aplazamiento,",
+      "bbox": {
+        "x": 52.495330810546875,
+        "y": 236.8853759765625,
+        "w": 495.6570129394531,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "por lo que el importe de cada cuota será la parte proporcional del importe de la operación o saldo mensual correspondiente",
+      "bbox": {
+        "x": 52.495361328125,
+        "y": 245.67657470703125,
+        "w": 495.7020263671875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "en función del plazo (3 o 6 meses) elegido por el Titular. El importe de la primera cuota se verá incrementado por el de la",
+      "bbox": {
+        "x": 52.495330810546875,
+        "y": 254.46778869628906,
+        "w": 495.5868225097656,
+        "h": 10.043991088867188
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "comisión de gestión por aplazamiento de pago que será de 7,00 euros o de 25,00 euros, según el plazo elegido, 3 o 6",
+      "bbox": {
+        "x": 52.495330810546875,
+        "y": 263.2590026855469,
+        "w": 495.7129211425781,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "meses respectivamente.",
+      "bbox": {
+        "x": 52.49542236328125,
+        "y": 272.0502014160156,
+        "w": 97.53300476074219,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "Supuesta una compra de 900,00 Euros a satisfacer en 6 meses, el importe total a pagar sería: 900,00 Euros; más la",
+      "bbox": {
+        "x": 52.49542236328125,
+        "y": 289.6325988769531,
+        "w": 495.7308349609375,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "comisión de gestión de aplazamiento de 25,00 euros más la Cuota anual por emisión y renovación de 40,00 Euros en caso",
+      "bbox": {
+        "x": 52.495452880859375,
+        "y": 298.4237976074219,
+        "w": 495.7201232910156,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "de que corresponda. (La TAE resultante será 29,1500 %)",
+      "bbox": {
+        "x": 52.495513916015625,
+        "y": 307.2149963378906,
+        "w": 228.61795043945312,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "Las cuotas se adeudarán con valor del día 5 del mes siguiente, excepto si el sistema se aplicase el mes siguiente al de",
+      "bbox": {
+        "x": 52.495513916015625,
+        "y": 324.7973937988281,
+        "w": 495.7560729980469,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "realización de la operación o de la liquidación en el caso del Saldo Mensual , en cuyo caso comprenderá los intereses",
+      "bbox": {
+        "x": 52.49554443359375,
+        "y": 333.5885925292969,
+        "w": 495.74334716796875,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "devengados desde la fecha de la operación o de la liquidación en el caso de Saldo Mensual hasta el último día del mes en",
+      "bbox": {
+        "x": 52.4954833984375,
+        "y": 342.3797912597656,
+        "w": 495.66961669921875,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "que es de aplicación y se adeudará con valor del día 5 del mes siguiente; las sucesivas en ambos supuestos, comprensivas",
+      "bbox": {
+        "x": 52.495452880859375,
+        "y": 351.1709899902344,
+        "w": 495.6768493652344,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "de capital e intereses, se adeudarán el día 5 de cada mes sucesivo.",
+      "bbox": {
+        "x": 52.4954833984375,
+        "y": 359.9621887207031,
+        "w": 271.1429138183594,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "Este Sistema es de aplicación específica a cada operación o saldo para el que se haya solicitado.",
+      "bbox": {
+        "x": 52.4954833984375,
+        "y": 377.5445861816406,
+        "w": 390.1949768066406,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "d) Pago Cero: Consiste en la posibilidad de diferir el pago mensual de dos liquidaciones de las modalidades de Sistema de",
+      "bbox": {
+        "x": 42.79679870605469,
+        "y": 393.8310241699219,
+        "w": 505.35357666015625,
+        "h": 10.043975830078125
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "Pago Aplazado conforme lo siguiente:",
+      "bbox": {
+        "x": 52.495147705078125,
+        "y": 402.6222229003906,
+        "w": 151.57798767089844,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "- Las liquidaciones de intereses y comisiones se realizarán conforme lo establecido para el Sistema correspondiente pero",
+      "bbox": {
+        "x": 54.05034637451172,
+        "y": 420.2046203613281,
+        "w": 494.101806640625,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "su pago se efectúa junto con la liquidación del mes siguiente.",
+      "bbox": {
+        "x": 63.74871826171875,
+        "y": 428.9958190917969,
+        "w": 244.62896728515625,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "- Dentro de cada año natural se puede ejercitar respecto de dos liquidaciones como máximo.",
+      "bbox": {
+        "x": 54.05031967163086,
+        "y": 446.5782165527344,
+        "w": 370.6649169921875,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "- En todo caso las liquidaciones no pueden ser consecutivas y el Contrato de Tarjeta debe encontrarse al corriente de",
+      "bbox": {
+        "x": 54.05031967163086,
+        "y": 464.1606140136719,
+        "w": 494.1936340332031,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "pagos en el momento de realizarlas.",
+      "bbox": {
+        "x": 63.748687744140625,
+        "y": 472.9518127441406,
+        "w": 145.06198120117188,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "- El importe del saldo dispuesto que correspondería amortizar se mantiene como no amortizado y como tal será",
+      "bbox": {
+        "x": 54.050289154052734,
+        "y": 490.5342102050781,
+        "w": 494.18096923828125,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "considerado en la siguiente liquidación.",
+      "bbox": {
+        "x": 63.7486572265625,
+        "y": 499.3254089355469,
+        "w": 157.0769805908203,
+        "h": 10.043975830078125
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "Este Sistema es de aplicación específica a cada liquidación concreta para el que se haya solicitado.",
+      "bbox": {
+        "x": 52.49505615234375,
+        "y": 516.9077758789062,
+        "w": 398.6910095214844,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "Supuesto que el sistema en vigor es el Pago Aplazado por una cantidad fija mensual de 100,00 Euros (excepto el último",
+      "bbox": {
+        "x": 52.49505615234375,
+        "y": 534.4901733398438,
+        "w": 495.66790771484375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "mes, en el que el importe de reembolso será el que resulte de la diferencia entre el importe total a pagar y la suma de los",
+      "bbox": {
+        "x": 52.4951171875,
+        "y": 543.2813720703125,
+        "w": 495.7236328125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "reembolsos mensuales anteriores) con los parámetros indicados en este apartado 2 y que, se difiere el pago de la tercera",
+      "bbox": {
+        "x": 52.495147705078125,
+        "y": 552.0725708007812,
+        "w": 495.6336364746094,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "liquidación, el importe total a pagar será de 1.012,43 Euros más la Cuota anual por emisión y renovación de 40,00 Euros",
+      "bbox": {
+        "x": 52.4951171875,
+        "y": 560.86376953125,
+        "w": 183.9384002685547,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "en caso de que corresponda.",
+      "bbox": {
+        "x": 52.495086669921875,
+        "y": 569.6549682617188,
+        "w": 116.5679931640625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "El Titular ha elegido como Sistema de Reembolso aplicable al Contrato el indicado en el apartado Datos Operativos, que",
+      "bbox": {
+        "x": 52.495086669921875,
+        "y": 587.2373657226562,
+        "w": 495.6767883300781,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "será de aplicación mientras no se produzca su modificación de acuerdo con lo previsto en el mismo.",
+      "bbox": {
+        "x": 52.49505615234375,
+        "y": 596.028564453125,
+        "w": 399.66302490234375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "2. Cuestiones comunes a los Sistemas de Reembolso",
+      "bbox": {
+        "x": 41.24879837036133,
+        "y": 612.3150024414062,
+        "w": 215.58595275878906,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "a) Cualquier Titular podrá acogerse a aquellos Sistemas establecidos en el anterior apartado que estén previstos en las",
+      "bbox": {
+        "x": 42.79679870605469,
+        "y": 629.8973999023438,
+        "w": 505.43646240234375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "Condiciones Particulares correspondientes, si lo comunica al Banco con una antelación razonable a la fecha de emisión de",
+      "bbox": {
+        "x": 52.495269775390625,
+        "y": 638.6885986328125,
+        "w": 495.7128601074219,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "los extractos mensuales.",
+      "bbox": {
+        "x": 52.495269775390625,
+        "y": 647.4797973632812,
+        "w": 99.03599548339844,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "El Sistema de Reembolso Pago Personalizado es de aplicación específica a petición de los Titulares y aplicables a la",
+      "bbox": {
+        "x": 52.495269775390625,
+        "y": 665.0621948242188,
+        "w": 495.6803894042969,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "operación, saldo o liquidación concreta solicitados.",
+      "bbox": {
+        "x": 52.4952392578125,
+        "y": 673.8533935546875,
+        "w": 205.09197998046875,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "b) Los cargos derivados de los Sistemas de Reembolso \"Pago Total\", \"Pago Aplazado\", y \"Pago Personalizado\" se adeudarán",
+      "bbox": {
+        "x": 42.79684066772461,
+        "y": 691.435791015625,
+        "w": 275.8428039550781,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "en la \"Cuenta de Domiciliación de Pagos\", con valor del quinto día siguiente al de finalización del periodo mensual de",
+      "bbox": {
+        "x": 52.495269775390625,
+        "y": 700.2269897460938,
+        "w": 174.81961059570312,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "liquidación.",
+      "bbox": {
+        "x": 52.49530029296875,
+        "y": 709.0181884765625,
+        "w": 45.01800537109375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "c) Los pagos que se produzcan no presuponen que estén satisfechos los pagos anteriores debidos.",
+      "bbox": {
+        "x": 42.79690170288086,
+        "y": 726.6005859375,
+        "w": 397.7189636230469,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "d) Las condiciones pactadas en cada momento para el reembolso de la deuda pendiente en los Sistemas \"Pago Aplazado\" y",
+      "bbox": {
+        "x": 42.79690170288086,
+        "y": 744.1829833984375,
+        "w": 505.3896179199219,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "\"Pago Personalizado\" figuran en la documentación, aviso de formalización, extractos o soportes técnicos de cualquier otro",
+      "bbox": {
+        "x": 52.495330810546875,
+        "y": 752.9741821289062,
+        "w": 495.7254333496094,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "tipo remitidos por el Banco a los Titulares, los cuales tendrán, a todos los efectos, la consideración de documento",
+      "bbox": {
+        "x": 52.495330810546875,
+        "y": 761.765380859375,
+        "w": 495.6749572753906,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "contractual conjuntamente con el Contrato y las Condiciones Particulares.",
+      "bbox": {
+        "x": 52.49530029296875,
+        "y": 770.5565795898438,
+        "w": 294.62396240234375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 4
+    },
+    {
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "bbox": {
+        "x": 27.74880027770996,
+        "y": 799.0087890625,
+        "w": 215.58399963378906,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 4
+    },
+    {
+      "text": "Página 4 de 5",
+      "bbox": {
+        "x": 512.8488159179688,
+        "y": 799.0015869140625,
+        "w": 51.14715576171875,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 4
+    },
+    {
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "bbox": {
+        "x": 11.488900184631348,
+        "y": 151.6416015625,
+        "w": 6.137999534606934,
+        "h": 428.67120361328125
+      },
+      "font_name": "ArialMT",
+      "font_size": 5.5,
+      "page": 5
+    },
+    {
+      "text": "El importe total a pagar estará en función de los sistemas de reembolso y se especifica en las presentes condiciones.",
+      "bbox": {
+        "x": 41.24879837036133,
+        "y": 87.43499755859375,
+        "w": 468.7109680175781,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "3. Sistema de reembolso en la función de Tarjeta de Débito.",
+      "bbox": {
+        "x": 41.24879837036133,
+        "y": 103.72140502929688,
+        "w": 239.61598205566406,
+        "h": 10.043998718261719
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "Las cantidades dispuestas en efectivo contra la \"Cuenta de Domiciliación de Pagos\", así como las comisiones y gastos de las",
+      "bbox": {
+        "x": 41.24879837036133,
+        "y": 121.30380249023438,
+        "w": 338.9292297363281,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "referidas disposiciones, serán adeudadas por el Banco en dicha cuenta a medida que se vayan realizando.",
+      "bbox": {
+        "x": 41.248779296875,
+        "y": 130.09500122070312,
+        "w": 429.7230224609375,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "La disposición en efectivo contra la \"Cuenta de Domiciliación de Pagos\" sólo es posible si dicha cuenta o la que la sustituya",
+      "bbox": {
+        "x": 41.248779296875,
+        "y": 138.88619995117188,
+        "w": 507.0059814453125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "está abierta en el Banco.",
+      "bbox": {
+        "x": 41.248779296875,
+        "y": 147.67739868164062,
+        "w": 99.55799865722656,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "CLÁUSULA ADICIONAL",
+      "bbox": {
+        "x": 41.24879837036133,
+        "y": 166.7574005126953,
+        "w": 101.98800659179688,
+        "h": 10.04400634765625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "Las partes convienen sustituir el punto primero de la cláusula 26 - Duración, del Contrato Marco de Operaciones Bancarias",
+      "bbox": {
+        "x": 41.24879837036133,
+        "y": 184.3397979736328,
+        "w": 506.0627746582031,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "sin carácter retroactivo por el siguiente:",
+      "bbox": {
+        "x": 41.248809814453125,
+        "y": 193.13099670410156,
+        "w": 157.05899047851562,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "26.1. Las Condiciones Particulares de la Tarjeta tendrán una duración indefinida. No obstante lo anterior, el Banco podrá",
+      "bbox": {
+        "x": 41.248809814453125,
+        "y": 210.71339416503906,
+        "w": 17.513999938964844,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "resolver el Contrato, sin alegar causa alguna, previo aviso por escrito al/los Titula/es con una antelación mínima de dos meses",
+      "bbox": {
+        "x": 41.248809814453125,
+        "y": 219.5045928955078,
+        "w": 506.9754333496094,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "a la fecha de resolución. Por su parte, el Titular podrá resolver el Contrato en cualquier momento, en los términos establecido",
+      "bbox": {
+        "x": 41.24884033203125,
+        "y": 228.29579162597656,
+        "w": 506.97003173828125,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "en el mismo, con un preaviso de un mes. Cancelado el contrato de tarjeta, el Banco procederá de forma automática a cancelar",
+      "bbox": {
+        "x": 41.24884033203125,
+        "y": 237.0869903564453,
+        "w": 507.1265869140625,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "todas las tarjetas emitidas a su amparo, obligándose los Clientes a destruir dichas Tarjetas y a satisfacer la deuda pendiente",
+      "bbox": {
+        "x": 41.248809814453125,
+        "y": 245.87818908691406,
+        "w": 506.8727722167969,
+        "h": 10.04400634765625
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "conforme los plazos y modalidad de pago que sea de aplicación.",
+      "bbox": {
+        "x": 41.24884033203125,
+        "y": 254.6693878173828,
+        "w": 258.12896728515625,
+        "h": 10.043991088867188
+      },
+      "font_name": "ArialMT",
+      "font_size": 9.0,
+      "page": 5
+    },
+    {
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "bbox": {
+        "x": 27.74880027770996,
+        "y": 799.0087890625,
+        "w": 215.58399963378906,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 5
+    },
+    {
+      "text": "Página 5 de 5",
+      "bbox": {
+        "x": 512.8488159179688,
+        "y": 799.0015869140625,
+        "w": 51.14715576171875,
+        "h": 8.927978515625
+      },
+      "font_name": "Arial-BoldMT",
+      "font_size": 8.0,
+      "page": 5
+    }
+  ]
+}

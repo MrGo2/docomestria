@@ -35,6 +35,12 @@ SUBHEADER_WIDTH_TOLERANCE_PT = 6.0
 # a table is more likely a body region than a header strip.
 SUBHEADER_MAX_HEIGHT_PT = 30.0
 
+# A pdfplumber rect whose `top` exceeds the page's data extent by more than
+# this margin is treated as off-page drift and dropped before fusion.
+# Calibrated on BBVA4 p1 (real content ends ~800pt, drift tables sit at
+# 1000–1600pt).
+OFF_PAGE_MARGIN_PT = 30.0
+
 # A Docling text block long enough to count as a prose paragraph. Calibrated
 # from BBVA contracts: real KV labels live in tables or as short standalone
 # strings; body paragraphs ("En consecuencia, en cada liquidación...") start
@@ -287,9 +293,38 @@ def _is_shadow_duplicate(
     return False
 
 
+def _drop_off_page_rects(
+    plumber_tl: list[_TableLike],
+    docling_blocks: Iterable[DoclingBlock],
+    lite_items: Iterable[LiteItem],
+) -> list[_TableLike]:
+    """Drop pdfplumber tables whose `top` sits below the page's data extent.
+
+    The data extent is the max `bbox.bottom` of any Docling block or
+    LiteParse item on that page. pdfplumber's PDF parser occasionally
+    re-discovers real content at phantom Y coordinates well past the page
+    edge — these shadow tables would otherwise suppress real pairs sitting
+    above them on the actual page (BBVA4 p1 `Primera Tarjeta Emitida`).
+    """
+    extent: dict[int, float] = {}
+    for blk in docling_blocks:
+        extent[blk.page] = max(extent.get(blk.page, 0.0), blk.bbox.bottom)
+    for it in lite_items:
+        extent[it.page] = max(extent.get(it.page, 0.0), it.bbox.bottom)
+
+    if not extent:
+        return plumber_tl
+
+    return [
+        t for t in plumber_tl
+        if t.bbox.top <= extent.get(t.page, float("inf")) + OFF_PAGE_MARGIN_PT
+    ]
+
+
 def detect_tables(
     docling_blocks: Iterable[DoclingBlock],
     plumber_rects: Iterable[VisualRect],
+    lite_items: Iterable[LiteItem] = (),
 ) -> tuple[Table, ...]:
     """Fuse Docling tables and pdfplumber tables into one set per page.
 
@@ -303,6 +338,13 @@ def detect_tables(
         appear in an accepted table on the same page. pdfplumber occasionally
         re-detects a Docling table at a phantom off-page Y with whitespace-
         collapsed cells — those shadow duplicates are dropped here.
+      - pdfplumber tables whose `bbox.top` falls more than
+        `OFF_PAGE_MARGIN_PT` below the page's data extent (max bottom of any
+        Docling block / LiteParse item on that page) are dropped outright.
+        pdfplumber occasionally hallucinates tables at Y > 1000pt on A4 pages
+        that contain re-detected real content; those tables suppress real
+        L-horizontal pairs further up (BBVA4 p1 `'Primera Tarjeta Emitida'
+        → '43,00'` regression).
       - Cell content uses Docling when available; otherwise pdfplumber.
     """
     docling_tl = _docling_tables_as_tablelike(docling_blocks)
@@ -473,7 +515,7 @@ def detect_structure(
         pictures = detect_picture_regions(d)
         prose = detect_prose_regions(d)
         boxes = detect_boxes(p)
-        tables = detect_tables(d, p)
+        tables = detect_tables(d, p, l)
         tables = attach_subsections(tables, boxes, tuple(l))
 
         result.append(

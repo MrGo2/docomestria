@@ -1,0 +1,183 @@
+{
+  "pdf": "azuredemo__LABORAL.pdf",
+  "engine": "docling",
+  "elapsed_seconds": 7.229,
+  "count": 7,
+  "items": [
+    {
+      "bbox": {
+        "x": 24.289236068725586,
+        "y": 19.529783248901367,
+        "w": 124.71164894104004,
+        "h": 76.74854469299316
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/pictures/0",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 229.87,
+        "y": 54.138000000000034,
+        "w": 167.2579999999998,
+        "h": 12.950000000000045
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Consulta TGSS situacion",
+      "self_ref": "#/texts/1",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 18.983436584472656,
+        "y": 108.10406494140625,
+        "w": 557.1012191772461,
+        "h": 81.12078857421875
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/tables/0",
+      "cells": [
+        [
+          "Datos Petición"
+        ],
+        [
+          "Nº Procedimiento : 987-15"
+        ],
+        [
+          "Nº Documento : X6573514E"
+        ],
+        [
+          "Fecha de emisión : 17 d'abr. 2026 17:14"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 19.003509521484375,
+        "y": 198.41143798828125,
+        "w": 557.0668029785156,
+        "h": 294.9062194824219
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/tables/1",
+      "cells": [
+        [
+          "Respuesta",
+          "Respuesta"
+        ],
+        [
+          "Titular:",
+          "GHEORGHE ADRIAN OPREA ---"
+        ],
+        [
+          "Nº Seguridad Social:",
+          "341005311371"
+        ],
+        [
+          "Situación actual:",
+          "BAJA"
+        ],
+        [
+          "Fecha Situación:",
+          "31.05.2019"
+        ],
+        [
+          "Situaciones",
+          "Situaciones"
+        ],
+        [
+          "CCC:",
+          ""
+        ],
+        [
+          "Razón Social/Convenio/Régimen:",
+          "RGIMEN ESPECIAL TRABAJADORES AUTNOMOS"
+        ],
+        [
+          "NIF/CIF - Domicilio de Empresa:",
+          "No Consta"
+        ],
+        [
+          "Fecha Alta:",
+          "10.04.2018"
+        ],
+        [
+          "Fecha Efecto:",
+          "10.04.2018"
+        ],
+        [
+          "Tipo Contrato:",
+          ""
+        ],
+        [
+          "Coeficiente Tiempo parcial:",
+          "0"
+        ],
+        [
+          "Grupo Cotización:",
+          ""
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 32.0,
+        "y": 772.392,
+        "w": 533.5620000000009,
+        "h": 26.5
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico.  Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "self_ref": "#/texts/2",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 20.0,
+        "y": 807.856,
+        "w": 53.376000000000005,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "17/04/26 17:14",
+      "self_ref": "#/texts/3",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 490.3,
+        "y": 807.856,
+        "w": 49.372000000000014,
+        "h": 7.399999999999977
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "Página 1 de 1",
+      "self_ref": "#/texts/4",
+      "cells": null
+    }
+  ]
+}
