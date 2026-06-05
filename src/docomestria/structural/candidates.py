@@ -405,6 +405,165 @@ def _find_inline_colon(text: str) -> int:
     return idx
 
 
+def _is_separator_colon(text: str, colon_pos: int) -> bool:
+    """True if the colon at `colon_pos` is a label/value separator, not a
+    literal inside a value (time `14:30`, URL `https://`, ratio `2:1`).
+
+    A separator colon must:
+      - Be preceded by ≥2 word characters (not just a digit or single letter).
+      - Be followed by whitespace (not by `//` or another digit immediately).
+      - Have at least one alphabetic character in the preceding segment
+        (rules out `2:1`, `14:30`).
+      - Not be the very first or very last character.
+    """
+    if colon_pos <= 0 or colon_pos >= len(text) - 1:
+        return False
+    after = text[colon_pos + 1]
+    if not after.isspace():
+        return False  # `https://` or `14:30` — digit/slash immediately after
+    before_segment = text[:colon_pos]
+    word_chars = sum(1 for ch in before_segment if ch.isalnum() or ch == ".")
+    if word_chars < 2:
+        return False
+    has_alpha = any(ch.isalpha() for ch in before_segment)
+    if not has_alpha:
+        return False  # purely numeric prefix → ratio/time
+    return True
+
+
+def _split_multi_colon(text: str) -> tuple[tuple[str, str, int, int], ...] | None:
+    """Split a fused `A: x B: y` text into spans without a known-labels list.
+
+    Returns a tuple of (label, value, label_start, value_end) tuples if two or
+    more valid separator colons are found, or None if fewer than 2 colons
+    qualify (caller falls back to single-split logic).
+
+    Boundary detection heuristic:
+      A new label boundary exists at position `p` when the colon at `p` is a
+      separator colon AND the text starting at the previous value's end up to
+      `p` begins with an uppercase letter (or whitespace followed by one),
+      indicating a new label token is starting rather than a continuation of
+      the previous value.
+
+    Conservative by design: when in doubt return None.
+    """
+    stripped = text.rstrip()
+    # Collect all separator-colon positions in left-to-right order.
+    sep_positions: list[int] = []
+    for i, ch in enumerate(stripped):
+        if ch == ":" and _is_separator_colon(stripped, i):
+            sep_positions.append(i)
+
+    if len(sep_positions) < 2:
+        return None
+
+    # For each subsequent colon position, check that the segment between the
+    # previous value start and this colon looks like a new label (starts with
+    # alpha after optional whitespace, and has no only-digit tokens of length
+    # ≤2 that would indicate a time/ratio just before the colon).
+    boundary_colons: list[int] = [sep_positions[0]]
+    for colon_pos in sep_positions[1:]:
+        # Segment from just after the previous colon to this one.
+        prev_value_start = boundary_colons[-1] + 1
+        segment = stripped[prev_value_start:colon_pos]
+        # The potential label is the LAST whitespace-delimited word group that
+        # precedes this colon.  We find the split point by scanning backwards
+        # for a capital-start word boundary.
+        seg_stripped = segment.lstrip()
+        if not seg_stripped:
+            continue
+        # Scan for a capital word after a space — that's a new label starting.
+        tokens = segment.split()
+        if not tokens:
+            continue
+        # Find the index in `tokens` where a new label candidate begins:
+        # a token that starts with an uppercase alpha character and is NOT a
+        # purely numeric / all-digit token (which would be a value fragment).
+        new_label_start_token: int | None = None
+        for t_idx, tok in enumerate(tokens):
+            if tok[0].isupper() and tok[0].isalpha():
+                # Make sure this isn't just a stray upper in the middle of a
+                # value — require that everything before it was plausible value
+                # text (all lower / digit / punct).
+                before_tokens = tokens[:t_idx]
+                if not before_tokens:
+                    # First token is uppercase → no value text before it,
+                    # which means the previous pair has an EMPTY value.
+                    # Allow only if t_idx > 0 would apply, but here if the
+                    # whole segment is a single uppercase run it's the label.
+                    new_label_start_token = t_idx
+                    break
+                # Check: at least one before-token that's not uppercase-start
+                # or contains a digit — plausible value.
+                plausible_value = any(
+                    not tok2[0].isupper() or any(ch.isdigit() for ch in tok2)
+                    for tok2 in before_tokens
+                )
+                if plausible_value:
+                    new_label_start_token = t_idx
+                    break
+        if new_label_start_token is None:
+            # Could not detect a clean label boundary — skip this colon to
+            # avoid splitting inside a value containing an uppercase word.
+            continue
+        boundary_colons.append(colon_pos)
+
+    if len(boundary_colons) < 2:
+        return None
+
+    # Build spans: for each boundary colon, label goes up to the colon and
+    # value goes from colon+1 to the next boundary colon's label start.
+    # We need the label_start for each boundary colon.
+    # Re-derive label starts from the boundary colons list.
+    label_starts: list[int] = []
+    for b_idx, colon_pos in enumerate(boundary_colons):
+        if b_idx == 0:
+            label_starts.append(0)
+        else:
+            prev_colon = boundary_colons[b_idx - 1]
+            seg = stripped[prev_colon + 1:colon_pos]
+            tokens = seg.split()
+            # Find where the new label token begins (same logic as above).
+            new_label_start_token = None
+            for t_idx, tok in enumerate(tokens):
+                if tok[0].isupper() and tok[0].isalpha():
+                    before_tokens = tokens[:t_idx]
+                    if not before_tokens:
+                        new_label_start_token = t_idx
+                        break
+                    plausible_value = any(
+                        not tok2[0].isupper() or any(ch.isdigit() for ch in tok2)
+                        for tok2 in before_tokens
+                    )
+                    if plausible_value:
+                        new_label_start_token = t_idx
+                        break
+            if new_label_start_token is None:
+                new_label_start_token = 0
+            # Character offset of that token within `stripped`.
+            seg_tokens_start = prev_colon + 1
+            char_offset = seg_tokens_start
+            for t_idx2, tok2 in enumerate(tokens):
+                if t_idx2 == new_label_start_token:
+                    break
+                char_offset += len(tok2) + 1  # +1 for whitespace
+            # Skip leading whitespace.
+            while char_offset < len(stripped) and stripped[char_offset].isspace():
+                char_offset += 1
+            label_starts.append(char_offset)
+
+    out: list[tuple[str, str, int, int]] = []
+    for b_idx, colon_pos in enumerate(boundary_colons):
+        label_start = label_starts[b_idx]
+        value_start = colon_pos + 1
+        value_end = label_starts[b_idx + 1] if b_idx + 1 < len(label_starts) else len(stripped)
+        label_part = stripped[label_start:colon_pos].strip()
+        value_part = stripped[value_start:value_end].strip()
+        if label_part:
+            out.append((label_part, value_part, label_start, value_end))
+    return tuple(out) if len(out) >= 2 else None
+
+
 def emit_from_in_item_split(
     classified: Iterable[ClassifiedItem],
     pages: Iterable[Page],
@@ -443,6 +602,37 @@ def emit_from_in_item_split(
             continue
         if _item_inside_any(ci.bbox, prose_by_page.get(ci.page, [])):
             continue  # inside a paragraph / list_item — not a real KV pair
+        # Try multi-colon split first; fall back to single-colon if not found.
+        multi_spans = _split_multi_colon(ci.text)
+        if multi_spans is not None:
+            full = ci.bbox
+            total = len(ci.text) or 1
+            for label_part, value_part, span_start, span_end in multi_spans:
+                if not label_part:
+                    continue
+                label_end_in_text = ci.text.find(":", ci.text.find(label_part, span_start))
+                label_bbox = _bbox_for_text_span(full, span_start, label_end_in_text, total)
+                value_bbox = _bbox_for_text_span(full, label_end_in_text + 1, span_end, total)
+                out.append(
+                    PairCandidate(
+                        label_text=label_part,
+                        value_text=value_part,
+                        label_bbox=label_bbox,
+                        value_bbox=value_bbox,
+                        page=ci.page,
+                        rule="L-inline-split",
+                        features={
+                            "label_ends_with_colon": True,
+                            "value_empty": not value_part,
+                            "source_item_text": ci.text,
+                            "multi_colon_split": True,
+                        },
+                        label_item=ci,
+                        value_item=ci,
+                    )
+                )
+            continue
+
         idx = _find_inline_colon(ci.text)
         if idx < 0:
             continue

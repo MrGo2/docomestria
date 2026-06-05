@@ -282,3 +282,48 @@ def test_inline_split_skips_pdfplumber_table_regions():
     )
 
     assert pairs == ()
+
+
+def test_inline_split_multi_colon_emits_two_pairs():
+    """BBVA3 Titulares fused row: 'N.I.F.: 009786573G Tipo Identificación: NIF PERSONA FISICA'
+    must emit two PairCandidates — one per label/value span."""
+    item = _classified_item(
+        "N.I.F.: 009786573G Tipo Identificación: NIF PERSONA FISICA",
+        x=10.0,
+        y=20.0,
+        w=400.0,
+    )
+
+    pairs = emit_from_in_item_split(
+        (item,),
+        (Page(number=1, tables=()),),
+    )
+
+    assert len(pairs) == 2
+    assert pairs[0].label_text == "N.I.F."
+    assert pairs[0].value_text == "009786573G"
+    assert pairs[1].label_text == "Tipo Identificación"
+    assert pairs[1].value_text == "NIF PERSONA FISICA"
+    assert all(p.rule == "L-inline-split" for p in pairs)
+    assert all(p.features.get("multi_colon_split") is True for p in pairs)
+
+
+def test_inline_split_single_colon_still_emits_one_pair():
+    """Regression: a normal 'Label: value' item must still produce exactly 1 pair,
+    not be treated as multi-colon."""
+    item = _classified_item(
+        "Fecha de resolución: 14-03-2026",
+        x=10.0,
+        y=20.0,
+        w=200.0,
+    )
+
+    pairs = emit_from_in_item_split(
+        (item,),
+        (Page(number=1, tables=()),),
+    )
+
+    assert len(pairs) == 1
+    assert pairs[0].label_text == "Fecha de resolución"
+    assert pairs[0].value_text == "14-03-2026"
+    assert pairs[0].features.get("multi_colon_split") is not True
