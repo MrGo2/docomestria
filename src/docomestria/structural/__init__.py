@@ -66,7 +66,15 @@ from .models import (
     Subsection,
     Table,
 )
-from .schema import LABEL_SCHEMA, canonical_label, normalise_label
+from .doctype import DocType, DocTypeMatch, detect_doc_type
+from .schema import (
+    BANKING_SCHEMA,
+    LABEL_SCHEMA,
+    LABORAL_SCHEMA,
+    PATRIMONIAL_SCHEMA,
+    canonical_label,
+    normalise_label,
+)
 from .typing import (
     TypedValue,
     coerce_value,
@@ -140,7 +148,14 @@ __all__ = [
     "try_nif",
     "try_percent",
     # schema (capa 3.8)
+    "BANKING_SCHEMA",
     "LABEL_SCHEMA",
+    "LABORAL_SCHEMA",
+    "PATRIMONIAL_SCHEMA",
     "canonical_label",
     "normalise_label",
+    # doctype (capa 3.8 — family detection)
+    "DocType",
+    "DocTypeMatch",
+    "detect_doc_type",
 ]

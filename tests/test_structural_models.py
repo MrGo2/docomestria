@@ -134,6 +134,8 @@ def test_to_json_empty_extraction():
     payload = ext.to_json()
     assert payload == {
         "schema_version": 1,
+        "doc_type": "unknown",
+        "doc_type_confidence": 0.0,
         "page_count": 0,
         "pair_count": 0,
         "sections": [],

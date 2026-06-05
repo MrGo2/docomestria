@@ -13,8 +13,13 @@ from __future__ import annotations
 import re
 import unicodedata
 
+from .doctype import DocType
+
 __all__ = [
+    "BANKING_SCHEMA",
     "LABEL_SCHEMA",
+    "LABORAL_SCHEMA",
+    "PATRIMONIAL_SCHEMA",
     "canonical_label",
     "normalise_label",
 ]
@@ -81,11 +86,65 @@ def normalise_label(label: str) -> str:
     return folded
 
 
-def canonical_label(label: str) -> str | None:
+LABORAL_SCHEMA: dict[str, str] = {
+    "ccc": "ccc",
+    "razon social convenio regimen": "razon_social",
+    "no seguridad social": "numero_seguridad_social",
+    "numero seguridad social": "numero_seguridad_social",
+    "situacion actual": "situacion_actual",
+    "fecha situacion": "fecha_situacion",
+    "fecha alta": "fecha_alta",
+    "tipo contrato": "tipo_contrato",
+    "grupo cotizacion": "grupo_cotizacion",
+    "titular": "titular",
+}
+
+PATRIMONIAL_SCHEMA: dict[str, str] = {
+    "nombre": "nombre",
+    "primer apellido": "primer_apellido",
+    "segundo apellido": "segundo_apellido",
+    "dni": "dni",
+    "nacionalidad": "nacionalidad",
+    "aeat consulta percepciones": "aeat_consulta_percepciones",
+    "aeat consulta actividades economicas": "aeat_consulta_actividades_economicas",
+    "aeat cuentasampliadas mod 196": "aeat_cuentas_ampliadas",
+}
+
+BANKING_SCHEMA: dict[str, str] = {
+    "tae": "tae",
+    "interes nominal anual": "interes_nominal_anual",
+    "cuota": "cuota",
+    "importe total adeudado": "importe_total_adeudado",
+    "limite de credito": "limite_credito",
+    "sistema de reembolso": "sistema_reembolso",
+    "nombre y apellidos": "titular_principal",
+    "primera tarjeta emitida": "comision_primera_tarjeta",
+    "resto de tarjetas": "comision_resto_tarjetas",
+    "clave restriccion": "clave_restriccion",
+}
+
+
+_FAMILY_SCHEMAS: dict[DocType, dict[str, str]] = {
+    DocType.LABORAL: LABORAL_SCHEMA,
+    DocType.PATRIMONIAL: PATRIMONIAL_SCHEMA,
+    DocType.BANKING: BANKING_SCHEMA,
+}
+
+
+def canonical_label(
+    label: str, doc_type: DocType = DocType.UNKNOWN
+) -> str | None:
     """Return the canonical schema slug for ``label`` or ``None`` when the
     label is unknown.
+
+    When ``doc_type`` is given the family-specific table is consulted first,
+    so the same label ('Titular' on a banking form vs a labour court doc)
+    can resolve to different slugs per family.
     """
     key = normalise_label(label)
     if not key:
         return None
+    family_table = _FAMILY_SCHEMAS.get(doc_type)
+    if family_table is not None and key in family_table:
+        return family_table[key]
     return LABEL_SCHEMA.get(key)

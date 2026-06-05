@@ -367,8 +367,14 @@ class StructuralExtraction:
                 )
             sections_out.append({"title": sec, "subsections": subs_out})
 
+        from .doctype import detect_doc_type  # local to avoid cycles
+
+        match = detect_doc_type(p.label_text for p in self.pairs)
+
         return {
             "schema_version": SCHEMA_VERSION,
+            "doc_type": match.doc_type.value,
+            "doc_type_confidence": match.confidence,
             "page_count": len(self.pages),
             "pair_count": len(self.pairs),
             "sections": sections_out,
