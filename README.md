@@ -45,6 +45,25 @@ No single PDF engine sees the whole picture. Docomestria stitches their views to
 
 The combined output answers questions none of the engines can answer alone, such as: *"this list item lives inside the box titled DATOS PERSONALES DEL TITULAR and is rendered in Arial-Bold 12pt."*
 
+## LLM provenance (optional)
+
+Bind LLM-extracted outputs back to their source in the PDF and detect hallucinations:
+
+```python
+from docomestria import fuse
+from docomestria.llm import bind_provenance, detect_hallucinations
+
+items = fuse("contract.pdf")
+llm_output = {"nif": "51789286W", "name": "Claudio Alejandro"}
+
+bound = bind_provenance(llm_output, items)
+issues = detect_hallucinations(bound)
+```
+
+Install: `pip install docomestria[llm]`
+
+Works with any LLM (Gemini, Claude, OpenAI, local) — pass any JSON dict.
+
 ## Architecture
 
 ```mermaid

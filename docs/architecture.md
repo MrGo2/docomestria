@@ -61,3 +61,38 @@ because they would otherwise always win.
 `fuse_from_engines()` takes raw model lists, so any engine that emits the
 shape of `LiteItem`, `DoclingBlock`, or `VisualRect` can be plugged in without
 modifying the fusion code.
+
+## LLM provenance layer (optional)
+
+The `docomestria.llm` sub-package closes the loop between an LLM's extracted
+output and the original PDF. It does not call any LLM — it only consumes the
+JSON they produce.
+
+```mermaid
+flowchart LR
+    PDF[PDF file] --> F[fuse]
+    F --> FI[list FusedItem]
+    FI --> LLM[your LLM]
+    LLM --> J[JSON dict]
+    J --> B[bind_provenance]
+    FI --> B
+    B --> BV[list BoundValue]
+    BV --> V1[detect_hallucinations]
+    BV --> V2[detect_role_mismatches]
+    V1 --> I[list ProvenanceIssue]
+    V2 --> I
+```
+
+For each scalar in the LLM output, `bind_provenance` searches the FusedItems
+in three tiers: exact match, substring match, fuzzy match (`rapidfuzz`,
+default threshold `0.85`). The result is a `BoundValue` carrying the source
+item indices, the union bbox, the inferred section title, and the docling
+label at the bound centroid.
+
+`detect_hallucinations` flags values that could not be matched (or that
+matched with a score below `require_score`). `detect_role_mismatches` flags
+values bound to semantic blocks that are unlikely to hold data, such as
+`section_header`, `title`, `page_header`, `page_footer`, or `picture`.
+
+The layer is LLM-agnostic — Gemini, Claude, OpenAI, or local models all work
+as long as they return JSON. Install with `pip install docomestria[llm]`.
