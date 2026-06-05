@@ -193,6 +193,62 @@ def _fuse_one_pair(d: _TableLike, p: _TableLike) -> _TableLike:
     )
 
 
+def _normalise_cells(cells: tuple[tuple[str, ...], ...] | None) -> str:
+    """Collapse a cell matrix to a single normalised string for similarity.
+
+    Whitespace-stripped, lowercased, row-by-row. Used to detect shadow
+    duplicates where pdfplumber re-detects a Docling table at a different
+    (often off-page) Y coordinate with whitespace-collapsed text — observed
+    on BBVA5 p3 (15×4) and p16 glossary (8×2 vs 7×2). The duplicate carries
+    the same content modulo whitespace, so a single normalised string per
+    table is enough to recognise the redundancy.
+    """
+    if not cells:
+        return ""
+    parts: list[str] = []
+    for row in cells:
+        for c in row:
+            parts.append("".join(c.lower().split()))
+    return "|".join(parts)
+
+
+def _is_shadow_duplicate(
+    candidate: _TableLike, accepted: list[_TableLike]
+) -> bool:
+    """True if `candidate` reproduces the content of an already-accepted
+    table on the same page (same row count, same col count, similar text).
+
+    Same shape + 60% normalised-content overlap is the empirical threshold
+    that catches pdfplumber's BBVA5 off-page duplicates without flagging
+    real-but-similar tables (e.g. the two `Datos Petición` / `Respuesta`
+    headed blocks in PNJ documents have very different content despite
+    sharing structural shape).
+    """
+    if not candidate.cells:
+        return False
+    cand_rows = len(candidate.cells)
+    cand_cols = max((len(r) for r in candidate.cells), default=0)
+    cand_norm = _normalise_cells(candidate.cells)
+    if not cand_norm:
+        return False
+    cand_parts = set(cand_norm.split("|"))
+    for other in accepted:
+        if other.page != candidate.page or not other.cells:
+            continue
+        if len(other.cells) != cand_rows:
+            continue
+        other_cols = max((len(r) for r in other.cells), default=0)
+        if other_cols != cand_cols:
+            continue
+        other_parts = set(_normalise_cells(other.cells).split("|"))
+        if not other_parts:
+            continue
+        overlap = len(cand_parts & other_parts) / max(len(cand_parts), 1)
+        if overlap >= 0.6:
+            return True
+    return False
+
+
 def detect_tables(
     docling_blocks: Iterable[DoclingBlock],
     plumber_rects: Iterable[VisualRect],
@@ -205,7 +261,10 @@ def detect_tables(
       - Docling tables without a pdfplumber match are emitted with
         source='docling' (Docling sees grid-less tables that pdfplumber cannot).
       - pdfplumber tables without a Docling match are emitted with
-        source='pdfplumber' (visual grids Docling missed).
+        source='pdfplumber' ONLY IF their normalised content doesn't already
+        appear in an accepted table on the same page. pdfplumber occasionally
+        re-detects a Docling table at a phantom off-page Y with whitespace-
+        collapsed cells — those shadow duplicates are dropped here.
       - Cell content uses Docling when available; otherwise pdfplumber.
     """
     docling_tl = _docling_tables_as_tablelike(docling_blocks)
@@ -231,8 +290,11 @@ def detect_tables(
             fused.append(d)
 
     for i, p in enumerate(plumber_tl):
-        if i not in matched_plumber:
-            fused.append(p)
+        if i in matched_plumber:
+            continue
+        if _is_shadow_duplicate(p, fused):
+            continue
+        fused.append(p)
 
     return tuple(
         Table(
