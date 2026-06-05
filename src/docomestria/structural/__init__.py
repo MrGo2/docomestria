@@ -66,6 +66,16 @@ from .models import (
     Subsection,
     Table,
 )
+from .schema import LABEL_SCHEMA, canonical_label, normalise_label
+from .typing import (
+    TypedValue,
+    coerce_value,
+    try_amount,
+    try_bool,
+    try_date,
+    try_nif,
+    try_percent,
+)
 
 __all__ = [
     # lite_layout — geometric pyramid
@@ -121,4 +131,16 @@ __all__ = [
     # extractor
     "structural_extract",
     "structural_extract_from_engines",
+    # typing (capa 3.7)
+    "TypedValue",
+    "coerce_value",
+    "try_amount",
+    "try_bool",
+    "try_date",
+    "try_nif",
+    "try_percent",
+    # schema (capa 3.8)
+    "LABEL_SCHEMA",
+    "canonical_label",
+    "normalise_label",
 ]

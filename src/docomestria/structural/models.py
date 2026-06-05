@@ -182,6 +182,26 @@ class Pair:
     subsection_title: str | None = None
     column_index: int | None = None
 
+    def typed_value(self) -> "TypedValue":
+        """Coerce ``value_text`` into a typed representation (date, amount,
+        percent, NIF, bool, string).
+
+        Lazy import to keep ``models`` independent of ``typing`` at import
+        time (avoids any circulars when typing later imports models, even
+        though it doesn't today).
+        """
+        from .typing import coerce_value  # local import: avoid circulars
+
+        return coerce_value(self.value_text)
+
+    def canonical_label_slug(self) -> str | None:
+        """Return the canonical schema slug for this pair's label, or
+        ``None`` when the label isn't in the known schema.
+        """
+        from .schema import canonical_label
+
+        return canonical_label(self.label_text)
+
     def to_dict(self) -> dict[str, Any]:
         """Serialise to the canonical schema.
 
@@ -194,6 +214,11 @@ class Pair:
             confidence           — 'HIGH' | 'MEDIUM' | 'LOW' (upper-cased enum value)
             column_index         — only present when not None
             sub_section          — subsection_title (may be null)
+            typed                — present when value typing confidence >= 0.7
+                                   shape: {"kind", "value", "confidence"}
+                                   ``value`` is JSON-serialisable (dates → ISO,
+                                   amounts → dict, etc.)
+            canonical_label      — present when the label maps to a known slug
         """
         out: dict[str, Any] = {
             "label": self.label_text,
@@ -212,6 +237,22 @@ class Pair:
         }
         if self.column_index is not None:
             out["column_index"] = self.column_index
+
+        typed = self.typed_value()
+        if typed.kind != "string" and typed.confidence >= 0.7:
+            # Serialise non-JSON-native payloads.
+            payload: Any = typed.value
+            if hasattr(payload, "isoformat"):
+                payload = payload.isoformat()
+            out["typed"] = {
+                "kind": typed.kind,
+                "value": payload,
+                "confidence": typed.confidence,
+            }
+
+        slug = self.canonical_label_slug()
+        if slug is not None:
+            out["canonical_label"] = slug
         return out
 
 
