@@ -16,6 +16,7 @@ from docomestria.structural import (
     emit_from_two_column_form,
     emit_from_vertical_pair,
 )
+from docomestria.structural.candidates import _cluster_x_centroids
 
 
 def _classified_item(
@@ -39,6 +40,8 @@ def _classified_item(
 
 
 def test_two_column_form_splits_multiple_inline_pairs_in_one_item():
+    # Col1 items at x≈20, col2 items at x≈300 — realistic BBVA3-like geometry
+    # so DBSCAN (eps=15) produces exactly 2 clusters.
     table = Table(
         bbox=BBox(x=0.0, y=0.0, w=500.0, h=100.0),
         page=1,
@@ -55,8 +58,9 @@ def test_two_column_form_splits_multiple_inline_pairs_in_one_item():
             _classified_item(
                 "Tipo Identificación: NIF PERSONA FISICA N.I.F.: 009786573G"
             ),
+            # Both col2 items share approximately the same X ≈ 300pt
             _classified_item("Tipo Identificación: -", x=300.0, w=90.0),
-            _classified_item("N.I.F.: -", x=420.0, w=60.0),
+            _classified_item("N.I.F.: -", x=305.0, w=60.0),
         ),
         (Page(number=1, tables=(table,)),),
     )
@@ -70,6 +74,7 @@ def test_two_column_form_splits_multiple_inline_pairs_in_one_item():
 
 
 def test_two_column_form_attaches_wrapped_value_continuation():
+    # Col2 items share approximately the same X ≈ 300pt (same column cluster).
     table = Table(
         bbox=BBox(x=0.0, y=0.0, w=500.0, h=100.0),
         page=1,
@@ -93,7 +98,7 @@ def test_two_column_form_attaches_wrapped_value_continuation():
                 kind=ItemKind.VALUE,
             ),
             _classified_item("Tipo Identificación: -", x=300.0, w=90.0),
-            _classified_item("N.I.F.: -", x=420.0, w=60.0),
+            _classified_item("N.I.F.: -", x=305.0, w=60.0),
         ),
         (Page(number=1, tables=(table,)),),
     )
@@ -403,3 +408,122 @@ def test_vertical_pair_label_inside_table_region_emits_nothing():
     )
 
     assert pairs == ()
+
+
+# --------------------------------------------------------------------------
+# DBSCAN column clustering (_cluster_x_centroids)
+# --------------------------------------------------------------------------
+
+
+def test_cluster_x_centroids_single_cluster_when_all_items_share_x():
+    """All items at the same X → one cluster returned."""
+    items = [
+        _classified_item(f"Label {i}", x=30.0, w=100.0, y=float(i * 15))
+        for i in range(4)
+    ]
+    clusters = _cluster_x_centroids(items)
+    assert len(clusters) == 1
+    assert sum(len(c) for c in clusters) == 4
+
+
+def test_cluster_x_centroids_two_clusters_bbva3_geometry():
+    """BBVA3 Titulares geometry: col1 at x≈31, col2 at x≈305 → 2 clusters.
+
+    This is the regression constraint from the task spec: eps=15 must keep
+    these two column groups separate.
+    """
+    col1_items = [
+        _classified_item(f"Label {i}", x=31.0 + i * 0.3, w=80.0, y=float(i * 20))
+        for i in range(5)
+    ]
+    col2_items = [
+        _classified_item(f"Label {i}", x=305.0 + i * 0.2, w=80.0, y=float(i * 20))
+        for i in range(5)
+    ]
+    clusters = _cluster_x_centroids(col1_items + col2_items)
+    assert len(clusters) == 2
+    mean_x_0 = sum(ci.bbox.left for ci in clusters[0]) / len(clusters[0])
+    mean_x_1 = sum(ci.bbox.left for ci in clusters[1]) / len(clusters[1])
+    assert mean_x_0 < 50.0, "first cluster should be the left column (x≈31)"
+    assert mean_x_1 > 280.0, "second cluster should be the right column (x≈305)"
+
+
+def test_cluster_x_centroids_three_clusters_for_ncol_matrix():
+    """Three columns each with tight X spread → 3 clusters."""
+    items = (
+        [_classified_item("L", x=30.0, w=50.0, y=float(i * 15)) for i in range(3)]
+        + [_classified_item("L", x=200.0, w=50.0, y=float(i * 15)) for i in range(3)]
+        + [_classified_item("L", x=370.0, w=50.0, y=float(i * 15)) for i in range(3)]
+    )
+    clusters = _cluster_x_centroids(items)
+    assert len(clusters) == 3
+    means = [sum(ci.bbox.left for ci in c) / len(c) for c in clusters]
+    assert means[0] < means[1] < means[2], "clusters sorted left-to-right"
+
+
+# --------------------------------------------------------------------------
+# Shape 4 — N-col matrix per-column dedup with distinct column headers
+# --------------------------------------------------------------------------
+
+
+def test_docling_tables_shape4_emits_per_column_when_values_repeat_with_different_headers():
+    """When value text is the same but column headers differ, Shape 4 must emit
+    one pair per column — not deduplicate by value alone.
+
+    Scenario: BBVA5-style table where 'TAE' = '12,60%' for both 'Sin nómina'
+    and 'Con nómina' columns.  The old dedup key (value only) would suppress
+    the second pair; the new key (value, header) correctly emits both.
+    """
+    table = Table(
+        bbox=BBox(x=0.0, y=0.0, w=400.0, h=90.0),
+        page=1,
+        cells=(
+            ("", "Sin nomina", "Con nomina", "Premium"),
+            ("TAE", "12,60%", "12,60%", "11,80%"),
+        ),
+    )
+
+    pairs = emit_from_docling_tables((Page(number=1, tables=(table,)),))
+
+    # Expect 3 pairs: TAE x3 columns (two with identical value but different header,
+    # one with distinct value)
+    assert len(pairs) == 3
+    labels = [p.label_text for p in pairs]
+    assert all(lbl == "TAE" for lbl in labels)
+    values = [p.value_text for p in pairs]
+    assert values.count("12,60%") == 2, "identical values with different headers both emitted"
+    assert "11,80%" in values
+    col_indices = [p.column_index for p in pairs]
+    assert sorted(col_indices) == [1, 2, 3]
+
+
+def test_docling_tables_shape4_still_deduplicates_identical_value_and_header():
+    """When value AND header are both identical (true colspan artefact),
+    only one pair is emitted — no duplicate for the repeated column.
+
+    Note: when the column-header row itself has all-identical headers, it does
+    NOT trigger Shape 2 (which requires ≥2 distinct header values). That means
+    the data row falls to Shape 3 (consistent values) → 1 pair, column_index=None.
+    The dedup behaviour is tested via a 3-column variant where the first two
+    columns share value+header and the third is distinct.
+    """
+    table = Table(
+        bbox=BBox(x=0.0, y=0.0, w=400.0, h=90.0),
+        page=1,
+        cells=(
+            ("", "Tipo A", "Tipo A", "Tipo B"),   # col1+2 same header, col3 distinct
+            ("TAE", "12,60%", "12,60%", "11,80%"),
+        ),
+    )
+
+    pairs = emit_from_docling_tables((Page(number=1, tables=(table,)),))
+
+    # Cols 1+2: same value "12,60%" AND same header "Tipo A" → dedup → 1 pair
+    # Col 3: distinct value "11,80%" (different dedup key) → 1 pair
+    # Total: 2 pairs
+    assert len(pairs) == 2
+    assert [p.value_text for p in pairs] == ["12,60%", "11,80%"]
+    # col3 has column_index=3 because the column-header row activates Shape 4
+    col_indices = [p.column_index for p in pairs]
+    assert col_indices[0] == 1     # first unique (Tipo A)
+    assert col_indices[1] == 3     # Tipo B is col 3
