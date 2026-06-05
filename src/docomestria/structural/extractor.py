@@ -18,6 +18,7 @@ from ..engines import (
 from ..models import DoclingBlock, LiteItem, VisualRect
 from .candidates import emit_all
 from .classify import classify
+from .ilp import resolve_conflicts
 from .models import Page, Pair, StructuralExtraction
 from .scoring import resolve_pairs
 from .structure import detect_structure
@@ -56,6 +57,10 @@ def structural_extract_from_engines(
     pages = detect_structure(docling_blocks, lite_items, plumber_rects)
     candidates = emit_all(classified, pages)
     pairs = resolve_pairs(candidates)
+    # Global ILP-style conflict resolution (sección 6.5) — drops same-page,
+    # same-label pairs without a distinguishing column_index. Keeps the
+    # highest-scoring candidate per conflict group.
+    pairs = resolve_conflicts(pairs)
 
     # Backfill section_title on each pair using the page's section list.
     pages_by_no = {p.number: p for p in pages}

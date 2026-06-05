@@ -67,6 +67,7 @@ from .models import (
     Table,
 )
 from .doctype import DocType, DocTypeMatch, detect_doc_type
+from .ilp import resolve_conflicts, resolve_conflicts_lp
 from .schema import (
     BANKING_SCHEMA,
     LABEL_SCHEMA,
@@ -158,4 +159,7 @@ __all__ = [
     "DocType",
     "DocTypeMatch",
     "detect_doc_type",
+    # ilp (sección 6.5 — global conflict resolution)
+    "resolve_conflicts",
+    "resolve_conflicts_lp",
 ]
