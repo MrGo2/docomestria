@@ -257,3 +257,98 @@ def test_stream_payload_includes_samples(tmp_path):
     fuse_step = next(s for s in steps if s.name == "fuse")
     assert fuse_step.payload["items_count"] == 2
     assert "sample_texts" in fuse_step.payload
+
+
+# --------------------------------------------------------------------------- v0.6.2: rich extract payloads
+
+
+def test_stream_extract_steps_include_raw_payload(tmp_path, monkeypatch):
+    """extract_liteparse / extract_docling / extract_pdfplumber expose `_text_items`
+    / `_blocks` / `_rects` for the studio UI."""
+    from docomestria import BBox, DoclingBlock, LiteItem, VisualRect
+    from docomestria.fusion import FusionStats
+    from docomestria.pipeline import _stream
+
+    lite_items = [
+        LiteItem(
+            text="HELLO",
+            bbox=BBox(x=10, y=20, w=40, h=10),
+            font_name="Helvetica-Bold",
+            font_size=12.0,
+            page=1,
+        )
+    ]
+    docling_blocks = [
+        DoclingBlock(
+            bbox=BBox(x=5, y=5, w=200, h=300),
+            label="section_header",
+            heading_level=1,
+            content_layer="body",
+            page=1,
+            text="DATOS",
+            self_ref="ref-1",
+        )
+    ]
+    rects = [
+        VisualRect(
+            bbox=BBox(x=8, y=8, w=10, h=10),
+            is_checkbox=True,
+            is_filled=True,
+            page=1,
+            rect_id="rect_0",
+            rect_type="checkbox",
+        )
+    ]
+
+    monkeypatch.setattr("docomestria.engines.extract_lite_items", lambda _p: lite_items)
+    monkeypatch.setattr(
+        "docomestria.engines.extract_docling_blocks", lambda _p: docling_blocks
+    )
+    monkeypatch.setattr(
+        "docomestria.engines.extract_visual_rects", lambda _p: rects
+    )
+
+    def _fake_fuse(_lite, _doc, _rects):
+        return FusionStats(
+            items=(),
+            coverage=0.0,
+            matched_to_docling=0,
+            matched_to_box=0,
+            total_items=0,
+        )
+
+    monkeypatch.setattr("docomestria.fusion.fuse_from_engines", _fake_fuse)
+
+    # Build a pipeline with NO fuse_fn so the per-engine extract path runs.
+    provider = MockProvider({"nif": "51789286W"})
+    pipe = Pipeline(schema=_schema(), llm=provider, cache_dir=None)
+
+    pdf = _pdf(tmp_path)
+    from docomestria.pipeline._helpers import StepEmitter
+
+    emitter = StepEmitter(lang="es", callback=None, total_steps=13)
+    steps = list(_stream.stream_extract(pipe, pdf, emitter))
+
+    by_name = {s.name: s for s in steps}
+    assert "extract_liteparse" in by_name
+    assert "extract_docling" in by_name
+    assert "extract_pdfplumber" in by_name
+
+    text_items = by_name["extract_liteparse"].payload["_text_items"]
+    assert isinstance(text_items, list) and len(text_items) == 1
+    assert text_items[0]["text"] == "HELLO"
+    assert text_items[0]["font"] == "Helvetica-Bold"
+    assert text_items[0]["size"] == 12.0
+    assert text_items[0]["bbox"] == [10.0, 20.0, 40.0, 10.0]
+
+    blocks = by_name["extract_docling"].payload["_blocks"]
+    assert isinstance(blocks, list) and len(blocks) == 1
+    assert blocks[0]["label"] == "section_header"
+    assert blocks[0]["level"] == 1
+    assert blocks[0]["layer"] == "body"
+
+    rects_payload = by_name["extract_pdfplumber"].payload["_rects"]
+    assert isinstance(rects_payload, list) and len(rects_payload) == 1
+    assert rects_payload[0]["rect_type"] == "checkbox"
+    assert rects_payload[0]["is_filled"] is True
+    assert rects_payload[0]["rect_id"] == "rect_0"

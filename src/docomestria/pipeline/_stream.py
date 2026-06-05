@@ -101,6 +101,7 @@ def stream_extract(
         payload={
             "items_count": len(lite),
             "sample_texts": [li.text for li in lite[:3] if li.text],
+            "_text_items": _text_items_payload(lite),
         },
     )
 
@@ -112,6 +113,7 @@ def stream_extract(
         payload={
             "blocks_count": len(docling),
             "sample_labels": [b.label for b in docling[:3]],
+            "_blocks": _blocks_payload(docling),
         },
     )
 
@@ -123,6 +125,7 @@ def stream_extract(
         payload={
             "rects_count": len(rects),
             "sample_types": [r.rect_type for r in rects[:3]],
+            "_rects": _rects_payload(rects),
         },
     )
 
@@ -299,6 +302,7 @@ def stream_deterministic(
                 1 for iss in det_issues if iss.issue_type == "missing_required"
             ),
             "sample_fields": [bv.field_name for bv in bound[:3]],
+            "_pairs": _pairs_payload(pipe.schema, bound),
         },
         fusion=fusion,
         bound=bound_tuple,
@@ -353,6 +357,101 @@ def _fuse_payload(fusion: FusionResult) -> dict[str, Any]:
         "matched_to_box": fusion.matched_to_box,
         "sample_texts": [it.text for it in fusion.items[:3] if it.text],
     }
+
+
+def _bbox_quad(bbox: Any) -> list[float]:
+    return [float(bbox.x), float(bbox.y), float(bbox.w), float(bbox.h)]
+
+
+def _text_items_payload(items: Any) -> list[dict[str, Any]]:
+    """Serialize LiteParse items into JSON-safe dicts for the studio UI.
+
+    The `_` prefix marks this key as internal — downstream tools may rely on
+    it but the schema is unstable. Order matches the engine's emission order
+    so downstream consumers can correlate by index with the step's bboxes.
+    """
+    out: list[dict[str, Any]] = []
+    for it in items:
+        out.append(
+            {
+                "text": getattr(it, "text", "") or "",
+                "font": getattr(it, "font_name", None),
+                "size": getattr(it, "font_size", None),
+                "page": int(getattr(it, "page", 1) or 1),
+                "bbox": _bbox_quad(it.bbox),
+            }
+        )
+    return out
+
+
+def _blocks_payload(blocks: Any) -> list[dict[str, Any]]:
+    """Serialize Docling blocks into JSON-safe dicts (internal, unstable)."""
+    out: list[dict[str, Any]] = []
+    for b in blocks:
+        out.append(
+            {
+                "label": getattr(b, "label", "") or "",
+                "level": getattr(b, "heading_level", None),
+                "layer": getattr(b, "content_layer", "body") or "body",
+                "page": int(getattr(b, "page", 1) or 1),
+                "bbox": _bbox_quad(b.bbox),
+                "text": (getattr(b, "text", "") or "")[:120],
+            }
+        )
+    return out
+
+
+def _pairs_payload(schema: Any, bound: Any) -> list[dict[str, Any]]:
+    """Serialize deterministic label-to-value pairs for the studio UI.
+
+    Iterates the schema's declared fields, then matches each one to the
+    `BoundValue` produced by `extract_deterministic`. Unmatched fields appear
+    as `matched: false`. Label inference mirrors `deterministic._pair_field`.
+    """
+    from ..transform.models import infer_labels_from_key
+
+    bound_by_field = {bv.field_name: bv for bv in bound}
+    out: list[dict[str, Any]] = []
+    for field_name, fld in schema.fields.items():
+        labels = fld.labels if fld.labels else infer_labels_from_key(field_name)
+        bv = bound_by_field.get(field_name)
+        out.append(
+            {
+                "field": field_name,
+                "label_searched": list(labels or ()),
+                "label_found": (labels[0] if (labels and bv is not None) else None),
+                "value_raw": (bv.value if bv is not None else None),
+                "matched": bv is not None,
+                "page": (bv.page if bv is not None else None),
+            }
+        )
+    return out
+
+
+def _rects_payload(rects: Any) -> list[dict[str, Any]]:
+    """Serialize pdfplumber visual rects into JSON-safe dicts (internal)."""
+    out: list[dict[str, Any]] = []
+    for r in rects:
+        grid = getattr(r, "table_grid", None)
+        grid_shape: str | None = None
+        if grid:
+            try:
+                rows = len(grid)
+                cols = max((len(row) for row in grid), default=0)
+                grid_shape = f"{rows} rows x {cols} cols"
+            except TypeError:
+                grid_shape = None
+        out.append(
+            {
+                "rect_id": getattr(r, "rect_id", "") or "",
+                "rect_type": getattr(r, "rect_type", "box") or "box",
+                "is_filled": bool(getattr(r, "is_filled", False)),
+                "page": int(getattr(r, "page", 1) or 1),
+                "bbox": _bbox_quad(r.bbox),
+                "table_grid": grid_shape,
+            }
+        )
+    return out
 
 
 __all__ = [

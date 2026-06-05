@@ -255,6 +255,28 @@ def test_stream_pair_fields_step_carries_engine(tmp_path):
     assert pair.engine == "pairing"
 
 
+def test_stream_pair_fields_step_includes_pairs_payload(tmp_path):
+    schema = Schema(
+        {
+            "nif": Field(tr.nif_es, labels=("NIF", "DNI")),
+            "apellidos": Field(tr.regex(r"^[A-ZÀ-Ú ]+$"), labels=("Apellidos",)),
+            "missing": Field(tr.nif_es, labels=("NoSuchLabel",)),
+        }
+    )
+    pipe = _pipeline(schema, _basic_fusion())
+    steps = list(pipe.stream(_pdf(tmp_path)))
+    pair = next(s for s in steps if s.name == "pair_fields")
+    pairs = pair.payload.get("_pairs")
+    assert isinstance(pairs, list)
+    assert len(pairs) == 3
+    by_field = {p["field"]: p for p in pairs}
+    assert by_field["nif"]["matched"] is True
+    assert by_field["nif"]["value_raw"] == "51789286W"
+    assert "NIF" in by_field["nif"]["label_searched"]
+    assert by_field["missing"]["matched"] is False
+    assert by_field["missing"]["value_raw"] is None
+
+
 # --------------------------------------------------------------------------- cost
 
 
