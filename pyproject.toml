@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "docomestria"
+version = "0.1.0"
+description = "Fuse LiteParse v2, Docling, and pdfplumber for richer PDF extraction with semantic and visual layout awareness"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Carlos Lorenzo", email = "carlos@edelwyss.es" },
+]
+keywords = ["pdf", "extraction", "docling", "liteparse", "pdfplumber", "layout", "ocr"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "liteparse",
+    "docling",
+    "pdfplumber",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "pre-commit>=3.7",
+    "reportlab>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/MrGo2/docomestria"
+Repository = "https://github.com/MrGo2/docomestria"
+Issues = "https://github.com/MrGo2/docomestria/issues"
+Changelog = "https://github.com/MrGo2/docomestria/blob/main/CHANGELOG.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/docomestria"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q"
