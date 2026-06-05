@@ -11,15 +11,89 @@
 
 ## 1. Objetivo
 
-**Fusionar las tres herramientas — LiteParse (geometría exacta de cada
-palabra), Docling (qué es tabla, qué es prosa, qué es título) y pdfplumber
-(líneas vectoriales y bboxes ajustados) — para convertir tablas y columnas
-en key-values y JSON estructurado fiable.**
+**Dado CUALQUIER PDF (judicial, bancario, contractual, formulario, informe,
+factura...), identificar correctamente sus tablas, columnas y key-values
+contenidos dentro, fusionando las features complementarias de los tres
+motores: LiteParse (geometría sub-píxel y tipografía), Docling (semántica
+y estructura de celdas), pdfplumber (líneas vectoriales y bboxes ajustados).**
 
-Métrica de éxito: igualar o superar a Azure Document Intelligence en
-precisión sobre los 5 PDFs del benchmark
-(`azuredemo__LABORAL`, `__PATRIMONIAL`, `__BBVA3`, `__BBVA4`, `__BBVA5`),
-en local, open-source, sin coste por página.
+La extracción es **combinatoria, no aditiva** — habilita lógicas imposibles
+para cualquier subconjunto de dos motores. Opera sobre 8 capas de lógica
+(tabla, texto, geometría, tipografía, semántica, reconciliación, tipado,
+jerarquía JSON) bajo un marco estadístico bayesiano con fusión Dempster-Shafer.
+
+### Output canónico
+
+JSON estructurado donde cada par lleva:
+
+```json
+{
+  "label": "TAE",
+  "value": "12,6020%",
+  "page": 3,
+  "bbox": {"x": 120, "y": 450, "w": 80, "h": 12},
+  "rule": "D-2col",
+  "score": 0.85,
+  "confidence": "HIGH",
+  "column_index": 1,
+  "sub_section": "Condiciones económicas"
+}
+```
+
+Los pares se agrupan jerárquicamente por sub-sección y tipo de documento.
+
+### Alcance vs benchmark — no confundir
+
+- **Alcance del sistema** (lo que resolvemos): **cualquier PDF** con tabla,
+  columna o KV. El objetivo a largo plazo es generalizar más allá de
+  cualquier familia documental concreta.
+- **Benchmark** (cómo medimos progreso): un set de regresión de 5 PDFs
+  hispanos con ground truth — `azuredemo__LABORAL`, `__PATRIMONIAL`,
+  `__BBVA3`, `__BBVA4`, `__BBVA5`. **No son el alcance, son la red de
+  seguridad.** Cada uno representa una familia documental con un
+  patrón distinto:
+  - LABORAL → judicial 2-col, labels multi-línea bold
+  - PATRIMONIAL → judicial multi-página, sub-secciones
+  - BBVA3 → formulario bancario con multi-colon en celda
+  - BBVA4 → formulario con shadow-tables pdfplumber
+  - BBVA5 → contrato con matriz paralela Sin/Con-variante
+
+Cualquier cambio que rompa pares HIGH en este set **bloquea commit**.
+
+### Métrica de éxito
+
+Igualar o superar a Azure Document Intelligence en precisión sobre el
+benchmark, en local, open-source, sin coste por página. Cobertura
+funcional amplia (más allá del benchmark) se valida con ParseBench
+(15 PDFs hoy, expandible — v0.9.0 #16 del roadmap).
+
+### Definition of Done — cuándo termina el goal
+
+El objetivo se da por **completado** cuando se cumplen las TRES condiciones
+simultáneamente:
+
+1. **Input universal validado** — el pipeline acepta **cualquier PDF**
+   (vector, escaneado-con-OCR, híbrido) sin código específico por familia.
+   Validado con ParseBench expandido a ≥50 PDFs cubriendo al menos 8
+   familias documentales distintas, con precision HIGH ≥95% y recall
+   global ≥85%.
+
+2. **Output JSON KV estructurado, estable y consumible** — cada PDF produce
+   un único JSON con el schema canónico (`{label, value, page, bbox, rule,
+   score, confidence, column_index?, sub_section?}`), pares agrupados
+   jerárquicamente por sub-sección, valores tipados (fechas ISO, importes
+   con currency, booleanos, NIF validado), sin strings crudos donde aplica
+   un tipo. Schema versionado y documentado.
+
+3. **Cobertura de pruebas completa** — los 5 módulos de
+   `src/docomestria/structural/` con ≥85% line coverage en unit tests
+   focalizados; baseline de regresión verde sobre el set de 5 PDFs
+   azuredemo; gold tests E2E para cada familia documental cubierta en
+   ParseBench; CI bloquea PRs que rompan cualquiera de los tres niveles.
+
+Hasta entonces, cada release intermedio (v0.7.1 → v0.9.0) avanza una o
+varias de estas tres condiciones. El roadmap §7 está diseñado para que
+v0.9.0 cierre las tres simultáneamente.
 
 ---
 
@@ -393,6 +467,14 @@ Cada paso es **independiente** y mejora el sistema sin reescribirlo.
 ---
 
 ## 8. Estrategia de testing
+
+> ⚠️ **Cobertura de regresión ≠ cobertura funcional.** El sistema debe
+> funcionar sobre cualquier PDF (ver §1). El benchmark de 5 PDFs es la red
+> de seguridad mínima — garantiza que no rompemos lo que ya funciona, no
+> que cubrimos todo lo que podría funcionar. La cobertura funcional amplia
+> se mide con ParseBench (15 PDFs hoy, expandible a 50–100 — roadmap §7
+> v0.9.0 #16) y con tests E2E sobre familias documentales nuevas a medida
+> que se incorporan.
 
 ### 8.1 Tres niveles de prueba
 
