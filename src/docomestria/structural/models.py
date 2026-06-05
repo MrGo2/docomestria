@@ -14,10 +14,14 @@ can be traced back to *why* it was emitted.
 
 from __future__ import annotations
 
+from collections.abc import Iterator
 from dataclasses import dataclass, field
 from enum import Enum
+from typing import Any
 
 from ..models import BBox, LiteItem
+
+SCHEMA_VERSION = 1
 
 
 class ItemKind(str, Enum):
@@ -178,6 +182,38 @@ class Pair:
     subsection_title: str | None = None
     column_index: int | None = None
 
+    def to_dict(self) -> dict[str, Any]:
+        """Serialise to the canonical schema.
+
+        Fields:
+            label, value         — plain strings (label_text/value_text)
+            page                 — 1-based page number
+            bbox                 — LABEL bbox as {x, y, w, h}
+            rule                 — first evidence entry (the original emitter)
+            score                — raw 0..1 score
+            confidence           — 'HIGH' | 'MEDIUM' | 'LOW' (upper-cased enum value)
+            column_index         — only present when not None
+            sub_section          — subsection_title (may be null)
+        """
+        out: dict[str, Any] = {
+            "label": self.label_text,
+            "value": self.value_text,
+            "page": self.page,
+            "bbox": {
+                "x": self.label_bbox.x,
+                "y": self.label_bbox.y,
+                "w": self.label_bbox.w,
+                "h": self.label_bbox.h,
+            },
+            "rule": self.evidence[0] if self.evidence else "",
+            "score": self.score,
+            "confidence": self.confidence.value.upper(),
+            "sub_section": self.subsection_title,
+        }
+        if self.column_index is not None:
+            out["column_index"] = self.column_index
+        return out
+
 
 @dataclass(frozen=True)
 class Page:
@@ -211,3 +247,88 @@ class StructuralExtraction:
     pages: tuple[Page, ...]
     pairs: tuple[Pair, ...]
     classified: tuple[ClassifiedItem, ...] = ()  # for debugging / studio view
+
+    def iter_grouped(
+        self,
+    ) -> Iterator[tuple[str | None, str | None, tuple[Pair, ...]]]:
+        """Yield (section_title, subsection_title, pairs) triples in order.
+
+        Sections are ordered by the (page, y) of their first pair; subsections
+        within a section likewise; pairs within a subsection ordered by
+        (page, label_bbox.y). Pairs without a section live under ``None``;
+        same for missing subsection.
+        """
+        # Group preserving first-occurrence order. We sort pairs first by
+        # (page, y) so the natural iteration order produces the right
+        # first-occurrence order for groups too.
+        ordered = sorted(self.pairs, key=lambda p: (p.page, p.label_bbox.y))
+
+        # section_title -> { subsection_title -> [Pair, ...] }
+        sections: dict[str | None, dict[str | None, list[Pair]]] = {}
+        section_order: list[str | None] = []
+        subsection_order: dict[str | None, list[str | None]] = {}
+
+        for pair in ordered:
+            sec = pair.section_title
+            sub = pair.subsection_title
+            if sec not in sections:
+                sections[sec] = {}
+                section_order.append(sec)
+                subsection_order[sec] = []
+            if sub not in sections[sec]:
+                sections[sec][sub] = []
+                subsection_order[sec].append(sub)
+            sections[sec][sub].append(pair)
+
+        for sec in section_order:
+            for sub in subsection_order[sec]:
+                yield (sec, sub, tuple(sections[sec][sub]))
+
+    def to_json(self) -> dict[str, Any]:
+        """Return the full hierarchical structure as a JSON-serialisable dict.
+
+        Shape:
+            {
+              "schema_version": 1,
+              "page_count": <n>,
+              "pair_count": <n>,
+              "sections": [
+                {
+                  "title": "Datos Petición" | null,
+                  "subsections": [
+                    {
+                      "title": "Servicios Consultados" | null,
+                      "pairs": [<canonical pair dict>, ...]
+                    }
+                  ]
+                }
+              ]
+            }
+        """
+        # Re-group from iter_grouped, but bucket into sections.
+        section_buckets: dict[str | None, list[tuple[str | None, tuple[Pair, ...]]]] = {}
+        section_order: list[str | None] = []
+        for sec, sub, pairs in self.iter_grouped():
+            if sec not in section_buckets:
+                section_buckets[sec] = []
+                section_order.append(sec)
+            section_buckets[sec].append((sub, pairs))
+
+        sections_out: list[dict[str, Any]] = []
+        for sec in section_order:
+            subs_out: list[dict[str, Any]] = []
+            for sub, pairs in section_buckets[sec]:
+                subs_out.append(
+                    {
+                        "title": sub,
+                        "pairs": [p.to_dict() for p in pairs],
+                    }
+                )
+            sections_out.append({"title": sec, "subsections": subs_out})
+
+        return {
+            "schema_version": SCHEMA_VERSION,
+            "page_count": len(self.pages),
+            "pair_count": len(self.pairs),
+            "sections": sections_out,
+        }
