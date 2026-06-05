@@ -22,7 +22,13 @@ from ..llm.models import BoundValue
 from ..llm.provenance import bind_provenance
 from ..result import FusionResult
 from ._helpers import HallucinationPolicy, StepEmitter, llm_id, parse_json, with_cache_hit
-from ._stream import stream_bind_and_type, stream_cache_hit, stream_extract, stream_llm
+from ._stream import (
+    stream_bind_and_type,
+    stream_cache_hit,
+    stream_deterministic,
+    stream_extract,
+    stream_llm,
+)
 from .cache import CacheBackend, DiskCache, build_cache_key
 from .prompts import SYSTEM_PROMPT, build_reprompt
 from .providers.base import LLMProvider, LLMResponse
@@ -46,7 +52,7 @@ class Pipeline:
         self,
         *,
         schema: Any,
-        llm: LLMProvider,
+        llm: LLMProvider | None = None,
         cache_dir: str | None = ".docomestria_cache",
         cache: CacheBackend | None = None,
         retry: RetryPolicy | None = None,
@@ -135,6 +141,11 @@ class Pipeline:
             return
 
         fusion = yield from stream_extract(self, pdf_path, emitter)
+
+        if self.llm is None:
+            yield from stream_deterministic(self, emitter, fusion)
+            return
+
         parsed, llm_calls, context = yield from stream_llm(self, emitter, fusion)
         yield from stream_bind_and_type(self, emitter, fusion, parsed, llm_calls, context)
 
@@ -187,7 +198,8 @@ class Pipeline:
     def _cache_key(self, pdf_path: str | Path) -> str | None:
         if self.cache is None:
             return None
-        return build_cache_key(pdf_path, repr(self.schema), llm_id(self.llm))
+        model_id = llm_id(self.llm) if self.llm is not None else "deterministic"
+        return build_cache_key(pdf_path, repr(self.schema), model_id)
 
     def _cache_get(self, key: str | None) -> ExtractionResult | None:
         if self.cache is None or key is None:

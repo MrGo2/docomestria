@@ -275,6 +275,76 @@ def stream_bind_and_type(
     )
 
 
+def stream_deterministic(
+    pipe: "Pipeline",
+    emitter: StepEmitter,
+    fusion: FusionResult,
+) -> Iterator[PipelineStep]:
+    """Run the LLM-free pairing path: pair_fields → apply_schema → complete."""
+    from .deterministic import extract_deterministic
+    from .result import CostReport
+
+    bound, det_issues = extract_deterministic(fusion, pipe.schema)
+    bound_tuple: tuple[BoundValue, ...] = tuple(bound)
+    issues_tuple: tuple = tuple(det_issues)
+
+    pair_bboxes = tuple(bv.bbox for bv in bound if bv.bbox is not None)
+    yield emitter.emit(
+        "pair_fields",
+        "pairing",
+        bboxes=pair_bboxes,
+        payload={
+            "paired_count": len(bound),
+            "missing_required": sum(
+                1 for iss in det_issues if iss.issue_type == "missing_required"
+            ),
+            "sample_fields": [bv.field_name for bv in bound[:3]],
+        },
+        fusion=fusion,
+        bound=bound_tuple,
+        issues=issues_tuple,
+    )
+
+    typed = pipe.schema.apply(bound, fusion)
+    yield emitter.emit(
+        "apply_schema",
+        "transform",
+        payload={
+            "typed_count": len(typed),
+            "ok_count": sum(1 for tv in typed.values() if getattr(tv, "ok", False)),
+        },
+        fusion=fusion,
+        bound=bound_tuple,
+        issues=issues_tuple,
+        typed_fields=typed,
+    )
+
+    cost = CostReport(tokens_in=0, tokens_out=0, usd=0.0, model_used="deterministic")
+    duration_ms = emitter.cumulative_ms()
+    result = ExtractionResult(
+        typed_fields=typed,
+        issues=issues_tuple,
+        fusion=fusion,
+        bound=bound_tuple,
+        cost=cost,
+        duration_ms=duration_ms,
+        cache_hit=False,
+        llm_calls=0,
+    )
+    pipe._cache_set(pipe._last_cache_key, result)
+
+    yield emitter.emit(
+        "complete",
+        "system",
+        payload={"result": result, "duration_ms": duration_ms, "cost_usd": cost.usd},
+        is_terminal=True,
+        fusion=fusion,
+        bound=bound_tuple,
+        issues=issues_tuple,
+        typed_fields=typed,
+    )
+
+
 def _fuse_payload(fusion: FusionResult) -> dict[str, Any]:
     return {
         "items_count": len(fusion.items),
@@ -288,6 +358,7 @@ def _fuse_payload(fusion: FusionResult) -> dict[str, Any]:
 __all__ = [
     "stream_bind_and_type",
     "stream_cache_hit",
+    "stream_deterministic",
     "stream_extract",
     "stream_llm",
 ]

@@ -17,6 +17,32 @@ pip install docomestria[claude]                               # native Anthropic
 pip install docomestria[openai]                               # native OpenAI
 ```
 
+## Quickstart: deterministic mode (no LLM)
+
+For structured forms with clear labels, you don't need an LLM at all:
+
+```python
+from docomestria import Pipeline
+from docomestria.transform import Schema, Field, transformers as tr
+
+schema = Schema({
+    "nif": Field(tr.nif_es, labels=("NIF", "DNI")),
+    "cp":  Field(tr.postal_code_es, labels=("C.P.",)),
+})
+
+pipe = Pipeline(schema=schema, llm=None)   # no LLM
+result = pipe.run("form.pdf")              # free, ~1-3 seconds
+```
+
+For free-text contracts or unstructured PDFs, use the [OpenRouter quickstart](#quickstart-with-openrouter) below.
+
+### Mode comparison
+
+| Mode          | LLM needed | Cost                       | Speed   | Best for                                       |
+|---------------|------------|----------------------------|---------|------------------------------------------------|
+| Deterministic | No         | $0                         | ~1-3s   | Structured forms with labels                   |
+| AI-assisted   | Yes        | ~$0.0001-0.001 / PDF       | ~3-8s   | Free-text, unstructured docs, ambiguous fields |
+
 ## Quickstart with OpenRouter
 
 OpenRouter gives you one API key for 200+ models, built-in fallback chains, and accurate per-call cost reporting. It is the recommended default for new projects.

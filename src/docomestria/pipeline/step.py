@@ -38,6 +38,20 @@ STEP_NAMES: tuple[str, ...] = (
     "complete",
 )
 
+# Step names for the deterministic (`llm=None`) path. The LLM-specific phases
+# are replaced by a single `pair_fields` step.
+DETERMINISTIC_STEP_NAMES: tuple[str, ...] = (
+    "start",
+    "cache_check",
+    "extract_liteparse",
+    "extract_docling",
+    "extract_pdfplumber",
+    "fuse",
+    "pair_fields",
+    "apply_schema",
+    "complete",
+)
+
 # Total step count used to populate `PipelineStep.total_steps`. We use the
 # canonical sequence length so progress is monotonic and predictable even
 # when an extract step is skipped (e.g. cache hit replaces 3–12 with a
@@ -62,6 +76,7 @@ STEP_TITLES: dict[str, str] = {
     "bind_provenance": "Vinculando provenance",
     "detect_issues": "Detectando problemas",
     "apply_schema": "Tipando valores",
+    "pair_fields": "Emparejando campos",
     "complete": "Listo",
     "error": "Error",
 }
@@ -122,6 +137,16 @@ EXPLANATIONS: dict[str, dict[str, str]] = {
     "apply_schema": {
         "es": "Convirtiendo strings a tipos (fechas, importes, NIF...) y validando.",
         "en": "Converting strings to typed values (dates, amounts, NIF, ...) and validating.",
+    },
+    "pair_fields": {
+        "es": (
+            "Buscando cada campo por su etiqueta (Apellidos:, NIF:, ...) y "
+            "emparejándolo con su valor a la derecha o debajo. Sin LLM."
+        ),
+        "en": (
+            "Finding each field by its label (Apellidos:, NIF:, ...) and "
+            "pairing it with the value to the right or below. No LLM."
+        ),
     },
     "complete": {
         "es": "Extracción completada.",
@@ -186,6 +211,7 @@ class PipelineStep:
 
 
 __all__ = [
+    "DETERMINISTIC_STEP_NAMES",
     "EXPLANATIONS",
     "STEP_NAMES",
     "STEP_TITLES",

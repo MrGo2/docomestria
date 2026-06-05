@@ -179,3 +179,40 @@ The re-prompt step is opt-in via the `Pipeline` constructor:
   re-prompt for those fields specifically.
 
 See [providers.md](providers.md) for the provider matrix.
+
+## Deterministic mode (v0.6.0)
+
+When the schema fields can be located by label heuristics, `Pipeline(llm=None)`
+runs the full pipeline without contacting any LLM. The LLM-specific phases
+(`build_context` -> `llm_call` -> `parse_response` -> `bind_provenance` ->
+`detect_issues`) are replaced by a single `pair_fields` step backed by the
+`docomestria.pipeline.deterministic` module.
+
+```mermaid
+flowchart LR
+    PDF[PDF file] --> F[fuse three engines]
+    F --> PF[pair_fields<br/>label-based pairing + checkbox rects]
+    PF --> S[Schema.apply]
+    S --> ER[ExtractionResult<br/>cost.usd=0.0, model_used=deterministic]
+```
+
+Pairing rules per field:
+
+1. Resolve label hints from `Field(labels=...)` or infer from the schema key's
+   last segment (e.g. `"datos_titular.nif"` -> `("Datos de titular nif", ...)`,
+   `"nif"` -> `("Nif",)`).
+2. Find a label item whose normalized text equals one of the hints, preferring
+   matches inside an enclosing box whose section title mentions the field path.
+3. For text fields, take the next FusedItem to the right on the same row
+   (delta_y < 8 pt), or the next item directly below.
+4. For `checkbox_choice` / `checkbox_binary` transformers, locate each declared
+   option label inside the same box and pick the option whose nearest
+   `VisualRect` is filled.
+
+Required fields with no pairing emit a `ProvenanceIssue` with
+`issue_type="missing_required"` and `severity="high"`. `BoundValue.match_method`
+is `"deterministic_pair"`.
+
+The deterministic path is reproducible, offline-capable, and free — but it
+will not handle free-text contracts, scanned PDFs, or forms where labels and
+values do not share a visual relationship. Pick the LLM mode for those.

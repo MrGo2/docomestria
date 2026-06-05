@@ -55,11 +55,41 @@ class Transformer(Protocol):
 
 @dataclass(frozen=True)
 class Field:
-    """A schema field — pairs a key with a transformer and optional flags."""
+    """A schema field — pairs a key with a transformer and optional flags.
+
+    `labels` is an optional tuple of label hints used by `Pipeline(llm=None)`
+    deterministic mode. When `None`, hints are inferred from the schema key's
+    last segment via `infer_labels_from_key()`.
+    """
 
     transformer: Callable[..., tuple[Any, float, tuple[str, ...]]]
     required: bool = False
     description: str | None = None
+    labels: tuple[str, ...] | None = None
+
+
+def infer_labels_from_key(key: str) -> tuple[str, ...]:
+    """Derive label hints from a schema key's last segment.
+
+    Examples:
+        ``"datos_titular.fecha_nacimiento"`` -> ``("Fecha de nacimiento", "Fecha nacimiento")``
+        ``"nif"``                            -> ``("Nif",)``
+
+    The rules are intentionally simple — explicit `Field(labels=...)` is the
+    recommended escape hatch when the heuristic gets it wrong.
+    """
+    last = key.rsplit(".", 1)[-1].strip()
+    if not last:
+        return ()
+    parts = [p for p in last.replace("-", "_").split("_") if p]
+    if not parts:
+        return ()
+    spaced = " ".join(parts)
+    pretty = spaced[:1].upper() + spaced[1:]
+    if len(parts) >= 2:
+        joined = parts[0].capitalize() + " de " + " ".join(parts[1:])
+        return (joined, pretty)
+    return (pretty,)
 
 
 @dataclass(frozen=True)

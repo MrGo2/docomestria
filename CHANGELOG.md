@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-06-05
+
+### Added
+- Deterministic mode: `Pipeline(llm=None)` runs end-to-end without any LLM call.
+  Uses label-based field pairing (`"NIF:"` -> next item to the right) plus
+  checkbox detection from pdfplumber VisualRects. Free, instant, offline-capable,
+  reproducible.
+- `Field(transform, labels=(...))` — explicit label hints for deterministic pairing.
+  If omitted, hints are inferred from the schema key's last segment via the new
+  `infer_labels_from_key()` helper.
+- New stream step `pair_fields` (engine="pairing") replacing the LLM steps
+  when running deterministically — total of 9 canonical steps vs 13 with LLM.
+- `examples/deterministic_extraction.py`
+- New module `docomestria.pipeline.deterministic` for the pairing logic.
+
+### Changed
+- `CostReport` now carries `usd=0.0` and `model_used="deterministic"` in the
+  LLM-free path (the dataclass already accepted these values).
+- README leads with the deterministic quickstart; OpenRouter section follows.
+
 ## [0.5.0] - 2026-06-05
 
 ### Added

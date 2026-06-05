@@ -28,7 +28,7 @@ __all__ = [
     "pair_labels_to_values",
 ]
 
-__version__ = "0.5.0"
+__version__ = "0.6.0"
 
 
 def __getattr__(name: str):
