@@ -231,6 +231,52 @@ def is_meaningless_short(text: str) -> bool:
     return not any(c.isalnum() for c in stripped)
 
 
+def _has_inline_kv_span(text: str) -> bool:
+    """True when a regular-weight item carries a single `label: value` span
+    that looks structural (not a sentence with an embedded colon).
+
+    The check fires only when:
+      - exactly one `:` (or the first one) sits inside the text, NOT at the end,
+      - the label part (before `:`) is short (≤ 8 words, ≤ 80 chars) and ends
+        with an alpha character (so prose like `'... el plazo será de:'` only
+        passes when followed by an actual value),
+      - the value part (after `:`) starts with a value-like token: digit,
+        currency symbol, uppercase letter (NIF / acronym / proper noun),
+        a hyphen (empty-value marker `-`), an IBAN-like alphanum, or another
+        labelled span (multi-colon row that E2 will split further).
+
+    Calibrated on BBVA loan contract page 1 where the entire 2-col Titulares
+    form is rendered in regular weight (Arial 9pt) with `label: value` inline.
+    """
+    stripped = text.strip()
+    if not stripped or ":" not in stripped:
+        return False
+    idx = stripped.find(":")
+    if idx <= 0 or idx >= len(stripped) - 1:
+        return False
+    label_part = stripped[:idx].rstrip()
+    value_part = stripped[idx + 1:].lstrip()
+    if not label_part or not value_part:
+        return False
+    if len(label_part) < 2 or len(label_part) > 80 or len(label_part.split()) > 8:
+        return False
+    if not label_part[-1].isalpha() and label_part[-1] not in ".)":
+        return False
+    # Reject list-bullet style labels (`- Mensual: ...`) — these are glossary
+    # entries in clause prose, not real KV pairs.
+    if label_part[0] in "-•*·" or (len(label_part) >= 2 and label_part[1] in ".)"
+                                   and label_part[0].isdigit()):
+        return False
+    first_val_char = value_part[0]
+    if first_val_char.isdigit():
+        return True
+    if first_val_char in "-€$%":
+        return True
+    if first_val_char.isupper():
+        return True
+    return False
+
+
 def looks_like_prose(text: str) -> bool:
     """True if the text reads like a sentence fragment rather than a label.
 
@@ -328,6 +374,14 @@ def classify_item(
         if ends_with_colon(text):
             return ClassifiedItem(item, ItemKind.LABEL, ("bold", "ends-with-colon"))
         return ClassifiedItem(item, ItemKind.LABEL, ("bold", "no-colon"))
+
+    # Regular-weight item carrying an inline `label: value` span — some BBVA
+    # form layouts type the entire line in regular weight (no bold label).
+    # Promote to LABEL so E2 can split it. Guarded by a value-like check on
+    # the post-colon content so prose sentences with embedded colons stay
+    # classified as VALUE / BODY.
+    if _has_inline_kv_span(text):
+        return ClassifiedItem(item, ItemKind.LABEL, ("regular", "inline-kv-span"))
 
     return ClassifiedItem(item, ItemKind.VALUE, ("regular", "same-size-as-dominant"))
 
