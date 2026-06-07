@@ -25,6 +25,25 @@ META = {
 }
 
 
+def _apply_overrides(pairs, overrides):
+    """Patcher-injected helper: mutates pair dicts in place based on label match.
+
+    overrides: dict mapping label -> dict of fields to set/override.
+    """
+    if not overrides:
+        return pairs
+    out = []
+    for p in pairs:
+        lbl = p.get("label")
+        if lbl in overrides:
+            merged = dict(p)
+            merged.update(overrides[lbl])
+            out.append(merged)
+        else:
+            out.append(p)
+    return out
+
+
 def _block_pairs(y_base, *,
                  apellidos="", nombre="", nif="", nacionalidad="",
                  fecha_const="", codigo_cnae="", n_empleados="",
@@ -90,7 +109,7 @@ STRUCTURE = [
                     {
                         "type": "kv_group",
                         "id": "titular_1",
-                        "pairs": _block_pairs(
+                        "pairs": _apply_overrides(_block_pairs(
                             y_base=214,
                             apellidos="SPIRIEON SOLCAN",
                             nombre="ADRIAN",
@@ -109,7 +128,11 @@ STRUCTURE = [
                             gastos_viv="0,00",
                             otros_cred="0,00",
                             importe_ingr="0,00",
-                        ),
+                        ), {
+    "Nº empleados": {"x_hint": 505.0},
+    "Sexo": {"x_hint": 314.3},
+    "Otros créditos": {"x_hint": 557.0, "label_x_hint": 482.7},
+}),
                     },
                     {
                         "type": "kv_group",

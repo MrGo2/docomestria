@@ -45,6 +45,7 @@
                   "label_evidence": {
                     "text": "1. IMPORTE TOTAL DEL CAPITAL PRESTADO",
                     "row_y_hint": 178,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.183232,
@@ -134,6 +135,7 @@
                   "label_evidence": {
                     "text": "2. DURACIÓN",
                     "row_y_hint": 191,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -213,6 +215,7 @@
                   "label_evidence": {
                     "text": "3. CONDICIONES ECONÓMICAS",
                     "row_y_hint": 204,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -302,6 +305,7 @@
                   "label_evidence": {
                     "text": "4. FORMA DE PAGO",
                     "row_y_hint": 217,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.183232,
@@ -384,6 +388,7 @@
                   "label_evidence": {
                     "text": "5. CONTRATO VINCULADO",
                     "row_y_hint": 230,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -472,6 +477,7 @@
                   "label_evidence": {
                     "text": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE LOS DATOS DEL/DE LOS TITULAR/ES",
                     "row_y_hint": 243,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -747,6 +753,7 @@
                   "label_evidence": {
                     "text": "1. Objeto.",
                     "row_y_hint": 295,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.183232,
@@ -803,6 +810,7 @@
                   "value_evidence": {
                     "text": "¿En qué consiste este contrato?",
                     "row_y_hint": 295,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 125.64965120000001,
@@ -905,6 +913,7 @@
                   "label_evidence": {
                     "text": "2. Duración de este contrato de préstamo y desistimiento.",
                     "row_y_hint": 308,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -972,6 +981,7 @@
                   "value_evidence": {
                     "text": "¿Cuánto tiempo dura el contrato? ¿Cuándo y cómo puede Usted desistir (renunciar) de este contrato?",
                     "row_y_hint": 308,
+                    "x_hint": null,
                     "pdfplumber": null,
                     "liteparse": {
                       "span_id": 21,
@@ -1041,6 +1051,7 @@
                   "label_evidence": {
                     "text": "3. Cálculo de las cuotas.",
                     "row_y_hint": 336,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323199999996,
@@ -1108,6 +1119,7 @@
                   "value_evidence": {
                     "text": "¿Cómo se calculan las cuotas de amortización (devolución) del capital prestado más el pago de intereses?",
                     "row_y_hint": 336,
+                    "x_hint": null,
                     "pdfplumber": null,
                     "liteparse": {
                       "span_id": 24,
@@ -1177,6 +1189,7 @@
                   "label_evidence": {
                     "text": "4. TIN -Tipo de Interés Nominal- (también denominado \"Interés Ordinario\").",
                     "row_y_hint": 363,
+                    "x_hint": null,
                     "pdfplumber": null,
                     "liteparse": {
                       "span_id": 25,
@@ -1213,6 +1226,7 @@
                   "value_evidence": {
                     "text": "¿Qué es el Tipo de Interés Nominal (TIN)?",
                     "row_y_hint": 363,
+                    "x_hint": null,
                     "pdfplumber": null,
                     "liteparse": {
                       "span_id": 27,
@@ -1282,6 +1296,7 @@
                   "label_evidence": {
                     "text": "5. Contrato con intereses bonificados.",
                     "row_y_hint": 390,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000005,
@@ -1349,6 +1364,7 @@
                   "value_evidence": {
                     "text": "¿Qué significa que estén bonificados?",
                     "row_y_hint": 390,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 256.93126400000006,
@@ -1451,6 +1467,7 @@
                   "label_evidence": {
                     "text": "6. TAE (Tasa Anual Equivalente).",
                     "row_y_hint": 404,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000006,
@@ -1518,6 +1535,7 @@
                   "value_evidence": {
                     "text": "¿Qué es y qué se incluye en la TAE?",
                     "row_y_hint": 404,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 231.73813760000004,
@@ -1620,6 +1638,7 @@
                   "label_evidence": {
                     "text": "7. Amortización anticipada de este préstamo.",
                     "row_y_hint": 417,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -1687,6 +1706,7 @@
                   "value_evidence": {
                     "text": "¿Puede Usted pagar anticipadamente, parcial o totalmente, este préstamo?",
                     "row_y_hint": 417,
+                    "x_hint": null,
                     "pdfplumber": null,
                     "liteparse": {
                       "span_id": 34,
@@ -1756,6 +1776,7 @@
                   "label_evidence": {
                     "text": "8. Interés que le corresponderá pagar a Usted en caso de vencimientos o amortizaciones anticipadas de este préstamo",
                     "row_y_hint": 444,
+                    "x_hint": null,
                     "pdfplumber": null,
                     "liteparse": {
                       "span_id": 35,
@@ -1814,6 +1835,7 @@
                   "label_evidence": {
                     "text": "9. Forma y plazo de pago.",
                     "row_y_hint": 471,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323199999996,
@@ -1881,6 +1903,7 @@
                   "value_evidence": {
                     "text": "¿Cómo y cuándo se paga este préstamo?",
                     "row_y_hint": 471,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 202.38467839999996,
@@ -1981,6 +2004,7 @@
                   "label_evidence": {
                     "text": "10. Interés de demora.",
                     "row_y_hint": 485,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -2047,6 +2071,7 @@
                   "value_evidence": {
                     "text": "¿Qué ocurre si se retrasa en el pago del préstamo?",
                     "row_y_hint": 485,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 178.1160704,
@@ -2149,6 +2174,7 @@
                   "label_evidence": {
                     "text": "11. Causas de resolución de este contrato.",
                     "row_y_hint": 499,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -2238,6 +2264,7 @@
                   "label_evidence": {
                     "text": "12. Responsabilidades del deudor y del fiador/avalista.",
                     "row_y_hint": 512,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000003,
@@ -2305,6 +2332,7 @@
                   "value_evidence": {
                     "text": "¿Quién es el responsable del impago (retraso en el pago) del préstamo?",
                     "row_y_hint": 512,
+                    "x_hint": null,
                     "pdfplumber": null,
                     "liteparse": {
                       "span_id": 43,
@@ -2374,6 +2402,7 @@
                   "label_evidence": {
                     "text": "13. Compensación por costes de cobro ante un impago.",
                     "row_y_hint": 539,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -2441,6 +2470,7 @@
                   "value_evidence": {
                     "text": "¿Qué gastos se generan para CaixaBank Payments & Consumer cuando Usted incumple sus obligaciones de pago? ¿Cómo se aplica la compensación por costes de cobro ocasionados por un impago?",
                     "row_y_hint": 539,
+                    "x_hint": null,
                     "pdfplumber": null,
                     "liteparse": {
                       "span_id": 45,
@@ -2510,6 +2540,7 @@
                   "label_evidence": {
                     "text": "14. Contratación de un seguro.",
                     "row_y_hint": 580,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -2599,6 +2630,7 @@
                   "label_evidence": {
                     "text": "15. Contrato vinculado.",
                     "row_y_hint": 594,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323200000002,
@@ -2666,6 +2698,7 @@
                   "value_evidence": {
                     "text": "¿Qué significa tener un contrato vinculado?",
                     "row_y_hint": 594,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 182.969792,
@@ -2766,6 +2799,7 @@
                   "label_evidence": {
                     "text": "16. Ley aplicable a este contrato.",
                     "row_y_hint": 607,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323199999996,
@@ -2855,6 +2889,7 @@
                   "label_evidence": {
                     "text": "17. Domicilio y comunicaciones.",
                     "row_y_hint": 621,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323199999999,
@@ -2922,6 +2957,7 @@
                   "value_evidence": {
                     "text": "¿Cómo nos comunicaremos con Usted?",
                     "row_y_hint": 621,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 224.8042496,
@@ -3022,6 +3058,7 @@
                   "label_evidence": {
                     "text": "18. Quejas y reclamaciones.",
                     "row_y_hint": 634,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323199999996,
@@ -3089,6 +3126,7 @@
                   "value_evidence": {
                     "text": "¿Cómo puede hacernos llegar sus quejas y reclamaciones?",
                     "row_y_hint": 634,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 204.92710399999996,
@@ -3189,6 +3227,7 @@
                   "label_evidence": {
                     "text": "19. Acción judicial.",
                     "row_y_hint": 648,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323199999996,
@@ -3254,6 +3293,7 @@
                   "value_evidence": {
                     "text": "¿Cómo determinaremos la deuda si vamos a juicio?",
                     "row_y_hint": 648,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 163.09264639999998,
@@ -3354,6 +3394,7 @@
                   "label_evidence": {
                     "text": "20. Cesión.",
                     "row_y_hint": 662,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323199999996,
@@ -3433,6 +3474,7 @@
                   "label_evidence": {
                     "text": "21. Tratamiento de datos de carácter personal.",
                     "row_y_hint": 675,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323199999996,
@@ -3500,6 +3542,7 @@
                   "value_evidence": {
                     "text": "¿Cómo trataremos sus datos?",
                     "row_y_hint": 675,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 289.52053759999995,
@@ -3602,6 +3645,7 @@
                   "label_evidence": {
                     "text": "22. Políticas de sanciones, prevención de blanqueo y lucha contra el fraude.",
                     "row_y_hint": 689,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 73.18323199999996,

@@ -37,6 +37,7 @@
                 "evidence": {
                   "text": "Número de cuotas mixtas",
                   "row_y_hint": 117,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -102,6 +103,7 @@
                 "evidence": {
                   "text": "30 Desde 28/02/2025 hasta 30/07/2027",
                   "row_y_hint": 105,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 1,
@@ -159,6 +161,7 @@
                 "evidence": {
                   "text": "Importe de las cuotas mixtas (cuota de amortización de capital prestado y pago de intereses)",
                   "row_y_hint": 151,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 4,
@@ -214,6 +217,7 @@
                 "evidence": {
                   "text": "1ª CUOTA: 86,25 EUROS ÚLTIMA CUOTA: 86,25 EUROS RESTANTES: 86,25 EUROS",
                   "row_y_hint": 154,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 5,
@@ -448,6 +452,7 @@
                 "evidence": {
                   "text": "Objeto financiado",
                   "row_y_hint": 224,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -530,6 +535,7 @@
                 "evidence": {
                   "text": "ORTODONCIIA NORMAL",
                   "row_y_hint": 227,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -615,6 +621,7 @@
                 "evidence": {
                   "text": "Identificación objeto financiado",
                   "row_y_hint": 260,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -660,11 +667,11 @@
                     "font_size": 10.0
                   },
                   "docling": {
-                    "cell_ref": "#/texts/277",
+                    "cell_ref": "#/texts/279",
                     "bbox": {
                       "x": 65.093696,
-                      "y": 227.50246719999996,
-                      "w": 74.86672960000001,
+                      "y": 263.0964256,
+                      "w": 131.72461120000003,
                       "h": 7.138963928571457
                     },
                     "column_header": null,
@@ -701,6 +708,7 @@
                 "evidence": {
                   "text": "49243003",
                   "row_y_hint": 263,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -777,6 +785,7 @@
                 "evidence": {
                   "text": "Establecimiento",
                   "row_y_hint": 295,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -858,6 +867,7 @@
                 "evidence": {
                   "text": "CATALANO CLINICA ODONTOLOGICA",
                   "row_y_hint": 298,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -946,6 +956,7 @@
                 "evidence": {
                   "text": "Empresa Asociada (denominación y domicilio) / Instalador",
                   "row_y_hint": 331,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 17,
@@ -1008,6 +1019,7 @@
                 "evidence": {
                   "text": "Domicilio social",
                   "row_y_hint": 386,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1089,6 +1101,7 @@
                 "evidence": {
                   "text": "CIUDAD DE MARTOS ,Nº 7 , 45400 MORA",
                   "row_y_hint": 386,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -1177,6 +1190,7 @@
                 "evidence": {
                   "text": "Precio al contado",
                   "row_y_hint": 419,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1258,6 +1272,7 @@
                 "evidence": {
                   "text": "2.500,00 EUROS",
                   "row_y_hint": 422,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -1339,6 +1354,7 @@
                 "evidence": {
                   "text": "SU COMPRA FINANCIADA/CONTRATO ASOCIADO",
                   "row_y_hint": 443,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 27,
@@ -1394,6 +1410,7 @@
                 "evidence": {
                   "text": "NO",
                   "row_y_hint": 444,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 359.783936,
@@ -1421,12 +1438,12 @@
                     "font_size": 11.0
                   },
                   "docling": {
-                    "cell_ref": "#/texts/288",
+                    "cell_ref": "#/texts/293",
                     "bbox": {
-                      "x": 272.6480768,
-                      "y": 389.3509696,
-                      "w": 177.68088000000006,
-                      "h": 6.782015732142838
+                      "x": 359.783936,
+                      "y": 447.88454079999997,
+                      "w": 30.17878447999999,
+                      "h": 7.8528603214285795
                     },
                     "column_header": null,
                     "row_header": null
@@ -1464,6 +1481,7 @@
                 "evidence": {
                   "text": "FACTURA INTEGRADA",
                   "row_y_hint": 477,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1546,6 +1564,7 @@
                 "evidence": {
                   "text": "NO",
                   "row_y_hint": 478,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 359.783936,
@@ -1573,12 +1592,12 @@
                     "font_size": 11.0
                   },
                   "docling": {
-                    "cell_ref": "#/texts/293",
+                    "cell_ref": "#/texts/296",
                     "bbox": {
                       "x": 359.783936,
-                      "y": 447.88454079999997,
+                      "y": 482.0917215999999,
                       "w": 30.17878447999999,
-                      "h": 7.8528603214285795
+                      "h": 7.852860321428636
                     },
                     "column_header": null,
                     "row_header": null
@@ -1616,6 +1635,7 @@
                 "evidence": {
                   "text": "EXCEPCIONALIDADES",
                   "row_y_hint": 511,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1699,6 +1719,7 @@
                 "evidence": {
                   "text": "CONTRATO BONIFICADO: CONTRATO CON TIPO DE INTERÉS ORDINARIO '0%' MIENTRAS EL TITULAR CUMPLA A SU VENCIMIENTO SUS OBLIGACIONES DE PAGO, EN LOS TÉRMINOS ESPECIFICADOS EN LAS CONDICIONES GENERALES.",
                   "row_y_hint": 526,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 35,

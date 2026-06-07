@@ -31,6 +31,7 @@
                     "label": {
                       "text": "Personalización de la oferta de productos y servicios según el análisis de sus datos (Titular 1)",
                       "row_y_hint": 496,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 24,
@@ -77,6 +78,7 @@
                     "value": {
                       "text": "SI",
                       "row_y_hint": 496,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 313.55801599999995,
@@ -104,12 +106,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/315",
+                        "cell_ref": "#/texts/318",
                         "bbox": {
-                          "x": 59.546585599999986,
-                          "y": 455.91629439999997,
-                          "w": 196.69321568,
-                          "h": 18.32705601769908
+                          "x": 313.55801599999995,
+                          "y": 499.77313599999997,
+                          "w": 21.446900800000037,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -163,6 +165,7 @@
                     "label": {
                       "text": "Comunicación de la oferta de productos y servicios — Por aplicaciones móviles, entornos digitales y canales electrónicos (Titular 1)",
                       "row_y_hint": 592,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 35,
@@ -177,12 +180,12 @@
                         "font_size": 9.5
                       },
                       "docling": {
-                        "cell_ref": "#/texts/322",
+                        "cell_ref": "#/texts/325",
                         "bbox": {
-                          "x": 371.340416,
-                          "y": 557.7866655999999,
-                          "w": 48.11347839999996,
-                          "h": 7.126922123893792
+                          "x": 272.6480768,
+                          "y": 594.825184,
+                          "w": 82.78532599999994,
+                          "h": 6.782015732142781
                         },
                         "column_header": null,
                         "row_header": null
@@ -209,6 +212,7 @@
                     "value": {
                       "text": "SI",
                       "row_y_hint": 592,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 365.33104640000005,
@@ -293,6 +297,7 @@
                     "label": {
                       "text": "Comunicación de la oferta de productos y servicios — Por teléfono (Titular 1)",
                       "row_y_hint": 607,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 37,
@@ -307,12 +312,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/322",
+                        "cell_ref": "#/texts/328",
                         "bbox": {
-                          "x": 371.340416,
-                          "y": 557.7866655999999,
-                          "w": 48.11347839999996,
-                          "h": 7.126922123893792
+                          "x": 272.6480768,
+                          "y": 610.715344,
+                          "w": 51.927116799999965,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -339,6 +344,7 @@
                     "value": {
                       "text": "SI",
                       "row_y_hint": 607,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 365.33104640000005,
@@ -366,10 +372,10 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/326",
+                        "cell_ref": "#/texts/329",
                         "bbox": {
                           "x": 365.33104640000005,
-                          "y": 595.4607904,
+                          "y": 610.715344,
                           "w": 21.44690079999998,
                           "h": 7.138963928571457
                         },
@@ -423,6 +429,7 @@
                     "label": {
                       "text": "Comunicación de la oferta de productos y servicios — Por carta (Titular 1)",
                       "row_y_hint": 623,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 39,
@@ -469,6 +476,7 @@
                     "value": {
                       "text": "NO",
                       "row_y_hint": 623,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 395.3778944,
@@ -496,12 +504,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/324",
+                        "cell_ref": "#/texts/333",
                         "bbox": {
-                          "x": 272.6480768,
-                          "y": 584.424352,
-                          "w": 78.76704160000003,
-                          "h": 6.782015732142781
+                          "x": 395.3778944,
+                          "y": 626.2010272,
+                          "w": 26.994011200000045,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -553,6 +561,7 @@
                     "label": {
                       "text": "Cesión de sus datos a otras empresas para la remisión de ofertas de productos y servicios (Titular 1)",
                       "row_y_hint": 704,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 49,
@@ -599,6 +608,7 @@
                     "value": {
                       "text": "SI",
                       "row_y_hint": 704,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 313.55801599999995,
@@ -626,12 +636,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/334",
+                        "cell_ref": "#/texts/337",
                         "bbox": {
-                          "x": 59.546585599999986,
-                          "y": 666.4753599999999,
-                          "w": 196.69321568,
-                          "h": 29.883536017699157
+                          "x": 313.55801599999995,
+                          "y": 707.5586464,
+                          "w": 21.446900800000037,
+                          "h": 7.138963928571343
                         },
                         "column_header": null,
                         "row_header": null

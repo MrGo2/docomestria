@@ -31,6 +31,7 @@
                     "label": {
                       "text": "Apellidos",
                       "row_y_hint": 227,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.046848,
@@ -89,6 +90,7 @@
                     "value": {
                       "text": "SPIRIEON SOLCAN",
                       "row_y_hint": 227,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 71.5653248,
@@ -182,6 +184,7 @@
                     "label": {
                       "text": "Nombre/Denominación",
                       "row_y_hint": 227,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.6907648,
@@ -250,6 +253,7 @@
                     "value": {
                       "text": "ADRIAN",
                       "row_y_hint": 227,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 335.0530688,
@@ -331,6 +335,7 @@
                     "label": {
                       "text": "NIF/CIF",
                       "row_y_hint": 241,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.046848,
@@ -387,6 +392,7 @@
                     "value": {
                       "text": "X7891505K",
                       "row_y_hint": 241,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 64.6314368,
@@ -474,6 +480,7 @@
                     "label": {
                       "text": "Nacionalidad",
                       "row_y_hint": 241,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 114.3243008,
@@ -535,6 +542,7 @@
                     "value": {
                       "text": "UNION EUROPEA",
                       "row_y_hint": 241,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 163.55490559999998,
@@ -626,6 +634,7 @@
                     "label": {
                       "text": "Fecha de constitución",
                       "row_y_hint": 241,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.6907648,
@@ -709,6 +718,7 @@
                     "label": {
                       "text": "Código CNAE",
                       "row_y_hint": 241,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 373.65171200000003,
@@ -779,10 +789,12 @@
                   "label": "Nº empleados",
                   "value": "0",
                   "y_hint": 241,
+                  "x_hint": 505.0,
                   "evidence": {
                     "label": {
                       "text": "Nº empleados",
                       "row_y_hint": 241,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 455.47159039999997,
@@ -844,38 +856,39 @@
                     "value": {
                       "text": "0",
                       "row_y_hint": 241,
+                      "x_hint": 505.0,
                       "pdfplumber": {
                         "bbox": {
-                          "x": 92.64627039999999,
+                          "x": 509.09365760000003,
                           "y": 243.49856160000002,
-                          "w": 4.6129616000000055,
+                          "w": 4.612961599999949,
                           "h": 9.630400000000009
                         },
                         "char_indices": [
-                          455
+                          519
                         ],
                         "n_chars": 1,
                         "row_y": 243.49856160000002
                       },
                       "liteparse": {
-                        "span_id": 10,
+                        "span_id": 13,
                         "bbox": {
-                          "x": 35.046844482421875,
+                          "x": 455.4715881347656,
                           "y": 241.37994384765625,
-                          "w": 190.8456268310547,
+                          "w": 58.235015869140625,
                           "h": 11.74908447265625
                         },
-                        "case_class": "Title",
+                        "case_class": "lower",
                         "is_bold": false,
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/36",
+                        "cell_ref": "#/texts/52",
                         "bbox": {
-                          "x": 583.804,
-                          "y": 274.3399999999996,
-                          "w": 5.618213036565976,
-                          "h": 475.2000000000004
+                          "x": 509.09365760000003,
+                          "y": 245.06831679999993,
+                          "w": 4.612961599999949,
+                          "h": 7.171366022380539
                         },
                         "column_header": null,
                         "row_header": null
@@ -883,20 +896,17 @@
                       "rect": null,
                       "colon_signal": {
                         "present": true,
-                        "char_x": 158.7108144,
+                        "char_x": 504.384392,
                         "char_y": 243.49856160000002
                       },
                       "value_extent": {
-                        "boundary_type": "next_colon_label",
-                        "gap_pt": 0.0,
-                        "next_label_text": "5KNacionalidad",
-                        "next_colon_x": 158.7108144,
-                        "ends_at_x": 97.259232
+                        "boundary_type": "row_end",
+                        "gap_pt": null
                       },
                       "cell_bbox": {
-                        "x": 92.64627039999999,
+                        "x": 509.09365760000003,
                         "y": 243.49856160000002,
-                        "w": 4.6129616000000055,
+                        "w": 4.612961599999949,
                         "h": 9.630400000000009
                       },
                       "engine_agreement": 3
@@ -909,9 +919,9 @@
                     "h": 9.630400000000009
                   },
                   "bbox": {
-                    "x": 92.64627039999999,
+                    "x": 509.09365760000003,
                     "y": 243.49856160000002,
-                    "w": 4.6129616000000055,
+                    "w": 4.612961599999949,
                     "h": 9.630400000000009
                   }
                 },
@@ -923,6 +933,7 @@
                     "label": {
                       "text": "Descripción sector actividad",
                       "row_y_hint": 255,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -1006,6 +1017,7 @@
                     "label": {
                       "text": "Inscrita en",
                       "row_y_hint": 255,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 373.65171200000003,
@@ -1080,6 +1092,7 @@
                     "label": {
                       "text": "Domicilio",
                       "row_y_hint": 269,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -1138,6 +1151,7 @@
                     "value": {
                       "text": "CL BAYEU",
                       "row_y_hint": 269,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 71.5653248,
@@ -1224,6 +1238,7 @@
                     "label": {
                       "text": "Nº",
                       "row_y_hint": 269,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -1251,12 +1266,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/44",
+                        "cell_ref": "#/texts/58",
                         "bbox": {
-                          "x": 250.6907648,
-                          "y": 230.96941119999997,
-                          "w": 81.80061760000012,
-                          "h": 7.200299065420609
+                          "x": 297.1478144,
+                          "y": 273.03499840000006,
+                          "w": 23.093699200000003,
+                          "h": 7.200299065420495
                         },
                         "column_header": null,
                         "row_header": null
@@ -1275,6 +1290,7 @@
                     "value": {
                       "text": "10",
                       "row_y_hint": 269,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 311.0155904,
@@ -1302,12 +1318,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/36",
+                        "cell_ref": "#/texts/58",
                         "bbox": {
-                          "x": 583.804,
-                          "y": 274.3399999999996,
-                          "w": 5.618213036565976,
-                          "h": 475.2000000000004
+                          "x": 297.1478144,
+                          "y": 273.03499840000006,
+                          "w": 23.093699200000003,
+                          "h": 7.200299065420495
                         },
                         "column_header": null,
                         "row_header": null
@@ -1355,6 +1371,7 @@
                     "label": {
                       "text": "Piso",
                       "row_y_hint": 269,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 414.5616512,
@@ -1422,6 +1439,7 @@
                     "label": {
                       "text": "Puerta",
                       "row_y_hint": 269,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 482.7448832,
@@ -1491,6 +1509,7 @@
                     "label": {
                       "text": "Población",
                       "row_y_hint": 283,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -1549,6 +1568,7 @@
                     "value": {
                       "text": "TOLEDO",
                       "row_y_hint": 283,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 72.9521024,
@@ -1633,6 +1653,7 @@
                     "label": {
                       "text": "C.P.",
                       "row_y_hint": 283,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.6907648,
@@ -1686,6 +1707,7 @@
                     "value": {
                       "text": "45190",
                       "row_y_hint": 283,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 266.86983680000003,
@@ -1716,12 +1738,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/52",
+                        "cell_ref": "#/texts/63",
                         "bbox": {
-                          "x": 509.09365760000003,
-                          "y": 245.06831679999993,
-                          "w": 4.612961599999949,
-                          "h": 7.171366022380539
+                          "x": 250.6907648,
+                          "y": 287.13390400000003,
+                          "w": 39.243880000000104,
+                          "h": 7.200299065420495
                         },
                         "column_header": null,
                         "row_header": null
@@ -1767,6 +1789,7 @@
                     "label": {
                       "text": "Teléfono fijo",
                       "row_y_hint": 283,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -1829,6 +1852,7 @@
                     "value": {
                       "text": "634673967",
                       "row_y_hint": 283,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 343.8359936,
@@ -1916,6 +1940,7 @@
                     "label": {
                       "text": "Teléfono móvil",
                       "row_y_hint": 283,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 414.5616512,
@@ -1993,6 +2018,7 @@
                     "label": {
                       "text": "Correo electrónico",
                       "row_y_hint": 297,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -2060,6 +2086,7 @@
                     "value": {
                       "text": "NANI198731@HOTMAIL.COM",
                       "row_y_hint": 297,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 103.23008,
@@ -2154,10 +2181,12 @@
                   "label": "Sexo",
                   "value": "H",
                   "y_hint": 297,
+                  "x_hint": 314.3,
                   "evidence": {
                     "label": {
                       "text": "Sexo",
                       "row_y_hint": 297,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -2211,37 +2240,38 @@
                     "value": {
                       "text": "H",
                       "row_y_hint": 297,
+                      "x_hint": 314.3,
                       "pdfplumber": {
                         "bbox": {
-                          "x": 160.2805696,
+                          "x": 317.9494784,
                           "y": 299.6630544000001,
                           "w": 5.431545599999993,
                           "h": 9.630400000000009
                         },
                         "char_indices": [
-                          701
+                          717
                         ],
                         "n_chars": 1,
                         "row_y": 298.33999999999935
                       },
                       "liteparse": {
-                        "span_id": 23,
+                        "span_id": 24,
                         "bbox": {
-                          "x": 35.0468635559082,
+                          "x": 297.1477966308594,
                           "y": 297.54443359375,
-                          "w": 180.2040252685547,
+                          "w": 26.23321533203125,
                           "h": 11.74908447265625
                         },
-                        "case_class": "mixed",
+                        "case_class": "Title",
                         "is_bold": false,
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/50",
+                        "cell_ref": "#/texts/69",
                         "bbox": {
-                          "x": 250.6907648,
-                          "y": 245.06831679999993,
-                          "w": 77.64991520000012,
+                          "x": 297.1478144,
+                          "y": 301.2328096,
+                          "w": 26.233209599999952,
                           "h": 7.200299065420609
                         },
                         "column_header": null,
@@ -2249,17 +2279,19 @@
                       },
                       "rect": null,
                       "colon_signal": {
-                        "present": false
+                        "present": true,
+                        "char_x": 314.3091872,
+                        "char_y": 299.6630544000001
                       },
                       "value_extent": {
                         "boundary_type": "next_colon_label",
-                        "gap_pt": 0.0,
-                        "next_label_text": "OTMAIL.COMSexo",
-                        "next_colon_x": 314.3091872,
-                        "ends_at_x": 165.7121152
+                        "gap_pt": 33.86048640000001,
+                        "next_label_text": "Estado civil",
+                        "next_colon_x": 395.8786752,
+                        "ends_at_x": 357.2415104
                       },
                       "cell_bbox": {
-                        "x": 160.2805696,
+                        "x": 317.9494784,
                         "y": 299.6630544000001,
                         "w": 5.431545599999993,
                         "h": 9.630400000000009
@@ -2274,7 +2306,7 @@
                     "h": 9.630400000000009
                   },
                   "bbox": {
-                    "x": 160.2805696,
+                    "x": 317.9494784,
                     "y": 299.6630544000001,
                     "w": 5.431545599999993,
                     "h": 9.630400000000009
@@ -2288,6 +2320,7 @@
                     "label": {
                       "text": "Estado civil",
                       "row_y_hint": 297,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 357.2415104,
@@ -2363,6 +2396,7 @@
                     "label": {
                       "text": "Fecha de nacimiento",
                       "row_y_hint": 297,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 444.60849920000004,
@@ -2431,6 +2465,7 @@
                     "value": {
                       "text": "12/12/1984",
                       "row_y_hint": 297,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 518.3388416,
@@ -2519,6 +2554,7 @@
                     "label": {
                       "text": "Personas a su cargo",
                       "row_y_hint": 311,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.046848,
@@ -2587,6 +2623,7 @@
                     "value": {
                       "text": "0",
                       "row_y_hint": 311,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 108.0838016,
@@ -2613,12 +2650,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/36",
+                        "cell_ref": "#/texts/73",
                         "bbox": {
-                          "x": 583.804,
-                          "y": 274.3399999999996,
-                          "w": 5.618213036565976,
-                          "h": 475.2000000000004
+                          "x": 35.046848,
+                          "y": 315.33171519999996,
+                          "w": 77.64991520000001,
+                          "h": 7.200299065420609
                         },
                         "column_header": null,
                         "row_header": null
@@ -2666,6 +2703,7 @@
                     "label": {
                       "text": "Sit. viv.",
                       "row_y_hint": 311,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 149.68712960000002,
@@ -2738,6 +2776,7 @@
                     "label": {
                       "text": "Antigüedad viv.",
                       "row_y_hint": 311,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -2816,6 +2855,7 @@
                     "label": {
                       "text": "Gastos vivienda",
                       "row_y_hint": 311,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 381.74124800000004,
@@ -2880,6 +2920,7 @@
                     "value": {
                       "text": "0,00",
                       "row_y_hint": 311,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 437.9057408,
@@ -2958,32 +2999,37 @@
                   "label": "Otros créditos",
                   "value": "0,00",
                   "y_hint": 311,
+                  "x_hint": 557.0,
+                  "label_x_hint": 482.7,
                   "evidence": {
                     "label": {
                       "text": "Otros créditos",
                       "row_y_hint": 311,
+                      "x_hint": 482.7,
                       "pdfplumber": {
                         "bbox": {
-                          "x": 510.28782720000004,
+                          "x": 482.7448832,
                           "y": 313.76195999999993,
-                          "w": 46.93856959999982,
+                          "w": 48.633519999999976,
                           "h": 9.630400000000009
                         },
                         "char_indices": [
+                          829,
+                          830,
+                          831,
+                          832,
+                          833,
+                          834,
+                          835,
+                          836,
                           837,
                           838,
                           839,
                           840,
                           841,
-                          842,
-                          843,
-                          844,
-                          845,
-                          846,
-                          847,
-                          848
+                          842
                         ],
-                        "n_chars": 12,
+                        "n_chars": 14,
                         "row_y": 312.7399999999993
                       },
                       "liteparse": {
@@ -3013,9 +3059,9 @@
                       "colon_signal": null,
                       "value_extent": null,
                       "cell_bbox": {
-                        "x": 510.28782720000004,
+                        "x": 482.7448832,
                         "y": 313.76195999999993,
-                        "w": 46.93856959999982,
+                        "w": 48.633519999999976,
                         "h": 9.630400000000009
                       },
                       "engine_agreement": 3
@@ -3023,28 +3069,29 @@
                     "value": {
                       "text": "0,00",
                       "row_y_hint": 311,
+                      "x_hint": 557.0,
                       "pdfplumber": {
                         "bbox": {
-                          "x": 437.9057408,
+                          "x": 536.3669504,
                           "y": 313.76195999999993,
-                          "w": 16.24648480000002,
+                          "w": 16.246484799999962,
                           "h": 9.630400000000009
                         },
                         "char_indices": [
-                          824,
-                          825,
-                          826,
-                          827
+                          844,
+                          845,
+                          846,
+                          847
                         ],
                         "n_chars": 4,
                         "row_y": 312.7399999999993
                       },
                       "liteparse": {
-                        "span_id": 30,
+                        "span_id": 31,
                         "bbox": {
-                          "x": 381.7412109375,
+                          "x": 482.744873046875,
                           "y": 311.643310546875,
-                          "w": 77.02395629882812,
+                          "w": 74.4814453125,
                           "h": 11.74908447265625
                         },
                         "case_class": "lower",
@@ -3052,46 +3099,46 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/76",
+                        "cell_ref": "#/texts/78",
                         "bbox": {
-                          "x": 381.74124800000004,
+                          "x": 536.3669504,
                           "y": 315.33171519999996,
-                          "w": 77.02393920000003,
-                          "h": 7.200299065420609
+                          "w": 20.85944639999991,
+                          "h": 7.171366022380539
                         },
                         "column_header": null,
                         "row_header": null
                       },
                       "rect": null,
                       "colon_signal": {
-                        "present": false
+                        "present": true,
+                        "char_x": 531.3784032,
+                        "char_y": 313.76195999999993
                       },
                       "value_extent": {
-                        "boundary_type": "next_colon_label",
+                        "boundary_type": "continuation",
                         "gap_pt": 0.0,
-                        "next_label_text": "(cid:159)Otros créditos",
-                        "next_colon_x": 531.3784032,
-                        "ends_at_x": 454.1522256
+                        "next_text": "(cid:159)Pag"
                       },
                       "cell_bbox": {
-                        "x": 437.9057408,
+                        "x": 536.3669504,
                         "y": 313.76195999999993,
-                        "w": 16.24648480000002,
+                        "w": 16.246484799999962,
                         "h": 9.630400000000009
                       },
                       "engine_agreement": 3
                     }
                   },
                   "label_bbox": {
-                    "x": 510.28782720000004,
+                    "x": 482.7448832,
                     "y": 313.76195999999993,
-                    "w": 46.93856959999982,
+                    "w": 48.633519999999976,
                     "h": 9.630400000000009
                   },
                   "bbox": {
-                    "x": 437.9057408,
+                    "x": 536.3669504,
                     "y": 313.76195999999993,
-                    "w": 16.24648480000002,
+                    "w": 16.246484799999962,
                     "h": 9.630400000000009
                   }
                 },
@@ -3103,6 +3150,7 @@
                     "label": {
                       "text": "Situación laboral",
                       "row_y_hint": 325,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.046848,
@@ -3183,6 +3231,7 @@
                     "label": {
                       "text": "Profesión",
                       "row_y_hint": 325,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 149.68712960000002,
@@ -3255,6 +3304,7 @@
                     "label": {
                       "text": "Cargo",
                       "row_y_hint": 325,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 237.05411840000002,
@@ -3285,11 +3335,11 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/73",
+                        "cell_ref": "#/texts/81",
                         "bbox": {
-                          "x": 35.046848,
-                          "y": 315.33171519999996,
-                          "w": 77.64991520000001,
+                          "x": 237.05411840000002,
+                          "y": 329.43062079999993,
+                          "w": 22.43883200000002,
                           "h": 7.200299065420609
                         },
                         "column_header": null,
@@ -3323,6 +3373,7 @@
                     "label": {
                       "text": "Importe ingresos",
                       "row_y_hint": 325,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 338.0577536,
@@ -3388,6 +3439,7 @@
                     "value": {
                       "text": "0,00",
                       "row_y_hint": 325,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 401.15613440000004,
@@ -3417,12 +3469,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/76",
+                        "cell_ref": "#/texts/83",
                         "bbox": {
-                          "x": 381.74124800000004,
-                          "y": 315.33171519999996,
-                          "w": 77.02393920000003,
-                          "h": 7.200299065420609
+                          "x": 401.15613440000004,
+                          "y": 329.43062079999993,
+                          "w": 20.85944640000008,
+                          "h": 7.171366022380482
                         },
                         "column_header": null,
                         "row_header": null
@@ -3470,14 +3522,23 @@
                     "label": {
                       "text": "Antigüedad en la empresa",
                       "row_y_hint": 325,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
-                          "x": 472.94113600000003,
-                          "y": 327.1399999999993,
-                          "w": 116.91086399999995,
-                          "h": 10.351265600000659
+                          "x": 441.834944,
+                          "y": 327.8608656,
+                          "w": 90.56428160000002,
+                          "h": 9.630399999999952
                         },
                         "char_indices": [
+                          905,
+                          906,
+                          907,
+                          908,
+                          909,
+                          910,
+                          911,
+                          912,
                           913,
                           914,
                           915,
@@ -3489,15 +3550,9 @@
                           921,
                           922,
                           923,
-                          924,
-                          925,
-                          926,
-                          927,
-                          928,
-                          929,
-                          2576
+                          924
                         ],
-                        "n_chars": 18,
+                        "n_chars": 24,
                         "row_y": 327.1399999999993
                       },
                       "liteparse": {
@@ -3527,20 +3582,20 @@
                       "colon_signal": null,
                       "value_extent": null,
                       "cell_bbox": {
-                        "x": 472.94113600000003,
-                        "y": 327.1399999999993,
-                        "w": 116.91086399999995,
-                        "h": 10.351265600000659
+                        "x": 441.834944,
+                        "y": 327.8608656,
+                        "w": 90.56428160000002,
+                        "h": 9.630399999999952
                       },
                       "engine_agreement": 3
                     },
                     "value": null
                   },
                   "label_bbox": {
-                    "x": 472.94113600000003,
-                    "y": 327.1399999999993,
-                    "w": 116.91086399999995,
-                    "h": 10.351265600000659
+                    "x": 441.834944,
+                    "y": 327.8608656,
+                    "w": 90.56428160000002,
+                    "h": 9.630399999999952
                   }
                 },
                 {
@@ -3551,6 +3606,7 @@
                     "label": {
                       "text": "Nombre empresa",
                       "row_y_hint": 339,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -3628,6 +3684,7 @@
                     "label": {
                       "text": "Actividad empresa",
                       "row_y_hint": 339,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076480000004,
@@ -3708,6 +3765,7 @@
                     "label": {
                       "text": "Teléfono empresa",
                       "row_y_hint": 339,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 441.834944,
@@ -3783,7 +3841,7 @@
               "container_bbox": {
                 "x": 35.04684799999999,
                 "y": 229.39965599999994,
-                "w": 554.805152,
+                "w": 525.9354048,
                 "h": 121.95938560000002
               },
               "evidence": {
@@ -3792,17 +3850,17 @@
                   "container_bbox": {
                     "x": 35.04684799999999,
                     "y": 229.39965599999994,
-                    "w": 554.805152,
+                    "w": 525.9354048,
                     "h": 121.95938560000002
                   },
                   "pdfplumber_rect": null,
                   "docling_block": null,
                   "edges_inside": {
-                    "vertical": 2,
+                    "vertical": 0,
                     "horizontal": 0
                   },
-                  "colons_inside": 34,
-                  "container_score": 1
+                  "colons_inside": 33,
+                  "container_score": 0
                 },
                 "structural_signals": {
                   "kind": "kv_group",
@@ -3824,6 +3882,7 @@
                     "label": {
                       "text": "Apellidos",
                       "row_y_hint": 366,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.046848,
@@ -3896,6 +3955,7 @@
                     "label": {
                       "text": "Nombre/Denominación",
                       "row_y_hint": 366,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076479999998,
@@ -3978,6 +4038,7 @@
                     "label": {
                       "text": "NIF/CIF",
                       "row_y_hint": 380,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -4048,6 +4109,7 @@
                     "label": {
                       "text": "Nacionalidad",
                       "row_y_hint": 380,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 114.32430079999999,
@@ -4123,6 +4185,7 @@
                     "label": {
                       "text": "Fecha de constitución",
                       "row_y_hint": 380,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076479999998,
@@ -4206,6 +4269,7 @@
                     "label": {
                       "text": "Código CNAE",
                       "row_y_hint": 380,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 373.65171200000003,
@@ -4280,6 +4344,7 @@
                     "label": {
                       "text": "Nº empleados",
                       "row_y_hint": 380,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 455.47159039999997,
@@ -4355,6 +4420,7 @@
                     "label": {
                       "text": "Descripción sector actividad",
                       "row_y_hint": 394,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -4438,6 +4504,7 @@
                     "label": {
                       "text": "Inscrita en",
                       "row_y_hint": 394,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 373.65171200000003,
@@ -4512,6 +4579,7 @@
                     "label": {
                       "text": "Domicilio",
                       "row_y_hint": 408,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -4584,6 +4652,7 @@
                     "label": {
                       "text": "Nº",
                       "row_y_hint": 408,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -4611,12 +4680,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/90",
+                        "cell_ref": "#/texts/99",
                         "bbox": {
-                          "x": 250.69076479999998,
-                          "y": 370.10943039999995,
-                          "w": 81.8006176000001,
-                          "h": 7.200299065420609
+                          "x": 297.1478144,
+                          "y": 412.17501759999993,
+                          "w": 11.2483072,
+                          "h": 7.200299065420552
                         },
                         "column_header": null,
                         "row_header": null
@@ -4649,6 +4718,7 @@
                     "label": {
                       "text": "Piso",
                       "row_y_hint": 408,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 414.56165120000003,
@@ -4716,6 +4786,7 @@
                     "label": {
                       "text": "Puerta",
                       "row_y_hint": 408,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 482.74488320000006,
@@ -4785,6 +4856,7 @@
                     "label": {
                       "text": "Población",
                       "row_y_hint": 422,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -4857,6 +4929,7 @@
                     "label": {
                       "text": "C.P.",
                       "row_y_hint": 422,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076480000004,
@@ -4924,6 +4997,7 @@
                     "label": {
                       "text": "Teléfono fijo",
                       "row_y_hint": 422,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -5000,6 +5074,7 @@
                     "label": {
                       "text": "Teléfono móvil",
                       "row_y_hint": 422,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 414.56165120000003,
@@ -5077,6 +5152,7 @@
                     "label": {
                       "text": "Correo electrónico",
                       "row_y_hint": 436,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -5158,6 +5234,7 @@
                     "label": {
                       "text": "Sexo",
                       "row_y_hint": 436,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144000001,
@@ -5225,6 +5302,7 @@
                     "label": {
                       "text": "Estado civil",
                       "row_y_hint": 436,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 357.24151040000004,
@@ -5300,6 +5378,7 @@
                     "label": {
                       "text": "Fecha de nacimiento",
                       "row_y_hint": 436,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 444.60849920000004,
@@ -5382,6 +5461,7 @@
                     "label": {
                       "text": "Personas a su cargo",
                       "row_y_hint": 450,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -5464,6 +5544,7 @@
                     "label": {
                       "text": "Sit. viv.",
                       "row_y_hint": 450,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 149.68712960000008,
@@ -5536,6 +5617,7 @@
                     "label": {
                       "text": "Antigüedad viv.",
                       "row_y_hint": 450,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144000001,
@@ -5614,6 +5696,7 @@
                     "label": {
                       "text": "Gastos vivienda",
                       "row_y_hint": 450,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 381.74124800000004,
@@ -5692,6 +5775,7 @@
                     "label": {
                       "text": "Otros créditos",
                       "row_y_hint": 450,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 482.74488320000006,
@@ -5769,6 +5853,7 @@
                     "label": {
                       "text": "Situación laboral",
                       "row_y_hint": 464,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -5849,6 +5934,7 @@
                     "label": {
                       "text": "Profesión",
                       "row_y_hint": 464,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 149.68712960000008,
@@ -5921,6 +6007,7 @@
                     "label": {
                       "text": "Cargo",
                       "row_y_hint": 464,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 237.05411840000008,
@@ -5951,12 +6038,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/110",
+                        "cell_ref": "#/texts/117",
                         "bbox": {
-                          "x": 35.04684800000004,
-                          "y": 454.4717343999999,
-                          "w": 71.77537119999998,
-                          "h": 7.200299065420552
+                          "x": 237.05411840000008,
+                          "y": 468.57063999999986,
+                          "w": 22.43883200000002,
+                          "h": 7.200299065420609
                         },
                         "column_header": null,
                         "row_header": null
@@ -5989,6 +6076,7 @@
                     "label": {
                       "text": "Importe ingresos",
                       "row_y_hint": 464,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 338.0577536,
@@ -6068,6 +6156,7 @@
                     "label": {
                       "text": "Antigüedad en la empresa",
                       "row_y_hint": 464,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 441.834944,
@@ -6151,6 +6240,7 @@
                     "label": {
                       "text": "Nombre empresa",
                       "row_y_hint": 478,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -6228,6 +6318,7 @@
                     "label": {
                       "text": "Actividad empresa",
                       "row_y_hint": 478,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076480000004,
@@ -6308,6 +6399,7 @@
                     "label": {
                       "text": "Teléfono empresa",
                       "row_y_hint": 478,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 441.834944,
@@ -6424,6 +6516,7 @@
                     "label": {
                       "text": "Apellidos",
                       "row_y_hint": 530,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.046848,
@@ -6496,6 +6589,7 @@
                     "label": {
                       "text": "Nombre/Denominación",
                       "row_y_hint": 530,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076479999998,
@@ -6578,6 +6672,7 @@
                     "label": {
                       "text": "NIF/CIF",
                       "row_y_hint": 544,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -6648,6 +6743,7 @@
                     "label": {
                       "text": "Nacionalidad",
                       "row_y_hint": 544,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 114.32430079999999,
@@ -6723,6 +6819,7 @@
                     "label": {
                       "text": "Fecha de constitución",
                       "row_y_hint": 544,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076479999998,
@@ -6806,6 +6903,7 @@
                     "label": {
                       "text": "Código CNAE",
                       "row_y_hint": 544,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 373.65171200000003,
@@ -6880,6 +6978,7 @@
                     "label": {
                       "text": "Nº empleados",
                       "row_y_hint": 544,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 455.47159039999997,
@@ -6955,6 +7054,7 @@
                     "label": {
                       "text": "Descripción sector actividad",
                       "row_y_hint": 558,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -7038,6 +7138,7 @@
                     "label": {
                       "text": "Inscrita en",
                       "row_y_hint": 558,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 373.65171200000003,
@@ -7112,6 +7213,7 @@
                     "label": {
                       "text": "Domicilio",
                       "row_y_hint": 572,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -7184,6 +7286,7 @@
                     "label": {
                       "text": "Nº",
                       "row_y_hint": 572,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -7211,11 +7314,11 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/148",
+                        "cell_ref": "#/texts/150",
                         "bbox": {
-                          "x": 250.69076479999998,
-                          "y": 533.9803168,
-                          "w": 81.8006176000001,
+                          "x": 297.1478144,
+                          "y": 576.045904,
+                          "w": 11.2483072,
                           "h": 7.200299065420609
                         },
                         "column_header": null,
@@ -7249,6 +7352,7 @@
                     "label": {
                       "text": "Piso",
                       "row_y_hint": 572,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 414.56165120000003,
@@ -7316,6 +7420,7 @@
                     "label": {
                       "text": "Puerta",
                       "row_y_hint": 572,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 482.74488320000006,
@@ -7385,6 +7490,7 @@
                     "label": {
                       "text": "Población",
                       "row_y_hint": 586,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -7457,6 +7563,7 @@
                     "label": {
                       "text": "C.P.",
                       "row_y_hint": 586,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076480000004,
@@ -7524,6 +7631,7 @@
                     "label": {
                       "text": "Teléfono fijo",
                       "row_y_hint": 586,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -7600,6 +7708,7 @@
                     "label": {
                       "text": "Teléfono móvil",
                       "row_y_hint": 586,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 414.56165120000003,
@@ -7677,6 +7786,7 @@
                     "label": {
                       "text": "Correo electrónico",
                       "row_y_hint": 600,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -7758,6 +7868,7 @@
                     "label": {
                       "text": "Sexo",
                       "row_y_hint": 600,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144000001,
@@ -7825,6 +7936,7 @@
                     "label": {
                       "text": "Estado civil",
                       "row_y_hint": 600,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 357.24151040000004,
@@ -7900,6 +8012,7 @@
                     "label": {
                       "text": "Fecha de nacimiento",
                       "row_y_hint": 600,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 444.60849920000004,
@@ -7982,6 +8095,7 @@
                     "label": {
                       "text": "Personas a su cargo",
                       "row_y_hint": 614,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -8064,6 +8178,7 @@
                     "label": {
                       "text": "Sit. viv.",
                       "row_y_hint": 614,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 149.68712960000008,
@@ -8136,6 +8251,7 @@
                     "label": {
                       "text": "Antigüedad viv.",
                       "row_y_hint": 614,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144000001,
@@ -8214,6 +8330,7 @@
                     "label": {
                       "text": "Gastos vivienda",
                       "row_y_hint": 614,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 381.74124800000004,
@@ -8292,6 +8409,7 @@
                     "label": {
                       "text": "Otros créditos",
                       "row_y_hint": 614,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 482.74488320000006,
@@ -8369,6 +8487,7 @@
                     "label": {
                       "text": "Situación laboral",
                       "row_y_hint": 628,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -8449,6 +8568,7 @@
                     "label": {
                       "text": "Profesión",
                       "row_y_hint": 628,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 149.68712960000008,
@@ -8521,6 +8641,7 @@
                     "label": {
                       "text": "Cargo",
                       "row_y_hint": 628,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 237.05411840000008,
@@ -8551,12 +8672,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/130",
+                        "cell_ref": "#/texts/162",
                         "bbox": {
-                          "x": 35.04684800000004,
-                          "y": 618.3426207999998,
-                          "w": 71.77537119999998,
-                          "h": 7.200299065420609
+                          "x": 237.05411840000008,
+                          "y": 632.4415263999999,
+                          "w": 22.43883200000002,
+                          "h": 7.200299065420495
                         },
                         "column_header": null,
                         "row_header": null
@@ -8589,6 +8710,7 @@
                     "label": {
                       "text": "Importe ingresos",
                       "row_y_hint": 628,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 338.0577536,
@@ -8668,6 +8790,7 @@
                     "label": {
                       "text": "Antigüedad en la empresa",
                       "row_y_hint": 628,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 441.834944,
@@ -8751,6 +8874,7 @@
                     "label": {
                       "text": "Nombre empresa",
                       "row_y_hint": 642,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -8828,6 +8952,7 @@
                     "label": {
                       "text": "Actividad empresa",
                       "row_y_hint": 642,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076480000004,
@@ -8908,6 +9033,7 @@
                     "label": {
                       "text": "Teléfono empresa",
                       "row_y_hint": 642,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 441.834944,
@@ -9024,6 +9150,7 @@
                     "label": {
                       "text": "Apellidos",
                       "row_y_hint": 669,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.046848,
@@ -9096,6 +9223,7 @@
                     "label": {
                       "text": "Nombre/Denominación",
                       "row_y_hint": 669,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076479999998,
@@ -9178,6 +9306,7 @@
                     "label": {
                       "text": "NIF/CIF",
                       "row_y_hint": 683,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -9248,6 +9377,7 @@
                     "label": {
                       "text": "Nacionalidad",
                       "row_y_hint": 683,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 114.32430079999999,
@@ -9323,6 +9453,7 @@
                     "label": {
                       "text": "Fecha de constitución",
                       "row_y_hint": 683,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076479999998,
@@ -9406,6 +9537,7 @@
                     "label": {
                       "text": "Código CNAE",
                       "row_y_hint": 683,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 373.65171200000003,
@@ -9480,6 +9612,7 @@
                     "label": {
                       "text": "Nº empleados",
                       "row_y_hint": 683,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 455.47159039999997,
@@ -9555,6 +9688,7 @@
                     "label": {
                       "text": "Descripción sector actividad",
                       "row_y_hint": 697,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -9638,6 +9772,7 @@
                     "label": {
                       "text": "Inscrita en",
                       "row_y_hint": 697,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 373.65171200000003,
@@ -9712,6 +9847,7 @@
                     "label": {
                       "text": "Domicilio",
                       "row_y_hint": 711,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684799999999,
@@ -9784,6 +9920,7 @@
                     "label": {
                       "text": "Nº",
                       "row_y_hint": 711,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -9811,11 +9948,11 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/167",
+                        "cell_ref": "#/texts/169",
                         "bbox": {
-                          "x": 250.69076479999998,
-                          "y": 673.120336,
-                          "w": 81.8006176000001,
+                          "x": 297.1478144,
+                          "y": 715.4170528,
+                          "w": 11.2483072,
                           "h": 7.200299065420609
                         },
                         "column_header": null,
@@ -9849,6 +9986,7 @@
                     "label": {
                       "text": "Piso",
                       "row_y_hint": 711,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 414.56165120000003,
@@ -9916,6 +10054,7 @@
                     "label": {
                       "text": "Puerta",
                       "row_y_hint": 711,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 482.74488320000006,
@@ -9985,6 +10124,7 @@
                     "label": {
                       "text": "Población",
                       "row_y_hint": 725,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -10057,6 +10197,7 @@
                     "label": {
                       "text": "C.P.",
                       "row_y_hint": 725,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076480000004,
@@ -10124,6 +10265,7 @@
                     "label": {
                       "text": "Teléfono fijo",
                       "row_y_hint": 725,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144,
@@ -10200,6 +10342,7 @@
                     "label": {
                       "text": "Teléfono móvil",
                       "row_y_hint": 725,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 414.56165120000003,
@@ -10277,6 +10420,7 @@
                     "label": {
                       "text": "Correo electrónico",
                       "row_y_hint": 739,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -10358,6 +10502,7 @@
                     "label": {
                       "text": "Sexo",
                       "row_y_hint": 739,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144000001,
@@ -10425,6 +10570,7 @@
                     "label": {
                       "text": "Estado civil",
                       "row_y_hint": 739,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 357.24151040000004,
@@ -10500,6 +10646,7 @@
                     "label": {
                       "text": "Fecha de nacimiento",
                       "row_y_hint": 739,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 444.60849920000004,
@@ -10582,6 +10729,7 @@
                     "label": {
                       "text": "Personas a su cargo",
                       "row_y_hint": 753,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -10664,6 +10812,7 @@
                     "label": {
                       "text": "Sit. viv.",
                       "row_y_hint": 753,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 149.68712960000008,
@@ -10736,6 +10885,7 @@
                     "label": {
                       "text": "Antigüedad viv.",
                       "row_y_hint": 753,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 297.1478144000001,
@@ -10814,6 +10964,7 @@
                     "label": {
                       "text": "Gastos vivienda",
                       "row_y_hint": 753,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 381.74124800000004,
@@ -10892,6 +11043,7 @@
                     "label": {
                       "text": "Otros créditos",
                       "row_y_hint": 753,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 482.74488320000006,
@@ -10969,6 +11121,7 @@
                     "label": {
                       "text": "Situación laboral",
                       "row_y_hint": 767,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -11049,6 +11202,7 @@
                     "label": {
                       "text": "Profesión",
                       "row_y_hint": 767,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 149.68712960000008,
@@ -11121,6 +11275,7 @@
                     "label": {
                       "text": "Cargo",
                       "row_y_hint": 767,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 237.05411840000008,
@@ -11151,12 +11306,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/141",
+                        "cell_ref": "#/texts/184",
                         "bbox": {
-                          "x": 35.04684800000004,
-                          "y": 757.48264,
-                          "w": 71.77537119999998,
-                          "h": 7.200299065420609
+                          "x": 237.05411840000008,
+                          "y": 771.5815456,
+                          "w": 22.43883200000002,
+                          "h": 7.200299065420495
                         },
                         "column_header": null,
                         "row_header": null
@@ -11189,6 +11344,7 @@
                     "label": {
                       "text": "Importe ingresos",
                       "row_y_hint": 767,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 338.0577536,
@@ -11268,6 +11424,7 @@
                     "label": {
                       "text": "Antigüedad en la empresa",
                       "row_y_hint": 767,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 441.834944,
@@ -11351,6 +11508,7 @@
                     "label": {
                       "text": "Nombre empresa",
                       "row_y_hint": 781,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 35.04684800000004,
@@ -11428,6 +11586,7 @@
                     "label": {
                       "text": "Actividad empresa",
                       "row_y_hint": 781,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 250.69076480000004,
@@ -11508,6 +11667,7 @@
                     "label": {
                       "text": "Teléfono empresa",
                       "row_y_hint": 781,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 441.834944,
@@ -11622,7 +11782,7 @@
           "container_bbox": {
             "x": 35.04684799999999,
             "y": 229.39965599999994,
-            "w": 554.805152,
+            "w": 525.9354048,
             "h": 564.34144
           },
           "evidence": {
@@ -11695,16 +11855,16 @@
               "container_bbox": {
                 "x": 35.04684799999999,
                 "y": 229.39965599999994,
-                "w": 554.805152,
+                "w": 525.9354048,
                 "h": 564.34144
               },
               "pdfplumber_rect": null,
               "docling_block": null,
               "edges_inside": {
-                "vertical": 15,
-                "horizontal": 20
+                "vertical": 0,
+                "horizontal": 14
               },
-              "colons_inside": 137,
+              "colons_inside": 132,
               "container_score": 1
             },
             "structural_signals": {
@@ -11727,7 +11887,7 @@
       "container_bbox": {
         "x": 35.04684799999999,
         "y": 229.39965599999994,
-        "w": 554.805152,
+        "w": 525.9354048,
         "h": 564.34144
       },
       "evidence": {
@@ -11800,16 +11960,16 @@
           "container_bbox": {
             "x": 35.04684799999999,
             "y": 229.39965599999994,
-            "w": 554.805152,
+            "w": 525.9354048,
             "h": 564.34144
           },
           "pdfplumber_rect": null,
           "docling_block": null,
           "edges_inside": {
-            "vertical": 15,
-            "horizontal": 20
+            "vertical": 0,
+            "horizontal": 14
           },
-          "colons_inside": 137,
+          "colons_inside": 132,
           "container_score": 1
         },
         "structural_signals": {
@@ -11836,7 +11996,7 @@
       "container_bbox": {
         "x": 35.04684799999999,
         "y": 229.39965599999994,
-        "w": 554.805152,
+        "w": 525.9354048,
         "h": 564.34144
       },
       "_view": "compat_flat"
@@ -12014,9 +12174,9 @@
       },
       "value_bboxes": [
         {
-          "x": 92.64627039999999,
+          "x": 509.09365760000003,
           "y": 243.49856160000002,
-          "w": 4.6129616000000055,
+          "w": 4.612961599999949,
           "h": 9.630400000000009
         }
       ],
@@ -12315,7 +12475,7 @@
       },
       "value_bboxes": [
         {
-          "x": 160.2805696,
+          "x": 317.9494784,
           "y": 299.6630544000001,
           "w": 5.431545599999993,
           "h": 9.630400000000009
@@ -12483,16 +12643,16 @@
       "rule": "structured-kv-group",
       "confidence": "HIGH",
       "label_bbox": {
-        "x": 510.28782720000004,
+        "x": 482.7448832,
         "y": 313.76195999999993,
-        "w": 46.93856959999982,
+        "w": 48.633519999999976,
         "h": 9.630400000000009
       },
       "value_bboxes": [
         {
-          "x": 437.9057408,
+          "x": 536.3669504,
           "y": 313.76195999999993,
-          "w": 16.24648480000002,
+          "w": 16.246484799999962,
           "h": 9.630400000000009
         }
       ],
@@ -12602,10 +12762,10 @@
       "rule": "structured-kv-group",
       "confidence": "HIGH",
       "label_bbox": {
-        "x": 472.94113600000003,
-        "y": 327.1399999999993,
-        "w": 116.91086399999995,
-        "h": 10.351265600000659
+        "x": 441.834944,
+        "y": 327.8608656,
+        "w": 90.56428160000002,
+        "h": 9.630399999999952
       },
       "value_bboxes": [],
       "evidence": {

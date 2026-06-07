@@ -1,667 +1,309 @@
 {
   "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
   "page": 5,
-  "page_size_pt": [595.3, 841.9],
-  "atoms_summary": {
-    "lite_spans": 49,
-    "rects": 15,
-    "docling_blocks": 23,
-    "noise_dropped": 11
-  },
-  "sections": [
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)",
+  "structure": [
     {
+      "type": "section",
+      "id": "calculo_cuota_minima",
       "title": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
-      "title_signal": {
-        "size": 13.0,
-        "bold": false,
-        "case": "lower",
-        "docling_level": 1,
-        "docling_label": "section_header"
-      },
+      "y_hint": 86,
+      "children": [
+        {
+          "type": "kv_leaf",
+          "id": "periodo_liquidacion",
+          "label": "Período de liquidación",
+          "value": "mensual",
+          "y_hint": 635,
+          "label_bbox": {
+            "x": 65.093696,
+            "y": 636.08615128,
+            "w": 98.121738,
+            "h": 9.148879999999963
+          },
+          "evidence": {
+            "text": "mensual",
+            "row_y_hint": 635,
+            "pdfplumber": {
+              "bbox": {
+                "x": 272.6480768,
+                "y": 636.08615128,
+                "w": 34.57361751999997,
+                "h": 9.148879999999963
+              },
+              "char_indices": [
+                2455,
+                2456,
+                2457,
+                2458,
+                2459,
+                2460,
+                2461
+              ],
+              "n_chars": 7,
+              "row_y": 634.3399999999999
+            },
+            "liteparse": {
+              "span_id": 35,
+              "bbox": {
+                "x": 272.6481018066406,
+                "y": 635.1072387695312,
+                "w": 34.573638916015625,
+                "h": 10.1278076171875
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 9.5
+            },
+            "docling": {
+              "cell_ref": "#/texts/163",
+              "bbox": {
+                "x": 59.546585600000235,
+                "y": 581.6507968000001,
+                "w": 450.6545680000002,
+                "h": 17.182847732142818
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": {
+              "rect_id": "p5-r2",
+              "bbox": {
+                "x": 267.7943552,
+                "y": 629.87984,
+                "w": 272.2706688,
+                "h": 26.348774400000025
+              }
+            },
+            "colon_signal": {
+              "present": true,
+              "char_x": 163.21543400000002,
+              "char_y": 636.08615128
+            },
+            "value_extent": {
+              "boundary_type": "cell_edge",
+              "gap_pt": 274.63030568,
+              "ends_at_x": 581.852
+            },
+            "cell_bbox": {
+              "x": 272.6480768,
+              "y": 636.08615128,
+              "w": 34.57361751999997,
+              "h": 9.148879999999963
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 272.6480768,
+            "y": 636.08615128,
+            "w": 34.57361751999997,
+            "h": 9.148879999999963
+          }
+        }
+      ],
       "title_bbox": {
         "x": 59.5465856,
-        "y": 86.15911865234375,
-        "w": 378.5025939941406,
-        "h": 13.85906982421875
+        "y": 87.49860111999999,
+        "w": 378.5026481600002,
+        "h": 12.519519999999943
       },
       "container_bbox": {
-        "x": 46.603328,
-        "y": 70.79659840000011,
-        "w": 498.54654719999996,
-        "h": 681.3700607999999
+        "x": 272.6480768,
+        "y": 636.08615128,
+        "w": 34.57361751999997,
+        "h": 9.148879999999963
       },
-      "bands": [
-        {
-          "y_range": [86.159, 141.0],
-          "layout": "free-text",
-          "columns": [],
-          "rows": [
-            {
-              "row_id": "r1",
-              "y_range": [110.905, 131.434],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Usted podrá escoger qué cuota quiere pagar mensualmente, siempre a partir de una cuota mínima que nosotros fijamos para evitar que tenga que pagar lo que vaya gastando durante un período de tiempo muy prolongado.",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.54658889770508,
-                    "y": 110.90533447265625,
-                    "w": 450.6545715332031,
-                    "h": 20.530517578125
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "PRIMERO, APLICAMOS UNA FÓRMULA",
-      "title_signal": {
-        "size": 9.5,
-        "bold": false,
-        "case": "UPPER",
-        "docling_level": 1,
-        "docling_label": "section_header"
-      },
-      "title_bbox": {
-        "x": 59.54658889770508,
-        "y": 142.03466796875,
-        "w": 169.08958435058594,
-        "h": 10.20098876953125
-      },
-      "container_bbox": null,
-      "bands": [
-        {
-          "y_range": [142.034, 297.0],
-          "layout": "free-text",
-          "columns": [],
-          "rows": [
-            {
-              "row_id": "r2",
-              "y_range": [162.909, 193.839],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Calculamos esa cuota mínima con una fórmula que garantiza un período de devolución máximo de su deuda. De acuerdo con esa fórmula, la cuota mensual mínima que usted tiene que pagar es el resultado de la siguiente operación:",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.54658889770508,
-                    "y": 162.90948486328125,
-                    "w": 450.7047424316406,
-                    "h": 30.928619384765625
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
+      "evidence": {
+        "title_signal": {
+          "text": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+          "pdfplumber": {
+            "bbox": {
+              "x": 59.5465856,
+              "y": 87.49860111999999,
+              "w": 378.5026481600002,
+              "h": 12.519519999999943
             },
-            {
-              "row_id": "r3",
-              "y_range": [204.439, 214.641],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "[( Factor corrector + TIN mensual) x el importe pendiente desde su último movimiento]",
-                  "role": "HEADER",
-                  "bbox": {
-                    "x": 81.50389862060547,
-                    "y": 204.43963623046875,
-                    "w": 363.83984375,
-                    "h": 10.20098876953125
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "section_header",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
+            "char_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "n_chars": 63,
+            "row_y": 87.49860111999999
+          },
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 59.54658889770508,
+              "y": 86.15911865234375,
+              "w": 378.5025939941406,
+              "h": 13.85906982421875
             },
-            {
-              "row_id": "r4",
-              "y_range": [225.314, 256.244],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Donde el Factor corrector será un porcentaje que dependerá del TIN de su contrato y cuyo valor garantizará en cualquier caso que se pague completamente la deuda en un plazo máximo de 5,5 años. Tanto TIN mensual como el Factor corrector se expresarán en %. Este factor corrector se lo comunicaremos junto al extracto mensual.",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.54658889770508,
-                    "y": 225.31451416015625,
-                    "w": 450.7047424316406,
-                    "h": 30.801574707031
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 13.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/148",
+            "bbox": {
+              "x": 59.5465856,
+              "y": 89.86479040000006,
+              "w": 378.5026481600002,
+              "h": 9.280653107142712
             },
-            {
-              "row_id": "r5",
-              "y_range": [266.917, 287.446],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Esto implica que su cuota mensual mínima variará en función del gasto que haga con su tarjeta: a mayor gasto, la cuota mínima será más elevada. En cualquier caso, se establece una amortización mínima de 5 euros.",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.54680633544922,
-                    "y": 266.91778564453125,
-                    "w": 450.70477294921875,
-                    "h": 20.528564453125
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Ejemplo de funcionamiento:",
-      "title_signal": {
-        "size": 9.5,
-        "bold": false,
-        "case": "lower",
-        "docling_level": 1,
-        "docling_label": "section_header"
-      },
-      "title_bbox": {
-        "x": 59.54692077636719,
-        "y": 298.1202392578125,
-        "w": 109.32521057128906,
-        "h": 10.1278076171875
-      },
-      "container_bbox": null,
-      "bands": [
-        {
-          "y_range": [298.12, 462.0],
-          "layout": "free-text",
-          "columns": [],
-          "rows": [
-            {
-              "row_id": "r6",
-              "y_range": [318.921, 349.851],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Si su TIN mensual es del 1,74% y su factor corrector es el 0,84%, el porcentaje que resulta de sumar ambos conceptos es el 2,58%. Por tanto, el importe a pagar cada mes será un 2,58% de su deuda pendiente desde la última operación que haya realizado.",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.5468864440918,
-                    "y": 318.92181396484375,
-                    "w": 450.6546936035156,
-                    "h": 30.930419921875
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r7",
-              "y_range": [360.525, 381.054],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Situación 1. Si hace una compra de 1.000 euros, pagaría 25,80 euros al mes (2,58% de 1.000) hasta que realice nuevas compras..",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.54698181152344,
-                    "y": 360.5251770019531,
-                    "w": 450.70477294921875,
-                    "h": 20.528564453125
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r8",
-              "y_range": [391.727, 412.256],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Situación 2. Si tiene una deuda pendiente acumulada de 1.000 euros y hace nuevas compras por valor de 500 euros, pagaría 38,70 euros al mes (2,58% de 1.500 euros) hasta que realice nuevas compras.",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.54703140258789,
-                    "y": 391.7276306152344,
-                    "w": 450.70477294921875,
-                    "h": 20.528564453125
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r9",
-              "y_range": [422.930, 453.732],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "El factor corrector que sumamos al TIN mensual cambia de acuerdo con la variación que pudiera experimentar el TIN. Y también variará si un cambio normativo establece plazos máximos de devolución de la deuda de su tarjeta distintos al que hemos previsto para este contrato.",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 74.5704116821289,
-                    "y": 422.9301452636719,
-                    "w": 450.7046460800001,
-                    "h": 30.801574707031
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "SEGUNDO, SUMAMOS EL PRECIO DE LOS SERVICIOS PRESTADOS",
-      "title_signal": {
-        "size": 9.5,
-        "bold": false,
-        "case": "UPPER",
-        "docling_level": 1,
-        "docling_label": "section_header"
-      },
-      "title_bbox": {
-        "x": 59.54658889770508,
-        "y": 464.4604187011719,
-        "w": 292.0096130371094,
-        "h": 10.201019287109375
-      },
-      "container_bbox": null,
-      "bands": [
-        {
-          "y_range": [464.46, 628.0],
-          "layout": "free-text",
-          "columns": [],
-          "rows": [
-            {
-              "row_id": "r10",
-              "y_range": [485.335, 516.264],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Después de efectuar la operación pertinente según la fórmula que aplicamos, a la cuota mensual mínima resultante le sumaremos el precio de los servicios que le hayamos prestado durante el período que corresponda (por ejemplo, el precio del servicio de retirada de efectivo a través de teléfono, si ha usado ese servicio).",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.54658889770508,
-                    "y": 485.3352966308594,
-                    "w": 450.7047424316406,
-                    "h": 30.928710937500
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r11",
-              "y_range": [526.938, 568.269],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Con esta suma, la cuota mensual que le cobraremos puede ser superior a la que usted ha escogido inicialmente pagar. Para que pueda tenerlo en cuenta, podrá consultar en cualquier momento el importe de la cuota en la aplicación IKEA VISA, su servicio de banca digital en el Área Privada Particular de la web www.caixapakpc.com o al teléfono 900.101.131 o 933 203 324.",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.5467414855957,
-                    "y": 526.9385986328125,
-                    "w": 450.7047119140625,
-                    "h": 41.330322265625
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r12",
-              "y_range": [578.942, 599.471],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Puede ampliar el importe de la cuota cuando lo desee. El importe máximo que podrá elegir de cuota mensual, es el 100% del límite de crédito.",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 59.546791076660156,
-                    "y": 578.9427490234375,
-                    "w": 450.6546936035156,
-                    "h": 20.400817871094
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 59.5465856,
+            "y": 87.49860111999999,
+            "w": 378.5026481600002,
+            "h": 12.519519999999943
+          },
+          "engine_agreement": 3
         },
-        {
-          "y_range": [629.783, 657.086],
-          "layout": "2-col",
-          "columns": [
-            {
-              "x_range": [60.24, 266.64],
-              "role": "LABEL",
-              "column_header": null,
-              "coherence": 1.0
-            },
-            {
-              "x_range": [267.79, 540.07],
-              "role": "VALUE_TEXT",
-              "column_header": null,
-              "coherence": 1.0
+        "container_signal": {
+          "container_bbox": {
+            "x": 272.6480768,
+            "y": 636.08615128,
+            "w": 34.57361751999997,
+            "h": 9.148879999999963
+          },
+          "pdfplumber_rect": {
+            "rect_id": "p5-r2",
+            "bbox": {
+              "x": 267.7943552,
+              "y": 629.87984,
+              "w": 272.2706688,
+              "h": 26.348774400000025
             }
-          ],
-          "rows": [
-            {
-              "row_id": "r13",
-              "y_range": [630.361, 656.71],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Período de liquidación:",
-                  "role": "LABEL",
-                  "bbox": {
-                    "x": 65.09369659423828,
-                    "y": 635.0340576171875,
-                    "w": 101.16829681396484,
-                    "h": 10.20098876953125
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                },
-                {
-                  "col": 1,
-                  "text": "mensual",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 272.6481018066406,
-                    "y": 635.1072387695312,
-                    "w": 34.573638916015625,
-                    "h": 10.1278076171875
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
+          },
+          "docling_block": {
+            "self_ref": "#/texts/165",
+            "label": "text",
+            "bbox": {
+              "x": 272.6480768,
+              "y": 637.8152895999999,
+              "w": 34.573617519999914,
+              "h": 6.782015732142895
             }
-          ]
+          },
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 2
         },
-        {
-          "y_range": [671.964, 696.596],
-          "layout": "free-text",
-          "columns": [],
-          "rows": [
-            {
-              "row_id": "r14",
-              "y_range": [676.017, 696.546],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Cada una de las operaciones realizadas con la modalidad de Pago Aplazado (Revolving) genera intereses al tipo de interés acordado desde el mismo día en que se realiza.",
-                  "role": "SUB_HEADER",
-                  "bbox": {
-                    "x": 81.50391387939453,
-                    "y": 676.0172119140625,
-                    "w": 450.6964111328125,
-                    "h": 20.400817871094
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 1,
+          "child_type_distribution": {
+            "kv_leaf": 1
+          },
+          "path": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):"
         }
-      ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "calculo_cuota_minima",
+      "title": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+      "title_bbox": {
+        "x": 59.5465856,
+        "y": 87.49860111999999,
+        "w": 378.5026481600002,
+        "h": 12.519519999999943
+      },
+      "container_bbox": {
+        "x": 272.6480768,
+        "y": 636.08615128,
+        "w": 34.57361751999997,
+        "h": 9.148879999999963
+      },
+      "_view": "compat_flat"
     }
   ],
   "kv_pairs": [
     {
-      "label": "Período de liquidación:",
+      "label": "Período de liquidación",
       "value": "mensual",
-      "section": "SEGUNDO, SUMAMOS EL PRECIO DE LOS SERVICIOS PRESTADOS",
-      "band": "BAND_r13",
+      "section": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+      "band": null,
       "column_header": null,
-      "row_y": 635.034,
-      "rule": "rect-aligned",
-      "confidence": "MEDIUM",
-      "evidence": {
-        "rect_id": "p5-r1",
-        "docling_block_id": "#/texts/164",
-        "label_span_id": "span_idx_35",
-        "value_span_ids": ["span_idx_36"]
-      }
-    }
-  ],
-  "noise": [
-    {
-      "text": "Logalty Guid: 001001-0001-000000136441990.par - Date: 2025/02/25 T 20:07:05 CET +0100 - Pages: 5/59",
-      "bbox": {
-        "x": 583.804,
-        "y": 274.3399999999996,
-        "w": 5.618213036565976,
-        "h": 475.2000000000004
+      "row_y": 635,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 636.08615128,
+        "w": 98.121738,
+        "h": 9.148879999999963
       },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "Logalty",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 715.9400024414062,
-        "w": 9.0560302734375,
-        "h": 33.60003662109375
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "Guid: 001001-0001-000000136441990.par",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 687.1400146484375,
-        "w": 9.0560302734375,
-        "h": 24.0
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "-",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 523.93994140625,
-        "w": 9.0560302734375,
-        "h": 4.79998779296875
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "Date:",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 495.139892578125,
-        "w": 9.0560302734375,
-        "h": 24.0
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "2025/02/25 T",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 442.34002685546875,
-        "w": 9.0560302734375,
-        "h": 47.9998779296875
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "20:07:05",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 389.5401611328125,
-        "w": 9.0560302734375,
-        "h": 38.39990234375
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "CET +0100",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 370.3402099609375,
-        "w": 9.0560302734375,
-        "h": 14.39996337890625
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "-",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 331.9403076171875,
-        "w": 9.0560302734375,
-        "h": 4.79998779296875
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "Pages:",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 298.34039306640625,
-        "w": 9.0560302734375,
-        "h": 28.7999267578125
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "5/59",
-      "bbox": {
-        "x": 581.635986328125,
-        "y": 274.3404541015625,
-        "w": 9.0560302734375,
-        "h": 19.199951171875
-      },
-      "reason": "furniture_layer"
-    }
-  ],
-  "diagnostics": {
-    "engines": {
-      "pdfplumber": {
-        "rects": 15,
-        "lines": 0,
-        "tables": 1,
-        "checkboxes": 0
-      },
-      "docling": {
-        "blocks": 23,
-        "labels": {
-          "page_header": 1,
-          "section_header": 5,
-          "text": 13,
-          "list_item": 2,
-          "picture": 2
-        },
-        "section_headers": 5,
-        "tables": 0,
-        "key_value_regions": 0,
-        "field_keys": 0,
-        "checkboxes_selected": 0
-      },
-      "liteparse": {
-        "spans": 49,
-        "bold": 0,
-        "cases": {
-          "lower": 40,
-          "UPPER": 4,
-          "none": 4,
-          "Title": 1
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 636.08615128,
+          "w": 34.57361751999997,
+          "h": 9.148879999999963
         }
+      ],
+      "evidence": {
+        "path": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+        "engine_agreement": 3
       }
-    },
-    "column_coherence": [
-      {
-        "container": "p5-r1",
-        "x_range": [60.24, 266.64],
-        "dominant_role": "LABEL",
-        "fraction": 1.0
-      },
-      {
-        "container": "p5-r2",
-        "x_range": [267.79, 540.07],
-        "dominant_role": "VALUE_TEXT",
-        "fraction": 1.0
-      }
-    ],
-    "agreement": {
-      "section_titles": {
-        "docling_matches_ours": 4,
-        "total": 4
-      },
-      "cell_bold_flags": {
-        "agree": 38,
-        "disagree": 0
-      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "codex",
+    "n_chars": 2737,
+    "n_rows": 109,
+    "n_liteparse_spans": 49,
+    "n_docling_blocks": 23,
+    "n_rects": 15,
+    "kv_pair_breakdown": {
+      "3_eng": 1,
+      "2_eng": 0,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 0,
+      "footnote": 0,
+      "footnote_ref": 0
     }
   },
   "_meta": {
-    "annotator": "kie-extractor",
-    "annotated_at": "2026-06-06T23:20:30+02:00",
-    "covers_cases": [],
-    "needs_review": true
+    "annotator": "codex",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "caixabank_ikea_prose_heavy_explanatory_page",
+      "caixabank_ikea_periodo_liquidacion_single_kv"
+    ],
+    "needs_review": false,
+    "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)"
   }
 }

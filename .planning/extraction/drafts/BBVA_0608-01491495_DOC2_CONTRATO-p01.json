@@ -5,459 +5,875 @@
     595.476,
     842.6736
   ],
-  "atoms_summary": {
-    "lite_spans": 21,
-    "rects": 334,
-    "docling_blocks": 16,
-    "noise_dropped": 6
-  },
-  "sections": [
+  "document_type": "Contrato de Préstamo Personal BBVA",
+  "structure": [
     {
+      "type": "section",
+      "id": "cover_title",
       "title": "Contrato de Préstamo Personal Bonificado",
-      "title_signal": {
-        "size": 23.0,
-        "bold": false,
-        "case": "lower",
-        "docling_level": null,
-        "docling_label": "section_header"
-      },
+      "y_hint": 397,
+      "children": [],
       "title_bbox": {
-        "x": 178.5,
-        "y": 396.9,
-        "w": 250.0,
-        "h": 48.0
+        "x": 178.50238037109375,
+        "y": 399.596955078125,
+        "w": 322.0867919921875,
+        "h": 49.65838623046875
       },
       "container_bbox": null,
-      "bands": [
-        {
-          "y_range": [
-            396.9,
-            464.0
-          ],
-          "layout": "free-text",
-          "columns": [],
-          "rows": [
-            {
-              "row_id": "r1",
-              "y_range": [
-                396.9,
-                421.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Contrato de Préstamo Personal",
-                  "role": "HEADER",
-                  "bbox": {
-                    "x": 178.5,
-                    "y": 396.9,
-                    "w": 250.0,
-                    "h": 24.0
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "section_header",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
+      "evidence": {
+        "title_signal": {
+          "text": "Contrato de Préstamo Personal Bonificado",
+          "pdfplumber": {
+            "bbox": {
+              "x": 178.50238037109375,
+              "y": 399.596955078125,
+              "w": 322.0867919921875,
+              "h": 49.65838623046875
             },
-            {
-              "row_id": "r2",
-              "y_range": [
-                420.9,
-                436.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Bonificado",
-                  "role": "HEADER",
-                  "bbox": {
-                    "x": 178.5,
-                    "y": 420.9,
-                    "w": 80.0,
-                    "h": 12.0
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": null,
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
+            "char_indices": [
+              750,
+              751,
+              752,
+              753,
+              754,
+              755,
+              756,
+              757,
+              758,
+              759,
+              760,
+              761,
+              762,
+              763,
+              764,
+              765,
+              766,
+              767,
+              768,
+              769
+            ],
+            "n_chars": 40,
+            "row_y": 399.596955078125
+          },
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 178.50238037109375,
+              "y": 396.928955078125,
+              "w": 322.0867919921875,
+              "h": 49.65838623046875
             },
-            {
-              "row_id": "r3",
-              "y_range": [
-                463.4,
-                475.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Contrato de Préstamo Personal nº 0182-5132-0083-00000000003752",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 179.3,
-                    "y": 463.4,
-                    "w": 350.0,
-                    "h": 12.0
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 23.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/2",
+            "bbox": {
+              "x": 178.50238600000006,
+              "y": 401.2990089999998,
+              "w": 322.0868040000001,
+              "h": 44.26953812154699
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 178.50238037109375,
+            "y": 399.596955078125,
+            "w": 322.0867919921875,
+            "h": 49.65838623046875
+          },
+          "engine_agreement": 3,
+          "fusion_note": "Fused 2 lines (liteparse y=396.9 'Contrato de Préstamo Personal' + y=420.9 'Bonificado'). Docling already pre-fused as single section_header."
+        },
+        "container_signal": null,
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 0,
+          "child_type_distribution": {},
+          "path": "Contrato de Préstamo Personal Bonificado"
         }
-      ]
+      }
     },
     {
-      "title": "El Contrato está compuesto por cinco partes:",
-      "title_signal": {
-        "size": 10.0,
-        "bold": true,
-        "case": "lower",
-        "docling_level": null,
-        "docling_label": "section_header"
+      "type": "prose_block",
+      "id": "intro_callout",
+      "text": "El documento que va a leer a continuación es un Contrato con BBVA para recibir un servicio bancario. No dude en pedirnos aclaraciones de lo que no entienda. Al final de este documento encontrará una explicación más detallada de los términos que encontrará señalizados con este símbolo para facilitar su comprensión.",
+      "label": "intro_callout",
+      "bbox": {
+        "x": 201.70074462890625,
+        "y": 513.036435546875,
+        "w": 349.07122802734375,
+        "h": 58.00949462890625
       },
-      "title_bbox": {
-        "x": 187.5,
-        "y": 617.2,
-        "w": 300.0,
-        "h": 12.0
-      },
-      "container_bbox": {
-        "x": 178.5,
-        "y": 494.3,
-        "w": 393.7,
-        "h": 285.0
-      },
-      "bands": [
-        {
-          "y_range": [
-            511.6,
-            560.0
-          ],
-          "layout": "free-text",
-          "columns": [],
-          "rows": [
-            {
-              "row_id": "r4",
-              "y_range": [
-                511.6,
-                560.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "El documento que va a leer a continuación es un Contrato con BBVA para recibir un servicio bancario. No dude en pedirnos aclaraciones de lo que no entienda. Al final de este documento encontrará una explicación más detallada de los términos que encontrará señalizados con este símbolo para facilitar su comprensión.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 201.7,
-                    "y": 511.6,
-                    "w": 350.0,
-                    "h": 48.0
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
+      "evidence": {
+        "text_signal": {
+          "text": "El documento que va a leer a continuación es un Contrato con BBVA para recibir un servicio bancario. No dude en pedirnos aclaraciones de lo que no entienda. Al final de este documento encontrará una explicación más detallada de los términos que encontrará señalizados con este símbolo para facilitar su comprensión.",
+          "liteparse": {
+            "span_id": null,
+            "bbox": {
+              "x": 201.70074462890625,
+              "y": 511.596435546875,
+              "w": 349.07122802734375,
+              "h": 59.16949462890625
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 10.0,
+            "n_spans_fused": 6
+          },
+          "docling": {
+            "cell_ref": "#/texts/4",
+            "bbox": {
+              "x": 201.70077699999996,
+              "y": 513.496423,
+              "w": 349.07122099999975,
+              "h": 56.8266165745855
+            },
+            "label": "text"
+          },
+          "pdfplumber": {
+            "bbox": {
+              "x": 201.70074462890625,
+              "y": 513.036435546875,
+              "w": 349.07122802734375,
+              "h": 58.00949462890625
+            },
+            "n_chars": 315
+          },
+          "bbox": {
+            "x": 201.70074462890625,
+            "y": 513.036435546875,
+            "w": 349.07122802734375,
+            "h": 58.00949462890625
+          },
+          "engine_agreement": 3
         },
-        {
-          "y_range": [
-            646.0,
-            716.0
-          ],
-          "layout": "free-text",
-          "columns": [],
-          "rows": [
-            {
-              "row_id": "r5",
-              "y_range": [
-                646.0,
-                658.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Identificación de las partes contratantes",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 187.5,
-                    "y": 646.0,
-                    "w": 280.0,
-                    "h": 12.0
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r6",
-              "y_range": [
-                660.4,
-                672.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Condiciones económicas del préstamo",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 187.5,
-                    "y": 660.4,
-                    "w": 260.0,
-                    "h": 12.0
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r7",
-              "y_range": [
-                674.8,
-                686.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Condiciones generales",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 187.5,
-                    "y": 674.8,
-                    "w": 160.0,
-                    "h": 12.0
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r8",
-              "y_range": [
-                689.2,
-                701.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Condiciones particulares",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 187.5,
-                    "y": 689.2,
-                    "w": 180.0,
-                    "h": 12.0
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r9",
-              "y_range": [
-                703.6,
-                715.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Glosario",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 187.5,
-                    "y": 703.6,
-                    "w": 60.0,
-                    "h": 12.0
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
-        },
-        {
-          "y_range": [
-            730.0,
-            755.0
-          ],
-          "layout": "free-text",
-          "columns": [],
-          "rows": [
-            {
-              "row_id": "r10",
-              "y_range": [
-                730.0,
-                755.0
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "Tómese su tiempo y léalo atentamente. Asegúrese de que la información sobre Usted es correcta y de que ha comprendido el contenido de todo el Contrato. Usted lo firmará al final como manifestación de su conformidad con el mismo.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 187.5,
-                    "y": 730.0,
-                    "w": 350.0,
-                    "h": 24.0
-                  },
-                  "bold": true,
-                  "case": "lower",
-                  "docling_label": "text",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
+        "structural_signals": {
+          "kind": "prose_block"
         }
-      ]
+      }
+    },
+    {
+      "type": "section",
+      "id": "contract_parts",
+      "title": "El Contrato está compuesto por cinco partes:",
+      "y_hint": 617,
+      "children": [
+        {
+          "type": "list_item",
+          "id": "part_1",
+          "text": "Identificación de las partes contratantes",
+          "bbox": {
+            "x": 187.5023651123047,
+            "y": 647.4459204101563,
+            "w": 176.2132110595703,
+            "h": 10.0
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Identificación de las partes contratantes",
+              "liteparse": {
+                "span_id": null,
+                "bbox": {
+                  "x": 187.5023651123047,
+                  "y": 646.0059204101562,
+                  "w": 176.2132110595703,
+                  "h": 11.15997314453125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/6",
+                "bbox": {
+                  "x": 187.50237599999994,
+                  "y": 647.9060199999999,
+                  "w": 176.2131999999999,
+                  "h": 8.817016574585637
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "pdfplumber": {
+                "bbox": {
+                  "x": 187.5023651123047,
+                  "y": 647.4459204101563,
+                  "w": 176.2132110595703,
+                  "h": 10.0
+                },
+                "char_indices": [],
+                "n_chars": 41,
+                "row_y": 647.4459204101563
+              },
+              "bbox": {
+                "x": 187.5023651123047,
+                "y": 647.4459204101563,
+                "w": 176.2132110595703,
+                "h": 10.0
+              },
+              "engine_agreement": 3
+            },
+            "structural_signals": {
+              "kind": "list_item",
+              "index": 0,
+              "parent_path": "El Contrato está compuesto por cinco partes:"
+            }
+          }
+        },
+        {
+          "type": "list_item",
+          "id": "part_2",
+          "text": "Condiciones económicas del préstamo",
+          "bbox": {
+            "x": 187.50238037109375,
+            "y": 661.8459448242188,
+            "w": 171.74798583984375,
+            "h": 10.0
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Condiciones económicas del préstamo",
+              "liteparse": {
+                "span_id": null,
+                "bbox": {
+                  "x": 187.50238037109375,
+                  "y": 660.4059448242188,
+                  "w": 171.74798583984375,
+                  "h": 11.15997314453125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/7",
+                "bbox": {
+                  "x": 187.5023789999999,
+                  "y": 662.3060199999999,
+                  "w": 171.74800099999993,
+                  "h": 8.817016574585637
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "pdfplumber": {
+                "bbox": {
+                  "x": 187.50238037109375,
+                  "y": 661.8459448242188,
+                  "w": 171.74798583984375,
+                  "h": 10.0
+                },
+                "char_indices": [],
+                "n_chars": 35,
+                "row_y": 661.8459448242188
+              },
+              "bbox": {
+                "x": 187.50238037109375,
+                "y": 661.8459448242188,
+                "w": 171.74798583984375,
+                "h": 10.0
+              },
+              "engine_agreement": 3
+            },
+            "structural_signals": {
+              "kind": "list_item",
+              "index": 1,
+              "parent_path": "El Contrato está compuesto por cinco partes:"
+            }
+          }
+        },
+        {
+          "type": "list_item",
+          "id": "part_3",
+          "text": "Condiciones generales",
+          "bbox": {
+            "x": 187.50238037109375,
+            "y": 676.2459692382813,
+            "w": 101.71881103515625,
+            "h": 10.0
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Condiciones generales",
+              "liteparse": {
+                "span_id": null,
+                "bbox": {
+                  "x": 187.50238037109375,
+                  "y": 674.8059692382812,
+                  "w": 101.71881103515625,
+                  "h": 11.15997314453125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/8",
+                "bbox": {
+                  "x": 187.50238699999989,
+                  "y": 676.7060199999999,
+                  "w": 101.71879999999999,
+                  "h": 8.817016574585637
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "pdfplumber": {
+                "bbox": {
+                  "x": 187.50238037109375,
+                  "y": 676.2459692382813,
+                  "w": 101.71881103515625,
+                  "h": 10.0
+                },
+                "char_indices": [],
+                "n_chars": 21,
+                "row_y": 676.2459692382813
+              },
+              "bbox": {
+                "x": 187.50238037109375,
+                "y": 676.2459692382813,
+                "w": 101.71881103515625,
+                "h": 10.0
+              },
+              "engine_agreement": 3
+            },
+            "structural_signals": {
+              "kind": "list_item",
+              "index": 2,
+              "parent_path": "El Contrato está compuesto por cinco partes:"
+            }
+          }
+        },
+        {
+          "type": "list_item",
+          "id": "part_4",
+          "text": "Condiciones particulares",
+          "bbox": {
+            "x": 187.50238037109375,
+            "y": 690.6459936523438,
+            "w": 109.48880004882812,
+            "h": 10.0
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Condiciones particulares",
+              "liteparse": {
+                "span_id": null,
+                "bbox": {
+                  "x": 187.50238037109375,
+                  "y": 689.2059936523438,
+                  "w": 109.48880004882812,
+                  "h": 11.15997314453125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/9",
+                "bbox": {
+                  "x": 187.50238699999989,
+                  "y": 691.1060199999998,
+                  "w": 109.48879999999997,
+                  "h": 8.817016574585637
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "pdfplumber": {
+                "bbox": {
+                  "x": 187.50238037109375,
+                  "y": 690.6459936523438,
+                  "w": 109.48880004882812,
+                  "h": 10.0
+                },
+                "char_indices": [],
+                "n_chars": 24,
+                "row_y": 690.6459936523438
+              },
+              "bbox": {
+                "x": 187.50238037109375,
+                "y": 690.6459936523438,
+                "w": 109.48880004882812,
+                "h": 10.0
+              },
+              "engine_agreement": 3
+            },
+            "structural_signals": {
+              "kind": "list_item",
+              "index": 3,
+              "parent_path": "El Contrato está compuesto por cinco partes:"
+            }
+          }
+        },
+        {
+          "type": "list_item",
+          "id": "part_5",
+          "text": "Glosario",
+          "bbox": {
+            "x": 187.50238037109375,
+            "y": 705.0460180664063,
+            "w": 37.22999572753906,
+            "h": 10.0
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Glosario",
+              "liteparse": {
+                "span_id": null,
+                "bbox": {
+                  "x": 187.50238037109375,
+                  "y": 703.6060180664062,
+                  "w": 37.22999572753906,
+                  "h": 11.15997314453125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/10",
+                "bbox": {
+                  "x": 187.50238699999989,
+                  "y": 705.5060199999998,
+                  "w": 37.23000000000002,
+                  "h": 8.817016574585637
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "pdfplumber": {
+                "bbox": {
+                  "x": 187.50238037109375,
+                  "y": 705.0460180664063,
+                  "w": 37.22999572753906,
+                  "h": 10.0
+                },
+                "char_indices": [],
+                "n_chars": 8,
+                "row_y": 705.0460180664063
+              },
+              "bbox": {
+                "x": 187.50238037109375,
+                "y": 705.0460180664063,
+                "w": 37.22999572753906,
+                "h": 10.0
+              },
+              "engine_agreement": 3
+            },
+            "structural_signals": {
+              "kind": "list_item",
+              "index": 4,
+              "parent_path": "El Contrato está compuesto por cinco partes:"
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 187.50237599999997,
+        "y": 618.3660209999999,
+        "w": 216.66640099999995,
+        "h": 10.0
+      },
+      "container_bbox": null,
+      "evidence": {
+        "title_signal": {
+          "text": "El Contrato está compuesto por cinco partes:",
+          "pdfplumber": {
+            "bbox": {
+              "x": 187.50237599999997,
+              "y": 618.3660209999999,
+              "w": 216.66640099999995,
+              "h": 10.0
+            },
+            "char_indices": [
+              402,
+              403,
+              404,
+              405,
+              406,
+              407,
+              408,
+              409,
+              410,
+              411,
+              412,
+              413,
+              414,
+              415,
+              416,
+              417,
+              418,
+              419,
+              420,
+              421
+            ],
+            "n_chars": 38,
+            "row_y": 618.3660209999999
+          },
+          "liteparse": {
+            "span_id": 9,
+            "bbox": {
+              "x": 187.50234985351562,
+              "y": 617.2059326171875,
+              "w": 216.66641235351562,
+              "h": 11.15997314453125
+            },
+            "case_class": "lower",
+            "is_bold": true,
+            "font_size": 10.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/5",
+            "bbox": {
+              "x": 187.50237599999997,
+              "y": 619.1060209999999,
+              "w": 216.66640099999995,
+              "h": 8.817016574585637
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 187.50237599999997,
+            "y": 618.3660209999999,
+            "w": 216.66640099999995,
+            "h": 10.0
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": null,
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 5,
+          "child_type_distribution": {
+            "list_item": 5
+          },
+          "path": "El Contrato está compuesto por cinco partes:"
+        }
+      }
+    },
+    {
+      "type": "prose_block",
+      "id": "closing_instructions",
+      "text": "Tómese su tiempo y léalo atentamente. Asegúrese de que la información sobre Usted es correcta y de que ha comprendido el contenido de todo el Contrato. Usted lo firmará al final como manifestación de su conformidad con el mismo.",
+      "label": "closing_instructions",
+      "bbox": {
+        "x": 187.50234985351562,
+        "y": 731.441220703125,
+        "w": 376.1419982910156,
+        "h": 34.00473388671875
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Tómese su tiempo y léalo atentamente. Asegúrese de que la información sobre Usted es correcta y de que ha comprendido el contenido de todo el Contrato. Usted lo firmará al final como manifestación de su conformidad con el mismo.",
+          "liteparse": {
+            "span_id": null,
+            "bbox": {
+              "x": 187.50234985351562,
+              "y": 730.001220703125,
+              "w": 376.1419982910156,
+              "h": 35.16473388671875
+            },
+            "case_class": "lower",
+            "is_bold": true,
+            "font_size": 10.0,
+            "n_spans_fused": 3
+          },
+          "docling": {
+            "cell_ref": "#/texts/11",
+            "bbox": {
+              "x": 187.502386,
+              "y": 731.9012209999999,
+              "w": 376.14199799999983,
+              "h": 32.82181657458557
+            },
+            "label": "text"
+          },
+          "pdfplumber": {
+            "bbox": {
+              "x": 187.50234985351562,
+              "y": 731.441220703125,
+              "w": 376.1419982910156,
+              "h": 34.00473388671875
+            },
+            "n_chars": 228
+          },
+          "bbox": {
+            "x": 187.50234985351562,
+            "y": 731.441220703125,
+            "w": 376.1419982910156,
+            "h": 34.00473388671875
+          },
+          "engine_agreement": 3
+        },
+        "structural_signals": {
+          "kind": "prose_block"
+        }
+      }
     }
   ],
-  "kv_pairs": [],
+  "sections": [
+    {
+      "id": "cover_title",
+      "title": "Contrato de Préstamo Personal Bonificado",
+      "title_bbox": {
+        "x": 178.50238037109375,
+        "y": 399.596955078125,
+        "w": 322.0867919921875,
+        "h": 49.65838623046875
+      },
+      "container_bbox": null,
+      "_view": "compat_flat"
+    },
+    {
+      "id": "contract_parts",
+      "title": "El Contrato está compuesto por cinco partes:",
+      "title_bbox": {
+        "x": 187.50237599999997,
+        "y": 618.3660209999999,
+        "w": 216.66640099999995,
+        "h": 10.0
+      },
+      "container_bbox": null,
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Referencia del Contrato",
+      "value": "0182-5132-0083-00000000003752",
+      "section": "Contrato de Préstamo Personal Bonificado",
+      "band": null,
+      "column_header": null,
+      "row_y": 464,
+      "rule": "structured-cover-reference",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 179.2511749267578,
+        "y": 464.8827490234375,
+        "w": 309.7171630859375,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 179.2511749267578,
+          "y": 464.8827490234375,
+          "w": 309.7171630859375,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Contrato de Préstamo Personal Bonificado",
+        "engine_agreement": 3,
+        "bucket": "3_eng",
+        "full_text": "Contrato de Préstamo Personal nº 0182-5132-0083-00000000003752",
+        "note": "Reference number embedded in title-like line below header."
+      }
+    }
+  ],
   "noise": [
     {
+      "type": "noise",
+      "id": "legal_sidebar",
       "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción1.035 C.I.F.: A-48265169",
+      "kind": "rotated_legal_sidebar",
       "bbox": {
-        "x": 142.5,
-        "y": 449.9,
-        "w": 300.0,
-        "h": 6.0
+        "x": 142.52171325683594,
+        "y": 449.8730773925781,
+        "w": 6.13800048828125,
+        "h": 365.3757019042969
       },
-      "reason": "size_lt_7"
+      "evidence": {
+        "text_signal": {
+          "liteparse_bbox": {
+            "x": 142.52171325683594,
+            "y": 449.8730773925781,
+            "w": 6.13800048828125,
+            "h": 365.3757019042969
+          },
+          "is_bold": false,
+          "font_size": 5.5
+        },
+        "note": "Rotated marketing/legal text rendered vertically along left margin"
+      }
     },
     {
-      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción1.035 C.I.F.: A-48265169",
-      "bbox": {
-        "x": 142.5,
-        "y": 449.9,
-        "w": 300.0,
-        "h": 6.0
-      },
-      "reason": "furniture_layer"
-    },
-    {
+      "type": "noise",
+      "id": "footer_left",
       "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "kind": "footer",
       "bbox": {
-        "x": 27.7,
-        "y": 826.0,
-        "w": 280.0,
-        "h": 10.0
+        "x": 27.748779296875,
+        "y": 827.4487890625,
+        "w": 186.25119018554688,
+        "h": 7.767978515625
       },
-      "reason": "page_footer"
+      "evidence": {
+        "text_signal": {
+          "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+          "liteparse": {
+            "span_id": null,
+            "bbox": {
+              "x": 27.748779296875,
+              "y": 826.0087890625,
+              "w": 186.25119018554688,
+              "h": 8.927978515625
+            },
+            "case_class": "UPPER",
+            "is_bold": true,
+            "font_size": 8.0,
+            "n_spans_fused": 1
+          },
+          "docling": {
+            "cell_ref": "#/texts/12",
+            "bbox": {
+              "x": 27.748811000000103,
+              "y": 827.5288209999998,
+              "w": 186.25119800000004,
+              "h": 7.053613259668509
+            },
+            "label": "page_footer"
+          },
+          "pdfplumber": {
+            "bbox": {
+              "x": 27.748779296875,
+              "y": 827.4487890625,
+              "w": 186.25119018554688,
+              "h": 7.767978515625
+            },
+            "n_chars": 43
+          },
+          "bbox": {
+            "x": 27.748779296875,
+            "y": 827.4487890625,
+            "w": 186.25119018554688,
+            "h": 7.767978515625
+          },
+          "engine_agreement": 3
+        }
+      }
     },
     {
+      "type": "noise",
+      "id": "footer_right",
       "text": "Página 1 de 16",
+      "kind": "page_number",
       "bbox": {
-        "x": 512.8,
-        "y": 826.0,
-        "w": 80.0,
-        "h": 10.0
+        "x": 512.8487548828125,
+        "y": 827.4487890625,
+        "w": 55.59515380859375,
+        "h": 7.767978515625
       },
-      "reason": "page_footer"
+      "evidence": {
+        "text_signal": {
+          "text": "Página 1 de 16",
+          "liteparse": {
+            "span_id": null,
+            "bbox": {
+              "x": 512.8487548828125,
+              "y": 826.0087890625,
+              "w": 55.59515380859375,
+              "h": 8.927978515625
+            },
+            "case_class": "lower",
+            "is_bold": true,
+            "font_size": 8.0,
+            "n_spans_fused": 1
+          },
+          "docling": {
+            "cell_ref": "#/texts/13",
+            "bbox": {
+              "x": 512.8488120000002,
+              "y": 827.5288209999998,
+              "w": 55.59519899999998,
+              "h": 7.053613259668509
+            },
+            "label": "page_footer"
+          },
+          "pdfplumber": {
+            "bbox": {
+              "x": 512.8487548828125,
+              "y": 827.4487890625,
+              "w": 55.59515380859375,
+              "h": 7.767978515625
+            },
+            "n_chars": 14
+          },
+          "bbox": {
+            "x": 512.8487548828125,
+            "y": 827.4487890625,
+            "w": 55.59515380859375,
+            "h": 7.767978515625
+          },
+          "engine_agreement": 3
+        }
+      }
     },
     {
-      "text": "",
+      "type": "noise",
+      "id": "lightbulb_icon",
+      "kind": "inline_icon",
       "bbox": {
-        "x": 397.5,
-        "y": 279.6,
-        "w": 12.0,
-        "h": 30.0
+        "x": 473.997589,
+        "y": 548.7767829999999,
+        "w": 10.497599999999977,
+        "h": 10.188000000000102
       },
-      "reason": "picture_decorative"
+      "evidence": {
+        "source": "image",
+        "context": "símbolo de glosario"
+      }
     },
     {
-      "text": "",
+      "type": "noise",
+      "id": "bbva_logo",
+      "kind": "logo_image",
       "bbox": {
-        "x": 380.0,
-        "y": 286.0,
-        "w": 20.0,
-        "h": 24.0
+        "x": 177.753601,
+        "y": 285.40079500000013,
+        "w": 85.5,
+        "h": 28.45439899999974
       },
-      "reason": "picture_decorative"
+      "evidence": {
+        "source": "image"
+      }
     }
   ],
   "diagnostics": {
-    "engines": {
-      "pdfplumber": {
-        "rects": 334,
-        "lines": 1,
-        "tables": 1,
-        "checkboxes": 0
-      },
-      "docling": {
-        "blocks": 16,
-        "labels": {
-          "page_header": 1,
-          "text": 9,
-          "picture": 2,
-          "section_header": 2,
-          "page_footer": 2
-        },
-        "section_headers": 2,
-        "tables": 0,
-        "key_value_regions": 0,
-        "field_keys": 0,
-        "checkboxes_selected": 0
-      },
-      "liteparse": {
-        "spans": 21,
-        "bold": 6,
-        "cases": {
-          "lower": 19,
-          "Title": 1,
-          "UPPER": 1
-        }
-      }
-    },
-    "column_coherence": [],
-    "agreement": {
-      "section_titles": {
-        "docling_matches_ours": 2,
-        "total": 2
-      },
-      "cell_bold_flags": {
-        "agree": 19,
-        "disagree": 0
-      }
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "codex",
+    "n_chars": 892,
+    "n_rows": 82,
+    "n_liteparse_spans": 21,
+    "n_docling_blocks": 16,
+    "n_rects": 334,
+    "kv_pair_breakdown": {
+      "3_eng": 1,
+      "2_eng": 0,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 0,
+      "footnote": 0,
+      "footnote_ref": 0
     }
   },
   "_meta": {
-    "annotator": "kie-extractor",
-    "annotated_at": "2026-06-06T22:47:56+02:00",
-    "covers_cases": [],
-    "needs_review": true
+    "annotator": "codex",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "bbva_loan_cover_with_reference",
+      "bbva_loan_cover_multi_line_title",
+      "bbva_loan_cinco_partes_list",
+      "bbva_loan_intro_callout_prose",
+      "bbva_loan_footer_noise"
+    ],
+    "needs_review": false,
+    "document_type": "Contrato de Préstamo Personal BBVA",
+    "notes": "Fixed multi-line title fusion, added reference KV, populated cinco-partes children."
   }
 }

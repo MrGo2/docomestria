@@ -25,6 +25,7 @@
                 "label": {
                   "text": "NIF",
                   "row_y_hint": 89,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -85,6 +86,7 @@
                 "value": {
                   "text": "45337936Z",
                   "row_y_hint": 89,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 174.1868672,
@@ -176,6 +178,7 @@
                 "label": {
                   "text": "Cuenta corriente asociada informada en el contrato",
                   "row_y_hint": 97,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 3,
@@ -222,6 +225,7 @@
                 "value": {
                   "text": "ES04 2100 3986 1101 0064 4291",
                   "row_y_hint": 97,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 381.741248,
@@ -369,6 +373,7 @@
                 "label": {
                   "text": "Teléfono",
                   "row_y_hint": 134,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -434,6 +439,7 @@
                 "value": {
                   "text": "685723443",
                   "row_y_hint": 134,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 174.1868672,
@@ -525,6 +531,7 @@
                 "label": {
                   "text": "E-mail",
                   "row_y_hint": 134,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -588,6 +595,7 @@
                 "value": {
                   "text": "SORAYAGANAZA25@GMAIL.COM",
                   "row_y_hint": 134,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 381.741248,
@@ -735,6 +743,7 @@
                 "label": {
                   "text": "Nacionalidad",
                   "row_y_hint": 169,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -804,6 +813,7 @@
                 "value": {
                   "text": "ESPAÑOLA",
                   "row_y_hint": 169,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 174.1868672,
@@ -898,6 +908,7 @@
                 "label": {
                   "text": "Fecha de nacimiento",
                   "row_y_hint": 169,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -972,6 +983,7 @@
                 "value": {
                   "text": "10/01/96",
                   "row_y_hint": 169,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 381.741248,
@@ -1109,6 +1121,7 @@
                 "label": {
                   "text": "Sexo",
                   "row_y_hint": 217,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1170,6 +1183,7 @@
                 "value": {
                   "text": "Mujer",
                   "row_y_hint": 217,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 179.7339776,
@@ -1257,6 +1271,7 @@
                 "label": {
                   "text": "Personas a su cargo",
                   "row_y_hint": 204,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -1330,6 +1345,7 @@
                 "value": {
                   "text": "0",
                   "row_y_hint": 204,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 381.741248,
@@ -1356,11 +1372,11 @@
                     "font_size": 9.5
                   },
                   "docling": {
-                    "cell_ref": "#/texts/66",
+                    "cell_ref": "#/texts/71",
                     "bbox": {
                       "x": 381.741248,
-                      "y": 172.5514048,
-                      "w": 35.60744095999996,
+                      "y": 207.45197439999993,
+                      "w": 5.086777279999978,
                       "h": 6.782015732142895
                     },
                     "column_header": null,
@@ -1460,6 +1476,7 @@
                 "label": {
                   "text": "Estado civil",
                   "row_y_hint": 249,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1528,6 +1545,7 @@
                 "value": {
                   "text": "Soltero/a",
                   "row_y_hint": 249,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 179.7339776,
@@ -1623,6 +1641,7 @@
                 "label": {
                   "text": "Vivienda",
                   "row_y_hint": 254,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -1836,6 +1855,7 @@
           "evidence": {
             "text": "11500 CADIZ",
             "row_y_hint": 397,
+            "x_hint": null,
             "pdfplumber": {
               "bbox": {
                 "x": 174.1868672,
@@ -1941,6 +1961,7 @@
                 "label": {
                   "text": "Teléfono",
                   "row_y_hint": 456,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -2020,6 +2041,7 @@
                 "label": {
                   "text": "Fecha de ingreso",
                   "row_y_hint": 456,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 237.05411840000002,
@@ -2105,6 +2127,7 @@
                 "label": {
                   "text": "Nº de pagas",
                   "row_y_hint": 456,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 392.6043392,
@@ -2171,6 +2194,7 @@
                 "value": {
                   "text": "12",
                   "row_y_hint": 456,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 490.8344192,
@@ -2302,6 +2326,7 @@
                 "label": {
                   "text": "Por cuenta ajena",
                   "row_y_hint": 507,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -2387,6 +2412,7 @@
                 "label": {
                   "text": "Importe ingresos brutos anuales",
                   "row_y_hint": 497,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 42,
@@ -2626,6 +2652,7 @@
                 "label": {
                   "text": "N.I.F.",
                   "row_y_hint": 613,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -2703,6 +2730,7 @@
                 "label": {
                   "text": "Fecha de nacimiento",
                   "row_y_hint": 613,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -2836,6 +2864,7 @@
                 "label": {
                   "text": "Sexo",
                   "row_y_hint": 652,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -2911,6 +2940,7 @@
                 "label": {
                   "text": "Parentesco con el titular",
                   "row_y_hint": 649,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 57,

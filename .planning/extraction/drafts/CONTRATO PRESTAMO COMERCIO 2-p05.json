@@ -1,194 +1,2920 @@
 {
   "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO PRESTAMO COMERCIO 2.pdf",
   "page": 5,
-  "page_size_pt": [595.3, 841.9],
-  "atoms_summary": {
-    "lite_spans": 73,
-    "rects": 140,
-    "docling_blocks": 18,
-    "noise_dropped": 8
-  },
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "document_type": "Contrato de préstamo CaixaBank Payments & Consumer",
+  "structure": [
+    {
+      "type": "section",
+      "id": "condiciones_particulares",
+      "title": "B. CONDICIONES PARTICULARES",
+      "y_hint": 84,
+      "children": [
+        {
+          "type": "section",
+          "id": "importe_capital",
+          "title": "1. IMPORTE TOTAL DEL CAPITAL PRESTADO",
+          "y_hint": 105,
+          "children": [
+            {
+              "type": "kv_leaf",
+              "id": "importe_capital_kv",
+              "label": "IMPORTE TOTAL DEL CAPITAL PRESTADO",
+              "value": "2.500,00 EUROS",
+              "y_hint": 129,
+              "label_bbox": {
+                "x": 76.1879168,
+                "y": 107.04638704000001,
+                "w": 221.34126144000004,
+                "h": 10.593439999999987
+              },
+              "evidence": {
+                "text": "2.500,00 EUROS",
+                "row_y_hint": 129,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 130.62160624,
+                    "w": 81.81602623999999,
+                    "h": 10.593439999999987
+                  },
+                  "char_indices": [
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69
+                  ],
+                  "n_chars": 13,
+                  "row_y": 130.62160624
+                },
+                "liteparse": {
+                  "span_id": 4,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 129.48822021484375,
+                    "w": 81.81602478027344,
+                    "h": 11.7269287109375
+                  },
+                  "case_class": "UPPER",
+                  "is_bold": false,
+                  "font_size": 11.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/256",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 132.62376640000002,
+                    "w": 81.81602623999999,
+                    "h": 7.8528603214285795
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p5-r1",
+                  "bbox": {
+                    "x": 60.2399744,
+                    "y": 123.70601599999998,
+                    "w": 477.0514944000001,
+                    "h": 20.801664000000073
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 382.29221056000006,
+                  "ends_at_x": 537.2914688000001
+                },
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 130.62160624,
+                  "w": 81.81602623999999,
+                  "h": 10.593439999999987
+                },
+                "engine_agreement": 3
+              },
+              "bbox": {
+                "x": 73.183232,
+                "y": 130.62160624,
+                "w": 81.81602623999999,
+                "h": 10.593439999999987
+              }
+            }
+          ],
+          "title_bbox": {
+            "x": 59.5465856,
+            "y": 107.04638704000001,
+            "w": 237.98259264,
+            "h": 10.593439999999987
+          },
+          "container_bbox": {
+            "x": 73.183232,
+            "y": 130.62160624,
+            "w": 81.81602623999999,
+            "h": 10.593439999999987
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "1. IMPORTE TOTAL DEL CAPITAL PRESTADO",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 59.5465856,
+                  "y": 107.04638704000001,
+                  "w": 237.98259264,
+                  "h": 10.593439999999987
+                },
+                "char_indices": [
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44
+                ],
+                "n_chars": 32,
+                "row_y": 107.04638704000001
+              },
+              "liteparse": {
+                "span_id": 2,
+                "bbox": {
+                  "x": 59.54658889770508,
+                  "y": 105.8282470703125,
+                  "w": 5.889949798583984,
+                  "h": 11.81170654296875
+                },
+                "case_class": "none",
+                "is_bold": false,
+                "font_size": 11.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/255",
+                "bbox": {
+                  "x": 59.5465856,
+                  "y": 109.04854720000003,
+                  "w": 237.98259263999995,
+                  "h": 7.839614336283148
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "bbox": {
+                "x": 59.5465856,
+                "y": 107.04638704000001,
+                "w": 237.98259264,
+                "h": 10.593439999999987
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 73.183232,
+                "y": 130.62160624,
+                "w": 81.81602623999999,
+                "h": 10.593439999999987
+              },
+              "pdfplumber_rect": {
+                "rect_id": "p5-r1",
+                "bbox": {
+                  "x": 60.2399744,
+                  "y": 123.70601599999998,
+                  "w": 477.0514944000001,
+                  "h": 20.801664000000073
+                }
+              },
+              "docling_block": {
+                "self_ref": "#/texts/256",
+                "label": "text",
+                "bbox": {
+                  "x": 73.183232,
+                  "y": 132.62376640000002,
+                  "w": 81.81602623999999,
+                  "h": 7.8528603214285795
+                }
+              },
+              "edges_inside": {
+                "vertical": 0,
+                "horizontal": 0
+              },
+              "colons_inside": 0,
+              "container_score": 2
+            },
+            "structural_signals": {
+              "kind": "section",
+              "n_children": 1,
+              "child_type_distribution": {
+                "kv_leaf": 1
+              },
+              "path": "B. CONDICIONES PARTICULARES/1. IMPORTE TOTAL DEL CAPITAL PRESTADO"
+            }
+          }
+        },
+        {
+          "type": "section",
+          "id": "duracion",
+          "title": "2. DURACIÓN",
+          "y_hint": 153,
+          "children": [
+            {
+              "type": "kv_leaf",
+              "id": "duracion_kv",
+              "label": "DURACIÓN",
+              "value": "30 MESES",
+              "y_hint": 176,
+              "label_bbox": {
+                "x": 76.1879168,
+                "y": 154.1968254400001,
+                "w": 57.077454720000006,
+                "h": 10.593439999999987
+              },
+              "evidence": {
+                "text": "30 MESES",
+                "row_y_hint": 176,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 177.54091504000007,
+                    "w": 51.87992783999999,
+                    "h": 10.593439999999987
+                  },
+                  "char_indices": [
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86
+                  ],
+                  "n_chars": 7,
+                  "row_y": 177.54091504000007
+                },
+                "liteparse": {
+                  "span_id": 6,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 176.407470703125,
+                    "w": 51.87994384765625,
+                    "h": 11.7269287109375
+                  },
+                  "case_class": "UPPER",
+                  "is_bold": false,
+                  "font_size": 11.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/258",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 179.54307519999998,
+                    "w": 51.87992784000001,
+                    "h": 7.852860321428693
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p5-r2",
+                  "bbox": {
+                    "x": 60.2399744,
+                    "y": 170.85645440000008,
+                    "w": 477.0514944000001,
+                    "h": 20.80166399999996
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 412.22830896000005,
+                  "ends_at_x": 537.2914688000001
+                },
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 177.54091504000007,
+                  "w": 51.87992783999999,
+                  "h": 10.593439999999987
+                },
+                "engine_agreement": 3
+              },
+              "bbox": {
+                "x": 73.183232,
+                "y": 177.54091504000007,
+                "w": 51.87992783999999,
+                "h": 10.593439999999987
+              }
+            },
+            {
+              "type": "kv_leaf",
+              "id": "fecha_primer_pago",
+              "label": "Fecha del primer pago",
+              "value": "28/02/2025",
+              "y_hint": 202,
+              "label_bbox": {
+                "x": 65.093696,
+                "y": 203.03162079999993,
+                "w": 86.71212160000002,
+                "h": 9.630400000000009
+              },
+              "evidence": {
+                "text": "28/02/2025",
+                "row_y_hint": 202,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 272.6480768,
+                    "y": 203.41154008,
+                    "w": 45.780995519999976,
+                    "h": 9.148879999999963
+                  },
+                  "char_indices": [
+                    105,
+                    106,
+                    107,
+                    108,
+                    109,
+                    110,
+                    111,
+                    112,
+                    113,
+                    114
+                  ],
+                  "n_chars": 10,
+                  "row_y": 203.03162079999993
+                },
+                "liteparse": {
+                  "span_id": 8,
+                  "bbox": {
+                    "x": 272.6481018066406,
+                    "y": 202.43267822265625,
+                    "w": 45.781005859375,
+                    "h": 10.1278076171875
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.5
+                },
+                "docling": {
+                  "cell_ref": "#/tables/0/cells[0][1]",
+                  "bbox": {
+                    "x": 272.6480768,
+                    "y": 205.14067839999996,
+                    "w": 45.78099551999992,
+                    "h": 6.782015732142895
+                  },
+                  "column_header": false,
+                  "row_header": false
+                },
+                "rect": {
+                  "rect_id": "p5-r4",
+                  "bbox": {
+                    "x": 267.7943552,
+                    "y": 196.97409920000007,
+                    "w": 269.4971136000001,
+                    "h": 20.80166399999996
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 218.8623964800001,
+                  "ends_at_x": 537.2914688000001
+                },
+                "cell_bbox": {
+                  "x": 272.6480768,
+                  "y": 203.41154008,
+                  "w": 45.780995519999976,
+                  "h": 9.148879999999963
+                },
+                "engine_agreement": 3
+              },
+              "bbox": {
+                "x": 272.6480768,
+                "y": 203.41154008,
+                "w": 45.780995519999976,
+                "h": 9.148879999999963
+              }
+            },
+            {
+              "type": "kv_leaf",
+              "id": "fecha_ultimo_pago",
+              "label": "Fecha del último pago (fin de préstamo)",
+              "value": "30/07/2027",
+              "y_hint": 229,
+              "label_bbox": {
+                "x": 65.093696,
+                "y": 230.07378400000005,
+                "w": 151.82325599999996,
+                "h": 9.630400000000009
+              },
+              "evidence": {
+                "text": "30/07/2027",
+                "row_y_hint": 229,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 272.6480768,
+                    "y": 230.45370328000013,
+                    "w": 45.780995519999976,
+                    "h": 9.148879999999963
+                  },
+                  "char_indices": [
+                    148,
+                    149,
+                    150,
+                    151,
+                    152,
+                    153,
+                    154,
+                    155,
+                    156,
+                    157
+                  ],
+                  "n_chars": 10,
+                  "row_y": 230.07378400000005
+                },
+                "liteparse": {
+                  "span_id": 10,
+                  "bbox": {
+                    "x": 272.6481018066406,
+                    "y": 229.47479248046875,
+                    "w": 45.781005859375,
+                    "h": 10.1278076171875
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.5
+                },
+                "docling": {
+                  "cell_ref": "#/tables/0/cells[1][1]",
+                  "bbox": {
+                    "x": 272.6480768,
+                    "y": 232.18284159999996,
+                    "w": 45.78099551999992,
+                    "h": 6.782015732142895
+                  },
+                  "column_header": false,
+                  "row_header": false
+                },
+                "rect": {
+                  "rect_id": "p5-r6",
+                  "bbox": {
+                    "x": 267.7943552,
+                    "y": 224.247392,
+                    "w": 269.4971136000001,
+                    "h": 20.80166399999996
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 218.8623964800001,
+                  "ends_at_x": 537.2914688000001
+                },
+                "cell_bbox": {
+                  "x": 272.6480768,
+                  "y": 230.45370328000013,
+                  "w": 45.780995519999976,
+                  "h": 9.148879999999963
+                },
+                "engine_agreement": 3
+              },
+              "bbox": {
+                "x": 272.6480768,
+                "y": 230.45370328000013,
+                "w": 45.780995519999976,
+                "h": 9.148879999999963
+              }
+            }
+          ],
+          "title_bbox": {
+            "x": 59.5465856,
+            "y": 154.1968254400001,
+            "w": 73.71878592,
+            "h": 10.593439999999987
+          },
+          "container_bbox": {
+            "x": 73.183232,
+            "y": 177.54091504000007,
+            "w": 245.24584031999999,
+            "h": 62.06166824000002
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "2. DURACIÓN",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 59.5465856,
+                  "y": 154.1968254400001,
+                  "w": 73.71878592,
+                  "h": 10.593439999999987
+                },
+                "char_indices": [
+                  70,
+                  71,
+                  72,
+                  73,
+                  74,
+                  75,
+                  76,
+                  77,
+                  78,
+                  79
+                ],
+                "n_chars": 10,
+                "row_y": 154.1968254400001
+              },
+              "liteparse": {
+                "span_id": 5,
+                "bbox": {
+                  "x": 59.54658889770508,
+                  "y": 152.9786376953125,
+                  "w": 73.71876525878906,
+                  "h": 11.81170654296875
+                },
+                "case_class": "UPPER",
+                "is_bold": false,
+                "font_size": 11.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/257",
+                "bbox": {
+                  "x": 59.5465856,
+                  "y": 156.19898560000001,
+                  "w": 73.71878592000003,
+                  "h": 7.839614336283262
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "bbox": {
+                "x": 59.5465856,
+                "y": 154.1968254400001,
+                "w": 73.71878592,
+                "h": 10.593439999999987
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 73.183232,
+                "y": 177.54091504000007,
+                "w": 245.24584031999999,
+                "h": 62.06166824000002
+              },
+              "pdfplumber_rect": {
+                "rect_id": "p5-r0",
+                "bbox": {
+                  "x": 46.603328000000005,
+                  "y": 100.84344639999995,
+                  "w": 498.54654719999996,
+                  "h": 706.1009280000001
+                }
+              },
+              "docling_block": null,
+              "edges_inside": {
+                "vertical": 18,
+                "horizontal": 27
+              },
+              "colons_inside": 0,
+              "container_score": 2
+            },
+            "structural_signals": {
+              "kind": "section",
+              "n_children": 3,
+              "child_type_distribution": {
+                "kv_leaf": 3
+              },
+              "path": "B. CONDICIONES PARTICULARES/2. DURACIÓN"
+            }
+          }
+        },
+        {
+          "type": "section",
+          "id": "condiciones_economicas",
+          "title": "3. CONDICIONES ECONÓMICAS",
+          "y_hint": 251,
+          "children": [
+            {
+              "type": "table",
+              "id": "condiciones_economicas_table",
+              "title": "Condiciones económicas",
+              "y_hint": 274,
+              "columns": [
+                {
+                  "id": "label",
+                  "label": "Concepto",
+                  "type": "text"
+                },
+                {
+                  "id": "value",
+                  "label": "Valor",
+                  "type": "text"
+                }
+              ],
+              "rows": [
+                {
+                  "label": {
+                    "text": "TIN (Tipo de Interés Nominal, anual y fijo)",
+                    "evidence": {
+                      "text": "TIN (Tipo de Interés Nominal, anual y fijo)",
+                      "row_y_hint": 274,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 274.6817967999999,
+                          "w": 157.8326256,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          181,
+                          182,
+                          183,
+                          184,
+                          185,
+                          186,
+                          187,
+                          188,
+                          189,
+                          190,
+                          191,
+                          192,
+                          193,
+                          194,
+                          195,
+                          196,
+                          197,
+                          198,
+                          199,
+                          200
+                        ],
+                        "n_chars": 36,
+                        "row_y": 274.33999999999924
+                      },
+                      "liteparse": null,
+                      "docling": null,
+                      "rect": {
+                        "rect_id": "p5-r7",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 269.3369248,
+                          "w": 206.3987328,
+                          "h": 20.801664000000073
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.093696,
+                        "y": 274.6817967999999,
+                        "w": 157.8326256,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 1
+                    },
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 274.6817967999999,
+                      "w": 157.8326256,
+                      "h": 9.630400000000009
+                    }
+                  },
+                  "value": {
+                    "text": "0,00 %",
+                    "evidence": {
+                      "text": "0,00 %",
+                      "row_y_hint": 274,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 275.06171608,
+                          "w": 28.241629520000004,
+                          "h": 9.148879999999963
+                        },
+                        "char_indices": [
+                          217,
+                          218,
+                          219,
+                          220,
+                          221
+                        ],
+                        "n_chars": 5,
+                        "row_y": 274.33999999999924
+                      },
+                      "liteparse": {
+                        "span_id": 13,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 274.0828857421875,
+                          "w": 28.24163818359375,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "none",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": null,
+                      "rect": {
+                        "rect_id": "p5-r8",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 268.8554048000001,
+                          "w": 269.4971136000001,
+                          "h": 20.80166399999996
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6480768,
+                        "y": 275.06171608,
+                        "w": 28.241629520000004,
+                        "h": 9.148879999999963
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 275.06171608,
+                      "w": 28.241629520000004,
+                      "h": 9.148879999999963
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "TAE (Tasa Anual Equivalente)",
+                    "evidence": {
+                      "text": "TAE (Tasa Anual Equivalente)",
+                      "row_y_hint": 301,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 301.95508959999995,
+                          "w": 116.46042720000003,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          222,
+                          223,
+                          224,
+                          225,
+                          226,
+                          227,
+                          228,
+                          229,
+                          230,
+                          231,
+                          232,
+                          233,
+                          234,
+                          235,
+                          236,
+                          237,
+                          238,
+                          239,
+                          240,
+                          241
+                        ],
+                        "n_chars": 25,
+                        "row_y": 301.95508959999995
+                      },
+                      "liteparse": null,
+                      "docling": null,
+                      "rect": {
+                        "rect_id": "p5-r9",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 296.61021759999994,
+                          "w": 206.3987328,
+                          "h": 20.801664000000073
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.093696,
+                        "y": 301.95508959999995,
+                        "w": 116.46042720000003,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 1
+                    },
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 301.95508959999995,
+                      "w": 116.46042720000003,
+                      "h": 9.630400000000009
+                    }
+                  },
+                  "value": {
+                    "text": "2,71 %",
+                    "evidence": {
+                      "text": "2,71 %",
+                      "row_y_hint": 301,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 302.33500888000003,
+                          "w": 28.241629520000004,
+                          "h": 9.148879999999963
+                        },
+                        "char_indices": [
+                          247,
+                          248,
+                          249,
+                          250,
+                          251
+                        ],
+                        "n_chars": 5,
+                        "row_y": 301.95508959999995
+                      },
+                      "liteparse": {
+                        "span_id": 15,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 301.35614013671875,
+                          "w": 28.24163818359375,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "none",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": null,
+                      "rect": {
+                        "rect_id": "p5-r10",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 296.1286976,
+                          "w": 269.4971136000001,
+                          "h": 20.80166399999996
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6480768,
+                        "y": 302.33500888000003,
+                        "w": 28.241629520000004,
+                        "h": 9.148879999999963
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 302.33500888000003,
+                      "w": 28.241629520000004,
+                      "h": 9.148879999999963
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Interés en caso de demora o retraso en el pago (mensual)",
+                    "evidence": {
+                      "text": "Interés en caso de demora o retraso en el pago (mensual)",
+                      "row_y_hint": 328,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 16,
+                        "bbox": {
+                          "x": 65.09369659423828,
+                          "y": 328.197998046875,
+                          "w": 199.73446655273438,
+                          "h": 10.66082763671875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/tables/0/cells[5][0]",
+                        "bbox": {
+                          "x": 65.09369599999995,
+                          "y": 331.04852800000003,
+                          "w": 199.73449599999998,
+                          "h": 18.46431432857139
+                        },
+                        "column_header": false,
+                        "row_header": false
+                      },
+                      "rect": {
+                        "rect_id": "p5-r11",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 323.65238079999995,
+                          "w": 206.3987328,
+                          "h": 31.664755200000002
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.09369659423828,
+                        "y": 328.197998046875,
+                        "w": 199.73446655273438,
+                        "h": 10.66082763671875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 328.197998046875,
+                      "w": 199.73446655273438,
+                      "h": 10.66082763671875
+                    }
+                  },
+                  "value": {
+                    "text": "0,00 %",
+                    "evidence": {
+                      "text": "0,00 %",
+                      "row_y_hint": 331,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 332.38185687999993,
+                          "w": 28.241629520000004,
+                          "h": 9.14888000000002
+                        },
+                        "char_indices": [
+                          298,
+                          299,
+                          300,
+                          301,
+                          302
+                        ],
+                        "n_chars": 5,
+                        "row_y": 332.38185687999993
+                      },
+                      "liteparse": {
+                        "span_id": 17,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 331.4029541015625,
+                          "w": 28.24163818359375,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "none",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": null,
+                      "rect": {
+                        "rect_id": "p5-r12",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 323.1708608,
+                          "w": 269.4971136000001,
+                          "h": 31.664755199999945
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6480768,
+                        "y": 332.38185687999993,
+                        "w": 28.241629520000004,
+                        "h": 9.14888000000002
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 332.38185687999993,
+                      "w": 28.241629520000004,
+                      "h": 9.14888000000002
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Precio del servicio",
+                    "evidence": {
+                      "text": "Precio del servicio",
+                      "row_y_hint": 366,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 367.3647664,
+                          "w": 69.37740160000001,
+                          "h": 9.630399999999952
+                        },
+                        "char_indices": [
+                          303,
+                          304,
+                          305,
+                          306,
+                          307,
+                          308,
+                          309,
+                          310,
+                          311,
+                          312,
+                          313,
+                          314,
+                          315,
+                          316,
+                          317,
+                          318,
+                          319
+                        ],
+                        "n_chars": 17,
+                        "row_y": 365.5399999999994
+                      },
+                      "liteparse": null,
+                      "docling": {
+                        "cell_ref": "#/tables/0/cells[6][0]",
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 369.184912,
+                          "w": 69.37740160000004,
+                          "h": 7.138963928571457
+                        },
+                        "column_header": false,
+                        "row_header": false
+                      },
+                      "rect": {
+                        "rect_id": "p5-r13",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 362.01989439999994,
+                          "w": 206.3987328,
+                          "h": 20.801664000000017
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.093696,
+                        "y": 367.3647664,
+                        "w": 69.37740160000001,
+                        "h": 9.630399999999952
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 367.3647664,
+                      "w": 69.37740160000001,
+                      "h": 9.630399999999952
+                    }
+                  },
+                  "value": {
+                    "text": "87,50 EUROS",
+                    "evidence": {
+                      "text": "87,50 EUROS",
+                      "row_y_hint": 366,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 367.74468568,
+                          "w": 57.95767327999994,
+                          "h": 9.14888000000002
+                        },
+                        "char_indices": [
+                          320,
+                          321,
+                          322,
+                          323,
+                          324,
+                          325,
+                          326,
+                          327,
+                          328,
+                          329
+                        ],
+                        "n_chars": 10,
+                        "row_y": 365.5399999999994
+                      },
+                      "liteparse": {
+                        "span_id": 20,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 366.7657775878906,
+                          "w": 57.9576416015625,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": {
+                        "cell_ref": "#/tables/0/cells[6][1]",
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 369.473824,
+                          "w": 57.957673279999995,
+                          "h": 6.782015732142895
+                        },
+                        "column_header": false,
+                        "row_header": false
+                      },
+                      "rect": {
+                        "rect_id": "p5-r14",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 361.53837439999995,
+                          "w": 269.4971136000001,
+                          "h": 20.801664000000017
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6480768,
+                        "y": 367.74468568,
+                        "w": 57.95767327999994,
+                        "h": 9.14888000000002
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 367.74468568,
+                      "w": 57.95767327999994,
+                      "h": 9.14888000000002
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Comisión de estudio",
+                    "evidence": {
+                      "text": "Comisión de estudio",
+                      "row_y_hint": 393,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 394.63805919999993,
+                          "w": 78.39145600000003,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          330,
+                          331,
+                          332,
+                          333,
+                          334,
+                          335,
+                          336,
+                          337,
+                          338,
+                          339,
+                          340,
+                          341,
+                          342,
+                          343,
+                          344,
+                          345,
+                          346
+                        ],
+                        "n_chars": 17,
+                        "row_y": 394.33999999999946
+                      },
+                      "liteparse": null,
+                      "docling": null,
+                      "rect": {
+                        "rect_id": "p5-r15",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 389.2931871999999,
+                          "w": 206.3987328,
+                          "h": 20.801664000000017
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.093696,
+                        "y": 394.63805919999993,
+                        "w": 78.39145600000003,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 1
+                    },
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 394.63805919999993,
+                      "w": 78.39145600000003,
+                      "h": 9.630400000000009
+                    }
+                  },
+                  "value": {
+                    "text": "0 EUROS",
+                    "evidence": {
+                      "text": "0 EUROS",
+                      "row_y_hint": 394,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 395.01797847999995,
+                          "w": 39.92956448000001,
+                          "h": 9.14888000000002
+                        },
+                        "char_indices": [
+                          347,
+                          348,
+                          349,
+                          350,
+                          351,
+                          352
+                        ],
+                        "n_chars": 6,
+                        "row_y": 394.33999999999946
+                      },
+                      "liteparse": {
+                        "span_id": 22,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 394.0390930175781,
+                          "w": 39.929534912109375,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": {
+                        "cell_ref": "#/tables/0/cells[6][1]",
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 369.473824,
+                          "w": 57.957673279999995,
+                          "h": 6.782015732142895
+                        },
+                        "column_header": false,
+                        "row_header": false
+                      },
+                      "rect": {
+                        "rect_id": "p5-r16",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 388.81166719999993,
+                          "w": 269.4971136000001,
+                          "h": 20.801664000000017
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6480768,
+                        "y": 395.01797847999995,
+                        "w": 39.92956448000001,
+                        "h": 9.14888000000002
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 395.01797847999995,
+                      "w": 39.92956448000001,
+                      "h": 9.14888000000002
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Precio de las amortizaciones anticipadas",
+                    "evidence": {
+                      "text": "Precio de las amortizaciones anticipadas",
+                      "row_y_hint": 421,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 421.91135199999997,
+                          "w": 155.74282879999998,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          353,
+                          354,
+                          355,
+                          356,
+                          357,
+                          358,
+                          359,
+                          360,
+                          361,
+                          362,
+                          363,
+                          364,
+                          365,
+                          366,
+                          367,
+                          368,
+                          369,
+                          370,
+                          371,
+                          372
+                        ],
+                        "n_chars": 36,
+                        "row_y": 421.91135199999997
+                      },
+                      "liteparse": null,
+                      "docling": null,
+                      "rect": {
+                        "rect_id": "p5-r17",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 416.56647999999996,
+                          "w": 206.3987328,
+                          "h": 83.66891520000001
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.093696,
+                        "y": 421.91135199999997,
+                        "w": 155.74282879999998,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 1
+                    },
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 421.91135199999997,
+                      "w": 155.74282879999998,
+                      "h": 9.630400000000009
+                    }
+                  },
+                  "value": {
+                    "text": "1%, con un máximo de 0,5% si el pago anticipado se realiza durante el último año, siempre que Usted sea consumidor y el importe total prestado esté entre 200 y 75.000 euros. En el caso de que Usted sea una empresa o una persona física actuando en su ámbito profesional, la comisión de amortización anticipada podrá ser hasta un máximo de un 3%.",
+                    "evidence": {
+                      "text": "1%, con un máximo de 0,5% si el pago anticipado se realiza durante el último año, siempre que Usted sea consumidor y el importe total prestado esté entre 200 y 75.000 euros. En el caso de que Usted sea una empresa o una persona física actuando en su ámbito profesional, la comisión de amortización anticipada podrá ser hasta un máximo de un 3%.",
+                      "row_y_hint": 421,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 24,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 421.3124084472656,
+                          "w": 245.59201049804688,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": {
+                        "cell_ref": "#/tables/0/cells[7][1]",
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 396.7471168,
+                          "w": 39.92956448000001,
+                          "h": 6.782015732142838
+                        },
+                        "column_header": false,
+                        "row_header": false
+                      },
+                      "rect": {
+                        "rect_id": "p5-r18",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 416.08495999999997,
+                          "w": 269.4971136000001,
+                          "h": 83.66891520000001
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6481018066406,
+                        "y": 421.3124084472656,
+                        "w": 245.59201049804688,
+                        "h": 10.1278076171875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 421.3124084472656,
+                      "w": 245.59201049804688,
+                      "h": 10.1278076171875
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Compensación por costes de cobro ante un impago",
+                    "evidence": {
+                      "text": "Compensación por costes de cobro ante un impago",
+                      "row_y_hint": 508,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 509.2783408,
+                          "w": 196.0364223999999,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          671,
+                          672,
+                          673,
+                          674,
+                          675,
+                          676,
+                          677,
+                          678,
+                          679,
+                          680,
+                          681,
+                          682,
+                          683,
+                          684,
+                          685,
+                          686,
+                          687,
+                          688,
+                          689,
+                          690
+                        ],
+                        "n_chars": 40,
+                        "row_y": 509.2783408
+                      },
+                      "liteparse": null,
+                      "docling": null,
+                      "rect": {
+                        "rect_id": "p5-r19",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 503.9334688,
+                          "w": 206.3987328,
+                          "h": 105.39509759999999
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.093696,
+                        "y": 509.2783408,
+                        "w": 196.0364223999999,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 1
+                    },
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 509.2783408,
+                      "w": 196.0364223999999,
+                      "h": 9.630400000000009
+                    }
+                  },
+                  "value": {
+                    "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
+                    "evidence": {
+                      "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
+                      "row_y_hint": 508,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 32,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 508.67938232421875,
+                          "w": 245.64352416992188,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": {
+                        "cell_ref": "#/tables/0/cells[9][1]",
+                        "bbox": {
+                          "x": 272.64807679999996,
+                          "y": 511.3873984,
+                          "w": 245.69269088000004,
+                          "h": 94.3801341321427
+                        },
+                        "column_header": false,
+                        "row_header": false
+                      },
+                      "rect": {
+                        "rect_id": "p5-r20",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 503.4519488,
+                          "w": 269.4971136000001,
+                          "h": 105.39509759999993
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6481018066406,
+                        "y": 508.67938232421875,
+                        "w": 245.64352416992188,
+                        "h": 10.1278076171875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 508.67938232421875,
+                      "w": 245.64352416992188,
+                      "h": 10.1278076171875
+                    }
+                  }
+                }
+              ],
+              "bbox": {
+                "x": 65.093696,
+                "y": 274.6817967999999,
+                "w": 453.1979299765625,
+                "h": 244.22694400000012
+              },
+              "evidence": {
+                "title_signal": {
+                  "text": "Condiciones económicas",
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 76.1879168,
+                      "y": 252.19577584,
+                      "w": 150.63775376,
+                      "h": 10.593439999999987
+                    },
+                    "char_indices": [
+                      160,
+                      161,
+                      162,
+                      163,
+                      164,
+                      165,
+                      166,
+                      167,
+                      168,
+                      169,
+                      170,
+                      171,
+                      172,
+                      173,
+                      174,
+                      175,
+                      176,
+                      177,
+                      178,
+                      179
+                    ],
+                    "n_chars": 21,
+                    "row_y": 252.19577584
+                  },
+                  "liteparse": {
+                    "span_id": 11,
+                    "bbox": {
+                      "x": 59.54658889770508,
+                      "y": 250.9775390625,
+                      "w": 167.27908325195312,
+                      "h": 11.81170654296875
+                    },
+                    "case_class": "UPPER",
+                    "is_bold": false,
+                    "font_size": 11.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/0/cells[2][0]",
+                    "bbox": {
+                      "x": 59.5465856,
+                      "y": 254.19793600000003,
+                      "w": 167.27908495999998,
+                      "h": 7.839614336283262
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "bbox": {
+                    "x": 76.1879168,
+                    "y": 252.19577584,
+                    "w": 150.63775376,
+                    "h": 10.593439999999987
+                  },
+                  "engine_agreement": 3
+                },
+                "container_signal": {
+                  "container_bbox": {
+                    "x": 65.093696,
+                    "y": 274.6817967999999,
+                    "w": 453.1979299765625,
+                    "h": 244.22694400000012
+                  },
+                  "pdfplumber_rect": {
+                    "rect_id": "p5-r0",
+                    "bbox": {
+                      "x": 46.603328000000005,
+                      "y": 100.84344639999995,
+                      "w": 498.54654719999996,
+                      "h": 706.1009280000001
+                    }
+                  },
+                  "docling_block": {
+                    "self_ref": "#/tables/0",
+                    "label": "table",
+                    "bbox": {
+                      "x": 59.33176803588867,
+                      "y": 192.75814819335938,
+                      "w": 478.4832954406738,
+                      "h": 415.0570983886719
+                    }
+                  },
+                  "edges_inside": {
+                    "vertical": 66,
+                    "horizontal": 96
+                  },
+                  "colons_inside": 0,
+                  "container_score": 3
+                },
+                "structural_signals": {
+                  "kind": "table",
+                  "n_columns_declared": 2,
+                  "n_rows_declared": 7,
+                  "n_columns_with_group": 0,
+                  "header_levels": 1,
+                  "vertical_edges_inside": 66,
+                  "horizontal_edges_inside": 96,
+                  "has_docling_table_block": true,
+                  "has_pdfplumber_rect_frame": true
+                }
+              }
+            }
+          ],
+          "title_bbox": {
+            "x": 59.5465856,
+            "y": 252.19577584,
+            "w": 167.27908496000003,
+            "h": 10.593439999999987
+          },
+          "container_bbox": {
+            "x": 65.093696,
+            "y": 274.6817967999999,
+            "w": 453.1979299765625,
+            "h": 244.22694400000012
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "3. CONDICIONES ECONÓMICAS",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 59.5465856,
+                  "y": 252.19577584,
+                  "w": 167.27908496000003,
+                  "h": 10.593439999999987
+                },
+                "char_indices": [
+                  158,
+                  159,
+                  160,
+                  161,
+                  162,
+                  163,
+                  164,
+                  165,
+                  166,
+                  167,
+                  168,
+                  169,
+                  170,
+                  171,
+                  172,
+                  173,
+                  174,
+                  175,
+                  176,
+                  177
+                ],
+                "n_chars": 23,
+                "row_y": 252.19577584
+              },
+              "liteparse": {
+                "span_id": 11,
+                "bbox": {
+                  "x": 59.54658889770508,
+                  "y": 250.9775390625,
+                  "w": 167.27908325195312,
+                  "h": 11.81170654296875
+                },
+                "case_class": "UPPER",
+                "is_bold": false,
+                "font_size": 11.0
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[2][0]",
+                "bbox": {
+                  "x": 59.5465856,
+                  "y": 254.19793600000003,
+                  "w": 167.27908495999998,
+                  "h": 7.839614336283262
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "bbox": {
+                "x": 59.5465856,
+                "y": 252.19577584,
+                "w": 167.27908496000003,
+                "h": 10.593439999999987
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 65.093696,
+                "y": 274.6817967999999,
+                "w": 453.1979299765625,
+                "h": 244.22694400000012
+              },
+              "pdfplumber_rect": {
+                "rect_id": "p5-r0",
+                "bbox": {
+                  "x": 46.603328000000005,
+                  "y": 100.84344639999995,
+                  "w": 498.54654719999996,
+                  "h": 706.1009280000001
+                }
+              },
+              "docling_block": {
+                "self_ref": "#/tables/0",
+                "label": "table",
+                "bbox": {
+                  "x": 59.33176803588867,
+                  "y": 192.75814819335938,
+                  "w": 478.4832954406738,
+                  "h": 415.0570983886719
+                }
+              },
+              "edges_inside": {
+                "vertical": 66,
+                "horizontal": 96
+              },
+              "colons_inside": 0,
+              "container_score": 3
+            },
+            "structural_signals": {
+              "kind": "section",
+              "n_children": 1,
+              "child_type_distribution": {
+                "table": 1
+              },
+              "path": "B. CONDICIONES PARTICULARES/3. CONDICIONES ECONÓMICAS"
+            }
+          }
+        },
+        {
+          "type": "section",
+          "id": "forma_pago",
+          "title": "4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une como Anexo a este contrato)",
+          "y_hint": 615,
+          "children": [
+            {
+              "type": "table",
+              "id": "forma_pago_table_p05",
+              "title": "Forma de pago (parte 1)",
+              "y_hint": 650,
+              "columns": [
+                {
+                  "id": "label",
+                  "label": "Concepto",
+                  "type": "text"
+                },
+                {
+                  "id": "value",
+                  "label": "Valor",
+                  "type": "text"
+                }
+              ],
+              "rows": [
+                {
+                  "label": {
+                    "text": "Importe total a pagar: resultado de sumar el importe total del capital prestado más el importe total de intereses, más el precio del servicio y la comisión de estudio",
+                    "evidence": {
+                      "text": "Importe total a pagar: resultado de sumar el importe total del capital prestado más el importe total de intereses, más el precio del servicio y la comisión de estudio",
+                      "row_y_hint": 650,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 45,
+                        "bbox": {
+                          "x": 65.09369659423828,
+                          "y": 650.8548583984375,
+                          "w": 196.55648803710938,
+                          "h": 10.660888671875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/260",
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 653.7054496,
+                          "w": 196.59498560000011,
+                          "h": 39.959367128571444
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p5-r21",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 646.540432,
+                          "w": 206.3987328,
+                          "h": 48.074956799999995
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.09369659423828,
+                        "y": 650.8548583984375,
+                        "w": 196.55648803710938,
+                        "h": 10.660888671875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 650.8548583984375,
+                      "w": 196.55648803710938,
+                      "h": 10.660888671875
+                    }
+                  },
+                  "value": {
+                    "text": "2.587,50 EUROS (2.500,00 euros del capital prestado + 0 euros de intereses + 87,50 euros de precio del servicio + 0 euros de la comisión de estudio)",
+                    "evidence": {
+                      "text": "2.587,50 EUROS (2.500,00 euros del capital prestado + 0 euros de intereses + 87,50 euros de precio del servicio + 0 euros de la comisión de estudio)",
+                      "row_y_hint": 651,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 46,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 651.2863159179688,
+                          "w": 70.66983032226562,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/263",
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 653.9943616,
+                          "w": 70.66980128,
+                          "h": 6.782015732142781
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p5-r22",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 646.058912,
+                          "w": 269.4971136000001,
+                          "h": 48.074956799999995
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6481018066406,
+                        "y": 651.2863159179688,
+                        "w": 70.66983032226562,
+                        "h": 10.1278076171875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 651.2863159179688,
+                      "w": 70.66983032226562,
+                      "h": 10.1278076171875
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Importe total de intereses",
+                    "evidence": {
+                      "text": "Importe total de intereses",
+                      "row_y_hint": 713,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 714.7525552,
+                          "w": 95.41800320000002,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          1427,
+                          1428,
+                          1429,
+                          1430,
+                          1431,
+                          1432,
+                          1433,
+                          1434,
+                          1435,
+                          1436,
+                          1437,
+                          1438,
+                          1439,
+                          1440,
+                          1441,
+                          1442,
+                          1443,
+                          1444,
+                          1445,
+                          1446
+                        ],
+                        "n_chars": 23,
+                        "row_y": 714.7525552
+                      },
+                      "liteparse": null,
+                      "docling": {
+                        "cell_ref": "#/texts/261",
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 716.5727008,
+                          "w": 95.41800320000002,
+                          "h": 7.138963928571343
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p5-r23",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 709.1765536,
+                          "w": 206.3987328,
+                          "h": 31.664755199999945
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.093696,
+                        "y": 714.7525552,
+                        "w": 95.41800320000002,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 714.7525552,
+                      "w": 95.41800320000002,
+                      "h": 9.630400000000009
+                    }
+                  },
+                  "value": {
+                    "text": "0 EUROS",
+                    "evidence": {
+                      "text": "0 EUROS",
+                      "row_y_hint": 716,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 717.5261104,
+                          "w": 42.27745600000003,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          1450,
+                          1451,
+                          1452,
+                          1453,
+                          1454,
+                          1455,
+                          1456
+                        ],
+                        "n_chars": 7,
+                        "row_y": 714.7525552
+                      },
+                      "liteparse": {
+                        "span_id": 54,
+                        "bbox": {
+                          "x": 272.6480712890625,
+                          "y": 716.4956665039062,
+                          "w": 42.2774658203125,
+                          "h": 10.660888671875
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/264",
+                        "bbox": {
+                          "x": 272.6480767999999,
+                          "y": 675.9516736,
+                          "w": 245.64357584000004,
+                          "h": 28.508198132142752
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p5-r24",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 708.6950336,
+                          "w": 269.4971136000001,
+                          "h": 31.664755199999945
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6480768,
+                        "y": 717.5261104,
+                        "w": 42.27745600000003,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 717.5261104,
+                      "w": 42.27745600000003,
+                      "h": 9.630400000000009
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Forma de pago",
+                    "evidence": {
+                      "text": "Forma de pago",
+                      "row_y_hint": 776,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 777.1575472,
+                          "w": 65.33263360000001,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          1457,
+                          1458,
+                          1459,
+                          1460,
+                          1461,
+                          1462,
+                          1463,
+                          1464,
+                          1465,
+                          1466,
+                          1467
+                        ],
+                        "n_chars": 11,
+                        "row_y": 777.1575472
+                      },
+                      "liteparse": {
+                        "span_id": 58,
+                        "bbox": {
+                          "x": 65.09369659423828,
+                          "y": 776.1271362304688,
+                          "w": 65.3326187133789,
+                          "h": 10.66082763671875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/262",
+                        "bbox": {
+                          "x": 65.093696,
+                          "y": 778.9776928,
+                          "w": 65.33263360000004,
+                          "h": 7.138963928571457
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p5-r25",
+                        "bbox": {
+                          "x": 60.2399744,
+                          "y": 746.6195488,
+                          "w": 206.3987328,
+                          "h": 67.25871359999996
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 65.093696,
+                        "y": 777.1575472,
+                        "w": 65.33263360000001,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 777.1575472,
+                      "w": 65.33263360000001,
+                      "h": 9.630400000000009
+                    }
+                  },
+                  "value": {
+                    "text": "El precio del servicio y la comisión de estudio, cuando las haya, se pagarán una sola vez en el momento de la entrega del dinero, o bien, de manera financiada junto con el resto del importe del préstamo. Las cuotas del préstamo para devolver el dinero prestado se pagarán con periodicidad mensual.",
+                    "evidence": {
+                      "text": "El precio del servicio y la comisión de estudio, cuando las haya, se pagarán una sola vez en el momento de la entrega del dinero, o bien, de manera financiada junto con el resto del importe del préstamo. Las cuotas del préstamo para devolver el dinero prestado se pagarán con periodicidad mensual.",
+                      "row_y_hint": 746,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 55,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 746.0494384765625,
+                          "w": 245.59536743164062,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/266",
+                        "bbox": {
+                          "x": 272.6480767999999,
+                          "y": 748.7574976,
+                          "w": 245.68932024000014,
+                          "h": 39.60241893214288
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p5-r26",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 746.1380288,
+                          "w": 269.4971136000001,
+                          "h": 67.25871359999996
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6481018066406,
+                        "y": 746.0494384765625,
+                        "w": 245.59536743164062,
+                        "h": 10.1278076171875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 746.0494384765625,
+                      "w": 245.59536743164062,
+                      "h": 10.1278076171875
+                    }
+                  }
+                }
+              ],
+              "bbox": {
+                "x": 65.093696,
+                "y": 650.8548583984375,
+                "w": 453.1497732382812,
+                "h": 135.93308880156246
+              },
+              "evidence": {
+                "title_signal": {
+                  "text": "Forma de pago (parte 1)",
+                  "pdfplumber": null,
+                  "liteparse": null,
+                  "docling": null,
+                  "bbox": null,
+                  "engine_agreement": 0
+                },
+                "container_signal": {
+                  "container_bbox": {
+                    "x": 65.093696,
+                    "y": 650.8548583984375,
+                    "w": 453.1497732382812,
+                    "h": 135.93308880156246
+                  },
+                  "pdfplumber_rect": {
+                    "rect_id": "p5-r0",
+                    "bbox": {
+                      "x": 46.603328000000005,
+                      "y": 100.84344639999995,
+                      "w": 498.54654719999996,
+                      "h": 706.1009280000001
+                    }
+                  },
+                  "docling_block": null,
+                  "edges_inside": {
+                    "vertical": 26,
+                    "horizontal": 32
+                  },
+                  "colons_inside": 1,
+                  "container_score": 2
+                },
+                "structural_signals": {
+                  "kind": "table",
+                  "n_columns_declared": 2,
+                  "n_rows_declared": 3,
+                  "n_columns_with_group": 0,
+                  "header_levels": 1,
+                  "vertical_edges_inside": 26,
+                  "horizontal_edges_inside": 32,
+                  "has_docling_table_block": false,
+                  "has_pdfplumber_rect_frame": true
+                }
+              }
+            }
+          ],
+          "title_bbox": null,
+          "container_bbox": {
+            "x": 65.093696,
+            "y": 650.8548583984375,
+            "w": 453.1497732382812,
+            "h": 135.93308880156246
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une como Anexo a este contrato)",
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 43,
+                "bbox": {
+                  "x": 59.54658889770508,
+                  "y": 615.4689331054688,
+                  "w": 453.1257019042969,
+                  "h": 11.81170654296875
+                },
+                "case_class": "mixed",
+                "is_bold": false,
+                "font_size": 11.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/259",
+                "bbox": {
+                  "x": 59.546585599999986,
+                  "y": 618.6893152,
+                  "w": 453.1257286399999,
+                  "h": 20.551742336283155
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "bbox": {
+                "x": 59.54658889770508,
+                "y": 615.4689331054688,
+                "w": 453.1257019042969,
+                "h": 11.81170654296875
+              },
+              "engine_agreement": 2
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 65.093696,
+                "y": 650.8548583984375,
+                "w": 453.1497732382812,
+                "h": 135.93308880156246
+              },
+              "pdfplumber_rect": {
+                "rect_id": "p5-r0",
+                "bbox": {
+                  "x": 46.603328000000005,
+                  "y": 100.84344639999995,
+                  "w": 498.54654719999996,
+                  "h": 706.1009280000001
+                }
+              },
+              "docling_block": null,
+              "edges_inside": {
+                "vertical": 26,
+                "horizontal": 32
+              },
+              "colons_inside": 1,
+              "container_score": 2
+            },
+            "structural_signals": {
+              "kind": "section",
+              "n_children": 1,
+              "child_type_distribution": {
+                "table": 1
+              },
+              "path": "B. CONDICIONES PARTICULARES/4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une como Anexo a este contrato)"
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 59.5465856,
+        "y": 85.32020464000004,
+        "w": 177.27929232000002,
+        "h": 10.593439999999987
+      },
+      "container_bbox": {
+        "x": 65.093696,
+        "y": 130.62160624,
+        "w": 453.1979299765625,
+        "h": 656.16634096
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "B. CONDICIONES PARTICULARES",
+          "pdfplumber": {
+            "bbox": {
+              "x": 59.5465856,
+              "y": 85.32020464000004,
+              "w": 177.27929232000002,
+              "h": 10.593439999999987
+            },
+            "char_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "n_chars": 25,
+            "row_y": 85.32020464000004
+          },
+          "liteparse": {
+            "span_id": 1,
+            "bbox": {
+              "x": 59.54658889770508,
+              "y": 84.1019287109375,
+              "w": 177.27928161621094,
+              "h": 11.81170654296875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 11.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/254",
+            "bbox": {
+              "x": 59.5465856,
+              "y": 87.32236480000006,
+              "w": 177.27929232000002,
+              "h": 7.839614336283262
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 59.5465856,
+            "y": 85.32020464000004,
+            "w": 177.27929232000002,
+            "h": 10.593439999999987
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 65.093696,
+            "y": 130.62160624,
+            "w": 453.1979299765625,
+            "h": 656.16634096
+          },
+          "pdfplumber_rect": {
+            "rect_id": "p5-r0",
+            "bbox": {
+              "x": 46.603328000000005,
+              "y": 100.84344639999995,
+              "w": 498.54654719999996,
+              "h": 706.1009280000001
+            }
+          },
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 118,
+            "horizontal": 193
+          },
+          "colons_inside": 1,
+          "container_score": 2
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 4,
+          "child_type_distribution": {
+            "section": 4
+          },
+          "path": "B. CONDICIONES PARTICULARES"
+        }
+      }
+    }
+  ],
   "sections": [
     {
+      "id": "condiciones_particulares",
       "title": "B. CONDICIONES PARTICULARES",
-      "title_signal": {"size": 11.0, "bold": false, "case": "UPPER", "docling_level": 1, "docling_label": "section_header"},
-      "title_bbox": {"x": 59.5, "y": 84.1, "w": 250.0, "h": 11.8},
-      "container_bbox": null,
-      "bands": []
-    },
-    {
-      "title": "1. IMPORTE TOTAL DEL CAPITAL PRESTADO",
-      "title_signal": {"size": 11.0, "bold": false, "case": "UPPER", "docling_level": 2, "docling_label": "section_header"},
-      "title_bbox": {"x": 59.5, "y": 105.8, "w": 250.0, "h": 11.8},
-      "container_bbox": null,
-      "bands": [
-        {
-          "y_range": [129.5, 153.0],
-          "layout": "free-text",
-          "columns": [
-            {"x_range": [73.2, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
-          ],
-          "rows": [
-            {"row_id": "r1", "y_range": [129.5, 153.0], "cells": [
-              {"col": 0, "text": "2.500,00 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 73.2, "y": 129.5, "w": 120.0, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []}
-          ]
-        }
-      ]
-    },
-    {
-      "title": "2. DURACIÓN",
-      "title_signal": {"size": 11.0, "bold": false, "case": "UPPER", "docling_level": 2, "docling_label": "section_header"},
-      "title_bbox": {"x": 59.5, "y": 153.0, "w": 100.0, "h": 11.8},
-      "container_bbox": null,
-      "bands": [
-        {
-          "y_range": [176.4, 202.0],
-          "layout": "2-col",
-          "columns": [
-            {"x_range": [65.1, 265.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
-            {"x_range": [272.6, 540.0], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0}
-          ],
-          "rows": [
-            {"row_id": "r2", "y_range": [176.4, 202.0], "cells": [
-              {"col": 0, "text": "30 MESES", "role": "VALUE_TEXT", "bbox": {"x": 73.2, "y": 176.4, "w": 70.0, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []},
-            {"row_id": "r3", "y_range": [202.0, 230.0], "cells": [
-              {"col": 0, "text": "Fechadelprimerpago", "role": "LABEL", "bbox": {"x": 65.1, "y": 202.0, "w": 110.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "28/02/2025", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 202.4, "w": 70.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []},
-            {"row_id": "r4", "y_range": [229.0, 252.0], "cells": [
-              {"col": 0, "text": "Fechadelúltimopago(findepréstamo)", "role": "LABEL", "bbox": {"x": 65.1, "y": 229.0, "w": 170.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "30/07/2027", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 229.5, "w": 70.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []}
-          ]
-        }
-      ]
-    },
-    {
-      "title": "3. CONDICIONES ECONÓMICAS",
-      "title_signal": {"size": 11.0, "bold": false, "case": "UPPER", "docling_level": 2, "docling_label": "section_header"},
-      "title_bbox": {"x": 59.5, "y": 251.0, "w": 200.0, "h": 11.8},
-      "container_bbox": null,
-      "bands": [
-        {
-          "y_range": [273.7, 616.0],
-          "layout": "2-col",
-          "columns": [
-            {"x_range": [65.1, 265.0], "role": "LABEL", "column_header": null, "coherence": 0.95},
-            {"x_range": [272.6, 540.0], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 0.85}
-          ],
-          "rows": [
-            {"row_id": "r5", "y_range": [273.7, 300.0], "cells": [
-              {"col": 0, "text": "TIN (TipodeInterés Nominal,anual y fijo)", "role": "LABEL", "bbox": {"x": 65.1, "y": 273.7, "w": 200.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "0,00 %", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 274.1, "w": 40.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []},
-            {"row_id": "r6", "y_range": [300.9, 328.0], "cells": [
-              {"col": 0, "text": "TAE (Tasa AnualEquivalente)", "role": "LABEL", "bbox": {"x": 65.1, "y": 300.9, "w": 180.0, "h": 10.7}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "2,71 %", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 301.4, "w": 40.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []},
-            {"row_id": "r7", "y_range": [328.2, 366.0], "cells": [
-              {"col": 0, "text": "Interés en caso de demora o retraso en el pago", "role": "LABEL", "bbox": {"x": 65.1, "y": 328.2, "w": 200.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "0,00 %", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 331.4, "w": 40.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": [
-              {"col": 0, "text": "(mensual)", "role": "CLARIFIER", "bbox": {"x": 65.1, "y": 339.5, "w": 45.0, "h": 9.5}}
-            ]},
-            {"row_id": "r8", "y_range": [366.3, 394.0], "cells": [
-              {"col": 0, "text": "Preciodel servicio", "role": "LABEL", "bbox": {"x": 65.1, "y": 366.3, "w": 90.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "87,50 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 366.8, "w": 80.0, "h": 9.5}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []},
-            {"row_id": "r9", "y_range": [393.6, 420.0], "cells": [
-              {"col": 0, "text": "Comisióndeestudio", "role": "LABEL", "bbox": {"x": 65.1, "y": 393.6, "w": 90.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "0 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 394.0, "w": 60.0, "h": 9.5}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []},
-            {"row_id": "r10", "y_range": [420.9, 508.0], "cells": [
-              {"col": 0, "text": "Preciodelasamortizacionesanticipadas", "role": "LABEL", "bbox": {"x": 65.1, "y": 420.9, "w": 190.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "1%, con un máximo de 0,5% si el pago anticipado se realiza durante el último año, siempre que Usted sea consumidor y el importe total prestado esté entre 200 y 75.000 euros. En el caso de que Usted sea una empresa o una persona física actuando en su ámbito profesional, la comisión de amortización anticipada podrá ser hasta un máximo de un 3%.", "role": "VALUE_TEXT", "bbox": {"x": 272.6, "y": 421.3, "w": 265.0, "h": 70.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []},
-            {"row_id": "r11", "y_range": [508.2, 615.0], "cells": [
-              {"col": 0, "text": "Compensaciónpor costesdecobroanteunimpago", "role": "LABEL", "bbox": {"x": 65.1, "y": 508.2, "w": 200.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€.", "role": "VALUE_TEXT", "bbox": {"x": 272.6, "y": 508.7, "w": 265.0, "h": 90.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []}
-          ]
-        }
-      ]
-    },
-    {
-      "title": "4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une con este contrato)",
-      "title_signal": {"size": 11.0, "bold": false, "case": "mixed", "docling_level": 2, "docling_label": "section_header"},
-      "title_bbox": {"x": 59.5, "y": 615.5, "w": 490.0, "h": 23.0},
-      "container_bbox": null,
-      "bands": [
-        {
-          "y_range": [650.9, 815.0],
-          "layout": "2-col",
-          "columns": [
-            {"x_range": [65.1, 265.0], "role": "LABEL", "column_header": null, "coherence": 0.9},
-            {"x_range": [272.6, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.85}
-          ],
-          "rows": [
-            {"row_id": "r12", "y_range": [650.9, 715.0], "cells": [
-              {"col": 0, "text": "Importe total a pagar: resultado de sumar el importe total del capital prestado más el importe total de intereses, más el precio del servicio y la comisión de estudio", "role": "LABEL", "bbox": {"x": 65.1, "y": 650.9, "w": 200.0, "h": 45.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "2.587,50 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 651.3, "w": 100.0, "h": 9.5}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []},
-            {"row_id": "r13", "y_range": [713.7, 750.0], "cells": [
-              {"col": 0, "text": "Importetotaldeintereses", "role": "LABEL", "bbox": {"x": 65.1, "y": 713.7, "w": 120.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "0 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 716.5, "w": 60.0, "h": 10.7}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []},
-            {"row_id": "r14", "y_range": [776.1, 815.0], "cells": [
-              {"col": 0, "text": "Forma de pago", "role": "LABEL", "bbox": {"x": 65.1, "y": 776.1, "w": 70.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
-              {"col": 1, "text": "Las cuotas del préstamo para devolver el dinero prestado se pagarán con periodicidad mensual.", "role": "VALUE_TEXT", "bbox": {"x": 272.6, "y": 789.7, "w": 265.0, "h": 22.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
-            ], "clarifiers": []}
-          ]
-        }
-      ]
+      "title_bbox": {
+        "x": 59.5465856,
+        "y": 85.32020464000004,
+        "w": 177.27929232000002,
+        "h": 10.593439999999987
+      },
+      "container_bbox": {
+        "x": 65.093696,
+        "y": 130.62160624,
+        "w": 453.1979299765625,
+        "h": 656.16634096
+      },
+      "_view": "compat_flat"
     }
   ],
   "kv_pairs": [
-    {"label": "IMPORTE TOTAL DEL CAPITAL PRESTADO", "value": "2.500,00 EUROS", "section": "1. IMPORTE TOTAL DEL CAPITAL PRESTADO", "band": "BAND_A", "column_header": null, "row_y": 105.8, "rule": "case-contrast", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "DURACIÓN", "value": "30 MESES", "section": "2. DURACIÓN", "band": "BAND_A", "column_header": null, "row_y": 153.0, "rule": "case-contrast", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Fechadelprimerpago", "value": "28/02/2025", "section": "2. DURACIÓN", "band": "BAND_A", "column_header": null, "row_y": 202.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Fechadelúltimopago(findepréstamo)", "value": "30/07/2027", "section": "2. DURACIÓN", "band": "BAND_A", "column_header": null, "row_y": 229.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "TIN (TipodeInterés Nominal,anual y fijo)", "value": "0,00 %", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 273.7, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "TAE (Tasa AnualEquivalente)", "value": "2,71 %", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 300.9, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Interés en caso de demora o retraso en el pago", "value": "0,00 %", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 328.2, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Preciodel servicio", "value": "87,50 EUROS", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 366.3, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Comisióndeestudio", "value": "0 EUROS", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 393.6, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Preciodelasamortizacionesanticipadas", "value": "1%, con un máximo de 0,5% si el pago anticipado se realiza durante el último año, siempre que Usted sea consumidor y el importe total prestado esté entre 200 y 75.000 euros. En el caso de que Usted sea una empresa o una persona física actuando en su ámbito profesional, la comisión de amortización anticipada podrá ser hasta un máximo de un 3%.", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 420.9, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Compensaciónpor costesdecobroanteunimpago", "value": "15€ por los recursos que destinaremos a poner al día la deuda impagada.", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 508.2, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Importe total a pagar", "value": "2.587,50 EUROS", "section": "4. FORMA DE PAGO", "band": "BAND_A", "column_header": null, "row_y": 650.9, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Importetotaldeintereses", "value": "0 EUROS", "section": "4. FORMA DE PAGO", "band": "BAND_A", "column_header": null, "row_y": 713.7, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
-    {"label": "Forma de pago", "value": "Las cuotas del préstamo para devolver el dinero prestado se pagarán con periodicidad mensual.", "section": "4. FORMA DE PAGO", "band": "BAND_A", "column_header": null, "row_y": 776.1, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}}
-  ],
-  "noise": [
-    {"text": "Pág. 5 de 33", "bbox": {"x": 517.9, "y": 805.3, "w": 38.3, "h": 9.2}, "reason": "page_footer"},
-    {"text": "Logalty", "bbox": {"x": 581.6, "y": 715.9, "w": 9.1, "h": 33.6}, "reason": "furniture_layer"},
-    {"text": "Guid: 001001-0001-000000134286084.par", "bbox": {"x": 581.6, "y": 687.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
-    {"text": "-", "bbox": {"x": 581.6, "y": 523.9, "w": 9.1, "h": 4.8}, "reason": "furniture_layer"},
-    {"text": "Date:", "bbox": {"x": 581.6, "y": 495.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
-    {"text": "2025/01/27 T", "bbox": {"x": 581.6, "y": 442.3, "w": 9.1, "h": 48.0}, "reason": "furniture_layer"},
-    {"text": "19:41:17", "bbox": {"x": 581.6, "y": 389.5, "w": 9.1, "h": 38.4}, "reason": "furniture_layer"},
-    {"text": "Pages:", "bbox": {"x": 581.6, "y": 298.3, "w": 9.1, "h": 28.8}, "reason": "furniture_layer"}
-  ],
-  "diagnostics": {
-    "engines": {
-      "pdfplumber": {"rects": 140, "lines": 0, "tables": 11, "checkboxes": 0},
-      "docling": {"blocks": 18, "labels": {"page_header": 1, "picture": 2, "section_header": 5, "text": 10, "table": 1}, "section_headers": 5, "tables": 1, "key_value_regions": 0, "field_keys": 0, "checkboxes_selected": 0},
-      "liteparse": {"spans": 73, "bold": 0, "cases": {"lower": 30, "UPPER": 20, "none": 12, "mixed": 5, "Title": 6}}
+    {
+      "label": "IMPORTE TOTAL DEL CAPITAL PRESTADO",
+      "value": "2.500,00 EUROS",
+      "section": "1. IMPORTE TOTAL DEL CAPITAL PRESTADO",
+      "band": null,
+      "column_header": null,
+      "row_y": 129,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 76.1879168,
+        "y": 107.04638704000001,
+        "w": 221.34126144000004,
+        "h": 10.593439999999987
+      },
+      "value_bboxes": [
+        {
+          "x": 73.183232,
+          "y": 130.62160624,
+          "w": 81.81602623999999,
+          "h": 10.593439999999987
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/1. IMPORTE TOTAL DEL CAPITAL PRESTADO",
+        "engine_agreement": 3
+      }
     },
-    "column_coherence": [
-      {"x_range": [65.1, 265.0], "dominant_role": "LABEL", "coherence": 0.95},
-      {"x_range": [272.6, 540.0], "dominant_role": "VALUE_NUMERIC", "coherence": 0.80}
-    ],
-    "agreement": {
-      "section_titles": {"docling_matches_ours": 5, "total": 5},
-      "cell_bold_flags": {"agree": 73, "disagree": 0}
+    {
+      "label": "DURACIÓN",
+      "value": "30 MESES",
+      "section": "2. DURACIÓN",
+      "band": null,
+      "column_header": null,
+      "row_y": 176,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 76.1879168,
+        "y": 154.1968254400001,
+        "w": 57.077454720000006,
+        "h": 10.593439999999987
+      },
+      "value_bboxes": [
+        {
+          "x": 73.183232,
+          "y": 177.54091504000007,
+          "w": 51.87992783999999,
+          "h": 10.593439999999987
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/2. DURACIÓN",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Fecha del primer pago",
+      "value": "28/02/2025",
+      "section": "2. DURACIÓN",
+      "band": null,
+      "column_header": null,
+      "row_y": 202,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 203.03162079999993,
+        "w": 86.71212160000002,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 203.41154008,
+          "w": 45.780995519999976,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/2. DURACIÓN",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Fecha del último pago (fin de préstamo)",
+      "value": "30/07/2027",
+      "section": "2. DURACIÓN",
+      "band": null,
+      "column_header": null,
+      "row_y": 229,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 230.07378400000005,
+        "w": 151.82325599999996,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 230.45370328000013,
+          "w": 45.780995519999976,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/2. DURACIÓN",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "TIN (Tipo de Interés Nominal, anual y fijo)",
+      "value": "0,00 %",
+      "section": "3. CONDICIONES ECONÓMICAS",
+      "band": "Condiciones económicas",
+      "column_header": "Valor",
+      "row_y": 274,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 274.6817967999999,
+        "w": 157.8326256,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 275.06171608,
+          "w": 28.241629520000004,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/3. CONDICIONES ECONÓMICAS",
+        "row": 0,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "TAE (Tasa Anual Equivalente)",
+      "value": "2,71 %",
+      "section": "3. CONDICIONES ECONÓMICAS",
+      "band": "Condiciones económicas",
+      "column_header": "Valor",
+      "row_y": 301,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 301.95508959999995,
+        "w": 116.46042720000003,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 302.33500888000003,
+          "w": 28.241629520000004,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/3. CONDICIONES ECONÓMICAS",
+        "row": 1,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Interés en caso de demora o retraso en el pago (mensual)",
+      "value": "0,00 %",
+      "section": "3. CONDICIONES ECONÓMICAS",
+      "band": "Condiciones económicas",
+      "column_header": "Valor",
+      "row_y": 328,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.09369659423828,
+        "y": 328.197998046875,
+        "w": 199.73446655273438,
+        "h": 10.66082763671875
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 332.38185687999993,
+          "w": 28.241629520000004,
+          "h": 9.14888000000002
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/3. CONDICIONES ECONÓMICAS",
+        "row": 2,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Precio del servicio",
+      "value": "87,50 EUROS",
+      "section": "3. CONDICIONES ECONÓMICAS",
+      "band": "Condiciones económicas",
+      "column_header": "Valor",
+      "row_y": 366,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 367.3647664,
+        "w": 69.37740160000001,
+        "h": 9.630399999999952
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 367.74468568,
+          "w": 57.95767327999994,
+          "h": 9.14888000000002
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/3. CONDICIONES ECONÓMICAS",
+        "row": 3,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Comisión de estudio",
+      "value": "0 EUROS",
+      "section": "3. CONDICIONES ECONÓMICAS",
+      "band": "Condiciones económicas",
+      "column_header": "Valor",
+      "row_y": 393,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 394.63805919999993,
+        "w": 78.39145600000003,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 395.01797847999995,
+          "w": 39.92956448000001,
+          "h": 9.14888000000002
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/3. CONDICIONES ECONÓMICAS",
+        "row": 4,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Precio de las amortizaciones anticipadas",
+      "value": "1%, con un máximo de 0,5% si el pago anticipado se realiza durante el último año, siempre que Usted sea consumidor y el importe total prestado esté entre 200 y 75.000 euros. En el caso de que Usted sea una empresa o una persona física actuando en su ámbito profesional, la comisión de amortización anticipada podrá ser hasta un máximo de un 3%.",
+      "section": "3. CONDICIONES ECONÓMICAS",
+      "band": "Condiciones económicas",
+      "column_header": "Valor",
+      "row_y": 421,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 421.91135199999997,
+        "w": 155.74282879999998,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6481018066406,
+          "y": 421.3124084472656,
+          "w": 245.59201049804688,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/3. CONDICIONES ECONÓMICAS",
+        "row": 5,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Compensación por costes de cobro ante un impago",
+      "value": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
+      "section": "3. CONDICIONES ECONÓMICAS",
+      "band": "Condiciones económicas",
+      "column_header": "Valor",
+      "row_y": 508,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 509.2783408,
+        "w": 196.0364223999999,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6481018066406,
+          "y": 508.67938232421875,
+          "w": 245.64352416992188,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/3. CONDICIONES ECONÓMICAS",
+        "row": 6,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Importe total a pagar: resultado de sumar el importe total del capital prestado más el importe total de intereses, más el precio del servicio y la comisión de estudio",
+      "value": "2.587,50 EUROS (2.500,00 euros del capital prestado + 0 euros de intereses + 87,50 euros de precio del servicio + 0 euros de la comisión de estudio)",
+      "section": "4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une como Anexo a este contrato)",
+      "band": "Forma de pago (parte 1)",
+      "column_header": "Valor",
+      "row_y": 650,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.09369659423828,
+        "y": 650.8548583984375,
+        "w": 196.55648803710938,
+        "h": 10.660888671875
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6481018066406,
+          "y": 651.2863159179688,
+          "w": 70.66983032226562,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une como Anexo a este contrato)",
+        "row": 0,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Importe total de intereses",
+      "value": "0 EUROS",
+      "section": "4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une como Anexo a este contrato)",
+      "band": "Forma de pago (parte 1)",
+      "column_header": "Valor",
+      "row_y": 713,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 714.7525552,
+        "w": 95.41800320000002,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 717.5261104,
+          "w": 42.27745600000003,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une como Anexo a este contrato)",
+        "row": 1,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Forma de pago",
+      "value": "El precio del servicio y la comisión de estudio, cuando las haya, se pagarán una sola vez en el momento de la entrega del dinero, o bien, de manera financiada junto con el resto del importe del préstamo. Las cuotas del préstamo para devolver el dinero prestado se pagarán con periodicidad mensual.",
+      "section": "4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une como Anexo a este contrato)",
+      "band": "Forma de pago (parte 1)",
+      "column_header": "Valor",
+      "row_y": 776,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 777.1575472,
+        "w": 65.33263360000001,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6481018066406,
+          "y": 746.0494384765625,
+          "w": 245.59536743164062,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "B. CONDICIONES PARTICULARES/4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une como Anexo a este contrato)",
+        "row": 2,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "codex",
+    "n_chars": 1866,
+    "n_rows": 108,
+    "n_liteparse_spans": 73,
+    "n_docling_blocks": 19,
+    "n_rects": 140,
+    "kv_pair_breakdown": {
+      "3_eng": 7,
+      "2_eng": 7,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 0,
+      "footnote": 0,
+      "footnote_ref": 0
     }
   },
   "_meta": {
-    "annotator": "kie-extractor",
-    "annotated_at": "Sat Jun  6 22:48:36 CEST 2026",
-    "covers_cases": [7, 8],
-    "needs_review": true
+    "annotator": "codex",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "caixabank_prestamo_condiciones_particulares_header",
+      "caixabank_prestamo_importe_capital_duracion_dates",
+      "caixabank_prestamo_condiciones_economicas_table",
+      "caixabank_prestamo_long_text_value_amortizaciones",
+      "caixabank_prestamo_forma_pago_partial"
+    ],
+    "needs_review": false,
+    "document_type": "Contrato de préstamo CaixaBank Payments & Consumer"
   }
 }

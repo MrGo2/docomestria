@@ -60,16 +60,21 @@ def walk_and_link(structure: list, eng: EngineData) -> tuple[list, list, dict]:
     stats = {"3_eng": 0, "2_eng": 0, "1_eng": 0, "0_eng": 0,
              "empty": 0, "footnote": 0, "footnote_ref": 0}
 
-    def link_text_y(text, y_hint, partner=None):
+    def link_text_y(text, y_hint, partner=None, x_hint=None):
         if isinstance(text, tuple):
-            t, y = text
+            if len(text) == 3:
+                t, y, x = text
+                if x is not None:
+                    x_hint = x
+            else:
+                t, y = text
             return link_cell(eng, t, y if y is not None else y_hint,
-                             partner_bbox=partner)
+                             partner_bbox=partner, x_hint=x_hint)
         if isinstance(text, dict) and "ref" in text:
             return {"ref": text["ref"], "cell_bbox": None, "engine_agreement": 0}
         if text is None:
             return None
-        return link_cell(eng, text, y_hint, partner_bbox=partner)
+        return link_cell(eng, text, y_hint, partner_bbox=partner, x_hint=x_hint)
 
     def visit(node, path, section_title=None, band_title=None):
         if not isinstance(node, dict):
@@ -87,13 +92,17 @@ def walk_and_link(structure: list, eng: EngineData) -> tuple[list, list, dict]:
             node["evidence"] = link_structural_node(eng, node, path)
 
         elif t == "kv_leaf":
-            lev = link_text_y(node.get("label"), node.get("y_hint"))
+            label_x_hint = node.get("label_x_hint")
+            value_x_hint = node.get("x_hint")
+            lev = link_text_y(node.get("label"), node.get("y_hint"),
+                              x_hint=label_x_hint)
             if lev and lev.get("cell_bbox"):
                 node["label_bbox"] = lev["cell_bbox"]
             partner = (lev or {}).get("cell_bbox") if isinstance(lev, dict) else None
             value = node.get("value")
             is_empty = (value is None or value == "" or value == "-")
-            ev = link_text_y(value, node.get("y_hint"), partner=partner) if not is_empty else None
+            ev = link_text_y(value, node.get("y_hint"), partner=partner,
+                             x_hint=value_x_hint) if not is_empty else None
             node["evidence"] = ev
             if ev and ev.get("cell_bbox"):
                 node["bbox"] = ev["cell_bbox"]
@@ -115,11 +124,15 @@ def walk_and_link(structure: list, eng: EngineData) -> tuple[list, list, dict]:
 
         elif t == "kv_group":
             for p in node.get("pairs", []) or []:
-                lev = link_text_y(p.get("label"), p.get("y_hint"))
+                label_x_hint = p.get("label_x_hint")
+                value_x_hint = p.get("x_hint")
+                lev = link_text_y(p.get("label"), p.get("y_hint"),
+                                  x_hint=label_x_hint)
                 partner = (lev or {}).get("cell_bbox") if isinstance(lev, dict) else None
                 pval = p.get("value")
                 is_empty = (pval is None or pval == "" or pval == "-")
-                vev = link_text_y(pval, p.get("y_hint"), partner=partner) if not is_empty else None
+                vev = link_text_y(pval, p.get("y_hint"), partner=partner,
+                                  x_hint=value_x_hint) if not is_empty else None
                 p["evidence"] = {"label": lev, "value": vev}
                 if lev and lev.get("cell_bbox"): p["label_bbox"] = lev["cell_bbox"]
                 if vev and vev.get("cell_bbox"):

@@ -104,8 +104,17 @@ class EngineData:
 
     # ----- char-level text matching ---------------------------------------
     def find_char_bbox(self, target: str, y_hint: float | None = None,
-                       y_tolerance: float = 25) -> dict | None:
-        """Find bbox + char_indices for a row segment matching `target`."""
+                       y_tolerance: float = 25,
+                       x_hint: float | None = None) -> dict | None:
+        """Find bbox + char_indices for a row segment matching `target`.
+
+        When the same row contains multiple matches (e.g. multi-column form
+        with repeated values like "0,00"), `x_hint` disambiguates: among rows
+        matching at the same y-distance, the candidate whose bbox.x is closest
+        to x_hint wins. find_char_bbox iterates row by row finding the first
+        occurrence per row; to handle multi-match rows we additionally search
+        all occurrences when x_hint is set.
+        """
         if not target or target == "-":
             return None
         target_n = _norm(target)
@@ -113,68 +122,99 @@ class EngineData:
             return None
         best = None
         best_dist = float("inf")
+        # Collect all match candidates so we can apply x_hint after picking y.
+        candidates: list[tuple[float, dict]] = []  # (y_dist, match_dict)
         for r in self.rows:
             if y_hint is not None and abs(r["y"] - y_hint) > y_tolerance:
                 continue
             txt_n = _norm(r["text"])
-            idx = txt_n.find(target_n)
-            if idx < 0:
+            # Find ALL occurrences of target in this row (not just first).
+            search_start = 0
+            occurrences: list[int] = []
+            while True:
+                idx = txt_n.find(target_n, search_start)
+                if idx < 0:
+                    break
+                occurrences.append(idx)
+                search_start = idx + 1  # allow overlapping starts
+            if not occurrences:
                 continue
-            # Build per-raw-char → norm-index map
+            # Build pm-aligned raw_to_norm: one entry per pos_map slot.
+            # pm[i] is either a pdfplumber char dict (with possibly multi-char
+            # text like "(cid:159)") or None (synthetic space gap). For each
+            # slot we record the LAST norm-index emitted by its glyph (matches
+            # the original char-aligned semantic which used `n >= norm_start`).
+            pm = r["pos_map"]
             raw_to_norm: list[int] = []
             raw_norm_text = ""
-            for ch in r["text"]:
-                if not ch.strip():
+            for slot in pm:
+                if slot is None:
+                    glyph = " "
+                else:
+                    glyph = slot.get("text", "")
+                if not glyph.strip():
                     nch = " "
                 else:
-                    nch = "".join(c for c in unicodedata.normalize("NFKD", ch.lower())
+                    nch = "".join(c for c in unicodedata.normalize("NFKD", glyph.lower())
                                   if not unicodedata.combining(c))
                 if nch == " " and raw_norm_text.endswith(" "):
+                    # Synthetic / duplicate space: don't emit, point to last pos
                     raw_to_norm.append(len(raw_norm_text) - 1)
                     continue
                 raw_norm_text += nch
+                # Record end-of-glyph (last norm position written)
                 raw_to_norm.append(len(raw_norm_text) - 1)
-            try:
-                norm_start = idx
-                norm_end = idx + len(target_n) - 1
-                raw_start = next(i for i, n in enumerate(raw_to_norm) if n >= norm_start)
-                raw_end = next(i for i, n in enumerate(raw_to_norm) if n >= norm_end)
-            except StopIteration:
-                continue
-            pm = r["pos_map"]
-            cs = raw_start
-            while cs < len(pm) and pm[cs] is None:
-                cs += 1
-            ce = raw_end
-            while ce > 0 and (ce >= len(pm) or pm[ce] is None):
-                ce -= 1
-            if cs > ce:
-                continue
-            matched = [pm[i] for i in range(cs, ce + 1) if pm[i] is not None]
-            if not matched:
-                continue
-            x0 = min(c["x0"] for c in matched)
-            x1 = max(c["x1"] for c in matched)
-            y0 = min(c["y"] for c in matched)
-            y1 = max(c["y_bot"] for c in matched)
-            char_idx = [self.chars.index(c) for c in matched]
-            dist = 0 if y_hint is None else abs(r["y"] - y_hint)
-            if dist < best_dist:
-                best_dist = dist
-                best = {
+            for idx in occurrences:
+                try:
+                    norm_start = idx
+                    norm_end = idx + len(target_n) - 1
+                    raw_start = next(i for i, n in enumerate(raw_to_norm) if n >= norm_start)
+                    raw_end = next(i for i, n in enumerate(raw_to_norm) if n >= norm_end)
+                except StopIteration:
+                    continue
+                cs = raw_start
+                while cs < len(pm) and pm[cs] is None:
+                    cs += 1
+                ce = raw_end
+                while ce > 0 and (ce >= len(pm) or pm[ce] is None):
+                    ce -= 1
+                if cs > ce:
+                    continue
+                matched = [pm[i] for i in range(cs, ce + 1) if pm[i] is not None]
+                if not matched:
+                    continue
+                x0 = min(c["x0"] for c in matched)
+                x1 = max(c["x1"] for c in matched)
+                y0 = min(c["y"] for c in matched)
+                y1 = max(c["y_bot"] for c in matched)
+                char_idx = [self.chars.index(c) for c in matched]
+                dist = 0 if y_hint is None else abs(r["y"] - y_hint)
+                cand = {
                     "bbox": {"x": x0, "y": y0, "w": x1 - x0, "h": y1 - y0},
                     "char_indices": char_idx,
                     "row_y": r["y"],
                 }
-        return best
+                candidates.append((dist, cand))
+        if not candidates:
+            return None
+        # Pick by y-distance first; among ties (or when x_hint set), prefer
+        # the one with bbox.x closest to x_hint.
+        if x_hint is not None:
+            # When x_hint is set, score = (y_dist, |bbox.x - x_hint|) — strict
+            # x preference even across slightly different rows.
+            candidates.sort(key=lambda kv: (kv[0], abs(kv[1]["bbox"]["x"] - x_hint)))
+        else:
+            candidates.sort(key=lambda kv: kv[0])
+        return candidates[0][1]
 
     # ----- LiteParse span matching ----------------------------------------
     def find_span(self, target: str, y_hint: float | None = None,
-                  y_tolerance: float = 25) -> tuple[int | None, dict | None]:
+                  y_tolerance: float = 25,
+                  x_hint: float | None = None) -> tuple[int | None, dict | None]:
         if not target or target == "-":
             return None, None
         target_n = _norm(target)
-        best_id, best_span, best_dist = None, None, float("inf")
+        candidates: list[tuple[float, int, dict]] = []
         for i, sp in enumerate(self.spans):
             sp_n = _norm(sp.get("text", ""))
             if target_n in sp_n or sp_n in target_n:
@@ -182,16 +222,25 @@ class EngineData:
                 if y_hint is not None and abs(sy - y_hint) > y_tolerance:
                     continue
                 dist = 0 if y_hint is None else abs(sy - y_hint)
-                if dist < best_dist:
-                    best_id, best_span, best_dist = i, sp, dist
+                candidates.append((dist, i, sp))
+        if not candidates:
+            return None, None
+        if x_hint is not None:
+            candidates.sort(key=lambda kv: (kv[0],
+                                            abs(kv[2].get("bbox", {}).get("x", 0) - x_hint)))
+        else:
+            candidates.sort(key=lambda kv: kv[0])
+        _, best_id, best_span = candidates[0]
         return best_id, best_span
 
     # ----- Docling block / table-cell matching ----------------------------
     def find_docling_cell(self, target: str, y_hint: float | None = None,
-                          y_tolerance: float = 25) -> tuple[str | None, dict | None]:
+                          y_tolerance: float = 25,
+                          x_hint: float | None = None) -> tuple[str | None, dict | None]:
         if not target or target == "-":
             return None, None
         target_n = _norm(target)
+        cell_candidates: list[tuple[float, str, dict]] = []
         for b in self.blocks:
             if b.get("label") != "table":
                 continue
@@ -210,7 +259,21 @@ class EngineData:
                         if y_hint is not None and bbox:
                             if abs(bbox.get("y", 0) - y_hint) > y_tolerance:
                                 continue
-                        return f"{b.get('self_ref')}/cells[{ri}][{ci}]", c
+                        dist = (0 if y_hint is None or not bbox
+                                else abs(bbox.get("y", 0) - y_hint))
+                        cell_candidates.append(
+                            (dist, f"{b.get('self_ref')}/cells[{ri}][{ci}]", c))
+        if cell_candidates:
+            if x_hint is not None:
+                cell_candidates.sort(
+                    key=lambda kv: (kv[0],
+                                    abs((kv[2].get("bbox") or {}).get("x", 0) - x_hint)))
+            else:
+                cell_candidates.sort(key=lambda kv: kv[0])
+            _, ref, c = cell_candidates[0]
+            return ref, c
+        # Fallback: search non-table blocks
+        block_candidates: list[tuple[float, dict]] = []
         for b in self.blocks:
             btxt = _norm(b.get("text") or "")
             if not btxt:
@@ -220,8 +283,19 @@ class EngineData:
                 if y_hint is not None and bbox:
                     if abs(bbox.get("y", 0) - y_hint) > y_tolerance + 30:
                         continue
-                return b.get("self_ref"), b
-        return None, None
+                dist = (0 if y_hint is None or not bbox
+                        else abs(bbox.get("y", 0) - y_hint))
+                block_candidates.append((dist, b))
+        if not block_candidates:
+            return None, None
+        if x_hint is not None:
+            block_candidates.sort(
+                key=lambda kv: (kv[0],
+                                abs((kv[1].get("bbox") or {}).get("x", 0) - x_hint)))
+        else:
+            block_candidates.sort(key=lambda kv: kv[0])
+        b = block_candidates[0][1]
+        return b.get("self_ref"), b
 
     # ----- containing pdfplumber rect (smallest containing) ---------------
     def find_rect(self, bbox: dict) -> tuple[str | None, dict | None]:

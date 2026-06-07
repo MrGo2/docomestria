@@ -37,6 +37,7 @@
                 "evidence": {
                   "text": "Número de contrato:",
                   "row_y_hint": 127,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -120,6 +121,7 @@
                 "evidence": {
                   "text": "202502270270913",
                   "row_y_hint": 127,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -203,6 +205,7 @@
                 "evidence": {
                   "text": "Fecha de firma:",
                   "row_y_hint": 154,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -284,6 +287,7 @@
                 "evidence": {
                   "text": "25 de Febrero de 2025",
                   "row_y_hint": 154,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -369,6 +373,7 @@
                 "evidence": {
                   "text": "Límite de Crédito:",
                   "row_y_hint": 176,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -453,6 +458,7 @@
                 "evidence": {
                   "text": "1.800,00 euros",
                   "row_y_hint": 176,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -610,6 +616,7 @@
                 "evidence": {
                   "text": "Tipo de interés en las compras realizadas con modalidad de Pago Fraccionado.",
                   "row_y_hint": 217,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 9,
@@ -665,6 +672,7 @@
                 "evidence": {
                   "text": "TIN 9,95% anual (TAE 10,43%). En determinadas compras podrá ofrecerse un TIN inferior, incluso a 0%.",
                   "row_y_hint": 217,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 10,
@@ -720,6 +728,7 @@
                 "evidence": {
                   "text": "Operativa no permitida.",
                   "row_y_hint": 217,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 425.42474239999996,
@@ -808,6 +817,7 @@
                 "evidence": {
                   "text": "Tipo de interés del Pago Fraccionado de las compras realizadas inicialmente bajo la modalidad de Pago Fin de Mes.",
                   "row_y_hint": 284,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 16,
@@ -863,6 +873,7 @@
                 "evidence": {
                   "text": "TIN 14,95% anual (TAE 16,02%) cuando se fraccione el importe a partir de 6 meses, inclusive. Cuando se fraccione el importe de las compras en 3 meses, el tipo de interés será 0%, aplicándose el coste indicado en el apartado \"Precio de los Servicios\" (TAE 19,77%).",
                   "row_y_hint": 284,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 17,
@@ -920,6 +931,7 @@
                 "evidence": {
                   "text": "Tipo de interés en las compras realizadas con modalidad de Pago Aplazado (Revolving).",
                   "row_y_hint": 343,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 24,
@@ -975,6 +987,7 @@
                 "evidence": {
                   "text": "TIN 9,95% anual (TAE 10,42%).",
                   "row_y_hint": 343,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 25,
@@ -1030,6 +1043,7 @@
                 "evidence": {
                   "text": "TIN 20,88% anual (TAE 23%).",
                   "row_y_hint": 343,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 26,
@@ -1087,6 +1101,7 @@
                 "evidence": {
                   "text": "Tipo de interés por demora:",
                   "row_y_hint": 391,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1173,6 +1188,7 @@
                 "evidence": {
                   "text": "Tipo de interés aplicado a cada disposición/operación impagada más dos puntos porcentuales.",
                   "row_y_hint": 387,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 36,
@@ -1230,6 +1246,7 @@
                 "evidence": {
                   "text": "Forma de pago:",
                   "row_y_hint": 473,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1308,6 +1325,7 @@
                 "evidence": {
                   "text": "Si usted ha elegido la modalidad de pago Fin de Mes, realizará el pago total del crédito dispuesto durante el mes, sin intereses, a final de mes. A este importe se le sumará el precio correspondiente al resto de los servicios que le hayamos prestado durante el periodo (comisión o precio por algún servicio que pudiera haber realizado, como por ejemplo, la comisión por retirada de dinero en efectivo en un cajero o la prima del seguro en caso de ser contratado, entre otras). Si usted ha elegido la modalidad de Pago Aplazado (Revolving), realizará el pago del crédito mediante una cuota mensual del importe que usted elija, que incluye capital (parte del crédito total que haya dispuesto ese mes así como anteriores) + intereses + prima del seguro (en caso de ser contratado). Si usted ha elegido la modalidad de Pago Fraccionado, realizará el pago del crédito mediante una cuota mensual en los plazos que acordemos, que incluye la cuota correspondiente al fraccionamiento de la operación solicitada por usted y el importe total de la cuota que haya elegido pagar por el resto del crédito usado + intereses + prima de seguro (en caso de tenerlo contratado). En la modalidad de Pago Aplazado (Revolving)y de Pago Fraccionado, a la cuota se le sumará el precio correspondiente al resto de los servicios que le hayamos prestado durante el periodo (comisión por algún servicio que pudiera haber realizado, como por ejemplo, la comisión por retirada de dinero en efectivo en un cajero, entre otras (excepto la prima del seguro, en caso de ser contratado, que ya se habría incluido en la cuota)).",
                   "row_y_hint": 416,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 38,
@@ -1365,6 +1383,7 @@
                 "evidence": {
                   "text": "Cuota mensual elegida inicialmente para la modalidad de Pago Aplazado (Revolving):",
                   "row_y_hint": 723,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 67,
@@ -1427,6 +1446,7 @@
                 "evidence": {
                   "text": "Cuota mínima para Pago Aplazado (Revolving):",
                   "row_y_hint": 754,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 69,
@@ -1482,6 +1502,7 @@
                 "evidence": {
                   "text": "Usted podrá escoger qué cuota quiere pagar mensualmente, siempre a partir de una cuota mínima que nosotros fijamos aplicando una fórmula que evita que tenga que pagar lo que vaya gastando durante un período de tiempo muy prolongado. Se lo explicamos a continuación.",
                   "row_y_hint": 751,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 74,

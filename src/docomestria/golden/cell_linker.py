@@ -9,16 +9,21 @@ from .engine_data import EngineData
 
 
 def link_cell(eng: EngineData, text: str, y_hint: float,
-              partner_bbox: dict | None = None) -> dict:
+              partner_bbox: dict | None = None,
+              x_hint: float | None = None) -> dict:
     """Link a cell to pdfplumber chars + LiteParse span + Docling cell.
 
     If `partner_bbox` is given (e.g. the label's bbox when linking its value),
     we also detect:
       - colon_signal: is there a ':' between partner_bbox and this cell?
       - value_extent: where does the value END on the right?
+
+    If `x_hint` is given, candidate spans/cells matching at the same y_hint are
+    disambiguated by picking the one whose bbox.x is closest to x_hint. Use
+    this when 2+ siblings share text on the same row (multi-column layouts).
     """
     out = {
-        "text": text, "row_y_hint": y_hint,
+        "text": text, "row_y_hint": y_hint, "x_hint": x_hint,
         "pdfplumber": None, "liteparse": None, "docling": None,
         "rect": None, "colon_signal": None, "value_extent": None,
     }
@@ -30,7 +35,7 @@ def link_cell(eng: EngineData, text: str, y_hint: float,
         return out
 
     # 1) pdfplumber chars
-    cm = eng.find_char_bbox(str(text), y_hint=y_hint)
+    cm = eng.find_char_bbox(str(text), y_hint=y_hint, x_hint=x_hint)
     if cm:
         out["pdfplumber"] = {
             "bbox": cm["bbox"],
@@ -39,7 +44,7 @@ def link_cell(eng: EngineData, text: str, y_hint: float,
             "row_y": cm["row_y"],
         }
     # 2) LiteParse span
-    sid, sp = eng.find_span(str(text), y_hint=y_hint)
+    sid, sp = eng.find_span(str(text), y_hint=y_hint, x_hint=x_hint)
     if sp:
         out["liteparse"] = {
             "span_id": sid, "bbox": sp.get("bbox"),
@@ -48,7 +53,7 @@ def link_cell(eng: EngineData, text: str, y_hint: float,
             "font_size": sp.get("font_size"),
         }
     # 3) Docling cell
-    did, dcell = eng.find_docling_cell(str(text), y_hint=y_hint)
+    did, dcell = eng.find_docling_cell(str(text), y_hint=y_hint, x_hint=x_hint)
     if dcell:
         out["docling"] = {
             "cell_ref": did, "bbox": dcell.get("bbox"),

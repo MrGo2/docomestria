@@ -8,55 +8,6 @@
   "document_type": "Contrato de Préstamo Personal BBVA",
   "structure": [
     {
-      "type": "prose_block",
-      "id": "intro_titulares",
-      "text": "Por una parte, su nombre y apellidos (en adelante “Usted”):",
-      "label": "party_intro_user",
-      "bbox": {
-        "x": 177.7535858154297,
-        "y": 143.89240783691406,
-        "w": 263.44366455078125,
-        "h": 10.000003662109375
-      },
-      "evidence": {
-        "text_signal": {
-          "text": "Por una parte, su nombre y apellidos (en adelante “Usted”):",
-          "liteparse": {
-            "span_id": null,
-            "bbox": {
-              "x": 177.7535858154297,
-              "y": 142.45240783691406,
-              "w": 263.44366455078125,
-              "h": 11.160003662109375
-            },
-            "case_class": "lower",
-            "is_bold": false,
-            "font_size": 10.0,
-            "n_spans_fused": 1
-          },
-          "pdfplumber": {
-            "bbox": {
-              "x": 177.7535858154297,
-              "y": 143.89240783691406,
-              "w": 263.44366455078125,
-              "h": 10.000003662109375
-            },
-            "n_chars": 59
-          },
-          "bbox": {
-            "x": 177.7535858154297,
-            "y": 143.89240783691406,
-            "w": 263.44366455078125,
-            "h": 10.000003662109375
-          },
-          "engine_agreement": 2
-        },
-        "structural_signals": {
-          "kind": "prose_block"
-        }
-      }
-    },
-    {
       "type": "section",
       "id": "identificacion_partes",
       "title": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
@@ -92,6 +43,7 @@
                     "evidence": {
                       "text": "Primer apellido",
                       "row_y_hint": 230,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 191.779999,
@@ -173,6 +125,7 @@
                     "evidence": {
                       "text": "PRIETO",
                       "row_y_hint": 229,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 276.746396,
@@ -247,6 +200,7 @@
                     "evidence": {
                       "text": "Segundo apellido",
                       "row_y_hint": 245,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 191.779999,
@@ -329,6 +283,7 @@
                     "evidence": {
                       "text": "ALVAREZ",
                       "row_y_hint": 245,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 276.746396,
@@ -404,6 +359,7 @@
                     "evidence": {
                       "text": "Nombre",
                       "row_y_hint": 259,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 191.779199,
@@ -476,6 +432,7 @@
                     "evidence": {
                       "text": "JULIA",
                       "row_y_hint": 259,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 246.00239700000003,
@@ -549,6 +506,7 @@
                     "evidence": {
                       "text": "NIF",
                       "row_y_hint": 274,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 191.779199,
@@ -618,6 +576,7 @@
                     "evidence": {
                       "text": "011075308A",
                       "row_y_hint": 274,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 216.0,
@@ -822,6 +781,7 @@
                     "evidence": {
                       "text": "Domicilio fiscal",
                       "row_y_hint": 312,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 191.779999,
@@ -904,6 +864,7 @@
                     "evidence": {
                       "text": "CENERA, 42",
                       "row_y_hint": 313,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 266.248798,
@@ -981,6 +942,7 @@
                     "evidence": {
                       "text": "Código postal",
                       "row_y_hint": 341,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 191.779999,
@@ -1060,6 +1022,7 @@
                     "evidence": {
                       "text": "33600",
                       "row_y_hint": 341,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 266.248798,
@@ -1133,6 +1096,7 @@
                     "evidence": {
                       "text": "Plaza",
                       "row_y_hint": 355,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 191.779199,
@@ -1204,6 +1168,7 @@
                     "evidence": {
                       "text": "MIERES DEL CAMINO",
                       "row_y_hint": 355,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 224.25119700000002,
@@ -1596,274 +1561,6 @@
           "path": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES"
         }
       }
-    },
-    {
-      "type": "section",
-      "id": "bbva_party",
-      "title": "En representación de BBVA",
-      "y_hint": 388,
-      "children": [
-        {
-          "type": "prose_block",
-          "id": "intro_bbva",
-          "text": "Por otra parte, Banco Bilbao Vizcaya Argentaria S.A., (en adelante “BBVA”):",
-          "label": "party_intro_bbva",
-          "bbox": {
-            "x": 178.50228881835938,
-            "y": 390.0388464355469,
-            "w": 337.3644104003906,
-            "h": 9.99997314453125
-          },
-          "evidence": {
-            "text_signal": {
-              "text": "Por otra parte, Banco Bilbao Vizcaya Argentaria S.A., (en adelante “BBVA”):",
-              "liteparse": {
-                "span_id": null,
-                "bbox": {
-                  "x": 178.50228881835938,
-                  "y": 388.5988464355469,
-                  "w": 337.3644104003906,
-                  "h": 11.15997314453125
-                },
-                "case_class": "lower",
-                "is_bold": false,
-                "font_size": 10.0,
-                "n_spans_fused": 1
-              },
-              "pdfplumber": {
-                "bbox": {
-                  "x": 178.50228881835938,
-                  "y": 390.0388464355469,
-                  "w": 337.3644104003906,
-                  "h": 9.99997314453125
-                },
-                "n_chars": 75
-              },
-              "bbox": {
-                "x": 178.50228881835938,
-                "y": 390.0388464355469,
-                "w": 337.3644104003906,
-                "h": 9.99997314453125
-              },
-              "engine_agreement": 2
-            },
-            "structural_signals": {
-              "kind": "prose_block"
-            }
-          }
-        },
-        {
-          "type": "prose_block",
-          "id": "bbva_description",
-          "text": "BBVA tiene su domicilio en la Plaza San Nicolás, número 4 de Bilbao. Su número es el 0182 en el Registro Especial de Instituciones Financieras de España y está sujeto a supervisión y control del Banco de España.",
-          "label": "bbva_description",
-          "bbox": {
-            "x": 188.99993896484375,
-            "y": 356.8971838378906,
-            "w": 343.50799560546875,
-            "h": 93.98083862304688
-          },
-          "evidence": {
-            "text_signal": {
-              "text": "BBVA tiene su domicilio en la Plaza San Nicolás, número 4 de Bilbao. Su número es el 0182 en el Registro Especial de Instituciones Financieras de España y está sujeto a supervisión y control del Banco de España.",
-              "liteparse": {
-                "span_id": null,
-                "bbox": {
-                  "x": 188.99993896484375,
-                  "y": 355.4571838378906,
-                  "w": 343.50799560546875,
-                  "h": 95.14083862304688
-                },
-                "case_class": "lower",
-                "is_bold": false,
-                "font_size": 10.0,
-                "n_spans_fused": 4
-              },
-              "docling": {
-                "cell_ref": "#/texts/34",
-                "bbox": {
-                  "x": 188.999983,
-                  "y": 417.34039900000005,
-                  "w": 343.508,
-                  "h": 32.81461657458567
-                },
-                "label": "text"
-              },
-              "pdfplumber": {
-                "bbox": {
-                  "x": 188.99993896484375,
-                  "y": 356.8971838378906,
-                  "w": 343.50799560546875,
-                  "h": 93.98083862304688
-                },
-                "n_chars": 211
-              },
-              "bbox": {
-                "x": 188.99993896484375,
-                "y": 356.8971838378906,
-                "w": 343.50799560546875,
-                "h": 93.98083862304688
-              },
-              "engine_agreement": 3
-            },
-            "structural_signals": {
-              "kind": "prose_block"
-            }
-          }
-        },
-        {
-          "type": "prose_block",
-          "id": "repr_bbva_header",
-          "text": "En representación de BBVA:",
-          "label": "signature_section_header",
-          "bbox": {
-            "x": 178.5023193359375,
-            "y": 467.88525146484375,
-            "w": 127.28640747070312,
-            "h": 9.99997314453125
-          },
-          "evidence": {
-            "text_signal": {
-              "text": "En representación de BBVA:",
-              "liteparse": {
-                "span_id": null,
-                "bbox": {
-                  "x": 178.5023193359375,
-                  "y": 466.44525146484375,
-                  "w": 127.28640747070312,
-                  "h": 11.15997314453125
-                },
-                "case_class": "mixed",
-                "is_bold": false,
-                "font_size": 10.0,
-                "n_spans_fused": 1
-              },
-              "docling": {
-                "cell_ref": "#/texts/35",
-                "bbox": {
-                  "x": 178.50237000000016,
-                  "y": 468.3451970000001,
-                  "w": 127.28639800000002,
-                  "h": 8.817016574585637
-                },
-                "label": "section_header"
-              },
-              "pdfplumber": {
-                "bbox": {
-                  "x": 178.5023193359375,
-                  "y": 467.88525146484375,
-                  "w": 127.28640747070312,
-                  "h": 9.99997314453125
-                },
-                "n_chars": 26
-              },
-              "bbox": {
-                "x": 178.5023193359375,
-                "y": 467.88525146484375,
-                "w": 127.28640747070312,
-                "h": 9.99997314453125
-              },
-              "engine_agreement": 3
-            },
-            "structural_signals": {
-              "kind": "prose_block"
-            }
-          }
-        },
-        {
-          "type": "signature_placeholder",
-          "id": "signature_bbva_1",
-          "label": "D.",
-          "value": null,
-          "bbox": {
-            "x": 178.50233459472656,
-            "y": 490.4356384277344,
-            "w": 10.0,
-            "h": 11.15997314453125
-          },
-          "evidence": {
-            "liteparse_bbox": {
-              "x": 178.50233459472656,
-              "y": 490.4356384277344,
-              "w": 10.0,
-              "h": 11.15997314453125
-            },
-            "status": "empty"
-          }
-        },
-        {
-          "type": "signature_placeholder",
-          "id": "signature_bbva_2",
-          "label": "D.",
-          "value": null,
-          "bbox": {
-            "x": 178.50233459472656,
-            "y": 514.426025390625,
-            "w": 10.0,
-            "h": 11.15997314453125
-          },
-          "evidence": {
-            "liteparse_bbox": {
-              "x": 178.50233459472656,
-              "y": 514.426025390625,
-              "w": 10.0,
-              "h": 11.15997314453125
-            },
-            "status": "empty"
-          }
-        }
-      ],
-      "title_bbox": {
-        "x": 178.50228881835938,
-        "y": 390.0388464355469,
-        "w": 337.3644104003906,
-        "h": 9.99997314453125
-      },
-      "container_bbox": null,
-      "evidence": {
-        "title_signal": {
-          "text": "Por otra parte, Banco Bilbao Vizcaya Argentaria S.A., (en adelante “BBVA”):",
-          "liteparse": {
-            "span_id": null,
-            "bbox": {
-              "x": 178.50228881835938,
-              "y": 388.5988464355469,
-              "w": 337.3644104003906,
-              "h": 11.15997314453125
-            },
-            "case_class": "lower",
-            "is_bold": false,
-            "font_size": 10.0,
-            "n_spans_fused": 1
-          },
-          "pdfplumber": {
-            "bbox": {
-              "x": 178.50228881835938,
-              "y": 390.0388464355469,
-              "w": 337.3644104003906,
-              "h": 9.99997314453125
-            },
-            "n_chars": 75
-          },
-          "bbox": {
-            "x": 178.50228881835938,
-            "y": 390.0388464355469,
-            "w": 337.3644104003906,
-            "h": 9.99997314453125
-          },
-          "engine_agreement": 2
-        },
-        "container_signal": null,
-        "structural_signals": {
-          "kind": "section",
-          "n_children": 5,
-          "child_type_distribution": {
-            "prose_block": 3,
-            "signature_placeholder": 2
-          },
-          "path": "BBVA (contraparte)"
-        }
-      }
     }
   ],
   "sections": [
@@ -1883,51 +1580,9 @@
         "h": 136.01440200000002
       },
       "_view": "compat_flat"
-    },
-    {
-      "id": "bbva_party",
-      "title": "En representación de BBVA",
-      "title_bbox": {
-        "x": 178.50228881835938,
-        "y": 390.0388464355469,
-        "w": 337.3644104003906,
-        "h": 9.99997314453125
-      },
-      "container_bbox": null,
-      "_view": "compat_flat"
     }
   ],
   "kv_pairs": [
-    {
-      "label": "Referencia del Contrato",
-      "value": "0182-5132-0083-00000000003752",
-      "section": null,
-      "band": "page_header_reference",
-      "column_header": null,
-      "row_y": 91,
-      "rule": "structured-page-header-reference",
-      "confidence": "HIGH",
-      "label_bbox": {
-        "x": 177.75360107421875,
-        "y": 91.75719970703125,
-        "w": 168.53237915039062,
-        "h": 10.000003662109375
-      },
-      "value_bboxes": [
-        {
-          "x": 177.75360107421875,
-          "y": 91.75719970703125,
-          "w": 168.53237915039062,
-          "h": 10.000003662109375
-        }
-      ],
-      "evidence": {
-        "path": "page_header",
-        "engine_agreement": 3,
-        "bucket": "3_eng",
-        "full_text": "Nº 0182-5132-0083-00000000003752"
-      }
-    },
     {
       "label": "Primer apellido",
       "value": "PRIETO",
@@ -2139,190 +1794,7 @@
       }
     }
   ],
-  "noise": [
-    {
-      "type": "noise",
-      "id": "legal_sidebar",
-      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.0",
-      "kind": "rotated_legal_sidebar",
-      "bbox": {
-        "x": 191.77923583984375,
-        "y": 356.8971838378906,
-        "w": 25.009994506835938,
-        "h": 9.99997314453125
-      },
-      "evidence": {
-        "text_signal": {
-          "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.0",
-          "liteparse": {
-            "span_id": null,
-            "bbox": {
-              "x": 191.77923583984375,
-              "y": 355.4571838378906,
-              "w": 25.009994506835938,
-              "h": 11.15997314453125
-            },
-            "case_class": "lower",
-            "is_bold": false,
-            "font_size": 10.0,
-            "n_spans_fused": 1
-          },
-          "docling": {
-            "cell_ref": "#/texts/14",
-            "bbox": {
-              "x": 143.818705,
-              "y": 214.836003,
-              "w": 4.8493591160221,
-              "h": 428.663997
-            },
-            "label": "page_header"
-          },
-          "pdfplumber": {
-            "bbox": {
-              "x": 191.77923583984375,
-              "y": 356.8971838378906,
-              "w": 25.009994506835938,
-              "h": 9.99997314453125
-            },
-            "n_chars": 140
-          },
-          "bbox": {
-            "x": 191.77923583984375,
-            "y": 356.8971838378906,
-            "w": 25.009994506835938,
-            "h": 9.99997314453125
-          },
-          "engine_agreement": 3
-        }
-      }
-    },
-    {
-      "type": "noise",
-      "id": "footer_left",
-      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
-      "kind": "footer",
-      "bbox": {
-        "x": 27.74880027770996,
-        "y": 275.299619140625,
-        "w": 186.25120544433594,
-        "h": 559.9171484375
-      },
-      "evidence": {
-        "text_signal": {
-          "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
-          "liteparse": {
-            "span_id": null,
-            "bbox": {
-              "x": 27.74880027770996,
-              "y": 273.859619140625,
-              "w": 186.25120544433594,
-              "h": 561.0771484375
-            },
-            "case_class": "UPPER",
-            "is_bold": true,
-            "font_size": 10.0,
-            "n_spans_fused": 2
-          },
-          "docling": {
-            "cell_ref": "#/texts/38",
-            "bbox": {
-              "x": 27.7488,
-              "y": 827.528779,
-              "w": 186.25119800000004,
-              "h": 7.053613259668509
-            },
-            "label": "page_footer"
-          },
-          "pdfplumber": {
-            "bbox": {
-              "x": 27.74880027770996,
-              "y": 275.299619140625,
-              "w": 186.25120544433594,
-              "h": 559.9171484375
-            },
-            "n_chars": 43
-          },
-          "bbox": {
-            "x": 27.74880027770996,
-            "y": 275.299619140625,
-            "w": 186.25120544433594,
-            "h": 559.9171484375
-          },
-          "engine_agreement": 3
-        }
-      }
-    },
-    {
-      "type": "noise",
-      "id": "footer_right",
-      "text": "Página 2 de 16",
-      "kind": "page_number",
-      "bbox": {
-        "x": 512.8488159179688,
-        "y": 827.4487890625,
-        "w": 55.59515380859375,
-        "h": 7.767978515625
-      },
-      "evidence": {
-        "text_signal": {
-          "text": "Página 2 de 16",
-          "liteparse": {
-            "span_id": null,
-            "bbox": {
-              "x": 512.8488159179688,
-              "y": 826.0087890625,
-              "w": 55.59515380859375,
-              "h": 8.927978515625
-            },
-            "case_class": "lower",
-            "is_bold": true,
-            "font_size": 8.0,
-            "n_spans_fused": 1
-          },
-          "docling": {
-            "cell_ref": "#/texts/39",
-            "bbox": {
-              "x": 512.848801,
-              "y": 827.528779,
-              "w": 55.59519899999998,
-              "h": 7.053613259668509
-            },
-            "label": "page_footer"
-          },
-          "pdfplumber": {
-            "bbox": {
-              "x": 512.8488159179688,
-              "y": 827.4487890625,
-              "w": 55.59515380859375,
-              "h": 7.767978515625
-            },
-            "n_chars": 14
-          },
-          "bbox": {
-            "x": 512.8488159179688,
-            "y": 827.4487890625,
-            "w": 55.59515380859375,
-            "h": 7.767978515625
-          },
-          "engine_agreement": 3
-        }
-      }
-    },
-    {
-      "type": "noise",
-      "id": "bbva_logo",
-      "kind": "logo_image",
-      "bbox": {
-        "x": 177.753601,
-        "y": 21.39839900000004,
-        "w": 85.5,
-        "h": 28.454398999999967
-      },
-      "evidence": {
-        "source": "image"
-      }
-    }
-  ],
+  "noise": [],
   "diagnostics": {
     "method": "hand-curated structured-model golden, 3-engine linked",
     "annotator": "codex",
@@ -2332,7 +1804,7 @@
     "n_docling_blocks": 28,
     "n_rects": 336,
     "kv_pair_breakdown": {
-      "3_eng": 8,
+      "3_eng": 7,
       "2_eng": 0,
       "1_eng": 0,
       "0_eng": 0,
@@ -2347,10 +1819,7 @@
     "method": "hand-curated reference (structured + 3-engine linked)",
     "covers_cases": [
       "bbva_loan_titulares",
-      "bbva_loan_domicilio",
-      "bbva_loan_bbva_party_block",
-      "bbva_loan_signature_placeholders_empty",
-      "bbva_loan_page_header_reference"
+      "bbva_loan_domicilio"
     ],
     "needs_review": false,
     "document_type": "Contrato de Préstamo Personal BBVA"

@@ -31,6 +31,7 @@
                     "label": {
                       "text": "Personalización de la oferta de productos y servicios según el análisis de sus datos",
                       "row_y_hint": 233,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 11,
@@ -45,12 +46,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/219",
+                        "cell_ref": "#/texts/222",
                         "bbox": {
-                          "x": 59.546585599999986,
-                          "y": 192.65967999999998,
-                          "w": 196.69321568,
-                          "h": 18.327056017699192
+                          "x": 313.55801599999995,
+                          "y": 236.51652160000003,
+                          "w": 9.100728000000004,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -77,6 +78,7 @@
                     "value": {
                       "text": "NO",
                       "row_y_hint": 233,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 348.9208448,
@@ -104,12 +106,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/220",
+                        "cell_ref": "#/texts/223",
                         "bbox": {
-                          "x": 272.6480767999999,
-                          "y": 187.34369919999995,
-                          "w": 251.14253424000015,
-                          "h": 27.58367973214274
+                          "x": 348.9208448,
+                          "y": 236.51652160000003,
+                          "w": 26.994011200000045,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -161,6 +163,7 @@
                     "label": {
                       "text": "Comunicación de la oferta de productos y servicios — Por aplicaciones móviles, entornos digitales y canales electrónicos",
                       "row_y_hint": 329,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 21,
@@ -197,6 +200,7 @@
                     "value": {
                       "text": "NO",
                       "row_y_hint": 329,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 395.3778944,
@@ -224,12 +228,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/227",
+                        "cell_ref": "#/texts/228",
                         "bbox": {
-                          "x": 272.6480768,
-                          "y": 310.7669056,
-                          "w": 103.11895255999997,
-                          "h": 28.576234328571445
+                          "x": 395.3778944,
+                          "y": 332.20417599999996,
+                          "w": 26.994011200000045,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -281,6 +285,7 @@
                     "label": {
                       "text": "Comunicación de la oferta de productos y servicios — Por teléfono",
                       "row_y_hint": 344,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 24,
@@ -327,6 +332,7 @@
                     "value": {
                       "text": "NO",
                       "row_y_hint": 344,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 313.86618880000003,
@@ -354,12 +360,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/227",
+                        "cell_ref": "#/texts/229",
                         "bbox": {
                           "x": 272.6480768,
-                          "y": 310.7669056,
-                          "w": 103.11895255999997,
-                          "h": 28.576234328571445
+                          "y": 347.45872959999997,
+                          "w": 51.927116799999965,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -411,6 +417,7 @@
                     "label": {
                       "text": "Comunicación de la oferta de productos y servicios — Por carta",
                       "row_y_hint": 360,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 27,
@@ -457,6 +464,7 @@
                     "value": {
                       "text": "NO",
                       "row_y_hint": 360,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 395.3778944,
@@ -484,12 +492,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/227",
+                        "cell_ref": "#/texts/234",
                         "bbox": {
-                          "x": 272.6480768,
-                          "y": 310.7669056,
-                          "w": 103.11895255999997,
-                          "h": 28.576234328571445
+                          "x": 395.3778944,
+                          "y": 362.94441279999995,
+                          "w": 26.994011200000045,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -541,6 +549,7 @@
                     "label": {
                       "text": "Cesión de sus datos a otras empresas para la remisión de ofertas de productos y servicios",
                       "row_y_hint": 441,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 38,
@@ -555,12 +564,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/235",
+                        "cell_ref": "#/texts/238",
                         "bbox": {
-                          "x": 59.546585599999986,
-                          "y": 403.2187456,
-                          "w": 196.69321568,
-                          "h": 29.883536017699043
+                          "x": 313.55801599999995,
+                          "y": 444.302032,
+                          "w": 9.100728000000004,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -587,6 +596,7 @@
                     "value": {
                       "text": "NO",
                       "row_y_hint": 441,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 348.9208448,
@@ -614,12 +624,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/236",
+                        "cell_ref": "#/texts/239",
                         "bbox": {
-                          "x": 272.6480767999999,
-                          "y": 397.9027648,
-                          "w": 251.01059776000022,
-                          "h": 27.583679732142855
+                          "x": 348.9208448,
+                          "y": 444.302032,
+                          "w": 26.994011200000045,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -829,6 +839,7 @@
                 "label": {
                   "text": "Firma del Titular",
                   "row_y_hint": 748,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 48.6834944,
@@ -909,6 +920,7 @@
                 "label": {
                   "text": "P. p.",
                   "row_y_hint": 751,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 264.3274112,
@@ -976,6 +988,7 @@
                 "label": {
                   "text": "Dirección Comercial",
                   "row_y_hint": 810,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 264.3274112,
@@ -1057,6 +1070,7 @@
                 "label": {
                   "text": "Código de documento",
                   "row_y_hint": 796,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": null,
                   "docling": null,
@@ -1067,6 +1081,7 @@
                 "value": {
                   "text": "020250227027091300000000000000010024",
                   "row_y_hint": 796,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 364.1753984,
@@ -1149,6 +1164,7 @@
                 "label": {
                   "text": "Mod. documento",
                   "row_y_hint": 804,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": null,
                   "docling": null,
@@ -1159,6 +1175,7 @@
                 "value": {
                   "text": "MOD. (M) 006.PSCC.I.720 (12) - 28 de octubre de 2024",
                   "row_y_hint": 804,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 46.8344576,

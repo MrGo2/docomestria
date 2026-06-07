@@ -34,6 +34,7 @@
               "evidence": {
                 "text": "2.500,00 EUROS",
                 "row_y_hint": 129,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -257,6 +258,7 @@
               "evidence": {
                 "text": "30 MESES",
                 "row_y_hint": 176,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -346,6 +348,7 @@
               "evidence": {
                 "text": "28/02/2025",
                 "row_y_hint": 202,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 272.6480768,
@@ -438,6 +441,7 @@
               "evidence": {
                 "text": "30/07/2027",
                 "row_y_hint": 229,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 272.6480768,
@@ -648,6 +652,7 @@
                     "evidence": {
                       "text": "TIN (Tipo de Interés Nominal, anual y fijo)",
                       "row_y_hint": 274,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 65.093696,
@@ -713,6 +718,7 @@
                     "evidence": {
                       "text": "0,00 %",
                       "row_y_hint": 274,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 272.6480768,
@@ -776,6 +782,7 @@
                     "evidence": {
                       "text": "TAE (Tasa Anual Equivalente)",
                       "row_y_hint": 301,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 65.093696,
@@ -841,6 +848,7 @@
                     "evidence": {
                       "text": "2,71 %",
                       "row_y_hint": 301,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 272.6480768,
@@ -904,6 +912,7 @@
                     "evidence": {
                       "text": "Interés en caso de demora o retraso en el pago (mensual)",
                       "row_y_hint": 328,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 16,
@@ -959,6 +968,7 @@
                     "evidence": {
                       "text": "0,00 %",
                       "row_y_hint": 331,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 272.6480768,
@@ -1022,6 +1032,7 @@
                     "evidence": {
                       "text": "Precio del servicio",
                       "row_y_hint": 366,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 65.093696,
@@ -1094,6 +1105,7 @@
                     "evidence": {
                       "text": "87,50 EUROS",
                       "row_y_hint": 366,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 272.6480768,
@@ -1172,6 +1184,7 @@
                     "evidence": {
                       "text": "Comisión de estudio",
                       "row_y_hint": 393,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 65.093696,
@@ -1234,6 +1247,7 @@
                     "evidence": {
                       "text": "0 EUROS",
                       "row_y_hint": 394,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 272.6480768,
@@ -1265,12 +1279,12 @@
                         "font_size": 9.5
                       },
                       "docling": {
-                        "cell_ref": "#/tables/0/cells[6][1]",
+                        "cell_ref": "#/tables/0/cells[7][1]",
                         "bbox": {
                           "x": 272.6480768,
-                          "y": 369.473824,
-                          "w": 57.957673279999995,
-                          "h": 6.782015732142895
+                          "y": 396.7471168,
+                          "w": 39.92956448000001,
+                          "h": 6.782015732142838
                         },
                         "column_header": false,
                         "row_header": false
@@ -1308,6 +1322,7 @@
                     "evidence": {
                       "text": "Precio de las amortizaciones anticipadas",
                       "row_y_hint": 421,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 65.093696,
@@ -1373,6 +1388,7 @@
                     "evidence": {
                       "text": "1%, con un máximo de 0,5% si el pago anticipado se realiza durante el último año, siempre que Usted sea consumidor y el importe total prestado esté entre 200 y 75.000 euros. En el caso de que Usted sea una empresa o una persona física actuando en su ámbito profesional, la comisión de amortización anticipada podrá ser hasta un máximo de un 3%.",
                       "row_y_hint": 421,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 24,
@@ -1387,12 +1403,12 @@
                         "font_size": 9.5
                       },
                       "docling": {
-                        "cell_ref": "#/tables/0/cells[7][1]",
+                        "cell_ref": "#/tables/0/cells[8][1]",
                         "bbox": {
                           "x": 272.6480768,
-                          "y": 396.7471168,
-                          "w": 39.92956448000001,
-                          "h": 6.782015732142838
+                          "y": 424.0204096,
+                          "w": 245.64261280000005,
+                          "h": 72.4228221321427
                         },
                         "column_header": false,
                         "row_header": false
@@ -1430,6 +1446,7 @@
                     "evidence": {
                       "text": "Compensación por costes de cobro ante un impago",
                       "row_y_hint": 508,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 65.093696,
@@ -1495,6 +1512,7 @@
                     "evidence": {
                       "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
                       "row_y_hint": 508,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 32,
@@ -1817,6 +1835,7 @@
                     "evidence": {
                       "text": "Importe total a pagar: resultado de sumar el importe total del capital prestado más el importe total de intereses, más el precio del servicio y la comisión de estudio",
                       "row_y_hint": 650,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 45,
@@ -1872,6 +1891,7 @@
                     "evidence": {
                       "text": "2.587,50 EUROS (2.500,00 euros del capital prestado + 0 euros de intereses + 87,50 euros de precio del servicio + 0 euros de la comisión de estudio)",
                       "row_y_hint": 651,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 46,
@@ -1929,6 +1949,7 @@
                     "evidence": {
                       "text": "Importe total de intereses",
                       "row_y_hint": 713,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 65.093696,
@@ -2004,6 +2025,7 @@
                     "evidence": {
                       "text": "0 EUROS",
                       "row_y_hint": 716,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 272.6480768,
@@ -2036,12 +2058,12 @@
                         "font_size": 10.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/264",
+                        "cell_ref": "#/texts/265",
                         "bbox": {
-                          "x": 272.6480767999999,
-                          "y": 675.9516736,
-                          "w": 245.64357584000004,
-                          "h": 28.508198132142752
+                          "x": 272.6480768,
+                          "y": 719.3462559999999,
+                          "w": 42.27745600000003,
+                          "h": 7.138963928571457
                         },
                         "column_header": null,
                         "row_header": null
@@ -2079,6 +2101,7 @@
                     "evidence": {
                       "text": "Forma de pago",
                       "row_y_hint": 776,
+                      "x_hint": null,
                       "pdfplumber": {
                         "bbox": {
                           "x": 65.093696,
@@ -2156,6 +2179,7 @@
                     "evidence": {
                       "text": "El precio del servicio y la comisión de estudio, cuando las haya, se pagarán una sola vez en el momento de la entrega del dinero, o bien, de manera financiada junto con el resto del importe del préstamo. Las cuotas del préstamo para devolver el dinero prestado se pagarán con periodicidad mensual.",
                       "row_y_hint": 746,
+                      "x_hint": null,
                       "pdfplumber": null,
                       "liteparse": {
                         "span_id": 55,
