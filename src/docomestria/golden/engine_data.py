@@ -23,6 +23,24 @@ def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", s.lower().strip())
 
 
+def _contains(target_n: str, cand_n: str) -> bool:
+    """Bidirectional containment, whitespace-insensitive.
+
+    Engines frequently fuse a value with its unit or a neighbour cell
+    ("7,99%anual" in LiteParse, "Tipo deudor 7,99 %anual" in Docling), so the
+    spaced golden text ("7,99% anual") never substring-matches. Comparing with
+    spaces removed recovers the link without affecting positional disambiguation
+    (y_hint/x_hint still pick the right candidate).
+    """
+    if not target_n or not cand_n:
+        return False
+    if target_n in cand_n or cand_n in target_n:
+        return True
+    t_ns = target_n.replace(" ", "")
+    c_ns = cand_n.replace(" ", "")
+    return bool(t_ns) and (t_ns in c_ns or c_ns in t_ns)
+
+
 class EngineData:
     """All engine output for one PDF page, in page-relative pt coordinates."""
 
@@ -128,16 +146,33 @@ class EngineData:
             if y_hint is not None and abs(r["y"] - y_hint) > y_tolerance:
                 continue
             txt_n = _norm(r["text"])
-            # Find ALL occurrences of target in this row (not just first).
+            # Find ALL occurrences of target in this row (not just first), as
+            # (norm_start, norm_end) inclusive index pairs.
+            occ_spans: list[tuple[int, int]] = []
             search_start = 0
-            occurrences: list[int] = []
             while True:
                 idx = txt_n.find(target_n, search_start)
                 if idx < 0:
                     break
-                occurrences.append(idx)
+                occ_spans.append((idx, idx + len(target_n) - 1))
                 search_start = idx + 1  # allow overlapping starts
-            if not occurrences:
+            if not occ_spans:
+                # Whitespace-insensitive fallback: engines fuse a value with its
+                # unit/neighbour ("7,99%anual"), so the spaced target won't
+                # substring-match. Retry without spaces, mapping no-space
+                # positions back to norm indices so char bboxes stay tight.
+                target_ns = target_n.replace(" ", "")
+                ns_to_norm = [i for i, ch in enumerate(txt_n) if ch != " "]
+                txt_ns = "".join(txt_n[i] for i in ns_to_norm)
+                s2 = 0
+                while target_ns:
+                    j = txt_ns.find(target_ns, s2)
+                    if j < 0:
+                        break
+                    occ_spans.append(
+                        (ns_to_norm[j], ns_to_norm[j + len(target_ns) - 1]))
+                    s2 = j + 1
+            if not occ_spans:
                 continue
             # Build pm-aligned raw_to_norm: one entry per pos_map slot.
             # pm[i] is either a pdfplumber char dict (with possibly multi-char
@@ -164,10 +199,8 @@ class EngineData:
                 raw_norm_text += nch
                 # Record end-of-glyph (last norm position written)
                 raw_to_norm.append(len(raw_norm_text) - 1)
-            for idx in occurrences:
+            for norm_start, norm_end in occ_spans:
                 try:
-                    norm_start = idx
-                    norm_end = idx + len(target_n) - 1
                     raw_start = next(i for i, n in enumerate(raw_to_norm) if n >= norm_start)
                     raw_end = next(i for i, n in enumerate(raw_to_norm) if n >= norm_end)
                 except StopIteration:
@@ -217,7 +250,7 @@ class EngineData:
         candidates: list[tuple[float, int, dict]] = []
         for i, sp in enumerate(self.spans):
             sp_n = _norm(sp.get("text", ""))
-            if target_n in sp_n or sp_n in target_n:
+            if _contains(target_n, sp_n):
                 sy = sp.get("bbox", {}).get("y", 0)
                 if y_hint is not None and abs(sy - y_hint) > y_tolerance:
                     continue
@@ -254,7 +287,7 @@ class EngineData:
                     ctxt = _norm(c.get("text") or "")
                     if not ctxt:
                         continue
-                    if target_n in ctxt or ctxt in target_n:
+                    if _contains(target_n, ctxt):
                         bbox = c.get("bbox")
                         if y_hint is not None and bbox:
                             if abs(bbox.get("y", 0) - y_hint) > y_tolerance:
@@ -278,7 +311,7 @@ class EngineData:
             btxt = _norm(b.get("text") or "")
             if not btxt:
                 continue
-            if target_n in btxt or btxt in target_n:
+            if _contains(target_n, btxt):
                 bbox = b.get("bbox")
                 if y_hint is not None and bbox:
                     if abs(bbox.get("y", 0) - y_hint) > y_tolerance + 30:
