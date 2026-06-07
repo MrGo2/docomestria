@@ -1,0 +1,138 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/43631720F_CONTRATO-p13.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/43631720F_CONTRATO.pdf",
+  "page": 13,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 19,
+    "populated_kv": 13,
+    "empty_kv": 6,
+    "high": 0,
+    "medium": 2,
+    "low": 1,
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "MEDIUM",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=caracteristicas_producto / kv_group.id=importe_total_credito / label='Importe del Préstamo Mercantil/AUTO'",
+      "evidence": {
+        "golden_label": "Importe del Préstamo Mercantil/AUTO",
+        "golden_value": "17.407,00",
+        "pdf_text_found": "17.407,00 euros",
+        "atoms_span_match": {
+          "text": "17.407,00",
+          "y": 566.69,
+          "x": 285.82,
+          "font_size": 6.5
+        },
+        "atoms_unit_span": {
+          "text": "euros",
+          "y": 568.88,
+          "x": 318.18,
+          "source": "docling_block"
+        },
+        "comment": "The liteparse span captures only '17.407,00' at y=566.69. A docling block at y=568.88 x=318.18 places 'euros' on the same row (Δy=2.2pt). The PDF visual confirms '17.407,00 euros' on one line. The liteparse span for 'euros' at y=575.10 x=317.95 is on the line below (Importe CC row), causing the extractor to omit the unit. The golden value is numerically correct but misses the unit text."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "Importe del Préstamo Mercantil/AUTO",
+        "params": {
+          "new_value": "17.407,00 euros",
+          "value_bboxes": [
+            {
+              "x": 285.82244873046875,
+              "y": 566.6890869140625,
+              "w": 27.843414306640625,
+              "h": 6.9796142578125
+            },
+            {
+              "x": 318.18,
+              "y": 568.88,
+              "w": 15.3,
+              "h": 9.24,
+              "source": "docling_block"
+            }
+          ],
+          "reason": "Append ' euros' unit; include docling block bbox for unit span in value_bboxes"
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=caracteristicas_producto / kv_leaf.id=tipo_credito_seleccionado / label='Tipo de crédito'",
+      "evidence": {
+        "golden_label": "Tipo de crédito",
+        "golden_value": "X Contrato de Financiación a Comprador de Vehículos (\"Préstamo AUTO\") y Cuenta de Crédito",
+        "pdf_text_found": "X Contrato de Financiación a Comprador de Vehículos (\"Préstamo AUTO\") y Cuenta de Crédito (la Cuenta de Crédito solo se podrá contratar si en este documento aparecen las condiciones económicas aplicables a la misma).",
+        "atoms_span_match": {
+          "text": "X Contrato de Financiación a Comprador de Vehículos (\"Préstamo AUTO\") y Cuenta de Crédito (la Cuenta de Crédito solo se",
+          "y": 297.05,
+          "x": 192.21,
+          "font_size": 6.5
+        },
+        "atoms_continuation_span": {
+          "text": "podrá contratar si en este documento aparecen las condiciones económicas aplicables a la misma).",
+          "y": 304.45,
+          "x": 200.54,
+          "font_size": 8.0
+        },
+        "comment": "The golden value ends at 'Cuenta de Crédito' but the atoms span at y=297.05 continues with '(la Cuenta de Crédito solo se' and a second line at y=304.45 completes the full selected option text. The parenthetical qualifier is part of the printed checkbox option, not a separate prose block. The value is truncated by ~60 characters."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "Tipo de crédito",
+        "params": {
+          "new_value": "X Contrato de Financiación a Comprador de Vehículos (\"Préstamo AUTO\") y Cuenta de Crédito (la Cuenta de Crédito solo se podrá contratar si en este documento aparecen las condiciones económicas aplicables a la misma).",
+          "value_bboxes": [
+            {
+              "x": 192.214976,
+              "y": 298.37402536,
+              "w": 269.3815487999999,
+              "h": 7.920522480000045,
+              "note": "first line — existing bbox"
+            },
+            {
+              "x": 200.54,
+              "y": 304.45,
+              "w": 346.0,
+              "h": 8.0,
+              "note": "continuation line — append to value_bboxes"
+            }
+          ],
+          "reason": "Extend value to include the full parenthetical qualifier that is part of the selected checkbox option text (two-line span in atoms)."
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "LOW",
+      "type": "missing_bbox",
+      "spec_location": "section.id=caracteristicas_producto / kv_group.id=modalidad_pago_plazos / label='Cuotas mensuales totales (modalidad Fraccionado)'",
+      "evidence": {
+        "golden_label": "Cuotas mensuales totales (modalidad Fraccionado)",
+        "golden_value": "",
+        "pdf_text_found": "\"Fraccionado\" el titular pagará un total de .................... cuotas mensuales.",
+        "atoms_span_match": {
+          "text": "\"Fraccionado\" el titular pagará un total de .................... cuotas mensuales.",
+          "y": 731.8,
+          "x": 152.46,
+          "font_size": 8.0
+        },
+        "comment": "The golden has label_bbox=null for this field (engine_agreement=0). The label text 'Cuotas mensuales totales (modalidad Fraccionado)' does not appear verbatim in atoms — it is inferred from context. No substantive error (value is correctly empty), but the missing label_bbox means the patcher cannot locate this field geometrically. LOW because the field is empty and the value assignment is correct."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "Cuotas mensuales totales (modalidad Fraccionado)",
+        "params": {
+          "y_hint": 724,
+          "note": "Nearest atoms span is the prose line at y=724.64 x=152.46 which contains the 'Fraccionado... cuotas mensuales' template text. No direct label span exists; label is inferred from spec vocabulary. Consider setting label_bbox from the y=719.1 x=27.0 span 'Los plazos y, en su caso...' if the form uses a left-column label, or mark label_bbox as null-by-design for a prose-embedded field."
+        }
+      }
+    }
+  ]
+}

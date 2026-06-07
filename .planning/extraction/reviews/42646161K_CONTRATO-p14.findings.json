@@ -1,0 +1,124 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/42646161K_CONTRATO-p14.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/42646161K_CONTRATO.pdf",
+  "page": 14,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 13,
+    "populated_kv": 13,
+    "empty_kv": 0,
+    "high": 1,
+    "medium": 3,
+    "low": 0,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "HIGH",
+      "type": "wrong_value_text",
+      "spec_location": "table=modalidad_pago / row=1 / label='Importe intereses y/o gastos...'",
+      "evidence": {
+        "golden_label": "Importe intereses y/o gastos que deberá pagar el consumidor de la manera siguiente:",
+        "golden_value": "• Importe Intereses: 4.698,67 euros. (En caso de Cuenta de Crédito, incluida la que lo sea con Disponibilidad Restringida, estos intereses hacen referencia a la primera disposición ya efectuada).",
+        "pdf_text_found": "• Importe Intereses: [x=151.1,y=249.2] | 4.698,67 [x=242.8,y=250.0] | euros. (En caso de Cuenta de Crédito...) [x=270.8,y=249.2]",
+        "atoms_span_match": {"text": "4.698,67", "y": 250.0, "x": 242.8},
+        "comment": "The golden value_bbox covers x=151.07 to 209.41 (w=58.34), which maps to the span '• Importe Intereses:' only. The amount '4.698,67' sits at x=242.8 — entirely outside the declared value_bbox. The golden value TEXT string itself is correctly assembled (text extraction is right), but the value_bbox is wrong: it anchors to the bullet-label span rather than the amount span. The liteparse evidence (span_id=27, x=151.07, w=58.34) confirms the bbox is the label fragment, not the value. This bbox mismatch will cause downstream geometry-based matchers to miss the pair."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "kv[label='Importe intereses y/o gastos que deberá pagar el consumidor de la manera siguiente:']",
+        "params": {
+          "field": "value_bboxes",
+          "new_value_bboxes": [
+            {
+              "x": 242.8,
+              "y": 249.2,
+              "w": 304.1,
+              "h": 16.0,
+              "note": "spans from 4.698,67 (x=242.8) through end of continuation line (y=256.4, x=151.1+w=179.2 => right=330.3); union bbox anchored at x=151.1 to cover '• Importe Intereses:' + amount + continuation"
+            }
+          ],
+          "corrected_value_bbox_x_hint": 242.8,
+          "atoms_evidence": "span '4.698,67' at x=242.8 y=250.0; span 'euros. (En caso...)' at x=270.8 y=249.2"
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "table=modalidad_pago / row=2 / label='• Importe Comisión de apertura:'",
+      "evidence": {
+        "golden_label": "• Importe Comisión de apertura:",
+        "golden_value": "389,85 euros, que se pagará: financiada, incluyéndose en el importe del crédito concedido.",
+        "pdf_text_found": "'389,85' at x=264.6,y=271.3 | 'euros, que se pagará:' at x=287.2,y=271.2 | 'financiada, incluyéndose...' at x=375.0,y=278.6",
+        "atoms_span_match": {"text": "389,85", "y": 271.3, "x": 264.6},
+        "comment": "The value_bbox declared in the golden is x=287.20, y=271.16, w=59.76 — covering 'euros, que se pagará:' at x=287.2. But the amount '389,85' is at x=264.6 (outside the bbox), and 'financiada, incluyéndose en el importe del crédito concedido.' is on the next visual row at y=278.6 (also outside bbox height=9.24). The golden value TEXT '389,85 euros, que se pagará: financiada...' is correctly assembled, but the value_bbox is anchored too far right (at 'euros') and too short in height to cover the continuation row. The docling evidence for this value (cell_ref=#/texts/680 at y=303.5) is from a completely different page zone."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "kv[label='• Importe Comisión de apertura:']",
+        "params": {
+          "field": "value_bboxes",
+          "new_value_bboxes": [
+            {
+              "x": 264.6,
+              "y": 271.2,
+              "w": 278.7,
+              "h": 16.8,
+              "note": "union bbox: from '389,85' (x=264.6 y=271.2) to end of 'financiada...' span (x=375.0+w=168.3=543.3, y=278.6+h=9.2=287.8)"
+            }
+          ],
+          "corrected_value_bbox_x_hint": 264.6,
+          "atoms_evidence": "span '389,85' at x=264.6 y=271.3; span 'euros, que se pagará:' at x=287.2 y=271.2; span 'financiada, incluyéndose...' at x=375.0 y=278.6; checkbox X at x=366.7 y=280.8"
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "HIGH",
+      "type": "wrong_value_text",
+      "spec_location": "table=modalidad_pago / row=3 / label='• Importe Comisión de estudio:'",
+      "evidence": {
+        "golden_label": "• Importe Comisión de estudio:",
+        "golden_value": "euros, que se pagará:",
+        "pdf_text_found": "Only one span at y=293.4 x=151.1: '• Importe Comisión de estudio: .......................... euros, que se pagará:'",
+        "atoms_span_match": {"text": "• Importe Comisión de estudio: .......................... euros, que se pagará:", "y": 293.4, "x": 151.1},
+        "comment": "The golden value 'euros, que se pagará:' was extracted from within the label span '• Importe Comisión de estudio: .......................... euros, que se pagará:'. The dotted field '..........' is a blank placeholder — the amount is NOT filled in the PDF. The golden value_bbox evidence points to liteparse span_id=38 which is this same label span (x=151.07, y=293.35), and pdfplumber bbox at x=287.9 captures only the tail 'euros, que se pagará:'. No actual monetary amount exists in the atoms near y=293 (no number span found between x=200-290, y=290-310). The correct representation is that this is an unfilled form field; the value should either be empty string or the full text 'xxxxxxxxxx euros, que se pagará:' noting the blank. The current golden misidentifies a form template stub as a real value."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "kv[label='• Importe Comisión de estudio:']",
+        "params": {
+          "field": "value",
+          "new_value": "",
+          "note": "The PDF shows a blank dotted placeholder for the amount; no numeric amount is present in atoms. Mark as empty (unfilled form slot). Alternatively, if the template text is to be preserved, value='.......................... euros, que se pagará:' but this is not a real KV.",
+          "atoms_evidence": "single span at x=151.1 y=293.4 contains the entire row including dots placeholder: '• Importe Comisión de estudio: .......................... euros, que se pagará:' — no numeric amount found in atoms at this row"
+        }
+      }
+    },
+    {
+      "id": "f04",
+      "severity": "MEDIUM",
+      "type": "wrong_value_text",
+      "spec_location": "table=prelacion_pagos / row=0 / label='Los reembolsos no suponen la inmediata amortización del capital'",
+      "evidence": {
+        "golden_label": "Los reembolsos no suponen la inmediata amortización del capital",
+        "golden_value": "Todos los pagos recibidos serán aplicados con la siguiente prelación: (i) costas y gastos suplidos; (ii) comisiones devengadas; (iii) penalidades (penas e intereses de demora incluidos); (iv) intereses ordinarios; (v) capital del Préstamo.",
+        "pdf_text_found": "Atoms span y=463.0 x=151.1: 'Todos los pagos recibidos serán aplicados con la siguiente prelación: (i) costas y gastos suplidos por CaixaBank Payments & Consumer; (ii)' | y=470.9 x=151.1: 'comisiones devengadas; (iii) penalidades (penas e intereses de demora incluidos); (iv) intereses ordinarios; (v) capital del Préstamo.'",
+        "atoms_span_match": {"text": "Todos los pagos recibidos serán aplicados con la siguiente prelación: (i) costas y gastos suplidos por CaixaBank Payments & Consumer; (ii)", "y": 463.0, "x": 151.1},
+        "comment": "The golden value omits 'por CaixaBank Payments & Consumer' after 'suplidos'. The PDF (atoms span y=463.0) clearly reads 'suplidos por CaixaBank Payments & Consumer; (ii)' but the golden has 'suplidos; (ii)'. This is a material text truncation — the company name is substantive content that should be preserved."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "kv[label='Los reembolsos no suponen la inmediata amortización del capital']",
+        "params": {
+          "field": "value",
+          "new_value": "Todos los pagos recibidos serán aplicados con la siguiente prelación: (i) costas y gastos suplidos por CaixaBank Payments & Consumer; (ii) comisiones devengadas; (iii) penalidades (penas e intereses de demora incluidos); (iv) intereses ordinarios; (v) capital del Préstamo.",
+          "atoms_evidence": "span at x=151.1 y=463.0 + span at x=151.1 y=470.9; fused text includes 'por CaixaBank Payments & Consumer' which golden omitted"
+        }
+      }
+    }
+  ]
+}

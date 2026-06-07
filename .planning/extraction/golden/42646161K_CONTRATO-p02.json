@@ -1,0 +1,1843 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/42646161K_CONTRATO.pdf",
+  "page": 2,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "document_type": "contrato_prestamo_financiacion",
+  "structure": [
+    {
+      "type": "noise",
+      "id": "banner_condiciones_generales",
+      "text": "CONDICIONES GENERALES",
+      "kind": "watermark",
+      "y_hint": 35.4,
+      "bbox": {
+        "x": 240.752192,
+        "y": 36.95152064000001,
+        "w": 102.12846592000002,
+        "h": 7.704319999999939
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "CONDICIONES GENERALES",
+          "row_y_hint": 35.4,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 240.752192,
+              "y": 36.95152064000001,
+              "w": 102.12846592000002,
+              "h": 7.704319999999939
+            },
+            "char_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "n_chars": 21,
+            "row_y": 35.102483840000104
+          },
+          "liteparse": {
+            "span_id": 1,
+            "bbox": {
+              "x": 240.752197265625,
+              "y": 35.41070556640625,
+              "w": 102.12850952148438,
+              "h": 9.23748779296875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/156",
+            "bbox": {
+              "x": 240.752192,
+              "y": 38.20732480000004,
+              "w": 102.12846592000002,
+              "h": 5.760239252336305
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 240.752192,
+            "y": 36.95152064000001,
+            "w": 102.12846592000002,
+            "h": 7.704319999999939
+          },
+          "engine_agreement": 3
+        },
+        "kind": "watermark"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "banner_contrato_ident",
+      "text": "Contrato de préstamo de financiación a comprador, impreso nº 4045545 celebrado entre CAIXABANK PAYMENTS & CONSUMER, E.F.C., E.P., S.A.U. (también CaixaBank Payments & Consumer) y D/Dª JUAN MARRERO GARCIA",
+      "kind": "watermark",
+      "y_hint": 50.4,
+      "bbox": {
+        "x": 30.88651466369629,
+        "y": 50.38018798828125,
+        "w": 255.95289611816406,
+        "h": 9.5225830078125
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Contrato de préstamo de financiación a comprador, impreso nº 4045545 celebrado entre CAIXABANK PAYMENTS & CONSUMER, E.F.C., E.P., S.A.U. (también CaixaBank Payments & Consumer) y D/Dª JUAN MARRERO GARCIA",
+          "row_y_hint": 50.4,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 3,
+            "bbox": {
+              "x": 30.88651466369629,
+              "y": 50.38018798828125,
+              "w": 255.95289611816406,
+              "h": 9.5225830078125
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/159",
+            "bbox": {
+              "x": 30.886515199999998,
+              "y": 53.461878400000046,
+              "w": 514.51760256,
+              "h": 16.00469836238244
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 30.88651466369629,
+            "y": 50.38018798828125,
+            "w": 255.95289611816406,
+            "h": 9.5225830078125
+          },
+          "engine_agreement": 2
+        },
+        "kind": "watermark"
+      }
+    },
+    {
+      "type": "section",
+      "id": "condiciones_generales",
+      "title": "CONDICIONES GENERALES",
+      "y_hint": 77.9,
+      "children": [
+        {
+          "type": "prose_block",
+          "id": "cg_prestatarios",
+          "label": "1) PRESTATARIOS",
+          "text": "1) PRESTATARIOS. Para el caso de intervenir varios prestatarios se obligan con carácter solidario al cumplimiento de las obligaciones dimanantes del presente contrato.",
+          "y_hint": 77.9,
+          "bbox": {
+            "x": 26.95730972290039,
+            "y": 77.9385986328125,
+            "w": 258.4568176269531,
+            "h": 9.23748779296875
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "1) PRESTATARIOS. Para el caso de intervenir varios prestatarios se obligan con carácter solidario al cumplimiento de las obligaciones dimanantes del presente contrato.",
+              "row_y_hint": 77.9,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 6,
+                "bbox": {
+                  "x": 26.95730972290039,
+                  "y": 77.9385986328125,
+                  "w": 258.4568176269531,
+                  "h": 9.23748779296875
+                },
+                "case_class": "mixed",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/160",
+                "bbox": {
+                  "x": 26.957311999999956,
+                  "y": 80.73517120000008,
+                  "w": 258.66483968,
+                  "h": 22.170440852336355
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.95730972290039,
+                "y": 77.9385986328125,
+                "w": 258.4568176269531,
+                "h": 9.23748779296875
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "1) PRESTATARIOS",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_fiadores",
+          "label": "2) FIADORES",
+          "text": "2) FIADORES. El/los fiadores afianzan solidariamente entre sí, y con igual carácter respecto al deudor/es principal/es, el cumplimiento de todas las obligaciones asumidas por el mismo en este contrato con renuncia expresa a los beneficios de orden, división y excusión.",
+          "y_hint": 110.1,
+          "bbox": {
+            "x": 26.957284927368164,
+            "y": 110.0655517578125,
+            "w": 258.6263732910156,
+            "h": 9.237548828125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "2) FIADORES. El/los fiadores afianzan solidariamente entre sí, y con igual carácter respecto al deudor/es principal/es, el cumplimiento de todas las obligaciones asumidas por el mismo en este contrato con renuncia expresa a los beneficios de orden, división y excusión.",
+              "row_y_hint": 110.1,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 13,
+                "bbox": {
+                  "x": 26.957284927368164,
+                  "y": 110.0655517578125,
+                  "w": 258.6263732910156,
+                  "h": 9.237548828125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/161",
+                "bbox": {
+                  "x": 26.957311999999956,
+                  "y": 112.86218560000009,
+                  "w": 258.62631808000003,
+                  "h": 30.49110645233634
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957284927368164,
+                "y": 110.0655517578125,
+                "w": 258.6263732910156,
+                "h": 9.237548828125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "2) FIADORES",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_objeto",
+          "label": "3) OBJETO",
+          "text": "3) OBJETO. El presente contrato, de naturaleza mercantil, tiene por objeto la concesión de un préstamo de financiación para la adquisición del objeto identificado en las condiciones particulares de este contrato.",
+          "y_hint": 150.5,
+          "bbox": {
+            "x": 26.957300186157227,
+            "y": 150.5133056640625,
+            "w": 258.634033203125,
+            "h": 9.237548828125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "3) OBJETO. El presente contrato, de naturaleza mercantil, tiene por objeto la concesión de un préstamo de financiación para la adquisición del objeto identificado en las condiciones particulares de este contrato.",
+              "row_y_hint": 150.5,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 21,
+                "bbox": {
+                  "x": 26.957300186157227,
+                  "y": 150.5133056640625,
+                  "w": 258.634033203125,
+                  "h": 9.237548828125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/162",
+                "bbox": {
+                  "x": 26.957312000000012,
+                  "y": 153.30986560000008,
+                  "w": 258.63402240000005,
+                  "h": 22.170440852336355
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957300186157227,
+                "y": 150.5133056640625,
+                "w": 258.634033203125,
+                "h": 9.237548828125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "3) OBJETO",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_domicilio",
+          "label": "4) DOMICILIO",
+          "text": "4) DOMICILIO. Se establece a los efectos prevenidos en la Ley 28/1998, que el lugar donde hayan de efectuarse las notificaciones, requerimientos y emplazamientos es el domicilio consignado para cada parte en las condiciones particulares de este contrato, quedando obligadas las partes a comunicarse fehacientemente, cualquier cambio del mismo, sin perjuicio de lo establecido en la citada ley, comunicándolo mediante escrito dirigido al Registrador de Venta a Plazos. Igualmente se señala como domicilio de verificación de pago el de la domiciliación bancaria señalada en las condiciones particulares.",
+          "y_hint": 182.6,
+          "bbox": {
+            "x": 26.957300186157227,
+            "y": 182.6402587890625,
+            "w": 258.4259948730469,
+            "h": 9.237548828125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "4) DOMICILIO. Se establece a los efectos prevenidos en la Ley 28/1998, que el lugar donde hayan de efectuarse las notificaciones, requerimientos y emplazamientos es el domicilio consignado para cada parte en las condiciones particulares de este contrato, quedando obligadas las partes a comunicarse fehacientemente, cualquier cambio del mismo, sin perjuicio de lo establecido en la citada ley, comunicándolo mediante escrito dirigido al Registrador de Venta a Plazos. Igualmente se señala como domicilio de verificación de pago el de la domiciliación bancaria señalada en las condiciones particulares.",
+              "row_y_hint": 182.6,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 28,
+                "bbox": {
+                  "x": 26.957300186157227,
+                  "y": 182.6402587890625,
+                  "w": 258.4259948730469,
+                  "h": 9.237548828125
+                },
+                "case_class": "mixed",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/163",
+                "bbox": {
+                  "x": 26.957312000000012,
+                  "y": 185.43687999999997,
+                  "w": 258.6879526400001,
+                  "h": 71.16991605233625
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957300186157227,
+                "y": 182.6402587890625,
+                "w": 258.4259948730469,
+                "h": 9.237548828125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "4) DOMICILIO",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_mora",
+          "label": "5) MORA EN EL PAGO",
+          "text": "5) MORA EN EL PAGO. Los deudores que demoren el pago de sus deudas vencidas, deberán satisfacer desde el día siguiente a su vencimiento un interés moratorio pactado, que se devengará día a día, sin necesidad de requerimiento, aplicándose la fórmula del interés simple: I= C x R x T : 100. Asimismo, el impago de cualquier cuota establecida en el Plan de Amortización, devengará la comisión de devolución acordada por las partes en las condiciones particulares de este contrato. Los intereses contractuales no satisfechos a sus respectivos vencimientos se acumularán mensualmente al capital y como aumento del mismo, conforme a lo establecido en el art. 317 del Código de Comercio, devengarán nuevos intereses.",
+          "y_hint": 264.0,
+          "bbox": {
+            "x": 26.957271575927734,
+            "y": 263.9979248046875,
+            "w": 258.51080322265625,
+            "h": 9.23760986328125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "5) MORA EN EL PAGO. Los deudores que demoren el pago de sus deudas vencidas, deberán satisfacer desde el día siguiente a su vencimiento un interés moratorio pactado, que se devengará día a día, sin necesidad de requerimiento, aplicándose la fórmula del interés simple: I= C x R x T : 100. Asimismo, el impago de cualquier cuota establecida en el Plan de Amortización, devengará la comisión de devolución acordada por las partes en las condiciones particulares de este contrato. Los intereses contractuales no satisfechos a sus respectivos vencimientos se acumularán mensualmente al capital y como aumento del mismo, conforme a lo establecido en el art. 317 del Código de Comercio, devengarán nuevos intereses.",
+              "row_y_hint": 264.0,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 45,
+                "bbox": {
+                  "x": 26.957271575927734,
+                  "y": 263.9979248046875,
+                  "w": 258.51080322265625,
+                  "h": 9.23760986328125
+                },
+                "case_class": "mixed",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/164",
+                "bbox": {
+                  "x": 26.957311999999956,
+                  "y": 266.7944991999998,
+                  "w": 258.5492748800001,
+                  "h": 38.34951285233649
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957271575927734,
+                "y": 263.9979248046875,
+                "w": 258.51080322265625,
+                "h": 9.23760986328125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "5) MORA EN EL PAGO",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_incumplimiento",
+          "label": "6) INCUMPLIMIENTO, VENCIMIENTO ANTICIPADO Y DOCUMENTACIÓN DE LA DEUDA",
+          "text": "6) INCUMPLIMIENTO, VENCIMIENTO ANTICIPADO Y DOCUMENTACIÓN DE LA DEUDA. La falta de pago de dos cualesquiera de los plazos, o del último de ellos, a que se hace referencia en el epígrafe RECONOCIMIENTO DE DEUDA facultará al financiador para dar por vencido el préstamo, extinguiéndose el aplazamiento y exigiendo, como consecuencia el abono de la totalidad de la deuda pendiente, que comprenderá la deuda no satisfecha a sus respectivos vencimientos, con sus intereses contractuales, la anticipadamente vencida y todo ello, con los intereses de demora pactados, comisiones de devolución y demás gastos exigibles con arreglo a lo establecido en el presente contrato.",
+          "y_hint": 369.4,
+          "bbox": {
+            "x": 26.95733642578125,
+            "y": 369.3931884765625,
+            "w": 258.6417236328125,
+            "h": 9.237457275390625
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "6) INCUMPLIMIENTO, VENCIMIENTO ANTICIPADO Y DOCUMENTACIÓN DE LA DEUDA. La falta de pago de dos cualesquiera de los plazos, o del último de ellos, a que se hace referencia en el epígrafe RECONOCIMIENTO DE DEUDA facultará al financiador para dar por vencido el préstamo, extinguiéndose el aplazamiento y exigiendo, como consecuencia el abono de la totalidad de la deuda pendiente, que comprenderá la deuda no satisfecha a sus respectivos vencimientos, con sus intereses contractuales, la anticipadamente vencida y todo ello, con los intereses de demora pactados, comisiones de devolución y demás gastos exigibles con arreglo a lo establecido en el presente contrato.",
+              "row_y_hint": 369.4,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 70,
+                "bbox": {
+                  "x": 26.95733642578125,
+                  "y": 369.3931884765625,
+                  "w": 258.6417236328125,
+                  "h": 9.237457275390625
+                },
+                "case_class": "UPPER",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/166",
+                "bbox": {
+                  "x": 26.957311999999956,
+                  "y": 372.1895967999997,
+                  "w": 258.64172672,
+                  "h": 79.49058165233657
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.95733642578125,
+                "y": 369.3931884765625,
+                "w": 258.6417236328125,
+                "h": 9.237457275390625
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "6) INCUMPLIMIENTO, VENCIMIENTO ANTICIPADO Y DOCUMENTACIÓN DE LA DEUDA",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_reembolso_anticipado",
+          "label": "7) REEMBOLSO ANTICIPADO",
+          "text": "7) REEMBOLSO ANTICIPADO. El prestatario podrá reembolsar anticipadamente el importe del préstamo de forma total o parcial en cualquier momento, comunicándolo por escrito al financiador. a) En caso de que el prestatario no tenga la consideración de consumidor a los efectos de la Ley de contratos de crédito al consumo el reembolso anticipado dará derecho a la retrocesión de los intereses no devengados. Los pagos parciales no podrán ser inferiores al 20% del precio del bien financiado y el prestatario quedará obligado a abonar la comisión que por razón de cancelación anticipada se establece en las condiciones particulares de este contrato. Dicha comisión no podrá exceder, en virtud de lo establecido en el artículo 9, número 3, de la Ley 28/1998, de 13 de julio de Venta a Plazos de Bienes Muebles, del 1,5 por ciento del capital reembolsado anticipadamente en los contratos con tipo de interés variable y del 3 por ciento en los contratos con tipo de interés fijo. b) En caso de que el prestatario tenga la consideración de consumidor a los efectos de la Ley de contratos de crédito al consumo, tendrá derecho a una reducción del coste total del crédito que comprenda los intereses y costes, incluso los ya pagados, correspondientes a la duración del contrato que quede por transcurrir. Únicamente en caso de operaciones a tipo fijo, deberá abonar una compensación no superior al 1% del importe del capital reembolsado anticipadamente si el periodo restante entre el reembolso anticipado y la terminación del contrato es superior a un año; en caso de que dicho período sea inferior a un año, la compensación no será superior al 0,5% del importe del capital reembolsado anticipadamente. El importe concreto de la compensación a satisfacer por el prestatario será el establecido en las condiciones particulares de este contrato. c) El reembolso anticipado de créditos que cuenten con un seguro vinculado a la amortización del crédito o a cuya suscripción se haya condicionado la concesión del crédito o su concesión en las condiciones ofrecidas, dará lugar a la devolución por parte de la entidad aseguradora al consumidor de la parte de prima no consumida. Ninguna compensación excederá del importe del interés que el consumidor habría pagado durante el periodo de tiempo comprendido entre el reembolso anticipado y la fecha pactada de finalización del contrato de crédito. Conforme a lo previsto en el artículo 4 de la Ley de Contratos de Crédito al Consumo, el artículo 30 de dicha Ley no será de aplicación en aquellos contratos de préstamo de importe superior a 75.000 euros.",
+          "y_hint": 458.8,
+          "bbox": {
+            "x": 26.957313537597656,
+            "y": 458.84014892578125,
+            "w": 6.379177093505859,
+            "h": 9.237457275390625
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "7) REEMBOLSO ANTICIPADO. El prestatario podrá reembolsar anticipadamente el importe del préstamo de forma total o parcial en cualquier momento, comunicándolo por escrito al financiador. a) En caso de que el prestatario no tenga la consideración de consumidor a los efectos de la Ley de contratos de crédito al consumo el reembolso anticipado dará derecho a la retrocesión de los intereses no devengados. Los pagos parciales no podrán ser inferiores al 20% del precio del bien financiado y el prestatario quedará obligado a abonar la comisión que por razón de cancelación anticipada se establece en las condiciones particulares de este contrato. Dicha comisión no podrá exceder, en virtud de lo establecido en el artículo 9, número 3, de la Ley 28/1998, de 13 de julio de Venta a Plazos de Bienes Muebles, del 1,5 por ciento del capital reembolsado anticipadamente en los contratos con tipo de interés variable y del 3 por ciento en los contratos con tipo de interés fijo. b) En caso de que el prestatario tenga la consideración de consumidor a los efectos de la Ley de contratos de crédito al consumo, tendrá derecho a una reducción del coste total del crédito que comprenda los intereses y costes, incluso los ya pagados, correspondientes a la duración del contrato que quede por transcurrir. Únicamente en caso de operaciones a tipo fijo, deberá abonar una compensación no superior al 1% del importe del capital reembolsado anticipadamente si el periodo restante entre el reembolso anticipado y la terminación del contrato es superior a un año; en caso de que dicho período sea inferior a un año, la compensación no será superior al 0,5% del importe del capital reembolsado anticipadamente. El importe concreto de la compensación a satisfacer por el prestatario será el establecido en las condiciones particulares de este contrato. c) El reembolso anticipado de créditos que cuenten con un seguro vinculado a la amortización del crédito o a cuya suscripción se haya condicionado la concesión del crédito o su concesión en las condiciones ofrecidas, dará lugar a la devolución por parte de la entidad aseguradora al consumidor de la parte de prima no consumida. Ninguna compensación excederá del importe del interés que el consumidor habría pagado durante el periodo de tiempo comprendido entre el reembolso anticipado y la fecha pactada de finalización del contrato de crédito. Conforme a lo previsto en el artículo 4 de la Ley de Contratos de Crédito al Consumo, el artículo 30 de dicha Ley no será de aplicación en aquellos contratos de préstamo de importe superior a 75.000 euros.",
+              "row_y_hint": 458.8,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 98,
+                "bbox": {
+                  "x": 26.957313537597656,
+                  "y": 458.84014892578125,
+                  "w": 6.379177093505859,
+                  "h": 9.237457275390625
+                },
+                "case_class": "none",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/167",
+                "bbox": {
+                  "x": 26.957312000000012,
+                  "y": 461.63675199999983,
+                  "w": 258.47223168,
+                  "h": 22.170440852336583
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957313537597656,
+                "y": 458.84014892578125,
+                "w": 6.379177093505859,
+                "h": 9.237457275390625
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "7) REEMBOLSO ANTICIPADO",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_tae",
+          "label": "8) CÁLCULO Y ELEMENTOS QUE COMPONEN LA T.A.E.",
+          "text": "8) CÁLCULO Y ELEMENTOS QUE COMPONEN LA T.A.E. Se entenderá por tasa anual equivalente el coste total del crédito, expresado en un porcentaje anual sobre la cuantía del crédito concedido. A efectos informativos se hace constar que dicha tasa (TAE) se obtiene aplicando la fórmula contenida en la Ley 16/2011, de 24 de junio, de contratos de crédito al consumo. En caso de interés variable, esta TAE se convierte en TAE Variable, la cual se ha calculado bajo la hipótesis de que los índices de referencia no varían; por tanto, esta TAE Variable variará con las revisiones del tipo de interés.",
+          "y_hint": 134.3,
+          "bbox": {
+            "x": 296.4546203613281,
+            "y": 134.33416748046875,
+            "w": 258.5568542480469,
+            "h": 9.237548828125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "8) CÁLCULO Y ELEMENTOS QUE COMPONEN LA T.A.E. Se entenderá por tasa anual equivalente el coste total del crédito, expresado en un porcentaje anual sobre la cuantía del crédito concedido. A efectos informativos se hace constar que dicha tasa (TAE) se obtiene aplicando la fórmula contenida en la Ley 16/2011, de 24 de junio, de contratos de crédito al consumo. En caso de interés variable, esta TAE se convierte en TAE Variable, la cual se ha calculado bajo la hipótesis de que los índices de referencia no varían; por tanto, esta TAE Variable variará con las revisiones del tipo de interés.",
+              "row_y_hint": 134.3,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 19,
+                "bbox": {
+                  "x": 296.4546203613281,
+                  "y": 134.33416748046875,
+                  "w": 258.5568542480469,
+                  "h": 9.237548828125
+                },
+                "case_class": "Title",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/177",
+                "bbox": {
+                  "x": 296.4544255999995,
+                  "y": 137.13079359999983,
+                  "w": 258.7033612800005,
+                  "h": 46.67017845233647
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 296.4546203613281,
+                "y": 134.33416748046875,
+                "w": 258.5568542480469,
+                "h": 9.237548828125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "8) CÁLCULO Y ELEMENTOS QUE COMPONEN LA T.A.E.",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_prohibicion_enajenar",
+          "label": "9) PROHIBICIÓN DE ENAJENAR",
+          "text": "9) PROHIBICIÓN DE ENAJENAR. El prestatario no podrá enajenar o gravar el objeto financiado adquirido hasta el completo pago del préstamo sin autorización expresa del financiador.",
+          "y_hint": 223.6,
+          "bbox": {
+            "x": 296.4542541503906,
+            "y": 223.55023193359375,
+            "w": 258.7420959472656,
+            "h": 9.23760986328125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "9) PROHIBICIÓN DE ENAJENAR. El prestatario no podrá enajenar o gravar el objeto financiado adquirido hasta el completo pago del préstamo sin autorización expresa del financiador.",
+              "row_y_hint": 223.6,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 38,
+                "bbox": {
+                  "x": 296.4542541503906,
+                  "y": 223.55023193359375,
+                  "w": 258.7420959472656,
+                  "h": 9.23760986328125
+                },
+                "case_class": "mixed",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/179",
+                "bbox": {
+                  "x": 296.4544255999999,
+                  "y": 226.3468191999999,
+                  "w": 258.74188287999993,
+                  "h": 22.17044085233647
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 296.4542541503906,
+                "y": 223.55023193359375,
+                "w": 258.7420959472656,
+                "h": 9.23760986328125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "9) PROHIBICIÓN DE ENAJENAR",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_reserva_dominio",
+          "label": "10) RESERVA DE DOMINIO",
+          "text": "10) RESERVA DE DOMINIO. El dominio del objeto financiado pertenece al Financiador hasta el completo pago del mismo.",
+          "y_hint": 255.7,
+          "bbox": {
+            "x": 296.4544372558594,
+            "y": 255.67724609375,
+            "w": 258.6340026855469,
+            "h": 9.237548828125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "10) RESERVA DE DOMINIO. El dominio del objeto financiado pertenece al Financiador hasta el completo pago del mismo.",
+              "row_y_hint": 255.7,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 44,
+                "bbox": {
+                  "x": 296.4544372558594,
+                  "y": 255.67724609375,
+                  "w": 258.6340026855469,
+                  "h": 9.237548828125
+                },
+                "case_class": "mixed",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/180",
+                "bbox": {
+                  "x": 296.4544255999999,
+                  "y": 258.47383360000003,
+                  "w": 258.63402240000005,
+                  "h": 14.080904852336403
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 296.4544372558594,
+                "y": 255.67724609375,
+                "w": 258.6340026855469,
+                "h": 9.237548828125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "10) RESERVA DE DOMINIO",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_autorizacion_pago",
+          "label": "11) AUTORIZACIÓN DE PAGO",
+          "text": "11) AUTORIZACIÓN DE PAGO. El prestatario autoriza al financiador a entregar el importe del préstamo al vendedor, siendo el presente contrato la carta de autorización más eficaz.",
+          "y_hint": 279.7,
+          "bbox": {
+            "x": 296.4543762207031,
+            "y": 279.71466064453125,
+            "w": 258.6880798339844,
+            "h": 9.237548828125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "11) AUTORIZACIÓN DE PAGO. El prestatario autoriza al financiador a entregar el importe del préstamo al vendedor, siendo el presente contrato la carta de autorización más eficaz.",
+              "row_y_hint": 279.7,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 49,
+                "bbox": {
+                  "x": 296.4543762207031,
+                  "y": 279.71466064453125,
+                  "w": 258.6880798339844,
+                  "h": 9.237548828125
+                },
+                "case_class": "mixed",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/181",
+                "bbox": {
+                  "x": 296.4544255999998,
+                  "y": 282.5113120000001,
+                  "w": 258.68795264000005,
+                  "h": 22.170440852336355
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 296.4543762207031,
+                "y": 279.71466064453125,
+                "w": 258.6880798339844,
+                "h": 9.237548828125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "11) AUTORIZACIÓN DE PAGO",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_seguros",
+          "label": "12) SEGUROS",
+          "text": "12) SEGUROS. El comprador deberá suscribir y mantener durante la vigencia de este contrato, o de sus prórrogas, un seguro a todo riesgo, sobre el bien cuya adquisición se financia, que cubra los daños propios del mismo, incluyéndose los supuestos de incendio y robo. Se designa como primer beneficiario de la indemnización del seguro al financiador, obligándose el comprador a comunicarlo así al asegurador, conviniéndose que el asegurador no indemnizará, en cantidad alguna por el siniestro del bien, al prestatario, sin el consentimiento previo del financiador, el cual queda subrogado en el derecho al cobro de la indemnización que, en su caso, le pudiera corresponder al prestatario, hasta la cantidad que quede pendiente del préstamo en el momento del siniestro.",
+          "y_hint": 311.8,
+          "bbox": {
+            "x": 296.4544982910156,
+            "y": 311.8416748046875,
+            "w": 258.6339416503906,
+            "h": 9.23748779296875
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "12) SEGUROS. El comprador deberá suscribir y mantener durante la vigencia de este contrato, o de sus prórrogas, un seguro a todo riesgo, sobre el bien cuya adquisición se financia, que cubra los daños propios del mismo, incluyéndose los supuestos de incendio y robo. Se designa como primer beneficiario de la indemnización del seguro al financiador, obligándose el comprador a comunicarlo así al asegurador, conviniéndose que el asegurador no indemnizará, en cantidad alguna por el siniestro del bien, al prestatario, sin el consentimiento previo del financiador, el cual queda subrogado en el derecho al cobro de la indemnización que, en su caso, le pudiera corresponder al prestatario, hasta la cantidad que quede pendiente del préstamo en el momento del siniestro.",
+              "row_y_hint": 311.8,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 55,
+                "bbox": {
+                  "x": 296.4544982910156,
+                  "y": 311.8416748046875,
+                  "w": 258.6339416503906,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/182",
+                "bbox": {
+                  "x": 296.4544255999998,
+                  "y": 314.6383264000001,
+                  "w": 258.67254400000013,
+                  "h": 87.58011765233618
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 296.4544982910156,
+                "y": 311.8416748046875,
+                "w": 258.6339416503906,
+                "h": 9.23748779296875
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "12) SEGUROS",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_desistimiento",
+          "label": "13) FACULTAD DE DESISTIMIENTO",
+          "text": "13) FACULTAD DE DESISTIMIENTO. a) Derecho de desistimiento recogido en la Ley de Venta a Plazos: Conforme a lo establecido en el art. 9 de la Ley de Venta a Plazos de Bienes Muebles, en el supuesto en que el prestatario tuviera la condición de consumidor conforme a la legislación vigente, este podrá ejercitar la facultad de desistimiento que le confiere dicha ley y en la forma prevista en la misma. En los supuestos de financiación de vehículos a motor se estará, en base a lo establecido en el número cuatro de este artículo 9, a la posible exclusión o modalización de esta facultad que se haya pactado por las partes en las condiciones particulares de este contrato. b) Derecho de desistimiento recogido en la Ley de contratos de crédito al consumo: En el supuesto de que el prestatario tuviera la condición de consumidor, conforme a lo establecido en la Ley de contratos de crédito al consumo, este dispondrá de un plazo de catorce días naturales para desistir del presente contrato sin indicación de los motivos ni penalización alguna u otra compensación, excepto la compensación al prestamista de los gastos no reembolsables abonados por este a la administración pública. El consumidor que ejerza el derecho de desistimiento deberá: - comunicarlo al financiador por cualquier medio admitido en derecho que permita dejar constancia de su recepción y contenido. Se considerará que se ha respetado el plazo si la notificación se ha enviado antes de la expiración del plazo, siempre que haya sido efectuada mediante documento en papel o cualquier otro soporte duradero a disposición del prestamista y accesible para él. - pagar al financiador el capital y el interés acumulado sobre dicho capital, calculado al tipo del contrato, desde la fecha de disposición del préstamo hasta la fecha efectiva de reembolso del capital al financiador, sin ningún retraso indebido, y a más tardar a los treinta días naturales de haber enviado la notificación de desistimiento. Este derecho de desistimiento no implica en modo alguno el derecho a desistir de la compraventa realizada, que se regirá por su normativa específica. El derecho de desistimiento recogido en este apartado no regirá en aquellos contratos de préstamo de importe superior a 75.000 euros.",
+          "y_hint": 409.6,
+          "bbox": {
+            "x": 296.4546813964844,
+            "y": 409.60955810546875,
+            "w": 126.004150390625,
+            "h": 9.237457275390625
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "13) FACULTAD DE DESISTIMIENTO. a) Derecho de desistimiento recogido en la Ley de Venta a Plazos: Conforme a lo establecido en el art. 9 de la Ley de Venta a Plazos de Bienes Muebles, en el supuesto en que el prestatario tuviera la condición de consumidor conforme a la legislación vigente, este podrá ejercitar la facultad de desistimiento que le confiere dicha ley y en la forma prevista en la misma. En los supuestos de financiación de vehículos a motor se estará, en base a lo establecido en el número cuatro de este artículo 9, a la posible exclusión o modalización de esta facultad que se haya pactado por las partes en las condiciones particulares de este contrato. b) Derecho de desistimiento recogido en la Ley de contratos de crédito al consumo: En el supuesto de que el prestatario tuviera la condición de consumidor, conforme a lo establecido en la Ley de contratos de crédito al consumo, este dispondrá de un plazo de catorce días naturales para desistir del presente contrato sin indicación de los motivos ni penalización alguna u otra compensación, excepto la compensación al prestamista de los gastos no reembolsables abonados por este a la administración pública. El consumidor que ejerza el derecho de desistimiento deberá: - comunicarlo al financiador por cualquier medio admitido en derecho que permita dejar constancia de su recepción y contenido. Se considerará que se ha respetado el plazo si la notificación se ha enviado antes de la expiración del plazo, siempre que haya sido efectuada mediante documento en papel o cualquier otro soporte duradero a disposición del prestamista y accesible para él. - pagar al financiador el capital y el interés acumulado sobre dicho capital, calculado al tipo del contrato, desde la fecha de disposición del préstamo hasta la fecha efectiva de reembolso del capital al financiador, sin ningún retraso indebido, y a más tardar a los treinta días naturales de haber enviado la notificación de desistimiento. Este derecho de desistimiento no implica en modo alguno el derecho a desistir de la compraventa realizada, que se regirá por su normativa específica. El derecho de desistimiento recogido en este apartado no regirá en aquellos contratos de préstamo de importe superior a 75.000 euros.",
+              "row_y_hint": 409.6,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 88,
+                "bbox": {
+                  "x": 296.4546813964844,
+                  "y": 409.60955810546875,
+                  "w": 126.004150390625,
+                  "h": 9.237457275390625
+                },
+                "case_class": "UPPER",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/183",
+                "bbox": {
+                  "x": 296.45442559999987,
+                  "y": 412.4061471999998,
+                  "w": 126.0041536,
+                  "h": 5.760239252336476
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 296.4546813964844,
+                "y": 409.60955810546875,
+                "w": 126.004150390625,
+                "h": 9.237457275390625
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "13) FACULTAD DE DESISTIMIENTO",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "cg_cesion",
+          "label": "14) CESIÓN",
+          "text": "14) CESIÓN. El financiador se reserva el derecho a ceder a tercero los derechos y acciones derivados del presente contrato, así como la reserva de dominio constituida a su favor y cualquier otra garantía formalizada con ocasión del presente contrato, comunicando esta cesión al prestatario.",
+          "y_hint": 693.7,
+          "bbox": {
+            "x": 296.4541320800781,
+            "y": 693.667724609375,
+            "w": 258.5881042480469,
+            "h": 9.237548828125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "14) CESIÓN. El financiador se reserva el derecho a ceder a tercero los derechos y acciones derivados del presente contrato, así como la reserva de dominio constituida a su favor y cualquier otra garantía formalizada con ocasión del presente contrato, comunicando esta cesión al prestatario.",
+              "row_y_hint": 693.7,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 169,
+                "bbox": {
+                  "x": 296.4541320800781,
+                  "y": 693.667724609375,
+                  "w": 258.5881042480469,
+                  "h": 9.237548828125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/190",
+                "bbox": {
+                  "x": 296.4544256,
+                  "y": 696.4644255999999,
+                  "w": 258.71876991999994,
+                  "h": 30.491106452336567
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 296.4541320800781,
+                "y": 693.667724609375,
+                "w": 258.5881042480469,
+                "h": 9.237548828125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "14) CESIÓN",
+              "engine_agreement": 2
+            }
+          }
+        }
+      ],
+      "title_bbox": null,
+      "container_bbox": {
+        "x": 26.957271575927734,
+        "y": 77.9385986328125,
+        "w": 528.2390785217285,
+        "h": 624.9666748046875
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "CONDICIONES GENERALES",
+          "pdfplumber": null,
+          "liteparse": null,
+          "docling": {
+            "cell_ref": "#/texts/156",
+            "bbox": {
+              "x": 240.752192,
+              "y": 38.20732480000004,
+              "w": 102.12846592000002,
+              "h": 5.760239252336305
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 240.752192,
+            "y": 38.20732480000004,
+            "w": 102.12846592000002,
+            "h": 5.760239252336305
+          },
+          "engine_agreement": 1
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 26.957271575927734,
+            "y": 77.9385986328125,
+            "w": 528.2390785217285,
+            "h": 624.9666748046875
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 28,
+            "horizontal": 36
+          },
+          "colons_inside": 5,
+          "container_score": 1
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 14,
+          "child_type_distribution": {
+            "prose_block": 14
+          },
+          "path": "CONDICIONES GENERALES"
+        }
+      }
+    },
+    {
+      "type": "signature_placeholder",
+      "id": "firma_prestatarios",
+      "label": "Prestatario/s",
+      "value": "",
+      "y_hint": 766.9,
+      "label_bbox": {
+        "x": 32.2732928,
+        "y": 768.47670464,
+        "w": 43.32139136,
+        "h": 7.7043200000000525
+      },
+      "bbox": {
+        "x": 32.2732928,
+        "y": 768.47670464,
+        "w": 43.32139136,
+        "h": 7.7043200000000525
+      },
+      "evidence": {
+        "label_signal": {
+          "text": "Prestatario/s",
+          "row_y_hint": 766.9,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 32.2732928,
+              "y": 768.47670464,
+              "w": 43.32139136,
+              "h": 7.7043200000000525
+            },
+            "char_indices": [
+              8276,
+              8277,
+              8278,
+              8279,
+              8280,
+              8281,
+              8282,
+              8283,
+              8284,
+              8285,
+              8286,
+              8287,
+              8288
+            ],
+            "n_chars": 13,
+            "row_y": 768.47670464
+          },
+          "liteparse": {
+            "span_id": 176,
+            "bbox": {
+              "x": 32.273292541503906,
+              "y": 766.9358520507812,
+              "w": 43.321388244628906,
+              "h": 9.23748779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 32.2732928,
+            "y": 768.47670464,
+            "w": 43.32139136,
+            "h": 7.7043200000000525
+          },
+          "engine_agreement": 2
+        },
+        "status": "empty",
+        "structural_signals": {
+          "kind": "signature_placeholder"
+        }
+      }
+    },
+    {
+      "type": "signature_placeholder",
+      "id": "firma_fiadores",
+      "label": "Fiador/es",
+      "value": "",
+      "y_hint": 766.9,
+      "label_bbox": {
+        "x": 299.9213696,
+        "y": 768.47670464,
+        "w": 31.82654592,
+        "h": 7.7043200000000525
+      },
+      "bbox": {
+        "x": 299.9213696,
+        "y": 768.47670464,
+        "w": 31.82654592,
+        "h": 7.7043200000000525
+      },
+      "evidence": {
+        "label_signal": {
+          "text": "Fiador/es",
+          "row_y_hint": 766.9,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 299.9213696,
+              "y": 768.47670464,
+              "w": 31.82654592,
+              "h": 7.7043200000000525
+            },
+            "char_indices": [
+              8289,
+              8290,
+              8291,
+              8292,
+              8293,
+              8294,
+              8295,
+              8296,
+              8297
+            ],
+            "n_chars": 9,
+            "row_y": 768.47670464
+          },
+          "liteparse": {
+            "span_id": 177,
+            "bbox": {
+              "x": 299.9213562011719,
+              "y": 766.9358520507812,
+              "w": 31.8265380859375,
+              "h": 9.23748779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/191",
+            "bbox": {
+              "x": 299.9213696,
+              "y": 769.7325088,
+              "w": 31.82654592,
+              "h": 5.760239252336419
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 299.9213696,
+            "y": 768.47670464,
+            "w": 31.82654592,
+            "h": 7.7043200000000525
+          },
+          "engine_agreement": 3
+        },
+        "status": "empty",
+        "structural_signals": {
+          "kind": "signature_placeholder"
+        }
+      }
+    },
+    {
+      "type": "signature_placeholder",
+      "id": "firma_financiador",
+      "label": "Financiador",
+      "value": "",
+      "y_hint": 766.9,
+      "label_bbox": {
+        "x": 449.92448,
+        "y": 768.47670464,
+        "w": 40.02394240000001,
+        "h": 7.7043200000000525
+      },
+      "bbox": {
+        "x": 449.92448,
+        "y": 768.47670464,
+        "w": 40.02394240000001,
+        "h": 7.7043200000000525
+      },
+      "evidence": {
+        "label_signal": {
+          "text": "Financiador",
+          "row_y_hint": 766.9,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 449.92448,
+              "y": 768.47670464,
+              "w": 40.02394240000001,
+              "h": 7.7043200000000525
+            },
+            "char_indices": [
+              8298,
+              8299,
+              8300,
+              8301,
+              8302,
+              8303,
+              8304,
+              8305,
+              8306,
+              8307,
+              8308
+            ],
+            "n_chars": 11,
+            "row_y": 768.47670464
+          },
+          "liteparse": {
+            "span_id": 178,
+            "bbox": {
+              "x": 449.9244689941406,
+              "y": 766.9358520507812,
+              "w": 40.023956298828125,
+              "h": 9.23748779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/191",
+            "bbox": {
+              "x": 299.9213696,
+              "y": 769.7325088,
+              "w": 31.82654592,
+              "h": 5.760239252336419
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 449.92448,
+            "y": 768.47670464,
+            "w": 40.02394240000001,
+            "h": 7.7043200000000525
+          },
+          "engine_agreement": 3
+        },
+        "status": "empty",
+        "structural_signals": {
+          "kind": "signature_placeholder"
+        }
+      }
+    },
+    {
+      "type": "noise",
+      "id": "modelo_num",
+      "text": "Nº Modelo F_AS-5",
+      "kind": "sidebar",
+      "y_hint": 24.5,
+      "bbox": {
+        "x": 477.1977728,
+        "y": 26.088429440000027,
+        "w": 63.99978623999999,
+        "h": 7.704319999999939
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Nº Modelo F_AS-5",
+          "row_y_hint": 24.5,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 477.1977728,
+              "y": 26.088429440000027,
+              "w": 63.99978623999999,
+              "h": 7.704319999999939
+            },
+            "char_indices": [
+              8607,
+              8608,
+              8609,
+              8610,
+              8611,
+              8612,
+              8613,
+              8614,
+              8615,
+              8616,
+              8617,
+              8618,
+              8619,
+              8620
+            ],
+            "n_chars": 14,
+            "row_y": 26.088429440000027
+          },
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 477.1977844238281,
+              "y": 24.54766845703125,
+              "w": 63.999664306640625,
+              "h": 9.23748779296875
+            },
+            "case_class": "Title",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/158",
+            "bbox": {
+              "x": 477.1977728,
+              "y": 27.344233600000052,
+              "w": 68.26797952000021,
+              "h": 14.774293652336382
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 477.1977728,
+            "y": 26.088429440000027,
+            "w": 63.99978623999999,
+            "h": 7.704319999999939
+          },
+          "engine_agreement": 3
+        },
+        "kind": "sidebar"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "hoja_num",
+      "text": "Hoja nº ......2/11......",
+      "kind": "page_number",
+      "y_hint": 33.6,
+      "bbox": {
+        "x": 477.19777280000005,
+        "y": 35.102483840000104,
+        "w": 68.26797952000015,
+        "h": 7.704319999999939
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Hoja nº ......2/11......",
+          "row_y_hint": 33.6,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 477.19777280000005,
+              "y": 35.102483840000104,
+              "w": 68.26797952000015,
+              "h": 7.704319999999939
+            },
+            "char_indices": [
+              8621,
+              8622,
+              8623,
+              8624,
+              8625,
+              8626,
+              8627,
+              8628,
+              8629,
+              8630,
+              8631,
+              8632,
+              8633,
+              8634,
+              8635,
+              8636,
+              8637,
+              8638,
+              8639,
+              8640
+            ],
+            "n_chars": 22,
+            "row_y": 35.102483840000104
+          },
+          "liteparse": {
+            "span_id": 2,
+            "bbox": {
+              "x": 477.19775390625,
+              "y": 33.5616455078125,
+              "w": 25.47052001953125,
+              "h": 9.23748779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/158",
+            "bbox": {
+              "x": 477.1977728,
+              "y": 27.344233600000052,
+              "w": 68.26797952000021,
+              "h": 14.774293652336382
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 477.19777280000005,
+            "y": 35.102483840000104,
+            "w": 68.26797952000015,
+            "h": 7.704319999999939
+          },
+          "engine_agreement": 3
+        },
+        "kind": "page_number"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "pagina_2_22",
+      "text": "2/22",
+      "kind": "page_number",
+      "y_hint": 274.3,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 274.3404541015625,
+        "w": 9.0560302734375,
+        "h": 19.199951171875
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "2/22",
+          "row_y_hint": 274.3,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 193,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 274.3404541015625,
+              "w": 9.0560302734375,
+              "h": 19.199951171875
+            },
+            "case_class": "none",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/157",
+            "bbox": {
+              "x": 583.804,
+              "y": 274.3399999999996,
+              "w": 5.618213036565976,
+              "h": 475.2000000000004
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 274.3404541015625,
+            "w": 9.0560302734375,
+            "h": 19.199951171875
+          },
+          "engine_agreement": 2
+        },
+        "kind": "page_number"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_metadata",
+      "text": "Logalty Guid: 001001-0001-000000040208342.par Date: 2020/01/27 T 14:22:49 CET +0100 Pages: 2/22",
+      "kind": "logalty_metadata",
+      "y_hint": 442.3,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 442.34002685546875,
+        "w": 9.0560302734375,
+        "h": 47.9998779296875
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Logalty Guid: 001001-0001-000000040208342.par Date: 2020/01/27 T 14:22:49 CET +0100 Pages: 2/22",
+          "row_y_hint": 442.3,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 188,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 442.34002685546875,
+              "w": 9.0560302734375,
+              "h": 47.9998779296875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 442.34002685546875,
+            "w": 9.0560302734375,
+            "h": 47.9998779296875
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "footer_reverso",
+      "text": "REVERSO SÓLO APTO PARA LA IMPRESIÓN DE LAS CONDICIONES GENERALES DE ESTE CONTRATO",
+      "kind": "watermark",
+      "y_hint": 808.1,
+      "bbox": {
+        "x": 26.957312,
+        "y": 809.61777344,
+        "w": 296.1001305600001,
+        "h": 7.7043200000000525
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "REVERSO SÓLO APTO PARA LA IMPRESIÓN DE LAS CONDICIONES GENERALES DE ESTE CONTRATO",
+          "row_y_hint": 808.1,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 26.957312,
+              "y": 809.61777344,
+              "w": 296.1001305600001,
+              "h": 7.7043200000000525
+            },
+            "char_indices": [
+              8309,
+              8310,
+              8311,
+              8312,
+              8313,
+              8314,
+              8315,
+              8316,
+              8317,
+              8318,
+              8319,
+              8320,
+              8321,
+              8322,
+              8323,
+              8324,
+              8325,
+              8326,
+              8327,
+              8328
+            ],
+            "n_chars": 81,
+            "row_y": 809.61777344
+          },
+          "liteparse": {
+            "span_id": 182,
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 808.076904296875,
+              "w": 296.10009765625,
+              "h": 9.23748779296875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/192",
+            "bbox": {
+              "x": 26.957312,
+              "y": 810.8735776,
+              "w": 296.1001305600002,
+              "h": 5.760239252336419
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 26.957312,
+            "y": 809.61777344,
+            "w": 296.1001305600001,
+            "h": 7.7043200000000525
+          },
+          "engine_agreement": 3
+        },
+        "kind": "watermark"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "footer_mod",
+      "text": "MOD. (M) 006-720.0313-02 (16) - 17 de julio de 2019",
+      "kind": "watermark",
+      "y_hint": 808.1,
+      "bbox": {
+        "x": 375.50074880000005,
+        "y": 809.61777344,
+        "w": 181.12085888000007,
+        "h": 7.7043200000000525
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "MOD. (M) 006-720.0313-02 (16) - 17 de julio de 2019",
+          "row_y_hint": 808.1,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 375.50074880000005,
+              "y": 809.61777344,
+              "w": 181.12085888000007,
+              "h": 7.7043200000000525
+            },
+            "char_indices": [
+              8390,
+              8391,
+              8392,
+              8393,
+              8394,
+              8395,
+              8396,
+              8397,
+              8398,
+              8399,
+              8400,
+              8401,
+              8402,
+              8403,
+              8404,
+              8405,
+              8406,
+              8407,
+              8408,
+              8409
+            ],
+            "n_chars": 51,
+            "row_y": 809.61777344
+          },
+          "liteparse": {
+            "span_id": 183,
+            "bbox": {
+              "x": 375.500732421875,
+              "y": 808.076904296875,
+              "w": 181.120849609375,
+              "h": 9.23748779296875
+            },
+            "case_class": "mixed",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/193",
+            "bbox": {
+              "x": 375.50074880000005,
+              "y": 810.8735776,
+              "w": 181.12085887999962,
+              "h": 5.760239252336419
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 375.50074880000005,
+            "y": 809.61777344,
+            "w": 181.12085888000007,
+            "h": 7.7043200000000525
+          },
+          "engine_agreement": 3
+        },
+        "kind": "watermark"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "condiciones_generales",
+      "title": "CONDICIONES GENERALES",
+      "title_bbox": null,
+      "container_bbox": {
+        "x": 26.957271575927734,
+        "y": 77.9385986328125,
+        "w": 528.2390785217285,
+        "h": 624.9666748046875
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Prestatario/s",
+      "value": "",
+      "section": null,
+      "band": null,
+      "column_header": null,
+      "row_y": 766.9,
+      "rule": "structured-signature-placeholder",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 32.2732928,
+        "y": 768.47670464,
+        "w": 43.32139136,
+        "h": 7.7043200000000525
+      },
+      "value_bboxes": [],
+      "evidence": {
+        "path": "",
+        "engine_agreement": 2,
+        "bucket": "empty"
+      }
+    },
+    {
+      "label": "Fiador/es",
+      "value": "",
+      "section": null,
+      "band": null,
+      "column_header": null,
+      "row_y": 766.9,
+      "rule": "structured-signature-placeholder",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 299.9213696,
+        "y": 768.47670464,
+        "w": 31.82654592,
+        "h": 7.7043200000000525
+      },
+      "value_bboxes": [],
+      "evidence": {
+        "path": "",
+        "engine_agreement": 3,
+        "bucket": "empty"
+      }
+    },
+    {
+      "label": "Financiador",
+      "value": "",
+      "section": null,
+      "band": null,
+      "column_header": null,
+      "row_y": 766.9,
+      "rule": "structured-signature-placeholder",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 449.92448,
+        "y": 768.47670464,
+        "w": 40.02394240000001,
+        "h": 7.7043200000000525
+      },
+      "value_bboxes": [],
+      "evidence": {
+        "path": "",
+        "engine_agreement": 3,
+        "bucket": "empty"
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "scaffolder",
+    "n_chars": 8742,
+    "n_rows": 117,
+    "n_liteparse_spans": 194,
+    "n_docling_blocks": 40,
+    "n_rects": 529,
+    "kv_pair_breakdown": {
+      "3_eng": 0,
+      "2_eng": 0,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 3,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "scaffolder",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "condiciones_generales_prose",
+      "two_column_legal_clauses",
+      "contract_banner_noise",
+      "signature_row",
+      "logalty_sidebar_noise"
+    ],
+    "needs_review": false,
+    "document_type": "contrato_prestamo_financiacion"
+  }
+}
