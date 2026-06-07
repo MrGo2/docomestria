@@ -1,0 +1,168 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/16815699P_CONTRATO-p02.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/16815699P_CONTRATO.pdf",
+  "page": 2,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 31,
+    "populated_kv": 26,
+    "empty_kv": 5,
+    "high": 0,
+    "medium": 6,
+    "low": 1,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "MEDIUM",
+      "type": "missing_bbox",
+      "spec_location": "section.id=intereses / kv_group.id=intereses_tipos / label=Tipo deudor",
+      "evidence": {
+        "golden_label": "Tipo deudor",
+        "golden_value": "7,99% anual",
+        "pdf_text_found": "7,99%anual ,",
+        "atoms_span_match": {"text": "7,99%anual ,", "y": 162.76, "x": 203.31, "w": 54.21},
+        "comment": "Value text exists in atoms at the correct position (y=162.8, x=203.3) and closely matches golden value with minor whitespace normalization ('7,99%anual ,' vs '7,99% anual'). However value_bboxes is [] — engine_agreement=0 means the builder could not pin the bbox. The span at (y=162.76, x=203.31) is the correct value bbox. The golden value text '7,99% anual' is an acceptable normalization of the raw atom."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "intereses_tipos.Tipo deudor",
+        "params": {
+          "value_bboxes": [{"x": 203.31, "y": 162.76, "w": 54.21, "h": 11.55}],
+          "x_hint": 203.3,
+          "row_y_hint": 162.8
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=intereses / kv_group.id=intereses_tipos / label=TAE / TAE Variable (Condición General 8ª)",
+      "evidence": {
+        "golden_label": "TAE / TAE Variable (Condición General 8ª)",
+        "golden_value": "9,82%",
+        "pdf_text_found": "9,82 % de demora",
+        "atoms_span_match": {"text": "9,82 % de demora", "y": 166.22, "x": 349.61, "w": 27.43},
+        "comment": "The atom span at y=166.22, x=349.61 reads '9,82 % de demora'. The golden value '9,82%' correctly isolates the TAE figure, but the raw atom fuses it with ' de demora' (which is the start of the adjacent label). The space between '9,82' and '%' is also different ('9,82 %' vs '9,82%'). The golden value extraction is semantically correct but the text does not appear verbatim in atoms. value_bboxes is [] — bbox must be pinned."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "intereses_tipos.TAE / TAE Variable (Condición General 8ª)",
+        "params": {
+          "new_value": "9,82%",
+          "note": "value text is correct (partial match of atom '9,82 % de demora'); space normalization acceptable",
+          "value_bboxes": [{"x": 349.61, "y": 166.22, "w": 27.43, "h": 11.55}],
+          "x_hint": 349.6,
+          "row_y_hint": 166.2
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "MEDIUM",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=intereses / kv_group.id=intereses_tipos / label=Intereses de demora",
+      "evidence": {
+        "golden_label": "Intereses de demora",
+        "golden_value": "9,990% anual / 4.084,46",
+        "pdf_text_found": "9,990 %anual / 4.084,46",
+        "atoms_span_match": {"text": "9,990 %anual / 4.084,46", "y": 163.91, "x": 444.61, "w": 100.99},
+        "comment": "The atom span at y=163.91, x=444.61 reads '9,990 %anual / 4.084,46\\x9f' where \\x9f is a CID glyph artifact for the € symbol. The golden value '9,990% anual / 4.084,46' omits the trailing currency symbol and normalizes whitespace ('%anual' -> '% anual'). These are acceptable normalizations. value_bboxes is [] — engine_agreement=0. Need to pin the bbox."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "intereses_tipos.Intereses de demora",
+        "params": {
+          "value_bboxes": [{"x": 444.61, "y": 163.91, "w": 100.99, "h": 11.55}],
+          "x_hint": 444.6,
+          "row_y_hint": 163.9
+        }
+      }
+    },
+    {
+      "id": "f04",
+      "severity": "MEDIUM",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=condiciones_economicas / kv_leaf.id=penalidad_cuota_impagado",
+      "evidence": {
+        "golden_label": "Penalidad por cada cuota impagado",
+        "golden_value": "35 (se cobrará una sola vez para cada cuota)",
+        "pdf_text_found": "Penalidad por cada cuota impagado: 35 (se cobrará una sola vez para cada cuota)",
+        "atoms_span_match": {"text": "Penalidad por cada cuota impagado: 35 (se cobrará una sola vez para cada cuota)", "y": 260.99, "x": 29.50, "w": 357.97},
+        "comment": "The atom span at y=261.0, x=29.5 fuses the label and value into one span. The golden value '35 (se cobrará una sola vez para cada cuota)' omits the CID glyph \\x9f (€ artifact) between '35' and '(se cobrará'. This is the correct semantic extraction — the \\x9f is a rendering artifact, not part of the value. The value text is correct. value_bboxes is [] because the builder couldn't find a standalone value span — the label and value are fused. No simple bbox fix available; patcher cannot split fused spans."
+      },
+      "proposed_fix": {
+        "op": "mark",
+        "target": "condiciones_economicas.penalidad_cuota_impagado",
+        "params": {
+          "note": "Value is correct; fused atom prevents bbox pinning. value_bboxes must remain [] unless a char-level split is performed. Consider adding approximate value_bbox from the fused span right half.",
+          "approximate_value_bbox": {"x": 191.0, "y": 260.99, "w": 196.5, "h": 9.63}
+        }
+      }
+    },
+    {
+      "id": "f05",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "section.id=firmas / kv_group.id=firma_lugar_fecha / label=En (Prestatario)",
+      "evidence": {
+        "golden_label": "En (Prestatario)",
+        "golden_value": "LAS PALMAS",
+        "pdf_text_found": "En LAS PALMAS",
+        "atoms_span_match": {"text": "En LAS PALMAS", "y": 576.2, "x": 27.0, "w": 63.6},
+        "comment": "The label_bbox for 'En (Prestatario)' and 'En (Fiador)' incorrectly points to docling #/texts/110 at x=409.01, y=579.74 — which is the 'En' label of the Financiador column (far right). The actual value 'LAS PALMAS' is at x=43.4, y=578.2 for Prestatario and x=297.4, y=578.2 for Fiador. The label_bbox x (409.0) > value_bbox x (43.4), meaning label appears to the right of the value — structurally wrong. The three 'En (X)' KVs share the same wrong label_bbox. The atoms show 3 separate spans: 'En LAS PALMAS' at x=27, 280.7, and 409.0 respectively."
+      },
+      "proposed_fix": {
+        "op": "move",
+        "target": "firmas.En (Prestatario).label_bbox",
+        "params": {
+          "new_label_bbox": null,
+          "note": "Label 'En' is fused with value in atom 'En LAS PALMAS'. Set label_bbox=null (same pattern as other fused-label KVs in this golden). Same fix applies to 'En (Fiador)' and 'En (Financiador)'."
+        }
+      }
+    },
+    {
+      "id": "f06",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "section.id=firmas / kv_group.id=firma_lugar_fecha / label=En (Fiador)",
+      "evidence": {
+        "golden_label": "En (Fiador)",
+        "golden_value": "LAS PALMAS",
+        "pdf_text_found": "En LAS PALMAS",
+        "atoms_span_match": {"text": "En LAS PALMAS", "y": 576.2, "x": 280.7, "w": 63.8},
+        "comment": "Same label_bbox misassignment as f05. label_bbox points to docling #/texts/110 at x=409.0 (Financiador En label), but value is at x=297.4. label_bbox.x (409) > value_bbox.x (297) — structurally wrong direction."
+      },
+      "proposed_fix": {
+        "op": "move",
+        "target": "firmas.En (Fiador).label_bbox",
+        "params": {
+          "new_label_bbox": null,
+          "note": "Label 'En' is fused with value in atom. Set label_bbox=null."
+        }
+      }
+    },
+    {
+      "id": "f07",
+      "severity": "LOW",
+      "type": "missing_kv",
+      "spec_location": "section.id=condiciones_economicas",
+      "evidence": {
+        "golden_label": null,
+        "golden_value": null,
+        "pdf_text_found": "Variable Tipo deudor 7,99 %anual ,",
+        "atoms_span_match": {"text": "Variable Tipo deudor", "y": 162.76, "x": 99.3, "w": 87.7},
+        "comment": "There is a span at y=162.8, x=99.3 reading 'Variable Tipo deudor' that fuses the 'Variable' checkbox option label with 'Tipo deudor'. The 'Intereses por: Variable' KV is correctly marked empty. The 'Variable Tipo deudor' fusion suggests the checkbox for Variable is NOT checked (no 'X' glyph at that position), which is consistent with the golden. Low severity — no missed KV, just an atoms fusion pattern worth noting."
+      },
+      "proposed_fix": {
+        "op": "delete",
+        "target": null,
+        "params": {
+          "note": "No action required. The 'Intereses por: Variable' empty slot is correctly modeled. The atom fusion is a PDF rendering artifact."
+        }
+      }
+    }
+  ]
+}
