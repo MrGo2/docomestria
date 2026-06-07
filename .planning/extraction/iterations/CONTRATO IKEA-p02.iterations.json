@@ -1,0 +1,26 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 2,
+  "spec_path": "scripts/specs/ikea_p02.py",
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/CONTRATO IKEA-p02.json",
+  "findings_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/reviews/CONTRATO IKEA-p02.findings.json",
+  "started_at": "2026-06-07T15:01:40+02:00",
+  "iterations": [
+    {
+      "iter": 1,
+      "spec_hash": "sha256:0b5a2fbc515ec2d6",
+      "golden_kv_breakdown": {
+        "3_eng": 5,
+        "2_eng": 2,
+        "1_eng": 0,
+        "0_eng": 0,
+        "empty": 0,
+        "footnote": 0,
+        "footnote_ref": 0
+      },
+      "decision": "manual_review_pending"
+    }
+  ],
+  "final_status": "awaiting_manual_review",
+  "total_seconds": 0.4
+}
