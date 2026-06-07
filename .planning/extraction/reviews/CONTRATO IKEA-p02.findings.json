@@ -1,0 +1,62 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/CONTRATO IKEA-p02.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 2,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 7,
+    "populated_kv": 7,
+    "empty_kv": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 2,
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "LOW",
+      "type": "missing_kv",
+      "spec_location": "section.id=parte_caixabank",
+      "evidence": {
+        "golden_label": null,
+        "golden_value": null,
+        "pdf_text_found": "CaixaBank Payments & Consumer, E.F.C., E.P., S.A.*, Sociedad Unipersonal (también, «CaixaBank Payments & Consumer» o «nosotros»)",
+        "atoms_span_match": {"text": "CaixaBank Payments & Consumer, E.F.C., E.P., S.A.*,", "y": 225.8, "x": 73.2},
+        "comment": "Section 'Por otra parte, nosotros' has no children. The two-line prose describing the counterparty (spans 8-10) is the de-facto 'value' for this party. Could be modelled as a prose_block child or kv_leaf with label='Entidad'. Optional — current golden treats it as a header-only section, which is defensible."
+      },
+      "proposed_fix": {
+        "op": "add_kv",
+        "target": "parte_caixabank",
+        "params": {
+          "label": "Entidad",
+          "value": "CaixaBank Payments & Consumer, E.F.C., E.P., S.A.*, Sociedad Unipersonal (también, «CaixaBank Payments & Consumer» o «nosotros»)",
+          "y_hint": 226,
+          "rule": "structured-prose-block",
+          "confidence": "MEDIUM"
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "LOW",
+      "type": "possible_noise_misclassified",
+      "spec_location": "noise[]",
+      "evidence": {
+        "golden_label": null,
+        "golden_value": null,
+        "pdf_text_found": "Logalty / Guid: 001001-0001-000000136441990.par / Date: 2025/02/25 T 20:07:05 CET +0100 / Pages: 2/59",
+        "atoms_span_match": {"text": "Logalty", "y": 715.9, "x": 581.6},
+        "comment": "Right-margin vertical text rendered by Logalty signature service (spans 44-53, x≈581.6, font_size=8). Currently not captured in noise[]. Not a KV — but completeness suggests adding these to noise[] for downstream noise-detection training."
+      },
+      "proposed_fix": {
+        "op": "mark_noise",
+        "target": "page_margin_signature_band",
+        "params": {
+          "spans": [44, 45, 46, 47, 48, 49, 50, 51, 52, 53],
+          "reason": "logalty_signature_band_right_margin"
+        }
+      }
+    }
+  ]
+}
