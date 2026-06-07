@@ -1,0 +1,119 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/25356487E_CONTRATO-p28.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/25356487E_CONTRATO.pdf",
+  "page": 28,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 18,
+    "populated_kv": 18,
+    "empty_kv": 0,
+    "high": 0,
+    "medium": 2,
+    "low": 1,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "section.id=otros_aspectos_juridicos / table.id=aspectos_juridicos / row=0 (Derecho de desistimiento)",
+      "evidence": {
+        "golden_label": "Derecho de desistimiento. Usted tiene derecho a desistir del contrato de crédito en el plazo de 14 días naturales.",
+        "golden_value": "Sí",
+        "pdf_text_found": "Sí at x=164.71 y=177.79 (liteparse span_id=35)",
+        "atoms_span_match": {
+          "text": "Sí",
+          "y": 177.79,
+          "x": 164.71
+        },
+        "comment": "The kv_pairs value_bboxes[0] records x=65.70, which falls inside the label column (label span ends at ~97.7: x=25.6 + w=72.1). The actual 'Sí' atom is at x=164.71 (liteparse) and x=164.71 (pdfplumber via char_indices 1109-1110 placed within a merged label+value text run). The pdfplumber char_indices appear to have been sourced from a merged text stream where the Si character positions resolve to the label bbox rather than the value column bbox. The value text is correct; only the value_bbox is wrong."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "kv_pairs[row_y=176].value_bboxes[0]",
+        "params": {
+          "field": "value_bboxes",
+          "new_value_bboxes": [
+            {
+              "x": 164.71055603027344,
+              "y": 177.78656005859375,
+              "w": 5.4546661376953125,
+              "h": 9.23748779296875
+            }
+          ],
+          "source": "liteparse span_id=35",
+          "note": "Replace pdfplumber-sourced bbox (x=65.70, in label column) with liteparse bbox (x=164.71, in value column)"
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "wrong_value_text",
+      "spec_location": "table.id=costes_relacionados / row=3 (Costes en caso de pagos atrasados)",
+      "evidence": {
+        "golden_label": "Costes en caso de pagos atrasados. La no realización de un pago podrá acarrearle graves consecuencias (por ejemplo, la inclusión en Sistemas de Información Crediticia, así como el embargo y la venta forzosa de sus bienes).",
+        "golden_value": "Interés de demora: TIN de cada disposición + dos puntos porcentuales.",
+        "pdf_text_found": "Right column at y=113-165 contains 6 spans: (1) 'Interés de demora: TIN de cada disposición + dos puntos porcentuales.' (2) 'Compensación por costes de cobro ante un impago (retraso en el pago):' (3) '35 por los recursos que CaixaBank Payments & Consumer destinará a poner al día la deuda impagada...' (4) '...más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 60...' (5) '...impago, CaixaBank Payments & Consumer podrá enviar al titular un burofax...' (6) 'Actualmente tiene un coste de 24 y CaixaBank Payments & Consumer reclamará al titular su coste en deudas superiores a 300.'",
+        "atoms_span_match": {
+          "text": "Compensación por costes de cobro ante un impago (retraso en el pago):",
+          "y": 120.9,
+          "x": 163.3
+        },
+        "comment": "The golden captures only the first line of this multi-line cell value. The cell contains two distinct financial concepts: (1) Interés de demora (the first line captured) and (2) Compensación por costes de cobro ante un impago, with specific amounts: 35€, 60€, 24€, 300€ threshold. These amounts are material financial terms. The atom's euro sign is encoded as \\x9f (Windows-1252 currency sign) which equals €. All 6 right-column spans from y=113.8 to y=149.1 belong to this cell. The golden's row.value.text is truncated at the first span boundary, consistent with the general first-line-capture pattern in this golden, but the omitted content includes legally required penalty amounts."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "structure[0].rows[3].value.text",
+        "params": {
+          "table_id": "costes_relacionados",
+          "row_index": 3,
+          "current_value": "Interés de demora: TIN de cada disposición + dos puntos porcentuales.",
+          "proposed_value": "Interés de demora: TIN de cada disposición + dos puntos porcentuales. Compensación por costes de cobro ante un impago (retraso en el pago): 35€ por los recursos que CaixaBank Payments & Consumer destinará a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 60€. Si después de 15 días se mantiene el impago, CaixaBank Payments & Consumer podrá enviar al titular un burofax o equivalente con certificación de contenido y recibo. Actualmente tiene un coste de 24€ y CaixaBank Payments & Consumer reclamará al titular su coste en deudas superiores a 300€.",
+          "note": "Full cell value from 6 liteparse spans at x~163.3, y=113.8..149.1. The euro sign \\x9f in atoms = €. Also update kv_pairs[row_y=114].value to match.",
+          "value_bbox_update": {
+            "x": 163.3237762451172,
+            "y": 113.763671875,
+            "w": 199.15663146972656,
+            "h": 44.574951171875
+          }
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "LOW",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=info_adicional_distancia / section.id=relativa_prestamista / table.id=datos_prestamista / row=0 (Registro)",
+      "evidence": {
+        "golden_label": "Registro",
+        "golden_value": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492",
+        "pdf_text_found": "Two spans at x=161.9: (1) y=446.8 'CaixaBank...Folio 29, Hoja M-656.492' (134 chars), (2) y=454.7 'e inscrita con el nº 8776 en el Registro de Establecimientos de Crédito del Banco de España.'",
+        "atoms_span_match": {
+          "text": "e inscrita con el nº 8776 en el Registro de Establecimientos de Crédito del Banco de España.",
+          "y": 454.7,
+          "x": 161.9
+        },
+        "comment": "The golden captures the first span of this 2-span cell (134 chars, ending at 'Hoja M-656.492'). The docling block confirms both spans belong to the same cell. The second span contains the Banco de España registration number nº 8776, which is a legally required disclosure. This follows the same first-line-capture pattern used consistently across all multiline values in this golden. Classified LOW because (a) the captured text IS present in atoms (the first span is correct), and (b) the omission pattern is consistent with the spec design. Human review recommended to decide whether to extend."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "structure[2].children[0].children[0].rows[0].value.text",
+        "params": {
+          "table_id": "datos_prestamista",
+          "row_index": 0,
+          "current_value": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492",
+          "proposed_value": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492 e inscrita con el nº 8776 en el Registro de Establecimientos de Crédito del Banco de España.",
+          "note": "Append second span (y=454.7). Only apply if spec policy is full-cell capture. Also update kv_pairs[row_y=446].value to match.",
+          "second_span_bbox": {
+            "x": 161.9369984,
+            "y": 454.7,
+            "w": 355.76238464,
+            "h": 7.812
+          }
+        }
+      }
+    }
+  ]
+}

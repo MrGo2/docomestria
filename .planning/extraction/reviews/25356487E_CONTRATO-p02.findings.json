@@ -1,0 +1,203 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/25356487E_CONTRATO-p02.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/25356487E_CONTRATO.pdf",
+  "page": 2,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 25,
+    "populated_kv": 22,
+    "empty_kv": 3,
+    "high": 2,
+    "medium": 2,
+    "low": 1,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "HIGH",
+      "type": "label_value_misaligned",
+      "spec_location": "kv_leaf id=domicilio_pago_entidad / label='Domicilio de pago - Entidad'",
+      "evidence": {
+        "golden_label": "Domicilio de pago - Entidad",
+        "golden_value": "BANCO BILBAO VIZCAYA ARGENTARIA",
+        "pdf_text_found": "DOMICILIO DE PAGO: Entidad BANCO BILBAO VIZCAYA ARGENTARIA, , con domicilio en AV. TENOR FLETA, 55",
+        "atoms_span_match": {
+          "text": "DOMICILIO DE PAGO: Entidad BANCO BILBAO VIZCAYA ARGENTARIA, , con domicilio en AV. TENOR FLETA, 55",
+          "y": 380.6,
+          "x": 26.96
+        },
+        "comment": "The value_bbox (x=26.95, y=380.59, w=467.55) starts at the same x as the beginning of the full line — identical to where the label 'DOMICILIO DE PAGO' starts. There is no separate label_bbox recorded (label_bbox=null). The value bbox covers the entire span including the label prefix text. The correct value bbox should start after 'Entidad ' and cover only 'BANCO BILBAO VIZCAYA ARGENTARIA'. Also, the pdfplumber engine has no hit (null), so only liteparse+docling contributed, and neither isolated the entity name from the full-line span."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "domicilio_pago_entidad",
+        "params": {
+          "new_label_bbox": {
+            "x": 26.957312,
+            "y": 380.587,
+            "w": 120.0,
+            "h": 13.06,
+            "note": "approximate — covers 'DOMICILIO DE PAGO: Entidad' prefix"
+          },
+          "new_value_bbox": {
+            "x": 148.0,
+            "y": 380.587,
+            "w": 186.0,
+            "h": 13.06,
+            "note": "approximate — covers 'BANCO BILBAO VIZCAYA ARGENTARIA' only; use pdfplumber char search to refine"
+          },
+          "keep_value_text": "BANCO BILBAO VIZCAYA ARGENTARIA"
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "HIGH",
+      "type": "label_value_misaligned",
+      "spec_location": "kv_leaf id=num_hojas / label='Firman en (hojas)'",
+      "evidence": {
+        "golden_label": "Firman en (hojas)",
+        "golden_value": "24 hojas",
+        "pdf_text_found": "En prueba de conformidad, firman las partes el presente contrato en 24 hojas y en 1 ejemplar/es",
+        "atoms_span_match": {
+          "text": "En prueba de conformidad, firman las partes el presente contrato en 24 hojas y en 1 ejemplar/es",
+          "y": 557.4,
+          "x": 27.0
+        },
+        "comment": "The label_bbox is recorded as {x:409.01, y:579.51, w:11.26, h:7.20} (Docling cell #/texts/110) which at y=579.5 corresponds to the 'En FUENLABRADA' (Financiador) row — not to the 'Firman en' text. The actual 'firman …  24 hojas' text is at y=557.4. The value_bbox at y=559.4 is correct (pdfplumber char hit), but the label_bbox is pointing at a completely different row 22pt lower than the value, misidentifying it as the label. The pdfplumber and liteparse evidence on the label are null, only docling contributed and it grabbed the wrong block."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "num_hojas",
+        "params": {
+          "new_label_bbox": {
+            "x": 26.957312,
+            "y": 557.401,
+            "w": 280.0,
+            "h": 11.903,
+            "note": "covers the 'En prueba de conformidad, firman las partes el presente contrato en' prefix of the prose span at y=557.4"
+          },
+          "new_y_hint": 557.4,
+          "comment": "The value '24 hojas' at y=559.4 is correct; only the label_bbox needs to be repointed to the prose line at y=557.4 where the label context lives."
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "kv_group id=lugar_fecha_firma / pairs: En (Prestatario), En (Fiador), En (Financiador)",
+      "evidence": {
+        "golden_label": "En (Prestatario) / En (Fiador) / En (Financiador)",
+        "golden_value": "FUENLABRADA (all three)",
+        "pdf_text_found": "En FUENLABRADA (three occurrences at x=27, x=280.7, x=409.0, all y=575.7)",
+        "atoms_span_match": {
+          "text": "En FUENLABRADA",
+          "y": 575.7,
+          "x": 409.0
+        },
+        "comment": "All three pairs share the same label_bbox: {x:409.01, y:579.51, w:11.26} which is Docling cell #/texts/110 at y=579.5 — the 'En FUENLABRADA' span for the Financiador column. For 'En (Prestatario)' this produces label_bbox.x=409 while value_bbox.x=43 — the label is 366pt to the right of its value, which is geometrically inverted. Similarly for 'En (Fiador)' (label x=409, value x=297). Only 'En (Financiador)' has a plausible pairing (label x=409, value x=425). The docling engine grabbed only one cell ref (#/texts/110) for all three label lookups. The actual label context for all three is the prefix 'En' within each column's own span."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "lugar_fecha_firma.En (Prestatario)",
+        "params": {
+          "new_label_bbox_prestatario": {
+            "x": 26.957,
+            "y": 575.661,
+            "w": 16.0,
+            "h": 11.903,
+            "note": "covers 'En' prefix of span at x=26.95, y=575.7"
+          },
+          "new_label_bbox_fiador": {
+            "x": 280.738,
+            "y": 575.661,
+            "w": 16.0,
+            "h": 11.903,
+            "note": "covers 'En' prefix of span at x=280.7, y=575.7"
+          },
+          "new_label_bbox_financiador": {
+            "x": 409.015,
+            "y": 575.661,
+            "w": 16.0,
+            "h": 11.903,
+            "note": "covers 'En' prefix of span at x=409.0, y=575.7"
+          }
+        }
+      }
+    },
+    {
+      "id": "f04",
+      "severity": "MEDIUM",
+      "type": "missing_kv",
+      "spec_location": "near kv_leaf id=domicilio_pago_entidad / section=domicilio_pago",
+      "evidence": {
+        "golden_label": "(not captured)",
+        "golden_value": "(not captured)",
+        "pdf_text_found": "DOMICILIO DE PAGO: Entidad BANCO BILBAO VIZCAYA ARGENTARIA, , con domicilio en AV. TENOR FLETA, 55",
+        "atoms_span_match": {
+          "text": "DOMICILIO DE PAGO: Entidad BANCO BILBAO VIZCAYA ARGENTARIA, , con domicilio en AV. TENOR FLETA, 55",
+          "y": 380.6,
+          "x": 26.96
+        },
+        "comment": "The PDF shows 'con domicilio en AV. TENOR FLETA, 55' as part of the DOMICILIO DE PAGO line. The address 'AV. TENOR FLETA, 55' is a distinct field value (branch address) that is not captured as any KV pair in the golden. It is part of the same atoms span as the BBVA entity name. Severity is MEDIUM (address is informative but not a primary financial figure; same span as the already-captured entity)."
+      },
+      "proposed_fix": {
+        "op": "add_kv",
+        "target": "structure[after domicilio_pago_entidad]",
+        "params": {
+          "type": "kv_leaf",
+          "id": "domicilio_pago_direccion",
+          "label": "Domicilio de pago - Dirección",
+          "value": "AV. TENOR FLETA, 55",
+          "y_hint": 380.6,
+          "value_bbox": {
+            "x": 340.0,
+            "y": 380.587,
+            "w": 154.0,
+            "h": 13.06,
+            "note": "approximate — covers 'AV. TENOR FLETA, 55' at end of span; refine with pdfplumber char search"
+          }
+        }
+      }
+    },
+    {
+      "id": "f05",
+      "severity": "LOW",
+      "type": "label_value_misaligned",
+      "spec_location": "kv_group id=lugar_fecha_firma / pairs: Fecha (Prestatario), Fecha (Fiador)",
+      "evidence": {
+        "golden_label": "Fecha (Prestatario) / Fecha (Fiador)",
+        "golden_value": "11-07-2022 (both)",
+        "pdf_text_found": "Fecha 11-07-2022 at x=27.0 y=594.8 and x=280.7 y=594.8",
+        "atoms_span_match": {
+          "text": "Fecha 11-07-2022",
+          "y": 594.8,
+          "x": 27.0
+        },
+        "comment": "Both 'Fecha (Prestatario)' and 'Fecha (Fiador)' have label_bbox=null (no label bbox recorded). The liteparse and docling evidence are null for both. Only 'Fecha (Financiador)' has a label_bbox (correctly pointing at the Financiador label position at x=409, y=614.4 — but this is the 'Financiador' signature label row, 20pt below the date row). This is a low-severity bbox quality issue since the values are correct and well-evidenced (all 3 engines agree on value positions). The null label_bboxes for Prestatario and Fiador fecha pairs are acceptable gaps, not wrong values."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "lugar_fecha_firma.Fecha (Prestatario)",
+        "params": {
+          "suggested_label_bbox_prestatario": {
+            "x": 26.957,
+            "y": 594.844,
+            "w": 30.0,
+            "h": 11.903,
+            "note": "covers 'Fecha' prefix in span 'Fecha 11-07-2022' at x=26.95, y=594.8"
+          },
+          "suggested_label_bbox_fiador": {
+            "x": 280.738,
+            "y": 594.844,
+            "w": 30.0,
+            "h": 11.903,
+            "note": "covers 'Fecha' prefix in span 'Fecha 11-07-2022' at x=280.7, y=594.8"
+          }
+        }
+      }
+    }
+  ]
+}
