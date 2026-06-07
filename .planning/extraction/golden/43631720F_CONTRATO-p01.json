@@ -5696,14 +5696,55 @@
                   "text": "507,00€",
                   "row_y_hint": 396.4,
                   "x_hint": 221.3,
-                  "pdfplumber": null,
-                  "liteparse": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 221.33730559999998,
+                      "y": 397.98366016,
+                      "w": 32.689429760000024,
+                      "h": 7.927745279999954
+                    },
+                    "char_indices": [
+                      1432,
+                      1433,
+                      1434,
+                      1435,
+                      1436,
+                      1437,
+                      1438
+                    ],
+                    "n_chars": 7,
+                    "row_y": 396.7399999999995
+                  },
+                  "liteparse": {
+                    "span_id": 56,
+                    "bbox": {
+                      "x": 221.33731079101562,
+                      "y": 396.3811950683594,
+                      "w": 32.689422607421875,
+                      "h": 9.52252197265625
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
                   "docling": null,
                   "rect": null,
                   "colon_signal": null,
-                  "value_extent": null
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 221.33730559999998,
+                    "y": 397.98366016,
+                    "w": 32.689429760000024,
+                    "h": 7.927745279999954
+                  },
+                  "engine_agreement": 2
                 },
-                "bbox": null
+                "bbox": {
+                  "x": 221.33730559999998,
+                  "y": 397.98366016,
+                  "w": 32.689429760000024,
+                  "h": 7.927745279999954
+                }
               },
               "comision_estudio": {
                 "text": "0,00€",
@@ -5713,28 +5754,28 @@
                   "x_hint": 417.1,
                   "pdfplumber": {
                     "bbox": {
-                      "x": 523.63941376,
-                      "y": 374.87070016,
-                      "w": 22.404162559999918,
+                      "x": 307.42537728,
+                      "y": 398.20708543999996,
+                      "w": 19.931075840000005,
                       "h": 7.704319999999996
                     },
                     "char_indices": [
-                      1339,
-                      1340,
-                      1341,
-                      1342,
-                      1343
+                      1448,
+                      1449,
+                      1450,
+                      1451,
+                      1452
                     ],
                     "n_chars": 5,
-                    "row_y": 372.7399999999994
+                    "row_y": 396.7399999999995
                   },
                   "liteparse": {
-                    "span_id": 53,
+                    "span_id": 57,
                     "bbox": {
-                      "x": 501.23529052734375,
-                      "y": 373.26824951171875,
-                      "w": 49.70831298828125,
-                      "h": 9.30682373046875
+                      "x": 417.10406494140625,
+                      "y": 396.3811950683594,
+                      "w": 22.7508544921875,
+                      "h": 9.52252197265625
                     },
                     "case_class": "none",
                     "is_bold": false,
@@ -5755,17 +5796,17 @@
                   "colon_signal": null,
                   "value_extent": null,
                   "cell_bbox": {
-                    "x": 523.63941376,
-                    "y": 374.87070016,
-                    "w": 22.404162559999918,
+                    "x": 307.42537728,
+                    "y": 398.20708543999996,
+                    "w": 19.931075840000005,
                     "h": 7.704319999999996
                   },
                   "engine_agreement": 3
                 },
                 "bbox": {
-                  "x": 523.63941376,
-                  "y": 374.87070016,
-                  "w": 22.404162559999918,
+                  "x": 307.42537728,
+                  "y": 398.20708543999996,
+                  "w": 19.931075840000005,
                   "h": 7.704319999999996
                 }
               }
@@ -5858,9 +5899,9 @@
           ],
           "bbox": {
             "x": 40.593958399999984,
-            "y": 374.87070016,
-            "w": 505.44961792,
-            "h": 40.05475967999996
+            "y": 397.98366016,
+            "w": 286.76249472000006,
+            "h": 16.941799679999974
           },
           "evidence": {
             "title_signal": {
@@ -5931,18 +5972,18 @@
             "container_signal": {
               "container_bbox": {
                 "x": 40.593958399999984,
-                "y": 374.87070016,
-                "w": 505.44961792,
-                "h": 40.05475967999996
+                "y": 397.98366016,
+                "w": 286.76249472000006,
+                "h": 16.941799679999974
               },
               "pdfplumber_rect": null,
               "docling_block": null,
               "edges_inside": {
-                "vertical": 3,
-                "horizontal": 3
+                "vertical": 0,
+                "horizontal": 0
               },
               "colons_inside": 2,
-              "container_score": 1
+              "container_score": 0
             },
             "structural_signals": {
               "kind": "table",
@@ -5950,8 +5991,8 @@
               "n_rows_declared": 2,
               "n_columns_with_group": 0,
               "header_levels": 1,
-              "vertical_edges_inside": 3,
-              "horizontal_edges_inside": 3,
+              "vertical_edges_inside": 0,
+              "horizontal_edges_inside": 0,
               "has_docling_table_block": false,
               "has_pdfplumber_rect_frame": false
             }
@@ -6138,21 +6179,61 @@
                   "text": "28,73€",
                   "row_y_hint": 445.1,
                   "x_hint": 226.4,
-                  "pdfplumber": null,
-                  "liteparse": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 226.42215679999998,
+                      "y": 446.75200576,
+                      "w": 27.60457856000002,
+                      "h": 7.927745279999954
+                    },
+                    "char_indices": [
+                      1698,
+                      1699,
+                      1700,
+                      1701,
+                      1702,
+                      1703
+                    ],
+                    "n_chars": 6,
+                    "row_y": 444.7399999999996
+                  },
+                  "liteparse": {
+                    "span_id": 69,
+                    "bbox": {
+                      "x": 226.42214965820312,
+                      "y": 445.1495361328125,
+                      "w": 27.604583740234375,
+                      "h": 9.52252197265625
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
                   "docling": null,
                   "rect": null,
                   "colon_signal": null,
-                  "value_extent": null
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 226.42215679999998,
+                    "y": 446.75200576,
+                    "w": 27.60457856000002,
+                    "h": 7.927745279999954
+                  },
+                  "engine_agreement": 2
                 },
-                "bbox": null
+                "bbox": {
+                  "x": 226.42215679999998,
+                  "y": 446.75200576,
+                  "w": 27.60457856000002,
+                  "h": 7.927745279999954
+                }
               }
             }
           ],
           "bbox": {
             "x": 40.5939584,
             "y": 438.19250623999994,
-            "w": 65.92586624,
+            "w": 213.43277696,
             "h": 16.487244799999985
           },
           "evidence": {
@@ -6225,7 +6306,7 @@
               "container_bbox": {
                 "x": 40.5939584,
                 "y": 438.19250623999994,
-                "w": 65.92586624,
+                "w": 213.43277696,
                 "h": 16.487244799999985
               },
               "pdfplumber_rect": null,
@@ -6234,7 +6315,7 @@
                 "vertical": 0,
                 "horizontal": 0
               },
-              "colons_inside": 1,
+              "colons_inside": 2,
               "container_score": 0
             },
             "structural_signals": {
@@ -7076,12 +7157,75 @@
             "text": "30€ (se cobrará una sola vez para cada cuota)",
             "row_y_hint": 548.7,
             "x_hint": null,
-            "pdfplumber": null,
-            "liteparse": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 158.53939328,
+                "y": 550.2903622399999,
+                "w": 129.77156608000007,
+                "h": 7.7043200000000525
+              },
+              "char_indices": [
+                2214,
+                2215,
+                2216,
+                2217,
+                2218,
+                2219,
+                2220,
+                2221,
+                2222,
+                2223,
+                2224,
+                2225,
+                2226,
+                2227,
+                2228,
+                2229,
+                2230,
+                2231,
+                2232,
+                2233
+              ],
+              "n_chars": 37,
+              "row_y": 550.2903622399999
+            },
+            "liteparse": {
+              "span_id": 89,
+              "bbox": {
+                "x": 29.499738693237305,
+                "y": 548.74951171875,
+                "w": 286.37725830078125,
+                "h": 9.2374267578125
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 8.0
+            },
             "docling": null,
             "rect": null,
-            "colon_signal": null,
-            "value_extent": null
+            "colon_signal": {
+              "present": true,
+              "char_x": 153.63944576,
+              "char_y": 550.2903622399999
+            },
+            "value_extent": {
+              "boundary_type": "continuation",
+              "gap_pt": 0.0,
+              "next_text": "a  (cuot"
+            },
+            "cell_bbox": {
+              "x": 158.53939328,
+              "y": 550.2903622399999,
+              "w": 129.77156608000007,
+              "h": 7.7043200000000525
+            },
+            "engine_agreement": 2
+          },
+          "bbox": {
+            "x": 158.53939328,
+            "y": 550.2903622399999,
+            "w": 129.77156608000007,
+            "h": 7.7043200000000525
           }
         },
         {
@@ -7199,12 +7343,58 @@
             "text": "4,34€",
             "row_y_hint": 568.3,
             "x_hint": 305.2,
-            "pdfplumber": null,
-            "liteparse": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 305.23735039999997,
+                "y": 569.94408256,
+                "w": 24.368764160000012,
+                "h": 7.927745279999954
+              },
+              "char_indices": [
+                2429,
+                2430,
+                2431,
+                2432,
+                2433
+              ],
+              "n_chars": 5,
+              "row_y": 569.54
+            },
+            "liteparse": {
+              "span_id": 94,
+              "bbox": {
+                "x": 305.23736572265625,
+                "y": 568.3416748046875,
+                "w": 24.3687744140625,
+                "h": 9.5224609375
+              },
+              "case_class": "none",
+              "is_bold": false,
+              "font_size": 8.0
+            },
             "docling": null,
             "rect": null,
-            "colon_signal": null,
-            "value_extent": null
+            "colon_signal": {
+              "present": false
+            },
+            "value_extent": {
+              "boundary_type": "cell_edge",
+              "gap_pt": 252.24588544,
+              "ends_at_x": 581.852
+            },
+            "cell_bbox": {
+              "x": 305.23735039999997,
+              "y": 569.94408256,
+              "w": 24.368764160000012,
+              "h": 7.927745279999954
+            },
+            "engine_agreement": 2
+          },
+          "bbox": {
+            "x": 305.23735039999997,
+            "y": 569.94408256,
+            "w": 24.368764160000012,
+            "h": 7.927745279999954
           }
         }
       ],
@@ -7213,7 +7403,7 @@
         "x": 26.957312,
         "y": 352.91338816,
         "w": 524.18652416,
-        "h": 213.17083007999992
+        "h": 224.9584396799999
       },
       "evidence": {
         "title_signal": {
@@ -7229,13 +7419,13 @@
             "x": 26.957312,
             "y": 352.91338816,
             "w": 524.18652416,
-            "h": 213.17083007999992
+            "h": 224.9584396799999
           },
           "pdfplumber_rect": null,
           "docling_block": null,
           "edges_inside": {
-            "vertical": 2748,
-            "horizontal": 2760
+            "vertical": 3180,
+            "horizontal": 3195
           },
           "colons_inside": 8,
           "container_score": 1
@@ -9788,7 +9978,7 @@
         "x": 26.957312,
         "y": 352.91338816,
         "w": 524.18652416,
-        "h": 213.17083007999992
+        "h": 224.9584396799999
       },
       "_view": "compat_flat"
     },
@@ -10786,12 +10976,19 @@
         "w": 40.871417599999994,
         "h": 7.704319999999996
       },
-      "value_bboxes": [],
+      "value_bboxes": [
+        {
+          "x": 221.33730559999998,
+          "y": 397.98366016,
+          "w": 32.689429760000024,
+          "h": 7.927745279999954
+        }
+      ],
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 0,
-        "bucket": "0_eng"
+        "engine_agreement": 2,
+        "bucket": "2_eng"
       }
     },
     {
@@ -10811,9 +11008,9 @@
       },
       "value_bboxes": [
         {
-          "x": 523.63941376,
-          "y": 374.87070016,
-          "w": 22.404162559999918,
+          "x": 307.42537728,
+          "y": 398.20708543999996,
+          "w": 19.931075840000005,
           "h": 7.704319999999996
         }
       ],
@@ -10908,12 +11105,19 @@
         "w": 65.92586623999999,
         "h": 7.704319999999996
       },
-      "value_bboxes": [],
+      "value_bboxes": [
+        {
+          "x": 226.42215679999998,
+          "y": 446.75200576,
+          "w": 27.60457856000002,
+          "h": 7.927745279999954
+        }
+      ],
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 0,
-        "bucket": "0_eng"
+        "engine_agreement": 2,
+        "bucket": "2_eng"
       }
     },
     {
@@ -11127,10 +11331,17 @@
         "w": 124.13970816,
         "h": 7.7043200000000525
       },
-      "value_bboxes": [],
+      "value_bboxes": [
+        {
+          "x": 158.53939328,
+          "y": 550.2903622399999,
+          "w": 129.77156608000007,
+          "h": 7.7043200000000525
+        }
+      ],
       "evidence": {
         "path": "Condiciones económicas",
-        "engine_agreement": 0
+        "engine_agreement": 2
       }
     },
     {
@@ -11176,10 +11387,17 @@
         "w": 138.81643776000004,
         "h": 7.704319999999939
       },
-      "value_bboxes": [],
+      "value_bboxes": [
+        {
+          "x": 305.23735039999997,
+          "y": 569.94408256,
+          "w": 24.368764160000012,
+          "h": 7.927745279999954
+        }
+      ],
       "evidence": {
         "path": "Condiciones económicas",
-        "engine_agreement": 0
+        "engine_agreement": 2
       }
     },
     {
@@ -11540,9 +11758,9 @@
     "n_rects": 11402,
     "kv_pair_breakdown": {
       "3_eng": 43,
-      "2_eng": 1,
+      "2_eng": 5,
       "1_eng": 0,
-      "0_eng": 4,
+      "0_eng": 0,
       "empty": 17,
       "footnote": 0,
       "footnote_ref": 0
