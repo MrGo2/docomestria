@@ -34,3 +34,17 @@ def test_contains_rejects_unrelated():
 
 def test_contains_empty_target_is_false():
     assert not _contains(_norm(""), _norm("anything"))
+
+
+def test_euro_glyph_cp1252_byte():
+    # golden value "30€" vs engine span carrying the cp1252 misread "\x9f"
+    assert _contains(_norm("30€"), _norm("30\x9f (se cobrara...)"))
+
+
+def test_euro_glyph_pdfplumber_cid():
+    # pdfplumber emits the euro sign as "(cid:159)"
+    assert _contains(_norm("4.084,46€"), _norm("4.084,46(cid:159)"))
+
+
+def test_euro_glyph_all_fold_equal():
+    assert _norm("€") == _norm("\x9f") == _norm("(cid:159)") == _norm("\x80")

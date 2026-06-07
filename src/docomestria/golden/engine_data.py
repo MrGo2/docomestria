@@ -16,11 +16,21 @@ from pathlib import Path
 import pdfplumber  # type: ignore[import-not-found]
 
 
+# Euro-sign representations seen across engines: real € (U+20AC), the cp1252
+# byte misread as C1 controls (\x9f, \x80), and pdfplumber's CID notation. A
+# golden value typed with "€" must match an engine span carrying any of these.
+_EURO_VARIANTS = ("(cid:159)", "€", "\x9f", "\x80")
+
+
 def _norm(s: str) -> str:
-    """lowercase + strip accents + collapse whitespace — for text matching."""
+    """lowercase + strip accents + fold euro glyphs + collapse whitespace."""
     s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c))
-    return re.sub(r"\s+", " ", s.lower().strip())
+    s = s.lower()
+    for v in _EURO_VARIANTS:
+        if v in s:
+            s = s.replace(v, "€")
+    return re.sub(r"\s+", " ", s.strip())
 
 
 def _contains(target_n: str, cand_n: str) -> bool:
