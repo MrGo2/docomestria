@@ -57,3 +57,12 @@ data/parsebench/outputs/pdfplumber/*
 !data/parsebench/outputs/liteparse/azuredemo__*.json
 !data/parsebench/outputs/pdfplumber/azuredemo__*.json
 data/parsebench/views/
+.viewer/
+
+# Generated KIE artifacts (rebuilt by scripts/extract_atoms.py + agents/specs)
+.planning/extraction/atoms/
+.planning/extraction/output/
+.planning/extraction/triage/
+
+# Python bytecode
+__pycache__/
