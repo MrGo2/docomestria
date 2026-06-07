@@ -45,6 +45,7 @@ from pathlib import Path
 SCRIPTS_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS_DIR))
 import golden_review  # noqa: E402  — sibling module
+import golden_scaffold  # noqa: E402  — sibling module (Phase 4)
 
 ROOT = SCRIPTS_DIR.parent
 GOLDEN_DIR = ROOT / ".planning" / "extraction" / "golden"
@@ -412,7 +413,7 @@ def run_pipeline(spec_path: Path, pdf: Path, page: int, out_golden: Path,
 
 def main(argv):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--spec", help="Path to existing spec .py (required unless --resume)")
+    ap.add_argument("--spec", help="Path to existing spec .py (required unless --resume or --scaffold)")
     ap.add_argument("--pdf", help="Path to source PDF (required unless --resume)")
     ap.add_argument("--page", type=int, help="Page number (required unless --resume)")
     ap.add_argument("--out-golden", help="Output golden.json path (default: derived)")
@@ -423,6 +424,11 @@ def main(argv):
                     help="Skip `claude --agent` invocation; print prompt + expect "
                          "user to run agent and then `--resume`")
     ap.add_argument("--resume", help="Resume from an iteration log JSON path")
+    ap.add_argument("--scaffold", action="store_true",
+                    help="Generate a draft spec via the golden-scaffolder agent "
+                         "(Opus) before entering the loop. Requires --pdf --page; "
+                         "--spec is ignored / overwritten at "
+                         "scripts/specs/<stem>_p<NN>.py.")
     args = ap.parse_args(argv)
 
     if args.resume:
@@ -446,16 +452,35 @@ def main(argv):
                             max_iter=args.max_iter, no_loop=args.no_loop,
                             manual_review=args.manual_review, resume_log=log)
 
-    # Fresh run — all three required.
-    missing = [n for n, v in (("--spec", args.spec), ("--pdf", args.pdf),
-                              ("--page", args.page)) if v in (None, "")]
+    # Fresh run — required args depend on mode.
+    if args.scaffold:
+        missing = [n for n, v in (("--pdf", args.pdf), ("--page", args.page))
+                   if v in (None, "")]
+    else:
+        missing = [n for n, v in (("--spec", args.spec), ("--pdf", args.pdf),
+                                  ("--page", args.page)) if v in (None, "")]
     if missing:
         print(f"ERROR: missing required args: {', '.join(missing)}", file=sys.stderr)
         return 2
 
-    spec_path = Path(args.spec)
     pdf = Path(args.pdf)
     page = int(args.page)
+
+    if args.scaffold:
+        # Generate the draft spec first.
+        _, _, scaffold_out = golden_scaffold._resolve_paths(
+            args.pdf, page, args.spec)
+        print(f"[scaffold] generating draft spec at {scaffold_out}")
+        scaffold_rc = golden_scaffold.main([
+            "--pdf", args.pdf, "--page", str(page),
+            "--out", str(scaffold_out),
+        ])
+        if scaffold_rc != 0:
+            print(f"ERROR: scaffolder failed with exit {scaffold_rc}", file=sys.stderr)
+            return scaffold_rc
+        spec_path = scaffold_out
+    else:
+        spec_path = Path(args.spec)
     if args.out_golden:
         out_golden = Path(args.out_golden)
     else:

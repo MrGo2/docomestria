@@ -1,0 +1,2084 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 13,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)",
+  "structure": [
+    {
+      "type": "prose_block",
+      "id": "intro_cuadro_resumen",
+      "label": "(iv) Cuadro resumen",
+      "text": "(iv) Cuadro resumen: En el siguiente cuadro le resumimos las características de cada una de estas modalidades:",
+      "y_hint": 70,
+      "bbox": {
+        "x": 45.90993881225586,
+        "y": 69.9222412109375,
+        "w": 368.6093444824219,
+        "h": 10.20098876953125
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "(iv) Cuadro resumen: En el siguiente cuadro le resumimos las características de cada una de estas modalidades:",
+          "row_y_hint": 70,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 45.90993881225586,
+              "y": 69.9222412109375,
+              "w": 368.6093444824219,
+              "h": 10.20098876953125
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 9.5
+          },
+          "docling": {
+            "cell_ref": "#/texts/327",
+            "bbox": {
+              "x": 45.9099392,
+              "y": 72.70341759999997,
+              "w": 368.60933824,
+              "h": 17.182847732142818
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 45.90993881225586,
+            "y": 69.9222412109375,
+            "w": 368.6093444824219,
+            "h": 10.20098876953125
+          },
+          "engine_agreement": 2
+        },
+        "structural_signals": {
+          "kind": "prose_block",
+          "label": "(iv) Cuadro resumen",
+          "engine_agreement": 2
+        }
+      }
+    },
+    {
+      "type": "table",
+      "id": "modalidades_pago",
+      "title": "Modalidades de pago — Cuadro resumen",
+      "y_hint": 112,
+      "columns": [
+        {
+          "id": "modalidad",
+          "label": "Modalidad de devolución",
+          "type": "text"
+        },
+        {
+          "id": "momento",
+          "label": "Momento del pago",
+          "type": "text"
+        },
+        {
+          "id": "importe",
+          "label": "Importe del pago",
+          "type": "text"
+        },
+        {
+          "id": "intereses",
+          "label": "¿Genera intereses o costes específicos?",
+          "type": "text"
+        }
+      ],
+      "rows": [
+        {
+          "modalidad": {
+            "text": "Fin de Mes",
+            "evidence": {
+              "text": "Fin de Mes",
+              "row_y_hint": 148,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 54.230604799999995,
+                  "y": 149.55834328000014,
+                  "w": 47.1480308,
+                  "h": 9.148879999999963
+                },
+                "char_indices": [
+                  178,
+                  179,
+                  180,
+                  181,
+                  182,
+                  183,
+                  184,
+                  185
+                ],
+                "n_chars": 8,
+                "row_y": 149.55834328000003
+              },
+              "liteparse": {
+                "span_id": 9,
+                "bbox": {
+                  "x": 54.2306022644043,
+                  "y": 148.50628662109375,
+                  "w": 47.14802932739258,
+                  "h": 10.20098876953125
+                },
+                "case_class": "mixed",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[1][0]",
+                "bbox": {
+                  "x": 54.230604799999995,
+                  "y": 151.28748159999998,
+                  "w": 47.14803079999999,
+                  "h": 6.770576017699113
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r4",
+                "bbox": {
+                  "x": 46.603328000000005,
+                  "y": 143.83355200000005,
+                  "w": 108.16865279999999,
+                  "h": 48.074956799999995
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 54.230604799999995,
+                "y": 149.55834328000014,
+                "w": 47.1480308,
+                "h": 9.148879999999963
+              },
+              "engine_agreement": 3
+            },
+            "bbox": {
+              "x": 54.230604799999995,
+              "y": 149.55834328000014,
+              "w": 47.1480308,
+              "h": 9.148879999999963
+            }
+          },
+          "momento": {
+            "text": "Al final del mes",
+            "evidence": {
+              "text": "Al final del mes",
+              "row_y_hint": 148,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 171.41331200000002,
+                  "y": 149.55834328000014,
+                  "w": 62.12137672,
+                  "h": 9.148879999999963
+                },
+                "char_indices": [
+                  186,
+                  187,
+                  188,
+                  189,
+                  190,
+                  191,
+                  192,
+                  193,
+                  194,
+                  195,
+                  196,
+                  197,
+                  198
+                ],
+                "n_chars": 13,
+                "row_y": 149.55834328000003
+              },
+              "liteparse": {
+                "span_id": 10,
+                "bbox": {
+                  "x": 171.41331481933594,
+                  "y": 148.5794677734375,
+                  "w": 62.121368408203125,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[1][1]",
+                "bbox": {
+                  "x": 171.41331200000002,
+                  "y": 151.28748159999998,
+                  "w": 62.12137672,
+                  "h": 6.782015732142895
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r5",
+                "bbox": {
+                  "x": 164.01716480000002,
+                  "y": 143.83355200000005,
+                  "w": 108.16865279999999,
+                  "h": 48.074956799999995
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 171.41331200000002,
+                "y": 149.55834328000014,
+                "w": 62.12137672,
+                "h": 9.148879999999963
+              },
+              "engine_agreement": 3
+            },
+            "bbox": {
+              "x": 171.41331200000002,
+              "y": 149.55834328000014,
+              "w": 62.12137672,
+              "h": 9.148879999999963
+            }
+          },
+          "importe": {
+            "text": "La totalidad del crédito que haya utilizado durante ese mes.",
+            "evidence": {
+              "text": "La totalidad del crédito que haya utilizado durante ese mes.",
+              "row_y_hint": 148,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 11,
+                "bbox": {
+                  "x": 288.8271484375,
+                  "y": 148.5794677734375,
+                  "w": 92.17205810546875,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[1][2]",
+                "bbox": {
+                  "x": 288.82714880000003,
+                  "y": 151.28748159999998,
+                  "w": 92.1720768799999,
+                  "h": 27.58367973214274
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r6",
+                "bbox": {
+                  "x": 281.4310016,
+                  "y": 143.83355200000005,
+                  "w": 108.16865280000002,
+                  "h": 48.074956799999995
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 288.8271484375,
+                "y": 148.5794677734375,
+                "w": 92.17205810546875,
+                "h": 10.1278076171875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 288.8271484375,
+              "y": 148.5794677734375,
+              "w": 92.17205810546875,
+              "h": 10.1278076171875
+            }
+          },
+          "intereses": {
+            "text": "No genera intereses ni costes específicos.",
+            "evidence": {
+              "text": "No genera intereses ni costes específicos.",
+              "row_y_hint": 148,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 12,
+                "bbox": {
+                  "x": 403.4674072265625,
+                  "y": 148.5794677734375,
+                  "w": 92.17352294921875,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[1][3]",
+                "bbox": {
+                  "x": 403.46743040000007,
+                  "y": 151.28748159999986,
+                  "w": 92.17352143999994,
+                  "h": 17.182847732142818
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r7",
+                "bbox": {
+                  "x": 398.61370880000004,
+                  "y": 143.83355200000005,
+                  "w": 108.1686527999999,
+                  "h": 48.074956799999995
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 403.4674072265625,
+                "y": 148.5794677734375,
+                "w": 92.17352294921875,
+                "h": 10.1278076171875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 403.4674072265625,
+              "y": 148.5794677734375,
+              "w": 92.17352294921875,
+              "h": 10.1278076171875
+            }
+          }
+        },
+        {
+          "modalidad": {
+            "text": "Pago Aplazado",
+            "evidence": {
+              "text": "Pago Aplazado",
+              "row_y_hint": 201,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 54.230604799999995,
+                  "y": 202.02476248000005,
+                  "w": 65.39763880000002,
+                  "h": 9.148879999999963
+                },
+                "char_indices": [
+                  287,
+                  288,
+                  289,
+                  290,
+                  291,
+                  292,
+                  293,
+                  294,
+                  295,
+                  296,
+                  297,
+                  298
+                ],
+                "n_chars": 12,
+                "row_y": 202.02476247999994
+              },
+              "liteparse": {
+                "span_id": 16,
+                "bbox": {
+                  "x": 54.2306022644043,
+                  "y": 200.97265625,
+                  "w": 65.39764404296875,
+                  "h": 10.20098876953125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[2][0]",
+                "bbox": {
+                  "x": 54.230604799999995,
+                  "y": 203.7539008,
+                  "w": 65.39763880000001,
+                  "h": 17.17140801769915
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r8",
+                "bbox": {
+                  "x": 46.603328000000005,
+                  "y": 196.06884160000016,
+                  "w": 108.16865279999999,
+                  "h": 100.07911679999995
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 54.230604799999995,
+                "y": 202.02476248000005,
+                "w": 65.39763880000002,
+                "h": 9.148879999999963
+              },
+              "engine_agreement": 3
+            },
+            "bbox": {
+              "x": 54.230604799999995,
+              "y": 202.02476248000005,
+              "w": 65.39763880000002,
+              "h": 9.148879999999963
+            }
+          },
+          "momento": {
+            "text": "Varios pagos en periodos mensuales sucesivos",
+            "evidence": {
+              "text": "Varios pagos en periodos mensuales sucesivos",
+              "row_y_hint": 201,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 17,
+                "bbox": {
+                  "x": 171.41331481933594,
+                  "y": 201.04583740234375,
+                  "w": 66.10691833496094,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[2][1]",
+                "bbox": {
+                  "x": 171.41331200000002,
+                  "y": 203.7539008,
+                  "w": 81.90895960000006,
+                  "h": 27.58367973214274
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r9",
+                "bbox": {
+                  "x": 164.01716480000002,
+                  "y": 196.06884160000016,
+                  "w": 108.16865279999999,
+                  "h": 100.07911679999995
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 171.41331481933594,
+                "y": 201.04583740234375,
+                "w": 66.10691833496094,
+                "h": 10.1278076171875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 171.41331481933594,
+              "y": 201.04583740234375,
+              "w": 66.10691833496094,
+              "h": 10.1278076171875
+            }
+          },
+          "importe": {
+            "text": "Se indica en las Condiciones Particulares de este contrato.",
+            "evidence": {
+              "text": "Se indica en las Condiciones Particulares de este contrato.",
+              "row_y_hint": 201,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 18,
+                "bbox": {
+                  "x": 288.8271484375,
+                  "y": 201.04583740234375,
+                  "w": 64.62094116210938,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[2][2]",
+                "bbox": {
+                  "x": 288.82714880000003,
+                  "y": 203.75390079999988,
+                  "w": 80.85202319999996,
+                  "h": 37.98451173214278
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r10",
+                "bbox": {
+                  "x": 281.4310016,
+                  "y": 196.06884160000016,
+                  "w": 108.16865280000002,
+                  "h": 100.07911679999995
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 288.8271484375,
+                "y": 201.04583740234375,
+                "w": 64.62094116210938,
+                "h": 10.1278076171875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 288.8271484375,
+              "y": 201.04583740234375,
+              "w": 64.62094116210938,
+              "h": 10.1278076171875
+            }
+          },
+          "intereses": {
+            "text": "Cada operación genera intereses desde el momento en que usted la realiza. Además, el reembolso (pago) anticipado genera un precio por compensación.",
+            "evidence": {
+              "text": "Cada operación genera intereses desde el momento en que usted la realiza. Además, el reembolso (pago) anticipado genera un precio por compensación.",
+              "row_y_hint": 201,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 19,
+                "bbox": {
+                  "x": 403.4674377441406,
+                  "y": 201.04583740234375,
+                  "w": 95.7391357421875,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[2][3]",
+                "bbox": {
+                  "x": 403.46743039999996,
+                  "y": 203.75390079999977,
+                  "w": 95.73917704000002,
+                  "h": 79.58783973214258
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r11",
+                "bbox": {
+                  "x": 398.61370880000004,
+                  "y": 196.06884160000016,
+                  "w": 108.1686527999999,
+                  "h": 100.07911679999995
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 403.4674377441406,
+                "y": 201.04583740234375,
+                "w": 95.7391357421875,
+                "h": 10.1278076171875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 403.4674377441406,
+              "y": 201.04583740234375,
+              "w": 95.7391357421875,
+              "h": 10.1278076171875
+            }
+          }
+        },
+        {
+          "modalidad": {
+            "text": "Pago Fraccionado",
+            "evidence": {
+              "text": "Pago Fraccionado",
+              "row_y_hint": 299,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 54.230604799999995,
+                  "y": 300.2548424800001,
+                  "w": 79.13010768,
+                  "h": 9.148879999999963
+                },
+                "char_indices": [
+                  526,
+                  527,
+                  528,
+                  529,
+                  530,
+                  531,
+                  532,
+                  533,
+                  534,
+                  535,
+                  536,
+                  537,
+                  538,
+                  539,
+                  540
+                ],
+                "n_chars": 15,
+                "row_y": 300.2548424800001
+              },
+              "liteparse": {
+                "span_id": 33,
+                "bbox": {
+                  "x": 54.2306022644043,
+                  "y": 299.20269775390625,
+                  "w": 79.13011169433594,
+                  "h": 10.20098876953125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[3][0]",
+                "bbox": {
+                  "x": 54.230604799999995,
+                  "y": 301.98398080000004,
+                  "w": 79.13010768000002,
+                  "h": 6.770576017699113
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r12",
+                "bbox": {
+                  "x": 46.603328000000005,
+                  "y": 294.29892159999997,
+                  "w": 108.16865279999999,
+                  "h": 203.8563072
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 54.230604799999995,
+                "y": 300.2548424800001,
+                "w": 79.13010768,
+                "h": 9.148879999999963
+              },
+              "engine_agreement": 3
+            },
+            "bbox": {
+              "x": 54.230604799999995,
+              "y": 300.2548424800001,
+              "w": 79.13010768,
+              "h": 9.148879999999963
+            }
+          },
+          "momento": {
+            "text": "Una operación concreta puede pagarse en periodos de 3, 6, 10 meses o los meses que pudieran ofrecerse en cada caso, si la compra se realiza en Establecimientos IKEA (presencial u online) o en los Establecimientos cuando así se le haya ofrecido.",
+            "evidence": {
+              "text": "Una operación concreta puede pagarse en periodos de 3, 6, 10 meses o los meses que pudieran ofrecerse en cada caso, si la compra se realiza en Establecimientos IKEA (presencial u online) o en los Establecimientos cuando así se le haya ofrecido.",
+              "row_y_hint": 299,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 34,
+                "bbox": {
+                  "x": 171.41331481933594,
+                  "y": 299.27587890625,
+                  "w": 59.587615966796875,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[3][1]",
+                "bbox": {
+                  "x": 171.413312,
+                  "y": 301.98398080000004,
+                  "w": 89.17365184000002,
+                  "h": 141.99283173214286
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r13",
+                "bbox": {
+                  "x": 164.01716480000002,
+                  "y": 294.29892159999997,
+                  "w": 108.16865279999999,
+                  "h": 203.8563072
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 171.41331481933594,
+                "y": 299.27587890625,
+                "w": 59.587615966796875,
+                "h": 10.1278076171875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 171.41331481933594,
+              "y": 299.27587890625,
+              "w": 59.587615966796875,
+              "h": 10.1278076171875
+            }
+          },
+          "importe": {
+            "text": "Es una cuota de cantidad constante que pagará tantas veces como meses seleccionados y que comprende tanto intereses (los que se indican en las Condiciones Particulares) como parte del importe inicial de la operación fraccionada. La última cuota podrá ser de cantidad inferior debido al ajuste por decimales.",
+            "evidence": {
+              "text": "Es una cuota de cantidad constante que pagará tantas veces como meses seleccionados y que comprende tanto intereses (los que se indican en las Condiciones Particulares) como parte del importe inicial de la operación fraccionada. La última cuota podrá ser de cantidad inferior debido al ajuste por decimales.",
+              "row_y_hint": 299,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 35,
+                "bbox": {
+                  "x": 288.8271179199219,
+                  "y": 299.27581787109375,
+                  "w": 66.10690307617188,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[3][2]",
+                "bbox": {
+                  "x": 288.82714880000003,
+                  "y": 301.98398080000004,
+                  "w": 95.18591055999991,
+                  "h": 173.1953277321429
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r14",
+                "bbox": {
+                  "x": 281.4310016,
+                  "y": 294.29892159999997,
+                  "w": 108.16865280000002,
+                  "h": 203.8563072
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 288.8271179199219,
+                "y": 299.27581787109375,
+                "w": 66.10690307617188,
+                "h": 10.1278076171875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 288.8271179199219,
+              "y": 299.27581787109375,
+              "w": 66.10690307617188,
+              "h": 10.1278076171875
+            }
+          },
+          "intereses": {
+            "text": "Puede generar intereses y también le podemos cobrar un precio por el servicio.",
+            "evidence": {
+              "text": "Puede generar intereses y también le podemos cobrar un precio por el servicio.",
+              "row_y_hint": 299,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 36,
+                "bbox": {
+                  "x": 403.4674377441406,
+                  "y": 299.275634765625,
+                  "w": 100.21533203125,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[3][3]",
+                "bbox": {
+                  "x": 403.46743040000007,
+                  "y": 301.98398080000004,
+                  "w": 100.21538695999993,
+                  "h": 37.98451173214278
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": {
+                "rect_id": "p13-r15",
+                "bbox": {
+                  "x": 398.61370880000004,
+                  "y": 294.29892159999997,
+                  "w": 108.1686527999999,
+                  "h": 203.8563072
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 403.4674377441406,
+                "y": 299.275634765625,
+                "w": 100.21533203125,
+                "h": 10.1278076171875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 403.4674377441406,
+              "y": 299.275634765625,
+              "w": 100.21533203125,
+              "h": 10.1278076171875
+            }
+          }
+        }
+      ],
+      "bbox": {
+        "x": 54.230604799999995,
+        "y": 148.5794677734375,
+        "w": 449.45216497539064,
+        "h": 160.82425470656256
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "Modalidades de pago — Cuadro resumen",
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 7,
+            "bbox": {
+              "x": 323.03436279296875,
+              "y": 123.08197021484375,
+              "w": 21.856689453125,
+              "h": 10.20098876953125
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 9.5
+          },
+          "docling": null,
+          "bbox": {
+            "x": 323.03436279296875,
+            "y": 123.08197021484375,
+            "w": 21.856689453125,
+            "h": 10.20098876953125
+          },
+          "engine_agreement": 1
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 54.230604799999995,
+            "y": 148.5794677734375,
+            "w": 449.45216497539064,
+            "h": 160.82425470656256
+          },
+          "pdfplumber_rect": null,
+          "docling_block": {
+            "self_ref": "#/tables/0",
+            "label": "table",
+            "bbox": {
+              "x": 44.82258605957031,
+              "y": 106.8652572631836,
+              "w": 462.21925354003906,
+              "h": 391.83036041259766
+            }
+          },
+          "edges_inside": {
+            "vertical": 78,
+            "horizontal": 72
+          },
+          "colons_inside": 0,
+          "container_score": 2
+        },
+        "structural_signals": {
+          "kind": "table",
+          "n_columns_declared": 4,
+          "n_rows_declared": 3,
+          "n_columns_with_group": 0,
+          "header_levels": 1,
+          "vertical_edges_inside": 78,
+          "horizontal_edges_inside": 72,
+          "has_docling_table_block": true,
+          "has_pdfplumber_rect_frame": false
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "retirada_efectivo",
+      "title": "2.2 Retirada de dinero en efectivo.",
+      "y_hint": 506,
+      "children": [
+        {
+          "type": "prose_block",
+          "id": "retirada_efectivo_prose",
+          "label": "Descripción retirada efectivo",
+          "text": "Además de pagar a crédito, la Tarjeta IKEA permite retirar (sacar) dinero en efectivo a crédito. Podrá hacerlo en cajeros automáticos. El precio del servicio es el que se ha informado en las Condiciones Particulares de este contrato. En la Condición General «ACCESOS Y USOS»",
+          "y_hint": 527,
+          "bbox": {
+            "x": 45.90993881225586,
+            "y": 527.32763671875,
+            "w": 368.6536865234375,
+            "h": 10.2010498046875
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Además de pagar a crédito, la Tarjeta IKEA permite retirar (sacar) dinero en efectivo a crédito. Podrá hacerlo en cajeros automáticos. El precio del servicio es el que se ha informado en las Condiciones Particulares de este contrato. En la Condición General «ACCESOS Y USOS»",
+              "row_y_hint": 527,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 70,
+                "bbox": {
+                  "x": 45.90993881225586,
+                  "y": 527.32763671875,
+                  "w": 368.6536865234375,
+                  "h": 10.2010498046875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": null,
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 45.90993881225586,
+                "y": 527.32763671875,
+                "w": 368.6536865234375,
+                "h": 10.2010498046875
+              },
+              "engine_agreement": 1
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "Descripción retirada efectivo",
+              "engine_agreement": 1
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 45.909939200000125,
+        "y": 507.57809367999994,
+        "w": 148.3861662399999,
+        "h": 9.148880000000077
+      },
+      "container_bbox": {
+        "x": 45.90993881225586,
+        "y": 527.32763671875,
+        "w": 368.6536865234375,
+        "h": 10.2010498046875
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "2.2 Retirada de dinero en efectivo.",
+          "pdfplumber": {
+            "bbox": {
+              "x": 45.909939200000125,
+              "y": 507.57809367999994,
+              "w": 148.3861662399999,
+              "h": 9.148880000000077
+            },
+            "char_indices": [
+              1070,
+              1071,
+              1072,
+              1073,
+              1074,
+              1075,
+              1076,
+              1077,
+              1078,
+              1079,
+              1080,
+              1081,
+              1082,
+              1083,
+              1084,
+              1085,
+              1086,
+              1087,
+              1088,
+              1089
+            ],
+            "n_chars": 30,
+            "row_y": 507.1399999999997
+          },
+          "liteparse": {
+            "span_id": 69,
+            "bbox": {
+              "x": 45.90998077392578,
+              "y": 506.5260009765625,
+              "w": 148.38607788085938,
+              "h": 10.2010498046875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 9.5
+          },
+          "docling": {
+            "cell_ref": "#/texts/328",
+            "bbox": {
+              "x": 45.909939200000125,
+              "y": 509.30723199999994,
+              "w": 148.3861662399999,
+              "h": 6.782015732142838
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 45.909939200000125,
+            "y": 507.57809367999994,
+            "w": 148.3861662399999,
+            "h": 9.148880000000077
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 45.90993881225586,
+            "y": 527.32763671875,
+            "w": 368.6536865234375,
+            "h": 10.2010498046875
+          },
+          "pdfplumber_rect": null,
+          "docling_block": {
+            "self_ref": "#/texts/329",
+            "label": "text",
+            "bbox": {
+              "x": 45.90993919999958,
+              "y": 530.108896,
+              "w": 368.6536380800002,
+              "h": 37.98451173214289
+            }
+          },
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 1
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 1,
+          "child_type_distribution": {
+            "prose_block": 1
+          },
+          "path": "2.2 Retirada de dinero en efectivo."
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "intereses",
+      "title": "3. INTERESES.",
+      "y_hint": 590,
+      "children": [
+        {
+          "type": "kv_leaf",
+          "id": "intereses_subtitulo",
+          "label": "Cómo se calculan los intereses y cuándo se pagan.",
+          "value": "",
+          "y_hint": 600,
+          "label_bbox": {
+            "x": 62.55127039999998,
+            "y": 601.18558168,
+            "w": 221.42311983999986,
+            "h": 9.148879999999963
+          },
+          "evidence": null
+        },
+        {
+          "type": "prose_block",
+          "id": "intereses_3_1",
+          "label": "3.1 Generación de intereses",
+          "text": "3.1 Como indicamos en la Condición General «MODALIDADES DE PAGO Y DE RETIRADA DE DINERO O EFECTIVO METÁLICO QUE PERMITA SU Cuenta de Crédito CON O SIN Tarjeta IKEA », los pagos que usted o el Beneficiario realicen con cargo a la Cuenta de crédito con o sin la Tarjeta IKEA, cuando se trate de modalidad de pago Fin de Mes no generan intereses si los abona íntegramente a final del período de liquidación (a final de mes).",
+          "y_hint": 621,
+          "bbox": {
+            "x": 45.90993881225586,
+            "y": 621.0083618164062,
+            "w": 368.74462890625,
+            "h": 10.1278076171875
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "3.1 Como indicamos en la Condición General «MODALIDADES DE PAGO Y DE RETIRADA DE DINERO O EFECTIVO METÁLICO QUE PERMITA SU Cuenta de Crédito CON O SIN Tarjeta IKEA », los pagos que usted o el Beneficiario realicen con cargo a la Cuenta de crédito con o sin la Tarjeta IKEA, cuando se trate de modalidad de pago Fin de Mes no generan intereses si los abona íntegramente a final del período de liquidación (a final de mes).",
+              "row_y_hint": 621,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 77,
+                "bbox": {
+                  "x": 45.90993881225586,
+                  "y": 621.0083618164062,
+                  "w": 368.74462890625,
+                  "h": 10.1278076171875
+                },
+                "case_class": "Title",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/texts/332",
+                "bbox": {
+                  "x": 45.90993919999953,
+                  "y": 623.7163840000001,
+                  "w": 368.7446453600005,
+                  "h": 58.78617573214274
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 45.90993881225586,
+                "y": 621.0083618164062,
+                "w": 368.74462890625,
+                "h": 10.1278076171875
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "3.1 Generación de intereses",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "intereses_aplazado_fraccionado",
+          "label": "Intereses Pago Aplazado y Fraccionado",
+          "text": "Sí generan intereses los pagos que realice con su Cuenta de crédito con o sin Tarjeta IKEA si tiene activada la modalidad de Pago Aplazado (Revolving) o mediante Pago Fraccionado (*), esos intereses se generan desde la fecha en que usted o el Beneficiario realiza las Operaciones (compras) y se cobran el día que usted ha elegido para realizar el pago mensualmente.",
+          "y_hint": 694,
+          "bbox": {
+            "x": 45.90993881225586,
+            "y": 693.740966796875,
+            "w": 368.65362548828125,
+            "h": 10.20098876953125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Sí generan intereses los pagos que realice con su Cuenta de crédito con o sin Tarjeta IKEA si tiene activada la modalidad de Pago Aplazado (Revolving) o mediante Pago Fraccionado (*), esos intereses se generan desde la fecha en que usted o el Beneficiario realiza las Operaciones (compras) y se cobran el día que usted ha elegido para realizar el pago mensualmente.",
+              "row_y_hint": 694,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 83,
+                "bbox": {
+                  "x": 45.90993881225586,
+                  "y": 693.740966796875,
+                  "w": 368.65362548828125,
+                  "h": 10.20098876953125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": null,
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 45.90993881225586,
+                "y": 693.740966796875,
+                "w": 368.65362548828125,
+                "h": 10.20098876953125
+              },
+              "engine_agreement": 1
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "Intereses Pago Aplazado y Fraccionado",
+              "engine_agreement": 1
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 45.9099392,
+        "y": 590.78474968,
+        "w": 70.49549103999999,
+        "h": 9.148879999999963
+      },
+      "container_bbox": {
+        "x": 45.90993881225586,
+        "y": 621.0083618164062,
+        "w": 368.74462890625,
+        "h": 82.93359375
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "3. INTERESES.",
+          "pdfplumber": {
+            "bbox": {
+              "x": 45.9099392,
+              "y": 590.78474968,
+              "w": 70.49549103999999,
+              "h": 9.148879999999963
+            },
+            "char_indices": [
+              1330,
+              1331,
+              1332,
+              1333,
+              1334,
+              1335,
+              1336,
+              1337,
+              1338,
+              1339,
+              1340,
+              1341
+            ],
+            "n_chars": 12,
+            "row_y": 588.7399999999999
+          },
+          "liteparse": {
+            "span_id": 74,
+            "bbox": {
+              "x": 45.90993881225586,
+              "y": 589.732666015625,
+              "w": 7.628242492675781,
+              "h": 10.20098876953125
+            },
+            "case_class": "none",
+            "is_bold": false,
+            "font_size": 9.5
+          },
+          "docling": {
+            "cell_ref": "#/texts/330",
+            "bbox": {
+              "x": 45.9099392,
+              "y": 592.513888,
+              "w": 70.49549103999999,
+              "h": 6.770576017699113
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 45.9099392,
+            "y": 590.78474968,
+            "w": 70.49549103999999,
+            "h": 9.148879999999963
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 45.90993881225586,
+            "y": 621.0083618164062,
+            "w": 368.74462890625,
+            "h": 82.93359375
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 0
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 3,
+          "child_type_distribution": {
+            "kv_leaf": 1,
+            "prose_block": 2
+          },
+          "path": "3. INTERESES."
+        }
+      }
+    },
+    {
+      "type": "noise",
+      "id": "sidebar_pages",
+      "text": "Pages: 13/59",
+      "kind": "logalty_metadata",
+      "y_hint": 301,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 300.74041748046875,
+        "w": 9.0560302734375,
+        "h": 28.7999267578125
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Pages: 13/59",
+          "row_y_hint": 301,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 97,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 300.74041748046875,
+              "w": 9.0560302734375,
+              "h": 28.7999267578125
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/326",
+            "bbox": {
+              "x": 583.804,
+              "y": 271.9399999999995,
+              "w": 5.618213036565976,
+              "h": 480.00000000000045
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 300.74041748046875,
+            "w": 9.0560302734375,
+            "h": 28.7999267578125
+          },
+          "engine_agreement": 2
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "sidebar_cet",
+      "text": "CET +0100",
+      "kind": "logalty_metadata",
+      "y_hint": 373,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 372.740234375,
+        "w": 9.0560302734375,
+        "h": 14.39996337890625
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "CET +0100",
+          "row_y_hint": 373,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 95,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 372.740234375,
+              "w": 9.0560302734375,
+              "h": 14.39996337890625
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 372.740234375,
+            "w": 9.0560302734375,
+            "h": 14.39996337890625
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "sidebar_time",
+      "text": "20:07:05",
+      "kind": "logalty_metadata",
+      "y_hint": 392,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 391.940185546875,
+        "w": 9.0560302734375,
+        "h": 38.39990234375
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "20:07:05",
+          "row_y_hint": 392,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 94,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 391.940185546875,
+              "w": 9.0560302734375,
+              "h": 38.39990234375
+            },
+            "case_class": "none",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 391.940185546875,
+            "w": 9.0560302734375,
+            "h": 38.39990234375
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "sidebar_date",
+      "text": "2025/02/25 T",
+      "kind": "logalty_metadata",
+      "y_hint": 445,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 444.74005126953125,
+        "w": 9.0560302734375,
+        "h": 47.9998779296875
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "2025/02/25 T",
+          "row_y_hint": 445,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 93,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 444.74005126953125,
+              "w": 9.0560302734375,
+              "h": 47.9998779296875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 444.74005126953125,
+            "w": 9.0560302734375,
+            "h": 47.9998779296875
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "sidebar_date_label",
+      "text": "Date:",
+      "kind": "logalty_metadata",
+      "y_hint": 497,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 497.5399169921875,
+        "w": 9.0560302734375,
+        "h": 24.0
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Date:",
+          "row_y_hint": 497,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 92,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 497.5399169921875,
+              "w": 9.0560302734375,
+              "h": 24.0
+            },
+            "case_class": "Title",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 497.5399169921875,
+            "w": 9.0560302734375,
+            "h": 24.0
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "sidebar_guid",
+      "text": "Guid: 001001-0001-000000136441990.par",
+      "kind": "logalty_metadata",
+      "y_hint": 690,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 689.5400390625,
+        "w": 9.0560302734375,
+        "h": 24.0
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Guid: 001001-0001-000000136441990.par",
+          "row_y_hint": 690,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 90,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 689.5400390625,
+              "w": 9.0560302734375,
+              "h": 24.0
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 689.5400390625,
+            "w": 9.0560302734375,
+            "h": 24.0
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "sidebar_logalty",
+      "text": "Logalty",
+      "kind": "logalty_metadata",
+      "y_hint": 718,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 718.3400268554688,
+        "w": 9.0560302734375,
+        "h": 33.5999755859375
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Logalty",
+          "row_y_hint": 718,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 89,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 718.3400268554688,
+              "w": 9.0560302734375,
+              "h": 33.5999755859375
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 718.3400268554688,
+            "w": 9.0560302734375,
+            "h": 33.5999755859375
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "footer_pag",
+      "text": "PAG 5/31",
+      "kind": "page_number",
+      "y_hint": 798,
+      "bbox": {
+        "x": 530.81984,
+        "y": 799.25835216,
+        "w": 25.387660480000022,
+        "h": 6.741279999999961
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "PAG 5/31",
+          "row_y_hint": 798,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 530.81984,
+              "y": 799.25835216,
+              "w": 25.387660480000022,
+              "h": 6.741279999999961
+            },
+            "char_indices": [
+              2031,
+              2032,
+              2033,
+              2034,
+              2035,
+              2036,
+              2037,
+              2038
+            ],
+            "n_chars": 8,
+            "row_y": 799.25835216
+          },
+          "liteparse": {
+            "span_id": 88,
+            "bbox": {
+              "x": 530.81982421875,
+              "y": 797.9100952148438,
+              "w": 25.3876953125,
+              "h": 8.08282470703125
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 7.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 530.81984,
+            "y": 799.25835216,
+            "w": 25.387660480000022,
+            "h": 6.741279999999961
+          },
+          "engine_agreement": 2
+        },
+        "kind": "page_number"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "retirada_efectivo",
+      "title": "2.2 Retirada de dinero en efectivo.",
+      "title_bbox": {
+        "x": 45.909939200000125,
+        "y": 507.57809367999994,
+        "w": 148.3861662399999,
+        "h": 9.148880000000077
+      },
+      "container_bbox": {
+        "x": 45.90993881225586,
+        "y": 527.32763671875,
+        "w": 368.6536865234375,
+        "h": 10.2010498046875
+      },
+      "_view": "compat_flat"
+    },
+    {
+      "id": "intereses",
+      "title": "3. INTERESES.",
+      "title_bbox": {
+        "x": 45.9099392,
+        "y": 590.78474968,
+        "w": 70.49549103999999,
+        "h": 9.148879999999963
+      },
+      "container_bbox": {
+        "x": 45.90993881225586,
+        "y": 621.0083618164062,
+        "w": 368.74462890625,
+        "h": 82.93359375
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Fin de Mes",
+      "value": "Al final del mes",
+      "section": null,
+      "band": "Modalidades de pago — Cuadro resumen",
+      "column_header": "Momento del pago",
+      "row_y": 148,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 54.230604799999995,
+        "y": 149.55834328000014,
+        "w": 47.1480308,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 171.41331200000002,
+          "y": 149.55834328000014,
+          "w": 62.12137672,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 0,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Fin de Mes",
+      "value": "La totalidad del crédito que haya utilizado durante ese mes.",
+      "section": null,
+      "band": "Modalidades de pago — Cuadro resumen",
+      "column_header": "Importe del pago",
+      "row_y": 148,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 54.230604799999995,
+        "y": 149.55834328000014,
+        "w": 47.1480308,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 288.8271484375,
+          "y": 148.5794677734375,
+          "w": 92.17205810546875,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 0,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Fin de Mes",
+      "value": "No genera intereses ni costes específicos.",
+      "section": null,
+      "band": "Modalidades de pago — Cuadro resumen",
+      "column_header": "¿Genera intereses o costes específicos?",
+      "row_y": 148,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 54.230604799999995,
+        "y": 149.55834328000014,
+        "w": 47.1480308,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 403.4674072265625,
+          "y": 148.5794677734375,
+          "w": 92.17352294921875,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 0,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Pago Aplazado",
+      "value": "Varios pagos en periodos mensuales sucesivos",
+      "section": null,
+      "band": "Modalidades de pago — Cuadro resumen",
+      "column_header": "Momento del pago",
+      "row_y": 201,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 54.230604799999995,
+        "y": 202.02476248000005,
+        "w": 65.39763880000002,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 171.41331481933594,
+          "y": 201.04583740234375,
+          "w": 66.10691833496094,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 1,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Pago Aplazado",
+      "value": "Se indica en las Condiciones Particulares de este contrato.",
+      "section": null,
+      "band": "Modalidades de pago — Cuadro resumen",
+      "column_header": "Importe del pago",
+      "row_y": 201,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 54.230604799999995,
+        "y": 202.02476248000005,
+        "w": 65.39763880000002,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 288.8271484375,
+          "y": 201.04583740234375,
+          "w": 64.62094116210938,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 1,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Pago Aplazado",
+      "value": "Cada operación genera intereses desde el momento en que usted la realiza. Además, el reembolso (pago) anticipado genera un precio por compensación.",
+      "section": null,
+      "band": "Modalidades de pago — Cuadro resumen",
+      "column_header": "¿Genera intereses o costes específicos?",
+      "row_y": 201,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 54.230604799999995,
+        "y": 202.02476248000005,
+        "w": 65.39763880000002,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 403.4674377441406,
+          "y": 201.04583740234375,
+          "w": 95.7391357421875,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 1,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Pago Fraccionado",
+      "value": "Una operación concreta puede pagarse en periodos de 3, 6, 10 meses o los meses que pudieran ofrecerse en cada caso, si la compra se realiza en Establecimientos IKEA (presencial u online) o en los Establecimientos cuando así se le haya ofrecido.",
+      "section": null,
+      "band": "Modalidades de pago — Cuadro resumen",
+      "column_header": "Momento del pago",
+      "row_y": 299,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 54.230604799999995,
+        "y": 300.2548424800001,
+        "w": 79.13010768,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 171.41331481933594,
+          "y": 299.27587890625,
+          "w": 59.587615966796875,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 2,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Pago Fraccionado",
+      "value": "Es una cuota de cantidad constante que pagará tantas veces como meses seleccionados y que comprende tanto intereses (los que se indican en las Condiciones Particulares) como parte del importe inicial de la operación fraccionada. La última cuota podrá ser de cantidad inferior debido al ajuste por decimales.",
+      "section": null,
+      "band": "Modalidades de pago — Cuadro resumen",
+      "column_header": "Importe del pago",
+      "row_y": 299,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 54.230604799999995,
+        "y": 300.2548424800001,
+        "w": 79.13010768,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 288.8271179199219,
+          "y": 299.27581787109375,
+          "w": 66.10690307617188,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 2,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Pago Fraccionado",
+      "value": "Puede generar intereses y también le podemos cobrar un precio por el servicio.",
+      "section": null,
+      "band": "Modalidades de pago — Cuadro resumen",
+      "column_header": "¿Genera intereses o costes específicos?",
+      "row_y": 299,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 54.230604799999995,
+        "y": 300.2548424800001,
+        "w": 79.13010768,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 403.4674377441406,
+          "y": 299.275634765625,
+          "w": 100.21533203125,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 2,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Cómo se calculan los intereses y cuándo se pagan.",
+      "value": "",
+      "section": "3. INTERESES.",
+      "band": null,
+      "column_header": null,
+      "row_y": 600,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 62.55127039999998,
+        "y": 601.18558168,
+        "w": 221.42311983999986,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [],
+      "evidence": {
+        "path": "3. INTERESES.",
+        "engine_agreement": 0
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "scaffolder",
+    "n_chars": 2139,
+    "n_rows": 100,
+    "n_liteparse_spans": 98,
+    "n_docling_blocks": 10,
+    "n_rects": 80,
+    "kv_pair_breakdown": {
+      "3_eng": 1,
+      "2_eng": 8,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 1,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "scaffolder",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "caixabank_ikea_modalidades_pago_4col_table",
+      "caixabank_ikea_intro_prose_then_table",
+      "caixabank_ikea_subsection_2_2_retirada_efectivo",
+      "caixabank_ikea_section_3_intereses_header",
+      "caixabank_ikea_logalty_sidebar_noise"
+    ],
+    "needs_review": false,
+    "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)"
+  }
+}
