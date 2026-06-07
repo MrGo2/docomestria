@@ -1,0 +1,64 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO PRESTAMO COMERCIO 2.pdf",
+  "page": 1,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 68,
+    "rects": 2,
+    "docling_blocks": 36,
+    "noise_dropped": 7
+  },
+  "sections": [
+    {
+      "title": "Contrato de préstamo núm. 202501120127220",
+      "title_signal": {"size": 12.0, "bold": false, "case": "lower", "docling_level": 1, "docling_label": "section_header"},
+      "title_bbox": {"x": 259.7, "y": 62.4, "w": 250.5, "h": 12.9},
+      "container_bbox": {"x": 32.97, "y": 89.98, "w": 531.37, "h": 681.37},
+      "bands": [
+        {
+          "y_range": [100.6, 730.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [59.5, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.9}
+          ],
+          "rows": [
+            {"row_id": "r1", "y_range": [100.6, 113.5], "cells": [{"col": 0, "text": "Índice", "role": "LABEL", "bbox": {"x": 59.5, "y": 100.6, "w": 33.4, "h": 12.9}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": null}], "clarifiers": []},
+            {"row_id": "r2", "y_range": [130.1, 142.0], "cells": [{"col": 0, "text": "A. INTERVINIENTES Y DATOS GENERALES", "role": "HEADER", "bbox": {"x": 65.1, "y": 130.1, "w": 223.1, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "section_header", "compound_parts": null}], "clarifiers": []},
+            {"row_id": "r3", "y_range": [155.1, 167.0], "cells": [{"col": 0, "text": "B. CONDICIONES PARTICULARES", "role": "HEADER", "bbox": {"x": 65.1, "y": 155.1, "w": 177.3, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "section_header", "compound_parts": null}], "clarifiers": []},
+            {"row_id": "r4", "y_range": [178.2, 258.5], "cells": [{"col": 0, "text": "1. IMPORTE TOTAL DEL CAPITAL PRESTADO", "role": "VALUE_TEXT", "bbox": {"x": 73.2, "y": 178.2, "w": 193.0, "h": 10.1}, "bold": false, "case": "UPPER", "docling_label": "list_item", "compound_parts": null}], "clarifiers": []},
+            {"row_id": "r5", "y_range": [272.5, 284.4], "cells": [{"col": 0, "text": "C. CONDICIONES GENERALES. ¿Qué regulan estas condiciones?", "role": "HEADER", "bbox": {"x": 65.1, "y": 272.5, "w": 335.7, "h": 11.8}, "bold": false, "case": "mixed", "docling_label": "section_header", "compound_parts": null}], "clarifiers": []},
+            {"row_id": "r6", "y_range": [720.6, 732.5], "cells": [{"col": 0, "text": "ANEXO: CUADRO DE AMORTIZACIÓN", "role": "HEADER", "bbox": {"x": 65.1, "y": 720.6, "w": 193.6, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "section_header", "compound_parts": null}], "clarifiers": []}
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [],
+  "noise": [
+    {"text": "Pág. 1 de 33", "bbox": {"x": 517.9, "y": 805.3, "w": 38.3, "h": 9.2}, "reason": "page_footer"},
+    {"text": "Logalty", "bbox": {"x": 581.6, "y": 715.9, "w": 9.1, "h": 33.6}, "reason": "furniture_layer"},
+    {"text": "Guid: 001001-0001-000000134286084.par", "bbox": {"x": 581.6, "y": 687.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
+    {"text": "-", "bbox": {"x": 581.6, "y": 523.9, "w": 9.1, "h": 4.8}, "reason": "furniture_layer"},
+    {"text": "Date:", "bbox": {"x": 581.6, "y": 495.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
+    {"text": "2025/01/27 T", "bbox": {"x": 581.6, "y": 442.3, "w": 9.1, "h": 48.0}, "reason": "furniture_layer"},
+    {"text": "Pages:", "bbox": {"x": 581.6, "y": 298.3, "w": 9.1, "h": 28.8}, "reason": "furniture_layer"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 2, "lines": 0, "tables": 0, "checkboxes": 0},
+      "docling": {"blocks": 36, "labels": {"page_header": 1, "picture": 2, "section_header": 5, "list_item": 28, "text": 1}, "section_headers": 5, "tables": 0, "key_value_regions": 0, "field_keys": 0, "checkboxes_selected": 0},
+      "liteparse": {"spans": 68, "bold": 0, "cases": {"lower": 34, "UPPER": 11, "none": 19, "mixed": 2, "Title": 2}}
+    },
+    "column_coherence": [],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 5, "total": 5},
+      "cell_bold_flags": {"agree": 68, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "Sat Jun  6 22:48:36 CEST 2026",
+    "covers_cases": [],
+    "needs_review": true
+  }
+}

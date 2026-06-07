@@ -280,6 +280,57 @@ def walk_and_link(structure: list, eng: EngineData) -> tuple[list, list, dict]:
                 node["container_bbox"] = _union_bbox(bbs)
             node["evidence"] = link_structural_node(eng, node, path)
 
+        elif t == "prose_block":
+            # Text-only paragraph block: produces a structure node + 0 KVs.
+            # Used for legal preamble, descriptions, intro sentences.
+            text = node.get("text") or ""
+            ev = link_cell(eng, text, node.get("y_hint")) if text else None
+            node["bbox"] = (ev or {}).get("cell_bbox")
+            node["evidence"] = {
+                "text_signal": ev,
+                "structural_signals": {
+                    "kind": "prose_block",
+                    "label": node.get("label", "prose"),
+                    "engine_agreement": (ev or {}).get("engine_agreement", 0),
+                },
+            }
+
+        elif t == "noise":
+            # Page footer/watermark/sidebar text. Goes into noise[] list, not kv_pairs.
+            # Skipped from stats buckets (not value-bearing).
+            text = node.get("text") or ""
+            ev = link_cell(eng, text, node.get("y_hint")) if text else None
+            node["bbox"] = (ev or {}).get("cell_bbox") or node.get("bbox")
+            node["evidence"] = {
+                "text_signal": ev,
+                "kind": node.get("kind", "noise"),
+            }
+
+        elif t == "signature_placeholder":
+            # Empty signature box: 1 empty KV + structure node with bbox.
+            label = node.get("label", "Firma")
+            lev = link_cell(eng, label, node.get("y_hint"))
+            if lev and lev.get("cell_bbox"):
+                node["label_bbox"] = lev["cell_bbox"]
+                node["bbox"] = lev["cell_bbox"]
+            node["evidence"] = {
+                "label_signal": lev,
+                "status": "empty",
+                "structural_signals": {"kind": "signature_placeholder"},
+            }
+            stats["empty"] += 1
+            flat.append({
+                "label": label, "value": node.get("value") or "",
+                "section": section_title, "band": band_title,
+                "column_header": None, "row_y": node.get("y_hint"),
+                "rule": "structured-signature-placeholder", "confidence": "HIGH",
+                "label_bbox": node.get("label_bbox"),
+                "value_bboxes": [],
+                "evidence": {"path": "/".join(path),
+                             "engine_agreement": (lev or {}).get("engine_agreement", 0),
+                             "bucket": "empty"},
+            })
+
         elif t == "free_text_list":
             for it in node.get("items", []) or []:
                 lev = link_cell(eng, it["label"], it.get("y_hint"))

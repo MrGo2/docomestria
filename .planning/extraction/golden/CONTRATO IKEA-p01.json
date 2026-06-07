@@ -5,934 +5,4950 @@
     595.3,
     841.9
   ],
-  "atoms_summary": {
-    "lite_spans": 67,
-    "rects": 11,
-    "docling_blocks": 35,
-    "noise_dropped": 11
-  },
-  "sections": [
+  "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)",
+  "structure": [
     {
+      "type": "section",
+      "id": "indice",
       "title": "Índice",
-      "title_signal": {
-        "size": 9.5,
-        "bold": false,
-        "case": "lower",
-        "docling_level": 1,
-        "docling_label": "section_header"
-      },
+      "y_hint": 107,
+      "children": [
+        {
+          "type": "kv_leaf",
+          "id": "seccion_a_particulares",
+          "label": "A. Condiciones Particulares del contrato de financiación",
+          "value": "",
+          "y_hint": 132,
+          "label_bbox": {
+            "x": 73.183232,
+            "y": 133.37927128000013,
+            "w": 245.68354199999996,
+            "h": 9.148879999999963
+          },
+          "evidence": null
+        },
+        {
+          "type": "kv_leaf",
+          "id": "seccion_b_generales",
+          "label": "B. Condiciones Generales del contrato de financiación",
+          "value": "",
+          "y_hint": 157,
+          "label_bbox": {
+            "x": 73.18323200000002,
+            "y": 158.5723976800001,
+            "w": 237.3628763999999,
+            "h": 9.148879999999963
+          },
+          "evidence": null
+        },
+        {
+          "type": "free_text_list",
+          "id": "indice_temas",
+          "title": "Temas (1-26)",
+          "items": [
+            {
+              "label": "1. La cuenta de crédito con o sin Tarjeta IKEA.",
+              "value": "Qué son y qué pueden hacer.",
+              "y_hint": 183,
+              "label_evidence": {
+                "text": "1. La cuenta de crédito con o sin Tarjeta IKEA.",
+                "row_y_hint": 183,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 184.14544336000006,
+                    "w": 197.84982671999992,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    170,
+                    171,
+                    172,
+                    173,
+                    174,
+                    175,
+                    176,
+                    177,
+                    178,
+                    179,
+                    180,
+                    181,
+                    182,
+                    183,
+                    184,
+                    185,
+                    186,
+                    187,
+                    188,
+                    189
+                  ],
+                  "n_chars": 38,
+                  "row_y": 184.14544336000006
+                },
+                "liteparse": {
+                  "span_id": 5,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 183.1488037109375,
+                    "w": 4.819053649902344,
+                    "h": 9.6640625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 184.14544336000006,
+                  "w": 197.84982671999992,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Qué son y qué pueden hacer.",
+                "row_y_hint": 183,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 273.3414656,
+                    "y": 184.14544336000006,
+                    "w": 114.22713744000004,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    208,
+                    209,
+                    210,
+                    211,
+                    212,
+                    213,
+                    214,
+                    215,
+                    216,
+                    217,
+                    218,
+                    219,
+                    220,
+                    221,
+                    222,
+                    223,
+                    224,
+                    225,
+                    226,
+                    227
+                  ],
+                  "n_chars": 22,
+                  "row_y": 184.14544336000006
+                },
+                "liteparse": {
+                  "span_id": 6,
+                  "bbox": {
+                    "x": 89.82455444335938,
+                    "y": 183.1488037109375,
+                    "w": 297.7440490722656,
+                    "h": 9.6640625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/4",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 185.78357440000002,
+                    "w": 314.3853710400001,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 157.58127215999997,
+                  "ends_at_x": 545.1498752
+                },
+                "cell_bbox": {
+                  "x": 273.3414656,
+                  "y": 184.14544336000006,
+                  "w": 114.22713744000004,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 184.14544336000006,
+                "w": 197.84982671999992,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 273.3414656,
+                "y": 184.14544336000006,
+                "w": 114.22713744000004,
+                "h": 8.66736000000003
+              }
+            },
+            {
+              "label": "2. Modalidades de pago y de disposición que permite su cuenta de crédito con o sin Tarjeta IKEA.",
+              "value": "Qué posibilidades tiene de pagar a crédito, o de retirar dinero en efectivo metálico a crédito si dispone de Tarjeta IKEA.",
+              "y_hint": 195,
+              "label_evidence": {
+                "text": "2. Modalidades de pago y de disposición que permite su cuenta de crédito con o sin Tarjeta IKEA.",
+                "row_y_hint": 195,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 196.62644176000003,
+                    "w": 433.13975952,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    230,
+                    231,
+                    232,
+                    233,
+                    234,
+                    235,
+                    236,
+                    237,
+                    238,
+                    239,
+                    240,
+                    241,
+                    242,
+                    243,
+                    244,
+                    245,
+                    246,
+                    247,
+                    248,
+                    249
+                  ],
+                  "n_chars": 79,
+                  "row_y": 196.62644176000003
+                },
+                "liteparse": {
+                  "span_id": 7,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 195.6297607421875,
+                    "w": 7.22857666015625,
+                    "h": 9.6640625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 196.62644176000003,
+                  "w": 433.13975952,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Qué posibilidades tiene de pagar a crédito, o de retirar dinero en efectivo metálico a crédito si dispone de Tarjeta IKEA.",
+                "row_y_hint": 195,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 9,
+                  "bbox": {
+                    "x": 89.82457733154297,
+                    "y": 208.18011474609375,
+                    "w": 436.53448486328125,
+                    "h": 9.5947265625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/5",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 198.2645728000001,
+                    "w": 453.2162544,
+                    "h": 31.618193935714316
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 18.790813005175778,
+                  "ends_at_x": 545.1498752
+                },
+                "cell_bbox": {
+                  "x": 89.82457733154297,
+                  "y": 208.18011474609375,
+                  "w": 436.53448486328125,
+                  "h": 9.5947265625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 196.62644176000003,
+                "w": 433.13975952,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 89.82457733154297,
+                "y": 208.18011474609375,
+                "w": 436.53448486328125,
+                "h": 9.5947265625
+              }
+            },
+            {
+              "label": "3. Intereses.",
+              "value": "Cómo se calculan los intereses y cuándo se pagan.",
+              "y_hint": 233,
+              "label_evidence": {
+                "text": "3. Intereses.",
+                "row_y_hint": 233,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 234.3005665600001,
+                    "w": 57.10923503999999,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    411,
+                    412,
+                    413,
+                    414,
+                    415,
+                    416,
+                    417,
+                    418,
+                    419,
+                    420,
+                    421,
+                    422
+                  ],
+                  "n_chars": 12,
+                  "row_y": 234.3005665600001
+                },
+                "liteparse": {
+                  "span_id": 11,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 233.303955078125,
+                    "w": 7.22857666015625,
+                    "h": 9.6640625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 234.3005665600001,
+                  "w": 57.10923503999999,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cómo se calculan los intereses y cuándo se pagan.",
+                "row_y_hint": 233,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 132.8146688,
+                    "y": 234.3005665600001,
+                    "w": 198.00295007999995,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    423,
+                    424,
+                    425,
+                    426,
+                    427,
+                    428,
+                    429,
+                    430,
+                    431,
+                    432,
+                    433,
+                    434,
+                    435,
+                    436,
+                    437,
+                    438,
+                    439,
+                    440,
+                    441,
+                    442
+                  ],
+                  "n_chars": 41,
+                  "row_y": 234.3005665600001
+                },
+                "liteparse": {
+                  "span_id": 12,
+                  "bbox": {
+                    "x": 89.82455444335938,
+                    "y": 233.303955078125,
+                    "w": 240.99301147460938,
+                    "h": 9.6640625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/6",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 235.93869760000007,
+                    "w": 257.6343868800001,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 214.33225632000006,
+                  "ends_at_x": 545.1498752
+                },
+                "cell_bbox": {
+                  "x": 132.8146688,
+                  "y": 234.3005665600001,
+                  "w": 198.00295007999995,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 234.3005665600001,
+                "w": 57.10923503999999,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 132.8146688,
+                "y": 234.3005665600001,
+                "w": 198.00295007999995,
+                "h": 8.66736000000003
+              }
+            },
+            {
+              "label": "4. Titularidad.",
+              "value": "Quién se responsabiliza de este contrato de Cuenta de crédito con o sin Tarjeta IKEA y de la Tarjeta IKEA, si la hay.",
+              "y_hint": 245,
+              "label_evidence": {
+                "text": "4. Titularidad.",
+                "row_y_hint": 245,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 246.78156495999997,
+                    "w": 63.35840160000001,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    464,
+                    465,
+                    466,
+                    467,
+                    468,
+                    469,
+                    470,
+                    471,
+                    472,
+                    473,
+                    474,
+                    475,
+                    476,
+                    477
+                  ],
+                  "n_chars": 14,
+                  "row_y": 246.78156495999997
+                },
+                "liteparse": {
+                  "span_id": 13,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 245.78485107421875,
+                    "w": 7.22857666015625,
+                    "h": 9.6640625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 246.78156495999997,
+                  "w": 63.35840160000001,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Quién se responsabiliza de este contrato de Cuenta de crédito con o sin Tarjeta IKEA y de la Tarjeta IKEA, si la hay.",
+                "row_y_hint": 245,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 15,
+                  "bbox": {
+                    "x": 89.82453918457031,
+                    "y": 258.56634521484375,
+                    "w": 58.90916442871094,
+                    "h": 9.5947265625
+                  },
+                  "case_class": "mixed",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/7",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 248.41969600000004,
+                    "w": 453.1758067200001,
+                    "h": 19.13719553571434
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 396.41617158671875,
+                  "ends_at_x": 545.1498752
+                },
+                "cell_bbox": {
+                  "x": 89.82453918457031,
+                  "y": 258.56634521484375,
+                  "w": 58.90916442871094,
+                  "h": 9.5947265625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 246.78156495999997,
+                "w": 63.35840160000001,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 89.82453918457031,
+                "y": 258.56634521484375,
+                "w": 58.90916442871094,
+                "h": 9.5947265625
+              }
+            },
+            {
+              "label": "5. Cuenta corriente asociada.",
+              "value": "Qué cuenta puede asociarse al contrato de Cuenta de crédito con o sin Tarjeta IKEA.",
+              "y_hint": 271,
+              "label_evidence": {
+                "text": "5. Cuenta corriente asociada.",
+                "row_y_hint": 271,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 271.97469136000007,
+                    "w": 130.10863007999998,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    573,
+                    574,
+                    575,
+                    576,
+                    577,
+                    578,
+                    579,
+                    580,
+                    581,
+                    582,
+                    583,
+                    584,
+                    585,
+                    586,
+                    587,
+                    588,
+                    589,
+                    590,
+                    591,
+                    592
+                  ],
+                  "n_chars": 26,
+                  "row_y": 271.97469136000007
+                },
+                "liteparse": {
+                  "span_id": 16,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 270.97802734375,
+                    "w": 7.22857666015625,
+                    "h": 9.6640625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 271.97469136000007,
+                  "w": 130.10863007999998,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Qué cuenta puede asociarse al contrato de Cuenta de crédito con o sin Tarjeta IKEA.",
+                "row_y_hint": 271,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 18,
+                  "bbox": {
+                    "x": 89.82453918457031,
+                    "y": 283.759521484375,
+                    "w": 22.162437438964844,
+                    "h": 9.5947265625
+                  },
+                  "case_class": "UPPER",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/8",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 273.61282240000014,
+                    "w": 453.1758067200001,
+                    "h": 19.137195535714227
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 469.8650233764648,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 89.82453918457031,
+                  "y": 283.759521484375,
+                  "w": 22.162437438964844,
+                  "h": 9.5947265625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 271.97469136000007,
+                "w": 130.10863007999998,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 89.82453918457031,
+                "y": 283.759521484375,
+                "w": 22.162437438964844,
+                "h": 9.5947265625
+              }
+            },
+            {
+              "label": "6. Número de teléfono asociado.",
+              "value": "Por qué es necesario que nos facilite su número de teléfono.",
+              "y_hint": 296,
+              "label_evidence": {
+                "text": "6. Número de teléfono asociado.",
+                "row_y_hint": 296,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 297.16781776000005,
+                    "w": 140.52390768,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    668,
+                    669,
+                    670,
+                    671,
+                    672,
+                    673,
+                    674,
+                    675,
+                    676,
+                    677,
+                    678,
+                    679,
+                    680,
+                    681,
+                    682,
+                    683,
+                    684,
+                    685,
+                    686,
+                    687
+                  ],
+                  "n_chars": 27,
+                  "row_y": 297.16781776000005
+                },
+                "liteparse": {
+                  "span_id": 19,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 296.171142578125,
+                    "w": 7.22857666015625,
+                    "h": 9.6640625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 297.16781776000005,
+                  "w": 140.52390768,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Por qué es necesario que nos facilite su número de teléfono.",
+                "row_y_hint": 296,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 216.0213248,
+                    "y": 297.16781776000005,
+                    "w": 233.17509696000002,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    695,
+                    696,
+                    697,
+                    698,
+                    699,
+                    700,
+                    701,
+                    702,
+                    703,
+                    704,
+                    705,
+                    706,
+                    707,
+                    708,
+                    709,
+                    710,
+                    711,
+                    712,
+                    713,
+                    714
+                  ],
+                  "n_chars": 50,
+                  "row_y": 297.16781776000005
+                },
+                "liteparse": {
+                  "span_id": 20,
+                  "bbox": {
+                    "x": 89.82455444335938,
+                    "y": 296.171142578125,
+                    "w": 359.371826171875,
+                    "h": 9.6640625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/9",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 298.8059488,
+                    "w": 376.01318976000016,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "next_colon_label",
+                  "gap_pt": 132.65557823999995,
+                  "next_label_text": "",
+                  "next_colon_x": 581.852,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 216.0213248,
+                  "y": 297.16781776000005,
+                  "w": 233.17509696000002,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 297.16781776000005,
+                "w": 140.52390768,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 216.0213248,
+                "y": 297.16781776000005,
+                "w": 233.17509696000002,
+                "h": 8.66736000000003
+              }
+            },
+            {
+              "label": "7. Acceso y usos.",
+              "value": "Cómo puede disponer de su Cuenta de crédito con o sin Tarjeta IKEA, y hacerlo de forma segura.",
+              "y_hint": 308,
+              "label_evidence": {
+                "text": "7. Acceso y usos.",
+                "row_y_hint": 308,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 309.64881616,
+                    "w": 82.73284032000001,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    745,
+                    746,
+                    747,
+                    748,
+                    749,
+                    750,
+                    751,
+                    752,
+                    753,
+                    754,
+                    755,
+                    756,
+                    757,
+                    758
+                  ],
+                  "n_chars": 14,
+                  "row_y": 307.93999999999926
+                },
+                "liteparse": {
+                  "span_id": 21,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 308.652099609375,
+                    "w": 7.22857666015625,
+                    "h": 9.6640625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 309.64881616,
+                  "w": 82.73284032000001,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cómo puede disponer de su Cuenta de crédito con o sin Tarjeta IKEA, y hacerlo de forma segura.",
+                "row_y_hint": 308,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 23,
+                  "bbox": {
+                    "x": 89.82457733154297,
+                    "y": 321.43365478515625,
+                    "w": 28.9056396484375,
+                    "h": 9.5947265625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/10",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 311.2869472000001,
+                    "w": 453.21047615999987,
+                    "h": 19.137195535714284
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 463.1217830200195,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 89.82457733154297,
+                  "y": 321.43365478515625,
+                  "w": 28.9056396484375,
+                  "h": 9.5947265625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 309.64881616,
+                "w": 82.73284032000001,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 89.82457733154297,
+                "y": 321.43365478515625,
+                "w": 28.9056396484375,
+                "h": 9.5947265625
+              }
+            },
+            {
+              "label": "8. TAE.",
+              "value": "Qué es y cómo calculamos la Tasa Anual Equivalente (TAE).",
+              "y_hint": 333,
+              "label_evidence": {
+                "text": "8. TAE.",
+                "row_y_hint": 333,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 334.84194256,
+                    "w": 36.38557728000001,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    836,
+                    837,
+                    838,
+                    839,
+                    840,
+                    841
+                  ],
+                  "n_chars": 6,
+                  "row_y": 331.9399999999993
+                },
+                "liteparse": {
+                  "span_id": 24,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 333.84521484375,
+                    "w": 7.22857666015625,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 334.84194256,
+                  "w": 36.38557728000001,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Qué es y cómo calculamos la Tasa Anual Equivalente (TAE).",
+                "row_y_hint": 333,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 112.0130048,
+                    "y": 334.84194256,
+                    "w": 234.67455024,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    842,
+                    843,
+                    844,
+                    845,
+                    846,
+                    847,
+                    848,
+                    849,
+                    850,
+                    851,
+                    852,
+                    853,
+                    854,
+                    855,
+                    856,
+                    857,
+                    858,
+                    859,
+                    860,
+                    861
+                  ],
+                  "n_chars": 48,
+                  "row_y": 331.9399999999993
+                },
+                "liteparse": {
+                  "span_id": 25,
+                  "bbox": {
+                    "x": 89.82455444335938,
+                    "y": 333.84521484375,
+                    "w": 256.86297607421875,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "mixed",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/11",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 336.4800736,
+                    "w": 273.50432304000003,
+                    "h": 6.425067535714277
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 235.16444495999997,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 112.0130048,
+                  "y": 334.84194256,
+                  "w": 234.67455024,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 334.84194256,
+                "w": 36.38557728000001,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 112.0130048,
+                "y": 334.84194256,
+                "w": 234.67455024,
+                "h": 8.667359999999974
+              }
+            },
+            {
+              "label": "9. Órdenes de pago.",
+              "value": "Cuándo ejecutamos (realizamos) una orden de pago.",
+              "y_hint": 346,
+              "label_evidence": {
+                "text": "9. Órdenes de pago.",
+                "row_y_hint": 346,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 347.32294096,
+                    "w": 89.91230352,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    890,
+                    891,
+                    892,
+                    893,
+                    894,
+                    895,
+                    896,
+                    897,
+                    898,
+                    899,
+                    900,
+                    901,
+                    902,
+                    903,
+                    904,
+                    905
+                  ],
+                  "n_chars": 16,
+                  "row_y": 346.33999999999935
+                },
+                "liteparse": {
+                  "span_id": 26,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 346.32623291015625,
+                    "w": 7.22857666015625,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 347.32294096,
+                  "w": 89.91230352,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cuándo ejecutamos (realizamos) una orden de pago.",
+                "row_y_hint": 346,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 165.4039424,
+                    "y": 347.32294096,
+                    "w": 204.74037791999996,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    906,
+                    907,
+                    908,
+                    909,
+                    910,
+                    911,
+                    912,
+                    913,
+                    914,
+                    915,
+                    916,
+                    917,
+                    918,
+                    919,
+                    920,
+                    921,
+                    922,
+                    923,
+                    924,
+                    925
+                  ],
+                  "n_chars": 43,
+                  "row_y": 346.33999999999935
+                },
+                "liteparse": {
+                  "span_id": 27,
+                  "bbox": {
+                    "x": 89.82455444335938,
+                    "y": 346.32623291015625,
+                    "w": 280.31976318359375,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/12",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 348.961072,
+                    "w": 296.96108832000004,
+                    "h": 6.425067535714277
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 211.70767968,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 165.4039424,
+                  "y": 347.32294096,
+                  "w": 204.74037791999996,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 347.32294096,
+                "w": 89.91230352,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 165.4039424,
+                "y": 347.32294096,
+                "w": 204.74037791999996,
+                "h": 8.667359999999974
+              }
+            },
+            {
+              "label": "10. Divisas.",
+              "value": "Qué tipo de cambio aplicamos si paga en una moneda distinta al euro.",
+              "y_hint": 359,
+              "label_evidence": {
+                "text": "10. Divisas.",
+                "row_y_hint": 359,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 360.03506896,
+                    "w": 49.403952000000004,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    949,
+                    950,
+                    951,
+                    952,
+                    953,
+                    954,
+                    955,
+                    956,
+                    957,
+                    958,
+                    959
+                  ],
+                  "n_chars": 11,
+                  "row_y": 360.03506896
+                },
+                "liteparse": {
+                  "span_id": 28,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 359.038330078125,
+                    "w": 322.53265380859375,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 360.03506896,
+                  "w": 49.403952000000004,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Qué tipo de cambio aplicamos si paga en una moneda distinta al euro.",
+                "row_y_hint": 359,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 124.9562624,
+                    "y": 360.03506896,
+                    "w": 270.75965904000003,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    960,
+                    961,
+                    962,
+                    963,
+                    964,
+                    965,
+                    966,
+                    967,
+                    968,
+                    969,
+                    970,
+                    971,
+                    972,
+                    973,
+                    974,
+                    975,
+                    976,
+                    977,
+                    978,
+                    979
+                  ],
+                  "n_chars": 56,
+                  "row_y": 360.03506896
+                },
+                "liteparse": {
+                  "span_id": 28,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 359.038330078125,
+                    "w": 322.53265380859375,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/13",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 361.67319999999995,
+                    "w": 322.5326894400001,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 186.13607855999993,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 124.9562624,
+                  "y": 360.03506896,
+                  "w": 270.75965904000003,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 360.03506896,
+                "w": 49.403952000000004,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 124.9562624,
+                "y": 360.03506896,
+                "w": 270.75965904000003,
+                "h": 8.667359999999974
+              }
+            },
+            {
+              "label": "11. Información de los pagos.",
+              "value": "Cómo y cuándo sabrá usted cuánto ha pagado y cuánto le queda por pagar.",
+              "y_hint": 371,
+              "label_evidence": {
+                "text": "11. Información de los pagos.",
+                "row_y_hint": 371,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 372.51606736,
+                    "w": 124.08481488000001,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1016,
+                    1017,
+                    1018,
+                    1019,
+                    1020,
+                    1021,
+                    1022,
+                    1023,
+                    1024,
+                    1025,
+                    1026,
+                    1027,
+                    1028,
+                    1029,
+                    1030,
+                    1031,
+                    1032,
+                    1033,
+                    1034,
+                    1035
+                  ],
+                  "n_chars": 25,
+                  "row_y": 370.3399999999994
+                },
+                "liteparse": {
+                  "span_id": 29,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 371.51934814453125,
+                    "w": 9.638099670410156,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 372.51606736,
+                  "w": 124.08481488000001,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cómo y cuándo sabrá usted cuánto ha pagado y cuánto le queda por pagar.",
+                "row_y_hint": 371,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 199.6111232,
+                    "y": 372.51606736,
+                    "w": 292.91343120000005,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1041,
+                    1042,
+                    1043,
+                    1044,
+                    1045,
+                    1046,
+                    1047,
+                    1048,
+                    1049,
+                    1050,
+                    1051,
+                    1052,
+                    1053,
+                    1054,
+                    1055,
+                    1056,
+                    1057,
+                    1058,
+                    1059,
+                    1060
+                  ],
+                  "n_chars": 58,
+                  "row_y": 370.3399999999994
+                },
+                "liteparse": {
+                  "span_id": 30,
+                  "bbox": {
+                    "x": 89.82455444335938,
+                    "y": 371.51934814453125,
+                    "w": 402.6999816894531,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/14",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 374.1541984,
+                    "w": 419.3413224000001,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 89.32744559999992,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 199.6111232,
+                  "y": 372.51606736,
+                  "w": 292.91343120000005,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 372.51606736,
+                "w": 124.08481488000001,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 199.6111232,
+                "y": 372.51606736,
+                "w": 292.91343120000005,
+                "h": 8.667359999999974
+              }
+            },
+            {
+              "label": "12. Impagos.",
+              "value": "Los impagos (retrasos en el pago) generan intereses.",
+              "y_hint": 384,
+              "label_evidence": {
+                "text": "12. Impagos.",
+                "row_y_hint": 384,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 385.22819536,
+                    "w": 54.691041600000005,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1099,
+                    1100,
+                    1101,
+                    1102,
+                    1103,
+                    1104,
+                    1105,
+                    1106,
+                    1107,
+                    1108,
+                    1109
+                  ],
+                  "n_chars": 11,
+                  "row_y": 384.73999999999944
+                },
+                "liteparse": {
+                  "span_id": 31,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 384.2314758300781,
+                    "w": 262.9243469238281,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 385.22819536,
+                  "w": 54.691041600000005,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Los impagos (retrasos en el pago) generan intereses.",
+                "row_y_hint": 384,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 130.27224320000002,
+                    "y": 385.22819536,
+                    "w": 205.83535439999994,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1110,
+                    1111,
+                    1112,
+                    1113,
+                    1114,
+                    1115,
+                    1116,
+                    1117,
+                    1118,
+                    1119,
+                    1120,
+                    1121,
+                    1122,
+                    1123,
+                    1124,
+                    1125,
+                    1126,
+                    1127,
+                    1128,
+                    1129
+                  ],
+                  "n_chars": 45,
+                  "row_y": 384.73999999999944
+                },
+                "liteparse": {
+                  "span_id": 31,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 384.2314758300781,
+                    "w": 262.9243469238281,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/15",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 386.8663264,
+                    "w": 262.9243656000001,
+                    "h": 6.425067535714277
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 245.7444024,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 130.27224320000002,
+                  "y": 385.22819536,
+                  "w": 205.83535439999994,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 385.22819536,
+                "w": 54.691041600000005,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 130.27224320000002,
+                "y": 385.22819536,
+                "w": 205.83535439999994,
+                "h": 8.667359999999974
+              }
+            },
+            {
+              "label": "13. Bloqueo del saldo disponible de la Cuenta de crédito con o sin Tarjeta IKEA asociada.",
+              "value": "El saldo disponible de su Cuenta de crédito y su Tarjeta IKEA asociada, si la tiene, pueden quedar bloqueados o limitados temporalmente.",
+              "y_hint": 396,
+              "label_evidence": {
+                "text": "13. Bloqueo del saldo disponible de la Cuenta de crédito con o sin Tarjeta IKEA asociada.",
+                "row_y_hint": 396,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 397.70919375999995,
+                    "w": 377.18617247999987,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1155,
+                    1156,
+                    1157,
+                    1158,
+                    1159,
+                    1160,
+                    1161,
+                    1162,
+                    1163,
+                    1164,
+                    1165,
+                    1166,
+                    1167,
+                    1168,
+                    1169,
+                    1170,
+                    1171,
+                    1172,
+                    1173,
+                    1174
+                  ],
+                  "n_chars": 74,
+                  "row_y": 397.70919375999995
+                },
+                "liteparse": {
+                  "span_id": 32,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 396.71246337890625,
+                    "w": 453.20465087890625,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 397.70919375999995,
+                  "w": 377.18617247999987,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "El saldo disponible de su Cuenta de crédito y su Tarjeta IKEA asociada, si la tiene, pueden quedar bloqueados o limitados temporalmente.",
+                "row_y_hint": 396,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 33,
+                  "bbox": {
+                    "x": 89.82457733154297,
+                    "y": 409.2627868652344,
+                    "w": 436.58929443359375,
+                    "h": 9.59478759765625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/16",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 399.34732479999997,
+                    "w": 453.23070000000007,
+                    "h": 31.61819393571426
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "next_colon_label",
+                  "gap_pt": 55.43812823486326,
+                  "next_label_text": "",
+                  "next_colon_x": 581.852,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 89.82457733154297,
+                  "y": 409.2627868652344,
+                  "w": 436.58929443359375,
+                  "h": 9.59478759765625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 397.70919375999995,
+                "w": 377.18617247999987,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 89.82457733154297,
+                "y": 409.2627868652344,
+                "w": 436.58929443359375,
+                "h": 9.59478759765625
+              }
+            },
+            {
+              "label": "14. Comunicaciones.",
+              "value": "Cómo nos comunicamos con usted.",
+              "y_hint": 434,
+              "label_evidence": {
+                "text": "14. Comunicaciones.",
+                "row_y_hint": 434,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 435.38331855999996,
+                    "w": 88.407072,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1344,
+                    1345,
+                    1346,
+                    1347,
+                    1348,
+                    1349,
+                    1350,
+                    1351,
+                    1352,
+                    1353,
+                    1354,
+                    1355,
+                    1356,
+                    1357,
+                    1358,
+                    1359,
+                    1360,
+                    1361
+                  ],
+                  "n_chars": 18,
+                  "row_y": 432.73999999999955
+                },
+                "liteparse": {
+                  "span_id": 35,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 434.3866271972656,
+                    "w": 228.62188720703125,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 435.38331855999996,
+                  "w": 88.407072,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cómo nos comunicamos con usted.",
+                "row_y_hint": 434,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 164.01716480000002,
+                    "y": 435.38331855999996,
+                    "w": 137.78791103999995,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1362,
+                    1363,
+                    1364,
+                    1365,
+                    1366,
+                    1367,
+                    1368,
+                    1369,
+                    1370,
+                    1371,
+                    1372,
+                    1373,
+                    1374,
+                    1375,
+                    1376,
+                    1377,
+                    1378,
+                    1379,
+                    1380,
+                    1381
+                  ],
+                  "n_chars": 27,
+                  "row_y": 432.73999999999955
+                },
+                "liteparse": {
+                  "span_id": 35,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 434.3866271972656,
+                    "w": 228.62188720703125,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/17",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 437.0214496,
+                    "w": 228.62184384000008,
+                    "h": 6.425067535714277
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 280.04692416,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 164.01716480000002,
+                  "y": 435.38331855999996,
+                  "w": 137.78791103999995,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 435.38331855999996,
+                "w": 88.407072,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 164.01716480000002,
+                "y": 435.38331855999996,
+                "w": 137.78791103999995,
+                "h": 8.667359999999974
+              }
+            },
+            {
+              "label": "15. Nuestros deberes y responsabilidades para la seguridad de su Cuenta de crédito, y de su Tarjeta IKEA asociada, si la hay.",
+              "value": "La importancia de proteger su Cuenta de crédito, y, si la tiene, su Tarjeta IKEA y su PIN.",
+              "y_hint": 446,
+              "label_evidence": {
+                "text": "15. Nuestros deberes y responsabilidades para la seguridad de su Cuenta de crédito, y de su Tarjeta IKEA asociada, si la hay.",
+                "row_y_hint": 446,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 36,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 446.8675842285156,
+                    "w": 453.14996337890625,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.1832275390625,
+                  "y": 446.8675842285156,
+                  "w": 453.14996337890625,
+                  "h": 9.66412353515625
+                },
+                "engine_agreement": 1
+              },
+              "value_evidence": {
+                "text": "La importancia de proteger su Cuenta de crédito, y, si la tiene, su Tarjeta IKEA y su PIN.",
+                "row_y_hint": 446,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 170.95105279999999,
+                    "y": 460.57644496,
+                    "w": 339.5149368000001,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1493,
+                    1494,
+                    1495,
+                    1496,
+                    1497,
+                    1498,
+                    1499,
+                    1500,
+                    1501,
+                    1502,
+                    1503,
+                    1504,
+                    1505,
+                    1506,
+                    1507,
+                    1508,
+                    1509,
+                    1510,
+                    1511,
+                    1512
+                  ],
+                  "n_chars": 73,
+                  "row_y": 460.57644496
+                },
+                "liteparse": {
+                  "span_id": 37,
+                  "bbox": {
+                    "x": 89.82463073730469,
+                    "y": 459.5797424316406,
+                    "w": 420.641357421875,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/18",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 449.502448,
+                    "w": 453.1498046400002,
+                    "h": 19.137195535714284
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 71.38601039999992,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 170.95105279999999,
+                  "y": 460.57644496,
+                  "w": 339.5149368000001,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.1832275390625,
+                "y": 446.8675842285156,
+                "w": 453.14996337890625,
+                "h": 9.66412353515625
+              },
+              "bbox": {
+                "x": 170.95105279999999,
+                "y": 460.57644496,
+                "w": 339.5149368000001,
+                "h": 8.667359999999974
+              }
+            },
+            {
+              "label": "16. Incidencias.",
+              "value": "Qué hacer si observa irregularidades en los movimientos realizados con su Cuenta de crédito.",
+              "y_hint": 472,
+              "label_evidence": {
+                "text": "16. Incidencias.",
+                "row_y_hint": 472,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 473.05744336,
+                    "w": 66.26196720000002,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1566,
+                    1567,
+                    1568,
+                    1569,
+                    1570,
+                    1571,
+                    1572,
+                    1573,
+                    1574,
+                    1575,
+                    1576,
+                    1577,
+                    1578,
+                    1579,
+                    1580
+                  ],
+                  "n_chars": 15,
+                  "row_y": 471.13999999999965
+                },
+                "liteparse": {
+                  "span_id": 38,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 472.06072998046875,
+                    "w": 430.5858459472656,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 473.05744336,
+                  "w": 66.26196720000002,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Qué hacer si observa irregularidades en los movimientos realizados con su Cuenta de crédito.",
+                "row_y_hint": 472,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 141.8287232,
+                    "y": 473.05744336,
+                    "w": 361.9402862400001,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1581,
+                    1582,
+                    1583,
+                    1584,
+                    1585,
+                    1586,
+                    1587,
+                    1588,
+                    1589,
+                    1590,
+                    1591,
+                    1592,
+                    1593,
+                    1594,
+                    1595,
+                    1596,
+                    1597,
+                    1598,
+                    1599,
+                    1600
+                  ],
+                  "n_chars": 79,
+                  "row_y": 471.13999999999965
+                },
+                "liteparse": {
+                  "span_id": 38,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 472.06072998046875,
+                    "w": 430.5858459472656,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/19",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 474.6955744,
+                    "w": 430.58577744000013,
+                    "h": 6.425067535714277
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 78.08299055999987,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 141.8287232,
+                  "y": 473.05744336,
+                  "w": 361.9402862400001,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 473.05744336,
+                "w": 66.26196720000002,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 141.8287232,
+                "y": 473.05744336,
+                "w": 361.9402862400001,
+                "h": 8.667359999999974
+              }
+            },
+            {
+              "label": "17. Ley aplicable a este contrato. Quejas y reclamaciones.",
+              "value": "Cómo puede hacernos llegar sus quejas y reclamaciones.",
+              "y_hint": 484,
+              "label_evidence": {
+                "text": "17. Ley aplicable a este contrato. Quejas y reclamaciones.",
+                "row_y_hint": 484,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 485.76957136,
+                    "w": 265.09987295999997,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1660,
+                    1661,
+                    1662,
+                    1663,
+                    1664,
+                    1665,
+                    1666,
+                    1667,
+                    1668,
+                    1669,
+                    1670,
+                    1671,
+                    1672,
+                    1673,
+                    1674,
+                    1675,
+                    1676,
+                    1677,
+                    1678,
+                    1679
+                  ],
+                  "n_chars": 50,
+                  "row_y": 485.5399999999997
+                },
+                "liteparse": {
+                  "span_id": 39,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 484.7728271484375,
+                    "w": 453.1873779296875,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 485.76957136,
+                  "w": 265.09987295999997,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cómo puede hacernos llegar sus quejas y reclamaciones.",
+                "row_y_hint": 484,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 40,
+                  "bbox": {
+                    "x": 89.82457733154297,
+                    "y": 497.3231506347656,
+                    "w": 58.279319763183594,
+                    "h": 9.59478759765625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/20",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 487.40770239999995,
+                    "w": 453.18736320000005,
+                    "h": 18.90606593571431
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "next_colon_label",
+                  "gap_pt": 433.7481029052734,
+                  "next_label_text": "",
+                  "next_colon_x": 581.852,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 89.82457733154297,
+                  "y": 497.3231506347656,
+                  "w": 58.279319763183594,
+                  "h": 9.59478759765625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 485.76957136,
+                "w": 265.09987295999997,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 89.82457733154297,
+                "y": 497.3231506347656,
+                "w": 58.279319763183594,
+                "h": 9.59478759765625
+              }
+            },
+            {
+              "label": "18. Duración y cancelación.",
+              "value": "Quién puede cancelar el contrato, cuándo y cómo.",
+              "y_hint": 509,
+              "label_evidence": {
+                "text": "18. Duración y cancelación.",
+                "row_y_hint": 509,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 510.73156816,
+                    "w": 115.82193167999998,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1757,
+                    1758,
+                    1759,
+                    1760,
+                    1761,
+                    1762,
+                    1763,
+                    1764,
+                    1765,
+                    1766,
+                    1767,
+                    1768,
+                    1769,
+                    1770,
+                    1771,
+                    1772,
+                    1773,
+                    1774,
+                    1775,
+                    1776
+                  ],
+                  "n_chars": 24,
+                  "row_y": 509.53999999999974
+                },
+                "liteparse": {
+                  "span_id": 41,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 509.73486328125,
+                    "w": 312.05096435546875,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 510.73156816,
+                  "w": 115.82193167999998,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Quién puede cancelar el contrato, cuándo y cómo.",
+                "row_y_hint": 509,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 191.5215872,
+                    "y": 510.73156816,
+                    "w": 193.71260688,
+                    "h": 8.667359999999974
+                  },
+                  "char_indices": [
+                    1781,
+                    1782,
+                    1783,
+                    1784,
+                    1785,
+                    1786,
+                    1787,
+                    1788,
+                    1789,
+                    1790,
+                    1791,
+                    1792,
+                    1793,
+                    1794,
+                    1795,
+                    1796,
+                    1797,
+                    1798,
+                    1799,
+                    1800
+                  ],
+                  "n_chars": 41,
+                  "row_y": 509.53999999999974
+                },
+                "liteparse": {
+                  "span_id": 41,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 509.73486328125,
+                    "w": 312.05096435546875,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/21",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 512.3696992,
+                    "w": 312.0509620800001,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 196.61780591999997,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 191.5215872,
+                  "y": 510.73156816,
+                  "w": 193.71260688,
+                  "h": 8.667359999999974
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 510.73156816,
+                "w": 115.82193167999998,
+                "h": 8.667359999999974
+              },
+              "bbox": {
+                "x": 191.5215872,
+                "y": 510.73156816,
+                "w": 193.71260688,
+                "h": 8.667359999999974
+              }
+            },
+            {
+              "label": "19. Desistimiento.",
+              "value": "Cuándo y cómo puede desistir (renunciar) de este contrato.",
+              "y_hint": 522,
+              "label_evidence": {
+                "text": "19. Desistimiento.",
+                "row_y_hint": 522,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 523.44369616,
+                    "w": 75.8827368,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    1822,
+                    1823,
+                    1824,
+                    1825,
+                    1826,
+                    1827,
+                    1828,
+                    1829,
+                    1830,
+                    1831,
+                    1832,
+                    1833,
+                    1834,
+                    1835,
+                    1836,
+                    1837,
+                    1838
+                  ],
+                  "n_chars": 17,
+                  "row_y": 523.44369616
+                },
+                "liteparse": {
+                  "span_id": 42,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 522.4469604492188,
+                    "w": 306.6888122558594,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 523.44369616,
+                  "w": 75.8827368,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cuándo y cómo puede desistir (renunciar) de este contrato.",
+                "row_y_hint": 522,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 151.53616639999998,
+                    "y": 523.44369616,
+                    "w": 228.33582096,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    1839,
+                    1840,
+                    1841,
+                    1842,
+                    1843,
+                    1844,
+                    1845,
+                    1846,
+                    1847,
+                    1848,
+                    1849,
+                    1850,
+                    1851,
+                    1852,
+                    1853,
+                    1854,
+                    1855,
+                    1856,
+                    1857,
+                    1858
+                  ],
+                  "n_chars": 50,
+                  "row_y": 523.44369616
+                },
+                "liteparse": {
+                  "span_id": 42,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 522.4469604492188,
+                    "w": 306.6888122558594,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/22",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 525.0818271999999,
+                    "w": 306.6887553600001,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 201.98001263999998,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 151.53616639999998,
+                  "y": 523.44369616,
+                  "w": 228.33582096,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 523.44369616,
+                "w": 75.8827368,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 151.53616639999998,
+                "y": 523.44369616,
+                "w": 228.33582096,
+                "h": 8.66736000000003
+              }
+            },
+            {
+              "label": "20. Derechos adicionales que podrá usted ejercer.",
+              "value": "Cuándo y cómo puede ejercitar los derechos que le correspondan frente a CaixaBank Payments & Consumer teniendo el contrato de Cuenta de crédito el carácter de vinculado.",
+              "y_hint": 534,
+              "label_evidence": {
+                "text": "20. Derechos adicionales que podrá usted ejercer.",
+                "row_y_hint": 534,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 535.92469456,
+                    "w": 224.75620127999994,
+                    "h": 8.667359999999917
+                  },
+                  "char_indices": [
+                    1889,
+                    1890,
+                    1891,
+                    1892,
+                    1893,
+                    1894,
+                    1895,
+                    1896,
+                    1897,
+                    1898,
+                    1899,
+                    1900,
+                    1901,
+                    1902,
+                    1903,
+                    1904,
+                    1905,
+                    1906,
+                    1907,
+                    1908
+                  ],
+                  "n_chars": 43,
+                  "row_y": 533.5399999999997
+                },
+                "liteparse": {
+                  "span_id": 43,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 534.927978515625,
+                    "w": 453.2855224609375,
+                    "h": 9.6641845703125
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 535.92469456,
+                  "w": 224.75620127999994,
+                  "h": 8.667359999999917
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cuándo y cómo puede ejercitar los derechos que le correspondan frente a CaixaBank Payments & Consumer teniendo el contrato de Cuenta de crédito el carácter de vinculado.",
+                "row_y_hint": 534,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 44,
+                  "bbox": {
+                    "x": 89.82453918457031,
+                    "y": 547.4783325195312,
+                    "w": 436.59808349609375,
+                    "h": 9.59478759765625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/23",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 537.5628256,
+                    "w": 453.28559328000006,
+                    "h": 31.618193935714316
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 55.42937731933591,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 89.82453918457031,
+                  "y": 547.4783325195312,
+                  "w": 436.59808349609375,
+                  "h": 9.59478759765625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 535.92469456,
+                "w": 224.75620127999994,
+                "h": 8.667359999999917
+              },
+              "bbox": {
+                "x": 89.82453918457031,
+                "y": 547.4783325195312,
+                "w": 436.59808349609375,
+                "h": 9.59478759765625
+              }
+            },
+            {
+              "label": "21. Modificaciones.",
+              "value": "Cómo y cuándo desde CaixaBank Payments & Consumer podemos modificar las condiciones del contrato, y qué puede hacer usted al respecto.",
+              "y_hint": 572,
+              "label_evidence": {
+                "text": "21. Modificaciones.",
+                "row_y_hint": 572,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 573.59881936,
+                    "w": 81.66386592,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    2075,
+                    2076,
+                    2077,
+                    2078,
+                    2079,
+                    2080,
+                    2081,
+                    2082,
+                    2083,
+                    2084,
+                    2085,
+                    2086,
+                    2087,
+                    2088,
+                    2089,
+                    2090,
+                    2091,
+                    2092
+                  ],
+                  "n_chars": 18,
+                  "row_y": 571.9399999999998
+                },
+                "liteparse": {
+                  "span_id": 46,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 572.60205078125,
+                    "w": 9.638099670410156,
+                    "h": 9.6641845703125
+                  },
+                  "case_class": "none",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 573.59881936,
+                  "w": 81.66386592,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cómo y cuándo desde CaixaBank Payments & Consumer podemos modificar las condiciones del contrato, y qué puede hacer usted al respecto.",
+                "row_y_hint": 572,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 48,
+                  "bbox": {
+                    "x": 89.82452392578125,
+                    "y": 585.383544921875,
+                    "w": 192.81698608398438,
+                    "h": 9.59478759765625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/24",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 575.2369504,
+                    "w": 453.2451456000002,
+                    "h": 19.13719553571434
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 299.21048999023435,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 89.82452392578125,
+                  "y": 585.383544921875,
+                  "w": 192.81698608398438,
+                  "h": 9.59478759765625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 573.59881936,
+                "w": 81.66386592,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 89.82452392578125,
+                "y": 585.383544921875,
+                "w": 192.81698608398438,
+                "h": 9.59478759765625
+              }
+            },
+            {
+              "label": "22. Cesión.",
+              "value": "Desde CaixaBank Payments & Consumer podremos ceder los derechos y obligaciones del contrato.",
+              "y_hint": 597,
+              "label_evidence": {
+                "text": "22. Cesión.",
+                "row_y_hint": 597,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 598.79194576,
+                    "w": 47.94783552,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    2207,
+                    2208,
+                    2209,
+                    2210,
+                    2211,
+                    2212,
+                    2213,
+                    2214,
+                    2215,
+                    2216
+                  ],
+                  "n_chars": 10,
+                  "row_y": 595.9399999999999
+                },
+                "liteparse": {
+                  "span_id": 49,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 597.7952270507812,
+                    "w": 435.427978515625,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 598.79194576,
+                  "w": 47.94783552,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Desde CaixaBank Payments & Consumer podremos ceder los derechos y obligaciones del contrato.",
+                "row_y_hint": 597,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 123.56948480000001,
+                    "y": 598.79194576,
+                    "w": 385.04168975999994,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    2217,
+                    2218,
+                    2219,
+                    2220,
+                    2221,
+                    2222,
+                    2223,
+                    2224,
+                    2225,
+                    2226,
+                    2227,
+                    2228,
+                    2229,
+                    2230,
+                    2231,
+                    2232,
+                    2233,
+                    2234,
+                    2235,
+                    2236
+                  ],
+                  "n_chars": 80,
+                  "row_y": 595.9399999999999
+                },
+                "liteparse": {
+                  "span_id": 49,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 597.7952270507812,
+                    "w": 435.427978515625,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/25",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 600.4300767999999,
+                    "w": 435.42794256,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 73.24082544000004,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 123.56948480000001,
+                  "y": 598.79194576,
+                  "w": 385.04168975999994,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 598.79194576,
+                "w": 47.94783552,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 123.56948480000001,
+                "y": 598.79194576,
+                "w": 385.04168975999994,
+                "h": 8.66736000000003
+              }
+            },
+            {
+              "label": "23. Servicios vinculados o combinados.",
+              "value": "Para contratar la Cuenta de crédito con o sin Tarjeta IKEA, si el producto contratado la ofrece, no es obligatorio contratar otro servicio más.",
+              "y_hint": 610,
+              "label_evidence": {
+                "text": "23. Servicios vinculados o combinados.",
+                "row_y_hint": 610,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 611.27294416,
+                    "w": 167.40716928,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    2297,
+                    2298,
+                    2299,
+                    2300,
+                    2301,
+                    2302,
+                    2303,
+                    2304,
+                    2305,
+                    2306,
+                    2307,
+                    2308,
+                    2309,
+                    2310,
+                    2311,
+                    2312,
+                    2313,
+                    2314,
+                    2315,
+                    2316
+                  ],
+                  "n_chars": 34,
+                  "row_y": 610.3399999999999
+                },
+                "liteparse": {
+                  "span_id": 50,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 610.2762451171875,
+                    "w": 453.2249755859375,
+                    "h": 9.6640625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 611.27294416,
+                  "w": 167.40716928,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Para contratar la Cuenta de crédito con o sin Tarjeta IKEA, si el producto contratado la ofrece, no es obligatorio contratar otro servicio más.",
+                "row_y_hint": 610,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 51,
+                  "bbox": {
+                    "x": 89.82453918457031,
+                    "y": 623.0576782226562,
+                    "w": 251.99195861816406,
+                    "h": 9.59478759765625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/26",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 612.9110751999999,
+                    "w": 453.22492176000003,
+                    "h": 19.13719553571434
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 240.0355021972656,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 89.82453918457031,
+                  "y": 623.0576782226562,
+                  "w": 251.99195861816406,
+                  "h": 9.59478759765625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 611.27294416,
+                "w": 167.40716928,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 89.82453918457031,
+                "y": 623.0576782226562,
+                "w": 251.99195861816406,
+                "h": 9.59478759765625
+              }
+            },
+            {
+              "label": "24. Precios.",
+              "value": "Cuánto cuesta la Cuenta de crédito con o sin Tarjeta IKEA y los servicios que con ella le ofrecemos.",
+              "y_hint": 635,
+              "label_evidence": {
+                "text": "24. Precios.",
+                "row_y_hint": 635,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 636.4660705599999,
+                    "w": 50.36602896000001,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    2451,
+                    2452,
+                    2453,
+                    2454,
+                    2455,
+                    2456,
+                    2457,
+                    2458,
+                    2459,
+                    2460,
+                    2461
+                  ],
+                  "n_chars": 11,
+                  "row_y": 634.3399999999999
+                },
+                "liteparse": {
+                  "span_id": 52,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 635.4693603515625,
+                    "w": 437.17584228515625,
+                    "h": 9.6640625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 636.4660705599999,
+                  "w": 50.36602896000001,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cuánto cuesta la Cuenta de crédito con o sin Tarjeta IKEA y los servicios que con ella le ofrecemos.",
+                "row_y_hint": 635,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 126.1119104,
+                    "y": 636.4660705599999,
+                    "w": 384.2471817600001,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    2462,
+                    2463,
+                    2464,
+                    2465,
+                    2466,
+                    2467,
+                    2468,
+                    2469,
+                    2470,
+                    2471,
+                    2472,
+                    2473,
+                    2474,
+                    2475,
+                    2476,
+                    2477,
+                    2478,
+                    2479,
+                    2480,
+                    2481
+                  ],
+                  "n_chars": 82,
+                  "row_y": 634.3399999999999
+                },
+                "liteparse": {
+                  "span_id": 52,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 635.4693603515625,
+                    "w": 437.17584228515625,
+                    "h": 9.6640625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/27",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 638.1042015999999,
+                    "w": 437.1758601600002,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 71.49290783999987,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 126.1119104,
+                  "y": 636.4660705599999,
+                  "w": 384.2471817600001,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 636.4660705599999,
+                "w": 50.36602896000001,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 126.1119104,
+                "y": 636.4660705599999,
+                "w": 384.2471817600001,
+                "h": 8.66736000000003
+              }
+            },
+            {
+              "label": "25. Tratamiento de datos de carácter personal.",
+              "value": "Cómo tratamos sus datos personales.",
+              "y_hint": 648,
+              "label_evidence": {
+                "text": "25. Tratamiento de datos de carácter personal.",
+                "row_y_hint": 648,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 648.94706896,
+                    "w": 193.85417375999995,
+                    "h": 8.667359999999917
+                  },
+                  "char_indices": [
+                    2544,
+                    2545,
+                    2546,
+                    2547,
+                    2548,
+                    2549,
+                    2550,
+                    2551,
+                    2552,
+                    2553,
+                    2554,
+                    2555,
+                    2556,
+                    2557,
+                    2558,
+                    2559,
+                    2560,
+                    2561,
+                    2562,
+                    2563
+                  ],
+                  "n_chars": 40,
+                  "row_y": 648.74
+                },
+                "liteparse": {
+                  "span_id": 53,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 647.9503173828125,
+                    "w": 342.265380859375,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 648.94706896,
+                  "w": 193.85417375999995,
+                  "h": 8.667359999999917
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "Cómo tratamos sus datos personales.",
+                "row_y_hint": 648,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 269.643392,
+                    "y": 648.94706896,
+                    "w": 145.80521904,
+                    "h": 8.667359999999917
+                  },
+                  "char_indices": [
+                    2584,
+                    2585,
+                    2586,
+                    2587,
+                    2588,
+                    2589,
+                    2590,
+                    2591,
+                    2592,
+                    2593,
+                    2594,
+                    2595,
+                    2596,
+                    2597,
+                    2598,
+                    2599,
+                    2600,
+                    2601,
+                    2602,
+                    2603
+                  ],
+                  "n_chars": 31,
+                  "row_y": 648.74
+                },
+                "liteparse": {
+                  "span_id": 53,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 647.9503173828125,
+                    "w": 342.265380859375,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/28",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 650.5852,
+                    "w": 342.2653790400001,
+                    "h": 6.425067535714334
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 166.40338895999997,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 269.643392,
+                  "y": 648.94706896,
+                  "w": 145.80521904,
+                  "h": 8.667359999999917
+                },
+                "engine_agreement": 3
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 648.94706896,
+                "w": 193.85417375999995,
+                "h": 8.667359999999917
+              },
+              "bbox": {
+                "x": 269.643392,
+                "y": 648.94706896,
+                "w": 145.80521904,
+                "h": 8.667359999999917
+              }
+            },
+            {
+              "label": "26. Políticas de sanciones, prevención de blanqueo y lucha contra el fraude.",
+              "value": "En CaixaBank Payments & Consumer gozamos de políticas sobre sanciones económico-financieras internacionales, prevención de blanqueo y lucha contra el fraude.",
+              "y_hint": 660,
+              "label_evidence": {
+                "text": "26. Políticas de sanciones, prevención de blanqueo y lucha contra el fraude.",
+                "row_y_hint": 660,
+                "pdfplumber": {
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 661.6591969599999,
+                    "w": 338.14838304,
+                    "h": 8.66736000000003
+                  },
+                  "char_indices": [
+                    2615,
+                    2616,
+                    2617,
+                    2618,
+                    2619,
+                    2620,
+                    2621,
+                    2622,
+                    2623,
+                    2624,
+                    2625,
+                    2626,
+                    2627,
+                    2628,
+                    2629,
+                    2630,
+                    2631,
+                    2632,
+                    2633,
+                    2634
+                  ],
+                  "n_chars": 65,
+                  "row_y": 661.6591969599999
+                },
+                "liteparse": {
+                  "span_id": 54,
+                  "bbox": {
+                    "x": 73.1832275390625,
+                    "y": 660.6624755859375,
+                    "w": 453.248046875,
+                    "h": 9.66412353515625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": null,
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": null,
+                "value_extent": null,
+                "cell_bbox": {
+                  "x": 73.183232,
+                  "y": 661.6591969599999,
+                  "w": 338.14838304,
+                  "h": 8.66736000000003
+                },
+                "engine_agreement": 2
+              },
+              "value_evidence": {
+                "text": "En CaixaBank Payments & Consumer gozamos de políticas sobre sanciones económico-financieras internacionales, prevención de blanqueo y lucha contra el fraude.",
+                "row_y_hint": 660,
+                "pdfplumber": null,
+                "liteparse": {
+                  "span_id": 55,
+                  "bbox": {
+                    "x": 89.82457733154297,
+                    "y": 673.2128295898438,
+                    "w": 436.66729736328125,
+                    "h": 9.59478759765625
+                  },
+                  "case_class": "lower",
+                  "is_bold": false,
+                  "font_size": 9.0
+                },
+                "docling": {
+                  "cell_ref": "#/texts/29",
+                  "bbox": {
+                    "x": 73.183232,
+                    "y": 663.297328,
+                    "w": 453.3087062400001,
+                    "h": 31.618193935714203
+                  },
+                  "column_header": null,
+                  "row_header": null
+                },
+                "rect": {
+                  "rect_id": "p1-r1",
+                  "bbox": {
+                    "x": 46.603328000000005,
+                    "y": 89.98035520000008,
+                    "w": 498.54654719999996,
+                    "h": 681.3700607999999
+                  }
+                },
+                "colon_signal": {
+                  "present": false
+                },
+                "value_extent": {
+                  "boundary_type": "cell_edge",
+                  "gap_pt": 55.36012530517576,
+                  "ends_at_x": 581.852
+                },
+                "cell_bbox": {
+                  "x": 89.82457733154297,
+                  "y": 673.2128295898438,
+                  "w": 436.66729736328125,
+                  "h": 9.59478759765625
+                },
+                "engine_agreement": 2
+              },
+              "label_bbox": {
+                "x": 73.183232,
+                "y": 661.6591969599999,
+                "w": 338.14838304,
+                "h": 8.66736000000003
+              },
+              "bbox": {
+                "x": 89.82457733154297,
+                "y": 673.2128295898438,
+                "w": 436.66729736328125,
+                "h": 9.59478759765625
+              }
+            }
+          ],
+          "container_bbox": {
+            "x": 73.1832275390625,
+            "y": 184.14544336000006,
+            "w": 453.3086471557617,
+            "h": 498.66217382749994
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "Temas (1-26)",
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 59,
+                "bbox": {
+                  "x": 581.635986328125,
+                  "y": 523.93994140625,
+                  "w": 9.0560302734375,
+                  "h": 4.79998779296875
+                },
+                "case_class": "none",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": null,
+              "bbox": {
+                "x": 581.635986328125,
+                "y": 523.93994140625,
+                "w": 9.0560302734375,
+                "h": 4.79998779296875
+              },
+              "engine_agreement": 1
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 73.1832275390625,
+                "y": 184.14544336000006,
+                "w": 453.3086471557617,
+                "h": 498.66217382749994
+              },
+              "pdfplumber_rect": {
+                "rect_id": "p1-r1",
+                "bbox": {
+                  "x": 46.603328000000005,
+                  "y": 89.98035520000008,
+                  "w": 498.54654719999996,
+                  "h": 681.3700607999999
+                }
+              },
+              "docling_block": null,
+              "edges_inside": {
+                "vertical": 0,
+                "horizontal": 0
+              },
+              "colons_inside": 0,
+              "container_score": 1
+            },
+            "structural_signals": {
+              "kind": "free_text_list",
+              "n_items": 26
+            }
+          }
+        }
+      ],
       "title_bbox": {
-        "x": 73.183,
-        "y": 107.134,
-        "w": 26.44,
-        "h": 10.201
+        "x": 73.183232,
+        "y": 108.18614488000003,
+        "w": 26.440263200000004,
+        "h": 9.148879999999963
       },
       "container_bbox": {
-        "x": 46.603,
-        "y": 89.98,
-        "w": 498.547,
-        "h": 681.37
+        "x": 73.1832275390625,
+        "y": 184.14544336000006,
+        "w": 453.3086471557617,
+        "h": 498.66217382749994
       },
-      "bands": [
-        {
-          "y_range": [
-            107.134,
-            697.0
-          ],
-          "layout": "free-text",
-          "columns": [
-            {
-              "x_range": [
-                73.183,
-                526.399
-              ],
-              "role": "VALUE_TEXT",
-              "column_header": null,
-              "coherence": 0.95
-            }
-          ],
-          "rows": [
-            {
-              "row_id": "r1",
-              "y_range": [
-                132.327,
-                142.528
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "A. Condiciones Particulares del contrato de financiación",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 132.327,
-                    "w": 245.684,
-                    "h": 10.201
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "section_header",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
+      "evidence": {
+        "title_signal": {
+          "text": "Índice",
+          "pdfplumber": {
+            "bbox": {
+              "x": 73.183232,
+              "y": 108.18614488000003,
+              "w": 26.440263200000004,
+              "h": 9.148879999999963
             },
-            {
-              "row_id": "r2",
-              "y_range": [
-                157.52,
-                167.721
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "B. Condiciones Generales del contrato de financiación",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 157.52,
-                    "w": 237.363,
-                    "h": 10.201
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "section_header",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
+            "char_indices": [
+              67,
+              68,
+              69,
+              70,
+              71,
+              72
+            ],
+            "n_chars": 6,
+            "row_y": 108.18614488000003
+          },
+          "liteparse": {
+            "span_id": 2,
+            "bbox": {
+              "x": 73.1832275390625,
+              "y": 107.1341552734375,
+              "w": 26.440261840820312,
+              "h": 10.20098876953125
             },
-            {
-              "row_id": "r3",
-              "y_range": [
-                183.149,
-                192.813
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "1. La cuenta de crédito con o sin Tarjeta IKEA. Qué son y qué pueden hacer.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 183.149,
-                    "w": 310.563,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 9.5
+          },
+          "docling": {
+            "cell_ref": "#/texts/1",
+            "bbox": {
+              "x": 73.183232,
+              "y": 109.91528319999998,
+              "w": 26.440263200000004,
+              "h": 6.770576017699113
             },
-            {
-              "row_id": "r4",
-              "y_range": [
-                195.63,
-                221.486
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "2. Modalidades de pago y de disposición que permite su cuenta de crédito con o sin Tarjeta IKEA. Qué posibilidades tiene de pagar a crédito, o de retirar dinero en efectivo metálico a crédito si dispone de Tarjeta IKEA.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 195.63,
-                    "w": 436.575,
-                    "h": 35.262
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r5",
-              "y_range": [
-                233.304,
-                242.968
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "3. Intereses. Cómo se calculan los intereses y cuándo se pagan.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 233.304,
-                    "w": 330.816,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r6",
-              "y_range": [
-                245.785,
-                268.161
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "4. Titularidad. Quién se responsabiliza de este contrato de Cuenta de crédito con o sin Tarjeta IKEA y de la Tarjeta IKEA, si la hay.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 245.785,
-                    "w": 436.535,
-                    "h": 22.376
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r7",
-              "y_range": [
-                270.978,
-                293.355
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "5. Cuenta corriente asociada. Qué cuenta puede asociarse al contrato de Cuenta de crédito con o sin Tarjeta IKEA.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 270.978,
-                    "w": 436.535,
-                    "h": 22.377
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r8",
-              "y_range": [
-                296.171,
-                305.835
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "6. Número de teléfono asociado. Por qué es necesario que nos facilite su número de teléfono.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 296.171,
-                    "w": 449.219,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r9",
-              "y_range": [
-                308.652,
-                331.028
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "7. Acceso y usos. Cómo puede disponer de su Cuenta de crédito con o sin Tarjeta IKEA, y hacerlo de forma segura.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 308.652,
-                    "w": 436.569,
-                    "h": 22.376
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r10",
-              "y_range": [
-                333.845,
-                343.509
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "8. TAE. Qué es y cómo calculamos la Tasa Anual Equivalente (TAE).",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 333.845,
-                    "w": 349.9,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "mixed",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r11",
-              "y_range": [
-                346.326,
-                355.99
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "9. Órdenes de pago. Cuándo ejecutamos (realizamos) una orden de pago.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 346.326,
-                    "w": 353.503,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r12",
-              "y_range": [
-                359.038,
-                368.702
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "10. Divisas. Qué tipo de cambio aplicamos si paga en una moneda distinta al euro.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 359.038,
-                    "w": 322.533,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r13",
-              "y_range": [
-                371.519,
-                381.183
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "11. Información de los pagos. Cómo y cuándo sabrá usted cuánto ha pagado y cuánto le queda por pagar.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 371.519,
-                    "w": 412.338,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r14",
-              "y_range": [
-                384.231,
-                393.895
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "12. Impagos. Los impagos (retrasos en el pago) generan intereses.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 384.231,
-                    "w": 262.924,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r15",
-              "y_range": [
-                396.712,
-                421.975
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "13. Bloqueo del saldo disponible de la Cuenta de crédito con o sin Tarjeta IKEA asociada. El saldo disponible de su Cuenta de crédito y su Tarjeta IKEA asociada, si la tiene, pueden quedar bloqueados o limitados temporalmente.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 396.712,
-                    "w": 453.205,
-                    "h": 35.263
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r16",
-              "y_range": [
-                434.387,
-                444.051
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "14. Comunicaciones. Cómo nos comunicamos con usted.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 434.387,
-                    "w": 228.622,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r17",
-              "y_range": [
-                446.868,
-                469.244
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "15. Nuestros deberes y responsabilidades para la seguridad de su Cuenta de crédito, y de su Tarjeta IKEA asociada, si la hay. La importancia de proteger su Cuenta de crédito, y, si la tiene, su Tarjeta IKEA y su PIN.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 446.868,
-                    "w": 453.15,
-                    "h": 22.376
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r18",
-              "y_range": [
-                472.061,
-                481.725
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "16. Incidencias. Qué hacer si observa irregularidades en los movimientos realizados con su Cuenta de crédito.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 472.061,
-                    "w": 430.586,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r19",
-              "y_range": [
-                484.773,
-                507.916
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "17. Ley aplicable a este contrato. Quejas y reclamaciones. Cómo puede hacernos llegar sus quejas y reclamaciones.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 484.773,
-                    "w": 453.187,
-                    "h": 22.143
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r20",
-              "y_range": [
-                509.735,
-                519.399
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "18. Duración y cancelación. Quién puede cancelar el contrato, cuándo y cómo.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 509.735,
-                    "w": 312.051,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r21",
-              "y_range": [
-                522.447,
-                532.111
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "19. Desistimiento. Cuándo y cómo puede desistir (renunciar) de este contrato.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 522.447,
-                    "w": 306.689,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r22",
-              "y_range": [
-                534.928,
-                560.191
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "20. Derechos adicionales que podrá usted ejercer. Cuándo y cómo puede ejercitar los derechos que le correspondan frente a CaixaBank Payments & Consumer teniendo el contrato de Cuenta de crédito el carácter de vinculado.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 534.928,
-                    "w": 453.286,
-                    "h": 25.263
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r23",
-              "y_range": [
-                572.602,
-                595.377
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "21. Modificaciones. Cómo y cuándo desde CaixaBank Payments & Consumer podemos modificar las condiciones del contrato, y qué puede hacer usted al respecto.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 572.602,
-                    "w": 436.604,
-                    "h": 22.781
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r24",
-              "y_range": [
-                597.795,
-                607.459
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "22. Cesión. Desde CaixaBank Payments & Consumer podremos ceder los derechos y obligaciones del contrato.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 597.795,
-                    "w": 435.428,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r25",
-              "y_range": [
-                610.276,
-                633.058
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "23. Servicios vinculados o combinados. Para contratar la Cuenta de crédito con o sin Tarjeta IKEA, si el producto contratado la ofrece, no es obligatorio contratar otro servicio más.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 610.276,
-                    "w": 453.225,
-                    "h": 22.782
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r26",
-              "y_range": [
-                635.469,
-                645.133
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "24. Precios. Cuánto cuesta la Cuenta de crédito con o sin Tarjeta IKEA y los servicios que con ella le ofrecemos.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 635.469,
-                    "w": 437.176,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r27",
-              "y_range": [
-                647.95,
-                657.614
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "25. Tratamiento de datos de carácter personal. Cómo tratamos sus datos personales.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 647.95,
-                    "w": 342.265,
-                    "h": 9.664
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            },
-            {
-              "row_id": "r28",
-              "y_range": [
-                660.662,
-                695.926
-              ],
-              "cells": [
-                {
-                  "col": 0,
-                  "text": "26. Políticas de sanciones, prevención de blanqueo y lucha contra el fraude. En CaixaBank Payments & Consumer gozamos de políticas sobre sanciones económico-financieras internacionales, prevención de blanqueo y lucha contra el fraude.",
-                  "role": "VALUE_TEXT",
-                  "bbox": {
-                    "x": 73.183,
-                    "y": 660.662,
-                    "w": 453.248,
-                    "h": 35.263
-                  },
-                  "bold": false,
-                  "case": "lower",
-                  "docling_label": "list_item",
-                  "compound_parts": null
-                }
-              ],
-              "clarifiers": []
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "kv_pairs": [],
-  "noise": [
-    {
-      "text": "Contrato de cuenta de crédito con o sin Tarjeta IKEA",
-      "bbox": {
-        "x": 176.96,
-        "y": 42.784,
-        "w": 267.44,
-        "h": 12.885
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "Condiciones del contrato",
-      "bbox": {
-        "x": 345.454,
-        "y": 56.128,
-        "w": 100.683,
-        "h": 10.128
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "Logalty",
-      "bbox": {
-        "x": 581.636,
-        "y": 715.94,
-        "w": 9.056,
-        "h": 33.6
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "Guid: 001001-0001-000000136441990.par",
-      "bbox": {
-        "x": 581.636,
-        "y": 687.14,
-        "w": 9.056,
-        "h": 24.0
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "-",
-      "bbox": {
-        "x": 581.636,
-        "y": 523.94,
-        "w": 9.056,
-        "h": 4.8
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "Date:",
-      "bbox": {
-        "x": 581.636,
-        "y": 495.14,
-        "w": 9.056,
-        "h": 24.0
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "2025/02/25 T",
-      "bbox": {
-        "x": 581.636,
-        "y": 442.34,
-        "w": 9.056,
-        "h": 48.0
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "20:07:05",
-      "bbox": {
-        "x": 581.636,
-        "y": 389.54,
-        "w": 9.056,
-        "h": 38.4
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "CET +0100",
-      "bbox": {
-        "x": 581.636,
-        "y": 370.34,
-        "w": 9.056,
-        "h": 14.4
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "-",
-      "bbox": {
-        "x": 581.636,
-        "y": 331.94,
-        "w": 9.056,
-        "h": 4.8
-      },
-      "reason": "furniture_layer"
-    },
-    {
-      "text": "Pages: 1/59",
-      "bbox": {
-        "x": 581.636,
-        "y": 274.34,
-        "w": 9.056,
-        "h": 52.8
-      },
-      "reason": "furniture_layer"
-    }
-  ],
-  "diagnostics": {
-    "engines": {
-      "pdfplumber": {
-        "rects": 11,
-        "lines": 0,
-        "tables": 1,
-        "checkboxes": 0
-      },
-      "docling": {
-        "blocks": 35,
-        "labels": {
-          "page_header": 1,
-          "picture": 3,
-          "section_header": 2,
-          "list_item": 28,
-          "text": 1
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 73.183232,
+            "y": 108.18614488000003,
+            "w": 26.440263200000004,
+            "h": 9.148879999999963
+          },
+          "engine_agreement": 3
         },
-        "section_headers": 2,
-        "tables": 0,
-        "key_value_regions": 0,
-        "field_keys": 0,
-        "checkboxes_selected": 0
-      },
-      "liteparse": {
-        "spans": 67,
-        "bold": 0,
-        "cases": {
-          "lower": 45,
-          "none": 15,
-          "UPPER": 4,
-          "mixed": 2,
-          "Title": 1
+        "container_signal": {
+          "container_bbox": {
+            "x": 73.1832275390625,
+            "y": 184.14544336000006,
+            "w": 453.3086471557617,
+            "h": 498.66217382749994
+          },
+          "pdfplumber_rect": {
+            "rect_id": "p1-r1",
+            "bbox": {
+              "x": 46.603328000000005,
+              "y": 89.98035520000008,
+              "w": 498.54654719999996,
+              "h": 681.3700607999999
+            }
+          },
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 1
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 3,
+          "child_type_distribution": {
+            "kv_leaf": 2,
+            "free_text_list": 1
+          },
+          "path": "Índice"
         }
       }
-    },
-    "column_coherence": [
-      {
-        "x_range": [
-          73.183,
-          526.399
-        ],
-        "dominant_role": "VALUE_TEXT",
-        "coherence": 0.95
-      }
-    ],
-    "agreement": {
-      "section_titles": {
-        "docling_matches_ours": 1,
-        "total": 1
+    }
+  ],
+  "sections": [
+    {
+      "id": "indice",
+      "title": "Índice",
+      "title_bbox": {
+        "x": 73.183232,
+        "y": 108.18614488000003,
+        "w": 26.440263200000004,
+        "h": 9.148879999999963
       },
-      "cell_bold_flags": {
-        "agree": 67,
-        "disagree": 0
+      "container_bbox": {
+        "x": 73.1832275390625,
+        "y": 184.14544336000006,
+        "w": 453.3086471557617,
+        "h": 498.66217382749994
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "A. Condiciones Particulares del contrato de financiación",
+      "value": "",
+      "section": "Índice",
+      "band": null,
+      "column_header": null,
+      "row_y": 132,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 133.37927128000013,
+        "w": 245.68354199999996,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 0
       }
+    },
+    {
+      "label": "B. Condiciones Generales del contrato de financiación",
+      "value": "",
+      "section": "Índice",
+      "band": null,
+      "column_header": null,
+      "row_y": 157,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.18323200000002,
+        "y": 158.5723976800001,
+        "w": 237.3628763999999,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 0
+      }
+    },
+    {
+      "label": "1. La cuenta de crédito con o sin Tarjeta IKEA.",
+      "value": "Qué son y qué pueden hacer.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 183,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 184.14544336000006,
+        "w": 197.84982671999992,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 273.3414656,
+          "y": 184.14544336000006,
+          "w": 114.22713744000004,
+          "h": 8.66736000000003
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "2. Modalidades de pago y de disposición que permite su cuenta de crédito con o sin Tarjeta IKEA.",
+      "value": "Qué posibilidades tiene de pagar a crédito, o de retirar dinero en efectivo metálico a crédito si dispone de Tarjeta IKEA.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 195,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 196.62644176000003,
+        "w": 433.13975952,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82457733154297,
+          "y": 208.18011474609375,
+          "w": 436.53448486328125,
+          "h": 9.5947265625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "3. Intereses.",
+      "value": "Cómo se calculan los intereses y cuándo se pagan.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 233,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 234.3005665600001,
+        "w": 57.10923503999999,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 132.8146688,
+          "y": 234.3005665600001,
+          "w": 198.00295007999995,
+          "h": 8.66736000000003
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "4. Titularidad.",
+      "value": "Quién se responsabiliza de este contrato de Cuenta de crédito con o sin Tarjeta IKEA y de la Tarjeta IKEA, si la hay.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 245,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 246.78156495999997,
+        "w": 63.35840160000001,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82453918457031,
+          "y": 258.56634521484375,
+          "w": 58.90916442871094,
+          "h": 9.5947265625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "5. Cuenta corriente asociada.",
+      "value": "Qué cuenta puede asociarse al contrato de Cuenta de crédito con o sin Tarjeta IKEA.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 271,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 271.97469136000007,
+        "w": 130.10863007999998,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82453918457031,
+          "y": 283.759521484375,
+          "w": 22.162437438964844,
+          "h": 9.5947265625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "6. Número de teléfono asociado.",
+      "value": "Por qué es necesario que nos facilite su número de teléfono.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 296,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 297.16781776000005,
+        "w": 140.52390768,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 216.0213248,
+          "y": 297.16781776000005,
+          "w": 233.17509696000002,
+          "h": 8.66736000000003
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "7. Acceso y usos.",
+      "value": "Cómo puede disponer de su Cuenta de crédito con o sin Tarjeta IKEA, y hacerlo de forma segura.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 308,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 309.64881616,
+        "w": 82.73284032000001,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82457733154297,
+          "y": 321.43365478515625,
+          "w": 28.9056396484375,
+          "h": 9.5947265625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "8. TAE.",
+      "value": "Qué es y cómo calculamos la Tasa Anual Equivalente (TAE).",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 333,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 334.84194256,
+        "w": 36.38557728000001,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 112.0130048,
+          "y": 334.84194256,
+          "w": 234.67455024,
+          "h": 8.667359999999974
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "9. Órdenes de pago.",
+      "value": "Cuándo ejecutamos (realizamos) una orden de pago.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 346,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 347.32294096,
+        "w": 89.91230352,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 165.4039424,
+          "y": 347.32294096,
+          "w": 204.74037791999996,
+          "h": 8.667359999999974
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "10. Divisas.",
+      "value": "Qué tipo de cambio aplicamos si paga en una moneda distinta al euro.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 359,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 360.03506896,
+        "w": 49.403952000000004,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 124.9562624,
+          "y": 360.03506896,
+          "w": 270.75965904000003,
+          "h": 8.667359999999974
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "11. Información de los pagos.",
+      "value": "Cómo y cuándo sabrá usted cuánto ha pagado y cuánto le queda por pagar.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 371,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 372.51606736,
+        "w": 124.08481488000001,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 199.6111232,
+          "y": 372.51606736,
+          "w": 292.91343120000005,
+          "h": 8.667359999999974
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "12. Impagos.",
+      "value": "Los impagos (retrasos en el pago) generan intereses.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 384,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 385.22819536,
+        "w": 54.691041600000005,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 130.27224320000002,
+          "y": 385.22819536,
+          "w": 205.83535439999994,
+          "h": 8.667359999999974
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "13. Bloqueo del saldo disponible de la Cuenta de crédito con o sin Tarjeta IKEA asociada.",
+      "value": "El saldo disponible de su Cuenta de crédito y su Tarjeta IKEA asociada, si la tiene, pueden quedar bloqueados o limitados temporalmente.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 396,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 397.70919375999995,
+        "w": 377.18617247999987,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82457733154297,
+          "y": 409.2627868652344,
+          "w": 436.58929443359375,
+          "h": 9.59478759765625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "14. Comunicaciones.",
+      "value": "Cómo nos comunicamos con usted.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 434,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 435.38331855999996,
+        "w": 88.407072,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 164.01716480000002,
+          "y": 435.38331855999996,
+          "w": 137.78791103999995,
+          "h": 8.667359999999974
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "15. Nuestros deberes y responsabilidades para la seguridad de su Cuenta de crédito, y de su Tarjeta IKEA asociada, si la hay.",
+      "value": "La importancia de proteger su Cuenta de crédito, y, si la tiene, su Tarjeta IKEA y su PIN.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 446,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.1832275390625,
+        "y": 446.8675842285156,
+        "w": 453.14996337890625,
+        "h": 9.66412353515625
+      },
+      "value_bboxes": [
+        {
+          "x": 170.95105279999999,
+          "y": 460.57644496,
+          "w": 339.5149368000001,
+          "h": 8.667359999999974
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "16. Incidencias.",
+      "value": "Qué hacer si observa irregularidades en los movimientos realizados con su Cuenta de crédito.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 472,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 473.05744336,
+        "w": 66.26196720000002,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 141.8287232,
+          "y": 473.05744336,
+          "w": 361.9402862400001,
+          "h": 8.667359999999974
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "17. Ley aplicable a este contrato. Quejas y reclamaciones.",
+      "value": "Cómo puede hacernos llegar sus quejas y reclamaciones.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 484,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 485.76957136,
+        "w": 265.09987295999997,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82457733154297,
+          "y": 497.3231506347656,
+          "w": 58.279319763183594,
+          "h": 9.59478759765625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "18. Duración y cancelación.",
+      "value": "Quién puede cancelar el contrato, cuándo y cómo.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 509,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 510.73156816,
+        "w": 115.82193167999998,
+        "h": 8.667359999999974
+      },
+      "value_bboxes": [
+        {
+          "x": 191.5215872,
+          "y": 510.73156816,
+          "w": 193.71260688,
+          "h": 8.667359999999974
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "19. Desistimiento.",
+      "value": "Cuándo y cómo puede desistir (renunciar) de este contrato.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 522,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 523.44369616,
+        "w": 75.8827368,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 151.53616639999998,
+          "y": 523.44369616,
+          "w": 228.33582096,
+          "h": 8.66736000000003
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "20. Derechos adicionales que podrá usted ejercer.",
+      "value": "Cuándo y cómo puede ejercitar los derechos que le correspondan frente a CaixaBank Payments & Consumer teniendo el contrato de Cuenta de crédito el carácter de vinculado.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 534,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 535.92469456,
+        "w": 224.75620127999994,
+        "h": 8.667359999999917
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82453918457031,
+          "y": 547.4783325195312,
+          "w": 436.59808349609375,
+          "h": 9.59478759765625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "21. Modificaciones.",
+      "value": "Cómo y cuándo desde CaixaBank Payments & Consumer podemos modificar las condiciones del contrato, y qué puede hacer usted al respecto.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 572,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 573.59881936,
+        "w": 81.66386592,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82452392578125,
+          "y": 585.383544921875,
+          "w": 192.81698608398438,
+          "h": 9.59478759765625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "22. Cesión.",
+      "value": "Desde CaixaBank Payments & Consumer podremos ceder los derechos y obligaciones del contrato.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 597,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 598.79194576,
+        "w": 47.94783552,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 123.56948480000001,
+          "y": 598.79194576,
+          "w": 385.04168975999994,
+          "h": 8.66736000000003
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "23. Servicios vinculados o combinados.",
+      "value": "Para contratar la Cuenta de crédito con o sin Tarjeta IKEA, si el producto contratado la ofrece, no es obligatorio contratar otro servicio más.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 610,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 611.27294416,
+        "w": 167.40716928,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82453918457031,
+          "y": 623.0576782226562,
+          "w": 251.99195861816406,
+          "h": 9.59478759765625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "24. Precios.",
+      "value": "Cuánto cuesta la Cuenta de crédito con o sin Tarjeta IKEA y los servicios que con ella le ofrecemos.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 635,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 636.4660705599999,
+        "w": 50.36602896000001,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 126.1119104,
+          "y": 636.4660705599999,
+          "w": 384.2471817600001,
+          "h": 8.66736000000003
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "25. Tratamiento de datos de carácter personal.",
+      "value": "Cómo tratamos sus datos personales.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 648,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 648.94706896,
+        "w": 193.85417375999995,
+        "h": 8.667359999999917
+      },
+      "value_bboxes": [
+        {
+          "x": 269.643392,
+          "y": 648.94706896,
+          "w": 145.80521904,
+          "h": 8.667359999999917
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "26. Políticas de sanciones, prevención de blanqueo y lucha contra el fraude.",
+      "value": "En CaixaBank Payments & Consumer gozamos de políticas sobre sanciones económico-financieras internacionales, prevención de blanqueo y lucha contra el fraude.",
+      "section": "Índice",
+      "band": "Temas (1-26)",
+      "column_header": null,
+      "row_y": 660,
+      "rule": "structured-free-text-item",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 661.6591969599999,
+        "w": 338.14838304,
+        "h": 8.66736000000003
+      },
+      "value_bboxes": [
+        {
+          "x": 89.82457733154297,
+          "y": 673.2128295898438,
+          "w": 436.66729736328125,
+          "h": 9.59478759765625
+        }
+      ],
+      "evidence": {
+        "path": "Índice",
+        "engine_agreement": 2
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "codex",
+    "n_chars": 2917,
+    "n_rows": 104,
+    "n_liteparse_spans": 67,
+    "n_docling_blocks": 35,
+    "n_rects": 11,
+    "kv_pair_breakdown": {
+      "3_eng": 16,
+      "2_eng": 10,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 2,
+      "footnote": 0,
+      "footnote_ref": 0
     }
   },
   "_meta": {
-    "annotator": "kie-extractor",
-    "annotated_at": "2026-06-06T22:46:54+02:00",
+    "annotator": "codex",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
     "covers_cases": [
-      4,
-      5
+      "caixabank_ikea_index_two_top_sections",
+      "caixabank_ikea_index_26_numbered_items",
+      "caixabank_ikea_index_title_plus_description_per_item"
     ],
-    "needs_review": true
+    "needs_review": false,
+    "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)"
   }
 }

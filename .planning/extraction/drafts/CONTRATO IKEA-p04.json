@@ -1,0 +1,749 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 4,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 91,
+    "rects": 95,
+    "docling_blocks": 31,
+    "noise_dropped": 7
+  },
+  "sections": [
+    {
+      "title": "DATOS ECONÓMICOS",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.547, "y": 83.79, "w": 98.208, "h": 10.201},
+      "container_bbox": {"x": 46.603, "y": 70.797, "w": 498.547, "h": 736.148},
+      "bands": [
+        {
+          "y_range": [111.707, 146.145],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 537.29], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [111.707, 146.145],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Número de contrato:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 127.474, "w": 90.028, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "202502270270913",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.648, "y": 127.547, "w": 76.302, "h": 10.128},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [149.612, 167.640],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 537.29], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [149.612, 167.640],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Fecha de firma:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 154.285, "w": 67.619, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "25 de Febrero de 2025",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 154.358, "w": 92.922, "h": 10.128},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [171.338, 189.366],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 540.07], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r3",
+              "y_range": [171.338, 189.366],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Límite de Crédito:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 176.011, "w": 77.775, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "1.800,00 euros",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.648, "y": 176.084, "w": 61.018, "h": 10.128},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [193.064, 213.866],
+          "layout": "3-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 421.51], "role": "HEADER", "column_header": "En Establecimiento IKEA", "coherence": 1.0},
+            {"x_range": [421.51, 537.29], "role": "HEADER", "column_header": "Fuera de IKEA", "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r_header",
+              "y_range": [193.064, 213.866],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "",
+                  "role": "EMPTY",
+                  "bbox": {"x": 60.24, "y": 193.064, "w": 206.399, "h": 20.802},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "En Establecimiento IKEA",
+                  "role": "HEADER",
+                  "bbox": {"x": 272.648, "y": 197.968, "w": 108.761, "h": 10.201},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Fuera de IKEA",
+                  "role": "HEADER",
+                  "bbox": {"x": 433.514, "y": 197.968, "w": 62.535, "h": 10.201},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [215.021, 262.095],
+          "layout": "3-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 421.51], "role": "VALUE_TEXT", "column_header": "En Establecimiento IKEA", "coherence": 1.0},
+            {"x_range": [421.51, 537.29], "role": "VALUE_TEXT", "column_header": "Fuera de IKEA", "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r4",
+              "y_range": [215.021, 262.095],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tipo de interés en las compras realizadas con modalidad de Pago Fraccionado.",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 216.921, "w": 191.011, "h": 22.371},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Tipo de interés en las compras realizadas", "con modalidad de Pago Fraccionado."]
+                },
+                {
+                  "col": 1,
+                  "text": "TIN 9,95% anual (TAE 10,43%). En determinadas compras podrá ofrecerse un TIN inferior, incluso a 0%.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 216.994, "w": 136.462, "h": 41.203},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "text",
+                  "compound_parts": ["TIN 9,95% anual (TAE 10,43%).", "En determinadas compras podrá", "ofrecerse un TIN inferior, incluso", "a 0%."]
+                },
+                {
+                  "col": 2,
+                  "text": "Operativa no permitida.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 425.425, "y": 216.994, "w": 94.941, "h": 10.128},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [262.095, 337.838],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 537.29], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r5",
+              "y_range": [284.410, 337.838],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tipo de interés del Pago Fraccionado de las compras realizadas inicialmente bajo la modalidad de Pago Fin de Mes.",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 284.410, "w": 191.189, "h": 34.701},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Tipo de interés del Pago Fraccionado de", "las compras realizadas inicialmente bajo la", "modalidad de Pago Fin de Mes."]
+                },
+                {
+                  "col": 1,
+                  "text": "TIN 14,95% anual (TAE 16,02%) cuando se fraccione el importe a partir de 6 meses, inclusive. Cuando se fraccione el importe de las compras en 3 meses, el tipo de interés será 0%, aplicándose el coste indicado en el apartado \"Precio de los Servicios\" (TAE 19,77%).",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 284.484, "w": 259.280, "h": 50.448},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["TIN 14,95% anual (TAE 16,02%) cuando se fraccione el", "importe a partir de 6 meses, inclusive.", "Cuando se fraccione el importe de las compras en 3 meses, el", "tipo de interés será 0%, aplicándose el coste indicado en el", "apartado \"Precio de los Servicios\" (TAE 19,77%)."]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [337.838, 379.682],
+          "layout": "3-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 421.51], "role": "VALUE_TEXT", "column_header": "En Establecimiento IKEA", "coherence": 1.0},
+            {"x_range": [421.51, 537.29], "role": "VALUE_TEXT", "column_header": "Fuera de IKEA", "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r6",
+              "y_range": [341.730, 379.682],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tipo de interés en las compras realizadas con modalidad de Pago Aplazado (Revolving).",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 341.731, "w": 191.132, "h": 34.701},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Tipo de interés en las compras realizadas", "con", "modalidad", "de", "Pago", "Aplazado", "(Revolving)."]
+                },
+                {
+                  "col": 1,
+                  "text": "TIN 9,95% anual (TAE 10,42%).",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 343.191, "w": 67.911, "h": 20.528},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "text",
+                  "compound_parts": ["TIN 9,95% anual", "(TAE 10,42%)."]
+                },
+                {
+                  "col": 2,
+                  "text": "TIN 20,88% anual (TAE 23%).",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 425.425, "y": 343.191, "w": 73.227, "h": 20.528},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "text",
+                  "compound_parts": ["TIN 20,88% anual", "(TAE 23%)."]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [385.807, 409.382],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 537.29], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r7",
+              "y_range": [386.289, 409.382],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tipo de interés por demora:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 391.192, "w": 120.994, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Tipo de interés aplicado a cada disposición/operación impagada más dos puntos porcentuales.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 387.105, "w": 237.507, "h": 20.170},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Tipo de interés aplicado a cada disposición/operación", "impagada más dos puntos porcentuales."]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [413.311, 709.851],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 537.29], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r8",
+              "y_range": [413.793, 709.851],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Forma de pago:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 473.243, "w": 68.587, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Si usted ha elegido la modalidad de pago Fin de Mes, realizará el pago total del crédito dispuesto durante el mes, sin intereses, a final de mes. A este importe se le sumará el precio correspondiente al resto de los servicios que le hayamos prestado durante el periodo (comisión o precio por algún servicio que pudiera haber realizado, como por ejemplo, la comisión por retirada de dinero en efectivo en un cajero o la prima del seguro en caso de ser contratado, entre otras). Si usted ha elegido la modalidad de Pago Aplazado (Revolving), realizará el pago del crédito mediante una cuota mensual del importe que usted elija, que incluye capital (parte del crédito total que haya dispuesto ese mes así como anteriores) + intereses + prima del seguro (en caso de ser contratado). Si usted ha elegido la modalidad de Pago Fraccionado, realizará el pago del crédito mediante una cuota mensual en los plazos que acordemos, que incluye la cuota correspondiente al fraccionamiento de la operación solicitada por usted y el importe total de la cuota que haya elegido pagar por el resto del crédito usado + intereses + prima de seguro (en caso de tenerlo contratado). En la modalidad de Pago Aplazado (Revolving)y de Pago Fraccionado, a la cuota se le sumará el precio correspondiente al resto de los servicios que le hayamos prestado durante el periodo (comisión por algún servicio que pudiera haber realizado, como por ejemplo, la comisión por retirada de dinero en efectivo en un cajero, entre otras (excepto la prima del seguro, en caso de ser contratado, que ya se habría incluido en la cuota)).",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 415.996, "w": 259.330, "h": 290.817},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [718.403, 745.232],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 540.07], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r9",
+              "y_range": [718.884, 745.232],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cuota mensual elegida inicialmente para la modalidad de Pago Aplazado (Revolving):",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 723.557, "w": 196.463, "h": 21.757},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Cuota mensual elegida inicialmente para la", "modalidad de Pago Aplazado (Revolving):"]
+                },
+                {
+                  "col": 1,
+                  "text": "Usted podrá escoger qué cuota quiere pagar mensualmente, siempre a partir de una cuota mínima que nosotros fijamos aplicando una fórmula que evita que tenga que pagar lo que vaya gastando durante un período de tiempo muy prolongado. Se lo explicamos a continuación.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 751.365, "w": 259.336, "h": 51.603},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [748.912, 803.015],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 266.64], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 540.07], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r10",
+              "y_range": [749.393, 803.015],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cuota mínima para Pago Aplazado (Revolving):",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 754.066, "w": 196.448, "h": 21.757},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Cuota", "mínima", "para", "Pago", "Aplazado", "(Revolving):"]
+                },
+                {
+                  "col": 1,
+                  "text": "Usted podrá escoger qué cuota quiere pagar mensualmente, siempre a partir de una cuota mínima que nosotros fijamos aplicando una fórmula que evita que tenga que pagar lo que vaya gastando durante un período de tiempo muy prolongado. Se lo explicamos a continuación.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 751.365, "w": 259.336, "h": 51.603},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Número de contrato:",
+      "value": "202502270270913",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r1",
+      "column_header": null,
+      "row_y": 127.474,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p4-r2",
+        "docling_block_id": "#/texts/119",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Fecha de firma:",
+      "value": "25 de Febrero de 2025",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r2",
+      "column_header": null,
+      "row_y": 154.285,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p4-r4",
+        "docling_block_id": "#/texts/121",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Límite de Crédito:",
+      "value": "1.800,00 euros",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r3",
+      "column_header": null,
+      "row_y": 176.011,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p4-r6",
+        "docling_block_id": "#/texts/123",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Tipo de interés en las compras realizadas con modalidad de Pago Fraccionado.",
+      "value": "TIN 9,95% anual (TAE 10,43%). En determinadas compras podrá ofrecerse un TIN inferior, incluso a 0%.",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r4",
+      "column_header": "En Establecimiento IKEA",
+      "row_y": 216.921,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p4-r9",
+        "docling_block_id": "#/texts/126",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Tipo de interés en las compras realizadas con modalidad de Pago Fraccionado.",
+      "value": "Operativa no permitida.",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r4",
+      "column_header": "Fuera de IKEA",
+      "row_y": 216.994,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p4-r9",
+        "docling_block_id": "#/texts/128",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Tipo de interés del Pago Fraccionado de las compras realizadas inicialmente bajo la modalidad de Pago Fin de Mes.",
+      "value": "TIN 14,95% anual (TAE 16,02%) cuando se fraccione el importe a partir de 6 meses, inclusive. Cuando se fraccione el importe de las compras en 3 meses, el tipo de interés será 0%, aplicándose el coste indicado en el apartado \"Precio de los Servicios\" (TAE 19,77%).",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r5",
+      "column_header": null,
+      "row_y": 284.410,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p4-r9",
+        "docling_block_id": "#/texts/129",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Tipo de interés en las compras realizadas con modalidad de Pago Aplazado (Revolving).",
+      "value": "TIN 9,95% anual (TAE 10,42%).",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r6",
+      "column_header": "En Establecimiento IKEA",
+      "row_y": 341.731,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p4-r9",
+        "docling_block_id": "#/texts/131",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Tipo de interés en las compras realizadas con modalidad de Pago Aplazado (Revolving).",
+      "value": "TIN 20,88% anual (TAE 23%).",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r6",
+      "column_header": "Fuera de IKEA",
+      "row_y": 341.731,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p4-r9",
+        "docling_block_id": "#/texts/132",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Tipo de interés por demora:",
+      "value": "Tipo de interés aplicado a cada disposición/operación impagada más dos puntos porcentuales.",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r7",
+      "column_header": null,
+      "row_y": 391.192,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p4-r11",
+        "docling_block_id": "#/texts/142",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Forma de pago:",
+      "value": "Si usted ha elegido la modalidad de pago Fin de Mes, realizará el pago total del crédito dispuesto durante el mes, sin intereses, a final de mes. A este importe se le sumará el precio correspondiente al resto de los servicios que le hayamos prestado durante el periodo (comisión o precio por algún servicio que pudiera haber realizado, como por ejemplo, la comisión por retirada de dinero en efectivo en un cajero o la prima del seguro en caso de ser contratado, entre otras). Si usted ha elegido la modalidad de Pago Aplazado (Revolving), realizará el pago del crédito mediante una cuota mensual del importe que usted elija, que incluye capital (parte del crédito total que haya dispuesto ese mes así como anteriores) + intereses + prima del seguro (en caso de ser contratado). Si usted ha elegido la modalidad de Pago Fraccionado, realizará el pago del crédito mediante una cuota mensual en los plazos que acordemos, que incluye la cuota correspondiente al fraccionamiento de la operación solicitada por usted y el importe total de la cuota que haya elegido pagar por el resto del crédito usado + intereses + prima de seguro (en caso de tenerlo contratado). En la modalidad de Pago Aplazado (Revolving)y de Pago Fraccionado, a la cuota se le sumará el precio correspondiente al resto de los servicios que le hayamos prestado durante el periodo (comisión por algún servicio que pudiera haber realizado, como por ejemplo, la comisión por retirada de dinero en efectivo en un cajero, entre otras (excepto la prima del seguro, en caso de ser contratado, que ya se habría incluido en la cuota)).",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r8",
+      "column_header": null,
+      "row_y": 473.243,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p4-r13",
+        "docling_block_id": "#/texts/134",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Cuota mensual elegida inicialmente para la modalidad de Pago Aplazado (Revolving):",
+      "value": "Usted podrá escoger qué cuota quiere pagar mensualmente, siempre a partir de una cuota mínima que nosotros fijamos aplicando una fórmula que evita que tenga que pagar lo que vaya gastando durante un período de tiempo muy prolongado. Se lo explicamos a continuación.",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r9",
+      "column_header": null,
+      "row_y": 723.557,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p4-r15",
+        "docling_block_id": "#/texts/144",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Cuota mínima para Pago Aplazado (Revolving):",
+      "value": "Usted podrá escoger qué cuota quiere pagar mensualmente, siempre a partir de una cuota mínima que nosotros fijamos aplicando una fórmula que evita que tenga que pagar lo que vaya gastando durante un período de tiempo muy prolongado. Se lo explicamos a continuación.",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_r10",
+      "column_header": null,
+      "row_y": 754.066,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p4-r17",
+        "docling_block_id": "#/texts/145",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    }
+  ],
+  "noise": [
+    {
+      "text": "Logalty Guid: 001001-0001-000000136441990.par - Date: 2025/02/25 T 20:07:05 CET +0100 - Pages: 4/59",
+      "bbox": {"x": 581.636, "y": 274.340, "w": 9.056, "h": 475.200},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "(Continúa en la siguiente página) >>",
+      "bbox": {"x": 381.741, "y": 808.917, "w": 147.480, "h": 10.128},
+      "reason": "page_footer"
+    },
+    {
+      "text": "Logalty",
+      "bbox": {"x": 581.636, "y": 715.940, "w": 9.056, "h": 33.600},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Guid: 001001-0001-000000136441990.par",
+      "bbox": {"x": 581.636, "y": 687.140, "w": 9.056, "h": 24.000},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Date:",
+      "bbox": {"x": 581.636, "y": 495.140, "w": 9.056, "h": 24.000},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "2025/02/25 T",
+      "bbox": {"x": 581.636, "y": 442.340, "w": 9.056, "h": 48.000},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "picture (logo bottom-right)",
+      "bbox": {"x": 537.213, "y": 783.905, "w": 52.655, "h": 51.630},
+      "reason": "picture_decorative"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 95,
+        "lines": 0,
+        "tables": 4,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 31,
+        "labels": {
+          "page_header": 1,
+          "section_header": 2,
+          "text": 26,
+          "picture": 1,
+          "page_footer": 1
+        },
+        "section_headers": 2,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 91,
+        "bold": 0,
+        "cases": {
+          "UPPER": 5,
+          "lower": 73,
+          "none": 5,
+          "Title": 4,
+          "mixed": 4
+        }
+      }
+    },
+    "column_coherence": [
+      {"x_range": [60.24, 266.64], "dominant_role": "LABEL", "ratio": 1.0, "cell_count": 10},
+      {"x_range": [267.79, 421.51], "dominant_role": "VALUE_TEXT", "ratio": 0.9, "cell_count": 10},
+      {"x_range": [421.51, 537.29], "dominant_role": "VALUE_TEXT", "ratio": 1.0, "cell_count": 3}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 1, "total": 1},
+      "cell_bold_flags": {"agree": 91, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T23:13:42+02:00",
+    "covers_cases": [3, 5, 7],
+    "needs_review": true
+  }
+}

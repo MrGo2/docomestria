@@ -1,0 +1,194 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO PRESTAMO COMERCIO 2.pdf",
+  "page": 5,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 73,
+    "rects": 140,
+    "docling_blocks": 18,
+    "noise_dropped": 8
+  },
+  "sections": [
+    {
+      "title": "B. CONDICIONES PARTICULARES",
+      "title_signal": {"size": 11.0, "bold": false, "case": "UPPER", "docling_level": 1, "docling_label": "section_header"},
+      "title_bbox": {"x": 59.5, "y": 84.1, "w": 250.0, "h": 11.8},
+      "container_bbox": null,
+      "bands": []
+    },
+    {
+      "title": "1. IMPORTE TOTAL DEL CAPITAL PRESTADO",
+      "title_signal": {"size": 11.0, "bold": false, "case": "UPPER", "docling_level": 2, "docling_label": "section_header"},
+      "title_bbox": {"x": 59.5, "y": 105.8, "w": 250.0, "h": 11.8},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [129.5, 153.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [73.2, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {"row_id": "r1", "y_range": [129.5, 153.0], "cells": [
+              {"col": 0, "text": "2.500,00 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 73.2, "y": 129.5, "w": 120.0, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. DURACIÓN",
+      "title_signal": {"size": 11.0, "bold": false, "case": "UPPER", "docling_level": 2, "docling_label": "section_header"},
+      "title_bbox": {"x": 59.5, "y": 153.0, "w": 100.0, "h": 11.8},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [176.4, 202.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [65.1, 265.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [272.6, 540.0], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {"row_id": "r2", "y_range": [176.4, 202.0], "cells": [
+              {"col": 0, "text": "30 MESES", "role": "VALUE_TEXT", "bbox": {"x": 73.2, "y": 176.4, "w": 70.0, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r3", "y_range": [202.0, 230.0], "cells": [
+              {"col": 0, "text": "Fechadelprimerpago", "role": "LABEL", "bbox": {"x": 65.1, "y": 202.0, "w": 110.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "28/02/2025", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 202.4, "w": 70.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r4", "y_range": [229.0, 252.0], "cells": [
+              {"col": 0, "text": "Fechadelúltimopago(findepréstamo)", "role": "LABEL", "bbox": {"x": 65.1, "y": 229.0, "w": 170.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "30/07/2027", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 229.5, "w": 70.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. CONDICIONES ECONÓMICAS",
+      "title_signal": {"size": 11.0, "bold": false, "case": "UPPER", "docling_level": 2, "docling_label": "section_header"},
+      "title_bbox": {"x": 59.5, "y": 251.0, "w": 200.0, "h": 11.8},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [273.7, 616.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [65.1, 265.0], "role": "LABEL", "column_header": null, "coherence": 0.95},
+            {"x_range": [272.6, 540.0], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 0.85}
+          ],
+          "rows": [
+            {"row_id": "r5", "y_range": [273.7, 300.0], "cells": [
+              {"col": 0, "text": "TIN (TipodeInterés Nominal,anual y fijo)", "role": "LABEL", "bbox": {"x": 65.1, "y": 273.7, "w": 200.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "0,00 %", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 274.1, "w": 40.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r6", "y_range": [300.9, 328.0], "cells": [
+              {"col": 0, "text": "TAE (Tasa AnualEquivalente)", "role": "LABEL", "bbox": {"x": 65.1, "y": 300.9, "w": 180.0, "h": 10.7}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "2,71 %", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 301.4, "w": 40.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r7", "y_range": [328.2, 366.0], "cells": [
+              {"col": 0, "text": "Interés en caso de demora o retraso en el pago", "role": "LABEL", "bbox": {"x": 65.1, "y": 328.2, "w": 200.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "0,00 %", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 331.4, "w": 40.0, "h": 9.5}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": [
+              {"col": 0, "text": "(mensual)", "role": "CLARIFIER", "bbox": {"x": 65.1, "y": 339.5, "w": 45.0, "h": 9.5}}
+            ]},
+            {"row_id": "r8", "y_range": [366.3, 394.0], "cells": [
+              {"col": 0, "text": "Preciodel servicio", "role": "LABEL", "bbox": {"x": 65.1, "y": 366.3, "w": 90.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "87,50 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 366.8, "w": 80.0, "h": 9.5}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r9", "y_range": [393.6, 420.0], "cells": [
+              {"col": 0, "text": "Comisióndeestudio", "role": "LABEL", "bbox": {"x": 65.1, "y": 393.6, "w": 90.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "0 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 394.0, "w": 60.0, "h": 9.5}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r10", "y_range": [420.9, 508.0], "cells": [
+              {"col": 0, "text": "Preciodelasamortizacionesanticipadas", "role": "LABEL", "bbox": {"x": 65.1, "y": 420.9, "w": 190.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "1%, con un máximo de 0,5% si el pago anticipado se realiza durante el último año, siempre que Usted sea consumidor y el importe total prestado esté entre 200 y 75.000 euros. En el caso de que Usted sea una empresa o una persona física actuando en su ámbito profesional, la comisión de amortización anticipada podrá ser hasta un máximo de un 3%.", "role": "VALUE_TEXT", "bbox": {"x": 272.6, "y": 421.3, "w": 265.0, "h": 70.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r11", "y_range": [508.2, 615.0], "cells": [
+              {"col": 0, "text": "Compensaciónpor costesdecobroanteunimpago", "role": "LABEL", "bbox": {"x": 65.1, "y": 508.2, "w": 200.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€.", "role": "VALUE_TEXT", "bbox": {"x": 272.6, "y": 508.7, "w": 265.0, "h": 90.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. FORMA DE PAGO (Ver, además, el cuadro de amortización que se une con este contrato)",
+      "title_signal": {"size": 11.0, "bold": false, "case": "mixed", "docling_level": 2, "docling_label": "section_header"},
+      "title_bbox": {"x": 59.5, "y": 615.5, "w": 490.0, "h": 23.0},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [650.9, 815.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [65.1, 265.0], "role": "LABEL", "column_header": null, "coherence": 0.9},
+            {"x_range": [272.6, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.85}
+          ],
+          "rows": [
+            {"row_id": "r12", "y_range": [650.9, 715.0], "cells": [
+              {"col": 0, "text": "Importe total a pagar: resultado de sumar el importe total del capital prestado más el importe total de intereses, más el precio del servicio y la comisión de estudio", "role": "LABEL", "bbox": {"x": 65.1, "y": 650.9, "w": 200.0, "h": 45.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "2.587,50 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 651.3, "w": 100.0, "h": 9.5}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r13", "y_range": [713.7, 750.0], "cells": [
+              {"col": 0, "text": "Importetotaldeintereses", "role": "LABEL", "bbox": {"x": 65.1, "y": 713.7, "w": 120.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "0 EUROS", "role": "VALUE_NUMERIC", "bbox": {"x": 272.6, "y": 716.5, "w": 60.0, "h": 10.7}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r14", "y_range": [776.1, 815.0], "cells": [
+              {"col": 0, "text": "Forma de pago", "role": "LABEL", "bbox": {"x": 65.1, "y": 776.1, "w": 70.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "Las cuotas del préstamo para devolver el dinero prestado se pagarán con periodicidad mensual.", "role": "VALUE_TEXT", "bbox": {"x": 272.6, "y": 789.7, "w": 265.0, "h": 22.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []}
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {"label": "IMPORTE TOTAL DEL CAPITAL PRESTADO", "value": "2.500,00 EUROS", "section": "1. IMPORTE TOTAL DEL CAPITAL PRESTADO", "band": "BAND_A", "column_header": null, "row_y": 105.8, "rule": "case-contrast", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "DURACIÓN", "value": "30 MESES", "section": "2. DURACIÓN", "band": "BAND_A", "column_header": null, "row_y": 153.0, "rule": "case-contrast", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Fechadelprimerpago", "value": "28/02/2025", "section": "2. DURACIÓN", "band": "BAND_A", "column_header": null, "row_y": 202.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Fechadelúltimopago(findepréstamo)", "value": "30/07/2027", "section": "2. DURACIÓN", "band": "BAND_A", "column_header": null, "row_y": 229.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "TIN (TipodeInterés Nominal,anual y fijo)", "value": "0,00 %", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 273.7, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "TAE (Tasa AnualEquivalente)", "value": "2,71 %", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 300.9, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Interés en caso de demora o retraso en el pago", "value": "0,00 %", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 328.2, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Preciodel servicio", "value": "87,50 EUROS", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 366.3, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Comisióndeestudio", "value": "0 EUROS", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 393.6, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Preciodelasamortizacionesanticipadas", "value": "1%, con un máximo de 0,5% si el pago anticipado se realiza durante el último año, siempre que Usted sea consumidor y el importe total prestado esté entre 200 y 75.000 euros. En el caso de que Usted sea una empresa o una persona física actuando en su ámbito profesional, la comisión de amortización anticipada podrá ser hasta un máximo de un 3%.", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 420.9, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Compensaciónpor costesdecobroanteunimpago", "value": "15€ por los recursos que destinaremos a poner al día la deuda impagada.", "section": "3. CONDICIONES ECONÓMICAS", "band": "BAND_A", "column_header": null, "row_y": 508.2, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Importe total a pagar", "value": "2.587,50 EUROS", "section": "4. FORMA DE PAGO", "band": "BAND_A", "column_header": null, "row_y": 650.9, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Importetotaldeintereses", "value": "0 EUROS", "section": "4. FORMA DE PAGO", "band": "BAND_A", "column_header": null, "row_y": 713.7, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Forma de pago", "value": "Las cuotas del préstamo para devolver el dinero prestado se pagarán con periodicidad mensual.", "section": "4. FORMA DE PAGO", "band": "BAND_A", "column_header": null, "row_y": 776.1, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}}
+  ],
+  "noise": [
+    {"text": "Pág. 5 de 33", "bbox": {"x": 517.9, "y": 805.3, "w": 38.3, "h": 9.2}, "reason": "page_footer"},
+    {"text": "Logalty", "bbox": {"x": 581.6, "y": 715.9, "w": 9.1, "h": 33.6}, "reason": "furniture_layer"},
+    {"text": "Guid: 001001-0001-000000134286084.par", "bbox": {"x": 581.6, "y": 687.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
+    {"text": "-", "bbox": {"x": 581.6, "y": 523.9, "w": 9.1, "h": 4.8}, "reason": "furniture_layer"},
+    {"text": "Date:", "bbox": {"x": 581.6, "y": 495.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
+    {"text": "2025/01/27 T", "bbox": {"x": 581.6, "y": 442.3, "w": 9.1, "h": 48.0}, "reason": "furniture_layer"},
+    {"text": "19:41:17", "bbox": {"x": 581.6, "y": 389.5, "w": 9.1, "h": 38.4}, "reason": "furniture_layer"},
+    {"text": "Pages:", "bbox": {"x": 581.6, "y": 298.3, "w": 9.1, "h": 28.8}, "reason": "furniture_layer"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 140, "lines": 0, "tables": 11, "checkboxes": 0},
+      "docling": {"blocks": 18, "labels": {"page_header": 1, "picture": 2, "section_header": 5, "text": 10, "table": 1}, "section_headers": 5, "tables": 1, "key_value_regions": 0, "field_keys": 0, "checkboxes_selected": 0},
+      "liteparse": {"spans": 73, "bold": 0, "cases": {"lower": 30, "UPPER": 20, "none": 12, "mixed": 5, "Title": 6}}
+    },
+    "column_coherence": [
+      {"x_range": [65.1, 265.0], "dominant_role": "LABEL", "coherence": 0.95},
+      {"x_range": [272.6, 540.0], "dominant_role": "VALUE_NUMERIC", "coherence": 0.80}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 5, "total": 5},
+      "cell_bold_flags": {"agree": 73, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "Sat Jun  6 22:48:36 CEST 2026",
+    "covers_cases": [7, 8],
+    "needs_review": true
+  }
+}

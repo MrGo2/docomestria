@@ -1,0 +1,938 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 1,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "atoms_summary": {
+    "lite_spans": 67,
+    "rects": 11,
+    "docling_blocks": 35,
+    "noise_dropped": 11
+  },
+  "sections": [
+    {
+      "title": "Índice",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 73.183,
+        "y": 107.134,
+        "w": 26.44,
+        "h": 10.201
+      },
+      "container_bbox": {
+        "x": 46.603,
+        "y": 89.98,
+        "w": 498.547,
+        "h": 681.37
+      },
+      "bands": [
+        {
+          "y_range": [
+            107.134,
+            697.0
+          ],
+          "layout": "free-text",
+          "columns": [
+            {
+              "x_range": [
+                73.183,
+                526.399
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.95
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [
+                132.327,
+                142.528
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "A. Condiciones Particulares del contrato de financiación",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 132.327,
+                    "w": 245.684,
+                    "h": 10.201
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [
+                157.52,
+                167.721
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "B. Condiciones Generales del contrato de financiación",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 157.52,
+                    "w": 237.363,
+                    "h": 10.201
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [
+                183.149,
+                192.813
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "1. La cuenta de crédito con o sin Tarjeta IKEA. Qué son y qué pueden hacer.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 183.149,
+                    "w": 310.563,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [
+                195.63,
+                221.486
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "2. Modalidades de pago y de disposición que permite su cuenta de crédito con o sin Tarjeta IKEA. Qué posibilidades tiene de pagar a crédito, o de retirar dinero en efectivo metálico a crédito si dispone de Tarjeta IKEA.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 195.63,
+                    "w": 436.575,
+                    "h": 35.262
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [
+                233.304,
+                242.968
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "3. Intereses. Cómo se calculan los intereses y cuándo se pagan.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 233.304,
+                    "w": 330.816,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [
+                245.785,
+                268.161
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "4. Titularidad. Quién se responsabiliza de este contrato de Cuenta de crédito con o sin Tarjeta IKEA y de la Tarjeta IKEA, si la hay.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 245.785,
+                    "w": 436.535,
+                    "h": 22.376
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [
+                270.978,
+                293.355
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "5. Cuenta corriente asociada. Qué cuenta puede asociarse al contrato de Cuenta de crédito con o sin Tarjeta IKEA.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 270.978,
+                    "w": 436.535,
+                    "h": 22.377
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [
+                296.171,
+                305.835
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "6. Número de teléfono asociado. Por qué es necesario que nos facilite su número de teléfono.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 296.171,
+                    "w": 449.219,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r9",
+              "y_range": [
+                308.652,
+                331.028
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "7. Acceso y usos. Cómo puede disponer de su Cuenta de crédito con o sin Tarjeta IKEA, y hacerlo de forma segura.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 308.652,
+                    "w": 436.569,
+                    "h": 22.376
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [
+                333.845,
+                343.509
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "8. TAE. Qué es y cómo calculamos la Tasa Anual Equivalente (TAE).",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 333.845,
+                    "w": 349.9,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r11",
+              "y_range": [
+                346.326,
+                355.99
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "9. Órdenes de pago. Cuándo ejecutamos (realizamos) una orden de pago.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 346.326,
+                    "w": 353.503,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r12",
+              "y_range": [
+                359.038,
+                368.702
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "10. Divisas. Qué tipo de cambio aplicamos si paga en una moneda distinta al euro.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 359.038,
+                    "w": 322.533,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r13",
+              "y_range": [
+                371.519,
+                381.183
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "11. Información de los pagos. Cómo y cuándo sabrá usted cuánto ha pagado y cuánto le queda por pagar.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 371.519,
+                    "w": 412.338,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r14",
+              "y_range": [
+                384.231,
+                393.895
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "12. Impagos. Los impagos (retrasos en el pago) generan intereses.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 384.231,
+                    "w": 262.924,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r15",
+              "y_range": [
+                396.712,
+                421.975
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "13. Bloqueo del saldo disponible de la Cuenta de crédito con o sin Tarjeta IKEA asociada. El saldo disponible de su Cuenta de crédito y su Tarjeta IKEA asociada, si la tiene, pueden quedar bloqueados o limitados temporalmente.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 396.712,
+                    "w": 453.205,
+                    "h": 35.263
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r16",
+              "y_range": [
+                434.387,
+                444.051
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "14. Comunicaciones. Cómo nos comunicamos con usted.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 434.387,
+                    "w": 228.622,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r17",
+              "y_range": [
+                446.868,
+                469.244
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "15. Nuestros deberes y responsabilidades para la seguridad de su Cuenta de crédito, y de su Tarjeta IKEA asociada, si la hay. La importancia de proteger su Cuenta de crédito, y, si la tiene, su Tarjeta IKEA y su PIN.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 446.868,
+                    "w": 453.15,
+                    "h": 22.376
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r18",
+              "y_range": [
+                472.061,
+                481.725
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "16. Incidencias. Qué hacer si observa irregularidades en los movimientos realizados con su Cuenta de crédito.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 472.061,
+                    "w": 430.586,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r19",
+              "y_range": [
+                484.773,
+                507.916
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "17. Ley aplicable a este contrato. Quejas y reclamaciones. Cómo puede hacernos llegar sus quejas y reclamaciones.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 484.773,
+                    "w": 453.187,
+                    "h": 22.143
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r20",
+              "y_range": [
+                509.735,
+                519.399
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "18. Duración y cancelación. Quién puede cancelar el contrato, cuándo y cómo.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 509.735,
+                    "w": 312.051,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r21",
+              "y_range": [
+                522.447,
+                532.111
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "19. Desistimiento. Cuándo y cómo puede desistir (renunciar) de este contrato.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 522.447,
+                    "w": 306.689,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r22",
+              "y_range": [
+                534.928,
+                560.191
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "20. Derechos adicionales que podrá usted ejercer. Cuándo y cómo puede ejercitar los derechos que le correspondan frente a CaixaBank Payments & Consumer teniendo el contrato de Cuenta de crédito el carácter de vinculado.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 534.928,
+                    "w": 453.286,
+                    "h": 25.263
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r23",
+              "y_range": [
+                572.602,
+                595.377
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "21. Modificaciones. Cómo y cuándo desde CaixaBank Payments & Consumer podemos modificar las condiciones del contrato, y qué puede hacer usted al respecto.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 572.602,
+                    "w": 436.604,
+                    "h": 22.781
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r24",
+              "y_range": [
+                597.795,
+                607.459
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "22. Cesión. Desde CaixaBank Payments & Consumer podremos ceder los derechos y obligaciones del contrato.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 597.795,
+                    "w": 435.428,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r25",
+              "y_range": [
+                610.276,
+                633.058
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "23. Servicios vinculados o combinados. Para contratar la Cuenta de crédito con o sin Tarjeta IKEA, si el producto contratado la ofrece, no es obligatorio contratar otro servicio más.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 610.276,
+                    "w": 453.225,
+                    "h": 22.782
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r26",
+              "y_range": [
+                635.469,
+                645.133
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "24. Precios. Cuánto cuesta la Cuenta de crédito con o sin Tarjeta IKEA y los servicios que con ella le ofrecemos.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 635.469,
+                    "w": 437.176,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r27",
+              "y_range": [
+                647.95,
+                657.614
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "25. Tratamiento de datos de carácter personal. Cómo tratamos sus datos personales.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 647.95,
+                    "w": 342.265,
+                    "h": 9.664
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r28",
+              "y_range": [
+                660.662,
+                695.926
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "26. Políticas de sanciones, prevención de blanqueo y lucha contra el fraude. En CaixaBank Payments & Consumer gozamos de políticas sobre sanciones económico-financieras internacionales, prevención de blanqueo y lucha contra el fraude.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 660.662,
+                    "w": 453.248,
+                    "h": 35.263
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "list_item",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [],
+  "noise": [
+    {
+      "text": "Contrato de cuenta de crédito con o sin Tarjeta IKEA",
+      "bbox": {
+        "x": 176.96,
+        "y": 42.784,
+        "w": 267.44,
+        "h": 12.885
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Condiciones del contrato",
+      "bbox": {
+        "x": 345.454,
+        "y": 56.128,
+        "w": 100.683,
+        "h": 10.128
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Logalty",
+      "bbox": {
+        "x": 581.636,
+        "y": 715.94,
+        "w": 9.056,
+        "h": 33.6
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Guid: 001001-0001-000000136441990.par",
+      "bbox": {
+        "x": 581.636,
+        "y": 687.14,
+        "w": 9.056,
+        "h": 24.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {
+        "x": 581.636,
+        "y": 523.94,
+        "w": 9.056,
+        "h": 4.8
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Date:",
+      "bbox": {
+        "x": 581.636,
+        "y": 495.14,
+        "w": 9.056,
+        "h": 24.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "2025/02/25 T",
+      "bbox": {
+        "x": 581.636,
+        "y": 442.34,
+        "w": 9.056,
+        "h": 48.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "20:07:05",
+      "bbox": {
+        "x": 581.636,
+        "y": 389.54,
+        "w": 9.056,
+        "h": 38.4
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "CET +0100",
+      "bbox": {
+        "x": 581.636,
+        "y": 370.34,
+        "w": 9.056,
+        "h": 14.4
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {
+        "x": 581.636,
+        "y": 331.94,
+        "w": 9.056,
+        "h": 4.8
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Pages: 1/59",
+      "bbox": {
+        "x": 581.636,
+        "y": 274.34,
+        "w": 9.056,
+        "h": 52.8
+      },
+      "reason": "furniture_layer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 11,
+        "lines": 0,
+        "tables": 1,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 35,
+        "labels": {
+          "page_header": 1,
+          "picture": 3,
+          "section_header": 2,
+          "list_item": 28,
+          "text": 1
+        },
+        "section_headers": 2,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 67,
+        "bold": 0,
+        "cases": {
+          "lower": 45,
+          "none": 15,
+          "UPPER": 4,
+          "mixed": 2,
+          "Title": 1
+        }
+      }
+    },
+    "column_coherence": [
+      {
+        "x_range": [
+          73.183,
+          526.399
+        ],
+        "dominant_role": "VALUE_TEXT",
+        "coherence": 0.95
+      }
+    ],
+    "agreement": {
+      "section_titles": {
+        "docling_matches_ours": 1,
+        "total": 1
+      },
+      "cell_bold_flags": {
+        "agree": 67,
+        "disagree": 0
+      }
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:46:54+02:00",
+    "covers_cases": [
+      4,
+      5
+    ],
+    "needs_review": true
+  }
+}

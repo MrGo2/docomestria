@@ -1,0 +1,924 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 3,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 77,
+    "rects": 347,
+    "docling_blocks": 64,
+    "noise_dropped": 12
+  },
+  "sections": [
+    {
+      "title": "DATOS PERSONALES DEL TITULAR",
+      "title_signal": {
+        "size": null,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": null,
+        "docling_label": "inferred_from_form_structure"
+      },
+      "title_bbox": null,
+      "container_bbox": {
+        "x": 47.065587,
+        "y": 70.796598,
+        "w": 498.546547,
+        "h": 257.276
+      },
+      "bands": [
+        {
+          "y_range": [84.0, 127.5],
+          "layout": "4-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 267.1], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.8, 370.6], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [371.3, 539.8], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [84.0, 127.5],
+              "cells": [
+                {"col": 0, "text": "NIF", "role": "LABEL", "bbox": {"x": 65.094, "y": 89.106, "w": 14.739, "h": 10.201}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "45337936Z", "role": "VALUE_TEXT", "bbox": {"x": 174.187, "y": 89.179, "w": 46.284, "h": 10.128}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null},
+                {"col": 2, "text": "Cuenta corriente asociada informada en el contrato", "role": "LABEL", "bbox": {"x": 272.648, "y": 89.106, "w": 85.829, "h": 31.002}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Cuenta corriente", "asociada informada", "en el contrato"]},
+                {"col": 3, "text": "ES04 2100 3986 1101 0064 4291", "role": "VALUE_TEXT", "bbox": {"x": 381.741, "y": 97.500, "w": 136.831, "h": 10.128}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [129.5, 161.9],
+          "layout": "4-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 267.1], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.8, 370.6], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [371.3, 539.8], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [129.5, 161.9],
+              "cells": [
+                {"col": 0, "text": "Teléfono", "role": "LABEL", "bbox": {"x": 65.094, "y": 134.639, "w": 38.123, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "685723443", "role": "VALUE_NUMERIC", "bbox": {"x": 174.187, "y": 134.712, "w": 45.781, "h": 10.128}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null},
+                {"col": 2, "text": "E-mail", "role": "LABEL", "bbox": {"x": 272.648, "y": 134.639, "w": 27.456, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 3, "text": "SORAYAGANAZA25@GMAIL.COM", "role": "VALUE_TEXT", "bbox": {"x": 381.741, "y": 134.712, "w": 147.572, "h": 10.128}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [164.4, 196.8],
+          "layout": "4-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 267.1], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.8, 370.6], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [371.3, 539.8], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r3",
+              "y_range": [164.4, 196.8],
+              "cells": [
+                {"col": 0, "text": "Nacionalidad:", "role": "LABEL", "bbox": {"x": 65.094, "y": 169.770, "w": 59.989, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "ESPAÑOLA", "role": "VALUE_TEXT", "bbox": {"x": 174.187, "y": 169.843, "w": 49.331, "h": 10.128}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null},
+                {"col": 2, "text": "Fecha de nacimiento:", "role": "LABEL", "bbox": {"x": 272.648, "y": 169.770, "w": 93.409, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 3, "text": "10/01/96", "role": "VALUE_NUMERIC", "bbox": {"x": 381.741, "y": 169.843, "w": 35.607, "h": 10.128}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [199.5, 231.9],
+          "layout": "4-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 267.1], "role": "CHECKBOX", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.8, 370.6], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [371.3, 539.8], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r4",
+              "y_range": [199.5, 231.9],
+              "cells": [
+                {"col": 0, "text": "Sexo:", "role": "LABEL", "bbox": {"x": 65.094, "y": 204.671, "w": 24.912, "h": 10.201}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "Hombre", "role": "CHECKBOX_UNSELECTED", "bbox": {"x": 179.734, "y": 203.588, "w": 32.533, "h": 10.128}, "bold": false, "case": "lower", "docling_label": "checkbox_unselected", "compound_parts": null},
+                {"col": 2, "text": "Personas a su cargo:", "role": "LABEL", "bbox": {"x": 272.648, "y": 204.671, "w": 92.444, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 3, "text": "0", "role": "VALUE_NUMERIC", "bbox": {"x": 381.741, "y": 204.744, "w": 5.087, "h": 10.128}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [214.0, 232.0],
+          "layout": "inline-checkbox",
+          "columns": [
+            {"x_range": [164.0, 220.0], "role": "CHECKBOX_SELECTED", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r4b",
+              "y_range": [214.0, 232.0],
+              "cells": [
+                {"col": 0, "text": "X Mujer", "role": "CHECKBOX_SELECTED", "bbox": {"x": 168.871, "y": 217.614, "w": 33.863, "h": 10.201}, "bold": false, "case": "Title", "docling_label": "checkbox_selected", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [234.6, 294.3],
+          "layout": "4-col-checkbox",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 267.1], "role": "CHECKBOX", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.8, 370.6], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [371.3, 539.8], "role": "CHECKBOX", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r5",
+              "y_range": [234.6, 294.3],
+              "cells": [
+                {"col": 0, "text": "Estado civil:", "role": "LABEL", "bbox": {"x": 65.094, "y": 254.826, "w": 53.902, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "Casado/a | X Soltero/a | Separado/a | Otros", "role": "CHECKBOX_GROUP", "bbox": {"x": 164.017, "y": 234.648, "w": 103.084, "h": 59.169}, "bold": false, "case": "lower", "docling_label": "checkbox_selected", "compound_parts": ["Casado/a", "X Soltero/a", "Separado/a", "Otros"]},
+                {"col": 2, "text": "Vivienda:", "role": "LABEL", "bbox": {"x": 272.648, "y": 254.826, "w": 40.676, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 3, "text": "Alquiler | Padres | Otros | Propia", "role": "CHECKBOX_GROUP", "bbox": {"x": 371.340, "y": 234.648, "w": 168.493, "h": 59.169}, "bold": false, "case": "lower", "docling_label": "checkbox_selected", "compound_parts": ["Propia", "Alquiler", "Padres", "Otros"]}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [296.6, 318.5],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 539.8], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r6",
+              "y_range": [296.6, 318.5],
+              "cells": [
+                {"col": 0, "text": "Tarjeta de crédito:", "role": "LABEL", "bbox": {"x": 65.094, "y": 301.745, "w": 79.313, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "", "role": "EMPTY", "bbox": {"x": 164.017, "y": 296.591, "w": 376.048, "h": 20.802}, "bold": false, "case": "none", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DATOS PROFESIONALES DEL TITULAR:",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": null,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.547, "y": 328.094, "w": 178.543, "h": 10.201},
+      "container_bbox": {
+        "x": 47.065587,
+        "y": 328.094,
+        "w": 498.546547,
+        "h": 227.0
+      },
+      "bands": [
+        {
+          "y_range": [347.0, 379.7],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 539.8], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r7",
+              "y_range": [347.0, 379.7],
+              "cells": [
+                {"col": 0, "text": "Nombre empresa:", "role": "LABEL", "bbox": {"x": 65.094, "y": 352.363, "w": 77.784, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "", "role": "EMPTY", "bbox": {"x": 164.017, "y": 346.977, "w": 376.048, "h": 31.665}, "bold": false, "case": "none", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [381.6, 414.3],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 539.8], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r8",
+              "y_range": [381.6, 414.3],
+              "cells": [
+                {"col": 0, "text": "Domicilio empresa:", "role": "LABEL", "bbox": {"x": 65.094, "y": 386.801, "w": 84.398, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "11500 CADIZ", "role": "VALUE_TEXT", "bbox": {"x": 174.187, "y": 397.275, "w": 57.956, "h": 10.128}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [416.1, 448.8],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 539.8], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r9",
+              "y_range": [416.1, 448.8],
+              "cells": [
+                {"col": 0, "text": "Actividad:", "role": "LABEL", "bbox": {"x": 65.094, "y": 421.239, "w": 44.226, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "", "role": "EMPTY", "bbox": {"x": 164.017, "y": 416.085, "w": 376.048, "h": 31.665}, "bold": false, "case": "none", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [451.2, 483.9],
+          "layout": "6-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 231.5], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0},
+            {"x_range": [232.2, 318.6], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [319.6, 387.1], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0},
+            {"x_range": [387.8, 475.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [475.1, 539.8], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r10",
+              "y_range": [451.2, 483.9],
+              "cells": [
+                {"col": 0, "text": "Teléfono:", "role": "LABEL", "bbox": {"x": 65.094, "y": 456.371, "w": 41.170, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "", "role": "EMPTY", "bbox": {"x": 164.017, "y": 451.217, "w": 67.490, "h": 31.665}, "bold": false, "case": "none", "docling_label": null, "compound_parts": null},
+                {"col": 2, "text": "Fecha de ingreso:", "role": "LABEL", "bbox": {"x": 237.054, "y": 456.371, "w": 78.158, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 3, "text": "", "role": "EMPTY", "bbox": {"x": 319.567, "y": 451.217, "w": 67.490, "h": 31.665}, "bold": false, "case": "none", "docling_label": null, "compound_parts": null},
+                {"col": 4, "text": "Nº de pagas:", "role": "LABEL", "bbox": {"x": 392.604, "y": 456.371, "w": 55.142, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 5, "text": "12", "role": "VALUE_NUMERIC", "bbox": {"x": 490.834, "y": 456.444, "w": 10.174, "h": 10.128}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [486.1, 543.0],
+          "layout": "4-col-checkbox",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 267.1], "role": "CHECKBOX", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.8, 370.6], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [371.3, 539.8], "role": "CHECKBOX", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r11",
+              "y_range": [486.1, 543.0],
+              "cells": [
+                {"col": 0, "text": "Por cuenta ajena:", "role": "LABEL", "bbox": {"x": 65.094, "y": 507.913, "w": 76.133, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "Fijo | Eventual | Autónomo | Pensionista", "role": "CHECKBOX_GROUP", "bbox": {"x": 164.017, "y": 486.117, "w": 103.084, "h": 56.396}, "bold": false, "case": "lower", "docling_label": "checkbox_unselected", "compound_parts": ["Fijo", "Eventual", "Autónomo", "Pensionista"]},
+                {"col": 2, "text": "Importe ingresos brutos anuales:", "role": "LABEL", "bbox": {"x": 272.648, "y": 497.050, "w": 102.857, "h": 31.002}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Importe", "ingresos", "brutos anuales:"]},
+                {"col": 3, "text": "de 6.000 a 12.000 euros | de 12.000 a 18.000 euros | de 18.000 a 24.000 euros | más de 24.000 euros", "role": "CHECKBOX_GROUP", "bbox": {"x": 371.340, "y": 486.348, "w": 168.493, "h": 56.396}, "bold": false, "case": "lower", "docling_label": "checkbox_unselected", "compound_parts": ["de 6.000 a 12.000 euros", "de 12.000 a 18.000 euros", "de 18.000 a 24.000 euros", "más de 24.000 euros"]}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SOLICITUD DE TARJETA ADICIONAL: DATOS DEL BENEFICIARIO **",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": null,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.547, "y": 554.832, "w": 299.035, "h": 10.201},
+      "container_bbox": {
+        "x": 47.065587,
+        "y": 554.832,
+        "w": 498.546547,
+        "h": 232.0
+      },
+      "bands": [
+        {
+          "y_range": [573.7, 606.4],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 539.8], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r12",
+              "y_range": [573.7, 606.4],
+              "cells": [
+                {"col": 0, "text": "Nombre y apellidos:", "role": "LABEL", "bbox": {"x": 65.094, "y": 579.101, "w": 87.445, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "", "role": "EMPTY", "bbox": {"x": 164.017, "y": 573.715, "w": 376.048, "h": 31.665}, "bold": false, "case": "none", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [608.4, 641.0],
+          "layout": "4-col",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 267.1], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.8, 370.6], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [371.3, 539.8], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r13",
+              "y_range": [608.4, 641.0],
+              "cells": [
+                {"col": 0, "text": "N.I.F.:", "role": "LABEL", "bbox": {"x": 65.094, "y": 613.539, "w": 25.416, "h": 10.201}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "", "role": "EMPTY", "bbox": {"x": 164.017, "y": 608.385, "w": 103.084, "h": 31.665}, "bold": false, "case": "none", "docling_label": null, "compound_parts": null},
+                {"col": 2, "text": "Fecha de nacimiento:", "role": "LABEL", "bbox": {"x": 272.648, "y": 613.539, "w": 93.409, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 3, "text": "", "role": "EMPTY", "bbox": {"x": 371.340, "y": 608.385, "w": 168.493, "h": 31.665}, "bold": false, "case": "none", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [643.3, 700.1],
+          "layout": "4-col-checkbox",
+          "columns": [
+            {"x_range": [60.2, 163.1], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.0, 267.1], "role": "CHECKBOX", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.8, 370.6], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [371.3, 539.8], "role": "CHECKBOX", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r14",
+              "y_range": [643.3, 700.1],
+              "cells": [
+                {"col": 0, "text": "Sexo:", "role": "LABEL", "bbox": {"x": 65.094, "y": 648.671, "w": 24.912, "h": 10.201}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "Hombre | Mujer", "role": "CHECKBOX_GROUP", "bbox": {"x": 164.017, "y": 643.285, "w": 103.084, "h": 56.396}, "bold": false, "case": "lower", "docling_label": "checkbox_unselected", "compound_parts": ["Hombre", "Mujer"]},
+                {"col": 2, "text": "Parentesco con el titular:", "role": "LABEL", "bbox": {"x": 272.648, "y": 649.133, "w": 102.857, "h": 20.602}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Parentesco con", "el titular:"]},
+                {"col": 3, "text": "cónyuge/pareja | padre/madre | hijo/a | otro", "role": "CHECKBOX_GROUP", "bbox": {"x": 371.340, "y": 643.979, "w": 168.493, "h": 56.396}, "bold": false, "case": "lower", "docling_label": "checkbox_unselected", "compound_parts": ["cónyuge/pareja", "padre/madre", "hijo/a", "otro"]}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [700.0, 722.0],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r15",
+              "y_range": [700.0, 722.0],
+              "cells": [
+                {"col": 0, "text": "Firma del Beneficiario", "role": "LABEL", "bbox": {"x": 67.867, "y": 704.993, "w": 68.145, "h": 9.237}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "NIF",
+      "value": "45337936Z",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r1",
+      "column_header": null,
+      "row_y": 89.106,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r1",
+        "docling_block_id": null,
+        "label_span_id": "span_y89.1_x65.1",
+        "value_span_ids": ["span_y89.2_x174.2"]
+      }
+    },
+    {
+      "label": "Cuenta corriente asociada informada en el contrato",
+      "value": "ES04 2100 3986 1101 0064 4291",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r1",
+      "column_header": null,
+      "row_y": 89.106,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r3",
+        "docling_block_id": null,
+        "label_span_id": "span_y89.1_x272.6",
+        "value_span_ids": ["span_y97.5_x381.7"]
+      }
+    },
+    {
+      "label": "Teléfono",
+      "value": "685723443",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r2",
+      "column_header": null,
+      "row_y": 134.639,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r5",
+        "docling_block_id": null,
+        "label_span_id": "span_y134.6_x65.1",
+        "value_span_ids": ["span_y134.7_x174.2"]
+      }
+    },
+    {
+      "label": "E-mail",
+      "value": "SORAYAGANAZA25@GMAIL.COM",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r2",
+      "column_header": null,
+      "row_y": 134.639,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r7",
+        "docling_block_id": null,
+        "label_span_id": "span_y134.6_x272.6",
+        "value_span_ids": ["span_y134.7_x381.7"]
+      }
+    },
+    {
+      "label": "Nacionalidad:",
+      "value": "ESPAÑOLA",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r3",
+      "column_header": null,
+      "row_y": 169.770,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r9",
+        "docling_block_id": null,
+        "label_span_id": "span_y169.8_x65.1",
+        "value_span_ids": ["span_y169.8_x174.2"]
+      }
+    },
+    {
+      "label": "Fecha de nacimiento:",
+      "value": "10/01/96",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r3",
+      "column_header": null,
+      "row_y": 169.770,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r11",
+        "docling_block_id": null,
+        "label_span_id": "span_y169.8_x272.6",
+        "value_span_ids": ["span_y169.8_x381.7"]
+      }
+    },
+    {
+      "label": "Sexo:",
+      "value": "Mujer",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r4",
+      "column_header": null,
+      "row_y": 204.671,
+      "rule": "checkbox-selected",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r14",
+        "docling_block_id": null,
+        "label_span_id": "span_y204.7_x65.1",
+        "value_span_ids": ["span_y217.6_x168.9"]
+      }
+    },
+    {
+      "label": "Personas a su cargo:",
+      "value": "0",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r4",
+      "column_header": null,
+      "row_y": 204.671,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r15",
+        "docling_block_id": null,
+        "label_span_id": "span_y204.7_x272.6",
+        "value_span_ids": ["span_y204.7_x381.7"]
+      }
+    },
+    {
+      "label": "Estado civil:",
+      "value": "Soltero/a",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r5",
+      "column_header": null,
+      "row_y": 254.826,
+      "rule": "checkbox-selected",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r17",
+        "docling_block_id": null,
+        "label_span_id": "span_y254.8_x65.1",
+        "value_span_ids": ["span_y249.7_x168.9"]
+      }
+    },
+    {
+      "label": "Vivienda:",
+      "value": "Alquiler",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r5",
+      "column_header": null,
+      "row_y": 254.826,
+      "rule": "checkbox-selected",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r19",
+        "docling_block_id": null,
+        "label_span_id": "span_y254.8_x272.6",
+        "value_span_ids": ["span_y248.7_x392.6"]
+      }
+    },
+    {
+      "label": "Tarjeta de crédito:",
+      "value": "",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_r6",
+      "column_header": null,
+      "row_y": 301.745,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r21",
+        "docling_block_id": null,
+        "label_span_id": "span_y301.7_x65.1",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Nombre empresa:",
+      "value": "",
+      "section": "DATOS PROFESIONALES DEL TITULAR:",
+      "band": "BAND_r7",
+      "column_header": null,
+      "row_y": 352.363,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r23",
+        "docling_block_id": null,
+        "label_span_id": "span_y352.4_x65.1",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Domicilio empresa:",
+      "value": "11500 CADIZ",
+      "section": "DATOS PROFESIONALES DEL TITULAR:",
+      "band": "BAND_r8",
+      "column_header": null,
+      "row_y": 386.801,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r25",
+        "docling_block_id": null,
+        "label_span_id": "span_y386.8_x65.1",
+        "value_span_ids": ["span_y397.3_x174.2"]
+      }
+    },
+    {
+      "label": "Actividad:",
+      "value": "",
+      "section": "DATOS PROFESIONALES DEL TITULAR:",
+      "band": "BAND_r9",
+      "column_header": null,
+      "row_y": 421.239,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r27",
+        "docling_block_id": null,
+        "label_span_id": "span_y421.2_x65.1",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Teléfono:",
+      "value": "",
+      "section": "DATOS PROFESIONALES DEL TITULAR:",
+      "band": "BAND_r10",
+      "column_header": null,
+      "row_y": 456.371,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r29",
+        "docling_block_id": null,
+        "label_span_id": "span_y456.4_x65.1",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Fecha de ingreso:",
+      "value": "",
+      "section": "DATOS PROFESIONALES DEL TITULAR:",
+      "band": "BAND_r10",
+      "column_header": null,
+      "row_y": 456.371,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r31",
+        "docling_block_id": null,
+        "label_span_id": "span_y456.4_x237.1",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Nº de pagas:",
+      "value": "12",
+      "section": "DATOS PROFESIONALES DEL TITULAR:",
+      "band": "BAND_r10",
+      "column_header": null,
+      "row_y": 456.371,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r33",
+        "docling_block_id": null,
+        "label_span_id": "span_y456.4_x392.6",
+        "value_span_ids": ["span_y456.4_x490.8"]
+      }
+    },
+    {
+      "label": "Por cuenta ajena:",
+      "value": "",
+      "section": "DATOS PROFESIONALES DEL TITULAR:",
+      "band": "BAND_r11",
+      "column_header": null,
+      "row_y": 507.913,
+      "rule": "checkbox-group-none-selected",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r35",
+        "docling_block_id": null,
+        "label_span_id": "span_y507.9_x65.1",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Importe ingresos brutos anuales:",
+      "value": "",
+      "section": "DATOS PROFESIONALES DEL TITULAR:",
+      "band": "BAND_r11",
+      "column_header": null,
+      "row_y": 497.050,
+      "rule": "checkbox-group-none-selected",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r37",
+        "docling_block_id": null,
+        "label_span_id": "span_y497.0_x272.6",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Nombre y apellidos:",
+      "value": "",
+      "section": "SOLICITUD DE TARJETA ADICIONAL: DATOS DEL BENEFICIARIO **",
+      "band": "BAND_r12",
+      "column_header": null,
+      "row_y": 579.101,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r39",
+        "docling_block_id": null,
+        "label_span_id": "span_y579.1_x65.1",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "N.I.F.:",
+      "value": "",
+      "section": "SOLICITUD DE TARJETA ADICIONAL: DATOS DEL BENEFICIARIO **",
+      "band": "BAND_r13",
+      "column_header": null,
+      "row_y": 613.539,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r41",
+        "docling_block_id": null,
+        "label_span_id": "span_y613.5_x65.1",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Fecha de nacimiento:",
+      "value": "",
+      "section": "SOLICITUD DE TARJETA ADICIONAL: DATOS DEL BENEFICIARIO **",
+      "band": "BAND_r13",
+      "column_header": null,
+      "row_y": 613.539,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r43",
+        "docling_block_id": null,
+        "label_span_id": "span_y613.5_x272.6",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Sexo:",
+      "value": "",
+      "section": "SOLICITUD DE TARJETA ADICIONAL: DATOS DEL BENEFICIARIO **",
+      "band": "BAND_r14",
+      "column_header": null,
+      "row_y": 648.671,
+      "rule": "checkbox-group-none-selected",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r45",
+        "docling_block_id": null,
+        "label_span_id": "span_y648.7_x65.1",
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Parentesco con el titular:",
+      "value": "",
+      "section": "SOLICITUD DE TARJETA ADICIONAL: DATOS DEL BENEFICIARIO **",
+      "band": "BAND_r14",
+      "column_header": null,
+      "row_y": 649.133,
+      "rule": "checkbox-group-none-selected",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p3-r47",
+        "docling_block_id": null,
+        "label_span_id": "span_y649.1_x272.6",
+        "value_span_ids": []
+      }
+    }
+  ],
+  "noise": [
+    {
+      "text": "(Continúa en la siguiente página) >>",
+      "bbox": {"x": 381.741, "y": 798.978, "w": 147.480, "h": 10.128},
+      "reason": "page_footer"
+    },
+    {
+      "text": "** Sus datos serán tratados para la finalidad de gestionar la relación contractual derivada de la Tarjeta IKEA.",
+      "bbox": {"x": 65.094, "y": 766.820, "w": 416.701, "h": 9.595},
+      "reason": "page_footer"
+    },
+    {
+      "text": "Logalty",
+      "bbox": {"x": 581.636, "y": 715.940, "w": 9.056, "h": 33.600},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Guid: 001001-0001-000000136441990.par",
+      "bbox": {"x": 581.636, "y": 687.140, "w": 9.056, "h": 24.000},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {"x": 581.636, "y": 523.940, "w": 9.056, "h": 4.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Date:",
+      "bbox": {"x": 581.636, "y": 495.140, "w": 9.056, "h": 24.000},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "2025/02/25 T",
+      "bbox": {"x": 581.636, "y": 442.340, "w": 9.056, "h": 48.000},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "20:07:05",
+      "bbox": {"x": 581.636, "y": 389.540, "w": 9.056, "h": 38.400},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "CET +0100",
+      "bbox": {"x": 581.636, "y": 370.340, "w": 9.056, "h": 14.400},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {"x": 581.636, "y": 331.940, "w": 9.056, "h": 4.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Pages:",
+      "bbox": {"x": 581.636, "y": 298.340, "w": 9.056, "h": 28.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "3/59",
+      "bbox": {"x": 581.636, "y": 274.340, "w": 9.056, "h": 19.200},
+      "reason": "furniture_layer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 347,
+        "lines": 0,
+        "tables": 3,
+        "checkboxes": 0,
+        "h_edges": 694,
+        "v_edges": 694,
+        "substantial_rects": 49
+      },
+      "docling": {
+        "blocks": 64,
+        "labels": {
+          "page_header": 1,
+          "text": 34,
+          "checkbox_unselected": 21,
+          "checkbox_selected": 3,
+          "section_header": 2,
+          "footnote": 1,
+          "picture": 1,
+          "page_footer": 1
+        },
+        "section_headers": 2,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 3,
+        "checkboxes_unselected": 21
+      },
+      "liteparse": {
+        "spans": 77,
+        "bold": 0,
+        "cases": {
+          "UPPER": 11,
+          "lower": 52,
+          "none": 8,
+          "Title": 6
+        }
+      }
+    },
+    "column_coherence": [
+      {"x_range": [60.2, 163.1], "dominant_role": "LABEL", "coherence": 1.0, "n_cells": 14},
+      {"x_range": [164.0, 267.1], "dominant_role": "VALUE_TEXT", "coherence": 0.85, "n_cells": 8},
+      {"x_range": [267.8, 370.6], "dominant_role": "LABEL", "coherence": 0.92, "n_cells": 10},
+      {"x_range": [371.3, 539.8], "dominant_role": "VALUE_TEXT", "coherence": 0.82, "n_cells": 11}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 2, "total": 3},
+      "cell_bold_flags": {"agree": 77, "disagree": 0}
+    },
+    "checkbox_summary": {
+      "total_checkbox_blocks": 24,
+      "selected": 3,
+      "unselected": 21,
+      "selected_values": [
+        {"label_context": "Sexo:", "value": "Mujer", "docling_text": "Mujer X"},
+        {"label_context": "Estado civil:", "value": "Soltero/a", "docling_text": "Soltero/a X"},
+        {"label_context": "Vivienda:", "value": "Alquiler", "docling_text": "Alquiler"}
+      ]
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T21:21:30+01:00",
+    "covers_cases": [5, 6, 8],
+    "needs_review": true
+  }
+}

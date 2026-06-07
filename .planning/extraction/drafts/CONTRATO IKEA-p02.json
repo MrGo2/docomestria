@@ -14,17 +14,39 @@
       "y_hint": 102,
       "children": [
         {
-          "type": "kv_group",
-          "id": "titular_identidad",
-          "pairs": [
+          "type": "table",
+          "id": "titular_dni",
+          "title": "Titular",
+          "y_hint": 143,
+          "columns": [
             {
+              "id": "titular_label",
               "label": "Titular",
-              "value": "SORALLA GAMAZA DOMÍNGUEZ",
-              "y_hint": 153,
-              "evidence": {
-                "label": {
+              "type": "text"
+            },
+            {
+              "id": "titular_value",
+              "label": "Valor",
+              "type": "text"
+            },
+            {
+              "id": "dni_label",
+              "label": "DNI",
+              "type": "text"
+            },
+            {
+              "id": "dni_value",
+              "label": "Valor",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "titular_label": {
+                "text": "Titular",
+                "evidence": {
                   "text": "Titular",
-                  "row_y_hint": 153,
+                  "row_y_hint": 143,
                   "pdfplumber": {
                     "bbox": {
                       "x": 73.183232,
@@ -86,7 +108,16 @@
                   },
                   "engine_agreement": 3
                 },
-                "value": {
+                "bbox": {
+                  "x": 73.183232,
+                  "y": 144.70462168000017,
+                  "w": 25.41558864000001,
+                  "h": 9.148879999999963
+                }
+              },
+              "titular_value": {
+                "text": "SORALLA GAMAZA DOMÍNGUEZ",
+                "evidence": {
                   "text": "SORALLA GAMAZA DOMÍNGUEZ",
                   "row_y_hint": 153,
                   "pdfplumber": {
@@ -153,14 +184,8 @@
                       "h": 34.43831039999998
                     }
                   },
-                  "colon_signal": {
-                    "present": false
-                  },
-                  "value_extent": {
-                    "boundary_type": "cell_edge",
-                    "gap_pt": 213.17997895999997,
-                    "ends_at_x": 428.1982976
-                  },
+                  "colon_signal": null,
+                  "value_extent": null,
                   "cell_bbox": {
                     "x": 73.183232,
                     "y": 154.64319448000015,
@@ -168,29 +193,19 @@
                     "h": 9.148879999999963
                   },
                   "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 73.183232,
+                  "y": 154.64319448000015,
+                  "w": 141.83508664000001,
+                  "h": 9.148879999999963
                 }
               },
-              "label_bbox": {
-                "x": 73.183232,
-                "y": 144.70462168000017,
-                "w": 25.41558864000001,
-                "h": 9.148879999999963
-              },
-              "bbox": {
-                "x": 73.183232,
-                "y": 154.64319448000015,
-                "w": 141.83508664000001,
-                "h": 9.148879999999963
-              }
-            },
-            {
-              "label": "DNI",
-              "value": "45337936Z",
-              "y_hint": 155,
-              "evidence": {
-                "label": {
+              "dni_label": {
+                "text": "DNI",
+                "evidence": {
                   "text": "DNI",
-                  "row_y_hint": 155,
+                  "row_y_hint": 145,
                   "pdfplumber": {
                     "bbox": {
                       "x": 428.1982976,
@@ -248,7 +263,16 @@
                   },
                   "engine_agreement": 3
                 },
-                "value": {
+                "bbox": {
+                  "x": 428.1982976,
+                  "y": 146.5536584800002,
+                  "w": 15.754371359999993,
+                  "h": 9.148879999999963
+                }
+              },
+              "dni_value": {
+                "text": "45337936Z",
+                "evidence": {
                   "text": "45337936Z",
                   "row_y_hint": 155,
                   "pdfplumber": {
@@ -304,14 +328,8 @@
                       "h": 34.43831039999998
                     }
                   },
-                  "colon_signal": {
-                    "present": false
-                  },
-                  "value_extent": {
-                    "boundary_type": "cell_edge",
-                    "gap_pt": 65.58254248000003,
-                    "ends_at_x": 540.065024
-                  },
+                  "colon_signal": null,
+                  "value_extent": null,
                   "cell_bbox": {
                     "x": 428.1982976,
                     "y": 156.49223128000028,
@@ -319,30 +337,75 @@
                     "h": 9.148879999999963
                   },
                   "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 428.1982976,
+                  "y": 156.49223128000028,
+                  "w": 46.284183919999975,
+                  "h": 9.148879999999963
                 }
-              },
-              "label_bbox": {
-                "x": 428.1982976,
-                "y": 146.5536584800002,
-                "w": 15.754371359999993,
-                "h": 9.148879999999963
-              },
-              "bbox": {
-                "x": 428.1982976,
-                "y": 156.49223128000028,
-                "w": 46.284183919999975,
-                "h": 9.148879999999963
               }
             }
           ],
-          "container_bbox": {
+          "bbox": {
             "x": 73.183232,
             "y": 144.70462168000017,
             "w": 401.29924952,
             "h": 20.936489600000073
           },
           "evidence": {
-            "title_signal": null,
+            "title_signal": {
+              "text": "Titular",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 73.183232,
+                  "y": 144.70462168000017,
+                  "w": 25.41558864000001,
+                  "h": 9.148879999999963
+                },
+                "char_indices": [
+                  137,
+                  138,
+                  139,
+                  140,
+                  141,
+                  142,
+                  143
+                ],
+                "n_chars": 7,
+                "row_y": 144.70462168000017
+              },
+              "liteparse": {
+                "span_id": 3,
+                "bbox": {
+                  "x": 73.1832275390625,
+                  "y": 143.72576904296875,
+                  "w": 25.543678283691406,
+                  "h": 10.1278076171875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 9.5
+              },
+              "docling": {
+                "cell_ref": "#/texts/33",
+                "bbox": {
+                  "x": 73.183232,
+                  "y": 146.43376,
+                  "w": 25.41558863999998,
+                  "h": 6.782015732142895
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "bbox": {
+                "x": 73.183232,
+                "y": 144.70462168000017,
+                "w": 25.41558864000001,
+                "h": 9.148879999999963
+              },
+              "engine_agreement": 3
+            },
             "container_signal": {
               "container_bbox": {
                 "x": 73.183232,
@@ -368,10 +431,15 @@
               "container_score": 1
             },
             "structural_signals": {
-              "kind": "kv_group",
-              "n_pairs": 2,
-              "layout": "stacked_vertical",
-              "same_row_ratio": 0.5
+              "kind": "table",
+              "n_columns_declared": 4,
+              "n_rows_declared": 1,
+              "n_columns_with_group": 0,
+              "header_levels": 1,
+              "vertical_edges_inside": 0,
+              "horizontal_edges_inside": 0,
+              "has_docling_table_block": false,
+              "has_pdfplumber_rect_frame": true
             }
           }
         }
@@ -482,7 +550,7 @@
           "kind": "section",
           "n_children": 1,
           "child_type_distribution": {
-            "kv_group": 1
+            "table": 1
           },
           "path": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta IKEA)"
         }
@@ -493,7 +561,15 @@
       "id": "parte_caixabank",
       "title": "Por otra parte, nosotros",
       "y_hint": 198,
-      "children": [],
+      "children": [
+        {
+          "type": "prose_block",
+          "id": "caixabank_identity",
+          "label": "party_description",
+          "text": "CaixaBank Payments & Consumer, E.F.C., E.P., S.A.*, Sociedad Unipersonal (también, «CaixaBank Payments & Consumer» o «nosotros»)",
+          "y_hint": 225
+        }
+      ],
       "title_bbox": {
         "x": 59.5465856,
         "y": 199.25120728000013,
@@ -570,178 +646,33 @@
         "container_signal": null,
         "structural_signals": {
           "kind": "section",
-          "n_children": 0,
-          "child_type_distribution": {},
+          "n_children": 1,
+          "child_type_distribution": {
+            "prose_block": 1
+          },
           "path": "Por otra parte, nosotros"
         }
       }
     },
     {
-      "type": "section",
-      "id": "datos_solicitud",
-      "title": "Solicitud y preámbulo",
-      "y_hint": 287,
-      "children": [
-        {
-          "type": "kv_leaf",
-          "id": "nro_solicitud",
-          "label": "Nº solicitud-contrato",
-          "value": "202502270270913",
-          "y_hint": 287,
-          "label_bbox": {
-            "x": 73.183232,
-            "y": 288.23610328000007,
-            "w": 89.7505128,
-            "h": 9.148879999999963
-          },
-          "evidence": {
-            "text": "202502270270913",
-            "row_y_hint": 287,
-            "pdfplumber": {
-              "bbox": {
-                "x": 168.52371048,
-                "y": 288.23610328000007,
-                "w": 76.30165920000007,
-                "h": 9.148879999999963
-              },
-              "char_indices": [
-                340,
-                341,
-                342,
-                343,
-                344,
-                345,
-                346,
-                347,
-                348,
-                349,
-                350,
-                351,
-                352,
-                353,
-                354
-              ],
-              "n_chars": 15,
-              "row_y": 288.23610328000007
-            },
-            "liteparse": {
-              "span_id": 11,
-              "bbox": {
-                "x": 73.1832275390625,
-                "y": 287.18402099609375,
-                "w": 171.64208984375,
-                "h": 10.20098876953125
-              },
-              "case_class": "lower",
-              "is_bold": false,
-              "font_size": 9.5
-            },
-            "docling": {
-              "cell_ref": "#/texts/37",
-              "bbox": {
-                "x": 73.183232,
-                "y": 289.9652416,
-                "w": 171.64213768000016,
-                "h": 6.770576017699113
-              },
-              "column_header": null,
-              "row_header": null
-            },
-            "rect": {
-              "rect_id": "p2-r5",
-              "bbox": {
-                "x": 60.2399744,
-                "y": 280.41188480000005,
-                "w": 272.27066880000007,
-                "h": 26.348774400000025
-              }
-            },
-            "colon_signal": {
-              "present": true,
-              "char_x": 162.9337448,
-              "char_y": 288.23610328000007
-            },
-            "value_extent": {
-              "boundary_type": "next_colon_label",
-              "gap_pt": 337.02663031999987,
-              "next_label_text": "",
-              "next_colon_x": 581.852,
-              "ends_at_x": 581.852
-            },
-            "cell_bbox": {
-              "x": 168.52371048,
-              "y": 288.23610328000007,
-              "w": 76.30165920000007,
-              "h": 9.148879999999963
-            },
-            "engine_agreement": 3
-          },
-          "bbox": {
-            "x": 168.52371048,
-            "y": 288.23610328000007,
-            "w": 76.30165920000007,
-            "h": 9.148879999999963
-          }
-        }
+      "type": "kv_pair",
+      "id": "nro_solicitud_contrato",
+      "label": [
+        "Nº solicitud-contrato",
+        287
       ],
-      "title_bbox": null,
-      "container_bbox": {
-        "x": 168.52371048,
-        "y": 288.23610328000007,
-        "w": 76.30165920000007,
-        "h": 9.148879999999963
-      },
-      "evidence": {
-        "title_signal": {
-          "text": "Solicitud y preámbulo",
-          "pdfplumber": null,
-          "liteparse": null,
-          "docling": null,
-          "bbox": null,
-          "engine_agreement": 0
-        },
-        "container_signal": {
-          "container_bbox": {
-            "x": 168.52371048,
-            "y": 288.23610328000007,
-            "w": 76.30165920000007,
-            "h": 9.148879999999963
-          },
-          "pdfplumber_rect": {
-            "rect_id": "p2-r5",
-            "bbox": {
-              "x": 60.2399744,
-              "y": 280.41188480000005,
-              "w": 272.27066880000007,
-              "h": 26.348774400000025
-            }
-          },
-          "docling_block": {
-            "self_ref": "#/texts/37",
-            "label": "text",
-            "bbox": {
-              "x": 73.183232,
-              "y": 289.9652416,
-              "w": 171.64213768000016,
-              "h": 6.770576017699113
-            }
-          },
-          "edges_inside": {
-            "vertical": 0,
-            "horizontal": 0
-          },
-          "colons_inside": 0,
-          "container_score": 2
-        },
-        "structural_signals": {
-          "kind": "section",
-          "n_children": 1,
-          "child_type_distribution": {
-            "kv_leaf": 1
-          },
-          "path": "Solicitud y preámbulo"
-        }
-      }
+      "value": [
+        "202502270270913",
+        287
+      ],
+      "rule": "structured-standalone-reference"
+    },
+    {
+      "type": "prose_block",
+      "id": "legal_preamble",
+      "label": "legal_preamble",
+      "text": "Mediante la firma de este documento, que está dirigido a consumidores, formalizamos este contrato de Cuenta de crédito con o sin Tarjeta IKEA con las Condiciones Particulares y Generales que se establecen a continuación, de las que el Titular reconoce haber recibido una copia. Le informamos que CaixaBank Payments & Consumer dispone de copia archivada de estas Condiciones Generales entregadas bajo la denominación MOD. (M) 006.GSCC.I.720 (10) - 28 de octubre de 2024, siendo ellas un fiel reflejo de las protocolizadas notarialmente con idéntica referencia y bajo el número de orden 48/2024 en la notaría de Barcelona de D. Santiago M. Giménez Arbona.",
+      "y_hint": 375
     },
     {
       "type": "section",
@@ -755,6 +686,13 @@
           "title": "Qué regulan estas Condiciones Particulares",
           "y_hint": 496,
           "children": [
+            {
+              "type": "prose_block",
+              "id": "regulan_descripcion",
+              "label": "section_description",
+              "text": "Estas condiciones regulan los aspectos económicos más relevantes del contrato.",
+              "y_hint": 513
+            },
             {
               "type": "table",
               "id": "producto_modalidad",
@@ -1231,8 +1169,9 @@
             },
             "structural_signals": {
               "kind": "section",
-              "n_children": 1,
+              "n_children": 2,
               "child_type_distribution": {
+                "prose_block": 1,
                 "table": 1
               },
               "path": "A. CONDICIONES PARTICULARES/Qué regulan estas Condiciones Particulares"
@@ -1864,18 +1803,6 @@
       "_view": "compat_flat"
     },
     {
-      "id": "datos_solicitud",
-      "title": "Solicitud y preámbulo",
-      "title_bbox": null,
-      "container_bbox": {
-        "x": 168.52371048,
-        "y": 288.23610328000007,
-        "w": 76.30165920000007,
-        "h": 9.148879999999963
-      },
-      "_view": "compat_flat"
-    },
-    {
       "id": "condiciones_particulares",
       "title": "A. CONDICIONES PARTICULARES",
       "title_bbox": {
@@ -1915,10 +1842,10 @@
       "label": "Titular",
       "value": "SORALLA GAMAZA DOMÍNGUEZ",
       "section": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta IKEA)",
-      "band": null,
-      "column_header": null,
-      "row_y": 153,
-      "rule": "structured-kv-group",
+      "band": "Titular",
+      "column_header": "Valor",
+      "row_y": 143,
+      "rule": "structured-table-cell",
       "confidence": "HIGH",
       "label_bbox": {
         "x": 73.183232,
@@ -1936,22 +1863,54 @@
       ],
       "evidence": {
         "path": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta IKEA)",
-        "engine_agreement": 3
+        "row": 0,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
-      "label": "DNI",
-      "value": "45337936Z",
+      "label": "Titular",
+      "value": "DNI",
       "section": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta IKEA)",
-      "band": null,
-      "column_header": null,
-      "row_y": 155,
-      "rule": "structured-kv-group",
+      "band": "Titular",
+      "column_header": "DNI",
+      "row_y": 143,
+      "rule": "structured-table-cell",
       "confidence": "HIGH",
       "label_bbox": {
-        "x": 428.1982976,
-        "y": 146.5536584800002,
-        "w": 15.754371359999993,
+        "x": 73.183232,
+        "y": 144.70462168000017,
+        "w": 25.41558864000001,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 428.1982976,
+          "y": 146.5536584800002,
+          "w": 15.754371359999993,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta IKEA)",
+        "row": 0,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Titular",
+      "value": "45337936Z",
+      "section": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta IKEA)",
+      "band": "Titular",
+      "column_header": "Valor",
+      "row_y": 143,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 73.183232,
+        "y": 144.70462168000017,
+        "w": 25.41558864000001,
         "h": 9.148879999999963
       },
       "value_bboxes": [
@@ -1964,35 +1923,9 @@
       ],
       "evidence": {
         "path": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta IKEA)",
-        "engine_agreement": 3
-      }
-    },
-    {
-      "label": "Nº solicitud-contrato",
-      "value": "202502270270913",
-      "section": "Solicitud y preámbulo",
-      "band": null,
-      "column_header": null,
-      "row_y": 287,
-      "rule": "structured-kv-leaf",
-      "confidence": "HIGH",
-      "label_bbox": {
-        "x": 73.183232,
-        "y": 288.23610328000007,
-        "w": 89.7505128,
-        "h": 9.148879999999963
-      },
-      "value_bboxes": [
-        {
-          "x": 168.52371048,
-          "y": 288.23610328000007,
-          "w": 76.30165920000007,
-          "h": 9.148879999999963
-        }
-      ],
-      "evidence": {
-        "path": "Solicitud y preámbulo",
-        "engine_agreement": 3
+        "row": 0,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -2140,10 +2073,10 @@
     "annotated_at": "2026-06-07",
     "method": "hand-curated reference (structured + 3-engine linked)",
     "covers_cases": [
-      "caixabank_ikea_titular_dni_2col_kv_group",
+      "caixabank_ikea_titular_dni_row",
       "caixabank_ikea_standalone_reference",
-      "caixabank_ikea_condiciones_particulares_2col",
-      "caixabank_ikea_multi_line_value_modalidad_pago",
+      "caixabank_ikea_condiciones_particulares",
+      "caixabank_ikea_multi_line_value",
       "caixabank_ikea_datos_personales_direccion_multi_line"
     ],
     "needs_review": false,

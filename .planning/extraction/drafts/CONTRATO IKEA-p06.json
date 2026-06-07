@@ -1,0 +1,688 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 6,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 42,
+    "rects": 147,
+    "docling_blocks": 26,
+    "noise_dropped": 11
+  },
+  "sections": [
+    {
+      "title": "(continuación)",
+      "title_signal": {
+        "size": null,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": null
+      },
+      "title_bbox": null,
+      "container_bbox": {"x": 60.24, "y": 84.43, "w": 479.73, "h": 26.35},
+      "bands": [
+        {
+          "y_range": [84.43, 111.09],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 267.09], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 540.06], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [84.43, 111.09],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Día de pago inicialmente escogido:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 89.106, "w": 153.033, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "30",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.648, "y": 89.179, "w": 10.174, "h": 10.128},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Identificación del Establecimiento",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.547, "y": 143.653, "w": 147.360, "h": 10.201},
+      "container_bbox": {"x": 60.24, "y": 168.08, "w": 479.82, "h": 367.29},
+      "bands": [
+        {
+          "y_range": [168.08, 200.70],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 163.32], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.02, 540.06], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [168.08, 200.70],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Denominación:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 173.237, "w": 66.082, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "IKEA IBERICA",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 174.187, "y": 173.310, "w": 60.008, "h": 10.128},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [205.29, 238.02],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 163.32], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.02, 540.06], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r3",
+              "y_range": [205.29, 238.02],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Domicilio social:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 210.680, "w": 72.706, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "AUTOVIA SEVILLA-HUELVA , A-49 41950 CASTILLEJA CUESTA",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 174.187, "y": 210.753, "w": 270.514, "h": 10.128},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [242.74, 278.08],
+          "layout": "4-col",
+          "columns": [
+            {"x_range": [60.24, 163.32], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.02, 267.09], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 376.30], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [376.89, 540.11], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.9}
+          ],
+          "rows": [
+            {
+              "row_id": "r4",
+              "y_range": [242.74, 278.08],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Código del establecimiento:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 247.892, "w": 137.285, "h": 20.402},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Código del", "establecimiento:"]
+                },
+                {
+                  "col": 1,
+                  "text": "32383005",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 174.187, "y": 247.965, "w": 40.694, "h": 10.128},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Empresa asociada y entidad colaboradora (identidad y domicilio):",
+                  "role": "LABEL",
+                  "bbox": {"x": 272.648, "y": 245.350, "w": 100.110, "h": 30.803},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Empresa asociada y", "entidad colaboradora", "(identidad y domicilio):"]
+                },
+                {
+                  "col": 3,
+                  "text": "Ikea Ibérica, S.A. con CIF A28812618, AVENIDA MATAPIÑONERA , 9 28703 SAN SEBASTIAN DE LOS REYES MADRID",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 381.741, "y": 246.717, "w": 149.895, "h": 26.401},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": "text",
+                  "compound_parts": ["Ikea Ibérica, S.A. con CIF A28812618,", "AVENIDA MATAPIÑONERA , 9 28703 SAN", "SEBASTIAN DE LOS REYES MADRID"]
+                }
+              ],
+              "clarifiers": ["(identidad y domicilio):"]
+            }
+          ]
+        },
+        {
+          "y_range": [327.79, 360.42],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 267.09], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 540.06], "role": "EMPTY", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r5",
+              "y_range": [327.79, 360.42],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Disposición que realiza en este acto:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.547, "y": 305.674, "w": 160.303, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Importe:",
+                  "role": "LABEL",
+                  "bbox": {"x": 273.110, "y": 305.674, "w": 36.595, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [365.24, 397.74],
+          "layout": "4-col",
+          "columns": [
+            {"x_range": [60.24, 163.32], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.02, 267.09], "role": "EMPTY", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 376.30], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [376.89, 540.11], "role": "EMPTY", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r6",
+              "y_range": [365.24, 397.74],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Fecha de vencimiento de la primera cuota:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 332.948, "w": 185.073, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "",
+                  "role": "EMPTY",
+                  "bbox": {"x": 164.017, "y": 365.236, "w": 103.084, "h": 31.665},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "TIN:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 370.391, "w": 17.785, "h": 10.201},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "",
+                  "role": "EMPTY",
+                  "bbox": {"x": 376.888, "y": 365.236, "w": 163.177, "h": 31.665},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [403.10, 435.54],
+          "layout": "4-col",
+          "columns": [
+            {"x_range": [60.24, 163.32], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.02, 231.60], "role": "EMPTY", "column_header": null, "coherence": 1.0},
+            {"x_range": [232.20, 319.57], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [319.57, 387.19], "role": "EMPTY", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r7",
+              "y_range": [403.10, 435.54],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Nº de cuotas:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 408.065, "w": 58.242, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "",
+                  "role": "EMPTY",
+                  "bbox": {"x": 164.017, "y": 402.911, "w": 67.490, "h": 31.665},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Importe 1ª cuota:",
+                  "role": "LABEL",
+                  "bbox": {"x": 237.054, "y": 408.065, "w": 74.597, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "",
+                  "role": "EMPTY",
+                  "bbox": {"x": 319.567, "y": 402.911, "w": 67.490, "h": 31.665},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 4,
+                  "text": "Importe última cuota:",
+                  "role": "LABEL",
+                  "bbox": {"x": 392.604, "y": 408.065, "w": 63.000, "h": 20.402},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Importe última", "cuota:"]
+                },
+                {
+                  "col": 5,
+                  "text": "",
+                  "role": "EMPTY",
+                  "bbox": {"x": 475.118, "y": 402.911, "w": 64.716, "h": 31.665},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [440.82, 473.34],
+          "layout": "4-col",
+          "columns": [
+            {"x_range": [60.24, 163.32], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.02, 267.09], "role": "EMPTY", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.79, 376.89], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [376.89, 540.11], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.9}
+          ],
+          "rows": [
+            {
+              "row_id": "r8",
+              "y_range": [440.82, 473.34],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Importe restantes cuotas:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 445.970, "w": 109.265, "h": 20.402},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Importe restantes", "cuotas:"]
+                },
+                {
+                  "col": 1,
+                  "text": "",
+                  "role": "EMPTY",
+                  "bbox": {"x": 164.017, "y": 440.816, "w": 103.084, "h": 31.665},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Modalidad de pago aplicable:",
+                  "role": "LABEL",
+                  "bbox": {"x": 272.648, "y": 445.970, "w": 124.862, "h": 20.402},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": ["Modalidad de pago", "aplicable:"]
+                },
+                {
+                  "col": 3,
+                  "text": "Fraccionado",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 381.741, "y": 446.043, "w": 50.337, "h": 10.128},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [481.26, 535.69],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 163.32], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [164.02, 540.06], "role": "EMPTY", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r9",
+              "y_range": [481.26, 535.69],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Excepcionalidades:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 486.418, "w": 85.423, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "",
+                  "role": "EMPTY",
+                  "bbox": {"x": 164.017, "y": 481.263, "w": 376.048, "h": 53.622},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Día de pago inicialmente escogido:",
+      "value": "30",
+      "section": "(continuación)",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 89.106,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p6-r2",
+        "docling_block_id": "#/texts/170",
+        "label_span_id": 0,
+        "value_span_ids": [1]
+      }
+    },
+    {
+      "label": "Denominación:",
+      "value": "IKEA IBERICA",
+      "section": "Identificación del Establecimiento",
+      "band": "BAND_B",
+      "column_header": null,
+      "row_y": 173.237,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p6-r4",
+        "docling_block_id": "#/texts/173",
+        "label_span_id": 2,
+        "value_span_ids": [3]
+      }
+    },
+    {
+      "label": "Domicilio social:",
+      "value": "AUTOVIA SEVILLA-HUELVA , A-49 41950 CASTILLEJA CUESTA",
+      "section": "Identificación del Establecimiento",
+      "band": "BAND_C",
+      "column_header": null,
+      "row_y": 210.680,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p6-r6",
+        "docling_block_id": "#/texts/175",
+        "label_span_id": 4,
+        "value_span_ids": [5]
+      }
+    },
+    {
+      "label": "Código del establecimiento:",
+      "value": "32383005",
+      "section": "Identificación del Establecimiento",
+      "band": "BAND_D",
+      "column_header": null,
+      "row_y": 247.892,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p6-r8",
+        "docling_block_id": "#/texts/177",
+        "label_span_id": 6,
+        "value_span_ids": [7]
+      }
+    },
+    {
+      "label": "Empresa asociada y entidad colaboradora (identidad y domicilio):",
+      "value": "Ikea Ibérica, S.A. con CIF A28812618, AVENIDA MATAPIÑONERA , 9 28703 SAN SEBASTIAN DE LOS REYES MADRID",
+      "section": "Identificación del Establecimiento",
+      "band": "BAND_D",
+      "column_header": null,
+      "row_y": 246.717,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p6-r10",
+        "docling_block_id": "#/texts/179",
+        "label_span_id": 9,
+        "value_span_ids": [10, 13, 15]
+      }
+    },
+    {
+      "label": "Modalidad de pago aplicable:",
+      "value": "Fraccionado",
+      "section": "Identificación del Establecimiento",
+      "band": "BAND_H",
+      "column_header": null,
+      "row_y": 445.970,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p6-r26",
+        "docling_block_id": "#/texts/190",
+        "label_span_id": 28,
+        "value_span_ids": [29]
+      }
+    }
+  ],
+  "noise": [
+    {
+      "text": "Logalty",
+      "bbox": {"x": 581.636, "y": 715.940, "w": 9.056, "h": 33.600},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Guid: 001001-0001-000000136441990.par",
+      "bbox": {"x": 581.636, "y": 687.140, "w": 9.056, "h": 24.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {"x": 581.636, "y": 523.940, "w": 9.056, "h": 4.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Date:",
+      "bbox": {"x": 581.636, "y": 495.140, "w": 9.056, "h": 24.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "2025/02/25 T",
+      "bbox": {"x": 581.636, "y": 442.340, "w": 9.056, "h": 48.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "20:07:05",
+      "bbox": {"x": 581.636, "y": 389.540, "w": 9.056, "h": 38.400},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "CET +0100",
+      "bbox": {"x": 581.636, "y": 370.340, "w": 9.056, "h": 14.400},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {"x": 581.636, "y": 331.940, "w": 9.056, "h": 4.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Pages:",
+      "bbox": {"x": 581.636, "y": 298.340, "w": 9.056, "h": 28.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "6/59",
+      "bbox": {"x": 581.636, "y": 274.340, "w": 9.056, "h": 19.200},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "(Continúa en la siguiente página) >>",
+      "bbox": {"x": 381.741, "y": 793.662, "w": 147.480, "h": 10.128},
+      "reason": "furniture_layer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 147,
+        "lines": 0,
+        "tables": 9,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 26,
+        "labels": {
+          "page_header": 1,
+          "text": 22,
+          "section_header": 1,
+          "picture": 1,
+          "page_footer": 1
+        },
+        "section_headers": 1,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 42,
+        "bold": 0,
+        "cases": {
+          "lower": 26,
+          "none": 6,
+          "UPPER": 8,
+          "Title": 2
+        }
+      }
+    },
+    "column_coherence": [
+      {"x_range": [60.24, 163.32], "dominant_role": "LABEL", "coherence": 1.0, "n_cells": 8},
+      {"x_range": [164.02, 267.09], "dominant_role": "VALUE_MIXED", "coherence": 0.7, "n_cells": 6},
+      {"x_range": [267.79, 376.30], "dominant_role": "LABEL", "coherence": 0.85, "n_cells": 5},
+      {"x_range": [376.89, 540.11], "dominant_role": "VALUE_TEXT", "coherence": 0.75, "n_cells": 4}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 1, "total": 1},
+      "cell_bold_flags": {"agree": 42, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T23:16:15+02:00",
+    "covers_cases": [5, 6, 7],
+    "needs_review": true
+  }
+}
