@@ -352,12 +352,67 @@
               "text": "TAE/ TAE Variable",
               "row_y_hint": 165.9,
               "x_hint": null,
-              "pdfplumber": null,
-              "liteparse": null,
-              "docling": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 261.553856,
+                  "y": 168.15031199999999,
+                  "w": 74.780056,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  350,
+                  351,
+                  352,
+                  353,
+                  354,
+                  355,
+                  356,
+                  357,
+                  358,
+                  359,
+                  360,
+                  361,
+                  362,
+                  363,
+                  364,
+                  365
+                ],
+                "n_chars": 16,
+                "row_y": 167.8710304
+              },
+              "liteparse": {
+                "span_id": 11,
+                "bbox": {
+                  "x": 261.5538635253906,
+                  "y": 165.86798095703125,
+                  "w": 115.48773193359375,
+                  "h": 11.90313720703125
+                },
+                "case_class": "Title",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/81",
+                "bbox": {
+                  "x": 261.553856,
+                  "y": 169.72006720000002,
+                  "w": 115.4877568,
+                  "h": 7.200299065420495
+                },
+                "column_header": null,
+                "row_header": null
+              },
               "rect": null,
               "colon_signal": null,
-              "value_extent": null
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 261.553856,
+                "y": 168.15031199999999,
+                "w": 74.780056,
+                "h": 9.630400000000009
+              },
+              "engine_agreement": 3
             },
             "value": {
               "text": "11,58",
@@ -404,8 +459,14 @@
                 "row_header": null
               },
               "rect": null,
-              "colon_signal": null,
-              "value_extent": null,
+              "colon_signal": {
+                "present": false
+              },
+              "value_extent": {
+                "boundary_type": "continuation",
+                "gap_pt": 2.7350336000000084,
+                "next_text": "%de demo"
+              },
               "cell_bbox": {
                 "x": 336.90210559999997,
                 "y": 167.8710304,
@@ -414,6 +475,12 @@
               },
               "engine_agreement": 3
             }
+          },
+          "label_bbox": {
+            "x": 261.553856,
+            "y": 168.15031199999999,
+            "w": 74.780056,
+            "h": 9.630400000000009
           },
           "bbox": {
             "x": 336.90210559999997,
@@ -672,7 +739,7 @@
         "x": 137.6683904,
         "y": 155.59234619140625,
         "w": 422.4663872,
-        "h": 21.909084208593754
+        "h": 22.188365808593744
       },
       "evidence": {
         "title_signal": null,
@@ -681,7 +748,7 @@
             "x": 137.6683904,
             "y": 155.59234619140625,
             "w": 422.4663872,
-            "h": 21.909084208593754
+            "h": 22.188365808593744
           },
           "pdfplumber_rect": null,
           "docling_block": null,
@@ -3697,7 +3764,12 @@
       "row_y": 165.9,
       "rule": "structured-kv-group",
       "confidence": "HIGH",
-      "label_bbox": null,
+      "label_bbox": {
+        "x": 261.553856,
+        "y": 168.15031199999999,
+        "w": 74.780056,
+        "h": 9.630400000000009
+      },
       "value_bboxes": [
         {
           "x": 336.90210559999997,

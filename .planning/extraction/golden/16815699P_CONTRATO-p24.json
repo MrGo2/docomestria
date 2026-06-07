@@ -1343,7 +1343,18 @@
             "n_chars": 66,
             "row_y": 252.97487520000004
           },
-          "liteparse": null,
+          "liteparse": {
+            "span_id": 14,
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 251.048828125,
+              "w": 344.9416809082031,
+              "h": 11.54681396484375
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 10.0
+          },
           "docling": {
             "cell_ref": "#/texts/709",
             "bbox": {
@@ -1361,7 +1372,7 @@
             "w": 344.94166720000004,
             "h": 9.630400000000009
           },
-          "engine_agreement": 2
+          "engine_agreement": 3
         },
         "container_signal": {
           "container_bbox": {
@@ -1426,7 +1437,17 @@
                 "is_bold": false,
                 "font_size": 10.0
               },
-              "docling": null,
+              "docling": {
+                "cell_ref": "#/texts/720",
+                "bbox": {
+                  "x": 26.957312,
+                  "y": 496.99958079999993,
+                  "w": 247.63610560000006,
+                  "h": 7.200299065420609
+                },
+                "column_header": null,
+                "row_header": null
+              },
               "rect": null,
               "colon_signal": null,
               "value_extent": null,
@@ -1436,12 +1457,12 @@
                 "w": 6.606456756591797,
                 "h": 11.546844482421875
               },
-              "engine_agreement": 1
+              "engine_agreement": 2
             },
             "structural_signals": {
               "kind": "prose_block",
               "label": "a) Condición suspensiva",
-              "engine_agreement": 1
+              "engine_agreement": 2
             }
           }
         },

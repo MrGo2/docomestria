@@ -978,7 +978,17 @@
                     "is_bold": false,
                     "font_size": 10.0
                   },
-                  "docling": null,
+                  "docling": {
+                    "cell_ref": "#/tables/0/cells[5][1]",
+                    "bbox": {
+                      "x": 354.31360099999995,
+                      "y": 260.8555910000001,
+                      "w": 42.23879800000003,
+                      "h": 8.817016574585523
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
                   "rect": {
                     "rect_id": "p3-r350",
                     "bbox": {
@@ -996,7 +1006,7 @@
                     "w": 42.238797999999974,
                     "h": 10.0
                   },
-                  "engine_agreement": 2
+                  "engine_agreement": 3
                 },
                 "bbox": {
                   "x": 354.313601,
@@ -3105,8 +3115,8 @@
       "evidence": {
         "path": "Condiciones Económicas del Préstamo",
         "row": 5,
-        "engine_agreement": 2,
-        "bucket": "2_eng"
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -3510,8 +3520,8 @@
     "n_docling_blocks": 7,
     "n_rects": 368,
     "kv_pair_breakdown": {
-      "3_eng": 14,
-      "2_eng": 5,
+      "3_eng": 15,
+      "2_eng": 4,
       "1_eng": 0,
       "0_eng": 0,
       "empty": 0,

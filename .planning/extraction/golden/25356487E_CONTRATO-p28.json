@@ -546,7 +546,18 @@
             "n_chars": 18,
             "row_y": 30.0176326400001
           },
-          "liteparse": null,
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 28.476806640625,
+              "w": 51.12587356567383,
+              "h": 9.23748779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
           "docling": {
             "cell_ref": "#/texts/1030",
             "bbox": {
@@ -564,7 +575,7 @@
             "w": 51.12586752,
             "h": 7.704319999999939
           },
-          "engine_agreement": 2
+          "engine_agreement": 3
         },
         "container_signal": {
           "container_bbox": {
@@ -1210,7 +1221,18 @@
                     "n_chars": 138,
                     "row_y": 326.5569094399999
                   },
-                  "liteparse": null,
+                  "liteparse": {
+                    "span_id": 80,
+                    "bbox": {
+                      "x": 161.93699645996094,
+                      "y": 326.40283203125,
+                      "w": 396.209716796875,
+                      "h": 9.345367431640625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
                   "docling": {
                     "cell_ref": "#/texts/1058",
                     "bbox": {
@@ -1239,7 +1261,7 @@
                     "w": 396.2100646400004,
                     "h": 7.812180479999938
                   },
-                  "engine_agreement": 2
+                  "engine_agreement": 3
                 },
                 "bbox": {
                   "x": 161.93699840000002,
@@ -1473,7 +1495,17 @@
                     "is_bold": false,
                     "font_size": 8.0
                   },
-                  "docling": null,
+                  "docling": {
+                    "cell_ref": "#/texts/1060",
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 401.0807968,
+                      "w": 23.860279039999995,
+                      "h": 5.760239252336476
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
                   "rect": {
                     "rect_id": "p28-r10",
                     "bbox": {
@@ -1491,7 +1523,7 @@
                     "w": 23.860279040000023,
                     "h": 7.704319999999996
                   },
-                  "engine_agreement": 2
+                  "engine_agreement": 3
                 },
                 "bbox": {
                   "x": 161.93699840000002,
@@ -1544,24 +1576,24 @@
                 "row_y": 167.26720432000002
               },
               "liteparse": {
-                "span_id": 33,
+                "span_id": 35,
                 "bbox": {
-                  "x": 29.499738693237305,
-                  "y": 165.53375244140625,
-                  "w": 136.9356231689453,
-                  "h": 10.39215087890625
+                  "x": 164.71055603027344,
+                  "y": 177.78656005859375,
+                  "w": 5.4546661376953125,
+                  "h": 9.23748779296875
                 },
-                "case_class": "lower",
+                "case_class": "Title",
                 "is_bold": false,
-                "font_size": 9.0
+                "font_size": 8.0
               },
               "docling": {
-                "cell_ref": "#/texts/1042",
+                "cell_ref": "#/texts/1053",
                 "bbox": {
-                  "x": 29.499737600000003,
-                  "y": 168.6799840000001,
-                  "w": 136.93562063999997,
-                  "h": 6.4802691588784
+                  "x": 164.7105536,
+                  "y": 180.58315840000012,
+                  "w": 5.262050560000006,
+                  "h": 5.760239252336305
                 },
                 "column_header": null,
                 "row_header": null
@@ -3968,8 +4000,8 @@
       "evidence": {
         "path": "4. Otros aspectos jurídicos importantes",
         "row": 4,
-        "engine_agreement": 2,
-        "bucket": "2_eng"
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -4028,8 +4060,8 @@
       "evidence": {
         "path": "4. Otros aspectos jurídicos importantes",
         "row": 6,
-        "engine_agreement": 2,
-        "bucket": "2_eng"
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -4253,8 +4285,8 @@
     "n_docling_blocks": 65,
     "n_rects": 106,
     "kv_pair_breakdown": {
-      "3_eng": 14,
-      "2_eng": 4,
+      "3_eng": 16,
+      "2_eng": 2,
       "1_eng": 0,
       "0_eng": 0,
       "empty": 0,

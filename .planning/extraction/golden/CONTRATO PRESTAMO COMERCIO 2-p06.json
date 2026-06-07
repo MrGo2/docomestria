@@ -70,8 +70,29 @@
                     "n_chars": 20,
                     "row_y": 118.20705759999998
                   },
-                  "liteparse": null,
-                  "docling": null,
+                  "liteparse": {
+                    "span_id": 2,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 117.1766357421875,
+                      "w": 98.42267608642578,
+                      "h": 10.660888671875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/271",
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 120.02720320000003,
+                      "w": 98.422688,
+                      "h": 7.138963928571457
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
                   "rect": {
                     "rect_id": "p6-r1",
                     "bbox": {
@@ -89,7 +110,7 @@
                     "w": 98.422688,
                     "h": 9.630400000000009
                   },
-                  "engine_agreement": 1
+                  "engine_agreement": 3
                 },
                 "bbox": {
                   "x": 65.093696,
