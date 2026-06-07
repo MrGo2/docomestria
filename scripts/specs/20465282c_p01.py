@@ -1,12 +1,12 @@
-"""Golden structure spec for 16815699P_CONTRATO.pdf page 1 (Datos generales del préstamo F_AS-5).
+"""Golden structure spec for 20465282C_CONTRATO.pdf page 1 (Datos generales del préstamo F_AS-5).
 
 CaixaBank Payments & Consumer modelo F_AS-5 — Contrato de Préstamo de Financiación
-a Comprador de Bienes Muebles. Page 1 includes comprador-prestatario data, empty
-fiador slots, financiador/vendedor data, objeto a financiar (vehículo) and price
-breakdown table.
+a Comprador de Bienes Muebles. Page 1 includes comprador-prestatario data (MALAVIA
+HERNANDEZ / ALBI), empty fiador slots, financiador/vendedor (AUTOMOVILES SANCHEZ),
+objeto a financiar (HYUNDAI KONA) and price breakdown table.
 """
 
-PDF = "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/16815699P_CONTRATO.pdf"
+PDF = "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/20465282C_CONTRATO.pdf"
 PAGE = 1
 
 META = {
@@ -48,14 +48,14 @@ STRUCTURE = [
                 "type": "kv_leaf",
                 "id": "hoja_numero",
                 "label": "Hoja nº",
-                "value": "1/24",
+                "value": "1/25",
                 "y_hint": 35,
             },
             {
                 "type": "kv_leaf",
                 "id": "nro_referencia",
                 "label": "Nº",
-                "value": "202405600705506",
+                "value": "202211321555101",
                 "y_hint": 60,
             },
             {
@@ -81,7 +81,7 @@ STRUCTURE = [
                 "type": "kv_leaf",
                 "id": "impreso_numero",
                 "label": "IMPRESO Nº",
-                "value": "6249596",
+                "value": "5807956",
                 "y_hint": 145,
             },
         ],
@@ -100,10 +100,10 @@ STRUCTURE = [
                 "type": "kv_group",
                 "id": "comprador_identidad",
                 "pairs": [
-                    {"label": "1er Apellido", "value": "JUSTINIANO", "y_hint": 189.6, "x_hint": 94.7},
-                    {"label": "2º Apellido", "value": "JUSTINIANO", "y_hint": 189.6, "x_hint": 209.3},
-                    {"label": "Nombre", "value": "LUIS FERNANDO", "y_hint": 189.6, "x_hint": 306.4},
-                    {"label": "NIF/CIF", "value": "16815699P", "y_hint": 189.6, "x_hint": 444.6},
+                    {"label": "1er Apellido", "value": "MALAVIA", "y_hint": 189.6, "x_hint": 100.0},
+                    {"label": "2º Apellido", "value": "HERNANDEZ", "y_hint": 189.6, "x_hint": 209.5},
+                    {"label": "Nombre", "value": "ALBI", "y_hint": 189.6, "x_hint": 327.4},
+                    {"label": "NIF/CIF", "value": "20465282C", "y_hint": 189.6, "x_hint": 444.6},
                 ],
             },
             {
@@ -112,14 +112,14 @@ STRUCTURE = [
                 "pairs": [
                     {
                         "label": "Domicilio",
-                        "value": "CL BRAVO MURILLO,20 PISO 3 - 2 - PALMAS DE GRAN CANARIA <LAS> < LAS PALMAS",
-                        "y_hint": 206.0,
+                        "value": "BARRIO ALTO,11 - CALATORAO < ZARAGOZA >",
+                        "y_hint": 207.1,
                     },
-                    {"label": "Tel", "value": "651816977", "y_hint": 206.0, "x_hint": 485.5},
+                    {"label": "Tel", "value": "634290661", "y_hint": 206.0, "x_hint": 398.2},
                     {"label": "Inscrita en", "value": "", "y_hint": 222.6},
                     {
                         "label": "Correo electrónico",
-                        "value": "FAMILIAJUSTINIANO@HOTMAIL.COM",
+                        "value": "ALBITRABAJO@GMAIL.COM",
                         "y_hint": 222.6,
                         "x_hint": 271.3,
                     },
@@ -214,7 +214,7 @@ STRUCTURE = [
                 "pairs": [
                     {
                         "label": "VENDEDOR/ INTERMEDIARIO FINANCIERO",
-                        "value": "MOTOR ARI S.A.",
+                        "value": "AUTOMOVILES SANCHEZ,S.A.U",
                         "y_hint": 418.6,
                     },
                     {
@@ -225,7 +225,7 @@ STRUCTURE = [
                     },
                     {
                         "label": "Domicilio social",
-                        "value": "CUZCO ,Nº 1 , 35008 LAS PALMAS",
+                        "value": "CTRA DE LOGROÑO ,Nº 32 , 50011 ZARAGOZA",
                         "y_hint": 435.3,
                     },
                 ],
@@ -252,17 +252,17 @@ STRUCTURE = [
                         "y_hint": 452.1,
                         "x_hint": 27.0,
                     },
-                    {"label": "Marca", "value": "NISSAN", "y_hint": 452.1, "x_hint": 280.7},
-                    {"label": "Modelo", "value": "QASHQAI", "y_hint": 452.1, "x_hint": 395.4},
+                    {"label": "Marca", "value": "HYUNDAI", "y_hint": 452.1, "x_hint": 280.7},
+                    {"label": "Modelo", "value": "KONA", "y_hint": 452.1, "x_hint": 395.4},
                     {
                         "label": "Nº fabricación o chasis",
-                        "value": "SJNFFAJ11U2980564",
+                        "value": "KMHK1812AEU951885",
                         "y_hint": 468.8,
                         "x_hint": 27.0,
                     },
                     {
                         "label": "Matrícula (en su caso)",
-                        "value": "3775LSK",
+                        "value": "",
                         "y_hint": 468.8,
                         "x_hint": 267.1,
                     },
@@ -286,19 +286,19 @@ STRUCTURE = [
         "rows": [
             {
                 "label": ("Precio de compraventa (valor contado)", 495.4),
-                "value": ("14.990,00", 496.7),
+                "value": ("21.233,24", 496.7),
             },
             {
                 "label": ("Desembolso inicial, (en su caso)", 516.2),
-                "value": ("0,00", 516.2),
+                "value": ("1.600,00", 516.2),
             },
             {
                 "label": ("Capital inicial del préstamo.", 533.3),
-                "value": ("14.990,00", 534.4),
+                "value": ("19.633,24", 534.4),
             },
             {
                 "label": ("Importe Total del Préstamo (Capital+Otros conceptos financiados)", 680.5),
-                "value": ("15.588,10", 680.5),
+                "value": ("20.408,75", 680.5),
             },
         ],
     },
@@ -316,7 +316,7 @@ STRUCTURE = [
                 "pairs": [
                     {
                         "label": "Financiadas: Comisión apertura",
-                        "value": "598,10",
+                        "value": "775,51",
                         "y_hint": 572.8,
                         "x_hint": 240.3,
                     },
@@ -415,77 +415,77 @@ STRUCTURE = [
     {
         "type": "noise",
         "id": "sidebar_paginacion",
-        "text": "1/29",
+        "text": "1/34",
         "kind": "page_number",
-        "y_hint": 271.9,
+        "y_hint": 274.3,
     },
     {
         "type": "noise",
         "id": "sidebar_pages_label",
-        "text": "- Pages:",
+        "text": "Pages:",
         "kind": "logalty_metadata",
-        "y_hint": 329.5,
+        "y_hint": 298.3,
     },
     {
         "type": "noise",
         "id": "sidebar_tz",
-        "text": "+0200",
+        "text": "+0100 -",
         "kind": "logalty_metadata",
-        "y_hint": 339.1,
+        "y_hint": 341.5,
     },
     {
         "type": "noise",
         "id": "sidebar_tz_name",
-        "text": "CEST",
+        "text": "CET",
         "kind": "logalty_metadata",
-        "y_hint": 367.9,
+        "y_hint": 370.3,
     },
     {
         "type": "noise",
         "id": "sidebar_hora",
-        "text": "20:05:47",
+        "text": "18:36:10",
         "kind": "logalty_metadata",
-        "y_hint": 391.9,
+        "y_hint": 389.5,
     },
     {
         "type": "noise",
-        "id": "sidebar_t",
-        "text": "T",
+        "id": "sidebar_date_t",
+        "text": "2022/11/18 T",
         "kind": "logalty_metadata",
-        "y_hint": 435.1,
+        "y_hint": 442.3,
     },
     {
         "type": "noise",
-        "id": "sidebar_date",
-        "text": "Date: 2024/05/09",
+        "id": "sidebar_date_label",
+        "text": "Date:",
         "kind": "logalty_metadata",
-        "y_hint": 497.5,
-    },
-    {
-        "type": "noise",
-        "id": "sidebar_dash",
-        "text": "-",
-        "kind": "logalty_metadata",
-        "y_hint": 526.3,
+        "y_hint": 495.1,
     },
     {
         "type": "noise",
         "id": "sidebar_guid",
-        "text": "Guid: 001001-0001-000000124609130.par",
+        "text": "001001-0001-000000080792820.par -",
         "kind": "logalty_metadata",
-        "y_hint": 689.5,
+        "y_hint": 533.5,
+    },
+    {
+        "type": "noise",
+        "id": "sidebar_guid_label",
+        "text": "Guid:",
+        "kind": "logalty_metadata",
+        "y_hint": 687.1,
     },
     {
         "type": "noise",
         "id": "sidebar_logalty",
         "text": "Logalty",
         "kind": "logalty_metadata",
-        "y_hint": 718.3,
+        "y_hint": 715.9,
     },
     {
         "type": "noise",
         "id": "footer_mod_code",
-        "text": "MOD. (M)006-720.0313-02 (29) - 16 de abril de 2024",
+        "text": "MOD. (M)006-720.0313-02 (24) - 10 de octubre de 2022",
         "kind": "page_number",
         "y_hint": 789.1,
     },

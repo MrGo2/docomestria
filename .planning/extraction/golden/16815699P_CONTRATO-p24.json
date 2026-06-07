@@ -1,0 +1,2971 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/16815699P_CONTRATO.pdf",
+  "page": 24,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "document_type": "Contrato de Préstamo Financiación Comprador Bienes Muebles (CaixaBank F_AS-5)",
+  "structure": [
+    {
+      "type": "section",
+      "id": "encabezado",
+      "title": "Encabezado modelo",
+      "y_hint": 22,
+      "children": [
+        {
+          "type": "kv_leaf",
+          "id": "modelo_asnef",
+          "label": "Nº Modelo",
+          "value": "F_AS-5",
+          "y_hint": 22,
+          "label_bbox": {
+            "x": 477.1977728,
+            "y": 24.61883039999998,
+            "w": 47.131177599999944,
+            "h": 9.630400000000009
+          },
+          "evidence": {
+            "text": "F_AS-5",
+            "row_y_hint": 22,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 527.1217664,
+                "y": 24.61883039999998,
+                "w": 30.306868800000075,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                3406,
+                3407,
+                3408,
+                3409,
+                3410,
+                3411
+              ],
+              "n_chars": 6,
+              "row_y": 24.61883039999998
+            },
+            "liteparse": {
+              "span_id": 0,
+              "bbox": {
+                "x": 477.1977844238281,
+                "y": 22.69287109375,
+                "w": 80.23086547851562,
+                "h": 11.54681396484375
+              },
+              "case_class": "Title",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/702",
+              "bbox": {
+                "x": 477.19777279999994,
+                "y": 26.18858560000001,
+                "w": 80.23086239999998,
+                "h": 32.39342546542059
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": {
+              "present": false
+            },
+            "value_extent": {
+              "boundary_type": "row_end",
+              "gap_pt": null
+            },
+            "cell_bbox": {
+              "x": 527.1217664,
+              "y": 24.61883039999998,
+              "w": 30.306868800000075,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 527.1217664,
+            "y": 24.61883039999998,
+            "w": 30.306868800000075,
+            "h": 9.630400000000009
+          }
+        },
+        {
+          "type": "kv_leaf",
+          "id": "hoja_numero",
+          "label": "Hoja nº",
+          "value": "24/24",
+          "y_hint": 47,
+          "label_bbox": {
+            "x": 477.19777279999994,
+            "y": 37.3309584000001,
+            "w": 32.011449599999935,
+            "h": 9.630400000000009
+          },
+          "evidence": {
+            "text": "24/24",
+            "row_y_hint": 47,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 493.20349759999993,
+                "y": 49.811956800000075,
+                "w": 23.979696000000047,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                3424,
+                3425,
+                3426,
+                3427,
+                3428
+              ],
+              "n_chars": 5,
+              "row_y": 49.811956800000075
+            },
+            "liteparse": {
+              "span_id": 2,
+              "bbox": {
+                "x": 477.19775390625,
+                "y": 47.88604736328125,
+                "w": 42.65301513671875,
+                "h": 11.54681396484375
+              },
+              "case_class": "none",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/702",
+              "bbox": {
+                "x": 477.19777279999994,
+                "y": 26.18858560000001,
+                "w": 80.23086239999998,
+                "h": 32.39342546542059
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": {
+              "present": false
+            },
+            "value_extent": {
+              "boundary_type": "continuation",
+              "gap_pt": 0.0,
+              "next_text": "......"
+            },
+            "cell_bbox": {
+              "x": 493.20349759999993,
+              "y": 49.811956800000075,
+              "w": 23.979696000000047,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 493.20349759999993,
+            "y": 49.811956800000075,
+            "w": 23.979696000000047,
+            "h": 9.630400000000009
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "modelo_dgrn_disclaimer",
+          "label": "Modelo aprobado ASNEF/DGRN",
+          "text": "Modelo aprobado a la ASNEF por la Dirección General de los Registros y del Notariado (DGRN). (Resolución de 04/02/2000. Modificado por Resoluciones de DGRN de 23/05/2006, de 29/09/2011, de 02/07/2013, de 23/01/2014, de 07/10/2019, de 07/06/2021 y de 22/09/2022",
+          "y_hint": 78,
+          "bbox": {
+            "x": 79.65485382080078,
+            "y": 78.39501953125,
+            "w": 413.0574951171875,
+            "h": 11.54681396484375
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Modelo aprobado a la ASNEF por la Dirección General de los Registros y del Notariado (DGRN). (Resolución de 04/02/2000. Modificado por Resoluciones de DGRN de 23/05/2006, de 29/09/2011, de 02/07/2013, de 23/01/2014, de 07/10/2019, de 07/06/2021 y de 22/09/2022",
+              "row_y_hint": 78,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 3,
+                "bbox": {
+                  "x": 79.65485382080078,
+                  "y": 78.39501953125,
+                  "w": 413.0574951171875,
+                  "h": 11.54681396484375
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/704",
+                "bbox": {
+                  "x": 74.10775039999999,
+                  "y": 81.89081920000001,
+                  "w": 424.1324463999999,
+                  "h": 32.39342546542059
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 79.65485382080078,
+                "y": 78.39501953125,
+                "w": 413.0574951171875,
+                "h": 11.54681396484375
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "Modelo aprobado ASNEF/DGRN",
+              "engine_agreement": 2
+            }
+          }
+        }
+      ],
+      "title_bbox": null,
+      "container_bbox": {
+        "x": 79.65485382080078,
+        "y": 24.61883039999998,
+        "w": 477.77378137919925,
+        "h": 65.32300309609377
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "Encabezado modelo",
+          "pdfplumber": null,
+          "liteparse": null,
+          "docling": null,
+          "bbox": null,
+          "engine_agreement": 0
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 79.65485382080078,
+            "y": 24.61883039999998,
+            "w": 477.77378137919925,
+            "h": 65.32300309609377
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 0
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 3,
+          "child_type_distribution": {
+            "kv_leaf": 2,
+            "prose_block": 1
+          },
+          "path": "Encabezado modelo"
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "anexo_iv_otros_pactos",
+      "title": "ANEXO IV - OTROS PACTOS",
+      "y_hint": 129,
+      "children": [
+        {
+          "type": "kv_leaf",
+          "id": "anexo_impreso_numero",
+          "label": "Impreso nº",
+          "value": "6249596",
+          "y_hint": 159,
+          "label_bbox": {
+            "x": 292.8911776,
+            "y": 161.67868320000002,
+            "w": 47.64158879999991,
+            "h": 9.630400000000009
+          },
+          "evidence": {
+            "text": "6249596",
+            "row_y_hint": 159,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 342.9114752,
+                "y": 161.67868320000002,
+                "w": 30.94247519999999,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                309,
+                310,
+                311,
+                312,
+                313,
+                314,
+                315
+              ],
+              "n_chars": 7,
+              "row_y": 161.67868320000002
+            },
+            "liteparse": {
+              "span_id": 8,
+              "bbox": {
+                "x": 26.95730972290039,
+                "y": 159.75274658203125,
+                "w": 346.8966064453125,
+                "h": 11.54681396484375
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/706",
+              "bbox": {
+                "x": 26.957312,
+                "y": 163.24843840000005,
+                "w": 525.4057328000001,
+                "h": 20.005872952978052
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": {
+              "present": false
+            },
+            "value_extent": {
+              "boundary_type": "continuation",
+              "gap_pt": 1.049713600000075,
+              "next_text": "USTINIAN"
+            },
+            "cell_bbox": {
+              "x": 342.9114752,
+              "y": 161.67868320000002,
+              "w": 30.94247519999999,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 342.9114752,
+            "y": 161.67868320000002,
+            "w": 30.94247519999999,
+            "h": 9.630400000000009
+          }
+        },
+        {
+          "type": "kv_leaf",
+          "id": "anexo_titular_nombre",
+          "label": "Titular",
+          "value": "LUIS FERNANDO JUSTINIANO JUSTINIANO",
+          "y_hint": 172,
+          "evidence": {
+            "text": "LUIS FERNANDO JUSTINIANO JUSTINIANO",
+            "row_y_hint": 172,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 263.4028928,
+                "y": 174.39081120000003,
+                "w": 151.81362560000002,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                387,
+                388,
+                389,
+                390,
+                391,
+                392,
+                393,
+                394,
+                395,
+                396,
+                397,
+                398,
+                399,
+                400,
+                401,
+                402,
+                403,
+                404,
+                405,
+                406
+              ],
+              "n_chars": 35,
+              "row_y": 174.39081120000003
+            },
+            "liteparse": {
+              "span_id": 10,
+              "bbox": {
+                "x": 26.95732879638672,
+                "y": 172.46478271484375,
+                "w": 388.2591552734375,
+                "h": 11.681640625
+              },
+              "case_class": "UPPER",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/706",
+              "bbox": {
+                "x": 26.957312,
+                "y": 163.24843840000005,
+                "w": 525.4057328000001,
+                "h": 20.005872952978052
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": null,
+            "value_extent": null,
+            "cell_bbox": {
+              "x": 263.4028928,
+              "y": 174.39081120000003,
+              "w": 151.81362560000002,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 263.4028928,
+            "y": 174.39081120000003,
+            "w": 151.81362560000002,
+            "h": 9.630400000000009
+          }
+        }
+      ],
+      "title_bbox": null,
+      "container_bbox": {
+        "x": 263.4028928,
+        "y": 161.67868320000002,
+        "w": 151.81362560000002,
+        "h": 22.342528000000016
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "ANEXO IV - OTROS PACTOS",
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 6,
+            "bbox": {
+              "x": 266.869873046875,
+              "y": 129.012451171875,
+              "w": 38.492645263671875,
+              "h": 11.54681396484375
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 10.0
+          },
+          "docling": null,
+          "bbox": {
+            "x": 266.869873046875,
+            "y": 129.012451171875,
+            "w": 38.492645263671875,
+            "h": 11.54681396484375
+          },
+          "engine_agreement": 1
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 263.4028928,
+            "y": 161.67868320000002,
+            "w": 151.81362560000002,
+            "h": 22.342528000000016
+          },
+          "pdfplumber_rect": null,
+          "docling_block": {
+            "self_ref": "#/texts/706",
+            "label": "text",
+            "bbox": {
+              "x": 26.957312,
+              "y": 163.24843840000005,
+              "w": 525.4057328000001,
+              "h": 20.005872952978052
+            }
+          },
+          "edges_inside": {
+            "vertical": 628,
+            "horizontal": 628
+          },
+          "colons_inside": 0,
+          "container_score": 2
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 2,
+          "child_type_distribution": {
+            "kv_leaf": 2
+          },
+          "path": "ANEXO IV - OTROS PACTOS"
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "a14_duracion",
+      "title": "A.14.- DURACIÓN",
+      "y_hint": 200,
+      "children": [
+        {
+          "type": "prose_block",
+          "id": "a14_duracion_prose",
+          "label": "A.14 Duración - texto",
+          "text": "El presente contrato tiene una duración especificada en las Condiciones Particulares al referirse a los vencimientos y c anticipada supondrá también la finalización de este contrato.",
+          "y_hint": 213,
+          "bbox": {
+            "x": 26.957475662231445,
+            "y": 225.62469482421875,
+            "w": 200.05230712890625,
+            "h": 11.54681396484375
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "El presente contrato tiene una duración especificada en las Condiciones Particulares al referirse a los vencimientos y c anticipada supondrá también la finalización de este contrato.",
+              "row_y_hint": 213,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 13,
+                "bbox": {
+                  "x": 26.957475662231445,
+                  "y": 225.62469482421875,
+                  "w": 200.05230712890625,
+                  "h": 11.54681396484375
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": null,
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957475662231445,
+                "y": 225.62469482421875,
+                "w": 200.05230712890625,
+                "h": 11.54681396484375
+              },
+              "engine_agreement": 1
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "A.14 Duración - texto",
+              "engine_agreement": 1
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 26.957312,
+        "y": 202.35749280000005,
+        "w": 66.4690208,
+        "h": 9.630400000000009
+      },
+      "container_bbox": {
+        "x": 26.957475662231445,
+        "y": 225.62469482421875,
+        "w": 200.05230712890625,
+        "h": 11.54681396484375
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "A.14.- DURACIÓN",
+          "pdfplumber": {
+            "bbox": {
+              "x": 26.957312,
+              "y": 202.35749280000005,
+              "w": 66.4690208,
+              "h": 9.630400000000009
+            },
+            "char_indices": [
+              422,
+              423,
+              424,
+              425,
+              426,
+              427,
+              428,
+              429,
+              430,
+              431,
+              432,
+              433,
+              434,
+              435
+            ],
+            "n_chars": 14,
+            "row_y": 202.35749280000005
+          },
+          "liteparse": {
+            "span_id": 11,
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 200.43145751953125,
+              "w": 66.46902465820312,
+              "h": 11.546875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 10.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/707",
+            "bbox": {
+              "x": 26.957312,
+              "y": 203.92724800000008,
+              "w": 66.4690208,
+              "h": 7.200299065420495
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 26.957312,
+            "y": 202.35749280000005,
+            "w": 66.4690208,
+            "h": 9.630400000000009
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 26.957475662231445,
+            "y": 225.62469482421875,
+            "w": 200.05230712890625,
+            "h": 11.54681396484375
+          },
+          "pdfplumber_rect": null,
+          "docling_block": {
+            "self_ref": "#/texts/708",
+            "label": "text",
+            "bbox": {
+              "x": 26.957312,
+              "y": 216.63937599999997,
+              "w": 528.2563312000001,
+              "h": 19.681297465420585
+            }
+          },
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 1
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 1,
+          "child_type_distribution": {
+            "prose_block": 1
+          },
+          "path": "A.14.- DURACIÓN"
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "a15_procedimiento_extrajudicial",
+      "title": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+      "y_hint": 251,
+      "children": [
+        {
+          "type": "prose_block",
+          "id": "a15_intro_sac",
+          "label": "A.15 Intro SAC",
+          "text": "CaixaBank Payments & Consumerque no está adherida a la junta arbitral de consumo, tiene establecido un Servicio de Atención al Cliente (SAC), de conformidad con lo previsto al efecto en la normativa vigente, a quien podrán dirigirse las reclamaciones y quejas:",
+          "y_hint": 263,
+          "bbox": null,
+          "evidence": {
+            "text_signal": {
+              "text": "CaixaBank Payments & Consumerque no está adherida a la junta arbitral de consumo, tiene establecido un Servicio de Atención al Cliente (SAC), de conformidad con lo previsto al efecto en la normativa vigente, a quien podrán dirigirse las reclamaciones y quejas:",
+              "row_y_hint": 263,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": null,
+              "docling": null,
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "A.15 Intro SAC",
+              "engine_agreement": 0
+            }
+          }
+        },
+        {
+          "type": "kv_leaf",
+          "id": "sac_domicilio_postal",
+          "label": "SAC - Correo postal",
+          "value": "calle Pintor Sorolla, 2-4, 46002, Valencia",
+          "y_hint": 289,
+          "evidence": {
+            "text": "calle Pintor Sorolla, 2-4, 46002, Valencia",
+            "row_y_hint": 289,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 317.7183487999999,
+                "y": 291.3423888,
+                "w": 133.54475679999985,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                1034,
+                1035,
+                1036,
+                1037,
+                1038,
+                1039,
+                1040,
+                1041,
+                1042,
+                1043,
+                1044,
+                1045,
+                1046,
+                1047,
+                1048,
+                1049,
+                1050,
+                1051,
+                1052,
+                1053
+              ],
+              "n_chars": 37,
+              "row_y": 288.7399999999992
+            },
+            "liteparse": {
+              "span_id": 17,
+              "bbox": {
+                "x": 26.957534790039062,
+                "y": 289.41644287109375,
+                "w": 426.32806396484375,
+                "h": 11.54681396484375
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/711",
+              "bbox": {
+                "x": 26.957311999999845,
+                "y": 292.912144,
+                "w": 426.3281775999999,
+                "h": 7.200299065420609
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": null,
+            "value_extent": null,
+            "cell_bbox": {
+              "x": 317.7183487999999,
+              "y": 291.3423888,
+              "w": 133.54475679999985,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 317.7183487999999,
+            "y": 291.3423888,
+            "w": 133.54475679999985,
+            "h": 9.630400000000009
+          }
+        },
+        {
+          "type": "kv_leaf",
+          "id": "sac_web_formulario",
+          "label": "SAC - Formulario web",
+          "value": "http://www.caixabankpc.com",
+          "y_hint": 315,
+          "evidence": {
+            "text": "http://www.caixabankpc.com",
+            "row_y_hint": 315,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 29.268608000000174,
+                "y": 317.22890399999994,
+                "w": 99.6553792,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                1193,
+                1194,
+                1195,
+                1196,
+                1197,
+                1198,
+                1199,
+                1200,
+                1201,
+                1202,
+                1203,
+                1204,
+                1205,
+                1206,
+                1207,
+                1208,
+                1209,
+                1210,
+                1211,
+                1212
+              ],
+              "n_chars": 26,
+              "row_y": 317.22890399999994
+            },
+            "liteparse": {
+              "span_id": 19,
+              "bbox": {
+                "x": 26.95735740661621,
+                "y": 315.3028564453125,
+                "w": 106.44481658935547,
+                "h": 11.54681396484375
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/712",
+              "bbox": {
+                "x": 26.95731199999974,
+                "y": 305.624272,
+                "w": 528.4104176000004,
+                "h": 20.37468626542045
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": null,
+            "value_extent": null,
+            "cell_bbox": {
+              "x": 29.268608000000174,
+              "y": 317.22890399999994,
+              "w": 99.6553792,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 29.268608000000174,
+            "y": 317.22890399999994,
+            "w": 99.6553792,
+            "h": 9.630400000000009
+          }
+        },
+        {
+          "type": "kv_leaf",
+          "id": "sac_email",
+          "label": "SAC - Correo electrónico",
+          "value": "servicio.cliente@caixabank.com",
+          "y_hint": 328,
+          "evidence": {
+            "text": "servicio.cliente@caixabank.com",
+            "row_y_hint": 328,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 229.65797120000025,
+                "y": 329.94103199999984,
+                "w": 108.20717439999987,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                1273,
+                1274,
+                1275,
+                1276,
+                1277,
+                1278,
+                1279,
+                1280,
+                1281,
+                1282,
+                1283,
+                1284,
+                1285,
+                1286,
+                1287,
+                1288,
+                1289,
+                1290,
+                1291,
+                1292
+              ],
+              "n_chars": 30,
+              "row_y": 327.1399999999993
+            },
+            "liteparse": {
+              "span_id": 20,
+              "bbox": {
+                "x": 26.957365036010742,
+                "y": 328.0150146484375,
+                "w": 310.90771484375,
+                "h": 11.54681396484375
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/713",
+              "bbox": {
+                "x": 26.95731200000016,
+                "y": 331.5107871999998,
+                "w": 310.90783359999995,
+                "h": 7.200299065420609
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": null,
+            "value_extent": null,
+            "cell_bbox": {
+              "x": 229.65797120000025,
+              "y": 329.94103199999984,
+              "w": 108.20717439999987,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 229.65797120000025,
+            "y": 329.94103199999984,
+            "w": 108.20717439999987,
+            "h": 9.630400000000009
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "a15_otros_canales",
+          "label": "A.15 Otros canales SAC",
+          "text": "· mediante escrito entregado en cualquiera de las oficinas de CaixaBank, S.A. · o aquel otro que en el futuro se comunique debidamente a tal fin.",
+          "y_hint": 340,
+          "bbox": {
+            "x": 26.957271575927734,
+            "y": 340.7271423339844,
+            "w": 255.29229736328125,
+            "h": 11.546844482421875
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "· mediante escrito entregado en cualquiera de las oficinas de CaixaBank, S.A. · o aquel otro que en el futuro se comunique debidamente a tal fin.",
+              "row_y_hint": 340,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 21,
+                "bbox": {
+                  "x": 26.957271575927734,
+                  "y": 340.7271423339844,
+                  "w": 255.29229736328125,
+                  "h": 11.546844482421875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/714",
+                "bbox": {
+                  "x": 26.95731200000012,
+                  "y": 344.2229151999999,
+                  "w": 255.29227360000016,
+                  "h": 7.200299065420552
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957271575927734,
+                "y": 340.7271423339844,
+                "w": 255.29229736328125,
+                "h": 11.546844482421875
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "A.15 Otros canales SAC",
+              "engine_agreement": 2
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "a15_recurso_comisionados",
+          "label": "A.15 Recurso a Comisionados",
+          "text": "Si transcurren los plazos que indique la normativa de aplicación desde la presentación del escrito de reclamación o queja sin obtener resolución o en caso de disconformidad con la resolución del SAC, el reclamante podrá dirigirse a cualquiera de los Comisionados por la Defensa del Cliente de Servicios Financieros –o aquella otra instancia que, en su caso, llegado el momento, reglamentariamente sustituya a éstos-, siendo imprescindible haber presentado previamente la reclamación ante el Servicio de Atención al Cliente de CaixaBank Payments & Consumer.",
+          "y_hint": 365,
+          "bbox": {
+            "x": 26.957387924194336,
+            "y": 365.92022705078125,
+            "w": 528.2275390625,
+            "h": 11.546844482421875
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Si transcurren los plazos que indique la normativa de aplicación desde la presentación del escrito de reclamación o queja sin obtener resolución o en caso de disconformidad con la resolución del SAC, el reclamante podrá dirigirse a cualquiera de los Comisionados por la Defensa del Cliente de Servicios Financieros –o aquella otra instancia que, en su caso, llegado el momento, reglamentariamente sustituya a éstos-, siendo imprescindible haber presentado previamente la reclamación ante el Servicio de Atención al Cliente de CaixaBank Payments & Consumer.",
+              "row_y_hint": 365,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 23,
+                "bbox": {
+                  "x": 26.957387924194336,
+                  "y": 365.92022705078125,
+                  "w": 528.2275390625,
+                  "h": 11.546844482421875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": null,
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957387924194336,
+                "y": 365.92022705078125,
+                "w": 528.2275390625,
+                "h": 11.546844482421875
+              },
+              "engine_agreement": 1
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "A.15 Recurso a Comisionados",
+              "engine_agreement": 1
+            }
+          }
+        },
+        {
+          "type": "kv_leaf",
+          "id": "banco_espana_domicilio",
+          "label": "Banco de España - Domicilio",
+          "value": "Madrid, calle Alcalá, 50",
+          "y_hint": 417,
+          "evidence": {
+            "text": "Madrid, calle Alcalá, 50",
+            "row_y_hint": 417,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 406.00985599999973,
+                "y": 419.1570576,
+                "w": 83.69780639999988,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                1980,
+                1981,
+                1982,
+                1983,
+                1984,
+                1985,
+                1986,
+                1987,
+                1988,
+                1989,
+                1990,
+                1991,
+                1992,
+                1993,
+                1994,
+                1995,
+                1996,
+                1997,
+                1998,
+                1999
+              ],
+              "n_chars": 21,
+              "row_y": 418.3399999999995
+            },
+            "liteparse": {
+              "span_id": 27,
+              "bbox": {
+                "x": 26.957300186157227,
+                "y": 417.23101806640625,
+                "w": 528.3140869140625,
+                "h": 11.681671142578125
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/717",
+              "bbox": {
+                "x": 26.95731199999963,
+                "y": 420.72681279999995,
+                "w": 528.3141136,
+                "h": 20.14355666542059
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": null,
+            "value_extent": null,
+            "cell_bbox": {
+              "x": 406.00985599999973,
+              "y": 419.1570576,
+              "w": 83.69780639999988,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 406.00985599999973,
+            "y": 419.1570576,
+            "w": 83.69780639999988,
+            "h": 9.630400000000009
+          }
+        },
+        {
+          "type": "kv_leaf",
+          "id": "banco_espana_web",
+          "label": "Banco de España - Página web",
+          "value": "www.bde.es",
+          "y_hint": 430,
+          "evidence": {
+            "text": "www.bde.es",
+            "row_y_hint": 430,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 41.518476799999625,
+                "y": 432.10031519999995,
+                "w": 43.56792959999998,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026,
+                2027,
+                2028
+              ],
+              "n_chars": 10,
+              "row_y": 432.10031519999995
+            },
+            "liteparse": {
+              "span_id": 28,
+              "bbox": {
+                "x": 26.95724105834961,
+                "y": 430.17425537109375,
+                "w": 60.2188835144043,
+                "h": 11.546844482421875
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/717",
+              "bbox": {
+                "x": 26.95731199999963,
+                "y": 420.72681279999995,
+                "w": 528.3141136,
+                "h": 20.14355666542059
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": null,
+            "value_extent": null,
+            "cell_bbox": {
+              "x": 41.518476799999625,
+              "y": 432.10031519999995,
+              "w": 43.56792959999998,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 41.518476799999625,
+            "y": 432.10031519999995,
+            "w": 43.56792959999998,
+            "h": 9.630400000000009
+          }
+        },
+        {
+          "type": "kv_leaf",
+          "id": "telefono_atencion_cliente",
+          "label": "Teléfono atención al cliente",
+          "value": "900 101 601",
+          "y_hint": 442,
+          "evidence": {
+            "text": "900 101 601",
+            "row_y_hint": 442,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 469.57049599999937,
+                "y": 444.81244319999996,
+                "w": 43.2501264,
+                "h": 9.630400000000009
+              },
+              "char_indices": [
+                2141,
+                2142,
+                2143,
+                2144,
+                2145,
+                2146,
+                2147,
+                2148,
+                2149
+              ],
+              "n_chars": 9,
+              "row_y": 442.3399999999996
+            },
+            "liteparse": {
+              "span_id": 29,
+              "bbox": {
+                "x": 26.957237243652344,
+                "y": 442.88641357421875,
+                "w": 528.2276000976562,
+                "h": 11.546844482421875
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 10.0
+            },
+            "docling": {
+              "cell_ref": "#/texts/718",
+              "bbox": {
+                "x": 26.957311999999607,
+                "y": 446.38219839999994,
+                "w": 528.22744,
+                "h": 19.91242706542056
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": null,
+            "colon_signal": null,
+            "value_extent": null,
+            "cell_bbox": {
+              "x": 469.57049599999937,
+              "y": 444.81244319999996,
+              "w": 43.2501264,
+              "h": 9.630400000000009
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 469.57049599999937,
+            "y": 444.81244319999996,
+            "w": 43.2501264,
+            "h": 9.630400000000009
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 26.957312,
+        "y": 252.97487520000004,
+        "w": 344.94166720000004,
+        "h": 9.630400000000009
+      },
+      "container_bbox": {
+        "x": 26.957271575927734,
+        "y": 291.3423888,
+        "w": 528.2276554107666,
+        "h": 163.1004544
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+          "pdfplumber": {
+            "bbox": {
+              "x": 26.957312,
+              "y": 252.97487520000004,
+              "w": 344.94166720000004,
+              "h": 9.630400000000009
+            },
+            "char_indices": [
+              626,
+              627,
+              628,
+              629,
+              630,
+              631,
+              632,
+              633,
+              634,
+              635,
+              636,
+              637,
+              638,
+              639,
+              640,
+              641,
+              642,
+              643,
+              644,
+              645
+            ],
+            "n_chars": 66,
+            "row_y": 252.97487520000004
+          },
+          "liteparse": null,
+          "docling": {
+            "cell_ref": "#/texts/709",
+            "bbox": {
+              "x": 26.957312,
+              "y": 254.54463040000007,
+              "w": 344.94166720000004,
+              "h": 7.200299065420495
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 26.957312,
+            "y": 252.97487520000004,
+            "w": 344.94166720000004,
+            "h": 9.630400000000009
+          },
+          "engine_agreement": 2
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 26.957271575927734,
+            "y": 291.3423888,
+            "w": 528.2276554107666,
+            "h": 163.1004544
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 1,
+          "container_score": 0
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 9,
+          "child_type_distribution": {
+            "prose_block": 3,
+            "kv_leaf": 6
+          },
+          "path": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR"
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "a16_condicion_suspensiva_resolucion",
+      "title": "A.16.- CONDICIÓN SUSPENSIVA Y MOTIVO ADICIONAL DE RESOLUCIÓN DEL PRESENTE CONTRATO",
+      "y_hint": 481,
+      "children": [
+        {
+          "type": "prose_block",
+          "id": "a16_a_condicion_suspensiva",
+          "label": "a) Condición suspensiva",
+          "text": "a) Condición suspensiva para la validezy eficacia del presente contrato. Este contrato será válido y eficaz y, por tanto, surtirán efectos jurídicos del mismo, a partir del momento en que el Fi información y/o documentación del prestatario que este considere necesaria y se le requiera en relación a sus datos pers socio-económicos.",
+          "y_hint": 493,
+          "bbox": {
+            "x": 26.95730972290039,
+            "y": 493.5037536621094,
+            "w": 6.606456756591797,
+            "h": 11.546844482421875
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "a) Condición suspensiva para la validezy eficacia del presente contrato. Este contrato será válido y eficaz y, por tanto, surtirán efectos jurídicos del mismo, a partir del momento en que el Fi información y/o documentación del prestatario que este considere necesaria y se le requiera en relación a sus datos pers socio-económicos.",
+              "row_y_hint": 493,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 32,
+                "bbox": {
+                  "x": 26.95730972290039,
+                  "y": 493.5037536621094,
+                  "w": 6.606456756591797,
+                  "h": 11.546844482421875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": null,
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.95730972290039,
+                "y": 493.5037536621094,
+                "w": 6.606456756591797,
+                "h": 11.546844482421875
+              },
+              "engine_agreement": 1
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "a) Condición suspensiva",
+              "engine_agreement": 1
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "a16_b_causa_resolucion",
+          "label": "b) Causa de resolución",
+          "text": "b) Causa de resolución de este contrato. Sin perjuicio de lo estipulado en las restantes condiciones de este contrato y en la Ley, el Financiador podrá dar por r supuesto de que los datos personales, identificativos y/o socio-económicos facilitados por el prestatario, que constituy de esta financiación, no fueran veraces. En este caso, el prestatario quedará obligado a la reintegración de la totalida carácter inmediato a la comunicación de la resolución del presente contrato.",
+          "y_hint": 544,
+          "bbox": {
+            "x": 26.957529067993164,
+            "y": 544.352294921875,
+            "w": 6.837583541870117,
+            "h": 11.546875
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "b) Causa de resolución de este contrato. Sin perjuicio de lo estipulado en las restantes condiciones de este contrato y en la Ley, el Financiador podrá dar por r supuesto de que los datos personales, identificativos y/o socio-económicos facilitados por el prestatario, que constituy de esta financiación, no fueran veraces. En este caso, el prestatario quedará obligado a la reintegración de la totalida carácter inmediato a la comunicación de la resolución del presente contrato.",
+              "row_y_hint": 544,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 37,
+                "bbox": {
+                  "x": 26.957529067993164,
+                  "y": 544.352294921875,
+                  "w": 6.837583541870117,
+                  "h": 11.546875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/722",
+                "bbox": {
+                  "x": 26.957311999999504,
+                  "y": 547.8480927999999,
+                  "w": 6.837584000000007,
+                  "h": 7.200299065420722
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957529067993164,
+                "y": 544.352294921875,
+                "w": 6.837583541870117,
+                "h": 11.546875
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "b) Causa de resolución",
+              "engine_agreement": 2
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 26.957312,
+        "y": 482.9488272,
+        "w": 379.2162607999998,
+        "h": 9.630400000000009
+      },
+      "container_bbox": {
+        "x": 26.95730972290039,
+        "y": 493.5037536621094,
+        "w": 6.837802886962891,
+        "h": 62.395416259765625
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "A.16.- CONDICIÓN SUSPENSIVA Y MOTIVO ADICIONAL DE RESOLUCIÓN DEL PRESENTE CONTRATO",
+          "pdfplumber": {
+            "bbox": {
+              "x": 26.957312,
+              "y": 482.9488272,
+              "w": 379.2162607999998,
+              "h": 9.630400000000009
+            },
+            "char_indices": [
+              2187,
+              2188,
+              2189,
+              2190,
+              2191,
+              2192,
+              2193,
+              2194,
+              2195,
+              2196,
+              2197,
+              2198,
+              2199,
+              2200,
+              2201,
+              2202,
+              2203,
+              2204,
+              2205,
+              2206
+            ],
+            "n_chars": 72,
+            "row_y": 480.73999999999967
+          },
+          "liteparse": {
+            "span_id": 31,
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 481.02276611328125,
+              "w": 379.21624755859375,
+              "h": 11.546844482421875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 10.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/719",
+            "bbox": {
+              "x": 26.957312,
+              "y": 484.51858239999996,
+              "w": 379.2162607999998,
+              "h": 7.200299065420609
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 26.957312,
+            "y": 482.9488272,
+            "w": 379.2162607999998,
+            "h": 9.630400000000009
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 26.95730972290039,
+            "y": 493.5037536621094,
+            "w": 6.837802886962891,
+            "h": 62.395416259765625
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 0
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 2,
+          "child_type_distribution": {
+            "prose_block": 2
+          },
+          "path": "A.16.- CONDICIÓN SUSPENSIVA Y MOTIVO ADICIONAL DE RESOLUCIÓN DEL PRESENTE CONTRATO"
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "firmas",
+      "title": "Firmas",
+      "y_hint": 724,
+      "children": [
+        {
+          "type": "signature_placeholder",
+          "id": "firma_prestatario",
+          "label": "Prestatario/s",
+          "value": "",
+          "y_hint": 724,
+          "label_bbox": {
+            "x": 32.2732928,
+            "y": 726.0971664,
+            "w": 54.1517392,
+            "h": 9.630400000000009
+          },
+          "bbox": {
+            "x": 32.2732928,
+            "y": 726.0971664,
+            "w": 54.1517392,
+            "h": 9.630400000000009
+          },
+          "evidence": {
+            "label_signal": {
+              "text": "Prestatario/s",
+              "row_y_hint": 724,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 32.2732928,
+                  "y": 726.0971664,
+                  "w": 54.1517392,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  3169,
+                  3170,
+                  3171,
+                  3172,
+                  3173,
+                  3174,
+                  3175,
+                  3176,
+                  3177,
+                  3178,
+                  3179,
+                  3180,
+                  3181
+                ],
+                "n_chars": 13,
+                "row_y": 725.54
+              },
+              "liteparse": {
+                "span_id": 43,
+                "bbox": {
+                  "x": 32.273292541503906,
+                  "y": 724.171142578125,
+                  "w": 54.15172576904297,
+                  "h": 11.54681396484375
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/725",
+                "bbox": {
+                  "x": 32.2732928,
+                  "y": 727.6669216,
+                  "w": 54.151739200000016,
+                  "h": 7.200299065420495
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 32.2732928,
+                "y": 726.0971664,
+                "w": 54.1517392,
+                "h": 9.630400000000009
+              },
+              "engine_agreement": 3
+            },
+            "status": "empty",
+            "structural_signals": {
+              "kind": "signature_placeholder"
+            }
+          }
+        },
+        {
+          "type": "signature_placeholder",
+          "id": "firma_fiador",
+          "label": "Fiador/es",
+          "value": "",
+          "y_hint": 724,
+          "label_bbox": {
+            "x": 299.9213696,
+            "y": 726.0971664,
+            "w": 39.783182400000044,
+            "h": 9.630400000000009
+          },
+          "bbox": {
+            "x": 299.9213696,
+            "y": 726.0971664,
+            "w": 39.783182400000044,
+            "h": 9.630400000000009
+          },
+          "evidence": {
+            "label_signal": {
+              "text": "Fiador/es",
+              "row_y_hint": 724,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 299.9213696,
+                  "y": 726.0971664,
+                  "w": 39.783182400000044,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  3182,
+                  3183,
+                  3184,
+                  3185,
+                  3186,
+                  3187,
+                  3188,
+                  3189,
+                  3190
+                ],
+                "n_chars": 9,
+                "row_y": 725.54
+              },
+              "liteparse": {
+                "span_id": 44,
+                "bbox": {
+                  "x": 299.9213562011719,
+                  "y": 724.171142578125,
+                  "w": 39.783203125,
+                  "h": 11.54681396484375
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/727",
+                "bbox": {
+                  "x": 299.9213696,
+                  "y": 727.6669216,
+                  "w": 39.78318239999999,
+                  "h": 7.200299065420495
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 299.9213696,
+                "y": 726.0971664,
+                "w": 39.783182400000044,
+                "h": 9.630400000000009
+              },
+              "engine_agreement": 3
+            },
+            "status": "empty",
+            "structural_signals": {
+              "kind": "signature_placeholder"
+            }
+          }
+        },
+        {
+          "type": "signature_placeholder",
+          "id": "firma_financiador",
+          "label": "Financiador",
+          "value": "",
+          "y_hint": 724,
+          "label_bbox": {
+            "x": 449.92448,
+            "y": 726.0971664,
+            "w": 50.029927999999984,
+            "h": 9.630400000000009
+          },
+          "bbox": {
+            "x": 449.92448,
+            "y": 726.0971664,
+            "w": 50.029927999999984,
+            "h": 9.630400000000009
+          },
+          "evidence": {
+            "label_signal": {
+              "text": "Financiador",
+              "row_y_hint": 724,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 449.92448,
+                  "y": 726.0971664,
+                  "w": 50.029927999999984,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  3191,
+                  3192,
+                  3193,
+                  3194,
+                  3195,
+                  3196,
+                  3197,
+                  3198,
+                  3199,
+                  3200,
+                  3201
+                ],
+                "n_chars": 11,
+                "row_y": 725.54
+              },
+              "liteparse": {
+                "span_id": 45,
+                "bbox": {
+                  "x": 449.9244689941406,
+                  "y": 724.171142578125,
+                  "w": 50.0299072265625,
+                  "h": 11.54681396484375
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/727",
+                "bbox": {
+                  "x": 299.9213696,
+                  "y": 727.6669216,
+                  "w": 39.78318239999999,
+                  "h": 7.200299065420495
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 449.92448,
+                "y": 726.0971664,
+                "w": 50.029927999999984,
+                "h": 9.630400000000009
+              },
+              "engine_agreement": 3
+            },
+            "status": "empty",
+            "structural_signals": {
+              "kind": "signature_placeholder"
+            }
+          }
+        }
+      ],
+      "title_bbox": null,
+      "container_bbox": {
+        "x": 32.2732928,
+        "y": 726.0971664,
+        "w": 467.6811152,
+        "h": 9.630400000000009
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "Firmas",
+          "pdfplumber": null,
+          "liteparse": null,
+          "docling": null,
+          "bbox": null,
+          "engine_agreement": 0
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 32.2732928,
+            "y": 726.0971664,
+            "w": 467.6811152,
+            "h": 9.630400000000009
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 0
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 3,
+          "child_type_distribution": {
+            "signature_placeholder": 3
+          },
+          "path": "Firmas"
+        }
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_pages_marker",
+      "text": "24/29",
+      "kind": "logalty_metadata",
+      "y_hint": 269,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 269.54046630859375,
+        "w": 9.0560302734375,
+        "h": 23.99993896484375
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "24/29",
+          "row_y_hint": 269,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 59,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 269.54046630859375,
+              "w": 9.0560302734375,
+              "h": 23.99993896484375
+            },
+            "case_class": "none",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/703",
+            "bbox": {
+              "x": 583.804,
+              "y": 269.5399999999995,
+              "w": 5.618213036565976,
+              "h": 484.8000000000004
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 269.54046630859375,
+            "w": 9.0560302734375,
+            "h": 23.99993896484375
+          },
+          "engine_agreement": 2
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_pages_label",
+      "text": "- Pages:",
+      "kind": "logalty_metadata",
+      "y_hint": 331,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 331.9403381347656,
+        "w": 9.0560302734375,
+        "h": 4.79998779296875
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "- Pages:",
+          "row_y_hint": 331,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 58,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 331.9403381347656,
+              "w": 9.0560302734375,
+              "h": 4.79998779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 331.9403381347656,
+            "w": 9.0560302734375,
+            "h": 4.79998779296875
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_tz_offset",
+      "text": "+0200",
+      "kind": "logalty_metadata",
+      "y_hint": 341,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 341.5403137207031,
+        "w": 9.0560302734375,
+        "h": 23.99993896484375
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "+0200",
+          "row_y_hint": 341,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 57,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 341.5403137207031,
+              "w": 9.0560302734375,
+              "h": 23.99993896484375
+            },
+            "case_class": "none",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 341.5403137207031,
+            "w": 9.0560302734375,
+            "h": 23.99993896484375
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_tz_name",
+      "text": "CEST",
+      "kind": "logalty_metadata",
+      "y_hint": 370,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 370.3402404785156,
+        "w": 9.0560302734375,
+        "h": 19.199951171875
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "CEST",
+          "row_y_hint": 370,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 56,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 370.3402404785156,
+              "w": 9.0560302734375,
+              "h": 19.199951171875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 370.3402404785156,
+            "w": 9.0560302734375,
+            "h": 19.199951171875
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_time",
+      "text": "20:05:47",
+      "kind": "logalty_metadata",
+      "y_hint": 394,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 394.3401794433594,
+        "w": 9.0560302734375,
+        "h": 38.39990234375
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "20:05:47",
+          "row_y_hint": 394,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 55,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 394.3401794433594,
+              "w": 9.0560302734375,
+              "h": 38.39990234375
+            },
+            "case_class": "none",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 394.3401794433594,
+            "w": 9.0560302734375,
+            "h": 38.39990234375
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_date",
+      "text": "2024/05/09 T",
+      "kind": "logalty_metadata",
+      "y_hint": 447,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 447.1400451660156,
+        "w": 9.0560302734375,
+        "h": 47.9998779296875
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "2024/05/09 T",
+          "row_y_hint": 447,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 54,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 447.1400451660156,
+              "w": 9.0560302734375,
+              "h": 47.9998779296875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 447.1400451660156,
+            "w": 9.0560302734375,
+            "h": 47.9998779296875
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_date_label",
+      "text": "Date:",
+      "kind": "logalty_metadata",
+      "y_hint": 499,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 499.93994140625,
+        "w": 9.0560302734375,
+        "h": 24.0
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Date:",
+          "row_y_hint": 499,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 53,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 499.93994140625,
+              "w": 9.0560302734375,
+              "h": 24.0
+            },
+            "case_class": "Title",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 499.93994140625,
+            "w": 9.0560302734375,
+            "h": 24.0
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_dash",
+      "text": "-",
+      "kind": "logalty_metadata",
+      "y_hint": 528,
+      "bbox": null,
+      "evidence": {
+        "text_signal": {
+          "text": "-",
+          "row_y_hint": 528,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": null,
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_guid",
+      "text": "Guid: 001001-0001-000000124609130.par",
+      "kind": "logalty_metadata",
+      "y_hint": 691,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 691.9400634765625,
+        "w": 9.0560302734375,
+        "h": 24.0
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Guid: 001001-0001-000000124609130.par",
+          "row_y_hint": 691,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 51,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 691.9400634765625,
+              "w": 9.0560302734375,
+              "h": 24.0
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 691.9400634765625,
+            "w": 9.0560302734375,
+            "h": 24.0
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "logalty_name",
+      "text": "Logalty",
+      "kind": "logalty_metadata",
+      "y_hint": 720,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 720.739990234375,
+        "w": 9.0560302734375,
+        "h": 33.60003662109375
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Logalty",
+          "row_y_hint": 720,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 50,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 720.739990234375,
+              "w": 9.0560302734375,
+              "h": 33.60003662109375
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 720.739990234375,
+            "w": 9.0560302734375,
+            "h": 33.60003662109375
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "footer_reverso_no_apto",
+      "text": "REVERSO NO APTO PARA SU IMPRESIÓN",
+      "kind": "page_footer",
+      "y_hint": 808,
+      "bbox": {
+        "x": 26.957312,
+        "y": 809.61777344,
+        "w": 122.86849536000003,
+        "h": 7.7043200000000525
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "REVERSO NO APTO PARA SU IMPRESIÓN",
+          "row_y_hint": 808,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 26.957312,
+              "y": 809.61777344,
+              "w": 122.86849536000003,
+              "h": 7.7043200000000525
+            },
+            "char_indices": [
+              3085,
+              3086,
+              3087,
+              3088,
+              3089,
+              3090,
+              3091,
+              3092,
+              3093,
+              3094,
+              3095,
+              3096,
+              3097,
+              3098,
+              3099,
+              3100,
+              3101,
+              3102,
+              3103,
+              3104
+            ],
+            "n_chars": 33,
+            "row_y": 809.61777344
+          },
+          "liteparse": {
+            "span_id": 48,
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 808.076904296875,
+              "w": 122.86848449707031,
+              "h": 9.23748779296875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/728",
+            "bbox": {
+              "x": 26.957312,
+              "y": 810.8735776,
+              "w": 122.86849536000003,
+              "h": 5.760239252336419
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 26.957312,
+            "y": 809.61777344,
+            "w": 122.86849536000003,
+            "h": 7.7043200000000525
+          },
+          "engine_agreement": 3
+        },
+        "kind": "page_footer"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "footer_mod_reference",
+      "text": "MOD. (M) 006-720.0313-02 (29) - 16 de abril de 2024",
+      "kind": "page_footer",
+      "y_hint": 808,
+      "bbox": {
+        "x": 375.0384896,
+        "y": 809.61777344,
+        "w": 181.59852672000005,
+        "h": 7.7043200000000525
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "MOD. (M) 006-720.0313-02 (29) - 16 de abril de 2024",
+          "row_y_hint": 808,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 375.0384896,
+              "y": 809.61777344,
+              "w": 181.59852672000005,
+              "h": 7.7043200000000525
+            },
+            "char_indices": [
+              3118,
+              3119,
+              3120,
+              3121,
+              3122,
+              3123,
+              3124,
+              3125,
+              3126,
+              3127,
+              3128,
+              3129,
+              3130,
+              3131,
+              3132,
+              3133,
+              3134,
+              3135,
+              3136,
+              3137
+            ],
+            "n_chars": 51,
+            "row_y": 809.61777344
+          },
+          "liteparse": {
+            "span_id": 49,
+            "bbox": {
+              "x": 375.0384521484375,
+              "y": 808.076904296875,
+              "w": 181.59844970703125,
+              "h": 9.23748779296875
+            },
+            "case_class": "mixed",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/729",
+            "bbox": {
+              "x": 375.0384896,
+              "y": 810.8735776,
+              "w": 181.5985267199997,
+              "h": 5.760239252336419
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 375.0384896,
+            "y": 809.61777344,
+            "w": 181.59852672000005,
+            "h": 7.7043200000000525
+          },
+          "engine_agreement": 3
+        },
+        "kind": "page_footer"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "encabezado",
+      "title": "Encabezado modelo",
+      "title_bbox": null,
+      "container_bbox": {
+        "x": 79.65485382080078,
+        "y": 24.61883039999998,
+        "w": 477.77378137919925,
+        "h": 65.32300309609377
+      },
+      "_view": "compat_flat"
+    },
+    {
+      "id": "anexo_iv_otros_pactos",
+      "title": "ANEXO IV - OTROS PACTOS",
+      "title_bbox": null,
+      "container_bbox": {
+        "x": 263.4028928,
+        "y": 161.67868320000002,
+        "w": 151.81362560000002,
+        "h": 22.342528000000016
+      },
+      "_view": "compat_flat"
+    },
+    {
+      "id": "a14_duracion",
+      "title": "A.14.- DURACIÓN",
+      "title_bbox": {
+        "x": 26.957312,
+        "y": 202.35749280000005,
+        "w": 66.4690208,
+        "h": 9.630400000000009
+      },
+      "container_bbox": {
+        "x": 26.957475662231445,
+        "y": 225.62469482421875,
+        "w": 200.05230712890625,
+        "h": 11.54681396484375
+      },
+      "_view": "compat_flat"
+    },
+    {
+      "id": "a15_procedimiento_extrajudicial",
+      "title": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+      "title_bbox": {
+        "x": 26.957312,
+        "y": 252.97487520000004,
+        "w": 344.94166720000004,
+        "h": 9.630400000000009
+      },
+      "container_bbox": {
+        "x": 26.957271575927734,
+        "y": 291.3423888,
+        "w": 528.2276554107666,
+        "h": 163.1004544
+      },
+      "_view": "compat_flat"
+    },
+    {
+      "id": "a16_condicion_suspensiva_resolucion",
+      "title": "A.16.- CONDICIÓN SUSPENSIVA Y MOTIVO ADICIONAL DE RESOLUCIÓN DEL PRESENTE CONTRATO",
+      "title_bbox": {
+        "x": 26.957312,
+        "y": 482.9488272,
+        "w": 379.2162607999998,
+        "h": 9.630400000000009
+      },
+      "container_bbox": {
+        "x": 26.95730972290039,
+        "y": 493.5037536621094,
+        "w": 6.837802886962891,
+        "h": 62.395416259765625
+      },
+      "_view": "compat_flat"
+    },
+    {
+      "id": "firmas",
+      "title": "Firmas",
+      "title_bbox": null,
+      "container_bbox": {
+        "x": 32.2732928,
+        "y": 726.0971664,
+        "w": 467.6811152,
+        "h": 9.630400000000009
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Nº Modelo",
+      "value": "F_AS-5",
+      "section": "Encabezado modelo",
+      "band": null,
+      "column_header": null,
+      "row_y": 22,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 477.1977728,
+        "y": 24.61883039999998,
+        "w": 47.131177599999944,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 527.1217664,
+          "y": 24.61883039999998,
+          "w": 30.306868800000075,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "Encabezado modelo",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Hoja nº",
+      "value": "24/24",
+      "section": "Encabezado modelo",
+      "band": null,
+      "column_header": null,
+      "row_y": 47,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 477.19777279999994,
+        "y": 37.3309584000001,
+        "w": 32.011449599999935,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 493.20349759999993,
+          "y": 49.811956800000075,
+          "w": 23.979696000000047,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "Encabezado modelo",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Impreso nº",
+      "value": "6249596",
+      "section": "ANEXO IV - OTROS PACTOS",
+      "band": null,
+      "column_header": null,
+      "row_y": 159,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 292.8911776,
+        "y": 161.67868320000002,
+        "w": 47.64158879999991,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [
+        {
+          "x": 342.9114752,
+          "y": 161.67868320000002,
+          "w": 30.94247519999999,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "ANEXO IV - OTROS PACTOS",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Titular",
+      "value": "LUIS FERNANDO JUSTINIANO JUSTINIANO",
+      "section": "ANEXO IV - OTROS PACTOS",
+      "band": null,
+      "column_header": null,
+      "row_y": 172,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": null,
+      "value_bboxes": [
+        {
+          "x": 263.4028928,
+          "y": 174.39081120000003,
+          "w": 151.81362560000002,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "ANEXO IV - OTROS PACTOS",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "SAC - Correo postal",
+      "value": "calle Pintor Sorolla, 2-4, 46002, Valencia",
+      "section": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+      "band": null,
+      "column_header": null,
+      "row_y": 289,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": null,
+      "value_bboxes": [
+        {
+          "x": 317.7183487999999,
+          "y": 291.3423888,
+          "w": 133.54475679999985,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "SAC - Formulario web",
+      "value": "http://www.caixabankpc.com",
+      "section": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+      "band": null,
+      "column_header": null,
+      "row_y": 315,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": null,
+      "value_bboxes": [
+        {
+          "x": 29.268608000000174,
+          "y": 317.22890399999994,
+          "w": 99.6553792,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "SAC - Correo electrónico",
+      "value": "servicio.cliente@caixabank.com",
+      "section": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+      "band": null,
+      "column_header": null,
+      "row_y": 328,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": null,
+      "value_bboxes": [
+        {
+          "x": 229.65797120000025,
+          "y": 329.94103199999984,
+          "w": 108.20717439999987,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Banco de España - Domicilio",
+      "value": "Madrid, calle Alcalá, 50",
+      "section": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+      "band": null,
+      "column_header": null,
+      "row_y": 417,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": null,
+      "value_bboxes": [
+        {
+          "x": 406.00985599999973,
+          "y": 419.1570576,
+          "w": 83.69780639999988,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Banco de España - Página web",
+      "value": "www.bde.es",
+      "section": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+      "band": null,
+      "column_header": null,
+      "row_y": 430,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": null,
+      "value_bboxes": [
+        {
+          "x": 41.518476799999625,
+          "y": 432.10031519999995,
+          "w": 43.56792959999998,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Teléfono atención al cliente",
+      "value": "900 101 601",
+      "section": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+      "band": null,
+      "column_header": null,
+      "row_y": 442,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": null,
+      "value_bboxes": [
+        {
+          "x": 469.57049599999937,
+          "y": 444.81244319999996,
+          "w": 43.2501264,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "A.15.- PROCEDIMIENTO EXTRAJUDICIAL DE RECLAMACIÓN Y RECURSO PARA EL TITULAR",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Prestatario/s",
+      "value": "",
+      "section": "Firmas",
+      "band": null,
+      "column_header": null,
+      "row_y": 724,
+      "rule": "structured-signature-placeholder",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 32.2732928,
+        "y": 726.0971664,
+        "w": 54.1517392,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [],
+      "evidence": {
+        "path": "Firmas",
+        "engine_agreement": 3,
+        "bucket": "empty"
+      }
+    },
+    {
+      "label": "Fiador/es",
+      "value": "",
+      "section": "Firmas",
+      "band": null,
+      "column_header": null,
+      "row_y": 724,
+      "rule": "structured-signature-placeholder",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 299.9213696,
+        "y": 726.0971664,
+        "w": 39.783182400000044,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [],
+      "evidence": {
+        "path": "Firmas",
+        "engine_agreement": 3,
+        "bucket": "empty"
+      }
+    },
+    {
+      "label": "Financiador",
+      "value": "",
+      "section": "Firmas",
+      "band": null,
+      "column_header": null,
+      "row_y": 724,
+      "rule": "structured-signature-placeholder",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 449.92448,
+        "y": 726.0971664,
+        "w": 50.029927999999984,
+        "h": 9.630400000000009
+      },
+      "value_bboxes": [],
+      "evidence": {
+        "path": "Firmas",
+        "engine_agreement": 3,
+        "bucket": "empty"
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "scaffolder",
+    "n_chars": 3536,
+    "n_rows": 111,
+    "n_liteparse_spans": 60,
+    "n_docling_blocks": 31,
+    "n_rects": 369,
+    "kv_pair_breakdown": {
+      "3_eng": 10,
+      "2_eng": 0,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 3,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "scaffolder",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "caixabank_f_as5_header_final_page",
+      "anexo_iv_otros_pactos_title",
+      "anexo_reference_impreso_titular",
+      "section_a14_duracion_prose",
+      "section_a15_procedimiento_extrajudicial_with_inline_kvs",
+      "sac_contact_postal_web_email",
+      "banco_de_espana_supervision_domicilio_web",
+      "telefono_atencion_cliente_gratuito",
+      "section_a16_condicion_suspensiva_clauses_a_b",
+      "signature_row_three_placeholders",
+      "logalty_sidebar_metadata_noise",
+      "reverso_no_apto_impresion_footer"
+    ],
+    "needs_review": false,
+    "document_type": "Contrato de Préstamo Financiación Comprador Bienes Muebles (CaixaBank F_AS-5)"
+  }
+}

@@ -177,7 +177,7 @@
           "type": "kv_leaf",
           "id": "nro_referencia",
           "label": "Nº",
-          "value": "202405600705506",
+          "value": "",
           "y_hint": 60,
           "label_bbox": {
             "x": 234.7428224,
@@ -185,72 +185,7 @@
             "w": 9.938572799999974,
             "h": 9.630400000000009
           },
-          "evidence": {
-            "text": "202405600705506",
-            "row_y_hint": 60,
-            "x_hint": null,
-            "pdfplumber": {
-              "bbox": {
-                "x": 250.6907648,
-                "y": 58.826011199999925,
-                "w": 66.30530400000004,
-                "h": 9.630400000000009
-              },
-              "char_indices": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10,
-                11,
-                12,
-                13,
-                14
-              ],
-              "n_chars": 15,
-              "row_y": 58.826011199999925
-            },
-            "liteparse": null,
-            "docling": {
-              "cell_ref": "#/texts/2",
-              "bbox": {
-                "x": 234.7428224,
-                "y": 60.39576639999996,
-                "w": 113.94689279999906,
-                "h": 11.12950226542057
-              },
-              "column_header": null,
-              "row_header": null
-            },
-            "rect": null,
-            "colon_signal": {
-              "present": false
-            },
-            "value_extent": {
-              "boundary_type": "continuation",
-              "gap_pt": -0.6644976000000611,
-              "next_text": "........"
-            },
-            "cell_bbox": {
-              "x": 250.6907648,
-              "y": 58.826011199999925,
-              "w": 66.30530400000004,
-              "h": 9.630400000000009
-            },
-            "engine_agreement": 2
-          },
-          "bbox": {
-            "x": 250.6907648,
-            "y": 58.826011199999925,
-            "w": 66.30530400000004,
-            "h": 9.630400000000009
-          }
+          "evidence": null
         },
         {
           "type": "kv_leaf",
@@ -7405,7 +7340,7 @@
     },
     {
       "label": "Nº",
-      "value": "202405600705506",
+      "value": "",
       "section": "Encabezado modelo",
       "band": null,
       "column_header": null,
@@ -7418,17 +7353,10 @@
         "w": 9.938572799999974,
         "h": 9.630400000000009
       },
-      "value_bboxes": [
-        {
-          "x": 250.6907648,
-          "y": 58.826011199999925,
-          "w": 66.30530400000004,
-          "h": 9.630400000000009
-        }
-      ],
+      "value_bboxes": [],
       "evidence": {
         "path": "Encabezado modelo",
-        "engine_agreement": 2
+        "engine_agreement": 0
       }
     },
     {
@@ -8561,10 +8489,10 @@
     "n_rects": 7638,
     "kv_pair_breakdown": {
       "3_eng": 29,
-      "2_eng": 2,
+      "2_eng": 1,
       "1_eng": 0,
       "0_eng": 0,
-      "empty": 16,
+      "empty": 17,
       "footnote": 0,
       "footnote_ref": 0
     }
