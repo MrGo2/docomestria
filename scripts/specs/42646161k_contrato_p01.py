@@ -149,8 +149,8 @@ STRUCTURE = [
              {"id": "comision_estudio", "label": "Comisión Estudio", "type": "amount"},
          ],
          "rows": [
-             {"tipo": ("Financiadas", 396.7), "comision_apertura": ("389,85", 396.4, 221.3),
-              "comision_estudio": ("0,00", 396.4, 417.1)},
+             {"tipo": ("Financiadas", 396.7), "comision_apertura": ("389,85€", 396.4, 221.3),
+              "comision_estudio": ("0,00€", 396.4, 417.1)},
              {"tipo": ("No Financiadas", 405.7), "comision_apertura": ("", 405.7),
               "comision_estudio": ("", 405.7)},
          ]},
@@ -164,7 +164,7 @@ STRUCTURE = [
          ],
          "rows": [
              {"tipo": ("Condicionantes", 436.7), "coste_seguro_mensual": ("", 436.7)},
-             {"tipo": ("No Condicionantes", 445.4), "coste_seguro_mensual": ("15,59", 445.1)},
+             {"tipo": ("No Condicionantes", 445.4), "coste_seguro_mensual": ("15,59€", 445.1)},
          ]},
 
         {"type": "kv_leaf", "id": "importe_total_prestamo",
@@ -187,10 +187,8 @@ STRUCTURE = [
          "value": "18.083,52€", "y_hint": 527.4},
 
         {"type": "kv_group", "id": "penalidades", "pairs": [
-            {"label": "Penalidad por cada cuota impagado", "value": "30",
-             "y_hint": 548.7, "x_hint": 29.5},
-            {"label": "Penalidad por cada cuota impagado (condición)",
-             "value": "(se cobrará una sola vez para cada cuota)", "y_hint": 548.7, "x_hint": 200.0},
+            {"label": "Penalidad por cada cuota impagado",
+             "value": "30€ (se cobrará una sola vez para cada cuota)", "y_hint": 548.7},
             {"label": "Comisión por cancelación anticipada",
              "value": "1,00 % de la deuda cancelada ( 0,500 % si para la terminación del contrato queda menos de un año)",
              "y_hint": 556.6, "x_hint": 178.8},

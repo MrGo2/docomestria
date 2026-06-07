@@ -5753,17 +5753,17 @@
                 }
               },
               "comision_apertura": {
-                "text": "389,85",
+                "text": "389,85€",
                 "evidence": {
-                  "text": "389,85",
+                  "text": "389,85€",
                   "row_y_hint": 396.4,
                   "x_hint": 221.3,
                   "pdfplumber": {
                     "bbox": {
                       "x": 221.33730559999998,
                       "y": 397.98366016,
-                      "w": 27.304110080000015,
-                      "h": 7.704319999999996
+                      "w": 32.689429760000024,
+                      "h": 7.927745279999954
                     },
                     "char_indices": [
                       1457,
@@ -5771,9 +5771,10 @@
                       1459,
                       1460,
                       1461,
-                      1462
+                      1462,
+                      1463
                     ],
-                    "n_chars": 6,
+                    "n_chars": 7,
                     "row_y": 397.98366016
                   },
                   "liteparse": {
@@ -5788,55 +5789,46 @@
                     "is_bold": false,
                     "font_size": 8.0
                   },
-                  "docling": {
-                    "cell_ref": "#/texts/68",
-                    "bbox": {
-                      "x": 221.33730559999998,
-                      "y": 399.4628896,
-                      "w": 32.689429760000024,
-                      "h": 5.760239252336476
-                    },
-                    "column_header": null,
-                    "row_header": null
-                  },
+                  "docling": null,
                   "rect": null,
                   "colon_signal": null,
                   "value_extent": null,
                   "cell_bbox": {
                     "x": 221.33730559999998,
                     "y": 397.98366016,
-                    "w": 27.304110080000015,
-                    "h": 7.704319999999996
+                    "w": 32.689429760000024,
+                    "h": 7.927745279999954
                   },
-                  "engine_agreement": 3
+                  "engine_agreement": 2
                 },
                 "bbox": {
                   "x": 221.33730559999998,
                   "y": 397.98366016,
-                  "w": 27.304110080000015,
-                  "h": 7.704319999999996
+                  "w": 32.689429760000024,
+                  "h": 7.927745279999954
                 }
               },
               "comision_estudio": {
-                "text": "0,00",
+                "text": "0,00€",
                 "evidence": {
-                  "text": "0,00",
+                  "text": "0,00€",
                   "row_y_hint": 396.4,
                   "x_hint": 417.1,
                   "pdfplumber": {
                     "bbox": {
                       "x": 307.42537728,
                       "y": 398.20708543999996,
-                      "w": 15.447161599999959,
+                      "w": 19.931075840000005,
                       "h": 7.704319999999996
                     },
                     "char_indices": [
                       1473,
                       1474,
                       1475,
-                      1476
+                      1476,
+                      1477
                     ],
-                    "n_chars": 4,
+                    "n_chars": 5,
                     "row_y": 397.98366016
                   },
                   "liteparse": {
@@ -5852,12 +5844,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/texts/70",
+                    "cell_ref": "#/texts/62",
                     "bbox": {
-                      "x": 417.10407680000003,
-                      "y": 399.4628896,
-                      "w": 22.750856959999965,
-                      "h": 5.760239252336476
+                      "x": 511.173824,
+                      "y": 364.7934496,
+                      "w": 39.908377599999824,
+                      "h": 5.5840911360000405
                     },
                     "column_header": null,
                     "row_header": null
@@ -5868,7 +5860,7 @@
                   "cell_bbox": {
                     "x": 307.42537728,
                     "y": 398.20708543999996,
-                    "w": 15.447161599999959,
+                    "w": 19.931075840000005,
                     "h": 7.704319999999996
                   },
                   "engine_agreement": 3
@@ -5876,7 +5868,7 @@
                 "bbox": {
                   "x": 307.42537728,
                   "y": 398.20708543999996,
-                  "w": 15.447161599999959,
+                  "w": 19.931075840000005,
                   "h": 7.704319999999996
                 }
               }
@@ -5970,7 +5962,7 @@
           "bbox": {
             "x": 40.593958399999984,
             "y": 397.98366016,
-            "w": 282.27858048,
+            "w": 286.76249472000006,
             "h": 16.941799679999974
           },
           "evidence": {
@@ -6043,7 +6035,7 @@
               "container_bbox": {
                 "x": 40.593958399999984,
                 "y": 397.98366016,
-                "w": 282.27858048,
+                "w": 286.76249472000006,
                 "h": 16.941799679999974
               },
               "pdfplumber_rect": null,
@@ -6244,26 +6236,27 @@
                 }
               },
               "coste_seguro_mensual": {
-                "text": "15,59",
+                "text": "15,59€",
                 "evidence": {
-                  "text": "15,59",
+                  "text": "15,59€",
                   "row_y_hint": 445.1,
                   "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 226.42215679999998,
                       "y": 446.75200576,
-                      "w": 22.404162560000003,
-                      "h": 7.704319999999996
+                      "w": 27.60457856000002,
+                      "h": 7.927745279999954
                     },
                     "char_indices": [
                       1723,
                       1724,
                       1725,
                       1726,
-                      1727
+                      1727,
+                      1728
                     ],
-                    "n_chars": 5,
+                    "n_chars": 6,
                     "row_y": 446.75200576
                   },
                   "liteparse": {
@@ -6278,33 +6271,23 @@
                     "is_bold": false,
                     "font_size": 8.0
                   },
-                  "docling": {
-                    "cell_ref": "#/texts/82",
-                    "bbox": {
-                      "x": 226.42215679999998,
-                      "y": 448.23123519999996,
-                      "w": 27.60457856000002,
-                      "h": 5.760239252336476
-                    },
-                    "column_header": null,
-                    "row_header": null
-                  },
+                  "docling": null,
                   "rect": null,
                   "colon_signal": null,
                   "value_extent": null,
                   "cell_bbox": {
                     "x": 226.42215679999998,
                     "y": 446.75200576,
-                    "w": 22.404162560000003,
-                    "h": 7.704319999999996
+                    "w": 27.60457856000002,
+                    "h": 7.927745279999954
                   },
-                  "engine_agreement": 3
+                  "engine_agreement": 2
                 },
                 "bbox": {
                   "x": 226.42215679999998,
                   "y": 446.75200576,
-                  "w": 22.404162560000003,
-                  "h": 7.704319999999996
+                  "w": 27.60457856000002,
+                  "h": 7.927745279999954
                 }
               }
             }
@@ -6312,7 +6295,7 @@
           "bbox": {
             "x": 40.5939584,
             "y": 438.19250623999994,
-            "w": 208.23236096,
+            "w": 213.43277696,
             "h": 16.487244799999985
           },
           "evidence": {
@@ -6385,7 +6368,7 @@
               "container_bbox": {
                 "x": 40.5939584,
                 "y": 438.19250623999994,
-                "w": 208.23236096,
+                "w": 213.43277696,
                 "h": 16.487244799999985
               },
               "pdfplumber_rect": null,
@@ -7001,9 +6984,8 @@
           "pairs": [
             {
               "label": "Penalidad por cada cuota impagado",
-              "value": "30",
+              "value": "30€ (se cobrará una sola vez para cada cuota)",
               "y_hint": 548.7,
-              "x_hint": 29.5,
               "evidence": {
                 "label": {
                   "text": "Penalidad por cada cuota impagado",
@@ -7076,108 +7058,19 @@
                   "engine_agreement": 3
                 },
                 "value": {
-                  "text": "30",
+                  "text": "30€ (se cobrará una sola vez para cada cuota)",
                   "row_y_hint": 548.7,
-                  "x_hint": 29.5,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 158.53939328,
                       "y": 550.2903622399999,
-                      "w": 8.520977920000007,
+                      "w": 129.77156608000007,
                       "h": 7.7043200000000525
                     },
                     "char_indices": [
                       2239,
-                      2240
-                    ],
-                    "n_chars": 2,
-                    "row_y": 547.9399999999998
-                  },
-                  "liteparse": {
-                    "span_id": 87,
-                    "bbox": {
-                      "x": 29.499738693237305,
-                      "y": 548.74951171875,
-                      "w": 286.37725830078125,
-                      "h": 9.2374267578125
-                    },
-                    "case_class": "lower",
-                    "is_bold": false,
-                    "font_size": 8.0
-                  },
-                  "docling": {
-                    "cell_ref": "#/texts/105",
-                    "bbox": {
-                      "x": 29.499737600000003,
-                      "y": 551.5461664,
-                      "w": 286.3772787200002,
-                      "h": 5.7602392523365324
-                    },
-                    "column_header": null,
-                    "row_header": null
-                  },
-                  "rect": null,
-                  "colon_signal": {
-                    "present": true,
-                    "char_x": 153.63944576,
-                    "char_y": 550.2903622399999
-                  },
-                  "value_extent": {
-                    "boundary_type": "continuation",
-                    "gap_pt": 2.842170943040401e-14,
-                    "next_text": "(cid:159) (s1e, "
-                  },
-                  "cell_bbox": {
-                    "x": 158.53939328,
-                    "y": 550.2903622399999,
-                    "w": 8.520977920000007,
-                    "h": 7.7043200000000525
-                  },
-                  "engine_agreement": 3
-                }
-              },
-              "label_bbox": {
-                "x": 29.499737600000003,
-                "y": 550.2903622399999,
-                "w": 124.13970816,
-                "h": 7.7043200000000525
-              },
-              "bbox": {
-                "x": 158.53939328,
-                "y": 550.2903622399999,
-                "w": 8.520977920000007,
-                "h": 7.7043200000000525
-              }
-            },
-            {
-              "label": "Penalidad por cada cuota impagado (condición)",
-              "value": "(se cobrará una sola vez para cada cuota)",
-              "y_hint": 548.7,
-              "x_hint": 200.0,
-              "evidence": {
-                "label": {
-                  "text": "Penalidad por cada cuota impagado (condición)",
-                  "row_y_hint": 548.7,
-                  "x_hint": null,
-                  "pdfplumber": null,
-                  "liteparse": null,
-                  "docling": null,
-                  "rect": null,
-                  "colon_signal": null,
-                  "value_extent": null
-                },
-                "value": {
-                  "text": "(se cobrará una sola vez para cada cuota)",
-                  "row_y_hint": 548.7,
-                  "x_hint": 200.0,
-                  "pdfplumber": {
-                    "bbox": {
-                      "x": 167.06037120000005,
-                      "y": 550.2903622399999,
-                      "w": 121.25058816000004,
-                      "h": 7.7043200000000525
-                    },
-                    "char_indices": [
+                      2240,
                       2241,
                       2242,
                       2243,
@@ -7195,11 +7088,9 @@
                       2255,
                       2256,
                       2257,
-                      2258,
-                      2259,
-                      2260
+                      2258
                     ],
-                    "n_chars": 35,
+                    "n_chars": 37,
                     "row_y": 547.9399999999998
                   },
                   "liteparse": {
@@ -7214,33 +7105,37 @@
                     "is_bold": false,
                     "font_size": 8.0
                   },
-                  "docling": {
-                    "cell_ref": "#/texts/105",
-                    "bbox": {
-                      "x": 29.499737600000003,
-                      "y": 551.5461664,
-                      "w": 286.3772787200002,
-                      "h": 5.7602392523365324
-                    },
-                    "column_header": null,
-                    "row_header": null
-                  },
+                  "docling": null,
                   "rect": null,
-                  "colon_signal": null,
-                  "value_extent": null,
+                  "colon_signal": {
+                    "present": true,
+                    "char_x": 153.63944576,
+                    "char_y": 550.2903622399999
+                  },
+                  "value_extent": {
+                    "boundary_type": "continuation",
+                    "gap_pt": 0.0,
+                    "next_text": "a  (cuot"
+                  },
                   "cell_bbox": {
-                    "x": 167.06037120000005,
+                    "x": 158.53939328,
                     "y": 550.2903622399999,
-                    "w": 121.25058816000004,
+                    "w": 129.77156608000007,
                     "h": 7.7043200000000525
                   },
-                  "engine_agreement": 3
+                  "engine_agreement": 2
                 }
               },
-              "bbox": {
-                "x": 167.06037120000005,
+              "label_bbox": {
+                "x": 29.499737600000003,
                 "y": 550.2903622399999,
-                "w": 121.25058816000004,
+                "w": 124.13970816,
+                "h": 7.7043200000000525
+              },
+              "bbox": {
+                "x": 158.53939328,
+                "y": 550.2903622399999,
+                "w": 129.77156608000007,
                 "h": 7.7043200000000525
               }
             },
@@ -7589,9 +7484,9 @@
             },
             "structural_signals": {
               "kind": "kv_group",
-              "n_pairs": 4,
+              "n_pairs": 3,
               "layout": "stacked_vertical",
-              "same_row_ratio": 0.5
+              "same_row_ratio": 0.3333333333333333
             }
           }
         }
@@ -10170,7 +10065,7 @@
     },
     {
       "label": "Financiadas",
-      "value": "389,85",
+      "value": "389,85€",
       "section": "Condiciones económicas",
       "band": "Espacio reservado para incluir las comisiones, gastos etc.",
       "column_header": "Comisión apertura",
@@ -10187,20 +10082,20 @@
         {
           "x": 221.33730559999998,
           "y": 397.98366016,
-          "w": 27.304110080000015,
-          "h": 7.704319999999996
+          "w": 32.689429760000024,
+          "h": 7.927745279999954
         }
       ],
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 3,
-        "bucket": "3_eng"
+        "engine_agreement": 2,
+        "bucket": "2_eng"
       }
     },
     {
       "label": "Financiadas",
-      "value": "0,00",
+      "value": "0,00€",
       "section": "Condiciones económicas",
       "band": "Espacio reservado para incluir las comisiones, gastos etc.",
       "column_header": "Comisión Estudio",
@@ -10217,7 +10112,7 @@
         {
           "x": 307.42537728,
           "y": 398.20708543999996,
-          "w": 15.447161599999959,
+          "w": 19.931075840000005,
           "h": 7.704319999999996
         }
       ],
@@ -10299,7 +10194,7 @@
     },
     {
       "label": "No Condicionantes",
-      "value": "15,59",
+      "value": "15,59€",
       "section": "Condiciones económicas",
       "band": "Espacio reservado para Servicios accesorios relacionados (mantenimiento, seguros, etc.)",
       "column_header": "Coste del seguro mensual",
@@ -10316,15 +10211,15 @@
         {
           "x": 226.42215679999998,
           "y": 446.75200576,
-          "w": 22.404162560000003,
-          "h": 7.704319999999996
+          "w": 27.60457856000002,
+          "h": 7.927745279999954
         }
       ],
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 3,
-        "bucket": "3_eng"
+        "engine_agreement": 2,
+        "bucket": "2_eng"
       }
     },
     {
@@ -10469,7 +10364,7 @@
     },
     {
       "label": "Penalidad por cada cuota impagado",
-      "value": "30",
+      "value": "30€ (se cobrará una sola vez para cada cuota)",
       "section": "Condiciones económicas",
       "band": null,
       "column_header": null,
@@ -10486,36 +10381,13 @@
         {
           "x": 158.53939328,
           "y": 550.2903622399999,
-          "w": 8.520977920000007,
+          "w": 129.77156608000007,
           "h": 7.7043200000000525
         }
       ],
       "evidence": {
         "path": "Condiciones económicas",
-        "engine_agreement": 3
-      }
-    },
-    {
-      "label": "Penalidad por cada cuota impagado (condición)",
-      "value": "(se cobrará una sola vez para cada cuota)",
-      "section": "Condiciones económicas",
-      "band": null,
-      "column_header": null,
-      "row_y": 548.7,
-      "rule": "structured-kv-group",
-      "confidence": "HIGH",
-      "label_bbox": null,
-      "value_bboxes": [
-        {
-          "x": 167.06037120000005,
-          "y": 550.2903622399999,
-          "w": 121.25058816000004,
-          "h": 7.7043200000000525
-        }
-      ],
-      "evidence": {
-        "path": "Condiciones económicas",
-        "engine_agreement": 3
+        "engine_agreement": 2
       }
     },
     {
@@ -10763,8 +10635,8 @@
     "n_docling_blocks": 159,
     "n_rects": 11402,
     "kv_pair_breakdown": {
-      "3_eng": 39,
-      "2_eng": 2,
+      "3_eng": 35,
+      "2_eng": 5,
       "1_eng": 0,
       "0_eng": 0,
       "empty": 17,
