@@ -1,0 +1,66 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/PATRIMONIAL -p02.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/2_Example/PATRIMONIAL .pdf",
+  "page": 2,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 10,
+    "populated_kv": 9,
+    "empty_kv": 1,
+    "high": 1,
+    "medium": 1,
+    "low": 0,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "HIGH",
+      "type": "wrong_value_text",
+      "spec_location": "prose_block id=aviso_legal",
+      "evidence": {
+        "golden_label": "aviso_legal (prose_block)",
+        "golden_value": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a la información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen.",
+        "pdf_text_found": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+        "atoms_span_match": {
+          "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los",
+          "y": 771.3,
+          "x": 32.0
+        },
+        "comment": "Golden prose block text diverges from atoms at char 90: golden has 'en casos permitidos' but atoms has 'en el marco del procedimiento judicial correspondiente...'. The golden text is a truncated and corrupted version (379 chars vs 722 in atoms). Several sentences are missing entirely and the remaining text is collapsed incorrectly."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "prose_block id=aviso_legal / text",
+        "params": {
+          "new_text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+          "evidence_spans_y_range": [771.3, 792.2],
+          "evidence_x": 32.0
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "wrong_section",
+      "spec_location": "table id=datos_identidad / title",
+      "evidence": {
+        "golden_label": "datos_identidad (table title=Datos de identidad)",
+        "golden_value": "N/A — structural title not a KV value",
+        "pdf_text_found": "(no text found in atoms matching 'Datos de identidad')",
+        "atoms_span_match": null,
+        "comment": "The golden declares a table titled 'Datos de identidad' at y_hint=103 but no such text exists in atoms.spans or atoms.blocks. The two physical grey-band rects on the page are at y=139 (Dirección section header) and y=339 (Otros datos section header). There is no grey band or text heading between the Consulta Integral Patrimonio title (y=51) and the first data row (y=103). The title 'Datos de identidad' is synthesized/inferred with no PDF evidence. The table struct is logically correct but the title is not grounded."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "table id=datos_identidad / title",
+        "params": {
+          "action": "remove_or_mark_inferred_title",
+          "suggestion": "Set title to null or add evidence_note: 'title inferred — not present in PDF text' since engine_agreement=0 for title_signal",
+          "current_title": "Datos de identidad",
+          "atoms_evidence": "no span or block matches this title; title_signal in golden already shows pdfplumber=null, liteparse=null, docling=null, engine_agreement=0"
+        }
+      }
+    }
+  ]
+}

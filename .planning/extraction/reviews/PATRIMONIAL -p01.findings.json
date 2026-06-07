@@ -1,0 +1,105 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/PATRIMONIAL -p01.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/2_Example/PATRIMONIAL .pdf",
+  "page": 1,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 23,
+    "populated_kv": 22,
+    "empty_kv": 1,
+    "high": 1,
+    "medium": 1,
+    "low": 1,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "HIGH",
+      "type": "wrong_value_text",
+      "spec_location": "structure.id=aviso_legal / prose_block",
+      "evidence": {
+        "golden_label": "Aviso legal",
+        "golden_value": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco de los casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, queda sujeta a la normativa de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a dicha información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su confidencialidad.",
+        "pdf_text_found": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+        "atoms_span_match": {
+          "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los",
+          "y": 771.27,
+          "x": 32.0
+        },
+        "comment": "The golden prose text is a substantially truncated and paraphrased version of the actual PDF text. Four material differences: (1) 'en el marco de los casos' vs actual 'en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos'; (2) 'queda sujeta a la normativa de' vs actual 'está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de'; (3) missing sentence 'El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta'; (4) 'confidencialidad' vs actual 'integridad, disponibilidad y confidencialidad'. The text spans 4 atom lines at y=771.27/778.25/785.23/792.22, all font_size=6.0, engine_agreement=0 in golden (all engines null). The scaffolder paraphrased this block instead of copying it verbatim."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "aviso_legal",
+        "params": {
+          "field": "text",
+          "new_value": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+          "source_atoms": [
+            {"y": 771.27, "x": 32.0, "text_prefix": "La información obtenida"},
+            {"y": 778.25, "x": 32.0, "text_prefix": "casos permitidos"},
+            {"y": 785.23, "x": 32.0, "text_prefix": "de diciembre"},
+            {"y": 792.22, "x": 32.0, "text_prefix": "información deberá realizarse"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "kv_pairs[row_y=461] / label=Entidades Financieras - Consultas por NIF:",
+      "evidence": {
+        "golden_label": "Entidades Financieras - Consultas por NIF:",
+        "golden_value": "Ok",
+        "pdf_text_found": "Ok Entidades Financieras -",
+        "atoms_span_match": {
+          "text": "Ok Entidades Financieras -",
+          "y": 461.34,
+          "x": 55.74,
+          "note": "pdfplumber fuses 'Ok' (resultado of prior INSS row) with the label start; is_bold=false"
+        },
+        "comment": "The kv_pairs label_bbox captures only the second line of the label ('Consultas por NIF:' at y=472.98, span is bold), while the first line 'Entidades Financieras -' at y=461.34 is in a non-bold pdfplumber span that is incorrectly fused with 'Ok' (the resultado of the preceding INSS row). The result value bbox (y=468.25) and the second label line bbox (y=472.98) differ by 4.73pt — within threshold — but the label_bbox in kv_pairs (y=472.98) misses the first label line. The row_y_hint=461 is correct but the label_bbox.y should start at 461.34. This is a pdfplumber span-fusion artifact, not a golden annotation error per se, but the label_bbox recorded in kv_pairs is incomplete (y=472.98 instead of y=461.34)."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "Entidades Financieras - Consultas por NIF:",
+        "params": {
+          "kv_pairs_index": 12,
+          "label_bbox_correction": {
+            "x": 55.74,
+            "y": 461.34,
+            "w": 112.26,
+            "h": 22.8,
+            "note": "Extend label_bbox to include first line of multiline label. Use docling cell ref #/tables/1/cells[9][0] bbox as authoritative: x=55.74, y=463.21, w=112.26, h=20.89"
+          }
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "LOW",
+      "type": "possible_noise_misclassified",
+      "spec_location": "structure.id=aviso_legal / evidence.structural_signals.engine_agreement=0",
+      "evidence": {
+        "golden_label": "Aviso legal",
+        "golden_value": "(see f01)",
+        "pdf_text_found": "La información obtenida a través del Punto Neutro Judicial...",
+        "atoms_span_match": {
+          "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los",
+          "y": 771.27,
+          "x": 32.0
+        },
+        "comment": "The aviso_legal prose_block has engine_agreement=0 (all three engines returned null for this block). This means no engine linked to the spans at y=771-792. The 4 atom spans exist in atoms.spans at font_size=6.0, which is below the typical 9pt threshold for key content. The prose_block type is appropriate for legal footer text, but the engine_agreement=0 indicates the golden was assembled manually without engine support — consistent with finding f01 (scaffolder paraphrased rather than copied). Once f01 is fixed with the verbatim text, the engine_agreement should be verified by re-running build_golden.py."
+      },
+      "proposed_fix": {
+        "op": "mark_noise",
+        "target": "aviso_legal",
+        "params": {
+          "action": "relink_spans_after_text_fix",
+          "note": "After applying f01 fix, re-run build_golden to recompute engine_agreement. The spans exist in atoms at y=771-792 but were not linked because the text did not match (paraphrase). With verbatim text the linker should find them."
+        }
+      }
+    }
+  ]
+}
