@@ -1,0 +1,497 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/2_Example/PATRIMONIAL .pdf",
+  "page": 3,
+  "page_size_pt": [
+    595.0,
+    842.0
+  ],
+  "atoms_summary": {
+    "lite_spans": 22,
+    "rects": 3,
+    "docling_blocks": 16,
+    "noise_dropped": 6
+  },
+  "sections": [
+    {
+      "title": "Consulta Integral Patrimonio",
+      "title_signal": {
+        "size": 14.0,
+        "bold": true,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 217.82,
+        "y": 51.52,
+        "w": 191.37,
+        "h": 15.62
+      },
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [
+            109.0,
+            249.0
+          ],
+          "layout": "2-col",
+          "columns": [
+            {
+              "x_range": [
+                20.0,
+                178.0
+              ],
+              "role": "LABEL",
+              "column_header": null,
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                178.0,
+                575.0
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.9
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [
+                109.0,
+                129.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "INSS - Consulta Prestaciones Tarjeta Social Digital",
+                  "role": "SUB_HEADER",
+                  "bbox": {
+                    "x": 59.5,
+                    "y": 112.6,
+                    "w": 476.0,
+                    "h": 13.39
+                  },
+                  "bold": true,
+                  "case": "Title",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [
+                129.0,
+                149.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Titular",
+                  "role": "SUB_HEADER",
+                  "bbox": {
+                    "x": 20.0,
+                    "y": 133.7,
+                    "w": 555.0,
+                    "h": 11.16
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [
+                149.0,
+                169.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Nombre:",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 126.89,
+                    "y": 153.7,
+                    "w": 41.11,
+                    "h": 11.16
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "GHEORGHE ADRIAN",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 180.0,
+                    "y": 153.63,
+                    "w": 98.9,
+                    "h": 11.16
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [
+                169.0,
+                189.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Primer apellido:",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 90.76,
+                    "y": 173.7,
+                    "w": 77.24,
+                    "h": 11.16
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "OPREA",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 180.0,
+                    "y": 173.63,
+                    "w": 35.02,
+                    "h": 11.16
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [
+                189.0,
+                209.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Segundo apellido:",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 79.66,
+                    "y": 193.7,
+                    "w": 88.34,
+                    "h": 11.16
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "---",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 180.0,
+                    "y": 193.63,
+                    "w": 20.0,
+                    "h": 11.16
+                  },
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [
+                209.0,
+                229.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Teléfono:",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 120.0,
+                    "y": 213.7,
+                    "w": 48.0,
+                    "h": 11.16
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "631723839",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {
+                    "x": 180.0,
+                    "y": 213.63,
+                    "w": 54.0,
+                    "h": 11.16
+                  },
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [
+                229.0,
+                249.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Sin Prestaciones",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 20.0,
+                    "y": 233.7,
+                    "w": 555.0,
+                    "h": 11.16
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Nombre",
+      "value": "GHEORGHE ADRIAN",
+      "section": "Consulta Integral Patrimonio",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 153.7,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p3-r1",
+        "docling_block_id": null,
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Primer apellido",
+      "value": "OPREA",
+      "section": "Consulta Integral Patrimonio",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 173.7,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": null,
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Segundo apellido",
+      "value": "---",
+      "section": "Consulta Integral Patrimonio",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 193.7,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": null,
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Teléfono",
+      "value": "631723839",
+      "section": "Consulta Integral Patrimonio",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 213.7,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": null,
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    }
+  ],
+  "noise": [
+    {
+      "text": "PLATAFORMA DE",
+      "bbox": {
+        "x": 88.0,
+        "y": 36.33,
+        "w": 60.66,
+        "h": 7.81
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "SERVICIOS DEL",
+      "bbox": {
+        "x": 88.0,
+        "y": 44.47,
+        "w": 54.07,
+        "h": 7.81
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "PUNTO NEUTRO",
+      "bbox": {
+        "x": 88.0,
+        "y": 52.63,
+        "w": 56.0,
+        "h": 7.81
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "JUDICIAL",
+      "bbox": {
+        "x": 88.0,
+        "y": 60.76,
+        "w": 32.28,
+        "h": 7.81
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "La información obtenida... (legal footer 4 lines)",
+      "bbox": {
+        "x": 32.0,
+        "y": 771.27,
+        "w": 527.0,
+        "h": 27.7
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "17/04/26 17:13 / Página 3 de 4",
+      "bbox": {
+        "x": 20.0,
+        "y": 806.36,
+        "w": 520.0,
+        "h": 8.93
+      },
+      "reason": "page_footer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 3,
+        "lines": 36,
+        "tables": 1,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 16,
+        "labels": {
+          "picture": 1,
+          "section_header": 2,
+          "text": 11,
+          "page_footer": 2
+        },
+        "section_headers": 2,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 22,
+        "bold": 12,
+        "cases": {
+          "UPPER": 6,
+          "lower": 12,
+          "Title": 1,
+          "none": 3
+        }
+      }
+    },
+    "column_coherence": [
+      {
+        "x_range": [
+          20.0,
+          178.0
+        ],
+        "dominant_role": "LABEL",
+        "coherence": 1.0
+      },
+      {
+        "x_range": [
+          178.0,
+          575.0
+        ],
+        "dominant_role": "VALUE_TEXT",
+        "coherence": 0.9
+      }
+    ],
+    "agreement": {
+      "section_titles": {
+        "docling_matches_ours": 2,
+        "total": 2
+      },
+      "cell_bold_flags": {
+        "agree": 20,
+        "disagree": 2
+      }
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:46:55 CEST",
+    "covers_cases": [
+      6
+    ],
+    "needs_review": true
+  }
+}

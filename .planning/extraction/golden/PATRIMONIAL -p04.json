@@ -1,0 +1,537 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/2_Example/PATRIMONIAL .pdf",
+  "page": 4,
+  "page_size_pt": [
+    595.0,
+    842.0
+  ],
+  "atoms_summary": {
+    "lite_spans": 26,
+    "rects": 10,
+    "docling_blocks": 6,
+    "noise_dropped": 6
+  },
+  "sections": [
+    {
+      "title": "Consulta Integral Patrimonio",
+      "title_signal": {
+        "size": 14.0,
+        "bold": true,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 217.82,
+        "y": 51.52,
+        "w": 191.37,
+        "h": 15.62
+      },
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [
+            109.0,
+            129.0
+          ],
+          "layout": "free-text",
+          "columns": [
+            {
+              "x_range": [
+                20.0,
+                575.0
+              ],
+              "role": "HEADER",
+              "column_header": null,
+              "coherence": 1.0
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [
+                109.0,
+                129.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Entidades Financieras - Consultas por NIF",
+                  "role": "SUB_HEADER",
+                  "bbox": {
+                    "x": 20.0,
+                    "y": 112.6,
+                    "w": 555.0,
+                    "h": 13.39
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [
+            129.0,
+            176.0
+          ],
+          "layout": "8-col",
+          "columns": [
+            {
+              "x_range": [
+                20.0,
+                120.0
+              ],
+              "role": "HEADER",
+              "column_header": "IBAN",
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                120.0,
+                185.0
+              ],
+              "role": "HEADER",
+              "column_header": "Entidad",
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                185.0,
+                250.0
+              ],
+              "role": "HEADER",
+              "column_header": "Producto",
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                250.0,
+                315.0
+              ],
+              "role": "HEADER",
+              "column_header": "Tipo / Fecha apertura",
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                315.0,
+                380.0
+              ],
+              "role": "HEADER",
+              "column_header": "Saldo",
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                380.0,
+                445.0
+              ],
+              "role": "HEADER",
+              "column_header": "Divisa",
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                445.0,
+                510.0
+              ],
+              "role": "HEADER",
+              "column_header": "Fecha valor",
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                510.0,
+                575.0
+              ],
+              "role": "HEADER",
+              "column_header": "Fecha intervención",
+              "coherence": 1.0
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [
+                129.0,
+                149.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Lista de productos",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 20.0,
+                    "y": 133.7,
+                    "w": 555.0,
+                    "h": 11.16
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [
+                149.0,
+                176.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "IBAN",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 20.0,
+                    "y": 157.1,
+                    "w": 100.0,
+                    "h": 11.16
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Entidad",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 120.0,
+                    "y": 157.1,
+                    "w": 65.0,
+                    "h": 11.16
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Producto",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 185.0,
+                    "y": 157.1,
+                    "w": 65.0,
+                    "h": 11.16
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "Tipo / Fecha apertura",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 250.0,
+                    "y": 151.3,
+                    "w": 65.0,
+                    "h": 27.0
+                  },
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": [
+                    "Tipo",
+                    "Fecha",
+                    "apertura"
+                  ]
+                },
+                {
+                  "col": 4,
+                  "text": "Saldo",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 315.0,
+                    "y": 157.1,
+                    "w": 65.0,
+                    "h": 11.16
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 5,
+                  "text": "Divisa",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 380.0,
+                    "y": 157.1,
+                    "w": 65.0,
+                    "h": 11.16
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 6,
+                  "text": "Fecha valor / intervención",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 445.0,
+                    "y": 157.1,
+                    "w": 130.0,
+                    "h": 27.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [
+                    "Fecha valor",
+                    "intervención"
+                  ]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [
+            176.0,
+            220.0
+          ],
+          "layout": "free-text",
+          "columns": [
+            {
+              "x_range": [
+                20.0,
+                575.0
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 1.0
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r4",
+              "y_range": [
+                176.0,
+                220.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Su solicitud a las entidades financieras está realizada pero aún está pendiente de responder. Podrá ver las respuestas accediendo a la pantalla EEFF.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 20.0,
+                    "y": 178.0,
+                    "w": 555.0,
+                    "h": 35.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [],
+  "noise": [
+    {
+      "text": "PLATAFORMA DE",
+      "bbox": {
+        "x": 88.0,
+        "y": 36.33,
+        "w": 60.66,
+        "h": 7.81
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "SERVICIOS DEL",
+      "bbox": {
+        "x": 88.0,
+        "y": 44.47,
+        "w": 54.07,
+        "h": 7.81
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "PUNTO NEUTRO",
+      "bbox": {
+        "x": 88.0,
+        "y": 52.63,
+        "w": 56.0,
+        "h": 7.81
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "JUDICIAL",
+      "bbox": {
+        "x": 88.0,
+        "y": 60.76,
+        "w": 32.28,
+        "h": 7.81
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "La información obtenida... (legal footer 4 lines)",
+      "bbox": {
+        "x": 32.0,
+        "y": 771.27,
+        "w": 527.0,
+        "h": 27.7
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "17/04/26 17:13 / Página 4 de 4",
+      "bbox": {
+        "x": 20.0,
+        "y": 806.36,
+        "w": 520.0,
+        "h": 8.93
+      },
+      "reason": "page_footer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 10,
+        "lines": 39,
+        "tables": 1,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 6,
+        "labels": {
+          "picture": 1,
+          "section_header": 1,
+          "table": 1,
+          "text": 1,
+          "page_footer": 2
+        },
+        "section_headers": 1,
+        "tables": 1,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 26,
+        "bold": 7,
+        "cases": {
+          "UPPER": 6,
+          "lower": 18,
+          "Title": 1,
+          "none": 1
+        }
+      }
+    },
+    "column_coherence": [
+      {
+        "x_range": [
+          20.0,
+          120.0
+        ],
+        "dominant_role": "HEADER",
+        "coherence": 1.0
+      },
+      {
+        "x_range": [
+          120.0,
+          185.0
+        ],
+        "dominant_role": "HEADER",
+        "coherence": 1.0
+      },
+      {
+        "x_range": [
+          185.0,
+          250.0
+        ],
+        "dominant_role": "HEADER",
+        "coherence": 1.0
+      },
+      {
+        "x_range": [
+          250.0,
+          315.0
+        ],
+        "dominant_role": "HEADER",
+        "coherence": 1.0
+      },
+      {
+        "x_range": [
+          315.0,
+          380.0
+        ],
+        "dominant_role": "HEADER",
+        "coherence": 1.0
+      },
+      {
+        "x_range": [
+          380.0,
+          445.0
+        ],
+        "dominant_role": "HEADER",
+        "coherence": 1.0
+      },
+      {
+        "x_range": [
+          445.0,
+          510.0
+        ],
+        "dominant_role": "HEADER",
+        "coherence": 1.0
+      },
+      {
+        "x_range": [
+          510.0,
+          575.0
+        ],
+        "dominant_role": "HEADER",
+        "coherence": 1.0
+      }
+    ],
+    "agreement": {
+      "section_titles": {
+        "docling_matches_ours": 1,
+        "total": 1
+      },
+      "cell_bold_flags": {
+        "agree": 24,
+        "disagree": 2
+      }
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:46:55 CEST",
+    "covers_cases": [
+      7
+    ],
+    "needs_review": true
+  }
+}

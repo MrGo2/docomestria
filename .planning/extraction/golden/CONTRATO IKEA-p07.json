@@ -1,0 +1,646 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 7,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 52,
+    "rects": 106,
+    "docling_blocks": 23,
+    "noise_dropped": 11
+  },
+  "sections": [
+    {
+      "title": "Precio de los servicios:",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "text"
+      },
+      "title_bbox": {"x": 59.547, "y": 75.469, "w": 102.348, "h": 10.201},
+      "container_bbox": {"x": 46.603, "y": 70.797, "w": 498.547, "h": 667.965},
+      "bands": [
+        {
+          "y_range": [89.037, 454.452],
+          "layout": "2-col",
+          "columns": [
+            {
+              "x_range": [60.240, 266.639],
+              "role": "LABEL",
+              "column_header": null,
+              "coherence": 1.0
+            },
+            {
+              "x_range": [267.794, 537.291],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 1.0
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [89.037, 107.065],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Mantenimiento de la Tarjeta IKEA:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 94.191, "w": 147.864, "h": 10.201},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0€.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 94.264, "w": 12.717, "h": 10.128},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [110.763, 128.791],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Duplicado de Tarjeta IKEA:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 115.917, "w": 117.355, "h": 10.201},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0€.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 115.990, "w": 12.717, "h": 10.128},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [132.489, 150.517],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cancelación anticipada de la deuda:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 137.874, "w": 157.574, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0€.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 137.948, "w": 12.717, "h": 10.128},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [157.220, 180.795],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Retirada de dinero en efectivo a crédito en cajeros, a través de la Tarjeta IKEA:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 159.601, "w": 196.505, "h": 20.602},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Retirada de dinero en efectivo a crédito en",
+                    "cajeros, a través de la Tarjeta IKEA:"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "5% del importe dispuesto, mínimo 4€",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 159.674, "w": 150.469, "h": 10.128},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [184.493, 208.068],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Retirada de efectivo a crédito a través de teléfono:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 187.105, "w": 196.505, "h": 20.602},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Retirada de efectivo a crédito a través de",
+                    "teléfono:"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "4% del importe dispuesto, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 187.178, "w": 259.280, "h": 20.529},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "4% del importe dispuesto, o porcentaje inferior si se indica en la",
+                    "campaña. Importe mínimo de disposición: 100€."
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [212.229, 235.804],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Retirada de efectivo a crédito a través de web:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 214.841, "w": 196.505, "h": 20.602},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Retirada de efectivo a crédito a través de",
+                    "web:"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 214.914, "w": 259.281, "h": 20.529},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si se",
+                    "indica en la campaña. Importe mínimo de disposición: 100€."
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [239.964, 274.403],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 240.958, "w": 196.505, "h": 31.003},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Servicio de fraccionamiento del importe de",
+                    "las compras realizadas con modalidad de",
+                    "pago Fin de Mes:"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 241.031, "w": 259.281, "h": 20.529},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "3% del importe nominal de la compra realizada cuando se",
+                    "fraccione el importe en 3 meses."
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [278.563, 322.709],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 281.175, "w": 196.505, "h": 30.803},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Cambio de divisa de las disposiciones o",
+                    "compras realizadas en moneda diferente al",
+                    "euro:"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "aplicamos el tipo de cambio que la marca de la tarjeta (Visa) tiene publicado en su página web en el momento en que recibimos información de que usted ha realizado la operación incrementado en un 3,95%.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 281.248, "w": 259.333, "h": 41.314},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "aplicamos el tipo de cambio que la marca de la tarjeta (Visa)",
+                    "tiene publicado en su página web en el momento en que",
+                    "recibimos información de que usted ha realizado la operación",
+                    "incrementado en un 3,95%."
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r9",
+              "y_range": [325.713, 420.245],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Reclamación de cuota impagada:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 330.867, "w": 144.908, "h": 10.201},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 328.398, "w": 259.337, "h": 82.934},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "15€ por los recursos que destinaremos a poner al día la deuda",
+                    "impagada. Un mismo impago no podrá generar más de una",
+                    "compensación. Sólo se cobrará esta compensación en deudas",
+                    "iguales o superiores a 20€. Si después de 15 días se mantiene",
+                    "el impago, podemos enviarle un burofax o equivalente con",
+                    "certificación de contenido y recibo. Actualmente el precio del",
+                    "envío del burofax es de 24 euros y le reclamaremos su coste",
+                    "únicamente en deudas superiores a 300€."
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [428.104, 454.452],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Envío de documentación relativa al contrato por correo postal a petición de usted:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.094, "y": 430.716, "w": 196.537, "h": 20.602},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Envío de documentación relativa al contrato",
+                    "por correo postal a petición de usted:"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "0,60€ por comunicado.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.648, "y": 436.105, "w": 91.991, "h": 10.128},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Mantenimiento de la Tarjeta IKEA:",
+      "value": "0€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 94.191,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p7-r1",
+        "docling_block_id": "#/texts/195",
+        "label_span_id": "span_idx_1",
+        "value_span_ids": ["span_idx_2"]
+      }
+    },
+    {
+      "label": "Duplicado de Tarjeta IKEA:",
+      "value": "0€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 115.917,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p7-r3",
+        "docling_block_id": "#/texts/197",
+        "label_span_id": "span_idx_3",
+        "value_span_ids": ["span_idx_4"]
+      }
+    },
+    {
+      "label": "Cancelación anticipada de la deuda:",
+      "value": "0€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 137.874,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p7-r5",
+        "docling_block_id": "#/texts/199",
+        "label_span_id": "span_idx_5",
+        "value_span_ids": ["span_idx_6"]
+      }
+    },
+    {
+      "label": "Retirada de dinero en efectivo a crédito en cajeros, a través de la Tarjeta IKEA:",
+      "value": "5% del importe dispuesto, mínimo 4€",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 159.601,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p7-r7",
+        "docling_block_id": "#/texts/201",
+        "label_span_id": "span_idx_7",
+        "value_span_ids": ["span_idx_8"]
+      }
+    },
+    {
+      "label": "Retirada de efectivo a crédito a través de teléfono:",
+      "value": "4% del importe dispuesto, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 187.105,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p7-r9",
+        "docling_block_id": "#/texts/203",
+        "label_span_id": "span_idx_10",
+        "value_span_ids": ["span_idx_11", "span_idx_12"]
+      }
+    },
+    {
+      "label": "Retirada de efectivo a crédito a través de web:",
+      "value": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 214.841,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p7-r11",
+        "docling_block_id": "#/texts/205",
+        "label_span_id": "span_idx_14",
+        "value_span_ids": ["span_idx_15", "span_idx_16"]
+      }
+    },
+    {
+      "label": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes:",
+      "value": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 240.958,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p7-r13",
+        "docling_block_id": "#/texts/207",
+        "label_span_id": "span_idx_18",
+        "value_span_ids": ["span_idx_19", "span_idx_20"]
+      }
+    },
+    {
+      "label": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro:",
+      "value": "aplicamos el tipo de cambio que la marca de la tarjeta (Visa) tiene publicado en su página web en el momento en que recibimos información de que usted ha realizado la operación incrementado en un 3,95%.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 281.175,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p7-r15",
+        "docling_block_id": "#/texts/209",
+        "label_span_id": "span_idx_23",
+        "value_span_ids": ["span_idx_24", "span_idx_25", "span_idx_26", "span_idx_27"]
+      }
+    },
+    {
+      "label": "Reclamación de cuota impagada:",
+      "value": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 330.867,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p7-r17",
+        "docling_block_id": "#/texts/211",
+        "label_span_id": "span_idx_30",
+        "value_span_ids": ["span_idx_31", "span_idx_32", "span_idx_33", "span_idx_34", "span_idx_35", "span_idx_36", "span_idx_37"]
+      }
+    },
+    {
+      "label": "Envío de documentación relativa al contrato por correo postal a petición de usted:",
+      "value": "0,60€ por comunicado.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 430.716,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p7-r19",
+        "docling_block_id": "#/texts/213",
+        "label_span_id": "span_idx_38",
+        "value_span_ids": ["span_idx_39"]
+      }
+    }
+  ],
+  "noise": [
+    {
+      "text": "Logalty Guid: 001001-0001-000000136441990.par - Date: 2025/02/25 T 20:07:05 CET +0100 - Pages: 7/59",
+      "bbox": {"x": 583.804, "y": 274.340, "w": 5.618, "h": 475.200},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Logalty",
+      "bbox": {"x": 581.636, "y": 715.940, "w": 9.056, "h": 33.600},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Guid: 001001-0001-000000136441990.par",
+      "bbox": {"x": 581.636, "y": 687.140, "w": 9.056, "h": 24.000},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {"x": 581.636, "y": 523.940, "w": 9.056, "h": 4.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Date:",
+      "bbox": {"x": 581.636, "y": 495.140, "w": 9.056, "h": 24.000},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "2025/02/25 T",
+      "bbox": {"x": 581.636, "y": 442.340, "w": 9.056, "h": 48.000},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "20:07:05",
+      "bbox": {"x": 581.636, "y": 389.540, "w": 9.056, "h": 38.400},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "CET +0100",
+      "bbox": {"x": 581.636, "y": 370.340, "w": 9.056, "h": 14.400},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {"x": 581.636, "y": 331.940, "w": 9.056, "h": 4.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Pages:",
+      "bbox": {"x": 581.636, "y": 298.340, "w": 9.056, "h": 28.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "7/59",
+      "bbox": {"x": 581.636, "y": 274.340, "w": 9.056, "h": 19.200},
+      "reason": "furniture_layer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 106,
+        "lines": 0,
+        "tables": 6,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 23,
+        "labels": {
+          "page_header": 1,
+          "text": 21,
+          "picture": 1
+        },
+        "section_headers": 0,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 52,
+        "bold": 0,
+        "cases": {
+          "lower": 40,
+          "mixed": 1,
+          "none": 7,
+          "Title": 2,
+          "UPPER": 2
+        }
+      }
+    },
+    "column_coherence": [
+      {
+        "x_range": [60.240, 266.639],
+        "dominant_role": "LABEL",
+        "cell_count": 10,
+        "dominant_count": 10,
+        "coherence": 1.0
+      },
+      {
+        "x_range": [267.794, 537.291],
+        "dominant_role": "VALUE_TEXT",
+        "cell_count": 10,
+        "dominant_count": 10,
+        "coherence": 1.0
+      }
+    ],
+    "agreement": {
+      "section_titles": {
+        "docling_matches_ours": 0,
+        "total": 1,
+        "note": "Docling emits no section_header on this page; title inferred from position above outer rect (case-5 pattern)"
+      },
+      "cell_bold_flags": {
+        "agree": 20,
+        "disagree": 0
+      }
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T21:14:20Z",
+    "covers_cases": [5, 7],
+    "needs_review": true
+  }
+}

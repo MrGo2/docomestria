@@ -1,0 +1,826 @@
+{
+  "pdf": "BBVA_0686-01516762_DOC2_CONTRATO.pdf",
+  "page": 3,
+  "page_size_pt": [595.476, 842.6736],
+  "atoms_summary": {
+    "lite_spans": 58,
+    "rects": 368,
+    "docling_blocks": 10,
+    "noise_dropped": 7
+  },
+  "sections": [
+    {
+      "title": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "title_signal": {
+        "size": 18.0,
+        "bold": true,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 43.502, "y": 78.958, "w": 404.01, "h": 20.088},
+      "container_bbox": {"x": 47.777, "y": 114.624, "w": 513.145, "h": 462.524},
+      "bands": [
+        {
+          "y_range": [114.624, 576.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [47.777, 360.0], "role": "LABEL", "column_header": null, "coherence": 0.92},
+            {"x_range": [360.0, 560.922], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 0.85}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [133.452, 146.615],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Importe Total del Préstamo (Importe en letra y número)",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 133.452, "w": 244.525, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "30.000,00 Treinta mil euros",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.748, "y": 135.855, "w": 114.532, "h": 10.044},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [171.202, 182.362],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Fecha Entrada en Vigor",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 171.202, "w": 105.732, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "11-04-2017",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.086, "y": 171.202, "w": 51.14, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [197.453, 208.613],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Vencimiento Final",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 197.453, "w": 79.471, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "31-05-2022",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.086, "y": 197.453, "w": 51.14, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [223.704, 234.864],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Importe Total Adeudado (Importe Total + Intereses + Gastos)",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 223.704, "w": 271.213, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "37.013,80 euros",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.088, "y": 223.704, "w": 72.254, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [243.958, 267.617],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Entrega del Importe del Préstamo mediante Abono en Cuenta",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 251.582, "w": 274.001, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "ABONO EN CUENTA",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 369.086, "y": 243.958, "w": 96.675, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": ["ABONO EN CUENTA", "0182-0686-61-0201522327"]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [276.955, 288.115],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Interés Nominal Anual",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 276.955, "w": 98.376, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "7,5000%",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.086, "y": 276.955, "w": 39.47, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [303.206, 314.366],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "TAE",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 303.206, "w": 19.45, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "8,7845%",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.086, "y": 303.206, "w": 39.47, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [329.458, 340.618],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Interés Nominal de Demora",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 329.458, "w": 122.262, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Tipo de Interés Nominal + 2 puntos",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 369.088, "y": 329.458, "w": 155.902, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r9",
+              "y_range": [355.709, 366.869],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Comisión de Apertura",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 355.709, "w": 96.705, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "2,3000%",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.748, "y": 355.709, "w": 39.47, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Mínimo",
+                  "role": "LABEL",
+                  "bbox": {"x": 437.356, "y": 355.709, "w": 32.78, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "0,00 euros",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 492.393, "y": 356.213, "w": 64.502, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": ["0,00", "euros"]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [381.960, 393.120],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Comisión de Estudio",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 381.960, "w": 91.705, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0,0000%",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.748, "y": 381.960, "w": 39.47, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Mínimo",
+                  "role": "LABEL",
+                  "bbox": {"x": 437.356, "y": 381.960, "w": 32.78, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "0,00 euros",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 492.393, "y": 382.464, "w": 64.502, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": ["0,00", "euros"]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r11",
+              "y_range": [408.211, 419.371],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Comisión de Cancelación Anticipada (% máximo)",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 408.211, "w": 218.970, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "1,0000%",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.086, "y": 408.211, "w": 39.47, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r12",
+              "y_range": [434.462, 445.622],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Gastos Reclamación Posiciones Deudoras",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 434.462, "w": 189.531, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "30,00 euros",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.088, "y": 434.462, "w": 52.799, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r13",
+              "y_range": [460.714, 471.874],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Interés Inicial Bonificado*",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 460.714, "w": 112.284, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "5,5000%",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.086, "y": 460.714, "w": 39.47, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r14",
+              "y_range": [486.965, 498.125],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "TAE Bonificada*",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 486.965, "w": 72.799, "h": 11.16},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "6,6274%",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.086, "y": 486.965, "w": 39.47, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r15",
+              "y_range": [513.216, 534.123],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Importe Total Adeudado con Bonificación*",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 513.216, "w": 186.737, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "35.238,82 euros",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 369.088, "y": 513.216, "w": 72.27, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r16",
+              "y_range": [534.122, 577.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Domiciliación de Cuotas",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.560, "y": 545.868, "w": 107.272, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "CUENTA 0182-0686-61-0201522327",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 369.748, "y": 534.122, "w": 155.575, "h": 10.044},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": ["CUENTA 0182-0686-61-0201522327", "BBVA SUANCES", "JOSE ANTONIO, 14"]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Amortización / Calendario de Pagos",
+      "title_signal": {
+        "size": 10.0,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 48.002, "y": 584.121, "w": 165.078, "h": 8.817},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [582.221, 694.0],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r17",
+              "y_range": [582.221, 593.381],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Amortización / Calendario de Pagos",
+                  "role": "LABEL",
+                  "bbox": {"x": 53.562, "y": 582.221, "w": 159.518, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r18",
+              "y_range": [602.646, 694.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "* 61 CUOTAS FIJAS DE 593,01 EUROS A SATISFACER MENSUALMENTE DESDE EL 31-05-2017 HASTA EL 31-05-2022 MAS UN PAGO A SATISFACER EL 30-04-2017 EN CONCEPTO DE INTERESES. SIN PERJUICIO DE LO ANTERIOR, EL BANCO APLICARÁ UNA BONIFICACIÓN A LOS CLIENTES QUE CUMPLAN LAS CONDICIONES PACTADOS CON UNA REDUCCIÓN DE 2,0000 PUNTOS PORCENTUALES DESDE LA PUESTA EN VIGOR DEL PRÉSTAMO HASTA EL DÍA 30-06-2017, AUNQUE EL CLIENTE NO CUMPLA LAS CONDICIONES ESTABLECIDAS PARA LA BONIFICACIÓN DE INTERESES DESCRITAS EN LA PÓLIZA. EN EL SUPUESTO QUE EL PRESTATARIO CUMPLIERA TODAS Y CADA UNA DE LAS CONDICIONES DE BONIFICACIÓN DE INTERESES DEL CONTRATO DURANTE EL PLAZO DE DURACIÓN DEL PRÉSTAMO, EL IMPORTE DE LAS CUOTAS CALCULADAS EN EL MOMENTO DE LA FORMALIZACIÓN PASARÍA A 541,53 EUROS.",
+                  "role": "PROSE",
+                  "bbox": {"x": 53.251, "y": 602.646, "w": 501.806, "h": 82.646},
+                  "bold": true,
+                  "case": "UPPER",
+                  "docling_label": "footnote",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [737.371, 771.377],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r19",
+              "y_range": [737.371, 771.377],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "* Los datos indicados con asteriscos han sido calculados teniendo en cuenta que el prestatario cumple las condiciones de la cláusula \"Intereses. Bonificación de Intereses\" de la póliza durante todo el plazo de duración del préstamo.",
+                  "role": "PROSE",
+                  "bbox": {"x": 47.253, "y": 737.371, "w": 507.574, "h": 31.940},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "footnote",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Importe Total del Préstamo (Importe en letra y número)",
+      "value": "30.000,00 Treinta mil euros",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 133.452,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s2", "value_span_ids": ["s3"]}
+    },
+    {
+      "label": "Fecha Entrada en Vigor",
+      "value": "11-04-2017",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 171.202,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s4", "value_span_ids": ["s5"]}
+    },
+    {
+      "label": "Vencimiento Final",
+      "value": "31-05-2022",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 197.453,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s6", "value_span_ids": ["s7"]}
+    },
+    {
+      "label": "Importe Total Adeudado (Importe Total + Intereses + Gastos)",
+      "value": "37.013,80 euros",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 223.704,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s8", "value_span_ids": ["s9"]}
+    },
+    {
+      "label": "Entrega del Importe del Préstamo mediante Abono en Cuenta",
+      "value": "ABONO EN CUENTA 0182-0686-61-0201522327",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 251.582,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s10", "value_span_ids": ["s11", "s12"]}
+    },
+    {
+      "label": "Interés Nominal Anual",
+      "value": "7,5000%",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 276.955,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s13", "value_span_ids": ["s14"]}
+    },
+    {
+      "label": "TAE",
+      "value": "8,7845%",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 303.206,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s15", "value_span_ids": ["s16"]}
+    },
+    {
+      "label": "Interés Nominal de Demora",
+      "value": "Tipo de Interés Nominal + 2 puntos",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 329.458,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s17", "value_span_ids": ["s18"]}
+    },
+    {
+      "label": "Comisión de Apertura",
+      "value": "2,3000%",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 355.709,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s19", "value_span_ids": ["s20"]}
+    },
+    {
+      "label": "Mínimo",
+      "value": "0,00 euros",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": "Comisión de Apertura",
+      "row_y": 355.709,
+      "rule": "header-projection",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s21", "value_span_ids": ["s22", "s23"]}
+    },
+    {
+      "label": "Comisión de Estudio",
+      "value": "0,0000%",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 381.960,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s24", "value_span_ids": ["s25"]}
+    },
+    {
+      "label": "Mínimo",
+      "value": "0,00 euros",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": "Comisión de Estudio",
+      "row_y": 381.960,
+      "rule": "header-projection",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s26", "value_span_ids": ["s27", "s28"]}
+    },
+    {
+      "label": "Comisión de Cancelación Anticipada (% máximo)",
+      "value": "1,0000%",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 408.211,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s29", "value_span_ids": ["s30"]}
+    },
+    {
+      "label": "Gastos Reclamación Posiciones Deudoras",
+      "value": "30,00 euros",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 434.462,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s31", "value_span_ids": ["s32"]}
+    },
+    {
+      "label": "Interés Inicial Bonificado*",
+      "value": "5,5000%",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 460.714,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s33", "value_span_ids": ["s34"]}
+    },
+    {
+      "label": "TAE Bonificada*",
+      "value": "6,6274%",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 486.965,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s35", "value_span_ids": ["s36"]}
+    },
+    {
+      "label": "Importe Total Adeudado con Bonificación*",
+      "value": "35.238,82 euros",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 513.216,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s37", "value_span_ids": ["s38"]}
+    },
+    {
+      "label": "Domiciliación de Cuotas",
+      "value": "CUENTA 0182-0686-61-0201522327 / BBVA SUANCES / JOSE ANTONIO, 14",
+      "section": "CONDICIONES ECONÓMICAS DEL PRÉSTAMO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 545.868,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p3-t1", "docling_block_id": "b4", "label_span_id": "s40", "value_span_ids": ["s39", "s41", "s42"]}
+    }
+  ],
+  "noise": [
+    {"text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBA", "bbox": {"x": 12.569, "y": 238.833, "w": 4.849, "h": 428.664}, "reason": "page_header"},
+    {"text": "", "bbox": {"x": 44.806, "y": 24.468, "w": 84.214, "h": 28.445}, "reason": "picture_decorative"},
+    {"text": "", "bbox": {"x": 396.445, "y": 15.994, "w": 167.890, "h": 30.971}, "reason": "picture_decorative"},
+    {"text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBA", "bbox": {"x": 11.524, "y": 238.833, "w": 6.138, "h": 428.664}, "reason": "furniture_layer"},
+    {"text": "Mod. CS POLIZA BONIFICACION V.6 23-10-2016", "bbox": {"x": 27.748, "y": 827.528, "w": 181.802, "h": 7.054}, "reason": "page_footer"},
+    {"text": "Página 3 de 14", "bbox": {"x": 512.848, "y": 827.528, "w": 55.595, "h": 7.054}, "reason": "page_footer"},
+    {"text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBA", "bbox": {"x": 11.524, "y": 238.833, "w": 6.138, "h": 428.664}, "reason": "size_lt_7"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 368, "lines": 17, "tables": 2, "checkboxes": 0},
+      "docling": {
+        "blocks": 10,
+        "labels": {"page_header": 1, "picture": 2, "section_header": 2, "table": 1, "footnote": 2, "page_footer": 2},
+        "section_headers": 2,
+        "tables": 1,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {"spans": 58, "bold": 12, "cases": {"Title": 2, "UPPER": 16, "lower": 28, "none": 12}}
+    },
+    "column_coherence": [
+      {"x_range": [47.777, 360.0], "dominant_role": "LABEL", "ratio": 0.92},
+      {"x_range": [360.0, 560.922], "dominant_role": "VALUE_NUMERIC", "ratio": 0.85}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 2, "total": 2},
+      "cell_bold_flags": {"agree": 55, "disagree": 3}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:47:44+02:00",
+    "covers_cases": [7],
+    "needs_review": true
+  }
+}

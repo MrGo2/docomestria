@@ -1,0 +1,205 @@
+{
+  "pdf": "BBVA_0686-01516762_DOC2_CONTRATO.pdf",
+  "page": 1,
+  "page_size_pt": [595.476, 842.6736],
+  "atoms_summary": {
+    "lite_spans": 18,
+    "rects": 334,
+    "docling_blocks": 15,
+    "noise_dropped": 6
+  },
+  "sections": [
+    {
+      "title": "Contrato de Préstamo Personal Bonificado",
+      "title_signal": {
+        "size": 23.0,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 43.502, "y": 102.175, "w": 435.858, "h": 25.668},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [127.843, 560.0],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [174.845, 210.01],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "El documento que va a leer a continuación es un Contrato con BBVA para un préstamo personal. Usted tiene derecho a llevárselo y en pedirnos aclaraciones de lo que no entienda. Al final de este documento encontrará una explicación detallada de los términos que encontrará señalizados con este símbolo para facilitar su comprensión.",
+                  "role": "PROSE",
+                  "bbox": {"x": 51.753, "y": 174.845, "w": 493.581, "h": 36.0},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [227.65, 240.81],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "El Contrato está compuesto por cinco partes:",
+                  "role": "PROSE",
+                  "bbox": {"x": 51.753, "y": 227.65, "w": 200.094, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [285.25, 296.41],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Identificación de las partes contratantes",
+                  "role": "PROSE",
+                  "bbox": {"x": 51.753, "y": 285.25, "w": 176.213, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [328.45, 339.61],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Condiciones económicas del préstamo",
+                  "role": "PROSE",
+                  "bbox": {"x": 51.753, "y": 328.45, "w": 171.748, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [371.65, 382.81],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Condiciones generales",
+                  "role": "PROSE",
+                  "bbox": {"x": 51.753, "y": 371.65, "w": 101.719, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [414.85, 426.01],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Condiciones particulares",
+                  "role": "PROSE",
+                  "bbox": {"x": 51.753, "y": 414.85, "w": 109.489, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [458.05, 469.21],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Glosario",
+                  "role": "PROSE",
+                  "bbox": {"x": 51.753, "y": 458.05, "w": 37.23, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [513.245, 548.41],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tómese su tiempo y léalo atentamente. Asegúrese de que la información que hemos incluido en el Contrato es correcta, y de que ha comprendido el contenido de todo el Contrato. Usted lo firmará al final de este documento mostrando su conformidad con el mismo.",
+                  "role": "PROSE",
+                  "bbox": {"x": 51.753, "y": 513.245, "w": 488.005, "h": 36.0},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [],
+  "noise": [
+    {"text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBA", "bbox": {"x": 11.524, "y": 238.833, "w": 6.138, "h": 428.664}, "reason": "furniture_layer"},
+    {"text": "", "bbox": {"x": 44.734, "y": 24.356, "w": 84.334, "h": 28.498}, "reason": "picture_decorative"},
+    {"text": "", "bbox": {"x": 396.540, "y": 16.088, "w": 167.704, "h": 30.674}, "reason": "picture_decorative"},
+    {"text": "Mod. CS POLIZA BONIFICACION V.6 23-10-2016", "bbox": {"x": 27.748, "y": 826.008, "w": 181.802, "h": 8.928}, "reason": "page_footer"},
+    {"text": "Página 1 de 14", "bbox": {"x": 512.848, "y": 826.008, "w": 55.595, "h": 8.928}, "reason": "page_footer"},
+    {"text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBA", "bbox": {"x": 12.569, "y": 238.833, "w": 4.849, "h": 428.664}, "reason": "page_header"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 334, "lines": 6, "tables": 1, "checkboxes": 0},
+      "docling": {
+        "blocks": 15,
+        "labels": {"page_header": 1, "picture": 2, "text": 9, "section_header": 1, "page_footer": 2},
+        "section_headers": 1,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {"spans": 18, "bold": 2, "cases": {"Title": 1, "lower": 16, "UPPER": 1}}
+    },
+    "column_coherence": [],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 1, "total": 1},
+      "cell_bold_flags": {"agree": 18, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:47:44+02:00",
+    "covers_cases": [],
+    "needs_review": true
+  }
+}

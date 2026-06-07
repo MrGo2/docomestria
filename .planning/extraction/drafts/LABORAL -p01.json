@@ -1,0 +1,2750 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/1_Example/LABORAL .pdf",
+  "page": 1,
+  "page_size_pt": [
+    595,
+    842
+  ],
+  "document_type": "Consulta TGSS situacion",
+  "structure": [
+    {
+      "type": "section",
+      "id": "consulta_tgss_situacion",
+      "title": "Consulta TGSS situacion",
+      "y_hint": 52,
+      "children": [
+        {
+          "type": "table",
+          "id": "datos_peticion",
+          "title": "Datos Petición",
+          "y_hint": 113,
+          "columns": [
+            {
+              "id": "label",
+              "label": "Datos Petición",
+              "type": "text"
+            },
+            {
+              "id": "value",
+              "label": "Valor",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "label": {
+                "text": "Nº Procedimiento:",
+                "evidence": {
+                  "text": "Nº Procedimiento:",
+                  "row_y_hint": 134,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 134.7700000000001,
+                      "w": 85.88999999999999,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      83,
+                      84,
+                      85,
+                      86,
+                      87,
+                      88,
+                      89,
+                      90,
+                      91,
+                      92,
+                      93,
+                      94,
+                      95,
+                      96,
+                      97,
+                      98,
+                      99
+                    ],
+                    "n_chars": 17,
+                    "row_y": 134.7700000000001
+                  },
+                  "liteparse": {
+                    "span_id": 6,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 133.6500244140625,
+                      "w": 119.79998779296875,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": null,
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 134.7700000000001,
+                    "w": 85.88999999999999,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 134.7700000000001,
+                  "w": 85.88999999999999,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "987-15",
+                "evidence": {
+                  "text": "987-15",
+                  "row_y_hint": 134,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 268.67,
+                      "y": 134.7700000000001,
+                      "w": 31.129999999999995,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      101,
+                      102,
+                      103,
+                      104,
+                      105,
+                      106
+                    ],
+                    "n_chars": 6,
+                    "row_y": 134.7700000000001
+                  },
+                  "liteparse": {
+                    "span_id": 6,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 133.6500244140625,
+                      "w": 119.79998779296875,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/0/cells[1][0]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 135.5200000000001,
+                      "w": 121.14999999999992,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 268.67,
+                    "y": 134.7700000000001,
+                    "w": 31.129999999999995,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 268.67,
+                  "y": 134.7700000000001,
+                  "w": 31.129999999999995,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Nº Documento:",
+                "evidence": {
+                  "text": "Nº Documento:",
+                  "row_y_hint": 154,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 154.7700000000001,
+                      "w": 71.43,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      107,
+                      108,
+                      109,
+                      110,
+                      111,
+                      112,
+                      113,
+                      114,
+                      115,
+                      116,
+                      117,
+                      118,
+                      119
+                    ],
+                    "n_chars": 13,
+                    "row_y": 154.7700000000001
+                  },
+                  "liteparse": {
+                    "span_id": 7,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 153.6500244140625,
+                      "w": 126.469970703125,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "Title",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": null,
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 154.7700000000001,
+                    "w": 71.43,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 154.7700000000001,
+                  "w": 71.43,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "X6573514E",
+                "evidence": {
+                  "text": "X6573514E",
+                  "row_y_hint": 154,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 254.21,
+                      "y": 154.7700000000001,
+                      "w": 52.26000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      121,
+                      122,
+                      123,
+                      124,
+                      125,
+                      126,
+                      127,
+                      128,
+                      129
+                    ],
+                    "n_chars": 9,
+                    "row_y": 154.7700000000001
+                  },
+                  "liteparse": {
+                    "span_id": 7,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 153.6500244140625,
+                      "w": 126.469970703125,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "Title",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/0/cells[2][0]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 155.5200000000001,
+                      "w": 127.82000000000005,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 254.21,
+                    "y": 154.7700000000001,
+                    "w": 52.26000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 254.21,
+                  "y": 154.7700000000001,
+                  "w": 52.26000000000002,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Fecha de emisión:",
+                "evidence": {
+                  "text": "Fecha de emisión:",
+                  "row_y_hint": 174,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 174.7700000000001,
+                      "w": 86.69999999999999,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      130,
+                      131,
+                      132,
+                      133,
+                      134,
+                      135,
+                      136,
+                      137,
+                      138,
+                      139,
+                      140,
+                      141,
+                      142,
+                      143,
+                      144,
+                      145,
+                      146
+                    ],
+                    "n_chars": 17,
+                    "row_y": 174.7700000000001
+                  },
+                  "liteparse": {
+                    "span_id": 8,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 173.6500244140625,
+                      "w": 181.2099609375,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": null,
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 174.7700000000001,
+                    "w": 86.69999999999999,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 174.7700000000001,
+                  "w": 86.69999999999999,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "17 d’abr. 2026 17:14",
+                "evidence": {
+                  "text": "17 d’abr. 2026 17:14",
+                  "row_y_hint": 174,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 269.48,
+                      "y": 174.7700000000001,
+                      "w": 91.73000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      148,
+                      149,
+                      150,
+                      151,
+                      152,
+                      153,
+                      154,
+                      155,
+                      156,
+                      157,
+                      158,
+                      159,
+                      160,
+                      161,
+                      162,
+                      163,
+                      164,
+                      165,
+                      166,
+                      167
+                    ],
+                    "n_chars": 20,
+                    "row_y": 174.7700000000001
+                  },
+                  "liteparse": {
+                    "span_id": 8,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 173.6500244140625,
+                      "w": 181.2099609375,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": null,
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 269.48,
+                    "y": 174.7700000000001,
+                    "w": 91.73000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 269.48,
+                  "y": 174.7700000000001,
+                  "w": 91.73000000000002,
+                  "h": 10.0
+                }
+              }
+            }
+          ],
+          "bbox": {
+            "x": 180.0,
+            "y": 134.7700000000001,
+            "w": 181.21000000000004,
+            "h": 50.0
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "Datos Petición",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 255.82,
+                  "y": 113.93400000000008,
+                  "w": 83.35199999999998,
+                  "h": 12.0
+                },
+                "char_indices": [
+                  69,
+                  70,
+                  71,
+                  72,
+                  73,
+                  74,
+                  75,
+                  76,
+                  77,
+                  78,
+                  79,
+                  80,
+                  81,
+                  82
+                ],
+                "n_chars": 14,
+                "row_y": 113.93400000000008
+              },
+              "liteparse": {
+                "span_id": 5,
+                "bbox": {
+                  "x": 255.82000732421875,
+                  "y": 112.59002685546875,
+                  "w": 83.35198974609375,
+                  "h": 13.3919677734375
+                },
+                "case_class": "lower",
+                "is_bold": true,
+                "font_size": 12.0
+              },
+              "docling": {
+                "cell_ref": "#/tables/0/cells[0][0]",
+                "bbox": {
+                  "x": 255.82,
+                  "y": 114.83400000000006,
+                  "w": 82.0200000000001,
+                  "h": 11.100000000000023
+                },
+                "column_header": true,
+                "row_header": false
+              },
+              "bbox": {
+                "x": 255.82,
+                "y": 113.93400000000008,
+                "w": 83.35199999999998,
+                "h": 12.0
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 180.0,
+                "y": 134.7700000000001,
+                "w": 181.21000000000004,
+                "h": 50.0
+              },
+              "pdfplumber_rect": null,
+              "docling_block": {
+                "self_ref": "#/tables/0",
+                "label": "table",
+                "bbox": {
+                  "x": 18.983436584472656,
+                  "y": 108.10406494140625,
+                  "w": 557.1012191772461,
+                  "h": 81.12078857421875
+                }
+              },
+              "edges_inside": {
+                "vertical": 0,
+                "horizontal": 4
+              },
+              "colons_inside": 4,
+              "container_score": 2
+            },
+            "structural_signals": {
+              "kind": "table",
+              "n_columns_declared": 2,
+              "n_rows_declared": 3,
+              "n_columns_with_group": 0,
+              "header_levels": 1,
+              "vertical_edges_inside": 0,
+              "horizontal_edges_inside": 4,
+              "has_docling_table_block": true,
+              "has_pdfplumber_rect_frame": false
+            }
+          }
+        },
+        {
+          "type": "table",
+          "id": "respuesta",
+          "title": "Respuesta",
+          "y_hint": 203,
+          "columns": [
+            {
+              "id": "label",
+              "label": "Respuesta",
+              "type": "text"
+            },
+            {
+              "id": "value",
+              "label": "Valor",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "label": {
+                "text": "Titular:",
+                "evidence": {
+                  "text": "Titular:",
+                  "row_y_hint": 224,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 134.11,
+                      "y": 224.7800000000001,
+                      "w": 33.890000000000015,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      202,
+                      203,
+                      204,
+                      205,
+                      206,
+                      207,
+                      208,
+                      209
+                    ],
+                    "n_chars": 8,
+                    "row_y": 224.75
+                  },
+                  "liteparse": {
+                    "span_id": 10,
+                    "bbox": {
+                      "x": 134.11000061035156,
+                      "y": 223.6600341796875,
+                      "w": 33.88999938964844,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[1][0]",
+                    "bbox": {
+                      "x": 134.11,
+                      "y": 225.5300000000001,
+                      "w": 33.89000000000004,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 134.11,
+                    "y": 224.7800000000001,
+                    "w": 33.890000000000015,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 134.11,
+                  "y": 224.7800000000001,
+                  "w": 33.890000000000015,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "GHEORGHE ADRIAN OPREA ---",
+                "evidence": {
+                  "text": "GHEORGHE ADRIAN OPREA ---",
+                  "row_y_hint": 224,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 224.75,
+                      "w": 149.45999999999998,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      177,
+                      178,
+                      179,
+                      180,
+                      181,
+                      182,
+                      183,
+                      184,
+                      185,
+                      186,
+                      187,
+                      188,
+                      189,
+                      190,
+                      191,
+                      192,
+                      193,
+                      194,
+                      195,
+                      196
+                    ],
+                    "n_chars": 25,
+                    "row_y": 224.75
+                  },
+                  "liteparse": {
+                    "span_id": 11,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 223.6300048828125,
+                      "w": 149.46002197265625,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "UPPER",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[1][1]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 225.5,
+                      "w": 149.45999999999992,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 224.75,
+                    "w": 149.45999999999998,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 224.75,
+                  "w": 149.45999999999998,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Nº Seguridad Social:",
+                "evidence": {
+                  "text": "Nº Seguridad Social:",
+                  "row_y_hint": 244,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 69.88,
+                      "y": 244.7800000000001,
+                      "w": 98.12000000000003,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      222,
+                      223,
+                      224,
+                      225,
+                      226,
+                      227,
+                      228,
+                      229,
+                      230,
+                      231,
+                      232,
+                      233,
+                      234,
+                      235,
+                      236,
+                      237,
+                      238,
+                      239,
+                      240,
+                      241
+                    ],
+                    "n_chars": 20,
+                    "row_y": 244.75
+                  },
+                  "liteparse": {
+                    "span_id": 12,
+                    "bbox": {
+                      "x": 69.87999725341797,
+                      "y": 243.6600341796875,
+                      "w": 98.11998748779297,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[2][0]",
+                    "bbox": {
+                      "x": 69.88,
+                      "y": 245.5300000000001,
+                      "w": 99.47,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 69.88,
+                    "y": 244.7800000000001,
+                    "w": 98.12000000000003,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 69.88,
+                  "y": 244.7800000000001,
+                  "w": 98.12000000000003,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "341005311371",
+                "evidence": {
+                  "text": "341005311371",
+                  "row_y_hint": 244,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 244.75,
+                      "w": 66.72000000000003,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      210,
+                      211,
+                      212,
+                      213,
+                      214,
+                      215,
+                      216,
+                      217,
+                      218,
+                      219,
+                      220,
+                      221
+                    ],
+                    "n_chars": 12,
+                    "row_y": 244.75
+                  },
+                  "liteparse": {
+                    "span_id": 13,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 243.6300048828125,
+                      "w": 66.72000122070312,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[2][1]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 245.5,
+                      "w": 66.72000000000003,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 244.75,
+                    "w": 66.72000000000003,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 244.75,
+                  "w": 66.72000000000003,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Situación actual:",
+                "evidence": {
+                  "text": "Situación actual:",
+                  "row_y_hint": 264,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 87.98,
+                      "y": 264.7800000000001,
+                      "w": 80.02000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      246,
+                      247,
+                      248,
+                      249,
+                      250,
+                      251,
+                      252,
+                      253,
+                      254,
+                      255,
+                      256,
+                      257,
+                      258,
+                      259,
+                      260,
+                      261,
+                      262
+                    ],
+                    "n_chars": 17,
+                    "row_y": 264.75
+                  },
+                  "liteparse": {
+                    "span_id": 14,
+                    "bbox": {
+                      "x": 87.9800033569336,
+                      "y": 263.6600341796875,
+                      "w": 80.0199966430664,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[3][0]",
+                    "bbox": {
+                      "x": 87.98,
+                      "y": 265.5300000000001,
+                      "w": 78.91000000000004,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 87.98,
+                    "y": 264.7800000000001,
+                    "w": 80.02000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 87.98,
+                  "y": 264.7800000000001,
+                  "w": 80.02000000000002,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "BAJA",
+                "evidence": {
+                  "text": "BAJA",
+                  "row_y_hint": 264,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 264.75,
+                      "w": 25.00999999999999,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      242,
+                      243,
+                      244,
+                      245
+                    ],
+                    "n_chars": 4,
+                    "row_y": 264.75
+                  },
+                  "liteparse": {
+                    "span_id": 15,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 263.6300048828125,
+                      "w": 25.020004272460938,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "UPPER",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[3][1]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 265.5,
+                      "w": 25.009999999999962,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 264.75,
+                    "w": 25.00999999999999,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 264.75,
+                  "w": 25.00999999999999,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Fecha Situación:",
+                "evidence": {
+                  "text": "Fecha Situación:",
+                  "row_y_hint": 284,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 87.98,
+                      "y": 284.7800000000001,
+                      "w": 80.02000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      273,
+                      274,
+                      275,
+                      276,
+                      277,
+                      278,
+                      279,
+                      280,
+                      281,
+                      282,
+                      283,
+                      284,
+                      285,
+                      286,
+                      287,
+                      288
+                    ],
+                    "n_chars": 16,
+                    "row_y": 284.75
+                  },
+                  "liteparse": {
+                    "span_id": 16,
+                    "bbox": {
+                      "x": 87.9800033569336,
+                      "y": 283.6600341796875,
+                      "w": 80.02001190185547,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[4][0]",
+                    "bbox": {
+                      "x": 87.98,
+                      "y": 285.5300000000001,
+                      "w": 78.91000000000001,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 87.98,
+                    "y": 284.7800000000001,
+                    "w": 80.02000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 87.98,
+                  "y": 284.7800000000001,
+                  "w": 80.02000000000002,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "31.05.2019",
+                "evidence": {
+                  "text": "31.05.2019",
+                  "row_y_hint": 284,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 284.75,
+                      "w": 50.04000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      263,
+                      264,
+                      265,
+                      266,
+                      267,
+                      268,
+                      269,
+                      270,
+                      271,
+                      272
+                    ],
+                    "n_chars": 10,
+                    "row_y": 284.75
+                  },
+                  "liteparse": {
+                    "span_id": 17,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 283.6300048828125,
+                      "w": 11.1199951171875,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[4][1]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 285.5,
+                      "w": 50.04000000000002,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 284.75,
+                    "w": 50.04000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 284.75,
+                  "w": 50.04000000000002,
+                  "h": 10.0
+                }
+              }
+            }
+          ],
+          "bbox": {
+            "x": 69.88,
+            "y": 224.75,
+            "w": 259.58,
+            "h": 70.03000000000009
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "Respuesta",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 267.16,
+                  "y": 203.93400000000008,
+                  "w": 60.684000000000026,
+                  "h": 12.0
+                },
+                "char_indices": [
+                  168,
+                  169,
+                  170,
+                  171,
+                  172,
+                  173,
+                  174,
+                  175,
+                  176
+                ],
+                "n_chars": 9,
+                "row_y": 203.93400000000008
+              },
+              "liteparse": {
+                "span_id": 9,
+                "bbox": {
+                  "x": 267.1600036621094,
+                  "y": 202.59002685546875,
+                  "w": 60.683990478515625,
+                  "h": 13.3919677734375
+                },
+                "case_class": "lower",
+                "is_bold": true,
+                "font_size": 12.0
+              },
+              "docling": {
+                "cell_ref": "#/tables/1/cells[0][0]",
+                "bbox": {
+                  "x": 267.16,
+                  "y": 204.83400000000006,
+                  "w": 60.68400000000008,
+                  "h": 11.100000000000023
+                },
+                "column_header": true,
+                "row_header": false
+              },
+              "bbox": {
+                "x": 267.16,
+                "y": 203.93400000000008,
+                "w": 60.684000000000026,
+                "h": 12.0
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 69.88,
+                "y": 224.75,
+                "w": 259.58,
+                "h": 70.03000000000009
+              },
+              "pdfplumber_rect": null,
+              "docling_block": {
+                "self_ref": "#/tables/1",
+                "label": "table",
+                "bbox": {
+                  "x": 19.003509521484375,
+                  "y": 198.41143798828125,
+                  "w": 557.0668029785156,
+                  "h": 294.9062194824219
+                }
+              },
+              "edges_inside": {
+                "vertical": 0,
+                "horizontal": 12
+              },
+              "colons_inside": 4,
+              "container_score": 2
+            },
+            "structural_signals": {
+              "kind": "table",
+              "n_columns_declared": 2,
+              "n_rows_declared": 4,
+              "n_columns_with_group": 0,
+              "header_levels": 1,
+              "vertical_edges_inside": 0,
+              "horizontal_edges_inside": 12,
+              "has_docling_table_block": true,
+              "has_pdfplumber_rect_frame": false
+            }
+          }
+        },
+        {
+          "type": "table",
+          "id": "situaciones",
+          "title": "Situaciones",
+          "y_hint": 304,
+          "columns": [
+            {
+              "id": "label",
+              "label": "Situaciones",
+              "type": "text"
+            },
+            {
+              "id": "value",
+              "label": "Valor",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "label": {
+                "text": "CCC:",
+                "evidence": {
+                  "text": "CCC:",
+                  "row_y_hint": 324,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 143.01,
+                      "y": 324.78,
+                      "w": 24.99000000000001,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      300,
+                      301,
+                      302,
+                      303
+                    ],
+                    "n_chars": 4,
+                    "row_y": 324.78
+                  },
+                  "liteparse": {
+                    "span_id": 19,
+                    "bbox": {
+                      "x": 143.00999450683594,
+                      "y": 323.65997314453125,
+                      "w": 24.990005493164062,
+                      "h": 11.160003662109375
+                    },
+                    "case_class": "UPPER",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[6][0]",
+                    "bbox": {
+                      "x": 143.01,
+                      "y": 325.53,
+                      "w": 24.99000000000001,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 143.01,
+                    "y": 324.78,
+                    "w": 24.99000000000001,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 143.01,
+                  "y": 324.78,
+                  "w": 24.99000000000001,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "",
+                "evidence": null,
+                "bbox": null
+              }
+            },
+            {
+              "label": {
+                "text": "Razón Social/Convenio/Régimen:",
+                "evidence": {
+                  "text": "Razón Social/Convenio/Régimen:",
+                  "row_y_hint": 353,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 22,
+                    "bbox": {
+                      "x": 41.86000061035156,
+                      "y": 352.9800109863281,
+                      "w": 126.13999938964844,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[7][0]",
+                    "bbox": {
+                      "x": 41.86,
+                      "y": 343.21,
+                      "w": 128.36000000000007,
+                      "h": 20.889999999999986
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 41.86000061035156,
+                    "y": 352.9800109863281,
+                    "w": 126.13999938964844,
+                    "h": 11.15997314453125
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 41.86000061035156,
+                  "y": 352.9800109863281,
+                  "w": 126.13999938964844,
+                  "h": 11.15997314453125
+                }
+              },
+              "value": {
+                "text": "RGIMEN ESPECIAL TRABAJADORES AUTNOMOS",
+                "evidence": {
+                  "text": "RGIMEN ESPECIAL TRABAJADORES AUTNOMOS",
+                  "row_y_hint": 347,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 348.25,
+                      "w": 235.59999999999997,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      304,
+                      305,
+                      306,
+                      307,
+                      308,
+                      309,
+                      310,
+                      311,
+                      312,
+                      313,
+                      314,
+                      315,
+                      316,
+                      317,
+                      318,
+                      319,
+                      320,
+                      321,
+                      322,
+                      323
+                    ],
+                    "n_chars": 37,
+                    "row_y": 348.25
+                  },
+                  "liteparse": {
+                    "span_id": 21,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 347.1300048828125,
+                      "w": 235.5999755859375,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "UPPER",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[7][1]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 349.0,
+                      "w": 235.60000000000008,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 348.25,
+                    "w": 235.59999999999997,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 348.25,
+                  "w": 235.59999999999997,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "NIF/CIF - Domicilio de Empresa:",
+                "evidence": {
+                  "text": "NIF/CIF - Domicilio de Empresa:",
+                  "row_y_hint": 380,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 25,
+                    "bbox": {
+                      "x": 122.43000030517578,
+                      "y": 379.9800109863281,
+                      "w": 45.56999969482422,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[8][0]",
+                    "bbox": {
+                      "x": 64.65,
+                      "y": 370.21,
+                      "w": 103.35000000000002,
+                      "h": 20.889999999999986
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 122.43000030517578,
+                    "y": 379.9800109863281,
+                    "w": 45.56999969482422,
+                    "h": 11.15997314453125
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 122.43000030517578,
+                  "y": 379.9800109863281,
+                  "w": 45.56999969482422,
+                  "h": 11.15997314453125
+                }
+              },
+              "value": {
+                "text": "No Consta",
+                "evidence": {
+                  "text": "No Consta",
+                  "row_y_hint": 374,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 375.25,
+                      "w": 47.24000000000001,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      370,
+                      371,
+                      372,
+                      373,
+                      374,
+                      375,
+                      376,
+                      377,
+                      378
+                    ],
+                    "n_chars": 9,
+                    "row_y": 375.25
+                  },
+                  "liteparse": {
+                    "span_id": 24,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 374.1300048828125,
+                      "w": 47.239990234375,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "Title",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[8][1]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 376.0,
+                      "w": 47.24000000000001,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 375.25,
+                    "w": 47.24000000000001,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 375.25,
+                  "w": 47.24000000000001,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Fecha Alta:",
+                "evidence": {
+                  "text": "Fecha Alta:",
+                  "row_y_hint": 398,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 114.1,
+                      "y": 398.78,
+                      "w": 53.900000000000006,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      419,
+                      420,
+                      421,
+                      422,
+                      423,
+                      424,
+                      425,
+                      426,
+                      427,
+                      428,
+                      429
+                    ],
+                    "n_chars": 11,
+                    "row_y": 398.75
+                  },
+                  "liteparse": {
+                    "span_id": 26,
+                    "bbox": {
+                      "x": 114.0999984741211,
+                      "y": 397.6600036621094,
+                      "w": 53.900001525878906,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "Title",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[9][0]",
+                    "bbox": {
+                      "x": 114.1,
+                      "y": 399.53,
+                      "w": 53.900000000000034,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 114.1,
+                    "y": 398.78,
+                    "w": 53.900000000000006,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 114.1,
+                  "y": 398.78,
+                  "w": 53.900000000000006,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "10.04.2018",
+                "evidence": {
+                  "text": "10.04.2018",
+                  "row_y_hint": 398,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 398.75,
+                      "w": 50.04000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      409,
+                      410,
+                      411,
+                      412,
+                      413,
+                      414,
+                      415,
+                      416,
+                      417,
+                      418
+                    ],
+                    "n_chars": 10,
+                    "row_y": 398.75
+                  },
+                  "liteparse": {
+                    "span_id": 27,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 397.6300048828125,
+                      "w": 50.040008544921875,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[9][1]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 399.5,
+                      "w": 50.04000000000002,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 398.75,
+                    "w": 50.04000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 398.75,
+                  "w": 50.04000000000002,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Fecha Efecto:",
+                "evidence": {
+                  "text": "Fecha Efecto:",
+                  "row_y_hint": 418,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 102.43,
+                      "y": 418.78,
+                      "w": 65.57000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      440,
+                      441,
+                      442,
+                      443,
+                      444,
+                      445,
+                      446,
+                      447,
+                      448,
+                      449,
+                      450,
+                      451,
+                      452
+                    ],
+                    "n_chars": 13,
+                    "row_y": 418.75
+                  },
+                  "liteparse": {
+                    "span_id": 28,
+                    "bbox": {
+                      "x": 102.43000030517578,
+                      "y": 417.6600036621094,
+                      "w": 65.57001495361328,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[10][0]",
+                    "bbox": {
+                      "x": 102.43,
+                      "y": 419.53,
+                      "w": 65.57000000000002,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 102.43,
+                    "y": 418.78,
+                    "w": 65.57000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 102.43,
+                  "y": 418.78,
+                  "w": 65.57000000000002,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "10.04.2018",
+                "evidence": {
+                  "text": "10.04.2018",
+                  "row_y_hint": 418,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 418.75,
+                      "w": 50.04000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      430,
+                      431,
+                      432,
+                      433,
+                      434,
+                      435,
+                      436,
+                      437,
+                      438,
+                      439
+                    ],
+                    "n_chars": 10,
+                    "row_y": 418.75
+                  },
+                  "liteparse": {
+                    "span_id": 29,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 417.6300048828125,
+                      "w": 50.040008544921875,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[9][1]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 399.5,
+                      "w": 50.04000000000002,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 418.75,
+                    "w": 50.04000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 418.75,
+                  "w": 50.04000000000002,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Tipo Contrato:",
+                "evidence": {
+                  "text": "Tipo Contrato:",
+                  "row_y_hint": 438,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 99.12,
+                      "y": 438.78,
+                      "w": 68.88000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      453,
+                      454,
+                      455,
+                      456,
+                      457,
+                      458,
+                      459,
+                      460,
+                      461,
+                      462,
+                      463,
+                      464,
+                      465,
+                      466
+                    ],
+                    "n_chars": 14,
+                    "row_y": 438.78
+                  },
+                  "liteparse": {
+                    "span_id": 30,
+                    "bbox": {
+                      "x": 99.12000274658203,
+                      "y": 437.6600036621094,
+                      "w": 68.88001251220703,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[11][0]",
+                    "bbox": {
+                      "x": 99.12,
+                      "y": 439.53,
+                      "w": 68.88000000000008,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 99.12,
+                    "y": 438.78,
+                    "w": 68.88000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 99.12,
+                  "y": 438.78,
+                  "w": 68.88000000000002,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "",
+                "evidence": null,
+                "bbox": null
+              }
+            },
+            {
+              "label": {
+                "text": "Coeficiente Tiempo parcial:",
+                "evidence": {
+                  "text": "Coeficiente Tiempo parcial:",
+                  "row_y_hint": 458,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 37.41,
+                      "y": 458.78,
+                      "w": 130.59000000000003,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      468,
+                      469,
+                      470,
+                      471,
+                      472,
+                      473,
+                      474,
+                      475,
+                      476,
+                      477,
+                      478,
+                      479,
+                      480,
+                      481,
+                      482,
+                      483,
+                      484,
+                      485,
+                      486,
+                      487
+                    ],
+                    "n_chars": 27,
+                    "row_y": 458.75
+                  },
+                  "liteparse": {
+                    "span_id": 31,
+                    "bbox": {
+                      "x": 37.40999984741211,
+                      "y": 457.6600036621094,
+                      "w": 130.58999633789062,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[12][0]",
+                    "bbox": {
+                      "x": 37.41,
+                      "y": 459.53,
+                      "w": 130.59000000000003,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 37.41,
+                    "y": 458.78,
+                    "w": 130.59000000000003,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 37.41,
+                  "y": 458.78,
+                  "w": 130.59000000000003,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "0",
+                "evidence": {
+                  "text": "0",
+                  "row_y_hint": 458,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 458.75,
+                      "w": 5.560000000000002,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      467
+                    ],
+                    "n_chars": 1,
+                    "row_y": 458.75
+                  },
+                  "liteparse": {
+                    "span_id": 32,
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 457.6300048828125,
+                      "w": 5.55999755859375,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[12][1]",
+                    "bbox": {
+                      "x": 180.0,
+                      "y": 459.5,
+                      "w": 5.560000000000002,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 180.0,
+                    "y": 458.75,
+                    "w": 5.560000000000002,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 180.0,
+                  "y": 458.75,
+                  "w": 5.560000000000002,
+                  "h": 10.0
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Grupo Cotización:",
+                "evidence": {
+                  "text": "Grupo Cotización:",
+                  "row_y_hint": 478,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 81.33,
+                      "y": 478.78,
+                      "w": 86.67000000000003,
+                      "h": 10.0
+                    },
+                    "char_indices": [
+                      495,
+                      496,
+                      497,
+                      498,
+                      499,
+                      500,
+                      501,
+                      502,
+                      503,
+                      504,
+                      505,
+                      506,
+                      507,
+                      508,
+                      509,
+                      510,
+                      511
+                    ],
+                    "n_chars": 17,
+                    "row_y": 478.78
+                  },
+                  "liteparse": {
+                    "span_id": 33,
+                    "bbox": {
+                      "x": 81.33000183105469,
+                      "y": 477.6600036621094,
+                      "w": 86.67001342773438,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": true,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/1/cells[13][0]",
+                    "bbox": {
+                      "x": 81.33,
+                      "y": 479.53,
+                      "w": 85.56000000000002,
+                      "h": 9.25
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 81.33,
+                    "y": 478.78,
+                    "w": 86.67000000000003,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 81.33,
+                  "y": 478.78,
+                  "w": 86.67000000000003,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "",
+                "evidence": null,
+                "bbox": null
+              }
+            }
+          ],
+          "bbox": {
+            "x": 37.41,
+            "y": 324.78,
+            "w": 378.18999999999994,
+            "h": 164.0
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "Situaciones",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 269.43,
+                  "y": 304.7800000000001,
+                  "w": 56.129999999999995,
+                  "h": 10.0
+                },
+                "char_indices": [
+                  289,
+                  290,
+                  291,
+                  292,
+                  293,
+                  294,
+                  295,
+                  296,
+                  297,
+                  298,
+                  299
+                ],
+                "n_chars": 11,
+                "row_y": 304.7800000000001
+              },
+              "liteparse": {
+                "span_id": 18,
+                "bbox": {
+                  "x": 269.42999267578125,
+                  "y": 303.6600341796875,
+                  "w": 56.1300048828125,
+                  "h": 11.15997314453125
+                },
+                "case_class": "lower",
+                "is_bold": true,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/tables/1/cells[5][0]",
+                "bbox": {
+                  "x": 269.43,
+                  "y": 305.5300000000001,
+                  "w": 56.129999999999995,
+                  "h": 9.25
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "bbox": {
+                "x": 269.43,
+                "y": 304.7800000000001,
+                "w": 56.129999999999995,
+                "h": 10.0
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 37.41,
+                "y": 324.78,
+                "w": 378.18999999999994,
+                "h": 164.0
+              },
+              "pdfplumber_rect": null,
+              "docling_block": {
+                "self_ref": "#/tables/1",
+                "label": "table",
+                "bbox": {
+                  "x": 19.003509521484375,
+                  "y": 198.41143798828125,
+                  "w": 557.0668029785156,
+                  "h": 294.9062194824219
+                }
+              },
+              "edges_inside": {
+                "vertical": 0,
+                "horizontal": 28
+              },
+              "colons_inside": 8,
+              "container_score": 2
+            },
+            "structural_signals": {
+              "kind": "table",
+              "n_columns_declared": 2,
+              "n_rows_declared": 8,
+              "n_columns_with_group": 0,
+              "header_levels": 1,
+              "vertical_edges_inside": 0,
+              "horizontal_edges_inside": 28,
+              "has_docling_table_block": true,
+              "has_pdfplumber_rect_frame": false
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 229.87,
+        "y": 53.08800000000008,
+        "w": 167.25799999999992,
+        "h": 14.0
+      },
+      "container_bbox": {
+        "x": 37.41,
+        "y": 134.7700000000001,
+        "w": 378.18999999999994,
+        "h": 354.0099999999999
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "Consulta TGSS situacion",
+          "pdfplumber": {
+            "bbox": {
+              "x": 229.87,
+              "y": 53.08800000000008,
+              "w": 167.25799999999992,
+              "h": 14.0
+            },
+            "char_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "n_chars": 23,
+            "row_y": 53.08800000000008
+          },
+          "liteparse": {
+            "span_id": 3,
+            "bbox": {
+              "x": 229.8699951171875,
+              "y": 51.52001953125,
+              "w": 167.25799560546875,
+              "h": 15.62396240234375
+            },
+            "case_class": "mixed",
+            "is_bold": true,
+            "font_size": 14.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/1",
+            "bbox": {
+              "x": 229.87,
+              "y": 54.138000000000034,
+              "w": 167.2579999999998,
+              "h": 12.950000000000045
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 229.87,
+            "y": 53.08800000000008,
+            "w": 167.25799999999992,
+            "h": 14.0
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 37.41,
+            "y": 134.7700000000001,
+            "w": 378.18999999999994,
+            "h": 354.0099999999999
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 64
+          },
+          "colons_inside": 16,
+          "container_score": 1
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 3,
+          "child_type_distribution": {
+            "table": 3
+          },
+          "path": "Consulta TGSS situacion"
+        }
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "consulta_tgss_situacion",
+      "title": "Consulta TGSS situacion",
+      "title_bbox": {
+        "x": 229.87,
+        "y": 53.08800000000008,
+        "w": 167.25799999999992,
+        "h": 14.0
+      },
+      "container_bbox": {
+        "x": 37.41,
+        "y": 134.7700000000001,
+        "w": 378.18999999999994,
+        "h": 354.0099999999999
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Nº Procedimiento:",
+      "value": "987-15",
+      "section": "Consulta TGSS situacion",
+      "band": "Datos Petición",
+      "column_header": "Valor",
+      "row_y": 134,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 180.0,
+        "y": 134.7700000000001,
+        "w": 85.88999999999999,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 268.67,
+          "y": 134.7700000000001,
+          "w": 31.129999999999995,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 0,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Nº Documento:",
+      "value": "X6573514E",
+      "section": "Consulta TGSS situacion",
+      "band": "Datos Petición",
+      "column_header": "Valor",
+      "row_y": 154,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 180.0,
+        "y": 154.7700000000001,
+        "w": 71.43,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 254.21,
+          "y": 154.7700000000001,
+          "w": 52.26000000000002,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 1,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Fecha de emisión:",
+      "value": "17 d’abr. 2026 17:14",
+      "section": "Consulta TGSS situacion",
+      "band": "Datos Petición",
+      "column_header": "Valor",
+      "row_y": 174,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 180.0,
+        "y": 174.7700000000001,
+        "w": 86.69999999999999,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 269.48,
+          "y": 174.7700000000001,
+          "w": 91.73000000000002,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 2,
+        "engine_agreement": 2
+      }
+    },
+    {
+      "label": "Titular:",
+      "value": "GHEORGHE ADRIAN OPREA ---",
+      "section": "Consulta TGSS situacion",
+      "band": "Respuesta",
+      "column_header": "Valor",
+      "row_y": 224,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 134.11,
+        "y": 224.7800000000001,
+        "w": 33.890000000000015,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 180.0,
+          "y": 224.75,
+          "w": 149.45999999999998,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 0,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Nº Seguridad Social:",
+      "value": "341005311371",
+      "section": "Consulta TGSS situacion",
+      "band": "Respuesta",
+      "column_header": "Valor",
+      "row_y": 244,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 69.88,
+        "y": 244.7800000000001,
+        "w": 98.12000000000003,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 180.0,
+          "y": 244.75,
+          "w": 66.72000000000003,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 1,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Situación actual:",
+      "value": "BAJA",
+      "section": "Consulta TGSS situacion",
+      "band": "Respuesta",
+      "column_header": "Valor",
+      "row_y": 264,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 87.98,
+        "y": 264.7800000000001,
+        "w": 80.02000000000002,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 180.0,
+          "y": 264.75,
+          "w": 25.00999999999999,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 2,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Fecha Situación:",
+      "value": "31.05.2019",
+      "section": "Consulta TGSS situacion",
+      "band": "Respuesta",
+      "column_header": "Valor",
+      "row_y": 284,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 87.98,
+        "y": 284.7800000000001,
+        "w": 80.02000000000002,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 180.0,
+          "y": 284.75,
+          "w": 50.04000000000002,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 3,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Razón Social/Convenio/Régimen:",
+      "value": "RGIMEN ESPECIAL TRABAJADORES AUTNOMOS",
+      "section": "Consulta TGSS situacion",
+      "band": "Situaciones",
+      "column_header": "Valor",
+      "row_y": 353,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 41.86000061035156,
+        "y": 352.9800109863281,
+        "w": 126.13999938964844,
+        "h": 11.15997314453125
+      },
+      "value_bboxes": [
+        {
+          "x": 180.0,
+          "y": 348.25,
+          "w": 235.59999999999997,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 1,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "NIF/CIF - Domicilio de Empresa:",
+      "value": "No Consta",
+      "section": "Consulta TGSS situacion",
+      "band": "Situaciones",
+      "column_header": "Valor",
+      "row_y": 380,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 122.43000030517578,
+        "y": 379.9800109863281,
+        "w": 45.56999969482422,
+        "h": 11.15997314453125
+      },
+      "value_bboxes": [
+        {
+          "x": 180.0,
+          "y": 375.25,
+          "w": 47.24000000000001,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 2,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Fecha Alta:",
+      "value": "10.04.2018",
+      "section": "Consulta TGSS situacion",
+      "band": "Situaciones",
+      "column_header": "Valor",
+      "row_y": 398,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 114.1,
+        "y": 398.78,
+        "w": 53.900000000000006,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 180.0,
+          "y": 398.75,
+          "w": 50.04000000000002,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 3,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Fecha Efecto:",
+      "value": "10.04.2018",
+      "section": "Consulta TGSS situacion",
+      "band": "Situaciones",
+      "column_header": "Valor",
+      "row_y": 418,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 102.43,
+        "y": 418.78,
+        "w": 65.57000000000002,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 180.0,
+          "y": 418.75,
+          "w": 50.04000000000002,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 4,
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Coeficiente Tiempo parcial:",
+      "value": "0",
+      "section": "Consulta TGSS situacion",
+      "band": "Situaciones",
+      "column_header": "Valor",
+      "row_y": 458,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 37.41,
+        "y": 458.78,
+        "w": 130.59000000000003,
+        "h": 10.0
+      },
+      "value_bboxes": [
+        {
+          "x": 180.0,
+          "y": 458.75,
+          "w": 5.560000000000002,
+          "h": 10.0
+        }
+      ],
+      "evidence": {
+        "path": "Consulta TGSS situacion",
+        "row": 6,
+        "engine_agreement": 3
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "codex",
+    "n_chars": 1259,
+    "n_rows": 31,
+    "n_liteparse_spans": 40,
+    "n_docling_blocks": 7,
+    "n_rects": 3,
+    "kv_pair_breakdown": {
+      "3_eng": 11,
+      "2_eng": 1,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 3,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "codex",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "laboral_datos_peticion",
+      "laboral_respuesta",
+      "laboral_situaciones"
+    ],
+    "needs_review": false,
+    "document_type": "Consulta TGSS situacion"
+  }
+}

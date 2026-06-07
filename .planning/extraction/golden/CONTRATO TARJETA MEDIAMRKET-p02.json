@@ -1,0 +1,529 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA MEDIAMRKET.pdf",
+  "page": 2,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 56,
+    "rects": 89,
+    "docling_blocks": 28,
+    "noise_dropped": 12
+  },
+  "sections": [
+    {
+      "title": "Contrato de cuenta de crédito con o sin Tarjeta MediaMarkt Club Card",
+      "title_signal": {
+        "size": 12.0,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 176.960, "y": 42.784, "w": 259.743, "h": 21.727},
+      "container_bbox": {"x": 46.603, "y": 29.405, "w": 498.778, "h": 59.169},
+      "bands": [
+        {
+          "y_range": [29.405, 88.574],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [176.960, 544.398], "role": "HEADER", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [42.784, 55.670],
+              "cells": [
+                {"col": 0, "text": "Contrato de cuenta de crédito con o sin Tarjeta", "role": "HEADER", "bbox": {"x": 176.960, "y": 42.784, "w": 259.743, "h": 12.885}, "bold": false, "case": "lower", "docling_label": "section_header", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [55.958, 68.844],
+              "cells": [
+                {"col": 0, "text": "MediaMarkt Club Card", "role": "HEADER", "bbox": {"x": 176.960, "y": 55.958, "w": 113.843, "h": 12.885}, "bold": false, "case": "Title", "docling_label": "section_header", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta MediaMarkt Club Card)",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "text"
+      },
+      "title_bbox": {"x": 59.547, "y": 102.742, "w": 380.883, "h": 10.201},
+      "container_bbox": {"x": 46.603, "y": 89.980, "w": 498.547, "h": 176.352},
+      "bands": [
+        {
+          "y_range": [138.498, 172.936],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.240, 163.324], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [163.324, 540.065], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r3",
+              "y_range": [138.498, 172.936],
+              "cells": [
+                {"col": 0, "text": "Titular", "role": "LABEL", "bbox": {"x": 73.183, "y": 143.726, "w": 25.544, "h": 10.128}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": null},
+                {"col": 1, "text": "GABRIELA MIRELA PIRVA PESCAR", "role": "VALUE_TEXT", "bbox": {"x": 73.183, "y": 153.664, "w": 152.530, "h": 10.128}, "bold": false, "case": "UPPER", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [220.318, 254.787],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.240, 163.324], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [163.324, 540.065], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r4",
+              "y_range": [220.318, 254.787],
+              "cells": [
+                {"col": 0, "text": "DNI", "role": "LABEL", "bbox": {"x": 428.198, "y": 145.575, "w": 15.754, "h": 10.128}, "bold": false, "case": "UPPER", "docling_label": null, "compound_parts": null},
+                {"col": 1, "text": "X8831248F", "role": "VALUE_TEXT", "bbox": {"x": 428.198, "y": 155.513, "w": 47.300, "h": 10.128}, "bold": false, "case": "UPPER", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Por otra parte, nosotros",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.547, "y": 198.199, "w": 104.215, "h": 10.201},
+      "container_bbox": {"x": 46.603, "y": 89.980, "w": 498.547, "h": 176.352},
+      "bands": [
+        {
+          "y_range": [198.199, 266.332],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [59.547, 523.746], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r5",
+              "y_range": [225.777, 246.178],
+              "cells": [
+                {"col": 0, "text": "CaixaBank Payments & Consumer, E.F.C., E.P., S.A.*, Sociedad Unipersonal (también, «CaixaBank Payments & Consumer» o «nosotros»)", "role": "VALUE_TEXT", "bbox": {"x": 73.183, "y": 225.777, "w": 450.563, "h": 17.183}, "bold": false, "case": "Title", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nº solicitud-contrato",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "text"
+      },
+      "title_bbox": {"x": 73.183, "y": 287.184, "w": 171.642, "h": 10.201},
+      "container_bbox": {"x": 46.603, "y": 267.257, "w": 498.547, "h": 100.079},
+      "bands": [
+        {
+          "y_range": [280.412, 306.757],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.240, 332.578], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [332.578, 540.065], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r6",
+              "y_range": [280.412, 306.757],
+              "cells": [
+                {"col": 0, "text": "Nº solicitud-contrato:", "role": "LABEL", "bbox": {"x": 73.183, "y": 287.184, "w": 171.642, "h": 10.201}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": null},
+                {"col": 1, "text": "202204670521454", "role": "VALUE_NUMERIC", "bbox": {"x": 73.183, "y": 287.184, "w": 171.642, "h": 10.201}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A. CONDICIONES PARTICULARES",
+      "title_signal": {
+        "size": 14.0,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.547, "y": 493.132, "w": 221.721, "h": 15.033},
+      "container_bbox": {"x": 46.603, "y": 368.260, "w": 498.547, "h": 116.489},
+      "bands": [
+        {
+          "y_range": [510.513, 540.065],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [59.547, 388.680], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r7",
+              "y_range": [510.513, 527.066],
+              "cells": [
+                {"col": 0, "text": "Qué regulan estas Condiciones Particulares", "role": "HEADER", "bbox": {"x": 59.547, "y": 510.513, "w": 244.231, "h": 13.859}, "bold": false, "case": "lower", "docling_label": "section_header", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [526.939, 537.066],
+              "cells": [
+                {"col": 0, "text": "Estas condiciones regulan los aspectos económicos más relevantes del contrato.", "role": "VALUE_TEXT", "bbox": {"x": 59.547, "y": 526.939, "w": 329.133, "h": 10.128}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Condiciones Particulares — tabla de condiciones",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": null
+      },
+      "title_bbox": null,
+      "container_bbox": {"x": 46.603, "y": 542.994, "w": 498.547, "h": 91.758},
+      "bands": [
+        {
+          "y_range": [545.287, 572.436],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.240, 163.324], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [163.324, 540.065], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r9",
+              "y_range": [545.287, 572.436],
+              "cells": [
+                {"col": 0, "text": "Producto", "role": "LABEL", "bbox": {"x": 65.094, "y": 553.214, "w": 40.154, "h": 10.201}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": null},
+                {"col": 1, "text": "Contrato de Cuenta de crédito con o sin Tarjeta MediaMarkt Club Card VISA.", "role": "VALUE_TEXT", "bbox": {"x": 174.187, "y": 553.287, "w": 312.768, "h": 10.128}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [577.413, 631.950],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.240, 163.324], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [163.324, 540.065], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r10",
+              "y_range": [577.413, 631.950],
+              "cells": [
+                {"col": 0, "text": "Modalidad de pago elegida", "role": "LABEL", "bbox": {"x": 65.094, "y": 585.341, "w": 58.289, "h": 17.171}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": ["Modalidad de", "pago elegida"]},
+                {"col": 1, "text": "Pago Aplazado. Por defecto, si no elige otra modalidad, se activará la modalidad de Pago Aplazado. No obstante, le recordamos que las modalidades de pago que permite la tarjeta son: el Pago Fin de Mes, el Pago Aplazado y el Pago Fraccionado. Usted puede modificar la modalidad de pago elegida en cualquier momento.", "role": "VALUE_TEXT", "bbox": {"x": 174.418, "y": 580.098, "w": 341.151, "h": 48.385}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DATOS PERSONALES DEL TITULAR",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.547, "y": 648.440, "w": 160.242, "h": 10.201},
+      "container_bbox": {"x": 46.603, "y": 643.536, "w": 498.547, "h": 113.716},
+      "bands": [
+        {
+          "y_range": [664.405, 705.334],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.240, 163.324], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [163.324, 540.065], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r11",
+              "y_range": [664.405, 705.334],
+              "cells": [
+                {"col": 0, "text": "Titular del contrato", "role": "LABEL", "bbox": {"x": 65.094, "y": 675.251, "w": 43.729, "h": 17.171}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": ["Titular del", "contrato"]},
+                {"col": 1, "text": "GABRIELA MIRELA PIRVA PESCAR", "role": "VALUE_TEXT", "bbox": {"x": 174.187, "y": 683.413, "w": 152.492, "h": 10.128}, "bold": false, "case": "UPPER", "docling_label": null, "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [710.246, 753.919],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.240, 163.324], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [163.324, 540.065], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r12",
+              "y_range": [710.246, 753.919],
+              "cells": [
+                {"col": 0, "text": "Dirección", "role": "LABEL", "bbox": {"x": 65.094, "y": 715.698, "w": 41.691, "h": 10.201}, "bold": false, "case": "lower", "docling_label": null, "compound_parts": null},
+                {"col": 1, "text": "TORNEL 4 2 M 30011 MURCIA MURCIA", "role": "VALUE_TEXT", "bbox": {"x": 174.187, "y": 715.540, "w": 64.059, "h": 27.584}, "bold": false, "case": "UPPER", "docling_label": null, "compound_parts": ["TORNEL 4 2 M", "30011 MURCIA", "MURCIA"]}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proveedor de este servicio",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.547, "y": 770.707, "w": 116.447, "h": 10.201},
+      "container_bbox": null,
+      "bands": []
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Titular",
+      "value": "GABRIELA MIRELA PIRVA PESCAR",
+      "section": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta MediaMarkt Club Card)",
+      "band": "BAND_titular",
+      "column_header": null,
+      "row_y": 143.726,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r2",
+        "docling_block_id": "#/texts/37",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "DNI",
+      "value": "X8831248F",
+      "section": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta MediaMarkt Club Card)",
+      "band": "BAND_titular",
+      "column_header": null,
+      "row_y": 145.575,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r2",
+        "docling_block_id": "#/texts/38",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Nº solicitud-contrato",
+      "value": "202204670521454",
+      "section": "Nº solicitud-contrato",
+      "band": "BAND_solicitud",
+      "column_header": null,
+      "row_y": 287.184,
+      "rule": "case-contrast",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p2-r5",
+        "docling_block_id": "#/texts/41",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Producto",
+      "value": "Contrato de Cuenta de crédito con o sin Tarjeta MediaMarkt Club Card VISA.",
+      "section": "A. CONDICIONES PARTICULARES",
+      "band": "BAND_CP_t1",
+      "column_header": null,
+      "row_y": 553.214,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r8",
+        "docling_block_id": "#/texts/46",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Modalidad de pago elegida",
+      "value": "Pago Aplazado. Por defecto, si no elige otra modalidad, se activará la modalidad de Pago Aplazado. No obstante, le recordamos que las modalidades de pago que permite la tarjeta son: el Pago Fin de Mes, el Pago Aplazado y el Pago Fraccionado. Usted puede modificar la modalidad de pago elegida en cualquier momento.",
+      "section": "A. CONDICIONES PARTICULARES",
+      "band": "BAND_CP_t2",
+      "column_header": null,
+      "row_y": 585.341,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r10",
+        "docling_block_id": "#/texts/48",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Titular del contrato",
+      "value": "GABRIELA MIRELA PIRVA PESCAR",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_DPT_t3",
+      "column_header": null,
+      "row_y": 675.251,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r13",
+        "docling_block_id": "#/texts/51",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    },
+    {
+      "label": "Dirección",
+      "value": "TORNEL 4 2 M 30011 MURCIA MURCIA",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_DPT_t4",
+      "column_header": null,
+      "row_y": 715.698,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r15",
+        "docling_block_id": "#/texts/53",
+        "label_span_id": null,
+        "value_span_ids": []
+      }
+    }
+  ],
+  "noise": [
+    {
+      "text": "Logalty Guid: 001001-0001-000000073411266.par - Date: 2022/04/16 T 18:09:09 CEST +0200 - Pages: 2/74",
+      "bbox": {"x": 583.804, "y": 271.940, "w": 5.618, "h": 480.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Logalty",
+      "bbox": {"x": 581.636, "y": 718.340, "w": 9.056, "h": 33.600},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Guid: 001001-0001-000000073411266.par",
+      "bbox": {"x": 581.636, "y": 689.540, "w": 9.056, "h": 24.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {"x": 581.636, "y": 526.340, "w": 9.056, "h": 4.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Date:",
+      "bbox": {"x": 581.636, "y": 497.540, "w": 9.056, "h": 24.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "2022/04/16 T",
+      "bbox": {"x": 581.636, "y": 444.740, "w": 9.056, "h": 48.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "18:09:09",
+      "bbox": {"x": 581.636, "y": 391.940, "w": 9.056, "h": 38.400},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "CEST",
+      "bbox": {"x": 581.636, "y": 367.940, "w": 9.056, "h": 19.200},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "+0200",
+      "bbox": {"x": 581.636, "y": 339.140, "w": 9.056, "h": 24.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "- Pages:",
+      "bbox": {"x": 581.636, "y": 329.540, "w": 9.056, "h": 4.800},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "2/74",
+      "bbox": {"x": 581.636, "y": 271.940, "w": 9.056, "h": 19.200},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "CaixaBank Payments & Consumer, E.F.C., E.P., S.A.*, Sociedad Unipersonal · Caleruega 102, 28033 - Madrid, · www.caixabankpc.com · NIF: A-08980153 · Inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656492 · Registro de Establecimientos de Crédito del Banco de España: número 8776 · Autoridad de supervisión: Banco de España · www.bde.es",
+      "bbox": {"x": 59.547, "y": 786.805, "w": 464.693, "h": 26.513},
+      "reason": "page_footer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 89, "lines": 0, "tables": 5, "checkboxes": 0},
+      "docling": {
+        "blocks": 28,
+        "labels": {"page_header": 1, "picture": 3, "section_header": 6, "text": 16, "list_item": 1, "page_footer": 1},
+        "section_headers": 6,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {"spans": 56, "bold": 0, "cases": {"lower": 37, "Title": 4, "UPPER": 11, "none": 4}}
+    },
+    "column_coherence": [
+      {"x_range": [60.240, 163.324], "dominant_role": "LABEL", "ratio": 1.0},
+      {"x_range": [163.324, 540.065], "dominant_role": "VALUE_TEXT", "ratio": 0.86}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 5, "total": 8},
+      "cell_bold_flags": {"agree": 56, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:47:33+0200",
+    "covers_cases": [5, 7],
+    "needs_review": true
+  }
+}

@@ -1,0 +1,979 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA 3.pdf",
+  "page": 8,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "atoms_summary": {
+    "lite_spans": 56,
+    "rects": 144,
+    "docling_blocks": 35,
+    "noise_dropped": 15
+  },
+  "sections": [
+    {
+      "title": "TRATAMIENTO DE LOS DATOS DEL TITULAR",
+      "title_signal": {
+        "size": 11.0,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 59.54658889770508,
+        "y": 87.80010986328125,
+        "w": 231.87977600097656,
+        "h": 11.81170654296875
+      },
+      "container_bbox": {
+        "x": 43.8297728,
+        "y": 114.24896319999993,
+        "w": 498.31541760000016,
+        "h": 353.628288
+      },
+      "bands": [
+        {
+          "y_range": [
+            114.249,
+            467.877
+          ],
+          "layout": "free-text",
+          "columns": [
+            {
+              "x_range": [
+                43.83,
+                261.09
+              ],
+              "role": "LABEL",
+              "column_header": null,
+              "coherence": 0.92
+            },
+            {
+              "x_range": [
+                267.56,
+                536.83
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.88
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r_intro",
+              "y_range": [
+                127.092,
+                138.904
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 51.45704650878906,
+                    "y": 127.09210205078125,
+                    "w": 438.5791015625,
+                    "h": 11.81170654296875
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r_prose",
+              "y_range": [
+                149.997,
+                171.521
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Usted nos ha autorizado, en este momento o con carácter previo, a tratar sus datos personales según los términos que se establecen en la condición general 25 de este contrato, con las siguientes finalidades:",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 51.45704650878906,
+                    "y": 149.99700927734375,
+                    "w": 480.34515380859375,
+                    "h": 21.521728515625
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Usted nos ha autorizado, en este momento o con carácter previo, a tratar sus datos personales según los",
+                    "términos que se establecen en la condición general 25 de este contrato, con las siguientes finalidades:"
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r1",
+              "y_range": [
+                185.206,
+                252.233
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Personalización de la oferta de productos y servicios según el análisis de sus datos:",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 54.692864,
+                    "y": 185.20575040000006,
+                    "w": 206.3987328,
+                    "h": 67.02758399999993
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Personalización de la oferta de productos y",
+                    "servicios según el análisis de sus datos:"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "¿Usted consiente este tratamiento de sus datos en los términos de la condición general “TRATAMIENTO DE DATOS DE CARÁCTER PERSONAL”?",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 267.5632256,
+                    "y": 185.20575040000006,
+                    "w": 269.265984,
+                    "h": 67.02758399999993
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "¿Usted",
+                    "consiente este tratamiento de sus datos en los",
+                    "términos de la condición general “TRATAMIENTO DE",
+                    "DATOS DE CARÁCTER PERSONAL”?"
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r1_header",
+              "y_range": [
+                218.103,
+                228.841
+              ],
+              "cells": [
+                {
+                  "col": 1,
+                  "text": "TITULAR",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 320.2607727050781,
+                    "y": 218.103271484375,
+                    "w": 41.189239501953125,
+                    "h": 10.7379150390625
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r1_checkbox",
+              "y_range": [
+                233.589,
+                244.326
+              ],
+              "cells": [
+                {
+                  "col": 1,
+                  "text": "SI",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 313.5580139160156,
+                    "y": 233.6658935546875,
+                    "w": 9.1007080078125,
+                    "h": 10.660888671875
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_unselected",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "NO X",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 348.92083740234375,
+                    "y": 233.5888671875,
+                    "w": 26.9940185546875,
+                    "h": 10.7379150390625
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_selected",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [
+                258.243,
+                390.911
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Comunicación de la oferta de productos y servicios por determinados canales:",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 54.692864,
+                    "y": 258.242704,
+                    "w": 206.3987328,
+                    "h": 132.66839039999996
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Comunicación de la oferta de productos y",
+                    "servicios por determinados canales:"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "¿Usted consiente que contactemos con usted con finalidades comerciales en los términos de la condición general “TRATAMIENTO DE DATOS DE CARÁCTER PERSONAL”?",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 267.5632256,
+                    "y": 258.242704,
+                    "w": 269.265984,
+                    "h": 132.66839039999996
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "¿Usted consiente que contactemos con usted con finalidades",
+                    "comerciales en los términos de la condición general",
+                    "“TRATAMIENTO DE DATOS DE CARÁCTER PERSONAL”?"
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2_header",
+              "y_range": [
+                291.603,
+                302.34
+              ],
+              "cells": [
+                {
+                  "col": 1,
+                  "text": "TITULAR",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 375.2696228027344,
+                    "y": 291.6025390625,
+                    "w": 40.46697998046875,
+                    "h": 10.73785400390625
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2_ch1",
+              "y_range": [
+                308.059,
+                339.234
+              ],
+              "cells": [
+                {
+                  "col": 1,
+                  "text": "Por aplicaciones móviles, entornos digitales y canales electrónicos",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 267.5632256,
+                    "y": 308.05889892578125,
+                    "w": 91.62030029296875,
+                    "h": 30.928802490234375
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "checkbox_unselected",
+                  "compound_parts": [
+                    "Por aplicaciones móviles,",
+                    "entornos digitales y",
+                    "canales electrónicos"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "SI",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 365.3310241699219,
+                    "y": 329.35369873046875,
+                    "w": 9.1007080078125,
+                    "h": 10.66082763671875
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_unselected",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "NO X",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 395.37786865234375,
+                    "y": 329.276611328125,
+                    "w": 26.9940185546875,
+                    "h": 10.7379150390625
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_selected",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2_ch2",
+              "y_range": [
+                344.608,
+                355.269
+              ],
+              "cells": [
+                {
+                  "col": 1,
+                  "text": "Por teléfono",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 272.6481018066406,
+                    "y": 344.6081848144531,
+                    "w": 51.927093505859375,
+                    "h": 10.660858154296875
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "SI",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 365.3310241699219,
+                    "y": 344.6081848144531,
+                    "w": 9.1007080078125,
+                    "h": 10.660858154296875
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_unselected",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "NO X",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 395.37786865234375,
+                    "y": 344.5311584472656,
+                    "w": 26.9940185546875,
+                    "h": 10.737884521484375
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_selected",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2_ch3",
+              "y_range": [
+                360.094,
+                370.754
+              ],
+              "cells": [
+                {
+                  "col": 1,
+                  "text": "Por carta",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 272.6481018066406,
+                    "y": 360.0938415527344,
+                    "w": 39.070556640625,
+                    "h": 10.660858154296875
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "SI",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 365.3310241699219,
+                    "y": 360.0938415527344,
+                    "w": 9.1007080078125,
+                    "h": 10.660858154296875
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_unselected",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "NO X",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 395.37786865234375,
+                    "y": 360.0168151855469,
+                    "w": 26.9940185546875,
+                    "h": 10.737884521484375
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_selected",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [
+                395.765,
+                462.792
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cesión de sus datos a otras empresas para la remisión de ofertas de productos y servicios:",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 54.692864,
+                    "y": 395.76481599999994,
+                    "w": 206.3987328,
+                    "h": 67.02758400000005
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Cesión de sus datos a otras empresas para",
+                    "la",
+                    "remisión de ofertas de productos y",
+                    "servicios:"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "Usted acepta que cedamos sus datos a otras empresas en los términos de la condición general “TRATAMIENTO DE DATOS DE CARÁCTER PERSONAL”?",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 267.5632256,
+                    "y": 395.76481599999994,
+                    "w": 269.265984,
+                    "h": 67.02758400000005
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Usted acepta que cedamos sus datos a otras empresas en",
+                    "los términos de la condición general “TRATAMIENTO DE",
+                    "DATOS DE CARÁCTER PERSONAL”?"
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3_header",
+              "y_range": [
+                425.889,
+                436.626
+              ],
+              "cells": [
+                {
+                  "col": 1,
+                  "text": "TITULAR",
+                  "role": "HEADER",
+                  "bbox": {
+                    "x": 320.2607727050781,
+                    "y": 425.88873291015625,
+                    "w": 41.189239501953125,
+                    "h": 10.737884521484375
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3_checkbox",
+              "y_range": [
+                441.374,
+                452.112
+              ],
+              "cells": [
+                {
+                  "col": 1,
+                  "text": "SI",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 313.5580139160156,
+                    "y": 441.4514465332031,
+                    "w": 9.1007080078125,
+                    "h": 10.660858154296875
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_unselected",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "NO X",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 348.92083740234375,
+                    "y": 441.3744201660156,
+                    "w": 26.9940185546875,
+                    "h": 10.737884521484375
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "checkbox_selected",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Firma del Titular",
+      "title_signal": {
+        "size": 8.0,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "text"
+      },
+      "title_bbox": {
+        "x": 48.683494567871094,
+        "y": 747.9832153320312,
+        "w": 50.625091552734375,
+        "h": 9.23748779296875
+      },
+      "container_bbox": {
+        "x": 45.9292,
+        "y": 747.081808,
+        "w": 206.283168,
+        "h": 54.893280000000004
+      },
+      "bands": [
+        {
+          "y_range": [
+            747.082,
+            801.975
+          ],
+          "layout": "free-text",
+          "columns": [
+            {
+              "x_range": [
+                45.929,
+                252.212
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.75
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r_sig",
+              "y_range": [
+                747.983,
+                757.221
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Firma del Titular",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 48.683494567871094,
+                    "y": 747.9832153320312,
+                    "w": 50.625091552734375,
+                    "h": 9.23748779296875
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Personalización de la oferta de productos y servicios según el análisis de sus datos",
+      "value": "NO X",
+      "section": "TRATAMIENTO DE LOS DATOS DEL TITULAR",
+      "band": "BAND_A",
+      "column_header": "TITULAR",
+      "row_y": 233.627,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p8-r2",
+        "docling_block_id": null,
+        "label_span_id": null,
+        "value_span_ids": [
+          "checkbox_selected_r1"
+        ]
+      }
+    },
+    {
+      "label": "Comunicación — Por aplicaciones móviles, entornos digitales y canales electrónicos",
+      "value": "NO X",
+      "section": "TRATAMIENTO DE LOS DATOS DEL TITULAR",
+      "band": "BAND_A",
+      "column_header": "TITULAR",
+      "row_y": 329.315,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p8-r4",
+        "docling_block_id": null,
+        "label_span_id": null,
+        "value_span_ids": [
+          "checkbox_selected_r2_ch1"
+        ]
+      }
+    },
+    {
+      "label": "Comunicación — Por teléfono",
+      "value": "NO X",
+      "section": "TRATAMIENTO DE LOS DATOS DEL TITULAR",
+      "band": "BAND_A",
+      "column_header": "TITULAR",
+      "row_y": 344.608,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p8-r4",
+        "docling_block_id": null,
+        "label_span_id": null,
+        "value_span_ids": [
+          "checkbox_selected_r2_ch2"
+        ]
+      }
+    },
+    {
+      "label": "Comunicación — Por carta",
+      "value": "NO X",
+      "section": "TRATAMIENTO DE LOS DATOS DEL TITULAR",
+      "band": "BAND_A",
+      "column_header": "TITULAR",
+      "row_y": 360.094,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p8-r4",
+        "docling_block_id": null,
+        "label_span_id": null,
+        "value_span_ids": [
+          "checkbox_selected_r2_ch3"
+        ]
+      }
+    },
+    {
+      "label": "Cesión de sus datos a otras empresas para la remisión de ofertas de productos y servicios",
+      "value": "NO X",
+      "section": "TRATAMIENTO DE LOS DATOS DEL TITULAR",
+      "band": "BAND_A",
+      "column_header": "TITULAR",
+      "row_y": 441.413,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p8-r6",
+        "docling_block_id": null,
+        "label_span_id": null,
+        "value_span_ids": [
+          "checkbox_selected_r3"
+        ]
+      }
+    }
+  ],
+  "noise": [
+    {
+      "text": "Logalty",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 718.3400268554688,
+        "w": 9.0560302734375,
+        "h": 33.5999755859375
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Guid: 001001-0001-000000140900869.par",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 689.5400390625,
+        "w": 9.0560302734375,
+        "h": 24.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 526.3399047851562,
+        "w": 9.0560302734375,
+        "h": 4.79998779296875
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Date:",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 497.5399169921875,
+        "w": 9.0560302734375,
+        "h": 24.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "2025/08/23 T",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 444.74005126953125,
+        "w": 9.0560302734375,
+        "h": 47.9998779296875
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "14:57:04",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 391.940185546875,
+        "w": 9.0560302734375,
+        "h": 38.39990234375
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "CEST",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 367.94024658203125,
+        "w": 9.0560302734375,
+        "h": 19.199951171875
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "+0200",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 339.14031982421875,
+        "w": 9.0560302734375,
+        "h": 23.99993896484375
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "- Pages:",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 329.54034423828125,
+        "w": 9.0560302734375,
+        "h": 4.79998779296875
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "8/61",
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 271.94049072265625,
+        "w": 9.0560302734375,
+        "h": 19.199951171875
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "MOD. (M) 006.PSCC.0.720 (12) - 11 de marzo de 2025",
+      "bbox": {
+        "x": 46.83445739746094,
+        "y": 804.843994140625,
+        "w": 133.34249877929688,
+        "h": 8.08282470703125
+      },
+      "reason": "page_footer"
+    },
+    {
+      "text": "Dirección Comercial",
+      "bbox": {
+        "x": 264.327392578125,
+        "y": 810.6732788085938,
+        "w": 68.91513061523438,
+        "h": 8.5286865234375
+      },
+      "reason": "page_footer"
+    },
+    {
+      "text": "P. p.",
+      "bbox": {
+        "x": 264.327392578125,
+        "y": 751.2113647460938,
+        "w": 16.27154541015625,
+        "h": 8.59033203125
+      },
+      "reason": "span_inside_picture"
+    },
+    {
+      "text": "@$FIRMATAG{...}",
+      "bbox": {
+        "x": 48.683494567871094,
+        "y": 798.6179809570312,
+        "w": 112.99930572509766,
+        "h": 2.309326171875
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "020250844114793600000000000000010061",
+      "bbox": {
+        "x": 364.1753845214844,
+        "y": 796.5127563476562,
+        "w": 152.66891479492188,
+        "h": 8.59033203125
+      },
+      "reason": "furniture_layer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 144,
+        "lines": 0,
+        "tables": 0,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 35,
+        "labels": {
+          "page_header": 1,
+          "section_header": 3,
+          "text": 15,
+          "checkbox_unselected": 5,
+          "checkbox_selected": 5,
+          "picture": 4,
+          "page_footer": 2
+        },
+        "section_headers": 3,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 5
+      },
+      "liteparse": {
+        "spans": 56,
+        "bold": 0,
+        "cases": {
+          "UPPER": 19,
+          "lower": 27,
+          "mixed": 4,
+          "none": 5,
+          "Title": 1
+        }
+      }
+    },
+    "column_coherence": [
+      {
+        "x_range": [
+          43.83,
+          261.09
+        ],
+        "dominant_role": "LABEL",
+        "cells": 3,
+        "dominant_count": 3,
+        "coherence": 1.0
+      },
+      {
+        "x_range": [
+          267.56,
+          536.83
+        ],
+        "dominant_role": "VALUE_TEXT",
+        "cells": 14,
+        "dominant_count": 12,
+        "coherence": 0.86
+      }
+    ],
+    "agreement": {
+      "section_titles": {
+        "docling_matches_ours": 2,
+        "total": 2
+      },
+      "cell_bold_flags": {
+        "agree": 56,
+        "disagree": 0
+      }
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T23:03:07+02:00",
+    "covers_cases": [],
+    "needs_review": true
+  }
+}

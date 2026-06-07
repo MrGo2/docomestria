@@ -1,0 +1,172 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA MEDIAMRKET.pdf",
+  "page": 7,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 50,
+    "rects": 106,
+    "docling_blocks": 4,
+    "noise_dropped": 11
+  },
+  "sections": [
+    {
+      "title": "Precio de los servicios:",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "text"
+      },
+      "title_bbox": {"x": 60.0, "y": 75.0, "w": 150.0, "h": 10.2},
+      "container_bbox": {"x": 59.963, "y": 84.1, "w": 479.842, "h": 360.0},
+      "bands": [
+        {
+          "y_range": [84.1, 450.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [65.0, 270.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [270.0, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.95}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [94.0, 108.0],
+              "cells": [
+                {"col": 0, "text": "Mantenimiento de la Tarjeta MediaMarkt Club Card:", "role": "LABEL", "bbox": {"x": 65.09, "y": 94.0, "w": 200.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "0€.", "role": "VALUE_NUMERIC", "bbox": {"x": 65.09, "y": 94.0, "w": 15.0, "h": 10.13}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [116.0, 130.0],
+              "cells": [
+                {"col": 0, "text": "Duplicado de Tarjeta MediaMarkt Club Card:", "role": "LABEL", "bbox": {"x": 65.09, "y": 116.0, "w": 200.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "0€.", "role": "VALUE_NUMERIC", "bbox": {"x": 273.0, "y": 116.0, "w": 15.0, "h": 10.13}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [138.0, 152.0],
+              "cells": [
+                {"col": 0, "text": "Cancelación anticipada de la deuda:", "role": "LABEL", "bbox": {"x": 65.09, "y": 138.0, "w": 180.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "0€.", "role": "VALUE_NUMERIC", "bbox": {"x": 273.0, "y": 138.0, "w": 15.0, "h": 10.13}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [160.0, 185.0],
+              "cells": [
+                {"col": 0, "text": "Retirada de dinero en efectivo a crédito en cajeros, a través de la Tarjeta MediaMarkt Club Card:", "role": "LABEL", "bbox": {"x": 65.09, "y": 160.0, "w": 200.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Retirada de dinero en efectivo a crédito en cajeros,", "a través de la Tarjeta MediaMarkt Club Card:"]},
+                {"col": 1, "text": "5% del importe dispuesto, mínimo 4€", "role": "VALUE_TEXT", "bbox": {"x": 273.0, "y": 160.0, "w": 200.0, "h": 10.13}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [187.0, 212.0],
+              "cells": [
+                {"col": 0, "text": "Retirada de efectivo a crédito a través de teléfono:", "role": "LABEL", "bbox": {"x": 65.09, "y": 187.0, "w": 200.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Retirada de efectivo a crédito a través de", "teléfono:"]},
+                {"col": 1, "text": "4% del importe dispuesto, o porcentaje inferior si se indica en campaña. Importe mínimo de disposición: 100€.", "role": "VALUE_TEXT", "bbox": {"x": 273.0, "y": 187.0, "w": 250.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["4% del importe dispuesto, o porcentaje inferior si se indica en", "campaña. Importe mínimo de disposición: 100€."]}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [215.0, 240.0],
+              "cells": [
+                {"col": 0, "text": "Retirada de efectivo a crédito a través de web:", "role": "LABEL", "bbox": {"x": 65.09, "y": 215.0, "w": 200.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Retirada de efectivo a crédito a través de", "web:"]},
+                {"col": 1, "text": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si indica en la campaña. Importe mínimo de disposición: 100€.", "role": "VALUE_TEXT", "bbox": {"x": 273.0, "y": 215.0, "w": 250.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [241.0, 280.0],
+              "cells": [
+                {"col": 0, "text": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes:", "role": "LABEL", "bbox": {"x": 65.09, "y": 241.0, "w": 200.0, "h": 32.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Servicio de fraccionamiento del importe de", "las compras realizadas con modalidad de", "pago Fin de Mes:"]},
+                {"col": 1, "text": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.", "role": "VALUE_TEXT", "bbox": {"x": 273.0, "y": 241.0, "w": 250.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["3% del importe nominal de la compra realizada cuando se", "fraccione el importe en 3 meses."]}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [281.0, 350.0],
+              "cells": [
+                {"col": 0, "text": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro:", "role": "LABEL", "bbox": {"x": 65.09, "y": 281.0, "w": 200.0, "h": 32.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Cambio de divisa de las disposiciones o", "compras realizadas en moneda diferente al", "euro:"]},
+                {"col": 1, "text": "aplicamos el tipo de cambio publicado por el Banco Central Europeo (si usted se encuentra en un Estado Miembro de la Unión Europea) o el que la marca de la tarjeta (Visa) tenga publicado en su página web (si se encuentra en un Tercer Estado) en el momento en que recibimos información de que usted ha realizado la operación incrementado en un 3,95%.", "role": "VALUE_TEXT", "bbox": {"x": 273.0, "y": 281.0, "w": 250.0, "h": 63.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r9",
+              "y_range": [365.0, 413.0],
+              "cells": [
+                {"col": 0, "text": "Reclamación de cuota impagada:", "role": "LABEL", "bbox": {"x": 65.09, "y": 368.0, "w": 160.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "15€ por las gestiones personalizadas que CaixaBank Payments & Consumer se vea obligada a llevar a cabo para la recuperación de cada cuota pactada que resulte impagada al vencimiento.", "role": "VALUE_TEXT", "bbox": {"x": 273.0, "y": 365.0, "w": 250.0, "h": 42.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [415.0, 440.0],
+              "cells": [
+                {"col": 0, "text": "Envío de documentación relativa al contrato por correo postal a petición de usted:", "role": "LABEL", "bbox": {"x": 65.09, "y": 415.0, "w": 200.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Envío de documentación relativa al contrato", "por correo postal a petición de usted:"]},
+                {"col": 1, "text": "0,60€ por comunicado.", "role": "VALUE_TEXT", "bbox": {"x": 273.0, "y": 421.0, "w": 120.0, "h": 10.13}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {"label": "Mantenimiento de la Tarjeta MediaMarkt Club Card:", "value": "0€.", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 94.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t0", "docling_block_id": null, "label_span_id": "s1", "value_span_ids": ["s2"]}},
+    {"label": "Duplicado de Tarjeta MediaMarkt Club Card:", "value": "0€.", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 116.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t1", "docling_block_id": null, "label_span_id": "s3", "value_span_ids": ["s4"]}},
+    {"label": "Cancelación anticipada de la deuda:", "value": "0€.", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 138.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t2", "docling_block_id": null, "label_span_id": "s5", "value_span_ids": ["s6"]}},
+    {"label": "Retirada de dinero en efectivo a crédito en cajeros, a través de la Tarjeta MediaMarkt Club Card:", "value": "5% del importe dispuesto, mínimo 4€", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 160.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t3", "docling_block_id": null, "label_span_id": "s7", "value_span_ids": ["s8"]}},
+    {"label": "Retirada de efectivo a crédito a través de teléfono:", "value": "4% del importe dispuesto, o porcentaje inferior si se indica en campaña. Importe mínimo de disposición: 100€.", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 187.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t4", "docling_block_id": null, "label_span_id": "s9", "value_span_ids": ["s10", "s11"]}},
+    {"label": "Retirada de efectivo a crédito a través de web:", "value": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si indica en la campaña. Importe mínimo de disposición: 100€.", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 215.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t5", "docling_block_id": null, "label_span_id": "s12", "value_span_ids": ["s13", "s14"]}},
+    {"label": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes:", "value": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 241.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t6", "docling_block_id": null, "label_span_id": "s15", "value_span_ids": ["s16", "s17"]}},
+    {"label": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro:", "value": "aplicamos el tipo de cambio publicado por el Banco Central Europeo... incrementado en un 3,95%.", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 281.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t7", "docling_block_id": null, "label_span_id": "s18", "value_span_ids": ["s19", "s20", "s21", "s22", "s23"]}},
+    {"label": "Reclamación de cuota impagada:", "value": "15€ por las gestiones personalizadas que CaixaBank Payments & Consumer se vea obligada a llevar a cabo para la recuperación de cada cuota pactada que resulte impagada al vencimiento.", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 368.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t8", "docling_block_id": null, "label_span_id": "s24", "value_span_ids": ["s25", "s26", "s27"]}},
+    {"label": "Envío de documentación relativa al contrato por correo postal a petición de usted:", "value": "0,60€ por comunicado.", "section": "Precio de los servicios:", "band": "BAND_A", "column_header": null, "row_y": 415.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t9", "docling_block_id": null, "label_span_id": "s28", "value_span_ids": ["s29"]}}
+  ],
+  "noise": [
+    {"text": "(Continúa en la siguiente página) >>", "bbox": {"x": 382.0, "y": 791.0, "w": 130.0, "h": 10.2}, "reason": "page_footer"},
+    {"text": "Logalty", "bbox": {"x": 582.0, "y": 718.0, "w": 35.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "Guid: 001001-0001-000000073411266.par", "bbox": {"x": 582.0, "y": 690.0, "w": 35.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "-", "bbox": {"x": 582.0, "y": 526.0, "w": 5.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "Date:", "bbox": {"x": 582.0, "y": 498.0, "w": 20.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "2022/04/16 T", "bbox": {"x": 582.0, "y": 445.0, "w": 35.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "18:09:09", "bbox": {"x": 582.0, "y": 392.0, "w": 25.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "CEST", "bbox": {"x": 582.0, "y": 368.0, "w": 20.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "+0200", "bbox": {"x": 582.0, "y": 339.0, "w": 20.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "- Pages:", "bbox": {"x": 582.0, "y": 330.0, "w": 25.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "7/74", "bbox": {"x": 582.0, "y": 272.0, "w": 15.0, "h": 8.0}, "reason": "furniture_layer"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 106, "lines": 0, "tables": 7, "checkboxes": 0},
+      "docling": {"blocks": 4, "labels": {"page_header": 1, "table": 1, "picture": 1, "page_footer": 1}, "section_headers": 0, "tables": 1, "key_value_regions": 0, "field_keys": 0, "checkboxes_selected": 0},
+      "liteparse": {"spans": 50, "bold": 0, "cases": {"UPPER": 1, "lower": 45, "none": 4}}
+    },
+    "column_coherence": [
+      {"band": "BAND_A", "columns": 2, "dominant_role_pct": 1.0}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 0, "total": 1},
+      "cell_bold_flags": {"agree": 50, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:58:02",
+    "covers_cases": [8],
+    "needs_review": true
+  }
+}

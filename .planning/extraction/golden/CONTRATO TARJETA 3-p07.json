@@ -1,0 +1,432 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA 3.pdf",
+  "page": 7,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 58,
+    "rects": 96,
+    "docling_blocks": 22,
+    "noise_dropped": 4
+  },
+  "sections": [
+    {
+      "title": "Precio de los servicios:",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.55, "y": 75.50, "w": 150.0, "h": 10.20},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [96.0, 500.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [59.55, 267.56], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.56, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [96.0, 130.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Mantenimiento de la Tarjeta:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 107.80, "w": 165.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0€.",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 267.56, "y": 107.90, "w": 20.0, "h": 10.13},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [120.0, 155.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Duplicado de Tarjeta:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 129.60, "w": 130.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0€.",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 267.56, "y": 129.60, "w": 20.0, "h": 10.13},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [142.0, 180.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cancelación anticipada de la deuda:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 151.50, "w": 200.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0,50% o 1% del importe amortizado, tal como se indica en las Condiciones Generales.",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 267.56, "y": 151.60, "w": 272.04, "h": 20.40},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [171.0, 215.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Retirada de efectivo a crédito a través de teléfono:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 182.90, "w": 200.0, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    {"text": "Retirada de efectivo a crédito a través de", "bbox": {"x": 59.55, "y": 182.90, "w": 200.0, "h": 10.20}},
+                    {"text": "teléfono:", "bbox": {"x": 59.55, "y": 193.30, "w": 60.0, "h": 10.20}}
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "4% del importe dispuesto, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 267.56, "y": 183.0, "w": 272.04, "h": 20.40},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [200.0, 240.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Retirada de efectivo a crédito a través de web:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 210.70, "w": 200.0, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    {"text": "Retirada de efectivo a crédito a través de", "bbox": {"x": 59.55, "y": 210.70, "w": 200.0, "h": 10.20}},
+                    {"text": "web:", "bbox": {"x": 59.55, "y": 221.10, "w": 30.0, "h": 10.20}}
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 267.56, "y": 210.80, "w": 272.04, "h": 20.40},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [228.0, 278.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 237.0, "w": 200.0, "h": 30.80},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 267.56, "y": 237.10, "w": 272.04, "h": 20.40},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [265.0, 355.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 277.0, "w": 200.0, "h": 30.80},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "aplicamos el tipo de cambio publicado por el Banco Central Europeo... incrementado en un 3,95%.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 267.56, "y": 277.10, "w": 272.04, "h": 71.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [360.0, 460.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Reclamación de cuota impagada:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 374.30, "w": 190.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€...",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 267.56, "y": 371.60, "w": 272.04, "h": 82.80},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r9",
+              "y_range": [470.0, 510.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Envío de documentación relativa al contrato por correo postal a petición de usted:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 482.30, "w": 200.0, "h": 20.80},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0,60€ por comunicado.",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 267.56, "y": 487.90, "w": 120.0, "h": 10.13},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Mantenimiento de la Tarjeta:",
+      "value": "0€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 107.80,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_Mantenimiento", "value_span_ids": ["span_0_euros_man"]}
+    },
+    {
+      "label": "Duplicado de Tarjeta:",
+      "value": "0€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 129.60,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_Duplicado", "value_span_ids": ["span_0_euros_dup"]}
+    },
+    {
+      "label": "Cancelación anticipada de la deuda:",
+      "value": "0,50% o 1% del importe amortizado, tal como se indica en las Condiciones Generales.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 151.50,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_CancelacionAnticipada", "value_span_ids": ["span_0_50_pct"]}
+    },
+    {
+      "label": "Retirada de efectivo a crédito a través de teléfono:",
+      "value": "4% del importe dispuesto, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 182.90,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_RetiradaTelefono", "value_span_ids": ["span_4_pct_tel"]}
+    },
+    {
+      "label": "Retirada de efectivo a crédito a través de web:",
+      "value": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 210.70,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_RetiradaWeb", "value_span_ids": ["span_4_pct_web"]}
+    },
+    {
+      "label": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes:",
+      "value": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 237.0,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_ServicioFraccionamiento", "value_span_ids": ["span_3_pct_fracc"]}
+    },
+    {
+      "label": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro:",
+      "value": "aplicamos el tipo de cambio publicado por el Banco Central Europeo... incrementado en un 3,95%.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 277.0,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_CambioDivisa", "value_span_ids": ["span_3_95_pct"]}
+    },
+    {
+      "label": "Reclamación de cuota impagada:",
+      "value": "15€ por los recursos que destinaremos a poner al día la deuda impagada.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 374.30,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_ReclamacionImpagada", "value_span_ids": ["span_15_euros"]}
+    },
+    {
+      "label": "Envío de documentación relativa al contrato por correo postal a petición de usted:",
+      "value": "0,60€ por comunicado.",
+      "section": "Precio de los servicios:",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 482.30,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_EnvioDocumentacion", "value_span_ids": ["span_0_60_euros"]}
+    }
+  ],
+  "noise": [
+    {
+      "text": "Logalty Guid: 001001-0001-000000140900869.par - Date: 2025/08/23 T 14:57:04 CEST +0200 - Pages: 7/61",
+      "bbox": {"x": 581.64, "y": 271.94, "w": 9.06, "h": 480.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "(Continúa en la siguiente página) >>",
+      "bbox": {"x": 381.74, "y": 790.90, "w": 147.48, "h": 10.13},
+      "reason": "page_footer"
+    },
+    {
+      "text": "",
+      "bbox": {"x": 0.0, "y": 784.20, "w": 50.0, "h": 50.0},
+      "reason": "picture_decorative"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 96, "lines": 0, "tables": 4, "checkboxes": 0},
+      "docling": {
+        "blocks": 22,
+        "labels": {
+          "page_header": 1, "section_header": 1, "text": 18, "picture": 1, "page_footer": 1
+        },
+        "section_headers": 1,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 58,
+        "bold": 0,
+        "cases": {"lower": 49, "none": 6, "Title": 1, "UPPER": 2}
+      }
+    },
+    "column_coherence": [
+      {"band": "BAND_A", "dominant_role": "LABEL", "coherence": 1.0}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 1, "total": 1},
+      "cell_bold_flags": {"agree": 58, "disagree": 0}
+    }
+  }
+}

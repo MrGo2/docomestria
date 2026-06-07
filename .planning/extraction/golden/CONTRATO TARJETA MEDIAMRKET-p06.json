@@ -1,0 +1,265 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA MEDIAMRKET.pdf",
+  "page": 6,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 65,
+    "rects": 166,
+    "docling_blocks": 35,
+    "noise_dropped": 12
+  },
+  "sections": [
+    {
+      "title": "Datos económicos (continuación)",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "text"
+      },
+      "title_bbox": {"x": 65.0, "y": 89.0, "w": 200.0, "h": 10.2},
+      "container_bbox": {"x": 59.963, "y": 84.1, "w": 479.842, "h": 66.0},
+      "bands": [
+        {
+          "y_range": [84.1, 145.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [65.0, 270.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [270.0, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [89.0, 112.0],
+              "cells": [
+                {"col": 0, "text": "Día de pago inicialmente escogido:", "role": "LABEL", "bbox": {"x": 65.09, "y": 89.0, "w": 170.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "30", "role": "VALUE_NUMERIC", "bbox": {"x": 273.0, "y": 89.0, "w": 10.0, "h": 10.13}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [125.0, 145.0],
+              "cells": [
+                {"col": 0, "text": "Coste prima seguro:", "role": "LABEL", "bbox": {"x": 65.09, "y": 125.0, "w": 100.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "0,8000 %", "role": "VALUE_NUMERIC", "bbox": {"x": 273.0, "y": 125.0, "w": 40.0, "h": 10.13}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Identificación del Establecimiento",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 60.0, "y": 152.0, "w": 220.0, "h": 10.2},
+      "container_bbox": {"x": 59.963, "y": 172.0, "w": 479.842, "h": 290.0},
+      "bands": [
+        {
+          "y_range": [172.0, 310.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [65.0, 170.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [170.0, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.9}
+          ],
+          "rows": [
+            {
+              "row_id": "r3",
+              "y_range": [182.0, 215.0],
+              "cells": [
+                {"col": 0, "text": "Denominación:", "role": "LABEL", "bbox": {"x": 65.09, "y": 182.0, "w": 75.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "MEDIA MARKT MURCIA, S.A.", "role": "VALUE_TEXT", "bbox": {"x": 174.0, "y": 182.0, "w": 150.0, "h": 10.13}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [219.0, 255.0],
+              "cells": [
+                {"col": 0, "text": "Domicilio social:", "role": "LABEL", "bbox": {"x": 65.09, "y": 219.0, "w": 80.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "AVDA. DE LOS DOLORES ,Nº 1 , 30011 MURCIA", "role": "VALUE_TEXT", "bbox": {"x": 174.0, "y": 219.0, "w": 230.0, "h": 10.13}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [253.0, 295.0],
+              "cells": [
+                {"col": 0, "text": "Código del establecimiento:", "role": "LABEL", "bbox": {"x": 65.09, "y": 256.0, "w": 100.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Código del", "establecimiento:"]},
+                {"col": 1, "text": "58558001", "role": "VALUE_NUMERIC", "bbox": {"x": 174.0, "y": 256.0, "w": 50.0, "h": 10.13}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null},
+                {"col": 2, "text": "Empresa asociada y entidad colaboradora (identidad y domicilio):", "role": "LABEL", "bbox": {"x": 273.0, "y": 253.0, "w": 120.0, "h": 32.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Empresa asociada y", "entidad colaboradora", "(identidad y domicilio):"]}
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [290.0, 465.0],
+          "layout": "3-col",
+          "columns": [
+            {"x_range": [65.0, 270.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [270.0, 390.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.9},
+            {"x_range": [390.0, 540.0], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 0.8}
+          ],
+          "rows": [
+            {
+              "row_id": "r6",
+              "y_range": [296.0, 328.0],
+              "cells": [
+                {"col": 0, "text": "Disposición que realiza en este acto:", "role": "LABEL", "bbox": {"x": 60.0, "y": 296.0, "w": 200.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "Importe:", "role": "LABEL", "bbox": {"x": 273.0, "y": 296.0, "w": 50.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [324.0, 370.0],
+              "cells": [
+                {"col": 0, "text": "Fecha de vencimiento de la primera cuota:", "role": "LABEL", "bbox": {"x": 65.09, "y": 324.0, "w": 200.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [361.0, 398.0],
+              "cells": [
+                {"col": 0, "text": "TIN:", "role": "LABEL", "bbox": {"x": 65.09, "y": 361.0, "w": 25.0, "h": 10.2}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "TAE:", "role": "LABEL", "bbox": {"x": 273.0, "y": 361.0, "w": 25.0, "h": 10.2}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r9",
+              "y_range": [399.0, 460.0],
+              "cells": [
+                {"col": 0, "text": "Nº de cuotas:", "role": "LABEL", "bbox": {"x": 65.09, "y": 399.0, "w": 70.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "Importe 1ª cuota:", "role": "LABEL", "bbox": {"x": 237.0, "y": 399.0, "w": 90.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 2, "text": "Importe última cuota:", "role": "LABEL", "bbox": {"x": 393.0, "y": 399.0, "w": 100.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Importe última", "cuota:"]}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [437.0, 465.0],
+              "cells": [
+                {"col": 0, "text": "Importe restantes cuotas:", "role": "LABEL", "bbox": {"x": 65.09, "y": 437.0, "w": 120.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Importe restantes", "cuotas:"]},
+                {"col": 1, "text": "Modalidad de pago Fraccionado aplicable:", "role": "LABEL", "bbox": {"x": 273.0, "y": 437.0, "w": 100.0, "h": 21.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Modalidad de pago", "Fraccionado", "aplicable:"]}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r11",
+              "y_range": [477.0, 548.0],
+              "cells": [
+                {"col": 0, "text": "Excepcionalidades:", "role": "LABEL", "bbox": {"x": 65.09, "y": 477.0, "w": 100.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Seguro - Solicitud de suscripción de seguro facultativo por el Titular",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 60.0, "y": 548.0, "w": 400.0, "h": 10.2},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [548.0, 770.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [60.0, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.95}
+          ],
+          "rows": [
+            {
+              "row_id": "r12",
+              "y_range": [564.0, 742.0],
+              "cells": [
+                {"col": 0, "text": "SOLICITO ADHERIRME como Asegurado a las pólizas de seguro comercializadas por CaixaBank Payments & Consumer... Una vez aceptada, esta Solicitud, devendrá Boletín de Adhesión.", "role": "VALUE_TEXT", "bbox": {"x": 60.0, "y": 564.0, "w": 470.0, "h": 176.0}, "bold": false, "case": "mixed", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r13",
+              "y_range": [756.0, 790.0],
+              "cells": [
+                {"col": 0, "text": "X PACK PROTECCION PLUS <FALLEC-GI-DESEMP/IT-UF>", "role": "VALUE_TEXT", "bbox": {"x": 65.0, "y": 776.0, "w": 360.0, "h": 8.0}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": ["Asegurado TITULAR"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {"label": "Día de pago inicialmente escogido:", "value": "30", "section": "Datos económicos (continuación)", "band": "BAND_A", "column_header": null, "row_y": 89.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t0", "docling_block_id": null, "label_span_id": "s0", "value_span_ids": ["s1"]}},
+    {"label": "Coste prima seguro:", "value": "0,8000 %", "section": "Datos económicos (continuación)", "band": "BAND_A", "column_header": null, "row_y": 125.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t0", "docling_block_id": null, "label_span_id": "s2", "value_span_ids": ["s3"]}},
+    {"label": "Denominación:", "value": "MEDIA MARKT MURCIA, S.A.", "section": "Identificación del Establecimiento", "band": "BAND_B", "column_header": null, "row_y": 182.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t1", "docling_block_id": null, "label_span_id": "s6", "value_span_ids": ["s7"]}},
+    {"label": "Domicilio social:", "value": "AVDA. DE LOS DOLORES ,Nº 1 , 30011 MURCIA", "section": "Identificación del Establecimiento", "band": "BAND_B", "column_header": null, "row_y": 219.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t1", "docling_block_id": null, "label_span_id": "s8", "value_span_ids": ["s9"]}},
+    {"label": "Código del establecimiento:", "value": "58558001", "section": "Identificación del Establecimiento", "band": "BAND_B", "column_header": null, "row_y": 256.0, "rule": "rect-aligned", "confidence": "HIGH", "evidence": {"rect_id": "t1", "docling_block_id": null, "label_span_id": "s10", "value_span_ids": ["s11"]}},
+    {"label": "Disposición que realiza en este acto: Importe:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 296.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t2", "docling_block_id": null, "label_span_id": "s14", "value_span_ids": []}},
+    {"label": "Fecha de vencimiento de la primera cuota:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 324.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t2", "docling_block_id": null, "label_span_id": "s18", "value_span_ids": []}},
+    {"label": "TIN:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 361.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t3", "docling_block_id": null, "label_span_id": "s19", "value_span_ids": []}},
+    {"label": "TAE:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 361.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t3", "docling_block_id": null, "label_span_id": "s20", "value_span_ids": []}},
+    {"label": "Nº de cuotas:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 399.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t4", "docling_block_id": null, "label_span_id": "s21", "value_span_ids": []}},
+    {"label": "Importe 1ª cuota:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 399.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t4", "docling_block_id": null, "label_span_id": "s22", "value_span_ids": []}},
+    {"label": "Importe última cuota:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 399.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t4", "docling_block_id": null, "label_span_id": "s23", "value_span_ids": []}},
+    {"label": "Importe restantes cuotas:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 437.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t5", "docling_block_id": null, "label_span_id": "s26", "value_span_ids": []}},
+    {"label": "Modalidad de pago Fraccionado aplicable:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 437.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t5", "docling_block_id": null, "label_span_id": "s27", "value_span_ids": []}},
+    {"label": "Excepcionalidades:", "value": "", "section": "Identificación del Establecimiento", "band": "BAND_C", "column_header": null, "row_y": 477.0, "rule": "rect-aligned", "confidence": "LOW", "evidence": {"rect_id": "t6", "docling_block_id": null, "label_span_id": "s29", "value_span_ids": []}},
+    {"label": "Seguro seleccionado:", "value": "X PACK PROTECCION PLUS <FALLEC-GI-DESEMP/IT-UF> — Asegurado TITULAR", "section": "Seguro - Solicitud de suscripción de seguro facultativo por el Titular", "band": "BAND_D", "column_header": null, "row_y": 776.0, "rule": "case-contrast", "confidence": "MEDIUM", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "s59", "value_span_ids": ["s60", "s61"]}}
+  ],
+  "noise": [
+    {"text": "(Continúa en la siguiente página) >>", "bbox": {"x": 382.0, "y": 794.0, "w": 130.0, "h": 10.2}, "reason": "page_footer"},
+    {"text": "Logalty", "bbox": {"x": 582.0, "y": 718.0, "w": 35.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "Guid: 001001-0001-000000073411266.par", "bbox": {"x": 582.0, "y": 690.0, "w": 35.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "-", "bbox": {"x": 582.0, "y": 526.0, "w": 5.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "Date:", "bbox": {"x": 582.0, "y": 498.0, "w": 20.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "2022/04/16 T", "bbox": {"x": 582.0, "y": 445.0, "w": 35.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "18:09:09", "bbox": {"x": 582.0, "y": 392.0, "w": 25.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "CEST", "bbox": {"x": 582.0, "y": 368.0, "w": 20.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "+0200", "bbox": {"x": 582.0, "y": 339.0, "w": 20.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "- Pages:", "bbox": {"x": 582.0, "y": 330.0, "w": 25.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "6/74", "bbox": {"x": 582.0, "y": 272.0, "w": 15.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "Seguro - Opciones de cobertura seleccionadas: Fallec=Fallecimiento...GC=Garantía deCompra/UF=UtilizaciónFraudulenta", "bbox": {"x": 65.0, "y": 756.0, "w": 400.0, "h": 8.0}, "reason": "size_lt_7"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 166, "lines": 0, "tables": 11, "checkboxes": 0},
+      "docling": {"blocks": 35, "labels": {"page_header": 1, "text": 30, "section_header": 2, "picture": 1, "page_footer": 1}, "section_headers": 2, "tables": 0, "key_value_regions": 0, "field_keys": 0, "checkboxes_selected": 0},
+      "liteparse": {"spans": 65, "bold": 0, "cases": {"UPPER": 7, "lower": 45, "none": 5, "Title": 3, "mixed": 5}}
+    },
+    "column_coherence": [
+      {"band": "BAND_A", "columns": 2, "dominant_role_pct": 1.0},
+      {"band": "BAND_B", "columns": 2, "dominant_role_pct": 1.0},
+      {"band": "BAND_C", "columns": 3, "dominant_role_pct": 0.85},
+      {"band": "BAND_D", "columns": 1, "dominant_role_pct": 0.9}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 2, "total": 3},
+      "cell_bold_flags": {"agree": 65, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:58:02",
+    "covers_cases": [7],
+    "needs_review": true
+  }
+}

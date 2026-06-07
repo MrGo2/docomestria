@@ -1,0 +1,138 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA MEDIAMRKET.pdf",
+  "page": 1,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 72,
+    "rects": 11,
+    "docling_blocks": 36,
+    "noise_dropped": 2
+  },
+  "sections": [
+    {
+      "title": "Contrato de cuenta de crédito con o sin Tarjeta MediaMarkt Club Card",
+      "title_signal": {
+        "size": 12.0,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 176.960, "y": 42.784, "w": 259.743, "h": 21.727},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [42.784, 88.574],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [176.960, 544.398], "role": "HEADER", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [42.784, 79.199],
+              "cells": [
+                {"col": 0, "text": "Contrato de cuenta de crédito con o sin Tarjeta MediaMarkt Club Card", "role": "HEADER", "bbox": {"x": 176.960, "y": 42.784, "w": 259.743, "h": 25.770}, "bold": false, "case": "lower", "docling_label": "section_header", "compound_parts": ["Contrato de cuenta de crédito con o sin Tarjeta", "MediaMarkt Club Card"]}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Índice",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 73.183, "y": 107.134, "w": 26.440, "h": 10.201},
+      "container_bbox": {"x": 46.603, "y": 100.000, "w": 498.547, "h": 650.0},
+      "bands": [
+        {
+          "y_range": [107.134, 800.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [73.183, 536.494], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r_idx_A",
+              "y_range": [132.327, 142.528],
+              "cells": [
+                {"col": 0, "text": "A. Condiciones Particulares del contrato de financiación", "role": "VALUE_TEXT", "bbox": {"x": 73.183, "y": 132.327, "w": 245.684, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "list_item", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r_idx_B",
+              "y_range": [157.520, 167.721],
+              "cells": [
+                {"col": 0, "text": "B. Condiciones Generales del contrato de financiación", "role": "VALUE_TEXT", "bbox": {"x": 73.183, "y": 157.520, "w": 237.363, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "list_item", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r_idx_1",
+              "y_range": [183.149, 221.486],
+              "cells": [
+                {"col": 0, "text": "1. La cuenta de crédito con o sin Tarjeta MediaMarkt Club Card. Qué son y qué pueden hacer.", "role": "VALUE_TEXT", "bbox": {"x": 73.183, "y": 183.149, "w": 450.0, "h": 10.201}, "bold": false, "case": "lower", "docling_label": "list_item", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r_idx_2",
+              "y_range": [195.630, 221.486],
+              "cells": [
+                {"col": 0, "text": "2. Modalidades de pago y de disposición que permite su cuenta de crédito con o sin Tarjeta MediaMarkt Club Card. Qué posibilidades tiene de pagar a crédito, o de retirar dinero en efectivo metálico a crédito si dispone de Tarjeta MediaMarkt Club Card.", "role": "VALUE_TEXT", "bbox": {"x": 73.183, "y": 195.630, "w": 450.0, "h": 34.857}, "bold": false, "case": "lower", "docling_label": "list_item", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [],
+  "noise": [
+    {
+      "text": "Logalty Guid: 001001-0001-000000073411266.par - Date: 2022/04/16 T 18:09:09 CEST +0200 - Pages: 1/74",
+      "bbox": {"x": 583.804, "y": 271.940, "w": 5.618, "h": 480.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "CaixaBank Payments & Consumer, E.F.C., E.P., S.A.*, Sociedad Unipersonal · Caleruega 102, 28033 - Madrid, · www.caixabankpc.com · NIF: A-08980153 · ...",
+      "bbox": {"x": 59.547, "y": 786.805, "w": 464.693, "h": 26.513},
+      "reason": "page_footer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 11, "lines": 0, "tables": 1, "checkboxes": 0},
+      "docling": {
+        "blocks": 36,
+        "labels": {"page_header": 1, "picture": 3, "section_header": 2, "list_item": 29, "text": 1},
+        "section_headers": 2,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {"spans": 72, "bold": 0, "cases": {"lower": 50, "Title": 4, "none": 15, "mixed": 1, "UPPER": 2}}
+    },
+    "column_coherence": [],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 2, "total": 2},
+      "cell_bold_flags": {"agree": 72, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:47:33+0200",
+    "covers_cases": [],
+    "needs_review": true
+  }
+}

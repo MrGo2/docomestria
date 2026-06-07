@@ -1,0 +1,2195 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/4_Example/BBVA_0544-01547787_DOC2_CONTRATO.pdf",
+  "page": 1,
+  "page_size_pt": [595.476, 842.6736],
+  "atoms_summary": {
+    "lite_spans": 142,
+    "rects": 359,
+    "docling_blocks": 88,
+    "noise_dropped": 7
+  },
+  "sections": [
+    {
+      "title": "CONTRATO DE REPSOL MAS CREDITO",
+      "title_signal": {
+        "size": 12.0,
+        "bold": true,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 194.96151733398438, "y": 84.37431335449219, "w": 228.05282592773438, "h": 13.391998291015625},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [84.374, 132.0],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r0",
+              "y_range": [121.381, 130.309],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Contrato Núm.: 0182 - 0977 - 0615 - 00000030895134",
+                  "role": "LABEL",
+                  "bbox": {"x": 377.0279541015625, "y": 121.38079071044922, "w": 197.45196533203125, "h": 8.928001403808594},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r1",
+              "y_range": [132.627, 141.555],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "En MADRID, a 03 de Abril de 2019",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 28.497573852539062, "y": 132.62718200683594, "w": 128.04559326171875, "h": 8.928009033203125},
+                  "bold": true,
+                  "case": "mixed",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Titulares",
+      "title_signal": {
+        "size": 10.0,
+        "bold": true,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 278.6831970214844, "y": 144.69158935546875, "w": 41.67999267578125, "h": 11.160003662109375},
+      "container_bbox": {"x": 25.5024, "y": 158.9976, "w": 548.9999810, "h": 183.7512059999999},
+      "bands": [
+        {
+          "y_range": [158.998, 220.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [25.5, 299.5], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.85},
+            {"x_range": [299.5, 574.5], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.85}
+          ],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [161.961, 171.447],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Datos Identificativos",
+                  "role": "SUB_HEADER",
+                  "bbox": {"x": 32.99760055541992, "y": 161.96109008789062, "w": 83.1387939453125, "h": 9.486007690429688},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Datos Identificativos",
+                  "role": "SUB_HEADER",
+                  "bbox": {"x": 306.0, "y": 161.96109008789062, "w": 83.13882446289062, "h": 9.486007690429688},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [181.155, 190.309],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tipo Identificación: NIF QUE COMIENCEN N.I.F.: X3669812R",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 31.499954223632812, "y": 181.1551971435547, "w": 222.9775848388672, "h": 9.23760986328125},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": [
+                    {"label": "Tipo Identificación", "value": "NIF QUE COMIENCEN N.I.F.: X3669812R"}
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "Tipo Identificación: -",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 305.99993896484375, "y": 181.9111785888672, "w": 71.618408203125, "h": 8.928009033203125},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Tipo Identificación", "value": "-"}]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [188.355, 197.283],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "CON X Y Z",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 31.499961853027344, "y": 188.35519409179688, "w": 40.002403259277344, "h": 8.928009033203125},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "N.I.F.: -",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 462.72235107421875, "y": 182.2063751220703, "w": 10.2239990234375, "h": 8.928009033203125},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "N.I.F.", "value": "-"}]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [197.96, 206.888],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Nombre y apellidos: PABLO JAVIER CALVO",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 32.24876403808594, "y": 197.95999145507812, "w": 159.18960571289062, "h": 8.928009033203125},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Nombre y apellidos", "value": "PABLO JAVIER CALVO"}]
+                },
+                {
+                  "col": 1,
+                  "text": "Nombre y apellidos: -",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 306.74871826171875, "y": 197.95997619628906, "w": 75.60000610351562, "h": 8.928009033203125},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Nombre y apellidos", "value": "-"}]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [218.956, 228.442],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Datos Operativos de la Tarjeta",
+                  "role": "SUB_HEADER",
+                  "bbox": {"x": 100.43280029296875, "y": 218.956298828125, "w": 122.37869262695312, "h": 9.486007690429688},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Datos Operativos de la Tarjeta",
+                  "role": "SUB_HEADER",
+                  "bbox": {"x": 375.68157958984375, "y": 218.956298828125, "w": 122.37872314453125, "h": 9.486007690429688},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [235.465, 244.393],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Nombre y apellidos: PABLO JAVIER CALVO",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 32.24871826171875, "y": 235.4647216796875, "w": 159.18960571289062, "h": 8.928009033203125},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Nombre y apellidos", "value": "PABLO JAVIER CALVO"}]
+                },
+                {
+                  "col": 1,
+                  "text": "Nombre y apellidos: -",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 306.74871826171875, "y": 235.4647216796875, "w": 75.60000610351562, "h": 8.928009033203125},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Nombre y apellidos", "value": "-"}]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [254.206, 263.134],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Límite Diario de Disposiciones de Efectivo en Cajeros: 1.000,00",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 32.24871826171875, "y": 254.2063751220703, "w": 199.25839233398438, "h": 8.927993774414062},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Límite Diario de Disposiciones de Efectivo en Cajeros", "value": "1.000,00"}]
+                },
+                {
+                  "col": 1,
+                  "text": "Límite Diario de Disposiciones de Efectivo en Cajeros: -",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 305.9999084472656, "y": 254.2135467529297, "w": 197.474365234375, "h": 8.927993774414062},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Límite Diario de Disposiciones de Efectivo en Cajeros", "value": "-"}]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r9",
+              "y_range": [277.542, 299.504],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Limite Mensual de Disposiciones de Efectivo",
+                  "role": "LABEL",
+                  "bbox": {"x": 31.499908447265625, "y": 277.5415954589844, "w": 158.32958984375, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Limite Mensual de Disposiciones de Efectivo",
+                  "role": "LABEL",
+                  "bbox": {"x": 305.2510681152344, "y": 279.795166015625, "w": 158.32958984375, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [287.823, 299.504],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "a Crédito (Cajeros y/o oficinas): 0,00",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 31.499908447265625, "y": 287.82318115234375, "w": 129.8679962158203, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "a Crédito (Cajeros y/o oficinas)", "value": "0,00"}]
+                },
+                {
+                  "col": 1,
+                  "text": "a Crédito (Cajeros y/o oficinas): -",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 305.2510681152344, "y": 290.0767517089844, "w": 116.96401977539062, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "a Crédito (Cajeros y/o oficinas)", "value": "-"}]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r11",
+              "y_range": [299.955, 311.836],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Clave Restricción: SIN RESTRICCIONES",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 31.499908447265625, "y": 299.9551696777344, "w": 148.0511932373047, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Clave Restricción", "value": "SIN RESTRICCIONES"}]
+                },
+                {
+                  "col": 1,
+                  "text": "Clave Restricción: -",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 305.2510986328125, "y": 302.208740234375, "w": 69.37200927734375, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Clave Restricción", "value": "-"}]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r12",
+              "y_range": [315.559, 325.044],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Datos Operativos",
+                  "role": "SUB_HEADER",
+                  "bbox": {"x": 264.4200134277344, "y": 315.5586853027344, "w": 70.38882446289062, "h": 9.485992431640625},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r13",
+              "y_range": [327.554, 337.039],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Límite de Crédito: 600,00",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 125.2440185546875, "y": 328.00640869140625, "w": 89.83999633789062, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Límite de Crédito", "value": "600,00"}]
+                },
+                {
+                  "col": 0,
+                  "text": "Importes en: EUR",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 226.21681213378906, "y": 328.00640869140625, "w": 63.58717346191406, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Importes en", "value": "EUR"}]
+                },
+                {
+                  "col": 1,
+                  "text": "Sistema de reembolso: CANTIDAD FIJA 20,00",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 300.9239807128906, "y": 327.55389404296875, "w": 173.07180786132812, "h": 9.485992431640625},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": null,
+                  "compound_parts": [{"label": "Sistema de reembolso", "value": "CANTIDAD FIJA 20,00"}]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Domiciliación",
+      "title_signal": {
+        "size": 8.5,
+        "bold": true,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 273.48480224609375, "y": 356.80029296875, "w": 55.266998291015625, "h": 9.485992431640625},
+      "container_bbox": {"x": 25.5024, "y": 357.0, "w": 548.9999810, "h": 27.7},
+      "bands": [
+        {
+          "y_range": [357.0, 384.7],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [25.5, 574.5], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r14",
+              "y_range": [368.796, 378.281],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Banco: 0182 Oficina: 0977 D.C: 46 Núm. Cuenta: 0201568999",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 181.51199340820312, "y": 368.7955017089844, "w": 239.18319702148438, "h": 9.485992431640625},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": [
+                    {"label": "Banco", "value": "0182"},
+                    {"label": "Oficina", "value": "0977"},
+                    {"label": "D.C", "value": "46"},
+                    {"label": "Núm. Cuenta", "value": "0201568999"}
+                  ]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Condiciones económicas",
+      "title_signal": {
+        "size": 10.5,
+        "bold": true,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 237.44158935546875, "y": 389.4854736328125, "w": 126.61322021484375, "h": 11.718017578125},
+      "container_bbox": {"x": 25.5024, "y": 387.0, "w": 548.9999810, "h": 367.5},
+      "bands": [
+        {
+          "y_range": [405.0, 457.5],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [30.8, 165.8], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [165.8, 241.5], "role": "VALUE_NUMERIC", "column_header": "IMPORTE", "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r15",
+              "y_range": [405.0, 424.5],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Comisión anual por emisión y mantenimiento de una tarjeta de crédito",
+                  "role": "LABEL",
+                  "bbox": {"x": 31.5, "y": 407.36260986328125, "w": 132.65560913085938, "h": 15.623962402343750},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Comisión anual por emisión y", "mantenimiento de una tarjeta de crédito"]
+                },
+                {
+                  "col": 1,
+                  "text": "IMPORTE",
+                  "role": "HEADER",
+                  "bbox": {"x": 186.17759704589844, "y": 407.36260986328125, "w": 31.892013549804688, "h": 7.811981201171875},
+                  "bold": true,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r16",
+              "y_range": [424.5, 441.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Primera Tarjeta Emitida",
+                  "role": "LABEL",
+                  "bbox": {"x": 33.75359344482422, "y": 429.6610107421875, "w": 78.1968002319336, "h": 7.811981201171875},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "43,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 190.97999572753906, "y": 430.0087890625, "w": 20.0159912109375, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r17",
+              "y_range": [441.0, 457.5],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Resto de Tarjetas",
+                  "role": "LABEL",
+                  "bbox": {"x": 33.753597259521484, "y": 446.1634216308594, "w": 55.25040054321289, "h": 7.811981201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "20,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 190.97999572753906, "y": 445.0063781738281, "w": 20.0159912109375, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [459.0, 513.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [30.8, 183.8], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [183.8, 241.5], "role": "VALUE_NUMERIC", "column_header": "IMPORTE", "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r18",
+              "y_range": [459.0, 475.5],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "COMISIONES POR OTRAS OPERACIONES",
+                  "role": "HEADER",
+                  "bbox": {"x": 35.25119400024414, "y": 459.8650207519531, "w": 141.93161010742188, "h": 7.811981201171875},
+                  "bold": true,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "IMPORTE",
+                  "role": "HEADER",
+                  "bbox": {"x": 198.18719482421875, "y": 463.6090087890625, "w": 31.891998291015625, "h": 7.811981201171875},
+                  "bold": true,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r19",
+              "y_range": [475.5, 492.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por Consultas en Cajeros no pertenecientes al grupo BBVA y UE en Euros",
+                  "role": "LABEL",
+                  "bbox": {"x": 33.75361251831055, "y": 476.2809753417969, "w": 144.7803955078125, "h": 15.623962402343750},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Por Consultas en Cajeros no pertenecientes al", "grupo BBVA y UE en Euros"]
+                },
+                {
+                  "col": 1,
+                  "text": "0,60",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 205.2071990966797, "y": 481.00640869140625, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r20",
+              "y_range": [492.0, 513.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por emisión de duplicados",
+                  "role": "LABEL",
+                  "bbox": {"x": 35.25121307373047, "y": 497.9097595214844, "w": 82.10319519042969, "h": 7.811981201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "4,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 205.2071990966797, "y": 496.0039978027344, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [513.0, 660.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [30.8, 116.3], "role": "LABEL", "column_header": null, "coherence": 0.9},
+            {"x_range": [116.3, 241.5], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 0.9}
+          ],
+          "rows": [
+            {
+              "row_id": "r21",
+              "y_range": [513.0, 532.5],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "INTERESES",
+                  "role": "HEADER",
+                  "bbox": {"x": 41.997589111328125, "y": 519.11376953125, "w": 39.676002502441406, "h": 7.81201171875},
+                  "bold": true,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Tipo Nominal",
+                  "role": "HEADER",
+                  "bbox": {"x": 121.83118438720703, "y": 516.7809448242188, "w": 44.333412170410156, "h": 7.81201171875},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r21b",
+              "y_range": [517.155, 532.5],
+              "cells": [
+                {
+                  "col": 1,
+                  "text": "Anual %",
+                  "role": "HEADER",
+                  "bbox": {"x": 129.2183837890625, "y": 524.7801513671875, "w": 27.614212036132812, "h": 7.81201171875},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "TAE",
+                  "role": "HEADER",
+                  "bbox": {"x": 198.50399780273438, "y": 517.1553955078125, "w": 14.0, "h": 7.81201171875},
+                  "bold": true,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "% Anual",
+                  "role": "HEADER",
+                  "bbox": {"x": 191.6927947998047, "y": 524.3554077148438, "w": 27.610794067382812, "h": 7.81201171875},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r22",
+              "y_range": [532.5, 549.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Pago Personalizado",
+                  "role": "LABEL",
+                  "bbox": {"x": 33.75358200073242, "y": 538.4097290039062, "w": 62.64719772338867, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "18,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 128.03759765625, "y": 538.0087890625, "w": 28.912002563476562, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": [
+                "Detalle en cláusula específica del contrato"
+              ]
+            },
+            {
+              "row_id": "r23",
+              "y_range": [549.0, 583.5],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tarjeta/Pago Aplazado",
+                  "role": "LABEL",
+                  "bbox": {"x": 34.50238037109375, "y": 564.1641235351562, "w": 71.21659851074219, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "17,5200",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 128.03759765625, "y": 561.257568359375, "w": 28.912002563476562, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": [
+                "Detalle en cláusula específica del contrato"
+              ]
+            },
+            {
+              "row_id": "r24",
+              "y_range": [583.5, 623.2],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Pago Total (para disposiciones de efectivo y/o traspasos a cuenta de domiciliación de pagos)",
+                  "role": "LABEL",
+                  "bbox": {"x": 32.99760437011719, "y": 586.3761596679688, "w": 110.0, "h": 31.248046875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Pago Total (para", "disposiciones de efectivo", "y/o traspasos a cuenta de", "domiciliación de pagos)"]
+                },
+                {
+                  "col": 1,
+                  "text": "17,5200",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 128.03759765625, "y": 602.50634765625, "w": 28.912002563476562, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": [
+                "Detalle en cláusula específica del contrato"
+              ]
+            },
+            {
+              "row_id": "r25",
+              "y_range": [623.2, 655.5],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Moratorio, sobre cuotas Vencidas y no satisfechas",
+                  "role": "LABEL",
+                  "bbox": {"x": 32.997589111328125, "y": 626.66015625, "w": 80.93560028076172, "h": 15.624023437500},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Moratorio, sobre cuotas", "Vencidas y no satisfechas"]
+                },
+                {
+                  "col": 1,
+                  "text": "Detalle en cláusula de Intereses",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 120.75120544433594, "y": 623.4129638671875, "w": 66.94, "h": 23.436035156250},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Detalle en", "cláusula de", "Intereses"]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [655.5, 760.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [30.8, 574.5], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.8}
+          ],
+          "rows": [
+            {
+              "row_id": "r26",
+              "y_range": [657.562, 665.374],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "De apertura sobre excedido en el límite de crédito en tarjeta: 3,0000 %, Mínimo 6,00 euro.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 31.500030517578125, "y": 657.5625, "w": 279.8330078125, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r27",
+              "y_range": [668.060, 675.872],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por reclamación de posiciones vencidas hasta un máximo de 35,00 EUR por una sola vez.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 31.500030517578125, "y": 668.0601196289062, "w": 281.3764343261719, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r28",
+              "y_range": [678.558, 686.370],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por utilización de la Tarjeta fuera de la Zona Euro: 3,0000 % sobre el contravalor en euros.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 31.500030517578125, "y": 678.5576782226562, "w": 282.1665954589844, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r29",
+              "y_range": [689.055, 699.560],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por gestión de aplazamiento de pagos: - euros por cada operación.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 31.50006103515625, "y": 689.0552978515625, "w": 209.010986328125, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r30",
+              "y_range": [699.560, 710.064],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Compensación por cancelación anticipada de deuda: - % sobre el importe cancelado anticipadamente",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 31.500045776367188, "y": 699.5601196289062, "w": 318.3709716796875, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r31",
+              "y_range": [711.908, 752.356],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "COMISIONES POR TRASPASO DE FONDOS",
+                  "role": "HEADER",
+                  "bbox": {"x": 32.248809814453125, "y": 711.9081420898438, "w": 145.41961669921875, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": ["(Operaciones a Crédito)"]
+            },
+            {
+              "row_id": "r32",
+              "y_range": [731.456, 753.268],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "A Cuenta Personal BBVA",
+                  "role": "LABEL",
+                  "bbox": {"x": 32.248809814453125, "y": 731.4561157226562, "w": 79.39339447021484, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "3,0000 %",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 32.24880599975586, "y": 744.5457153320312, "w": 29.58700180053711, "h": 7.81201171875},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [408.0, 562.5],
+          "layout": "5-col",
+          "columns": [
+            {"x_range": [245.3, 407.5], "role": "LABEL", "column_header": "Comisión por retirada de efectivo mediante tarjeta en cajeros automaticos y en oficinas", "coherence": 0.9},
+            {"x_range": [407.5, 437.5], "role": "VALUE_NUMERIC", "column_header": "A débito %", "coherence": 1.0},
+            {"x_range": [437.5, 481.5], "role": "VALUE_NUMERIC", "column_header": "A débito Mínimo", "coherence": 1.0},
+            {"x_range": [481.5, 519.5], "role": "VALUE_NUMERIC", "column_header": "A crédito %", "coherence": 1.0},
+            {"x_range": [519.5, 569.5], "role": "VALUE_NUMERIC", "column_header": "A crédito Mínimo", "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r33",
+              "y_range": [408.0, 444.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Comisión por retirada de efectivo mediante tarjeta en cajeros automaticos y en oficinas",
+                  "role": "HEADER",
+                  "bbox": {"x": 247.500244140625, "y": 413.0538635253906, "w": 135.11032104492188, "h": 27.485992431640625},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Comisión por retirada de efectivo", "mediante tarjeta en cajeros", "automaticos y en oficinas"]
+                },
+                {
+                  "col": 1,
+                  "text": "A débito",
+                  "role": "HEADER",
+                  "bbox": {"x": 435.24725341796875, "y": 417.636962890625, "w": 27.9984130859375, "h": 7.811981201171875},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "A crédito",
+                  "role": "HEADER",
+                  "bbox": {"x": 513.612060546875, "y": 416.7195739746094, "w": 32.8408203125, "h": 8.481597900390625},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "%",
+                  "role": "HEADER",
+                  "bbox": {"x": 423.1872253417969, "y": 434.7535705566406, "w": 7.11199951171875, "h": 8.927978515625},
+                  "bold": true,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Mínimo",
+                  "role": "HEADER",
+                  "bbox": {"x": 453.99603271484375, "y": 434.7535705566406, "w": 28.0, "h": 8.927978515625},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "%",
+                  "role": "HEADER",
+                  "bbox": {"x": 504.187255859375, "y": 434.7535705566406, "w": 7.11199951171875, "h": 8.927978515625},
+                  "bold": true,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 4,
+                  "text": "Mínimo",
+                  "role": "HEADER",
+                  "bbox": {"x": 534.2472534179688, "y": 435.2503662109375, "w": 28.0, "h": 8.927978515625},
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r34",
+              "y_range": [444.0, 462.7],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cajeros Grupo BBVA en España",
+                  "role": "LABEL",
+                  "bbox": {"x": 247.50006103515625, "y": 448.0353698730469, "w": 101.55459594726562, "h": 7.811981201171875},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 414.5111999511719, "y": 448.757568359375, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "0,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 459.8280029296875, "y": 448.757568359375, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "3,5000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 495.5111999511719, "y": 448.757568359375, "w": 24.464019775390625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 4,
+                  "text": "3,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 540.0792236328125, "y": 448.757568359375, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r35",
+              "y_range": [462.7, 479.2],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cajeros de entidades distintas del Grupo BBVA en España",
+                  "role": "LABEL",
+                  "bbox": {"x": 248.24893188476562, "y": 462.7809753417969, "w": 156.83120727539062, "h": 15.623962402343750},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Cajeros de entidades distintas del Grupo BBVA en", "España"]
+                },
+                {
+                  "col": 1,
+                  "text": "Nota 1",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 414.151611328125, "y": 467.75115966796875, "w": 24.4495849609375, "h": 8.927978515625},
+                  "bold": true,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Nota 1",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 454.651611328125, "y": 467.75115966796875, "w": 24.4495849609375, "h": 8.927978515625},
+                  "bold": true,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "Nota 2",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 495.900390625, "y": 467.75115966796875, "w": 24.4495849609375, "h": 8.927978515625},
+                  "bold": true,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 4,
+                  "text": "Nota 2",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 534.9027709960938, "y": 467.75115966796875, "w": 24.4495849609375, "h": 8.927978515625},
+                  "bold": true,
+                  "case": "Title",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r36",
+              "y_range": [479.2, 495.7],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cajeros fuera de España",
+                  "role": "LABEL",
+                  "bbox": {"x": 248.2489471435547, "y": 483.28656005859375, "w": 77.44902038574219, "h": 7.811981201171875},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "4,5000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 414.51123046875, "y": 482.50396728515625, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "3,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 459.8280334472656, "y": 482.50396728515625, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "5,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 495.51123046875, "y": 482.50396728515625, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 4,
+                  "text": "3,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 540.0792236328125, "y": 482.50396728515625, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r37",
+              "y_range": [495.7, 512.2],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Oficinas del Grupo BBVA en España",
+                  "role": "LABEL",
+                  "bbox": {"x": 248.24896240234375, "y": 499.4073791503906, "w": 114.00344848632812, "h": 7.811981201171875},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "0,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 414.51123046875, "y": 499.0063781738281, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "0,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 459.8280334472656, "y": 499.0063781738281, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "3,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 495.51123046875, "y": 499.0063781738281, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 4,
+                  "text": "2,50",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 540.0792236328125, "y": 499.0063781738281, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r38",
+              "y_range": [512.2, 528.7],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Oficinas en otras Entidades en el correspondiente esquema de medios de pago",
+                  "role": "LABEL",
+                  "bbox": {"x": 248.24900817871094, "y": 513.4041137695312, "w": 154.87803649902344, "h": 15.623962402343750},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Oficinas en otras Entidades en el correspondiente", "esquema de medios de pago"]
+                },
+                {
+                  "col": 1,
+                  "text": "5,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 414.51123046875, "y": 515.5087890625, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "3,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 459.8280334472656, "y": 515.5087890625, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "5,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 495.51123046875, "y": 515.5087890625, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 4,
+                  "text": "3,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 540.0792236328125, "y": 515.5087890625, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r39",
+              "y_range": [528.7, 546.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Oficinas de otras Entidades Nacionales y Paises U.E. (en Euros)",
+                  "role": "LABEL",
+                  "bbox": {"x": 247.50010681152344, "y": 530.2809448242188, "w": 150.5926055908203, "h": 15.623962402343750},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Oficinas de otras Entidades Nacionales y Paises", "U.E. (en Euros)"]
+                },
+                {
+                  "col": 1,
+                  "text": "5,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 414.51123046875, "y": 532.0039672851562, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "3,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 459.8280334472656, "y": 532.0039672851562, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "5,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 495.51123046875, "y": 532.0039672851562, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 4,
+                  "text": "3,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 540.0792236328125, "y": 532.0039672851562, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r40",
+              "y_range": [546.0, 562.5],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Oficinas de Entidades en el Extranjero y U.E. (no Euro)",
+                  "role": "LABEL",
+                  "bbox": {"x": 248.2488555908203, "y": 546.408935546875, "w": 140.0902557373047, "h": 15.623962402343750},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": ["Oficinas de Entidades en el Extranjero y U.E.", "(no Euro)"]
+                },
+                {
+                  "col": 1,
+                  "text": "5,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 414.51123046875, "y": 548.50634765625, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "3,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 459.8280334472656, "y": 548.50634765625, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "5,0000",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 495.51123046875, "y": 548.50634765625, "w": 24.4639892578125, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 4,
+                  "text": "3,00",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 540.0792236328125, "y": 548.50634765625, "w": 15.5679931640625, "h": 8.927978515625},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Contrato Núm.",
+      "value": "0182 - 0977 - 0615 - 00000030895134",
+      "section": "CONTRATO DE REPSOL MAS CREDITO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 121.381,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": 2, "value_span_ids": [2]}
+    },
+    {
+      "label": "Fecha",
+      "value": "En MADRID, a 03 de Abril de 2019",
+      "section": "CONTRATO DE REPSOL MAS CREDITO",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 132.627,
+      "rule": "inline-kv",
+      "confidence": "LOW",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": 3, "value_span_ids": [3]}
+    },
+    {
+      "label": "Tipo Identificación (Titular 1)",
+      "value": "NIF QUE COMIENCEN N.I.F.: X3669812R",
+      "section": "Titulares",
+      "band": "BAND_A",
+      "column_header": "Titular 1",
+      "row_y": 181.155,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 7, "value_span_ids": [7]}
+    },
+    {
+      "label": "Tipo Identificación (Titular 2)",
+      "value": "-",
+      "section": "Titulares",
+      "band": "BAND_A",
+      "column_header": "Titular 2",
+      "row_y": 181.911,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 8, "value_span_ids": [8]}
+    },
+    {
+      "label": "N.I.F. (Titular 2)",
+      "value": "-",
+      "section": "Titulares",
+      "band": "BAND_A",
+      "column_header": "Titular 2",
+      "row_y": 182.206,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 9, "value_span_ids": [9]}
+    },
+    {
+      "label": "Nombre y apellidos (Datos Identificativos Titular 1)",
+      "value": "PABLO JAVIER CALVO",
+      "section": "Titulares",
+      "band": "BAND_A",
+      "column_header": "Titular 1",
+      "row_y": 197.960,
+      "rule": "inline-kv",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 12, "value_span_ids": [12]}
+    },
+    {
+      "label": "Nombre y apellidos (Datos Identificativos Titular 2)",
+      "value": "-",
+      "section": "Titulares",
+      "band": "BAND_A",
+      "column_header": "Titular 2",
+      "row_y": 197.960,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 13, "value_span_ids": [13]}
+    },
+    {
+      "label": "Nombre y apellidos (Datos Operativos Titular 1)",
+      "value": "PABLO JAVIER CALVO",
+      "section": "Titulares",
+      "band": "BAND_B",
+      "column_header": "Titular 1",
+      "row_y": 235.465,
+      "rule": "inline-kv",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 16, "value_span_ids": [16]}
+    },
+    {
+      "label": "Nombre y apellidos (Datos Operativos Titular 2)",
+      "value": "-",
+      "section": "Titulares",
+      "band": "BAND_B",
+      "column_header": "Titular 2",
+      "row_y": 235.465,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 17, "value_span_ids": [17]}
+    },
+    {
+      "label": "Límite Diario de Disposiciones de Efectivo en Cajeros (Titular 1)",
+      "value": "1.000,00",
+      "section": "Titulares",
+      "band": "BAND_B",
+      "column_header": "Titular 1",
+      "row_y": 254.206,
+      "rule": "inline-kv",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 18, "value_span_ids": [18]}
+    },
+    {
+      "label": "Límite Diario de Disposiciones de Efectivo en Cajeros (Titular 2)",
+      "value": "-",
+      "section": "Titulares",
+      "band": "BAND_B",
+      "column_header": "Titular 2",
+      "row_y": 254.213,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 19, "value_span_ids": [19]}
+    },
+    {
+      "label": "a Crédito (Cajeros y/o oficinas) (Titular 1)",
+      "value": "0,00",
+      "section": "Titulares",
+      "band": "BAND_B",
+      "column_header": "Titular 1",
+      "row_y": 287.823,
+      "rule": "inline-kv",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 22, "value_span_ids": [22]}
+    },
+    {
+      "label": "a Crédito (Cajeros y/o oficinas) (Titular 2)",
+      "value": "-",
+      "section": "Titulares",
+      "band": "BAND_B",
+      "column_header": "Titular 2",
+      "row_y": 290.077,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 23, "value_span_ids": [23]}
+    },
+    {
+      "label": "Clave Restricción (Titular 1)",
+      "value": "SIN RESTRICCIONES",
+      "section": "Titulares",
+      "band": "BAND_B",
+      "column_header": "Titular 1",
+      "row_y": 299.955,
+      "rule": "inline-kv",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 24, "value_span_ids": [24]}
+    },
+    {
+      "label": "Clave Restricción (Titular 2)",
+      "value": "-",
+      "section": "Titulares",
+      "band": "BAND_B",
+      "column_header": "Titular 2",
+      "row_y": 302.209,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 25, "value_span_ids": [25]}
+    },
+    {
+      "label": "Límite de Crédito",
+      "value": "600,00",
+      "section": "Titulares",
+      "band": "BAND_C",
+      "column_header": null,
+      "row_y": 328.006,
+      "rule": "inline-kv",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 27, "value_span_ids": [27]}
+    },
+    {
+      "label": "Importes en",
+      "value": "EUR",
+      "section": "Titulares",
+      "band": "BAND_C",
+      "column_header": null,
+      "row_y": 328.006,
+      "rule": "inline-kv",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 28, "value_span_ids": [28]}
+    },
+    {
+      "label": "Sistema de reembolso",
+      "value": "CANTIDAD FIJA 20,00",
+      "section": "Titulares",
+      "band": "BAND_C",
+      "column_header": null,
+      "row_y": 327.554,
+      "rule": "inline-kv",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r0", "docling_block_id": null, "label_span_id": 29, "value_span_ids": [29]}
+    },
+    {
+      "label": "Banco / Oficina / D.C / Núm. Cuenta",
+      "value": "0182 / 0977 / 46 / 0201568999",
+      "section": "Domiciliación",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 368.796,
+      "rule": "inline-kv",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r334", "docling_block_id": null, "label_span_id": 30, "value_span_ids": [30]}
+    },
+    {
+      "label": "Comisión anual por emisión y mantenimiento de una tarjeta de crédito — Primera Tarjeta Emitida",
+      "value": "43,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_A",
+      "column_header": "IMPORTE",
+      "row_y": 430.009,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r340", "docling_block_id": null, "label_span_id": 37, "value_span_ids": [38]}
+    },
+    {
+      "label": "Comisión anual por emisión y mantenimiento de una tarjeta de crédito — Resto de Tarjetas",
+      "value": "20,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_A",
+      "column_header": "IMPORTE",
+      "row_y": 445.006,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r341", "docling_block_id": null, "label_span_id": 40, "value_span_ids": [41]}
+    },
+    {
+      "label": "Por Consultas en Cajeros no pertenecientes al grupo BBVA y UE en Euros",
+      "value": "0,60",
+      "section": "Condiciones económicas",
+      "band": "BAND_B",
+      "column_header": "IMPORTE",
+      "row_y": 481.006,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r344", "docling_block_id": null, "label_span_id": 45, "value_span_ids": [46]}
+    },
+    {
+      "label": "Por emisión de duplicados",
+      "value": "4,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_B",
+      "column_header": "IMPORTE",
+      "row_y": 496.004,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r345", "docling_block_id": null, "label_span_id": 48, "value_span_ids": [49]}
+    },
+    {
+      "label": "Pago Personalizado — Tipo Nominal Anual %",
+      "value": "18,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_C",
+      "column_header": "Tipo Nominal Anual %",
+      "row_y": 538.009,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r352", "docling_block_id": null, "label_span_id": 61, "value_span_ids": [62]}
+    },
+    {
+      "label": "Tarjeta/Pago Aplazado — Tipo Nominal Anual %",
+      "value": "17,5200",
+      "section": "Condiciones económicas",
+      "band": "BAND_C",
+      "column_header": "Tipo Nominal Anual %",
+      "row_y": 561.258,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r353", "docling_block_id": null, "label_span_id": 64, "value_span_ids": [65]}
+    },
+    {
+      "label": "Pago Total (para disposiciones de efectivo y/o traspasos a cuenta de domiciliación de pagos) — Tipo Nominal Anual %",
+      "value": "17,5200",
+      "section": "Condiciones económicas",
+      "band": "BAND_C",
+      "column_header": "Tipo Nominal Anual %",
+      "row_y": 602.506,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r355", "docling_block_id": null, "label_span_id": 71, "value_span_ids": [72]}
+    },
+    {
+      "label": "Moratorio, sobre cuotas Vencidas y no satisfechas",
+      "value": "Detalle en cláusula de Intereses",
+      "section": "Condiciones económicas",
+      "band": "BAND_C",
+      "column_header": null,
+      "row_y": 626.660,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r354", "docling_block_id": null, "label_span_id": 76, "value_span_ids": [77, 78, 79]}
+    },
+    {
+      "label": "Cajeros Grupo BBVA en España",
+      "value": "0,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito %",
+      "row_y": 448.758,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r357", "docling_block_id": null, "label_span_id": 43, "value_span_ids": [44]}
+    },
+    {
+      "label": "Cajeros Grupo BBVA en España",
+      "value": "0,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito Mínimo",
+      "row_y": 448.758,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r357", "docling_block_id": null, "label_span_id": 43, "value_span_ids": [44]}
+    },
+    {
+      "label": "Cajeros Grupo BBVA en España",
+      "value": "3,5000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito %",
+      "row_y": 448.758,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r357", "docling_block_id": null, "label_span_id": 43, "value_span_ids": [44]}
+    },
+    {
+      "label": "Cajeros Grupo BBVA en España",
+      "value": "3,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito Mínimo",
+      "row_y": 448.758,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r357", "docling_block_id": null, "label_span_id": 43, "value_span_ids": [44]}
+    },
+    {
+      "label": "Cajeros de entidades distintas del Grupo BBVA en España",
+      "value": "Nota 1",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito %",
+      "row_y": 467.751,
+      "rule": "header-projection",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r357", "docling_block_id": null, "label_span_id": 53, "value_span_ids": [54]}
+    },
+    {
+      "label": "Cajeros de entidades distintas del Grupo BBVA en España",
+      "value": "Nota 1",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito Mínimo",
+      "row_y": 467.751,
+      "rule": "header-projection",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r357", "docling_block_id": null, "label_span_id": 53, "value_span_ids": [55]}
+    },
+    {
+      "label": "Cajeros de entidades distintas del Grupo BBVA en España",
+      "value": "Nota 2",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito %",
+      "row_y": 467.751,
+      "rule": "header-projection",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r357", "docling_block_id": null, "label_span_id": 53, "value_span_ids": [56]}
+    },
+    {
+      "label": "Cajeros de entidades distintas del Grupo BBVA en España",
+      "value": "Nota 2",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito Mínimo",
+      "row_y": 467.751,
+      "rule": "header-projection",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r357", "docling_block_id": null, "label_span_id": 53, "value_span_ids": [57]}
+    },
+    {
+      "label": "Cajeros fuera de España",
+      "value": "4,5000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito %",
+      "row_y": 482.504,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 58, "value_span_ids": [59]}
+    },
+    {
+      "label": "Cajeros fuera de España",
+      "value": "3,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito Mínimo",
+      "row_y": 482.504,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 58, "value_span_ids": [59]}
+    },
+    {
+      "label": "Cajeros fuera de España",
+      "value": "5,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito %",
+      "row_y": 482.504,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 58, "value_span_ids": [59]}
+    },
+    {
+      "label": "Cajeros fuera de España",
+      "value": "3,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito Mínimo",
+      "row_y": 482.504,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 58, "value_span_ids": [59]}
+    },
+    {
+      "label": "Oficinas del Grupo BBVA en España",
+      "value": "0,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito %",
+      "row_y": 499.006,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 60, "value_span_ids": [60]}
+    },
+    {
+      "label": "Oficinas del Grupo BBVA en España",
+      "value": "0,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito Mínimo",
+      "row_y": 499.006,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 60, "value_span_ids": [60]}
+    },
+    {
+      "label": "Oficinas del Grupo BBVA en España",
+      "value": "3,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito %",
+      "row_y": 499.006,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 60, "value_span_ids": [60]}
+    },
+    {
+      "label": "Oficinas del Grupo BBVA en España",
+      "value": "2,50",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito Mínimo",
+      "row_y": 499.006,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 60, "value_span_ids": [60]}
+    },
+    {
+      "label": "Oficinas en otras Entidades en el correspondiente esquema de medios de pago",
+      "value": "5,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito %",
+      "row_y": 515.509,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 63, "value_span_ids": [63]}
+    },
+    {
+      "label": "Oficinas en otras Entidades en el correspondiente esquema de medios de pago",
+      "value": "3,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito Mínimo",
+      "row_y": 515.509,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 63, "value_span_ids": [63]}
+    },
+    {
+      "label": "Oficinas en otras Entidades en el correspondiente esquema de medios de pago",
+      "value": "5,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito %",
+      "row_y": 515.509,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 63, "value_span_ids": [63]}
+    },
+    {
+      "label": "Oficinas en otras Entidades en el correspondiente esquema de medios de pago",
+      "value": "3,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito Mínimo",
+      "row_y": 515.509,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 63, "value_span_ids": [63]}
+    },
+    {
+      "label": "Oficinas de otras Entidades Nacionales y Paises U.E. (en Euros)",
+      "value": "5,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito %",
+      "row_y": 532.004,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 66, "value_span_ids": [66]}
+    },
+    {
+      "label": "Oficinas de otras Entidades Nacionales y Paises U.E. (en Euros)",
+      "value": "3,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito Mínimo",
+      "row_y": 532.004,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 66, "value_span_ids": [66]}
+    },
+    {
+      "label": "Oficinas de otras Entidades Nacionales y Paises U.E. (en Euros)",
+      "value": "5,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito %",
+      "row_y": 532.004,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 66, "value_span_ids": [66]}
+    },
+    {
+      "label": "Oficinas de otras Entidades Nacionales y Paises U.E. (en Euros)",
+      "value": "3,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito Mínimo",
+      "row_y": 532.004,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 66, "value_span_ids": [66]}
+    },
+    {
+      "label": "Oficinas de Entidades en el Extranjero y U.E. (no Euro)",
+      "value": "5,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito %",
+      "row_y": 548.506,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 68, "value_span_ids": [68]}
+    },
+    {
+      "label": "Oficinas de Entidades en el Extranjero y U.E. (no Euro)",
+      "value": "3,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A débito Mínimo",
+      "row_y": 548.506,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 68, "value_span_ids": [68]}
+    },
+    {
+      "label": "Oficinas de Entidades en el Extranjero y U.E. (no Euro)",
+      "value": "5,0000",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito %",
+      "row_y": 548.506,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 68, "value_span_ids": [68]}
+    },
+    {
+      "label": "Oficinas de Entidades en el Extranjero y U.E. (no Euro)",
+      "value": "3,00",
+      "section": "Condiciones económicas",
+      "band": "BAND_D",
+      "column_header": "A crédito Mínimo",
+      "row_y": 548.506,
+      "rule": "header-projection",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": "p1-r358", "docling_block_id": null, "label_span_id": 68, "value_span_ids": [68]}
+    },
+    {
+      "label": "A Cuenta Personal BBVA (COMISIONES POR TRASPASO DE FONDOS)",
+      "value": "3,0000 %",
+      "section": "Condiciones económicas",
+      "band": "BAND_E",
+      "column_header": null,
+      "row_y": 744.546,
+      "rule": "case-contrast",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": "p1-r335", "docling_block_id": null, "label_span_id": 82, "value_span_ids": [83]}
+    }
+  ],
+  "noise": [
+    {
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "bbox": {"x": 11.488900184631348, "y": 151.6416015625, "w": 6.137999534606934, "h": 428.67120361328125},
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "",
+      "bbox": {"x": 0.0, "y": 12.5, "w": 100.0, "h": 50.0},
+      "reason": "picture_decorative"
+    },
+    {
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 21 27-01-2019",
+      "bbox": {"x": 27.748748779296875, "y": 799.0087280273438, "w": 215.583984375, "h": 8.927978515625},
+      "reason": "page_footer"
+    },
+    {
+      "text": "Página 1 de 10",
+      "bbox": {"x": 512.8487548828125, "y": 799.0015258789062, "w": 55.59515380859375, "h": 8.927978515625},
+      "reason": "page_footer"
+    },
+    {
+      "text": "Detalle en cláusula",
+      "bbox": {"x": 171.74880981445312, "y": 534.1102905273438, "w": 54.92439270019531, "h": 7.2540283203125},
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "específica del contrato",
+      "bbox": {"x": 171.74880981445312, "y": 542.1094360351562, "w": 65.05729675292969, "h": 7.2540283203125},
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "Detalle en cláusula",
+      "bbox": {"x": 171.74879455566406, "y": 558.1078491210938, "w": 54.92439270019531, "h": 7.2540283203125},
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "específica del contrato",
+      "bbox": {"x": 171.74879455566406, "y": 566.1071166992188, "w": 65.05729675292969, "h": 7.2540283203125},
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "Detalle en cláusula",
+      "bbox": {"x": 171.74880981445312, "y": 597.1102905273438, "w": 54.92439270019531, "h": 7.2540283203125},
+      "reason": "size_lt_7"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 359,
+        "lines": 19,
+        "tables": 6,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 88,
+        "labels": {
+          "page_header": 1,
+          "picture": 2,
+          "text": 72,
+          "section_header": 4,
+          "table": 2,
+          "footnote": 3,
+          "list_item": 2,
+          "page_footer": 2
+        },
+        "section_headers": 4,
+        "tables": 2,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 142,
+        "bold": 37,
+        "cases": {
+          "Title": 10,
+          "UPPER": 10,
+          "lower": 80,
+          "mixed": 8,
+          "none": 34
+        }
+      }
+    },
+    "column_coherence": [
+      {"x_range": [30.8, 165.8], "dominant_role": "LABEL", "coherence": 1.0, "cell_count": 3},
+      {"x_range": [165.8, 241.5], "dominant_role": "VALUE_NUMERIC", "coherence": 1.0, "cell_count": 5},
+      {"x_range": [245.3, 407.5], "dominant_role": "LABEL", "coherence": 0.9, "cell_count": 7},
+      {"x_range": [407.5, 481.5], "dominant_role": "VALUE_NUMERIC", "coherence": 1.0, "cell_count": 7},
+      {"x_range": [481.5, 569.5], "dominant_role": "VALUE_NUMERIC", "coherence": 1.0, "cell_count": 7}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 4, "total": 4},
+      "cell_bold_flags": {"agree": 130, "disagree": 12}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T23:05:12+02:00",
+    "covers_cases": [3, 4, 5],
+    "needs_review": true
+  }
+}

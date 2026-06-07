@@ -1,0 +1,523 @@
+{
+  "pdf": "BBVA_0686-01516762_DOC2_CONTRATO.pdf",
+  "page": 2,
+  "page_size_pt": [595.476, 842.6736],
+  "atoms_summary": {
+    "lite_spans": 30,
+    "rects": 338,
+    "docling_blocks": 25,
+    "noise_dropped": 6
+  },
+  "sections": [
+    {
+      "title": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "title_signal": {
+        "size": 10.0,
+        "bold": true,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 43.502, "y": 80.201, "w": 249.421, "h": 11.16},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [104.198, 135.0],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [104.198, 115.359],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por una parte, su nombre y apellidos (en adelante \"Usted\"):",
+                  "role": "PROSE",
+                  "bbox": {"x": 43.502, "y": 104.198, "w": 263.444, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Nº 0182-0686-0083-00000000002142",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 379.751, "y": 103.442, "w": 168.531, "h": 11.16},
+                  "bold": false,
+                  "case": "Title",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [134.942, 170.0],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [134.942, 146.103],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "TITULARES",
+                  "role": "SUB_HEADER",
+                  "bbox": {"x": 43.502, "y": 134.942, "w": 55.01, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [168.264, 340.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [43.5, 305.0], "role": "LABEL", "column_header": null, "coherence": 0.9},
+            {"x_range": [305.0, 560.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.88}
+          ],
+          "rows": [
+            {
+              "row_id": "r3",
+              "y_range": [168.264, 179.424],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "SUS DATOS PERSONALES",
+                  "role": "SUB_HEADER",
+                  "bbox": {"x": 51.746, "y": 168.264, "w": 128.352, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [188.827, 199.988],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Primer apellido",
+                  "role": "LABEL",
+                  "bbox": {"x": 54.526, "y": 188.827, "w": 66.68, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "VIOREL",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 128.246, "y": 188.95, "w": 36.68, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Segundo apellido",
+                  "role": "LABEL",
+                  "bbox": {"x": 309.528, "y": 188.827, "w": 77.27, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "LINGURAR",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 393.746, "y": 188.95, "w": 51.67, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [219.672, 230.832],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Nombre",
+                  "role": "LABEL",
+                  "bbox": {"x": 54.525, "y": 219.672, "w": 35.56, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "STEFAN",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 96.746, "y": 219.701, "w": 39.45, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "NIF",
+                  "role": "LABEL",
+                  "bbox": {"x": 309.528, "y": 219.672, "w": 16.11, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "X6553633J",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 333.0, "y": 219.701, "w": 50.59, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [250.517, 261.677],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "SU DOMICILIO",
+                  "role": "SUB_HEADER",
+                  "bbox": {"x": 54.526, "y": 250.517, "w": 68.9, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [271.08, 282.24],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Domicilio fiscal",
+                  "role": "LABEL",
+                  "bbox": {"x": 54.526, "y": 271.08, "w": 66.11, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "CEBALLOS, 57 BAJO",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 127.497, "y": 271.604, "w": 93.535, "h": 10.044},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 2,
+                  "text": "Código postal",
+                  "role": "LABEL",
+                  "bbox": {"x": 309.528, "y": 271.08, "w": 61.14, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 3,
+                  "text": "39340",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 378.0, "y": 271.454, "w": 27.8, "h": 11.16},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [312.206, 323.366],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Plaza",
+                  "role": "LABEL",
+                  "bbox": {"x": 54.525, "y": 312.206, "w": 25.01, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": null,
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "SUANCES",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 86.248, "y": 312.703, "w": 48.34, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": null,
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [351.85, 510.0],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r9",
+              "y_range": [351.85, 416.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por otra parte, Banco Bilbao Vizcaya Argentaria S.A., (en adelante \"BBVA\").",
+                  "role": "PROSE",
+                  "bbox": {"x": 44.251, "y": 351.85, "w": 337.364, "h": 11.16},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [429.696, 440.856],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "En representación de BBVA:",
+                  "role": "PROSE",
+                  "bbox": {"x": 44.251, "y": 429.696, "w": 127.286, "h": 11.16},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r11",
+              "y_range": [453.686, 464.846],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "D.",
+                  "role": "LABEL",
+                  "bbox": {"x": 44.251, "y": 453.686, "w": 10.0, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r12",
+              "y_range": [477.677, 488.837],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "D.",
+                  "role": "LABEL",
+                  "bbox": {"x": 44.251, "y": 477.677, "w": 10.0, "h": 11.16},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Primer apellido",
+      "value": "VIOREL",
+      "section": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "band": "BAND_datos_personales",
+      "column_header": null,
+      "row_y": 188.827,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": "b10",
+        "label_span_id": "s6",
+        "value_span_ids": ["s7"]
+      }
+    },
+    {
+      "label": "Segundo apellido",
+      "value": "LINGURAR",
+      "section": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "band": "BAND_datos_personales",
+      "column_header": null,
+      "row_y": 188.827,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": "b11",
+        "label_span_id": "s8",
+        "value_span_ids": ["s9"]
+      }
+    },
+    {
+      "label": "Nombre",
+      "value": "STEFAN",
+      "section": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "band": "BAND_datos_personales",
+      "column_header": null,
+      "row_y": 219.672,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": "b9",
+        "label_span_id": "s10",
+        "value_span_ids": ["s11"]
+      }
+    },
+    {
+      "label": "NIF",
+      "value": "X6553633J",
+      "section": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "band": "BAND_datos_personales",
+      "column_header": null,
+      "row_y": 219.672,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": "b5",
+        "label_span_id": "s12",
+        "value_span_ids": ["s13"]
+      }
+    },
+    {
+      "label": "Domicilio fiscal",
+      "value": "CEBALLOS, 57 BAJO",
+      "section": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "band": "BAND_domicilio",
+      "column_header": null,
+      "row_y": 271.08,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": "b6",
+        "label_span_id": "s15",
+        "value_span_ids": ["s16"]
+      }
+    },
+    {
+      "label": "Código postal",
+      "value": "39340",
+      "section": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "band": "BAND_domicilio",
+      "column_header": null,
+      "row_y": 271.08,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": "b7",
+        "label_span_id": "s17",
+        "value_span_ids": ["s18"]
+      }
+    },
+    {
+      "label": "Plaza",
+      "value": "SUANCES",
+      "section": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "band": "BAND_domicilio",
+      "column_header": null,
+      "row_y": 312.206,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": "b8",
+        "label_span_id": "s19",
+        "value_span_ids": ["s20"]
+      }
+    }
+  ],
+  "noise": [
+    {"text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBA", "bbox": {"x": 12.569, "y": 238.833, "w": 4.849, "h": 428.664}, "reason": "page_header"},
+    {"text": "", "bbox": {"x": 44.834, "y": 24.496, "w": 84.151, "h": 28.279}, "reason": "picture_decorative"},
+    {"text": "", "bbox": {"x": 396.514, "y": 16.094, "w": 167.84, "h": 30.782}, "reason": "picture_decorative"},
+    {"text": "", "bbox": {"x": 549.942, "y": 101.729, "w": 10.097, "h": 11.255}, "reason": "picture_decorative"},
+    {"text": "Mod. CS POLIZA BONIFICACION V.6 23-10-2016", "bbox": {"x": 27.748, "y": 827.528, "w": 181.802, "h": 7.054}, "reason": "page_footer"},
+    {"text": "Página 2 de 14", "bbox": {"x": 512.848, "y": 827.528, "w": 55.595, "h": 7.054}, "reason": "page_footer"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 338, "lines": 9, "tables": 2, "checkboxes": 0},
+      "docling": {
+        "blocks": 25,
+        "labels": {"page_header": 1, "picture": 3, "section_header": 1, "text": 18, "page_footer": 2},
+        "section_headers": 1,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {"spans": 30, "bold": 3, "cases": {"Title": 2, "UPPER": 14, "lower": 12, "none": 1, "mixed": 1}}
+    },
+    "column_coherence": [
+      {"x_range": [43.5, 305.0], "dominant_role": "LABEL", "ratio": 0.9},
+      {"x_range": [305.0, 560.0], "dominant_role": "VALUE_TEXT", "ratio": 0.88}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 1, "total": 1},
+      "cell_bold_flags": {"agree": 28, "disagree": 2}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:47:44+02:00",
+    "covers_cases": [6],
+    "needs_review": true
+  }
+}

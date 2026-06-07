@@ -1,0 +1,146 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO PRESTAMO COMERCIO 2.pdf",
+  "page": 4,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 38,
+    "rects": 83,
+    "docling_blocks": 23,
+    "noise_dropped": 8
+  },
+  "sections": [
+    {
+      "title": "Datos personales del/de los representante/s del Avalista/Fiador 2 (en particular, si el Titular es una persona jurídica)",
+      "title_signal": {"size": 10.0, "bold": false, "case": "lower", "docling_level": 1, "docling_label": "text"},
+      "title_bbox": {"x": 32.3, "y": 91.9, "w": 491.9, "h": 21.4},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [129.6, 315.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [37.8, 150.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [155.2, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.7}
+          ],
+          "rows": [
+            {"row_id": "r1", "y_range": [129.6, 145.0], "cells": [
+              {"col": 0, "text": "Nombre", "role": "LABEL", "bbox": {"x": 37.8, "y": 129.6, "w": 36.4, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r2", "y_range": [146.0, 162.0], "cells": [
+              {"col": 0, "text": "NIF", "role": "LABEL", "bbox": {"x": 37.8, "y": 146.0, "w": 15.5, "h": 10.7}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r3", "y_range": [162.4, 178.0], "cells": [
+              {"col": 0, "text": "Dirección", "role": "LABEL", "bbox": {"x": 37.8, "y": 162.4, "w": 40.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r4", "y_range": [178.6, 194.0], "cells": [
+              {"col": 0, "text": "Teléfono", "role": "LABEL", "bbox": {"x": 37.8, "y": 178.6, "w": 38.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r5", "y_range": [195.0, 215.0], "cells": [
+              {"col": 0, "text": "E-mail", "role": "LABEL", "bbox": {"x": 37.8, "y": 195.0, "w": 30.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r6", "y_range": [235.0, 250.0], "cells": [
+              {"col": 0, "text": "Nombre", "role": "LABEL", "bbox": {"x": 37.8, "y": 235.0, "w": 36.4, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r7", "y_range": [251.4, 267.0], "cells": [
+              {"col": 0, "text": "NIF", "role": "LABEL", "bbox": {"x": 37.8, "y": 251.4, "w": 15.5, "h": 10.7}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r8", "y_range": [267.8, 283.0], "cells": [
+              {"col": 0, "text": "Dirección", "role": "LABEL", "bbox": {"x": 37.8, "y": 267.8, "w": 40.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r9", "y_range": [284.2, 300.0], "cells": [
+              {"col": 0, "text": "Teléfono", "role": "LABEL", "bbox": {"x": 37.8, "y": 284.2, "w": 38.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r10", "y_range": [300.6, 320.0], "cells": [
+              {"col": 0, "text": "E-mail", "role": "LABEL", "bbox": {"x": 37.8, "y": 300.6, "w": 30.0, "h": 10.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Por otra parte",
+      "title_signal": {"size": 11.0, "bold": false, "case": "lower", "docling_level": 1, "docling_label": "text"},
+      "title_bbox": {"x": 51.5, "y": 399.6, "w": 80.0, "h": 11.8},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [430.8, 500.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [59.5, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {"row_id": "r11", "y_range": [430.8, 500.0], "cells": [
+              {"col": 0, "text": "CaixaBank Payments & Consumer, E.F.C., E.P., S.A., sociedad unipersonal (en adelante \"CaixaBank Payments & Consumer\" o la \"entidad\"), con domicilio en Avda. de Manoteras 20, Madrid, página web www.caixabankpc.com, NIF: A08980153, inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656492 y en el Registro de Establecimientos de Crédito con número 8776.", "role": "VALUE_TEXT", "bbox": {"x": 59.5, "y": 430.8, "w": 480.0, "h": 65.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Número de préstamo",
+      "title_signal": {"size": 11.0, "bold": false, "case": "lower", "docling_level": 1, "docling_label": "text"},
+      "title_bbox": {"x": 51.5, "y": 578.3, "w": 110.0, "h": 11.8},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [578.3, 700.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [51.5, 285.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [291.6, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.9}
+          ],
+          "rows": [
+            {"row_id": "r12", "y_range": [578.3, 605.0], "cells": [
+              {"col": 0, "text": "Número de préstamo", "role": "LABEL", "bbox": {"x": 51.5, "y": 578.3, "w": 110.0, "h": 11.8}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "202501120127220", "role": "VALUE_NUMERIC", "bbox": {"x": 51.5, "y": 603.5, "w": 120.0, "h": 11.8}, "bold": false, "case": "none", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r13", "y_range": [643.4, 695.0], "cells": [
+              {"col": 0, "text": "Cuenta de pago y domiciliación", "role": "LABEL", "bbox": {"x": 51.5, "y": 643.4, "w": 150.0, "h": 11.8}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "Tarjeta para la domiciliación", "role": "LABEL", "bbox": {"x": 291.6, "y": 643.4, "w": 150.0, "h": 11.8}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r14", "y_range": [668.2, 690.0], "cells": [
+              {"col": 0, "text": "IBAN", "role": "LABEL", "bbox": {"x": 51.5, "y": 668.2, "w": 30.0, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null},
+              {"col": 0, "text": "ES16 2100 3876 9101 0041 9936", "role": "VALUE_TEXT", "bbox": {"x": 51.5, "y": 679.3, "w": 190.0, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "SI", "role": "VALUE_TEXT", "bbox": {"x": 318.9, "y": 671.2, "w": 15.0, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "checkbox_unselected", "compound_parts": null},
+              {"col": 1, "text": "NO X", "role": "VALUE_TEXT", "bbox": {"x": 359.8, "y": 671.2, "w": 30.0, "h": 11.8}, "bold": false, "case": "UPPER", "docling_label": "checkbox_selected", "compound_parts": null}
+            ], "clarifiers": []}
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {"label": "Número de préstamo", "value": "202501120127220", "section": "Número de préstamo", "band": "BAND_A", "column_header": null, "row_y": 578.3, "rule": "case-contrast", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "IBAN", "value": "ES16 2100 3876 9101 0041 9936", "section": "Número de préstamo", "band": "BAND_A", "column_header": null, "row_y": 668.2, "rule": "case-contrast", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Tarjeta para la domiciliación", "value": "NO", "section": "Número de préstamo", "band": "BAND_A", "column_header": null, "row_y": 671.2, "rule": "rect-aligned", "confidence": "MEDIUM", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}}
+  ],
+  "noise": [
+    {"text": "Pág. 4 de 33", "bbox": {"x": 517.9, "y": 805.3, "w": 38.3, "h": 9.2}, "reason": "page_footer"},
+    {"text": "Logalty", "bbox": {"x": 581.6, "y": 715.9, "w": 9.1, "h": 33.6}, "reason": "furniture_layer"},
+    {"text": "Guid: 001001-0001-000000134286084.par", "bbox": {"x": 581.6, "y": 687.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
+    {"text": "-", "bbox": {"x": 581.6, "y": 523.9, "w": 9.1, "h": 4.8}, "reason": "furniture_layer"},
+    {"text": "Date:", "bbox": {"x": 581.6, "y": 495.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
+    {"text": "2025/01/27 T", "bbox": {"x": 581.6, "y": 442.3, "w": 9.1, "h": 48.0}, "reason": "furniture_layer"},
+    {"text": "19:41:17", "bbox": {"x": 581.6, "y": 389.5, "w": 9.1, "h": 38.4}, "reason": "furniture_layer"},
+    {"text": "Pages:", "bbox": {"x": 581.6, "y": 298.3, "w": 9.1, "h": 28.8}, "reason": "furniture_layer"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 83, "lines": 0, "tables": 3, "checkboxes": 2},
+      "docling": {"blocks": 23, "labels": {"page_header": 1, "picture": 2, "section_header": 2, "text": 17, "checkbox_unselected": 1, "checkbox_selected": 1}, "section_headers": 2, "tables": 0, "key_value_regions": 0, "field_keys": 0, "checkboxes_selected": 1},
+      "liteparse": {"spans": 38, "bold": 0, "cases": {"lower": 20, "UPPER": 10, "none": 5, "mixed": 0, "Title": 3}}
+    },
+    "column_coherence": [],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 2, "total": 3},
+      "cell_bold_flags": {"agree": 38, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "Sat Jun  6 22:48:36 CEST 2026",
+    "covers_cases": [6],
+    "needs_review": true
+  }
+}

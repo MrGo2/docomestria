@@ -1,0 +1,202 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO PRESTAMO COMERCIO 2.pdf",
+  "page": 2,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 156,
+    "rects": 36,
+    "docling_blocks": 157,
+    "noise_dropped": 8
+  },
+  "sections": [
+    {
+      "title": "A. INTERVINIENTES Y DATOS GENERALES",
+      "title_signal": {"size": 11.0, "bold": false, "case": "UPPER", "docling_level": 1, "docling_label": "section_header"},
+      "title_bbox": {"x": 51.5, "y": 92.2, "w": 223.1, "h": 11.8},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [120.8, 177.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [51.5, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {"row_id": "r1", "y_range": [120.8, 165.0], "cells": [{"col": 0, "text": "Por una parte, Usted/es, \"deudor/es\" o \"prestatario/s\" (en adelante, \"prestatario\", \"Titular\" o \"Usted\"), avalista/s/fiador/es (en adelante, \"Avalista\" o \"Fiador\") y su/s respectivo/s representante/s, si lo/s tiene/n, en particular si es/son Usted/es una persona jurídica", "role": "VALUE_TEXT", "bbox": {"x": 51.5, "y": 120.8, "w": 501.0, "h": 38.4}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}], "clarifiers": []}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DATOS PERSONALES Y PROFESIONALES DEL/DE LOS TITULAR/ES Y AVALISTA/S/FIADOR/ES, EN CASO DE HABERLO/S",
+      "title_signal": {"size": 9.0, "bold": false, "case": "UPPER", "docling_level": 2, "docling_label": "section_header"},
+      "title_bbox": {"x": 32.3, "y": 180.6, "w": 509.0, "h": 9.7},
+      "container_bbox": null,
+      "bands": []
+    },
+    {
+      "title": "DEL Titular 1",
+      "title_signal": {"size": 10.0, "bold": false, "case": "Title", "docling_level": 3, "docling_label": "section_header"},
+      "title_bbox": {"x": 35.0, "y": 214.8, "w": 49.5, "h": 11.5},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [227.3, 353.9],
+          "layout": "3-col",
+          "columns": [
+            {"x_range": [35.0, 245.0], "role": "LABEL", "column_header": null, "coherence": 0.95},
+            {"x_range": [250.7, 370.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.90},
+            {"x_range": [373.7, 540.0], "role": "LABEL", "column_header": null, "coherence": 0.85}
+          ],
+          "rows": [
+            {"row_id": "r2", "y_range": [227.3, 241.0], "cells": [
+              {"col": 0, "text": "Apellidos: SPIRIEON SOLCAN", "role": "LABEL", "bbox": {"x": 35.0, "y": 227.3, "w": 104.6, "h": 11.7}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": ["Apellidos", "SPIRIEON SOLCAN"]},
+              {"col": 1, "text": "Nombre/Denominación: ADRIAN", "role": "LABEL", "bbox": {"x": 250.7, "y": 227.3, "w": 113.9, "h": 11.7}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": ["Nombre/Denominación", "ADRIAN"]}
+            ], "clarifiers": []},
+            {"row_id": "r3", "y_range": [241.4, 255.0], "cells": [
+              {"col": 0, "text": "NIF/CIF: X7891505K Nacionalidad: UNION EUROPEA", "role": "LABEL", "bbox": {"x": 35.0, "y": 241.4, "w": 190.8, "h": 11.7}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": ["NIF/CIF", "X7891505K", "Nacionalidad", "UNION EUROPEA"]},
+              {"col": 1, "text": "Fecha de constitución:", "role": "LABEL", "bbox": {"x": 250.7, "y": 241.6, "w": 77.6, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Código CNAE:", "role": "LABEL", "bbox": {"x": 373.7, "y": 241.6, "w": 48.3, "h": 11.5}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Nº empleados: 0", "role": "LABEL", "bbox": {"x": 455.5, "y": 241.4, "w": 58.2, "h": 11.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Nº empleados", "0"]}
+            ], "clarifiers": []},
+            {"row_id": "r4", "y_range": [255.4, 269.0], "cells": [
+              {"col": 0, "text": "Descripción sector actividad:", "role": "LABEL", "bbox": {"x": 35.0, "y": 255.4, "w": 99.5, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Inscrita en:", "role": "LABEL", "bbox": {"x": 373.7, "y": 255.4, "w": 38.2, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r5", "y_range": [269.3, 283.0], "cells": [
+              {"col": 0, "text": "Domicilio: CL BAYEU", "role": "LABEL", "bbox": {"x": 35.0, "y": 269.3, "w": 82.0, "h": 11.7}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": ["Domicilio", "CL BAYEU"]},
+              {"col": 1, "text": "Nº: 10", "role": "LABEL", "bbox": {"x": 297.1, "y": 269.3, "w": 32.0, "h": 11.7}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": ["Nº", "10"]},
+              {"col": 2, "text": "Piso:", "role": "LABEL", "bbox": {"x": 414.6, "y": 269.5, "w": 23.0, "h": 11.5}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Puerta:", "role": "LABEL", "bbox": {"x": 482.7, "y": 269.5, "w": 30.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r6", "y_range": [283.4, 297.0], "cells": [
+              {"col": 0, "text": "Población: TOLEDO", "role": "LABEL", "bbox": {"x": 35.0, "y": 283.4, "w": 80.0, "h": 11.7}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": ["Población", "TOLEDO"]},
+              {"col": 1, "text": "C.P. 45190 Teléfono fijo: 634673967", "role": "LABEL", "bbox": {"x": 250.7, "y": 283.4, "w": 150.0, "h": 11.7}, "bold": false, "case": "mixed", "docling_label": "text", "compound_parts": ["C.P.", "45190", "Teléfono fijo", "634673967"]},
+              {"col": 2, "text": "Teléfono móvil:", "role": "LABEL", "bbox": {"x": 414.6, "y": 283.6, "w": 60.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r7", "y_range": [297.5, 311.0], "cells": [
+              {"col": 0, "text": "Correo electrónico: NANI198731@HOTMAIL.COM", "role": "LABEL", "bbox": {"x": 35.0, "y": 297.5, "w": 200.0, "h": 11.7}, "bold": false, "case": "mixed", "docling_label": "text", "compound_parts": ["Correo electrónico", "NANI198731@HOTMAIL.COM"]},
+              {"col": 1, "text": "Sexo:H", "role": "LABEL", "bbox": {"x": 297.1, "y": 297.5, "w": 40.0, "h": 11.7}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": ["Sexo", "H"]},
+              {"col": 2, "text": "Estado civil:", "role": "LABEL", "bbox": {"x": 357.2, "y": 297.7, "w": 50.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Fecha de nacimiento:12/12/1984", "role": "LABEL", "bbox": {"x": 444.6, "y": 297.5, "w": 100.0, "h": 11.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Fecha de nacimiento", "12/12/1984"]}
+            ], "clarifiers": []},
+            {"row_id": "r8", "y_range": [311.6, 325.0], "cells": [
+              {"col": 0, "text": "Personas a su cargo: 0", "role": "LABEL", "bbox": {"x": 35.0, "y": 311.6, "w": 90.0, "h": 11.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Personas a su cargo", "0"]},
+              {"col": 1, "text": "Sit. viv.:", "role": "LABEL", "bbox": {"x": 149.7, "y": 311.8, "w": 40.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "Antigüedad viv.:", "role": "LABEL", "bbox": {"x": 297.1, "y": 311.8, "w": 60.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Gastos vivienda:0,00€", "role": "LABEL", "bbox": {"x": 381.7, "y": 311.6, "w": 80.0, "h": 11.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Gastos vivienda", "0,00€"]},
+              {"col": 2, "text": "Otros créditos: 0,00€", "role": "LABEL", "bbox": {"x": 482.7, "y": 311.6, "w": 80.0, "h": 11.7}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Otros créditos", "0,00€"]}
+            ], "clarifiers": []},
+            {"row_id": "r9", "y_range": [325.9, 339.0], "cells": [
+              {"col": 0, "text": "Situación laboral:", "role": "LABEL", "bbox": {"x": 35.0, "y": 325.9, "w": 70.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "Profesión:", "role": "LABEL", "bbox": {"x": 149.7, "y": 325.9, "w": 45.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "Cargo:", "role": "LABEL", "bbox": {"x": 237.1, "y": 325.9, "w": 30.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Importe ingresos: 0,00€", "role": "LABEL", "bbox": {"x": 338.1, "y": 325.7, "w": 90.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Importe ingresos", "0,00€"]},
+              {"col": 2, "text": "Antigüedad en la empresa:", "role": "LABEL", "bbox": {"x": 441.8, "y": 325.9, "w": 90.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r10", "y_range": [339.8, 353.0], "cells": [
+              {"col": 0, "text": "Nombre empresa:", "role": "LABEL", "bbox": {"x": 35.0, "y": 339.8, "w": 65.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "Actividad empresa:", "role": "LABEL", "bbox": {"x": 250.7, "y": 339.8, "w": 75.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Teléfono empresa:", "role": "LABEL", "bbox": {"x": 441.8, "y": 339.8, "w": 70.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DEL Titular 2",
+      "title_signal": {"size": 10.0, "bold": false, "case": "Title", "docling_level": 3, "docling_label": "section_header"},
+      "title_bbox": {"x": 35.0, "y": 353.9, "w": 55.0, "h": 11.5},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [366.6, 493.0],
+          "layout": "3-col",
+          "columns": [
+            {"x_range": [35.0, 245.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [250.7, 370.0], "role": "LABEL", "column_header": null, "coherence": 0.85},
+            {"x_range": [373.7, 540.0], "role": "LABEL", "column_header": null, "coherence": 0.85}
+          ],
+          "rows": [
+            {"row_id": "r11", "y_range": [366.6, 380.0], "cells": [
+              {"col": 0, "text": "Apellidos:", "role": "LABEL", "bbox": {"x": 35.0, "y": 366.6, "w": 45.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "Nombre/Denominación:", "role": "LABEL", "bbox": {"x": 250.7, "y": 366.6, "w": 90.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []},
+            {"row_id": "r12", "y_range": [380.7, 394.0], "cells": [
+              {"col": 0, "text": "NIF/CIF:", "role": "LABEL", "bbox": {"x": 35.0, "y": 380.7, "w": 40.0, "h": 11.5}, "bold": false, "case": "UPPER", "docling_label": "text", "compound_parts": null},
+              {"col": 0, "text": "Nacionalidad:", "role": "LABEL", "bbox": {"x": 114.3, "y": 380.7, "w": 55.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 1, "text": "Fecha de constitución:", "role": "LABEL", "bbox": {"x": 250.7, "y": 380.7, "w": 90.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Código CNAE:", "role": "LABEL", "bbox": {"x": 373.7, "y": 380.7, "w": 55.0, "h": 11.5}, "bold": false, "case": "Title", "docling_label": "text", "compound_parts": null},
+              {"col": 2, "text": "Nº empleados:", "role": "LABEL", "bbox": {"x": 455.5, "y": 380.7, "w": 60.0, "h": 11.5}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+            ], "clarifiers": []}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DEL Avalista/Fiador 1",
+      "title_signal": {"size": 10.0, "bold": false, "case": "Title", "docling_level": 3, "docling_label": "section_header"},
+      "title_bbox": {"x": 35.0, "y": 517.8, "w": 80.0, "h": 11.5},
+      "container_bbox": null,
+      "bands": []
+    },
+    {
+      "title": "DEL Avalista/Fiador 2",
+      "title_signal": {"size": 10.0, "bold": false, "case": "Title", "docling_level": 3, "docling_label": "section_header"},
+      "title_bbox": {"x": 35.0, "y": 656.9, "w": 80.0, "h": 11.5},
+      "container_bbox": null,
+      "bands": []
+    }
+  ],
+  "kv_pairs": [
+    {"label": "Apellidos", "value": "SPIRIEON SOLCAN", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 227.3, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Nombre/Denominación", "value": "ADRIAN", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 227.3, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "NIF/CIF", "value": "X7891505K", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 241.4, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Nacionalidad", "value": "UNION EUROPEA", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 241.4, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Nº empleados", "value": "0", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 241.4, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Domicilio", "value": "CL BAYEU", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 269.3, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Nº", "value": "10", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 269.3, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Población", "value": "TOLEDO", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 283.4, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "C.P.", "value": "45190", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 283.4, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Teléfono fijo", "value": "634673967", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 283.4, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Correo electrónico", "value": "NANI198731@HOTMAIL.COM", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 297.5, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Sexo", "value": "H", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 297.5, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Fecha de nacimiento", "value": "12/12/1984", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 297.5, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Personas a su cargo", "value": "0", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 311.6, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Gastos vivienda", "value": "0,00€", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 311.6, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Otros créditos", "value": "0,00€", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 311.6, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}},
+    {"label": "Importe ingresos", "value": "0,00€", "section": "DEL Titular 1", "band": "BAND_A", "column_header": null, "row_y": 325.7, "rule": "inline-colon", "confidence": "HIGH", "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": null, "value_span_ids": []}}
+  ],
+  "noise": [
+    {"text": "Pág. 2 de 33", "bbox": {"x": 517.9, "y": 805.3, "w": 38.3, "h": 9.2}, "reason": "page_footer"},
+    {"text": "Logalty", "bbox": {"x": 581.6, "y": 715.9, "w": 9.1, "h": 33.6}, "reason": "furniture_layer"},
+    {"text": "Guid: 001001-0001-000000134286084.par", "bbox": {"x": 581.6, "y": 687.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
+    {"text": "-", "bbox": {"x": 581.6, "y": 523.9, "w": 9.1, "h": 4.8}, "reason": "furniture_layer"},
+    {"text": "Date:", "bbox": {"x": 581.6, "y": 495.1, "w": 9.1, "h": 24.0}, "reason": "furniture_layer"},
+    {"text": "2025/01/27 T", "bbox": {"x": 581.6, "y": 442.3, "w": 9.1, "h": 48.0}, "reason": "furniture_layer"},
+    {"text": "19:41:17", "bbox": {"x": 581.6, "y": 389.5, "w": 9.1, "h": 38.4}, "reason": "furniture_layer"},
+    {"text": "Pages:", "bbox": {"x": 581.6, "y": 298.3, "w": 9.1, "h": 28.8}, "reason": "furniture_layer"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 36, "lines": 0, "tables": 2, "checkboxes": 0},
+      "docling": {"blocks": 157, "labels": {"page_header": 1, "picture": 2, "section_header": 7, "text": 148}, "section_headers": 7, "tables": 0, "key_value_regions": 0, "field_keys": 0, "checkboxes_selected": 0},
+      "liteparse": {"spans": 156, "bold": 0, "cases": {"lower": 70, "UPPER": 20, "Title": 35, "mixed": 8, "none": 23}}
+    },
+    "column_coherence": [
+      {"x_range": [35.0, 245.0], "dominant_role": "LABEL", "coherence": 0.95},
+      {"x_range": [250.7, 370.0], "dominant_role": "LABEL", "coherence": 0.85},
+      {"x_range": [373.7, 540.0], "dominant_role": "LABEL", "coherence": 0.85}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 7, "total": 7},
+      "cell_bold_flags": {"agree": 156, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "Sat Jun  6 22:48:36 CEST 2026",
+    "covers_cases": [6, 8],
+    "needs_review": true
+  }
+}

@@ -1,0 +1,977 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 2,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "atoms_summary": {
+    "lite_spans": 54,
+    "rects": 89,
+    "docling_blocks": 25,
+    "noise_dropped": 16
+  },
+  "sections": [
+    {
+      "title": "Datos del contrato",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 371.803,
+        "y": 56.128,
+        "w": 74.243,
+        "h": 10.128
+      },
+      "container_bbox": {
+        "x": 46.603,
+        "y": 89.98,
+        "w": 498.547,
+        "h": 176.352
+      },
+      "bands": [
+        {
+          "y_range": [
+            89.98,
+            173.88
+          ],
+          "layout": "2-col",
+          "columns": [
+            {
+              "x_range": [
+                59.547,
+                417.0
+              ],
+              "role": "LABEL",
+              "column_header": null,
+              "coherence": 0.88
+            },
+            {
+              "x_range": [
+                417.0,
+                540.0
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.91
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [
+                102.742,
+                168.792
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por una parte, usted (titular de la Cuenta de crédito con o sin Tarjeta IKEA)",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 59.547,
+                    "y": 102.742,
+                    "w": 310.226,
+                    "h": 10.201
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                },
+                {
+                  "col": 0,
+                  "text": "Titular",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 143.726,
+                    "w": 25.544,
+                    "h": 10.128
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "DNI",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 428.198,
+                    "y": 145.575,
+                    "w": 15.754,
+                    "h": 10.128
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 0,
+                  "text": "SORALLA GAMAZA DOMÍNGUEZ",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 153.664,
+                    "w": 141.835,
+                    "h": 10.128
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "45337936Z",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {
+                    "x": 428.198,
+                    "y": 155.513,
+                    "w": 46.284,
+                    "h": 10.128
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [
+            195.224,
+            265.336
+          ],
+          "layout": "free-text",
+          "columns": [
+            {
+              "x_range": [
+                59.547,
+                540.0
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.82
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [
+                198.199,
+                249.306
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por otra parte, nosotros · CaixaBank Payments & Consumer, E.F.C., E.P., S.A.*, Sociedad Unipersonal (también, «CaixaBank Payments & Consumer» o «nosotros»)",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 59.547,
+                    "y": 198.199,
+                    "w": 464.199,
+                    "h": 47.978
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [
+                287.184,
+                307.335
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Nº solicitud-contrato: 202502270270913",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 73.183,
+                    "y": 287.184,
+                    "w": 171.642,
+                    "h": 10.201
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A. CONDICIONES PARTICULARES",
+      "title_signal": {
+        "size": 14.0,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 59.547,
+        "y": 479.495,
+        "w": 221.721,
+        "h": 15.033
+      },
+      "container_bbox": {
+        "x": 46.603,
+        "y": 471.411,
+        "w": 498.547,
+        "h": 149.488
+      },
+      "bands": [
+        {
+          "y_range": [
+            496.876,
+            527.43
+          ],
+          "layout": "free-text",
+          "columns": [
+            {
+              "x_range": [
+                59.547,
+                520.0
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.9
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r4",
+              "y_range": [
+                496.876,
+                523.43
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Qué regulan estas Condiciones Particulares",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 59.547,
+                    "y": 496.876,
+                    "w": 244.231,
+                    "h": 13.859
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                },
+                {
+                  "col": 0,
+                  "text": "Estas condiciones regulan los aspectos económicos más relevantes del contrato.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 59.547,
+                    "y": 513.302,
+                    "w": 329.133,
+                    "h": 10.128
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [
+            529.358,
+            621.116
+          ],
+          "layout": "2-col",
+          "columns": [
+            {
+              "x_range": [
+                60.24,
+                163.87
+              ],
+              "role": "LABEL",
+              "column_header": null,
+              "coherence": 0.93
+            },
+            {
+              "x_range": [
+                164.017,
+                540.065
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.91
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r5",
+              "y_range": [
+                531.649,
+                558.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Producto",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 65.094,
+                    "y": 539.578,
+                    "w": 40.154,
+                    "h": 10.201
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Contrato de Cuenta de crédito con o sin Tarjeta IKEA VISA.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 174.187,
+                    "y": 539.651,
+                    "w": 242.042,
+                    "h": 10.128
+                  },
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [
+                563.777,
+                617.834
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Modalidad de pago elegida",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 65.094,
+                    "y": 571.705,
+                    "w": 114.085,
+                    "h": 20.401
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Modalidad de",
+                    "pago elegida"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "Pago Aplazado (Revolving). Por defecto, si no elige otra modalidad, se activará la modalidad de Pago Aplazado (Revolving). No obstante, le recordamos que las modalidades de pago que permite la tarjeta son: el Pago Fin de Mes, el Pago Aplazado (Revolving) y el Pago Fraccionado. Usted puede modificar la modalidad de pago elegida en cualquier momento.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 174.186,
+                    "y": 566.231,
+                    "w": 341.1,
+                    "h": 51.603
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Pago Aplazado (Revolving). Por defecto, si no elige otra modalidad, se activará la",
+                    "modalidad de Pago Aplazado (Revolving). No obstante, le recordamos que las",
+                    "modalidades de pago que permite la tarjeta son: el Pago Fin de Mes, el Pago",
+                    "Aplazado (Revolving) y el Pago Fraccionado. Usted puede modificar la modalidad",
+                    "de pago elegida en cualquier momento."
+                  ]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DATOS PERSONALES DEL TITULAR",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 2,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 59.547,
+        "y": 634.803,
+        "w": 160.242,
+        "h": 10.201
+      },
+      "container_bbox": {
+        "x": 46.603,
+        "y": 629.899,
+        "w": 498.547,
+        "h": 113.716
+      },
+      "bands": [
+        {
+          "y_range": [
+            651.394,
+            691.379
+          ],
+          "layout": "2-col",
+          "columns": [
+            {
+              "x_range": [
+                60.24,
+                163.87
+              ],
+              "role": "LABEL",
+              "column_header": null,
+              "coherence": 0.95
+            },
+            {
+              "x_range": [
+                164.017,
+                540.065
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.95
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r7",
+              "y_range": [
+                651.394,
+                691.379
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Titular del contrato",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 65.094,
+                    "y": 661.614,
+                    "w": 80.324,
+                    "h": 20.401
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "Titular del",
+                    "contrato"
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "SORALLA GAMAZA DOMÍNGUEZ",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 174.187,
+                    "y": 669.777,
+                    "w": 141.889,
+                    "h": 10.128
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [
+            696.676,
+            743.435
+          ],
+          "layout": "2-col",
+          "columns": [
+            {
+              "x_range": [
+                60.24,
+                163.87
+              ],
+              "role": "LABEL",
+              "column_header": null,
+              "coherence": 0.95
+            },
+            {
+              "x_range": [
+                164.017,
+                540.065
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 0.95
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r8",
+              "y_range": [
+                696.676,
+                743.435
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Dirección",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 65.094,
+                    "y": 701.831,
+                    "w": 41.691,
+                    "h": 10.201
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "PAGO VILLARANA 8 · 11500 PUERTO DE SANTA MARIA, EL · CADIZ",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 174.187,
+                    "y": 701.904,
+                    "w": 336.26,
+                    "h": 30.802
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    "PAGO VILLARANA 8",
+                    "11500 PUERTO DE SANTA MARIA, EL",
+                    "CADIZ"
+                  ]
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Titular",
+      "value": "SORALLA GAMAZA DOMÍNGUEZ",
+      "section": "Datos del contrato",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 148.595,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r2",
+        "docling_block_id": null,
+        "label_span_id": "p2-span-3",
+        "value_span_ids": [
+          "p2-span-5"
+        ]
+      }
+    },
+    {
+      "label": "DNI",
+      "value": "45337936Z",
+      "section": "Datos del contrato",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 150.544,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r2",
+        "docling_block_id": null,
+        "label_span_id": "p2-span-4",
+        "value_span_ids": [
+          "p2-span-6"
+        ]
+      }
+    },
+    {
+      "label": "Nº solicitud-contrato",
+      "value": "202502270270913",
+      "section": "Datos del contrato",
+      "band": "BAND_B",
+      "column_header": null,
+      "row_y": 287.184,
+      "rule": "case-contrast",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": "p2-r5",
+        "docling_block_id": null,
+        "label_span_id": "p2-span-11",
+        "value_span_ids": [
+          "p2-span-11"
+        ]
+      }
+    },
+    {
+      "label": "Producto",
+      "value": "Contrato de Cuenta de crédito con o sin Tarjeta IKEA VISA.",
+      "section": "A. CONDICIONES PARTICULARES",
+      "band": "BAND_C",
+      "column_header": null,
+      "row_y": 539.614,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r8",
+        "docling_block_id": null,
+        "label_span_id": "p2-span-23",
+        "value_span_ids": [
+          "p2-span-24"
+        ]
+      }
+    },
+    {
+      "label": "Modalidad de pago elegida",
+      "value": "Pago Aplazado (Revolving)",
+      "section": "A. CONDICIONES PARTICULARES",
+      "band": "BAND_C",
+      "column_header": null,
+      "row_y": 571.705,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r10",
+        "docling_block_id": null,
+        "label_span_id": "p2-span-25",
+        "value_span_ids": [
+          "p2-span-26"
+        ]
+      }
+    },
+    {
+      "label": "Titular del contrato",
+      "value": "SORALLA GAMAZA DOMÍNGUEZ",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_D",
+      "column_header": null,
+      "row_y": 665.696,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r13",
+        "docling_block_id": null,
+        "label_span_id": "p2-span-32",
+        "value_span_ids": [
+          "p2-span-34"
+        ]
+      }
+    },
+    {
+      "label": "Dirección",
+      "value": "PAGO VILLARANA 8 · 11500 PUERTO DE SANTA MARIA, EL · CADIZ",
+      "section": "DATOS PERSONALES DEL TITULAR",
+      "band": "BAND_E",
+      "column_header": null,
+      "row_y": 701.867,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": "p2-r15",
+        "docling_block_id": null,
+        "label_span_id": "p2-span-35",
+        "value_span_ids": [
+          "p2-span-36",
+          "p2-span-37",
+          "p2-span-38"
+        ]
+      }
+    }
+  ],
+  "noise": [
+    {
+      "text": "Contrato de cuenta de crédito con o sin Tarjeta IKEA",
+      "bbox": {
+        "x": 176.96,
+        "y": 42.784,
+        "w": 267.44,
+        "h": 12.885
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Datos del contrato",
+      "bbox": {
+        "x": 371.803,
+        "y": 56.128,
+        "w": 74.243,
+        "h": 10.128
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "(Continúa en la siguiente página) >>",
+      "bbox": {
+        "x": 381.741,
+        "y": 744.432,
+        "w": 147.48,
+        "h": 10.128
+      },
+      "reason": "page_footer"
+    },
+    {
+      "text": "Proveedor de este servicio",
+      "bbox": {
+        "x": 59.547,
+        "y": 757.07,
+        "w": 116.447,
+        "h": 10.201
+      },
+      "reason": "page_footer"
+    },
+    {
+      "text": "CaixaBank Payments & Consumer, E.F.C., E.P., S.A.*, Sociedad Unipersonal · Avenida de Manoteras nº 20. Edificio París. 28050 Madrid,",
+      "bbox": {
+        "x": 59.547,
+        "y": 773.169,
+        "w": 464.632,
+        "h": 8.59
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "· www.caixabankpc.com · NIF:A-08980153 ·Inscritaen elRegistroMercantilde Madrid,Tomo36.556,Folio 29,Hoja M-656492 ·Registro deEstablecimientos",
+      "bbox": {
+        "x": 59.547,
+        "y": 783.631,
+        "w": 464.724,
+        "h": 8.529
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "de Créditodel Banco deEspaña: número 8776·Autoridadde supervisión:BancodeEspaña· www.bde.es",
+      "bbox": {
+        "x": 59.546,
+        "y": 794.032,
+        "w": 313.797,
+        "h": 8.529
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "Logalty",
+      "bbox": {
+        "x": 581.636,
+        "y": 715.94,
+        "w": 9.056,
+        "h": 33.6
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Guid: 001001-0001-000000136441990.par",
+      "bbox": {
+        "x": 581.636,
+        "y": 687.14,
+        "w": 9.056,
+        "h": 24.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {
+        "x": 581.636,
+        "y": 523.94,
+        "w": 9.056,
+        "h": 4.8
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Date:",
+      "bbox": {
+        "x": 581.636,
+        "y": 495.14,
+        "w": 9.056,
+        "h": 24.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "2025/02/25 T",
+      "bbox": {
+        "x": 581.636,
+        "y": 442.34,
+        "w": 9.056,
+        "h": 48.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "20:07:05",
+      "bbox": {
+        "x": 581.636,
+        "y": 389.54,
+        "w": 9.056,
+        "h": 38.4
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "CET +0100",
+      "bbox": {
+        "x": 581.636,
+        "y": 370.34,
+        "w": 9.056,
+        "h": 14.4
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "-",
+      "bbox": {
+        "x": 581.636,
+        "y": 331.94,
+        "w": 9.056,
+        "h": 4.8
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Pages: 2/59",
+      "bbox": {
+        "x": 581.636,
+        "y": 274.34,
+        "w": 9.056,
+        "h": 52.8
+      },
+      "reason": "furniture_layer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 89,
+        "lines": 0,
+        "tables": 5,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 25,
+        "labels": {
+          "page_header": 1,
+          "picture": 3,
+          "text": 13,
+          "section_header": 6,
+          "list_item": 1,
+          "page_footer": 1
+        },
+        "section_headers": 6,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 54,
+        "bold": 0,
+        "cases": {
+          "lower": 36,
+          "UPPER": 11,
+          "Title": 2,
+          "mixed": 1,
+          "none": 4
+        }
+      }
+    },
+    "column_coherence": [
+      {
+        "x_range": [
+          59.547,
+          417.0
+        ],
+        "dominant_role": "LABEL",
+        "coherence": 0.88
+      },
+      {
+        "x_range": [
+          417.0,
+          540.0
+        ],
+        "dominant_role": "VALUE_TEXT",
+        "coherence": 0.91
+      },
+      {
+        "x_range": [
+          60.24,
+          163.87
+        ],
+        "dominant_role": "LABEL",
+        "coherence": 0.95
+      },
+      {
+        "x_range": [
+          164.017,
+          540.065
+        ],
+        "dominant_role": "VALUE_TEXT",
+        "coherence": 0.95
+      }
+    ],
+    "agreement": {
+      "section_titles": {
+        "docling_matches_ours": 3,
+        "total": 3
+      },
+      "cell_bold_flags": {
+        "agree": 54,
+        "disagree": 0
+      }
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:46:54+02:00",
+    "covers_cases": [
+      5,
+      7
+    ],
+    "needs_review": true
+  }
+}

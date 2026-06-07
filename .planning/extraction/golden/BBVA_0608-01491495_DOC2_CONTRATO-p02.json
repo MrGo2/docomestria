@@ -1,0 +1,880 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/5_Example/BBVA_0608-01491495_DOC2_CONTRATO.pdf",
+  "page": 2,
+  "page_size_pt": [
+    595.476,
+    842.6736
+  ],
+  "atoms_summary": {
+    "lite_spans": 30,
+    "rects": 336,
+    "docling_blocks": 28,
+    "noise_dropped": 5
+  },
+  "sections": [
+    {
+      "title": "IDENTIFICACIÓN DE LAS PARTES CONTRATANTES",
+      "title_signal": {
+        "size": 10.0,
+        "bold": true,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 177.8,
+        "y": 118.5,
+        "w": 340.0,
+        "h": 12.0
+      },
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [
+            118.5,
+            142.5
+          ],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [
+                142.5,
+                155.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por una parte, su nombre y apellidos (en adelante \"Usted\"):",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 177.8,
+                    "y": 142.5,
+                    "w": 380.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "TITULARES",
+      "title_signal": {
+        "size": 14.0,
+        "bold": true,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 177.8,
+        "y": 175.6,
+        "w": 120.0,
+        "h": 14.0
+      },
+      "container_bbox": {
+        "x": 178.5,
+        "y": 201.0,
+        "w": 381.7,
+        "h": 174.0
+      },
+      "bands": [
+        {
+          "y_range": [
+            206.0,
+            290.0
+          ],
+          "layout": "2-col",
+          "columns": [
+            {
+              "x_range": [
+                191.8,
+                270.0
+              ],
+              "role": "LABEL",
+              "column_header": null,
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                216.0,
+                380.0
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 1.0
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [
+                206.0,
+                218.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Sus Datos Personales",
+                  "role": "SUB_HEADER",
+                  "bbox": {
+                    "x": 189.0,
+                    "y": 206.0,
+                    "w": 140.0,
+                    "h": 12.0
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [
+                229.4,
+                242.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Primer apellido",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 191.8,
+                    "y": 230.7,
+                    "w": 80.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "PRIETO",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 276.7,
+                    "y": 229.4,
+                    "w": 50.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [
+                245.1,
+                258.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Segundo apellido",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 191.8,
+                    "y": 245.1,
+                    "w": 90.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "ALVAREZ",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 276.7,
+                    "y": 245.2,
+                    "w": 60.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [
+                259.4,
+                272.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Nombre",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 191.8,
+                    "y": 259.5,
+                    "w": 45.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "JULIA",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 246.0,
+                    "y": 259.4,
+                    "w": 35.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [
+                273.7,
+                286.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "NIF",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 191.8,
+                    "y": 273.9,
+                    "w": 25.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "011075308A",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 216.0,
+                    "y": 273.7,
+                    "w": 75.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [
+            297.9,
+            380.0
+          ],
+          "layout": "2-col",
+          "columns": [
+            {
+              "x_range": [
+                191.8,
+                265.0
+              ],
+              "role": "LABEL",
+              "column_header": null,
+              "coherence": 1.0
+            },
+            {
+              "x_range": [
+                224.3,
+                380.0
+              ],
+              "role": "VALUE_TEXT",
+              "column_header": null,
+              "coherence": 1.0
+            }
+          ],
+          "rows": [
+            {
+              "row_id": "r7",
+              "y_range": [
+                297.9,
+                310.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Su Domicilio",
+                  "role": "SUB_HEADER",
+                  "bbox": {
+                    "x": 189.0,
+                    "y": 297.9,
+                    "w": 80.0,
+                    "h": 12.0
+                  },
+                  "bold": true,
+                  "case": "lower",
+                  "docling_label": "section_header",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [
+                312.3,
+                325.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Domicilio fiscal",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 191.8,
+                    "y": 312.3,
+                    "w": 80.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "CENERA, 42",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 266.2,
+                    "y": 312.7,
+                    "w": 70.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r9",
+              "y_range": [
+                341.1,
+                354.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Código postal",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 191.8,
+                    "y": 341.1,
+                    "w": 75.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "33600",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {
+                    "x": 266.2,
+                    "y": 341.2,
+                    "w": 35.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [
+                355.4,
+                368.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Plaza",
+                  "role": "LABEL",
+                  "bbox": {
+                    "x": 191.8,
+                    "y": 355.5,
+                    "w": 30.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "MIERES DEL CAMINO",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 224.3,
+                    "y": 355.4,
+                    "w": 130.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "En representación de BBVA:",
+      "title_signal": {
+        "size": 10.0,
+        "bold": false,
+        "case": "mixed",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {
+        "x": 178.5,
+        "y": 466.4,
+        "w": 200.0,
+        "h": 12.0
+      },
+      "container_bbox": {
+        "x": 178.5,
+        "y": 408.8,
+        "w": 381.7,
+        "h": 48.0
+      },
+      "bands": [
+        {
+          "y_range": [
+            388.6,
+            445.0
+          ],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r11",
+              "y_range": [
+                388.6,
+                402.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Por otra parte, Banco Bilbao Vizcaya Argentaria S.A., (en adelante \"BBVA\"):",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 178.5,
+                    "y": 388.6,
+                    "w": 380.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r12",
+              "y_range": [
+                415.4,
+                445.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "BBVA tiene su domicilio en la Plaza San Nicolás, número 4 de Bilbao. Su número es el 0182 en el Registro Especial de Instituciones Financieras de España y está sujeto a supervisión y control del Banco de España.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 189.0,
+                    "y": 415.4,
+                    "w": 370.0,
+                    "h": 28.0
+                  },
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [
+            490.4,
+            526.0
+          ],
+          "layout": "free-text",
+          "columns": [],
+          "rows": [
+            {
+              "row_id": "r13",
+              "y_range": [
+                490.4,
+                502.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "D.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 178.5,
+                    "y": 490.4,
+                    "w": 20.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r14",
+              "y_range": [
+                514.4,
+                526.0
+              ],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "D.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {
+                    "x": 178.5,
+                    "y": 514.4,
+                    "w": 20.0,
+                    "h": 12.0
+                  },
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Primer apellido",
+      "value": "PRIETO",
+      "section": "TITULARES",
+      "band": "Sus Datos Personales",
+      "column_header": null,
+      "row_y": 229.4,
+      "rule": "case-contrast",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": 15,
+        "label_span_id": 5,
+        "value_span_ids": [
+          6
+        ]
+      }
+    },
+    {
+      "label": "Segundo apellido",
+      "value": "ALVAREZ",
+      "section": "TITULARES",
+      "band": "Sus Datos Personales",
+      "column_header": null,
+      "row_y": 245.1,
+      "rule": "case-contrast",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": 16,
+        "label_span_id": 7,
+        "value_span_ids": [
+          8
+        ]
+      }
+    },
+    {
+      "label": "Nombre",
+      "value": "JULIA",
+      "section": "TITULARES",
+      "band": "Sus Datos Personales",
+      "column_header": null,
+      "row_y": 259.4,
+      "rule": "case-contrast",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": 17,
+        "label_span_id": 9,
+        "value_span_ids": [
+          10
+        ]
+      }
+    },
+    {
+      "label": "NIF",
+      "value": "011075308A",
+      "section": "TITULARES",
+      "band": "Sus Datos Personales",
+      "column_header": null,
+      "row_y": 273.7,
+      "rule": "case-contrast",
+      "confidence": "MEDIUM",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": 7,
+        "label_span_id": 11,
+        "value_span_ids": [
+          12
+        ]
+      }
+    },
+    {
+      "label": "Domicilio fiscal",
+      "value": "CENERA, 42",
+      "section": "TITULARES",
+      "band": "Su Domicilio",
+      "column_header": null,
+      "row_y": 312.3,
+      "rule": "case-contrast",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": 19,
+        "label_span_id": 14,
+        "value_span_ids": [
+          15
+        ]
+      }
+    },
+    {
+      "label": "Código postal",
+      "value": "33600",
+      "section": "TITULARES",
+      "band": "Su Domicilio",
+      "column_header": null,
+      "row_y": 341.1,
+      "rule": "case-contrast",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": 20,
+        "label_span_id": 16,
+        "value_span_ids": [
+          17
+        ]
+      }
+    },
+    {
+      "label": "Plaza",
+      "value": "MIERES DEL CAMINO",
+      "section": "TITULARES",
+      "band": "Su Domicilio",
+      "column_header": null,
+      "row_y": 355.4,
+      "rule": "case-contrast",
+      "confidence": "HIGH",
+      "evidence": {
+        "rect_id": null,
+        "docling_block_id": 10,
+        "label_span_id": 18,
+        "value_span_ids": [
+          19
+        ]
+      }
+    }
+  ],
+  "noise": [
+    {
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "bbox": {
+        "x": 142.8,
+        "y": 214.8,
+        "w": 300.0,
+        "h": 6.0
+      },
+      "reason": "size_lt_7"
+    },
+    {
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "bbox": {
+        "x": 142.8,
+        "y": 214.8,
+        "w": 300.0,
+        "h": 6.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Nº 0182-5132-0083-00000000003752",
+      "bbox": {
+        "x": 177.8,
+        "y": 90.3,
+        "w": 260.0,
+        "h": 12.0
+      },
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
+      "bbox": {
+        "x": 27.7,
+        "y": 826.0,
+        "w": 280.0,
+        "h": 10.0
+      },
+      "reason": "page_footer"
+    },
+    {
+      "text": "Página 2 de 16",
+      "bbox": {
+        "x": 512.8,
+        "y": 826.0,
+        "w": 80.0,
+        "h": 10.0
+      },
+      "reason": "page_footer"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {
+        "rects": 336,
+        "lines": 1,
+        "tables": 1,
+        "checkboxes": 0
+      },
+      "docling": {
+        "blocks": 28,
+        "labels": {
+          "page_header": 1,
+          "picture": 2,
+          "text": 18,
+          "section_header": 5,
+          "page_footer": 2
+        },
+        "section_headers": 5,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 30,
+        "bold": 6,
+        "cases": {
+          "Title": 2,
+          "UPPER": 12,
+          "lower": 14,
+          "none": 1,
+          "mixed": 1
+        }
+      }
+    },
+    "column_coherence": [
+      {
+        "x_range": [
+          191.8,
+          270.0
+        ],
+        "dominant_role": "LABEL",
+        "coherence": 1.0,
+        "n_cells": 5
+      },
+      {
+        "x_range": [
+          216.0,
+          380.0
+        ],
+        "dominant_role": "VALUE_TEXT",
+        "coherence": 0.86,
+        "n_cells": 7
+      }
+    ],
+    "agreement": {
+      "section_titles": {
+        "docling_matches_ours": 3,
+        "total": 3
+      },
+      "cell_bold_flags": {
+        "agree": 28,
+        "disagree": 0
+      }
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:47:56+02:00",
+    "covers_cases": [
+      6
+    ],
+    "needs_review": true
+  }
+}
