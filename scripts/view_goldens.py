@@ -26,6 +26,8 @@ import pdfplumber  # type: ignore[import-not-found]
 ROOT = Path(__file__).resolve().parent.parent
 GOLDEN_DIR = ROOT / ".planning" / "extraction" / "golden"
 ATOMS_DIR = ROOT / ".planning" / "extraction" / "atoms"
+ITERATIONS_DIR = ROOT / ".planning" / "extraction" / "iterations"
+REVIEWS_DIR = ROOT / ".planning" / "extraction" / "reviews"
 CACHE_DIR = ROOT / ".viewer" / "golden_cache"
 DATASET_ROOT = Path("/Users/carlos/Edelwyss/Projects/docomestria/Dataset")
 DPI = 144  # pdfplumber default = 72; 2× → crisp without huge files
@@ -54,6 +56,18 @@ def _golden_stem_to_atoms(golden_path: Path) -> Path:
     return ATOMS_DIR / f"{stem}.atoms.json"
 
 
+def _golden_stem_to_iter_log(golden_path: Path) -> Path:
+    """Iteration log lives at .planning/extraction/iterations/<stem>.iterations.json."""
+    stem = golden_path.stem
+    return ITERATIONS_DIR / f"{stem}.iterations.json"
+
+
+def _golden_stem_to_findings(golden_path: Path) -> Path:
+    """Findings file lives at .planning/extraction/reviews/<stem>.findings.json."""
+    stem = golden_path.stem
+    return REVIEWS_DIR / f"{stem}.findings.json"
+
+
 def _index_goldens() -> list[dict]:
     """Scan goldens, group by PDF, return a flat list of entries."""
     entries = []
@@ -73,6 +87,7 @@ def _index_goldens() -> list[dict]:
         h = sum(1 for k in kvs if (k.get("confidence") or "").upper() == "HIGH")
         m = sum(1 for k in kvs if (k.get("confidence") or "").upper() == "MEDIUM")
         l = sum(1 for k in kvs if (k.get("confidence") or "").upper() == "LOW")
+        iter_log = _golden_stem_to_iter_log(gp)
         entries.append({
             "golden_path": str(gp),
             "pdf_path": str(pdf_path),
@@ -83,6 +98,7 @@ def _index_goldens() -> list[dict]:
             "high": h,
             "medium": m,
             "low": l,
+            "has_pipeline": iter_log.exists(),
         })
     return entries
 
@@ -371,6 +387,100 @@ HTML = r"""<!doctype html>
     padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 11px;
   }
   .nav-arrows button:disabled { opacity: 0.3; cursor: not-allowed; }
+  /* Pipeline tab */
+  #pipe-view { font-size: 11px; }
+  .pipe-empty {
+    color: #8e8e93; font-style: italic; padding: 20px;
+    text-align: center; background: #f5f5f7; border-radius: 6px;
+  }
+  .pipe-header {
+    background: #f5f5f7; padding: 8px; border-radius: 6px;
+    margin-bottom: 8px; line-height: 1.5;
+  }
+  .pipe-header .pipe-status { font-weight: 600; font-size: 12px; }
+  .pipe-header .pipe-status.done { color: #34c759; }
+  .pipe-header .pipe-status.escalated_to_human,
+  .pipe-header .pipe-status.awaiting_manual_review { color: #ff9500; }
+  .pipe-header .pipe-status.stuck_no_progress,
+  .pipe-header .pipe-status.max_iter_reached,
+  .pipe-header .pipe-status.build_failed,
+  .pipe-header .pipe-status.patch_failed,
+  .pipe-header .pipe-status.invalid_findings { color: #ff3b30; }
+  .pipe-header .pipe-meta { color: #6e6e73; font-size: 10px; margin-top: 4px; }
+  .iter-row {
+    border: 1px solid #d2d2d7; border-radius: 6px; margin-bottom: 8px;
+    background: #fff; overflow: hidden;
+  }
+  .iter-summary {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 10px; cursor: pointer; user-select: none;
+    background: linear-gradient(to bottom, #fff, #fafafa);
+  }
+  .iter-summary:hover { background: #f5f7fa; }
+  .iter-num {
+    font-weight: 700; font-size: 12px; color: #1d1d1f;
+    min-width: 30px;
+  }
+  .iter-decision {
+    font-weight: 600; font-size: 10px; text-transform: uppercase;
+    padding: 2px 6px; border-radius: 3px; letter-spacing: 0.3px;
+  }
+  .iter-decision.done { background: #d4f5dc; color: #1d6b35; }
+  .iter-decision.patch { background: #d8e6ff; color: #0a5599; }
+  .iter-decision.no_loop_stop { background: #f0e6ff; color: #5a30a0; }
+  .iter-decision.escalated_to_human { background: #ffe5cc; color: #8a4a00; }
+  .iter-decision.manual_review_pending { background: #ffe5cc; color: #8a4a00; }
+  .iter-decision.stuck_no_progress,
+  .iter-decision.max_iter_reached,
+  .iter-decision.build_failed,
+  .iter-decision.patch_failed,
+  .iter-decision.invalid_findings { background: #ffd8d3; color: #a01818; }
+  .iter-kv { color: #6e6e73; font-size: 11px; flex: 1; }
+  .iter-findings { color: #6e6e73; font-size: 11px; }
+  .iter-toggle { color: #8e8e93; font-size: 9px; min-width: 12px; }
+  .iter-detail {
+    padding: 0 10px 10px 10px; display: none;
+    border-top: 1px solid #f0f0f2; background: #fafafa;
+  }
+  .iter-row.expanded .iter-detail { display: block; }
+  .iter-row.expanded .iter-toggle { transform: rotate(90deg); }
+  .iter-detail h4 {
+    font-size: 10px; margin: 8px 0 4px 0; text-transform: uppercase;
+    color: #6e6e73; letter-spacing: 0.3px; font-weight: 600;
+  }
+  .iter-detail .kv-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4px 8px;
+    font-size: 11px;
+  }
+  .iter-detail .kv-grid > div:nth-child(odd) {
+    color: #6e6e73; font-weight: 500;
+  }
+  .iter-detail .file-link {
+    display: inline-block; padding: 3px 6px; background: #fff;
+    border: 1px solid #d2d2d7; border-radius: 3px; font-size: 10px;
+    font-family: ui-monospace, monospace; color: #007aff;
+    text-decoration: none; word-break: break-all;
+  }
+  .iter-detail pre {
+    margin: 4px 0; padding: 6px 8px; background: #fff;
+    border: 1px solid #d2d2d7; border-radius: 4px;
+    font-size: 10px; line-height: 1.4; max-height: 240px; overflow: auto;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  .badge-mini {
+    display: inline-block; padding: 1px 5px; border-radius: 3px;
+    font-size: 9px; font-weight: 700; margin-left: 3px;
+  }
+  .badge-mini.H { background: #ffd8d3; color: #a01818; }
+  .badge-mini.M { background: #ffe5cc; color: #8a4a00; }
+  .badge-mini.L { background: #fff4cc; color: #6b5b00; }
+  .badge-mini.V-PASS { background: #d4f5dc; color: #1d6b35; }
+  .badge-mini.V-FIX_REQUIRED { background: #ffe5cc; color: #8a4a00; }
+  .badge-mini.V-NEEDS_HUMAN { background: #ffd8d3; color: #a01818; }
+  .sidebar .pipe-mark {
+    display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+    background: #007aff; margin-left: 4px;
+  }
 </style>
 </head>
 <body>
@@ -400,6 +510,7 @@ HTML = r"""<!doctype html>
   <div class="tabs-bar">
     <button class="tab-btn active" data-tab="kv">KV pairs</button>
     <button class="tab-btn" data-tab="json">JSON tree</button>
+    <button class="tab-btn" data-tab="pipe">Pipeline</button>
   </div>
   <div id="kv-tab">
     <div class="filter-bar">
@@ -416,6 +527,9 @@ HTML = r"""<!doctype html>
       <button id="jt-collapse-engines">hide engine evidence</button>
     </div>
     <div id="json-view"></div>
+  </div>
+  <div id="pipe-tab" style="display:none">
+    <div id="pipe-view"></div>
   </div>
 </aside>
 
@@ -457,7 +571,7 @@ function renderSidebar() {
       const it = document.createElement('div');
       it.className = 'page-item';
       it.dataset.golden = ent.golden_path;
-      it.innerHTML = `<span>p${ent.page}</span>
+      it.innerHTML = `<span>p${ent.page}${ent.has_pipeline?'<span class="pipe-mark" title="has pipeline log"></span>':''}</span>
         <span class="conf-row">
           ${ent.high?`<span class="dot H"></span>${ent.high}`:''}
           ${ent.medium?`<span class="dot M"></span>${ent.medium}`:''}
@@ -492,7 +606,119 @@ async function load(ent) {
   };
   renderKVList();
   renderJSONTree();
+  renderPipeline();
   updateStats();
+}
+
+async function renderPipeline() {
+  const wrap = document.getElementById('pipe-view');
+  if (!STATE.current) { wrap.innerHTML = ''; return; }
+  if (!STATE.current.has_pipeline) {
+    wrap.innerHTML = `<div class="pipe-empty">
+      No pipeline run for this page.<br>
+      <small>This golden was generated manually or the iteration log was deleted.</small>
+    </div>`;
+    return;
+  }
+  let doc;
+  try {
+    const r = await fetch('/api/pipeline?path=' + encodeURIComponent(STATE.current.golden_path));
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    doc = await r.json();
+  } catch (e) {
+    wrap.innerHTML = `<div class="pipe-empty">Failed to load iteration log: ${escapeHtml(String(e))}</div>`;
+    return;
+  }
+  const iters = doc.iterations || [];
+  const statusCls = doc.final_status || 'running';
+  let html = `<div class="pipe-header">
+    <div><span class="pipe-status ${statusCls}">${escapeHtml(doc.final_status || '—')}</span>
+      · ${iters.length} iteration${iters.length===1?'':'s'}
+      · ${doc.total_seconds || 0}s</div>
+    <div class="pipe-meta">
+      Started: ${escapeHtml(doc.started_at || '—')}<br>
+      Spec: <code>${escapeHtml(doc.spec_path || '—')}</code>
+    </div>
+  </div>`;
+  if (!iters.length) {
+    html += `<div class="pipe-empty">No iterations recorded.</div>`;
+  } else {
+    iters.forEach((it, i) => {
+      html += renderIterRow(it, i, doc);
+    });
+  }
+  wrap.innerHTML = html;
+  // Wire expand toggles
+  wrap.querySelectorAll('.iter-summary').forEach(el => {
+    el.onclick = () => el.closest('.iter-row').classList.toggle('expanded');
+  });
+}
+
+function renderIterRow(it, i, doc) {
+  const decision = it.decision || '—';
+  const bd = it.golden_kv_breakdown || {};
+  const fs = it.findings_summary || {};
+  const bdParts = [];
+  for (const k of ['3_eng','2_eng','1_eng','0_eng','empty']) {
+    if (bd[k]) bdParts.push(`${bd[k]} ${k.replace('_eng','-eng')}`);
+  }
+  const totalKv = ['3_eng','2_eng','1_eng','0_eng','empty']
+    .reduce((a,k)=>a+(bd[k]||0),0);
+  const bdStr = bdParts.length ? `${totalKv} KVs (${bdParts.join(', ')})` : `${totalKv} KVs`;
+
+  let findingsStr = '';
+  if (fs.verdict) {
+    findingsStr = `<span>${fs.high||0}H / ${fs.medium||0}M / ${fs.low||0}L</span>
+      <span class="badge-mini V-${fs.verdict}">${fs.verdict}</span>`;
+  } else if (it.reviewer_error) {
+    findingsStr = `<span style="color:#a01818">reviewer error</span>`;
+  } else if (it.build_error) {
+    findingsStr = `<span style="color:#a01818">build error</span>`;
+  }
+
+  // Detail body
+  let detail = '<div class="iter-detail"><h4>Build</h4>';
+  detail += `<div class="kv-grid">
+    <div>Spec hash</div><div><code>${escapeHtml(it.spec_hash || '—')}</code></div>
+    <div>KV breakdown</div><div>${escapeHtml(bdStr)}</div>`;
+  if (it.patches_applied !== undefined) {
+    detail += `<div>Patches applied</div><div>${it.patches_applied}` +
+      (it.patches_skipped ? ` (${it.patches_skipped} skipped)` : '') + `</div>`;
+  }
+  detail += `</div>`;
+
+  if (fs.verdict) {
+    detail += `<h4>Review</h4><div class="kv-grid">
+      <div>Verdict</div><div><span class="badge-mini V-${fs.verdict}">${fs.verdict}</span></div>
+      <div>HIGH</div><div>${fs.high||0}</div>
+      <div>MEDIUM</div><div>${fs.medium||0}</div>
+      <div>LOW</div><div>${fs.low||0}</div>
+    </div>`;
+    if (doc.findings_path) {
+      detail += `<a class="file-link" href="/api/findings?path=${encodeURIComponent(doc.findings_path)}" target="_blank">View findings.json →</a>`;
+    }
+  }
+  if (it.reviewer_error) {
+    detail += `<h4>Reviewer error</h4><pre>${escapeHtml(it.reviewer_error)}</pre>`;
+  }
+  if (it.build_error) {
+    detail += `<h4>Build error</h4><pre>${escapeHtml(it.build_error)}</pre>`;
+  }
+  if (it.patch_error) {
+    detail += `<h4>Patch error</h4><pre>${escapeHtml(it.patch_error)}</pre>`;
+  }
+  detail += `</div>`;
+
+  return `<div class="iter-row">
+    <div class="iter-summary">
+      <span class="iter-toggle">▸</span>
+      <span class="iter-num">#${it.iter}</span>
+      <span class="iter-decision ${decision}">${escapeHtml(decision)}</span>
+      <span class="iter-kv">${escapeHtml(bdStr)}</span>
+      <span class="iter-findings">${findingsStr}</span>
+    </div>
+    ${detail}
+  </div>`;
 }
 
 function updateStats() {
@@ -749,6 +975,7 @@ document.querySelectorAll('.tab-btn').forEach(b => {
     const tab = b.dataset.tab;
     document.getElementById('kv-tab').style.display = tab === 'kv' ? '' : 'none';
     document.getElementById('json-tab').style.display = tab === 'json' ? '' : 'none';
+    document.getElementById('pipe-tab').style.display = tab === 'pipe' ? '' : 'none';
   };
 });
 // Expand/collapse all
@@ -867,6 +1094,24 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 d = _enrich_golden(gp)
                 self._send(200, json.dumps(d, ensure_ascii=False).encode("utf-8"),
                            "application/json")
+            elif path.path == "/api/pipeline":
+                gp = Path(qs.get("path", [""])[0])
+                if not gp.exists():
+                    self._send(404, b"golden not found"); return
+                ilog = _golden_stem_to_iter_log(gp)
+                if not ilog.exists():
+                    self._send(404, b"no iteration log for this golden"); return
+                self._send(200, ilog.read_bytes(), "application/json")
+            elif path.path == "/api/findings":
+                fp = Path(qs.get("path", [""])[0])
+                # Restrict to the reviews dir to avoid arbitrary read.
+                try:
+                    fp.resolve().relative_to(REVIEWS_DIR.resolve())
+                except ValueError:
+                    self._send(403, b"forbidden", "text/plain"); return
+                if not fp.exists():
+                    self._send(404, b"findings not found"); return
+                self._send(200, fp.read_bytes(), "application/json")
             elif path.path == "/api/page":
                 pdf = Path(qs.get("pdf", [""])[0])
                 page_num = int(qs.get("page", ["1"])[0])

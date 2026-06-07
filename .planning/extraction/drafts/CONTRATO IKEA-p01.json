@@ -53,6 +53,7 @@
               "label_evidence": {
                 "text": "1. La cuenta de crédito con o sin Tarjeta IKEA.",
                 "row_y_hint": 183,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -120,6 +121,7 @@
               "value_evidence": {
                 "text": "Qué son y qué pueden hacer.",
                 "row_y_hint": 183,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 273.3414656,
@@ -220,6 +222,7 @@
               "label_evidence": {
                 "text": "2. Modalidades de pago y de disposición que permite su cuenta de crédito con o sin Tarjeta IKEA.",
                 "row_y_hint": 195,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -287,6 +290,7 @@
               "value_evidence": {
                 "text": "Qué posibilidades tiene de pagar a crédito, o de retirar dinero en efectivo metálico a crédito si dispone de Tarjeta IKEA.",
                 "row_y_hint": 195,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 9,
@@ -356,6 +360,7 @@
               "label_evidence": {
                 "text": "3. Intereses.",
                 "row_y_hint": 233,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -415,6 +420,7 @@
               "value_evidence": {
                 "text": "Cómo se calculan los intereses y cuándo se pagan.",
                 "row_y_hint": 233,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 132.8146688,
@@ -515,6 +521,7 @@
               "label_evidence": {
                 "text": "4. Titularidad.",
                 "row_y_hint": 245,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -576,6 +583,7 @@
               "value_evidence": {
                 "text": "Quién se responsabiliza de este contrato de Cuenta de crédito con o sin Tarjeta IKEA y de la Tarjeta IKEA, si la hay.",
                 "row_y_hint": 245,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 15,
@@ -645,6 +653,7 @@
               "label_evidence": {
                 "text": "5. Cuenta corriente asociada.",
                 "row_y_hint": 271,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -712,6 +721,7 @@
               "value_evidence": {
                 "text": "Qué cuenta puede asociarse al contrato de Cuenta de crédito con o sin Tarjeta IKEA.",
                 "row_y_hint": 271,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 18,
@@ -781,6 +791,7 @@
               "label_evidence": {
                 "text": "6. Número de teléfono asociado.",
                 "row_y_hint": 296,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -848,6 +859,7 @@
               "value_evidence": {
                 "text": "Por qué es necesario que nos facilite su número de teléfono.",
                 "row_y_hint": 296,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 216.0213248,
@@ -950,6 +962,7 @@
               "label_evidence": {
                 "text": "7. Acceso y usos.",
                 "row_y_hint": 308,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -1011,6 +1024,7 @@
               "value_evidence": {
                 "text": "Cómo puede disponer de su Cuenta de crédito con o sin Tarjeta IKEA, y hacerlo de forma segura.",
                 "row_y_hint": 308,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 23,
@@ -1080,6 +1094,7 @@
               "label_evidence": {
                 "text": "8. TAE.",
                 "row_y_hint": 333,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -1133,6 +1148,7 @@
               "value_evidence": {
                 "text": "Qué es y cómo calculamos la Tasa Anual Equivalente (TAE).",
                 "row_y_hint": 333,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 112.0130048,
@@ -1233,6 +1249,7 @@
               "label_evidence": {
                 "text": "9. Órdenes de pago.",
                 "row_y_hint": 346,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -1296,6 +1313,7 @@
               "value_evidence": {
                 "text": "Cuándo ejecutamos (realizamos) una orden de pago.",
                 "row_y_hint": 346,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 165.4039424,
@@ -1396,6 +1414,7 @@
               "label_evidence": {
                 "text": "10. Divisas.",
                 "row_y_hint": 359,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -1454,6 +1473,7 @@
               "value_evidence": {
                 "text": "Qué tipo de cambio aplicamos si paga en una moneda distinta al euro.",
                 "row_y_hint": 359,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 124.9562624,
@@ -1554,6 +1574,7 @@
               "label_evidence": {
                 "text": "11. Información de los pagos.",
                 "row_y_hint": 371,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -1621,6 +1642,7 @@
               "value_evidence": {
                 "text": "Cómo y cuándo sabrá usted cuánto ha pagado y cuánto le queda por pagar.",
                 "row_y_hint": 371,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 199.6111232,
@@ -1721,6 +1743,7 @@
               "label_evidence": {
                 "text": "12. Impagos.",
                 "row_y_hint": 384,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -1779,6 +1802,7 @@
               "value_evidence": {
                 "text": "Los impagos (retrasos en el pago) generan intereses.",
                 "row_y_hint": 384,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 130.27224320000002,
@@ -1879,6 +1903,7 @@
               "label_evidence": {
                 "text": "13. Bloqueo del saldo disponible de la Cuenta de crédito con o sin Tarjeta IKEA asociada.",
                 "row_y_hint": 396,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -1946,6 +1971,7 @@
               "value_evidence": {
                 "text": "El saldo disponible de su Cuenta de crédito y su Tarjeta IKEA asociada, si la tiene, pueden quedar bloqueados o limitados temporalmente.",
                 "row_y_hint": 396,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 33,
@@ -2017,6 +2043,7 @@
               "label_evidence": {
                 "text": "14. Comunicaciones.",
                 "row_y_hint": 434,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -2082,6 +2109,7 @@
               "value_evidence": {
                 "text": "Cómo nos comunicamos con usted.",
                 "row_y_hint": 434,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 164.01716480000002,
@@ -2182,6 +2210,7 @@
               "label_evidence": {
                 "text": "15. Nuestros deberes y responsabilidades para la seguridad de su Cuenta de crédito, y de su Tarjeta IKEA asociada, si la hay.",
                 "row_y_hint": 446,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 36,
@@ -2218,6 +2247,7 @@
               "value_evidence": {
                 "text": "La importancia de proteger su Cuenta de crédito, y, si la tiene, su Tarjeta IKEA y su PIN.",
                 "row_y_hint": 446,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 170.95105279999999,
@@ -2318,6 +2348,7 @@
               "label_evidence": {
                 "text": "16. Incidencias.",
                 "row_y_hint": 472,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -2380,6 +2411,7 @@
               "value_evidence": {
                 "text": "Qué hacer si observa irregularidades en los movimientos realizados con su Cuenta de crédito.",
                 "row_y_hint": 472,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 141.8287232,
@@ -2480,6 +2512,7 @@
               "label_evidence": {
                 "text": "17. Ley aplicable a este contrato. Quejas y reclamaciones.",
                 "row_y_hint": 484,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -2547,6 +2580,7 @@
               "value_evidence": {
                 "text": "Cómo puede hacernos llegar sus quejas y reclamaciones.",
                 "row_y_hint": 484,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 40,
@@ -2618,6 +2652,7 @@
               "label_evidence": {
                 "text": "18. Duración y cancelación.",
                 "row_y_hint": 509,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -2685,6 +2720,7 @@
               "value_evidence": {
                 "text": "Quién puede cancelar el contrato, cuándo y cómo.",
                 "row_y_hint": 509,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 191.5215872,
@@ -2785,6 +2821,7 @@
               "label_evidence": {
                 "text": "19. Desistimiento.",
                 "row_y_hint": 522,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -2849,6 +2886,7 @@
               "value_evidence": {
                 "text": "Cuándo y cómo puede desistir (renunciar) de este contrato.",
                 "row_y_hint": 522,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 151.53616639999998,
@@ -2949,6 +2987,7 @@
               "label_evidence": {
                 "text": "20. Derechos adicionales que podrá usted ejercer.",
                 "row_y_hint": 534,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -3016,6 +3055,7 @@
               "value_evidence": {
                 "text": "Cuándo y cómo puede ejercitar los derechos que le correspondan frente a CaixaBank Payments & Consumer teniendo el contrato de Cuenta de crédito el carácter de vinculado.",
                 "row_y_hint": 534,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 44,
@@ -3085,6 +3125,7 @@
               "label_evidence": {
                 "text": "21. Modificaciones.",
                 "row_y_hint": 572,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -3150,6 +3191,7 @@
               "value_evidence": {
                 "text": "Cómo y cuándo desde CaixaBank Payments & Consumer podemos modificar las condiciones del contrato, y qué puede hacer usted al respecto.",
                 "row_y_hint": 572,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 48,
@@ -3219,6 +3261,7 @@
               "label_evidence": {
                 "text": "22. Cesión.",
                 "row_y_hint": 597,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -3276,6 +3319,7 @@
               "value_evidence": {
                 "text": "Desde CaixaBank Payments & Consumer podremos ceder los derechos y obligaciones del contrato.",
                 "row_y_hint": 597,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 123.56948480000001,
@@ -3376,6 +3420,7 @@
               "label_evidence": {
                 "text": "23. Servicios vinculados o combinados.",
                 "row_y_hint": 610,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -3443,6 +3488,7 @@
               "value_evidence": {
                 "text": "Para contratar la Cuenta de crédito con o sin Tarjeta IKEA, si el producto contratado la ofrece, no es obligatorio contratar otro servicio más.",
                 "row_y_hint": 610,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 51,
@@ -3512,6 +3558,7 @@
               "label_evidence": {
                 "text": "24. Precios.",
                 "row_y_hint": 635,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -3570,6 +3617,7 @@
               "value_evidence": {
                 "text": "Cuánto cuesta la Cuenta de crédito con o sin Tarjeta IKEA y los servicios que con ella le ofrecemos.",
                 "row_y_hint": 635,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 126.1119104,
@@ -3670,6 +3718,7 @@
               "label_evidence": {
                 "text": "25. Tratamiento de datos de carácter personal.",
                 "row_y_hint": 648,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -3737,6 +3786,7 @@
               "value_evidence": {
                 "text": "Cómo tratamos sus datos personales.",
                 "row_y_hint": 648,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 269.643392,
@@ -3837,6 +3887,7 @@
               "label_evidence": {
                 "text": "26. Políticas de sanciones, prevención de blanqueo y lucha contra el fraude.",
                 "row_y_hint": 660,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 73.183232,
@@ -3904,6 +3955,7 @@
               "value_evidence": {
                 "text": "En CaixaBank Payments & Consumer gozamos de políticas sobre sanciones económico-financieras internacionales, prevención de blanqueo y lucha contra el fraude.",
                 "row_y_hint": 660,
+                "x_hint": null,
                 "pdfplumber": null,
                 "liteparse": {
                   "span_id": 55,
