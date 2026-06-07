@@ -110,3 +110,14 @@ When you fix a geometry bug:
 - Memory: `[[per_page_bbox_suppression]]`, `[[shadow_tables]]`, `[[dedup_by_text]]`.
 - Sibling agents: `[[regression-runner]]`, `[[extraction-test-writer]]`, `[[emitter-designer]]`.
 - Engine specialists: `[[docling-expert]]`, `[[liteparse-expert]]`, `[[pdfplumber-expert]]`.
+
+## Return Contract (MANDATORY)
+Your final message is the ONLY thing the orchestrator keeps — your transcript is discarded. Do NOT return a narrative. End with exactly this block and nothing after it:
+
+```
+FINDINGS:
+- <file>:<line> — <one-sentence root cause>
+  FIX: <the specific change to make> | CONFIDENCE: HIGH|MEDIUM|LOW
+- (repeat per finding)
+```
+If you found nothing actionable, return: `FINDINGS: none — <one-line reason>`. Keep root causes to one sentence each. No preamble, no summary paragraph.

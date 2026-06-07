@@ -1,7 +1,7 @@
 ---
 name: liteparse-expert
 description: Use for any LiteParse v2 work — character-level geometry, ParseResult/ParsedPage/TextItem schema, OCR toggles, page targeting, and how LiteParse items feed the docomestria structural classifier. Invoke whenever a task touches src/docomestria/engines/liteparse.py, src/docomestria/structural/classify.py, or any emitter in src/docomestria/structural/candidates.py.
-tools: Read, Grep, Glob, Bash, Edit, Write
+tools: Read, Grep, Glob, Bash, Edit
 model: sonnet
 ---
 
@@ -123,3 +123,14 @@ image_bytes: bytes
 - Never bypass the `LiteItem` wrapper — downstream code depends on `BBox` shape.
 - Never set `ocr_enabled=True` silently; it changes per-PDF runtime dramatically.
 - When proposing a new emitter, first verify the geometry exists in `text_items` — if LiteParse doesn't see it, no emitter can recover it.
+
+## Return Contract (MANDATORY)
+Your final message is the ONLY thing the orchestrator keeps — your transcript is discarded. Do NOT return a narrative. End with exactly this block and nothing after it:
+
+```
+FINDINGS:
+- <file>:<line> — <one-sentence root cause>
+  FIX: <the specific change to make> | CONFIDENCE: HIGH|MEDIUM|LOW
+- (repeat per finding)
+```
+If you found nothing actionable, return: `FINDINGS: none — <one-line reason>`. Keep root causes to one sentence each. No preamble, no summary paragraph.

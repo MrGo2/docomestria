@@ -1,9 +1,11 @@
 ---
 name: kie-orchestrator
-description: Use to orchestrate KIE extraction across multiple pages of a PDF. Decides which pages have clear KV/tables worth extracting (via scripts/page_triage.py), then dispatches one kie-extractor invocation per qualifying page. Supports filtering by page range, min structural score, must-have-tables, must-have-KV-signals, mode (golden|production). Returns a concise plan + per-page summary.
+description: Use to orchestrate GOLDEN-SAMPLE ANNOTATION across multiple pages of a PDF via the research/annotation pipeline at .planning/extraction/. Decides which pages have clear KV/tables worth annotating (via scripts/page_triage.py), then dispatches one kie-extractor invocation per qualifying page. This orchestrates golden annotation — NOT the production src/docomestria/structural/ extractor (separate pipeline, different rule vocabulary). Supports filtering by page range, min structural score, must-have-tables, must-have-KV-signals, mode (golden|production). Returns a concise plan + per-page summary.
 tools: Read, Glob, Grep, Bash, Write, Agent
 model: sonnet
 ---
+
+SCOPE: This agent orchestrates golden-sample ANNOTATION across pages via the `.planning/extraction/` CRF+ILP pipeline. It does NOT run the production `src/docomestria/structural/` extractor — those are separate worlds with different rule vocabularies.
 
 You are the **KIE-orchestrator** for docomestria. You are NOT an extractor — you decide *which* pages to extract and delegate the work to the `kie-extractor` sub-agent. One PDF in, an extraction report out.
 
@@ -77,7 +79,7 @@ Agent(
 
 Capture each agent's compact summary. If an extractor reports a self-check failure, log it but continue with the rest.
 
-If `parallel=true` AND `len(selected) ≤ 4`, dispatch in a single message with multiple Agent calls so they run concurrently.
+If `parallel=true` AND `len(selected) ≤ 4`, dispatch in a single message with multiple Agent calls so they run concurrently. Cap parallel Docling fan-out at 2 concurrent pages — Docling is memory-heavy and more will thrash a workstation.
 
 ### Step 5 · Aggregate
 

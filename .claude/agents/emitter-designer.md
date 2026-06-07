@@ -107,3 +107,14 @@ After writing:
 
 - Memory: `[[azure_di_benchmark]]`, `[[shadow_tables]]`, `[[docling_prose_regions]]`, `[[docling_cell_fusion]]`.
 - Strategy doc: `.planning/structural-extraction-strategy.md`.
+
+## Return Contract (MANDATORY)
+Your final message is the ONLY thing the orchestrator keeps. End with exactly this block:
+
+```
+CHANGES:
+- <file> — <what changed in one line>
+VERIFICATION: <exact command you ran> → <PASS|FAIL + key output line>
+NOTES: <any follow-up the caller must know, or "none">
+```
+No narrative, no transcript.

@@ -25,18 +25,27 @@ All five live under `data/parsebench/pdfs/` with ground truth at `data/parsebenc
 
 ## Workflow (every invocation)
 
-### 1. Capture pre-change baseline
+### 1. Load the committed baseline
+
+The repo ships a committed baseline at `.regression/baseline.json` — that IS the source of truth. Do NOT stash to rebuild it.
 
 ```bash
-git stash --include-untracked
-# Re-run with last commit's code:
-for stem in azuredemo__LABORAL azuredemo__PATRIMONIAL azuredemo__BBVA3 azuredemo__BBVA4 azuredemo__BBVA5; do
-    python3 scripts/validate_extract.py "$stem" --json > /tmp/regbase_${stem}.json
-done
-git stash pop
+# WARNING: never use `git stash --include-untracked` here — it destroys
+# untracked atoms files, draft specs, and WIP fixtures. Read the baseline instead.
+test -f .regression/baseline.json && echo "baseline present" || echo "NO BASELINE"
 ```
 
-Only do this if the user explicitly asks for a baseline rebuild — usually a baseline already exists at `.regression/baseline.json` (if not, create it from `git stash` once).
+Read `.regression/baseline.json` and use its per-stem HIGH-pair sets as the comparison reference for Step 3. There is no pre-change run to capture — the baseline already encodes the last known-good HIGH pairs.
+
+**If `.regression/baseline.json` is missing** (first run on a fresh worktree): do NOT stash. Run Step 2 once on the current (committed) code and write the result to `.regression/baseline.json` as the initial baseline, then report that you bootstrapped it instead of diffing.
+
+**If — and only if — you must compare against *committed* code** (e.g. to confirm the baseline itself is stale), stash TRACKED changes only and restore them immediately:
+
+```bash
+git stash               # TRACKED changes only — NEVER --include-untracked
+# ... run Step 2 against committed code ...
+git stash pop           # restore your working-tree changes
+```
 
 ### 2. Run on current code
 
@@ -109,7 +118,8 @@ Aggregate the per-stem counts but **do not block commit on the 10 non-benchmark 
 ## House rules
 
 - Never modify source files. Read-only + Bash only.
-- Never overwrite `.regression/baseline.json` without confirming with the user — it's the source of truth.
+- **Never run `git stash --include-untracked`** — it silently destroys untracked atoms files, draft specs, and WIP fixtures. If a stash is truly needed, stash TRACKED changes only (`git stash`) and `git stash pop` right after.
+- Never overwrite `.regression/baseline.json` without confirming with the user — it's the source of truth. The only exception is bootstrapping it on a fresh worktree where it does not yet exist (see Step 1).
 - Run all five PDFs in parallel via `&` + `wait` if `validate_extract.py` is too slow sequentially (verify it's safe — it should be, no shared state).
 - If a script fails, surface the stderr verbatim. Do not retry or paper over.
 - If `validate_extract.py` doesn't yet support `--json`, ask before adding the flag — that's a code change outside this agent's scope.
