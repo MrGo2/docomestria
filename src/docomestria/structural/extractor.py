@@ -15,13 +15,96 @@ from ..engines import (
     extract_lite_items,
     extract_visual_rects,
 )
-from ..models import DoclingBlock, LiteItem, VisualRect
+from ..models import BBox, DoclingBlock, LiteItem, VisualRect
 from .candidates import emit_all
 from .classify import classify
 from .ilp import resolve_conflicts
 from .models import Page, Pair, StructuralExtraction
 from .scoring import resolve_pairs
 from .structure import detect_structure
+from .typing import coerce_value
+
+# --- False-positive pair suppression ---------------------------------------
+# Sibling to `_is_false_positive_plumber_table` (structure.py): three
+# independent signals each mark a junk KV pair seen in real output. The
+# predicate runs once per pair at the post-scoring chokepoint, before global
+# conflict resolution, so junk never wins an ILP tie-break.
+
+_VERTICAL_ASPECT = 1.5  # bbox h > w * this (for multi-char text) ⇒ rotated text
+_MIN_SLIVER_CHARS = 3  # need a few chars before judging orientation
+
+
+def _has_control_chars(s: str) -> bool:
+    """True if `s` holds a C0/C1 control char (excluding ``\\t \\n \\r``).
+
+    Catches garbage values like ``\\x9f (*) Comisión Estudio``; the euro sign
+    (U+20AC) and ordinary whitespace are intentionally allowed.
+    """
+    return any((ord(c) < 0x20 and c not in "\t\n\r") or 0x7F <= ord(c) <= 0x9F for c in s)
+
+
+def _is_vertical_sliver(text: str, bbox: BBox) -> bool:
+    """True if multi-char `text` sits in a taller-than-wide bbox (rotated text).
+
+    Genuine horizontal lines are wide and short (``w >> h``), so the guard
+    ``h > w * _VERTICAL_ASPECT`` can only fire on text rendered vertically —
+    e.g. form-template ``Date``/``Guid`` stamps in the page margin.
+    """
+    if len(text.strip()) < _MIN_SLIVER_CHARS:
+        return False
+    if bbox.w <= 0:
+        return False
+    return bbox.h > bbox.w * _VERTICAL_ASPECT
+
+
+def _is_title_case_phrase(text: str) -> bool:
+    """True if `text` is a multi-word phrase that opens Title-Case
+    (initial uppercase + lowercase tail), e.g. ``Comisión apertura``.
+
+    Excludes all-caps form values (``LAS PALMAS``) and single words (``Madrid``).
+    """
+    t = text.strip()
+    if len(t) < 2 or len(t.split()) < 2:
+        return False
+    if t == t.upper():  # all-caps form field, not a header phrase
+        return False
+    return t[0].isupper() and t[1].islower()
+
+
+def _is_header_glue(label: str, value: str) -> bool:
+    """True if a colon-split pair is really two glued column headers.
+
+    Both sides must be plain strings (neither coerces to date/amount/percent/
+    nif/bool via `coerce_value`) and the value must be a multi-word Title-Case
+    header phrase with no terminal punctuation. Mirrors the real
+    ``No Financiadas → Comisión apertura`` artifact while sparing genuine pairs
+    like ``Lugar → LAS PALMAS`` (all-caps), ``05-06-2024 → 273,23€`` (typed),
+    and sentence values.
+    """
+    v = value.strip()
+    if not v or v[-1] in ".!?":
+        return False
+    if coerce_value(label).kind != "string" or coerce_value(value).kind != "string":
+        return False
+    return _is_title_case_phrase(v)
+
+
+def _is_false_positive_pair(p: Pair) -> bool:
+    """Suppress junk KV pairs matching known false-positive patterns.
+
+    Three independent signals (any one suppresses):
+      A. control chars in label/value text — OCR/template garbage.
+      B. either side is a vertical-margin sliver — rotated form metadata.
+      C. header-on-header glue — gated to single-rule ``L-inline-split`` pairs
+         (no cross-engine support) so a corroborated pair is never dropped.
+    """
+    if _has_control_chars(p.label_text) or _has_control_chars(p.value_text):
+        return True
+    if _is_vertical_sliver(p.value_text, p.value_bbox) or _is_vertical_sliver(
+        p.label_text, p.label_bbox
+    ):
+        return True
+    return p.evidence == ("L-inline-split",) and _is_header_glue(p.label_text, p.value_text)
 
 
 def _section_title_for(page: Page, pair: Pair) -> str | None:
@@ -57,6 +140,10 @@ def structural_extract_from_engines(
     pages = detect_structure(docling_blocks, lite_items, plumber_rects)
     candidates = emit_all(classified, pages)
     pairs = resolve_pairs(candidates)
+    # Drop false-positive pairs (control-char garbage, rotated margin metadata,
+    # header-on-header glue) before conflict resolution so junk never wins a
+    # tie-break. Mirrors `_is_false_positive_plumber_table` in structure.py.
+    pairs = tuple(p for p in pairs if not _is_false_positive_pair(p))
     # Global ILP-style conflict resolution (sección 6.5) — drops same-page,
     # same-label pairs without a distinguishing column_index. Keeps the
     # highest-scoring candidate per conflict group.
