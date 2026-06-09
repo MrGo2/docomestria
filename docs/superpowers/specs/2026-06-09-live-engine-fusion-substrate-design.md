@@ -35,19 +35,32 @@ golden-only artifacts.
    pdfplumber engine currently exposes only `extract_visual_rects`; char/word output is
    needed for a real colon flag, per-item pdfplumber presence, and char-bbox geometry.
 2. **Live feature builder** — per-item features for a live PDF from `{liteparse spans,
-   docling blocks, visual rects, chars}`. Same feature **schema** as the current model
-   where live-computable; **drop** features that can't be computed live **and** have ~0
-   importance (`docling_column_header`/`row_header` = 0.0 importance in the model report).
-   Reuse `fusion.py` geometric helpers (`_best_docling_block`, `_smallest_containing_rect`,
-   `_find_cell`) and pure golden helpers by import; pull `docling_content_layer` /
-   `rect_type` directly from the raw `DoclingBlock`/`VisualRect` (not via the lossy
-   `FusedItem`). `is_bold` from `font_name` (reuse `classify.is_bold`); `case_class` from
-   text; **`colon_present` = a real colon test** (fixing the golden quirk).
-3. **Label transfer** — attach golden truth roles to live items. LiteParse is deterministic
-   for a given PDF, so a live span maps to its golden role by span identity, with a
-   normalized-text + bbox-overlap ≥ 0.30 fallback (reuse `_overlap_frac`
-   `training_table.py:122`, `_norm` `engine_data.py:25`). Track and report **coverage**
-   (aligned share, per role and per page).
+   docling blocks, visual rects, chars}`. **Keep the full feature schema** — `evaluate_oof`
+   indexes a fixed column set derived from `training_table.FIELDS`
+   (`role_classifier.py:31,83`), so columns cannot be dropped or it `KeyError`s. For the
+   two live-uncomputable, **0.0-importance** columns (`docling_column_header`/`row_header`)
+   emit a constant `0` rather than dropping them. Reuse `fusion.py` geometric helpers
+   (`_best_docling_block`, `_smallest_containing_rect`, `_find_cell`) — note their hidden
+   precondition: rects must be **sorted by area first** so "smallest containing rect" holds
+   (`fusion.py:129`). Pull `docling_content_layer` / `rect_type` directly from the raw
+   `DoclingBlock`/`VisualRect` (not via the lossy `FusedItem`). `is_bold` from `font_name`
+   (reuse `classify.is_bold`); `case_class` from text; **`colon_present` = a real colon
+   test** (fixing the golden quirk).
+3. **Label transfer** — attach golden roles to live items, reproducing the **current golden
+   role-table semantics, including atom-noise generation**. Two label sources, mirroring the
+   golden builder:
+   - *Annotated roles* (key/value/section_header/table_header/signature/prose): match each
+     live item to a golden annotated item by **normalized-text + bbox-overlap ≥ 0.30**
+     (reuse `_overlap_frac` `training_table.py:122`, `_norm` `engine_data.py:25`). This
+     overlap match is the **primary** disambiguator — `span_id` is NOT a unique key (it is
+     a LiteParse list index shared across key/value/header splits; 202 page/spans map to
+     multiple roles, hence `compound_span`), so it is at most a weak hint.
+   - *Noise* (the largest class, 2117/2296 from atoms): live items that match **no** golden
+     annotated item become `noise` — exactly as `noise_items` (`training_table.py:381`)
+     labels unconsumed atoms today. So every live item is labeled (a real role or noise);
+     there is no silently-dropped bucket.
+   Track and report **coverage of the annotated (non-noise) roles** — the failure mode is a
+   real key/value drifting out of overlap and being mislabeled `noise`.
 4. **Retrain + evaluate** — run `evaluate_oof(df)` (GroupKFold-by-pdf — the exact protocol
    that produced 0.88, `role_classifier.py:67`) on the live-feature table → pooled-OOF
    macro-F1 + per-role. Fit the final model on all rows for the artifact.
@@ -85,10 +98,11 @@ PDF → engines: liteparse spans + docling blocks + visual rects + NEW chars
 
 ## Acceptance gate (definition of done)
 
-1. Build the live-feature table for the golden PDFs and transfer golden roles.
-2. **Coverage floor** (guards against a biased subset): ≥ 90% of golden labeled items
-   align overall, and ≥ 70% per role. Below floor → gate **FAILS** (the score would be on
-   an unrepresentative subset), independent of macro-F1.
+1. Build the live-feature table for the golden PDFs and transfer golden roles (annotated
+   roles by overlap match; unmatched → noise, per the label policy above).
+2. **Coverage floor** (guards against real roles being mislabeled `noise`): ≥ 90% of golden
+   **annotated** (non-noise) items align overall, and ≥ 70% per annotated role. Below floor
+   → gate **FAILS** independent of macro-F1 (the label set has silently drifted).
 3. `evaluate_oof` pooled macro-F1 **≥ 0.85**, and **every role F1 > 0.5** (all usable).
 4. Report: per-role F1, coverage table, and feature-importance readout (to confirm live
    features carry the signal — and that no alignment artifact leaks).
