@@ -111,9 +111,13 @@ def _words_from_page(raw_words: list[dict], page: int) -> list[WordItem]:
         text = (w.get("text") or "").strip()
         if not text:
             continue
-        x0 = float(w["x0"]); x1 = float(w["x1"])
-        top = float(w["top"]); bottom = float(w["bottom"])
-        out.append(WordItem(text=text, bbox=BBox(x=x0, y=top, w=x1 - x0, h=bottom - top), page=page))
+        x0 = float(w["x0"])
+        x1 = float(w["x1"])
+        top = float(w["top"])
+        bottom = float(w["bottom"])
+        out.append(
+            WordItem(text=text, bbox=BBox(x=x0, y=top, w=x1 - x0, h=bottom - top), page=page)
+        )
     return out
 
 
@@ -135,7 +139,10 @@ def extract_page_sizes(pdf_path: str | Path) -> dict[int, tuple[float, float]]:
     sizes: dict[int, tuple[float, float]] = {}
     with pdfplumber.open(str(pdf_path)) as pdf:
         for page_no, page in enumerate(pdf.pages, start=1):
-            sizes[page_no] = (float(getattr(page, "width", 0.0)), float(getattr(page, "height", 0.0)))
+            sizes[page_no] = (
+                float(getattr(page, "width", 0.0)),
+                float(getattr(page, "height", 0.0)),
+            )
     return sizes
 
 

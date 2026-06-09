@@ -5,10 +5,10 @@ dict) and fixes the colon quirk. The golden builder is not modified."""
 
 from __future__ import annotations
 
-from .models import BBox, LiteItem
-from .text_features import case_class, content_flags
-from .structural.classify import is_bold
 from .golden.training_table import FIELDS, _onehot_case
+from .models import BBox, LiteItem
+from .structural.classify import is_bold
+from .text_features import case_class, content_flags
 
 
 def _bbox_to_dict(bb: BBox) -> dict:
@@ -25,7 +25,7 @@ def _base_row(it: LiteItem, page_size_pt: tuple[float, float]) -> dict:
 
     row: dict = {f: "" for f in FIELDS}  # full schema, blanks filled below
 
-    row["pdf"] = ""           # filled by build_live_rows
+    row["pdf"] = ""  # filled by build_live_rows
     row["page"] = it.page
     row["text"] = text
     row["node_path"] = ""

@@ -1,10 +1,15 @@
-from docomestria.models import BBox, LiteItem
 from docomestria.live_features import _base_row, _bbox_to_dict
+from docomestria.models import BBox, LiteItem
 
 
 def test_base_row_geometry_normalised_by_page_size():
-    it = LiteItem(text="NOMBRE:", bbox=BBox(x=60.0, y=120.0, w=90.0, h=12.0),
-                  font_name="Helvetica-Bold", font_size=10.0, page=1)
+    it = LiteItem(
+        text="NOMBRE:",
+        bbox=BBox(x=60.0, y=120.0, w=90.0, h=12.0),
+        font_name="Helvetica-Bold",
+        font_size=10.0,
+        page=1,
+    )
     row = _base_row(it, page_size_pt=(600.0, 800.0))
     assert row["x"] == 60.0 / 600.0
     assert row["y"] == 120.0 / 800.0
@@ -20,4 +25,9 @@ def test_base_row_geometry_normalised_by_page_size():
 
 
 def test_bbox_to_dict_roundtrip():
-    assert _bbox_to_dict(BBox(x=1.0, y=2.0, w=3.0, h=4.0)) == {"x": 1.0, "y": 2.0, "w": 3.0, "h": 4.0}
+    assert _bbox_to_dict(BBox(x=1.0, y=2.0, w=3.0, h=4.0)) == {
+        "x": 1.0,
+        "y": 2.0,
+        "w": 3.0,
+        "h": 4.0,
+    }
