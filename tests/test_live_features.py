@@ -100,6 +100,20 @@ def test_engine_features_no_colon_when_absent():
     assert feats["colon_present"] == 0
 
 
+def test_engine_features_colon_word_on_other_page_ignored():
+    it = _item(text="Nombre", x=60.0, y=120.0, w=40.0, h=12.0, page=1)
+    colon = WordItem(text=":", bbox=BBox(x=102.0, y=120.0, w=4.0, h=12.0), page=2)
+    feats = _engine_features(it, blocks=[], rects=[], words=[colon])
+    assert feats["colon_present"] == 0
+
+
+def test_engine_features_word_containing_colon_is_not_a_detached_colon():
+    it = _item(text="Hora", x=60.0, y=120.0, w=40.0, h=12.0)
+    word = WordItem(text="5:30", bbox=BBox(x=102.0, y=120.0, w=20.0, h=12.0), page=1)
+    feats = _engine_features(it, blocks=[], rects=[], words=[word])
+    assert feats["colon_present"] == 0
+
+
 def test_engine_features_compound_span_interior_colon():
     feats = _engine_features(_item(text="Nombre: Adrian"), blocks=[], rects=[], words=[])
     assert feats["compound_span"] == 1

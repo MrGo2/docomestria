@@ -69,7 +69,9 @@ def _has_real_colon(it: LiteItem, words: list[WordItem]) -> int:
     h_tol = 0.5 * ib.h
     right = ib.x + ib.w
     for w in words:
-        if ":" not in w.text:
+        if w.page != it.page:
+            continue
+        if w.text.strip() != ":":
             continue
         wb = w.bbox
         if abs((wb.y + wb.h / 2.0) - iy_c) > v_tol:
