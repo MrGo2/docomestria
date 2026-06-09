@@ -195,3 +195,31 @@ def test_walk_unknown_node_raises():
     import pytest
     with pytest.raises(ValueError):
         walk_structure([{"type": "frobnicate"}], spans=[])
+
+
+from docomestria.golden.training_table import noise_items
+
+
+def test_unmatched_atoms_become_noise():
+    spans = [
+        {"text": "Nombre", "bbox": {"x": 1, "y": 2, "w": 3, "h": 4},
+         "font_size": 10.0, "is_bold": True, "case_class": "Title"},
+        {"text": "JUNK WATERMARK", "bbox": {"x": 9, "y": 9, "w": 5, "h": 4},
+         "font_size": 7.0, "is_bold": False, "case_class": "UPPER"},
+    ]
+    # span 0 consumed by an annotated item; span 1 is unmatched background
+    consumed = {0}
+    annotated = [("Nombre", {"x": 1, "y": 2, "w": 3, "h": 4})]
+    noise = noise_items(spans, consumed, annotated)
+    assert len(noise) == 1
+    assert noise[0].role == "noise"
+    assert noise[0].text == "JUNK WATERMARK"
+    assert noise[0].signal["liteparse"]["span_id"] == 1
+
+
+def test_atom_matched_by_text_bbox_not_double_counted():
+    spans = [{"text": "Nombre", "bbox": {"x": 1, "y": 2, "w": 3, "h": 4},
+              "font_size": 10.0, "is_bold": True, "case_class": "Title"}]
+    # not in consumed set, but text+bbox match an annotated item -> NOT noise
+    annotated = [("Nombre", {"x": 1, "y": 2, "w": 3, "h": 4})]
+    assert noise_items(spans, set(), annotated) == []

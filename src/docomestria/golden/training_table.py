@@ -301,3 +301,40 @@ def walk_structure(structure: list, spans: list, path: str = "") -> list[Item]:
         else:
             raise ValueError(f"unknown structure node type {t!r} at {npath}")
     return items
+
+
+def noise_items(spans: list[dict], consumed_span_ids: set,
+                annotated: list[tuple[str, dict]],
+                min_overlap: float = 0.30) -> list[Item]:
+    """Every atoms span not consumed by an annotated item becomes a noise Item.
+
+    Double guard: a span is matched if its index is in consumed_span_ids OR its
+    text+bbox match any annotated (text, bbox) pair (covers items linked via
+    pdfplumber/docling but with no liteparse span_id).
+    """
+    ann = [(_norm(t), bb) for t, bb in annotated]
+    out: list[Item] = []
+    for i, sp in enumerate(spans):
+        if i in consumed_span_ids:
+            continue
+        spn = _norm(sp.get("text", ""))
+        matched = False
+        for tn, bb in ann:
+            if bb and _contains(tn, spn) and _overlap_frac(sp["bbox"], bb) >= min_overlap:
+                matched = True
+                break
+        if matched:
+            continue
+        sig = {
+            "text": sp.get("text", ""), "pdfplumber": None,
+            "liteparse": {"span_id": i, "bbox": sp["bbox"],
+                          "case_class": sp.get("case_class", ""),
+                          "is_bold": sp.get("is_bold", False),
+                          "font_size": sp.get("font_size", "")},
+            "docling": None, "rect": None, "colon_signal": None,
+            "engine_agreement": 1,
+        }
+        out.append(Item(text=sp.get("text", ""), role="noise",
+                        bbox=sp["bbox"], signal=sig,
+                        node_path=f"/atom[{i}]", source_node_type="atom"))
+    return out
