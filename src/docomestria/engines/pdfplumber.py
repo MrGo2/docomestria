@@ -11,7 +11,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from ..models import BBox, VisualRect
+from ..models import BBox, VisualRect, WordItem
 
 # Checkbox dimensions in PDF points.
 CHECKBOX_MIN_SIDE = 5.0
@@ -102,6 +102,41 @@ def _table_grid_from(table_obj: object) -> tuple[tuple[BBox, ...], ...]:
         if bboxes:
             grid.append(bboxes)
     return tuple(grid)
+
+
+def _words_from_page(raw_words: list[dict], page: int) -> list[WordItem]:
+    """Convert pdfplumber `page.extract_words()` dicts to WordItems (top-left origin)."""
+    out: list[WordItem] = []
+    for w in raw_words:
+        text = (w.get("text") or "").strip()
+        if not text:
+            continue
+        x0 = float(w["x0"]); x1 = float(w["x1"])
+        top = float(w["top"]); bottom = float(w["bottom"])
+        out.append(WordItem(text=text, bbox=BBox(x=x0, y=top, w=x1 - x0, h=bottom - top), page=page))
+    return out
+
+
+def extract_words(pdf_path: str | Path) -> list[WordItem]:
+    """Extract whitespace-delimited words with bboxes from every page."""
+    import pdfplumber  # type: ignore[import-not-found]
+
+    out: list[WordItem] = []
+    with pdfplumber.open(str(pdf_path)) as pdf:
+        for page_no, page in enumerate(pdf.pages, start=1):
+            out.extend(_words_from_page(page.extract_words() or [], page_no))
+    return out
+
+
+def extract_page_sizes(pdf_path: str | Path) -> dict[int, tuple[float, float]]:
+    """Map 1-based page number → (width_pt, height_pt)."""
+    import pdfplumber  # type: ignore[import-not-found]
+
+    sizes: dict[int, tuple[float, float]] = {}
+    with pdfplumber.open(str(pdf_path)) as pdf:
+        for page_no, page in enumerate(pdf.pages, start=1):
+            sizes[page_no] = (float(getattr(page, "width", 0.0)), float(getattr(page, "height", 0.0)))
+    return sizes
 
 
 def extract_visual_rects(pdf_path: str | Path) -> list[VisualRect]:
