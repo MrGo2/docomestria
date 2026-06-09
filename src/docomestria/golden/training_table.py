@@ -36,6 +36,9 @@ FIELDS = [
     # neighbour
     "is_centered", "gap_above", "gap_below",
     "font_ratio_vs_below", "bold_above_nonbold_below",
+    # docling-layout (enclosing block) + signature rect
+    "docling_label", "docling_heading_level",
+    "docling_content_layer", "rect_is_signature_field",
 ]
 
 _FLOAT_FIELDS = {

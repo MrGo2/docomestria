@@ -422,3 +422,16 @@ def test_find_enclosing_cell_walks_grid():
     other = {"label": "text", "bbox": {"x": 0.0, "y": 0.0, "w": 10.0, "h": 10.0}, "cells": None}
     cell = find_enclosing_cell(item, [other, table])
     assert cell["column_header"] is True
+
+
+# ---------------------------------------------------------------------------
+# Task 2 — new feature columns in FIELDS
+# ---------------------------------------------------------------------------
+def test_fields_has_new_docling_and_signature_columns():
+    from docomestria.golden.training_table import FIELDS
+    for col in ("docling_label", "docling_heading_level",
+                "docling_content_layer", "rect_is_signature_field"):
+        assert col in FIELDS
+    # appended at the end so existing column order is preserved
+    assert FIELDS[-4:] == ["docling_label", "docling_heading_level",
+                           "docling_content_layer", "rect_is_signature_field"]
