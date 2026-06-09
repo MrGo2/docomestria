@@ -501,6 +501,10 @@ def build_page_rows(golden: dict, atoms: dict):
              and isinstance(it.signal["liteparse"]["font_size"], (int, float))]
     median_font = statistics.median(fonts) if fonts else 0.0
 
+    _blocks = (atoms.get("atoms") or {}).get("blocks") or []
+    _rects = (atoms.get("atoms") or {}).get("rects") or []
+    _sig_bboxes = signature_rect_bboxes(_rects, ph)
+
     # build partial rows, attach normalised geometry
     partial = []
     for it in items:
@@ -513,6 +517,14 @@ def build_page_rows(golden: dict, atoms: dict):
             row["h"] = bb["h"] / ph
             cx = (bb["x"] + bb["w"] / 2) / pw
             row["is_centered"] = 1 if abs(cx - 0.5) <= _CENTER_TOL else 0
+            cx, cy = _bbox_center(bb)
+            blk = find_enclosing_block(bb, _blocks)
+            if blk is not None:
+                row["docling_label"] = blk.get("label") or ""
+                hl = blk.get("heading_level")
+                row["docling_heading_level"] = hl if hl is not None else ""
+                row["docling_content_layer"] = blk.get("content_layer") or ""
+            row["rect_is_signature_field"] = 1 if point_in_any_bbox(cx, cy, _sig_bboxes) else 0
         fs = row["font_size"]
         row["font_size_ratio"] = (fs / median_font) if (median_font and isinstance(fs, (int, float))) else ""
         partial.append((it, row))

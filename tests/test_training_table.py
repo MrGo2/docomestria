@@ -425,6 +425,55 @@ def test_find_enclosing_cell_walks_grid():
 
 
 # ---------------------------------------------------------------------------
+# Task 3 — populate new features in build_page_rows
+# ---------------------------------------------------------------------------
+def _atoms_two_spans_with_docling():
+    a = _atoms_two_spans()  # existing helper: spans for "Nº Modelo" / "F_AS-5"
+    a["atoms"]["blocks"] = [
+        # encloses the "Nº Modelo" key span (center ~ (90, 29))
+        {"label": "section_header", "content_layer": "body", "heading_level": 2,
+         "bbox": {"x": 50.0, "y": 20.0, "w": 80.0, "h": 14.0}, "cells": None},
+    ]
+    a["atoms"]["rects"] = [
+        # wide/short/bottom rect -> signature, encloses neither span (both near top)
+        {"bbox": {"x": 50.0, "y": 760.0, "w": 200.0, "h": 10.0}},
+    ]
+    return a
+
+
+def test_build_page_rows_populates_docling_block_features():
+    rows, _ = build_page_rows(_golden_with_two_kv(), _atoms_two_spans_with_docling())
+    key = {r["role"]: r for r in rows}["key"]   # "Nº Modelo"
+    assert key["docling_label"] == "section_header"
+    assert key["docling_heading_level"] == 2
+    assert key["docling_content_layer"] == "body"
+
+
+def test_build_page_rows_signature_rect_flag():
+    # add a span sitting inside the bottom signature rect
+    a = _atoms_two_spans_with_docling()
+    a["atoms"]["spans"].append(
+        {"text": "Firma del titular", "bbox": {"x": 60.0, "y": 762.0, "w": 90.0, "h": 8.0},
+         "font_size": 9.0, "is_bold": False, "case_class": "Title"})
+    g = _golden_with_two_kv()  # the new span is unannotated -> becomes a noise row
+    rows, _ = build_page_rows(g, a)
+    sig_rows = [r for r in rows if r["text"] == "Firma del titular"]
+    assert len(sig_rows) == 1
+    assert sig_rows[0]["rect_is_signature_field"] == 1
+    # the top key span is NOT in a signature rect
+    key = {r["role"]: r for r in rows if r["role"] == "key"}["key"]
+    assert key["rect_is_signature_field"] == 0
+
+
+def test_build_page_rows_no_blocks_key_is_safe():
+    # existing _atoms_two_spans() has no "blocks"/"rects" keys -> must not crash, cols empty
+    rows, _ = build_page_rows(_golden_with_two_kv(), _atoms_two_spans())
+    key = {r["role"]: r for r in rows}["key"]
+    assert key["docling_label"] == ""
+    assert key["rect_is_signature_field"] == 0
+
+
+# ---------------------------------------------------------------------------
 # Task 2 — new feature columns in FIELDS
 # ---------------------------------------------------------------------------
 def test_fields_has_new_docling_and_signature_columns():
