@@ -8,7 +8,13 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
+import sklearn
+from sklearn.ensemble import HistGradientBoostingClassifier
+from sklearn.inspection import permutation_importance
+from sklearn.metrics import classification_report, confusion_matrix, f1_score
+from sklearn.model_selection import GroupKFold
 from sklearn.preprocessing import OneHotEncoder
+from sklearn.utils.class_weight import compute_sample_weight
 
 LABEL_COL = "role"
 GROUP_COL = "pdf"
@@ -59,6 +65,54 @@ def docling_baseline_predict(train: pd.DataFrame, test: pd.DataFrame) -> tuple[l
         else:
             preds.append(label_to_role[lab])
     return preds, (fallback / len(test) if len(test) else 0.0)
+
+
+def _new_model(random_state: int) -> HistGradientBoostingClassifier:
+    return HistGradientBoostingClassifier(random_state=random_state)
+
+
+def evaluate_oof(df: pd.DataFrame, n_splits: int = 5, random_state: int = 0) -> dict:
+    """Dedup, then GroupKFold-by-pdf; collect pooled out-of-fold predictions for the model
+    and the Docling baseline; return a metrics dict (all computed on pooled OOF)."""
+    df, n_dropped = dedupe_text_role(df)
+    y = df[LABEL_COL].to_numpy()
+    groups = df[GROUP_COL].to_numpy()
+    labels = sorted(pd.unique(y).tolist())
+
+    oof_pred = np.empty(len(df), dtype=object)
+    base_pred = np.empty(len(df), dtype=object)
+    fallback_shares = []
+
+    gkf = GroupKFold(n_splits=n_splits)
+    for tr_idx, te_idx in gkf.split(df, y, groups):
+        tr, te = df.iloc[tr_idx], df.iloc[te_idx]
+        ohe = build_encoder(tr[FEATURE_COLS], NUMERIC_COLS, CATEGORICAL_COLS)
+        Xtr = encode_features(ohe, tr[FEATURE_COLS], NUMERIC_COLS, CATEGORICAL_COLS)
+        Xte = encode_features(ohe, te[FEATURE_COLS], NUMERIC_COLS, CATEGORICAL_COLS)
+        ytr = tr[LABEL_COL].to_numpy()
+        sw = compute_sample_weight("balanced", ytr)
+        model = _new_model(random_state)
+        model.fit(Xtr, ytr, sample_weight=sw)
+        oof_pred[te_idx] = model.predict(Xte)
+        bp, fb = docling_baseline_predict(tr, te)
+        base_pred[te_idx] = np.array(bp, dtype=object)
+        fallback_shares.append(fb)
+
+    report = classification_report(y, oof_pred, labels=labels,
+                                   output_dict=True, zero_division=0)
+    cm = confusion_matrix(y, oof_pred, labels=labels).tolist()
+    return {
+        "macro_f1": float(f1_score(y, oof_pred, labels=labels, average="macro", zero_division=0)),
+        "baseline_macro_f1": float(f1_score(y, base_pred, labels=labels, average="macro", zero_division=0)),
+        "baseline_fallback_share": float(np.mean(fallback_shares)),
+        "per_class": {lab: report[lab] for lab in labels},
+        "confusion": cm,
+        "labels": labels,
+        "oof_pred": oof_pred.tolist(),
+        "n_rows": len(df),
+        "n_dropped_dups": n_dropped,
+        "sklearn_version": sklearn.__version__,
+    }
 
 
 def build_encoder(train_X: pd.DataFrame, numeric: list[str], categorical: list[str]):

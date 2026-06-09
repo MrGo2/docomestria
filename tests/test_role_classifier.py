@@ -80,3 +80,54 @@ def test_encode_features_onehot_and_numeric_nan():
     assert np.isnan(Xte[0, 0])                    # numeric NaN preserved (first col = x)
     # unseen categories -> all-zero one-hot block (handle_unknown="ignore")
     assert Xte[0, 1:].sum() == 0.0
+
+
+from docomestria.training.role_classifier import evaluate_oof, FEATURE_COLS
+
+
+def _synthetic_dataset(n_pdfs=6, per_pdf=40):
+    # learnable signal: docling_label maps cleanly to role, plus a numeric separator
+    import itertools
+    roles = ["key", "value", "noise", "section_header"]
+    rows = []
+    for p in range(n_pdfs):
+        for i in range(per_pdf):
+            r = roles[i % len(roles)]
+            rows.append({
+                "pdf": f"PDF{p}", "text": f"t{p}_{i}", "role": r,
+                "x": 0.1 if r == "key" else 0.8, "y": (i % 10) / 10.0,
+                "font_size": 12.0 if r == "section_header" else 9.0,
+                "docling_label": {"key": "text", "value": "text",
+                                  "noise": "page_footer",
+                                  "section_header": "section_header"}[r],
+                "docling_content_layer": "furniture" if r == "noise" else "body",
+                "docling_heading_level": 1 if r == "section_header" else "",
+                # remaining feature cols default 0 (filled below)
+            })
+    df = pd.DataFrame(rows)
+    for c in FEATURE_COLS:
+        if c not in df.columns:
+            df[c] = 0
+    return df
+
+
+def test_evaluate_oof_returns_pooled_metrics_and_beats_nothing_gracefully():
+    df = _synthetic_dataset()
+    result = evaluate_oof(df, n_splits=3, random_state=0)
+    # required report keys
+    for k in ("macro_f1", "per_class", "confusion", "labels",
+              "baseline_macro_f1", "baseline_fallback_share",
+              "n_rows", "n_dropped_dups", "sklearn_version"):
+        assert k in result
+    # one OOF prediction per (deduped) row
+    assert len(result["oof_pred"]) == result["n_rows"]
+    # learnable synthetic data -> model should be strong
+    assert result["macro_f1"] > 0.8
+
+
+def test_evaluate_oof_is_deterministic():
+    df = _synthetic_dataset()
+    a = evaluate_oof(df, n_splits=3, random_state=0)
+    b = evaluate_oof(df, n_splits=3, random_state=0)
+    assert a["macro_f1"] == b["macro_f1"]
+    assert a["confusion"] == b["confusion"]
