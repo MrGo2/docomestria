@@ -104,3 +104,94 @@ def test_rederive_picks_the_overlapping_one_when_unambiguous():
                                   _SPANS)
     assert status == "resolved"
     assert sig["liteparse"]["span_id"] == 1
+
+
+from docomestria.golden.training_table import Item, walk_structure
+
+
+def _items_by_role(items):
+    out = {}
+    for it in items:
+        out.setdefault(it.role, []).append(it.text)
+    return out
+
+
+def test_walk_kv_group_emits_key_and_value_rows():
+    structure = [{
+        "type": "kv_group", "id": "titular",
+        "pairs": [{
+            "label": "Nombre", "value": "ADRIAN",
+            "label_bbox": {"x": 1, "y": 2, "w": 3, "h": 4},
+            "bbox": {"x": 5, "y": 2, "w": 3, "h": 4},
+            "evidence": {
+                "label": {"liteparse": {"span_id": 7, "bbox": {"x": 1, "y": 2, "w": 3, "h": 4},
+                          "case_class": "Title", "is_bold": True, "font_size": 10.0},
+                          "engine_agreement": 3},
+                "value": {"liteparse": {"span_id": 8, "bbox": {"x": 5, "y": 2, "w": 3, "h": 4},
+                          "case_class": "UPPER", "is_bold": False, "font_size": 10.0},
+                          "engine_agreement": 3},
+            },
+        }],
+    }]
+    items = walk_structure(structure, spans=[])
+    roles = _items_by_role(items)
+    assert roles["key"] == ["Nombre"]
+    assert roles["value"] == ["ADRIAN"]
+    # different span_ids -> not compound
+    assert all(it.compound_span == 0 for it in items)
+
+
+def test_walk_fused_span_sets_compound_on_both_rows():
+    # key and value resolve to the SAME liteparse span_id -> compound_span=1
+    structure = [{
+        "type": "kv_group", "id": "g",
+        "pairs": [{
+            "label": "Nº Modelo", "value": "F_AS-5",
+            "label_bbox": {"x": 1, "y": 2, "w": 9, "h": 4},
+            "bbox": {"x": 1, "y": 2, "w": 9, "h": 4},
+            "evidence": {
+                "label": {"liteparse": {"span_id": 4, "bbox": {"x": 1, "y": 2, "w": 9, "h": 4},
+                          "case_class": "Title", "is_bold": False, "font_size": 10.0}},
+                "value": {"liteparse": {"span_id": 4, "bbox": {"x": 1, "y": 2, "w": 9, "h": 4},
+                          "case_class": "Title", "is_bold": False, "font_size": 10.0}},
+            },
+        }],
+    }]
+    items = walk_structure(structure, spans=[])
+    assert all(it.compound_span == 1 for it in items)
+    # content features still differ per row (computed later from each item's text)
+    from docomestria.text_features import content_flags
+    assert content_flags("Nº Modelo")["digit_ratio"] == 0.0
+    assert content_flags("F_AS-5")["digit_ratio"] > 0.0
+
+
+def test_walk_table_maps_header_keycol_valuecol():
+    structure = [{
+        "type": "table", "id": "t1", "title": "Datos",
+        "columns": [{"id": "label", "label": "Concepto"},
+                    {"id": "value", "label": "Importe"}],
+        "rows": [{
+            "label": {"text": "Precio", "evidence": {"liteparse": None}, "bbox": {"x": 1, "y": 9, "w": 2, "h": 2}},
+            "value": {"text": "14.990,00", "evidence": {"liteparse": None}, "bbox": {"x": 4, "y": 9, "w": 2, "h": 2}},
+        }],
+    }]
+    items = walk_structure(structure, spans=[])
+    roles = _items_by_role(items)
+    assert "Precio" in roles["key"]
+    assert "14.990,00" in roles["value"]
+    # column header labels become table_header
+    assert "Concepto" in roles["table_header"] and "Importe" in roles["table_header"]
+
+
+def test_walk_noise_node():
+    structure = [{"type": "noise", "id": "n1", "text": "pág 1/24",
+                  "bbox": {"x": 1, "y": 1, "w": 2, "h": 2},
+                  "evidence": {"text_signal": {"liteparse": None, "engine_agreement": 1}}}]
+    items = walk_structure(structure, spans=[])
+    assert items[0].role == "noise" and items[0].text == "pág 1/24"
+
+
+def test_walk_unknown_node_raises():
+    import pytest
+    with pytest.raises(ValueError):
+        walk_structure([{"type": "frobnicate"}], spans=[])

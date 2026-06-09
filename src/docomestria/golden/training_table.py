@@ -165,3 +165,139 @@ def rederive_signal(text: str, bbox: dict | None, spans: list[dict],
         "engine_agreement": 1,
     }
     return sig, "resolved"
+
+
+@dataclass
+class Item:
+    text: str
+    role: str
+    bbox: dict | None
+    signal: dict | None          # golden signal dict, or None (-> rederive)
+    node_path: str
+    source_node_type: str
+    in_table: int = 0
+    table_id: str = ""
+    row_idx: str = ""
+    col_id: str = ""
+    compound_span: int = 0
+    pair_id: str = ""           # links a key+value emitted from the same pair
+    # filled later in build_page_rows:
+    unresolved: int = 0
+
+
+def _as_signal(ev) -> dict | None:
+    """Normalise the many evidence shapes to a single leaf signal dict (or None).
+
+    Known shapes:
+      - already a signal: has 'liteparse'/'pdfplumber'/'docling' keys
+      - wrapped: {'text_signal': <signal>} or {'title_signal': <signal>}
+      - kv_group split: {'label': <signal>, 'value': <signal>} (handled by caller)
+      - structural-only ({'path': ...}) -> no leaf signal -> None
+    """
+    if not isinstance(ev, dict):
+        return None
+    if any(k in ev for k in ("liteparse", "pdfplumber", "docling")):
+        return ev
+    for k in ("text_signal", "title_signal", "label_signal", "container_signal"):
+        if isinstance(ev.get(k), dict):
+            return ev[k]
+    return None
+
+
+_VALUE_ROLES = {"value"}
+_KNOWN = {"section", "kv_group", "kv_leaf", "kv_pair", "table",
+          "prose_block", "free_text_list", "signature_placeholder", "noise"}
+
+
+def _emit_pair(pair, path, items):
+    """kv_group pair / kv_leaf-style: emit key + value items, detect compound."""
+    ev = pair.get("evidence") or {}
+    lab_sig = _as_signal(ev.get("label")) if isinstance(ev.get("label"), dict) else None
+    val_sig = _as_signal(ev.get("value")) if isinstance(ev.get("value"), dict) else _as_signal(ev)
+    key = Item(text=pair.get("label", ""), role="key",
+               bbox=pair.get("label_bbox"), signal=lab_sig,
+               node_path=path + ".key", source_node_type="kv", pair_id=path)
+    val = Item(text=pair.get("value", ""), role="value",
+               bbox=pair.get("bbox"), signal=val_sig,
+               node_path=path + ".value", source_node_type="kv", pair_id=path)
+    # initial compound detection (both signals present); recomputed in
+    # build_page_rows after rederive resolves label-only keys.
+    ks = ((lab_sig or {}).get("liteparse") or {}).get("span_id") if lab_sig else None
+    vs = ((val_sig or {}).get("liteparse") or {}).get("span_id") if val_sig else None
+    if ks is not None and ks == vs:
+        key.compound_span = val.compound_span = 1
+    items.append(key)
+    items.append(val)
+
+
+def walk_structure(structure: list, spans: list, path: str = "") -> list[Item]:
+    items: list[Item] = []
+    for i, node in enumerate(structure or []):
+        t = node.get("type")
+        npath = f"{path}/{t}[{node.get('id', i)}]"
+        if t == "section":
+            items.append(Item(text=node.get("title", ""), role="section_header",
+                              bbox=node.get("title_bbox"),
+                              signal=_as_signal(node.get("evidence")),
+                              node_path=npath + ".title",
+                              source_node_type="section"))
+            items += walk_structure(node.get("children", []), spans, npath)
+        elif t == "kv_group":
+            for j, pair in enumerate(node.get("pairs", [])):
+                _emit_pair(pair, f"{npath}/pair[{j}]", items)
+        elif t in ("kv_leaf", "kv_pair"):
+            _emit_pair(node, npath, items)
+        elif t == "table":
+            if node.get("title"):
+                items.append(Item(text=node["title"], role="section_header",
+                                  bbox=node.get("title_bbox"),
+                                  signal=_as_signal(node.get("evidence")),
+                                  node_path=npath + ".title",
+                                  source_node_type="table"))
+            cols = node.get("columns", [])
+            key_col = cols[0]["id"] if cols else "label"
+            for c in cols:
+                if c.get("label"):
+                    items.append(Item(text=c["label"], role="table_header",
+                                      bbox=None, signal=None,
+                                      node_path=f"{npath}/col[{c['id']}].header",
+                                      source_node_type="table", in_table=1,
+                                      table_id=str(node.get("id", "")), col_id=str(c["id"])))
+            for r, row in enumerate(node.get("rows", [])):
+                for c in cols:
+                    cell = row.get(c["id"])
+                    if not isinstance(cell, dict) or not cell.get("text"):
+                        continue
+                    role = "key" if c["id"] == key_col else "value"
+                    items.append(Item(text=cell["text"], role=role,
+                                      bbox=cell.get("bbox"),
+                                      signal=_as_signal(cell.get("evidence")),
+                                      node_path=f"{npath}/row[{r}].{c['id']}",
+                                      source_node_type="table", in_table=1,
+                                      table_id=str(node.get("id", "")),
+                                      row_idx=str(r), col_id=str(c["id"])))
+        elif t == "prose_block":
+            items.append(Item(text=node.get("text", ""), role="prose",
+                              bbox=node.get("bbox"),
+                              signal=_as_signal(node.get("evidence")),
+                              node_path=npath, source_node_type="prose_block"))
+        elif t == "free_text_list":
+            for j, it in enumerate(node.get("items", [])):
+                items.append(Item(text=it.get("text", ""), role="prose",
+                                  bbox=it.get("bbox"),
+                                  signal=_as_signal(it.get("evidence")),
+                                  node_path=f"{npath}/item[{j}]",
+                                  source_node_type="free_text_list"))
+        elif t == "signature_placeholder":
+            items.append(Item(text=node.get("text", ""), role="signature",
+                              bbox=node.get("bbox"),
+                              signal=_as_signal(node.get("evidence")),
+                              node_path=npath, source_node_type="signature_placeholder"))
+        elif t == "noise":
+            items.append(Item(text=node.get("text", ""), role="noise",
+                              bbox=node.get("bbox"),
+                              signal=_as_signal(node.get("evidence")),
+                              node_path=npath, source_node_type="noise"))
+        else:
+            raise ValueError(f"unknown structure node type {t!r} at {npath}")
+    return items
