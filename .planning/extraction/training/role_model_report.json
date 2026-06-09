@@ -76,7 +76,6 @@
     "value"
   ],
   "macro_f1": 0.8799016302278007,
-  "n_dropped_dups": 0,
   "n_rows": 4668,
   "per_class": {
     "key": {

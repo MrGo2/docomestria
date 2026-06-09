@@ -106,9 +106,9 @@ def test_evaluate_oof_returns_pooled_metrics_and_beats_nothing_gracefully():
     # required report keys
     for k in ("macro_f1", "per_class", "confusion", "labels",
               "baseline_macro_f1", "baseline_fallback_share",
-              "n_rows", "n_dropped_dups", "sklearn_version"):
+              "n_rows", "sklearn_version"):
         assert k in result
-    # one OOF prediction per (deduped) row
+    # one OOF prediction per row
     assert len(result["oof_pred"]) == result["n_rows"]
     # learnable synthetic data -> model should be strong
     assert result["macro_f1"] > 0.8
@@ -152,12 +152,13 @@ def test_render_report_md_contains_headline_and_table():
         "macro_f1": 0.83, "baseline_macro_f1": 0.71, "baseline_fallback_share": 0.12,
         "per_class": {"key": {"precision": 0.9, "recall": 0.8, "f1-score": 0.85, "support": 100}},
         "confusion": [[10]], "labels": ["key"], "oof_pred": ["key"],
-        "n_rows": 1, "n_dropped_dups": 3, "sklearn_version": "1.5.0",
+        "n_rows": 1, "sklearn_version": "1.5.0",
     }
     imps = [("docling_label_section_header", 0.21), ("ends_colon", 0.05)]
     md = render_report_md(result, imps)
     assert "Macro-F1" in md and "0.83" in md
     assert "vs Docling baseline" in md and "0.71" in md
+    assert "dedup: disabled" in md
     assert "docling_label_section_header" in md
     assert "key" in md   # per-class row
 

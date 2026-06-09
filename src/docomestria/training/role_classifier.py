@@ -69,7 +69,6 @@ def evaluate_oof(df: pd.DataFrame, n_splits: int = 5, random_state: int = 0) -> 
     Docling baseline; return a metrics dict (all computed on pooled OOF). No (text,role)
     dedup — leakage is prevented by GroupKFold-by-pdf alone (per user decision)."""
     df = df.reset_index(drop=True)
-    n_dropped = 0
     y = df[LABEL_COL].to_numpy()
     groups = df[GROUP_COL].to_numpy()
     labels = sorted(pd.unique(y).tolist())
@@ -105,7 +104,6 @@ def evaluate_oof(df: pd.DataFrame, n_splits: int = 5, random_state: int = 0) -> 
         "labels": labels,
         "oof_pred": oof_pred.tolist(),
         "n_rows": len(df),
-        "n_dropped_dups": n_dropped,
         "sklearn_version": sklearn.__version__,
     }
 
@@ -175,7 +173,7 @@ def render_report_md(result: dict, importances: list[tuple[str, float]]) -> str:
         f"- **Macro-F1 (pooled OOF):** {result['macro_f1']:.4f}",
         f"- **vs Docling baseline:** {result['baseline_macro_f1']:.4f} "
         f"(delta {delta:+.4f}, fallback share {result['baseline_fallback_share']:.3f})",
-        f"- Rows: {result['n_rows']} (dropped {result['n_dropped_dups']} dup text/role) "
+        f"- Rows: {result['n_rows']} (dedup: disabled (GroupKFold-by-pdf)) "
         f"| sklearn {result['sklearn_version']}",
         "", "## Per-class", "", "| role | precision | recall | f1 | support |",
         "|---|---|---|---|---|",

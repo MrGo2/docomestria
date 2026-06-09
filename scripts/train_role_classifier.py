@@ -48,7 +48,7 @@ def main() -> int:
     print(f"macro-F1={result['macro_f1']:.4f}  "
           f"baseline={result['baseline_macro_f1']:.4f}  "
           f"delta={result['macro_f1'] - result['baseline_macro_f1']:+.4f}  "
-          f"rows={result['n_rows']} (dropped {result['n_dropped_dups']})")
+          f"rows={result['n_rows']} (dedup disabled)")
     return 0
 
 

@@ -2,7 +2,7 @@
 
 - **Macro-F1 (pooled OOF):** 0.8799
 - **vs Docling baseline:** 0.1627 (delta +0.7172, fallback share 0.112)
-- Rows: 4668 (dropped 0 dup text/role) | sklearn 1.8.0
+- Rows: 4668 (dedup: disabled (GroupKFold-by-pdf)) | sklearn 1.8.0
 
 ## Per-class
 
