@@ -293,6 +293,33 @@ def _is_shadow_duplicate(
     return False
 
 
+def _is_false_positive_plumber_table(t: _TableLike) -> bool:
+    """Suppress pdfplumber-only tables that are prose boxes or signature furniture.
+
+    Genuine tables are source='fused'/'docling' (Docling-matched) and never reach
+    the pdfplumber-only append path, so they are unaffected. Among pdfplumber-only
+    tables, three signals each independently mark a false positive:
+      1. cols == 1   — a single-column pdfplumber 'table' is a clause/policy text box.
+      2. '@$FIRMATAG' present — a signature placeholder block, not data.
+      3. empty_ratio >= 0.45 — signature furniture has a structurally blank column.
+         (The genuine sparse 14x2 form sits at 0.11; threshold leaves a wide gap.)
+    """
+    if t.source != "pdfplumber":
+        return False
+    if not t.cells:
+        return False
+    cols = max((len(r) for r in t.cells), default=0)
+    if cols == 1:
+        return True
+    if any("@$FIRMATAG" in (c or "") for r in t.cells for c in r):
+        return True
+    total = sum(len(r) for r in t.cells)
+    if total == 0:
+        return False
+    empty = sum(1 for r in t.cells for c in r if not (c or "").strip())
+    return empty / total >= 0.45
+
+
 def _drop_off_page_rects(
     plumber_tl: list[_TableLike],
     docling_blocks: Iterable[DoclingBlock],
@@ -373,6 +400,8 @@ def detect_tables(
         if i in matched_plumber:
             continue
         if _is_shadow_duplicate(p, fused):
+            continue
+        if _is_false_positive_plumber_table(p):
             continue
         fused.append(p)
 
