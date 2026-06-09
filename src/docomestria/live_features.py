@@ -66,7 +66,8 @@ def _has_real_colon(it: LiteItem, words: list[WordItem]) -> int:
     ib = it.bbox
     iy_c = ib.y + ib.h / 2.0
     v_tol = 0.5 * ib.h
-    h_tol = 0.5 * ib.h
+    # horizontal window around the item's right edge (scaled by line-height)
+    x_tol = 0.5 * ib.h
     right = ib.x + ib.w
     for w in words:
         if w.page != it.page:
@@ -76,22 +77,13 @@ def _has_real_colon(it: LiteItem, words: list[WordItem]) -> int:
         wb = w.bbox
         if abs((wb.y + wb.h / 2.0) - iy_c) > v_tol:
             continue
-        if right - h_tol <= wb.x <= right + h_tol:
+        if right - x_tol <= wb.x <= right + x_tol:
             return 1
     return 0
 
 
 def _any_word_overlaps(it: LiteItem, words: list[WordItem]) -> bool:
-    a = _bbox_to_dict(it.bbox)
-    for w in words:
-        if w.page != it.page:
-            continue
-        b = _bbox_to_dict(w.bbox)
-        ix = max(0.0, min(a["x"] + a["w"], b["x"] + b["w"]) - max(a["x"], b["x"]))
-        iy = max(0.0, min(a["y"] + a["h"], b["y"] + b["h"]) - max(a["y"], b["y"]))
-        if ix * iy > 0:
-            return True
-    return False
+    return any(w.page == it.page and it.bbox.iou(w.bbox) > 0 for w in words)
 
 
 def _center_in_signature_rect(it: LiteItem, rects: list[VisualRect]) -> bool:
@@ -111,9 +103,9 @@ def _engine_features(
     blocks: list[DoclingBlock],
     rects: list[VisualRect],
     words: list[WordItem],
-) -> dict:
+) -> dict[str, int | str]:
     """Engine-match feature subset for one LiteItem."""
-    feats: dict = {}
+    feats: dict[str, int | str] = {}
 
     # Docling block (sort by area ascending so "first containing" = smallest)
     sorted_blocks = sorted(blocks, key=lambda b: b.bbox.area)
@@ -153,6 +145,7 @@ def _engine_features(
 
     feats["rect_is_signature_field"] = 1 if _center_in_signature_rect(it, rects) else 0
 
+    # live-uncomputable 0.0-importance columns: constant 0 to keep the FIELDS schema intact (NOT a stub)
     feats["docling_column_header"] = 0
     feats["docling_row_header"] = 0
 

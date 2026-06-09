@@ -114,6 +114,29 @@ def test_engine_features_word_containing_colon_is_not_a_detached_colon():
     assert feats["colon_present"] == 0
 
 
+def test_engine_features_table_cell_sets_in_table_and_inside_rect():
+    it = _item(text="Adrian", x=60.0, y=120.0, w=40.0, h=12.0)  # centroid (80, 126)
+    grid = (
+        (BBox(x=50.0, y=100.0, w=50.0, h=30.0), BBox(x=100.0, y=100.0, w=50.0, h=30.0)),
+        (BBox(x=50.0, y=130.0, w=50.0, h=30.0), BBox(x=100.0, y=130.0, w=50.0, h=30.0)),
+    )
+    table = VisualRect(
+        bbox=BBox(x=50.0, y=100.0, w=100.0, h=60.0),
+        is_checkbox=False,
+        is_filled=False,
+        page=1,
+        rect_id="t0",
+        rect_type="table",
+        table_grid=grid,
+    )
+    feats = _engine_features(it, blocks=[], rects=[table], words=[])
+    assert feats["in_table"] == 1
+    assert feats["inside_rect"] == 1
+    assert feats["table_id"] == "t0"
+    assert feats["row_idx"] == "0"
+    assert feats["col_id"] == "0"
+
+
 def test_engine_features_compound_span_interior_colon():
     feats = _engine_features(_item(text="Nombre: Adrian"), blocks=[], rects=[], words=[])
     assert feats["compound_span"] == 1
