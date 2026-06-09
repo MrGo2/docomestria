@@ -368,3 +368,57 @@ def test_build_page_rows_font_ratio_empty_when_no_fonts():
     prose = [r for r in rows if r["role"] == "prose"][0]
     assert prose["font_size"] == ""
     assert prose["font_size_ratio"] == ""
+
+
+# ---------------------------------------------------------------------------
+# Task 1 — pure bbox-join helpers
+# ---------------------------------------------------------------------------
+from docomestria.golden.training_table import (
+    _bbox_center, _point_in_bbox, find_enclosing_block,
+    signature_rect_bboxes, point_in_any_bbox, find_enclosing_cell,
+)
+
+
+def test_bbox_center():
+    assert _bbox_center({"x": 10.0, "y": 20.0, "w": 4.0, "h": 6.0}) == (12.0, 23.0)
+
+
+def test_point_in_bbox():
+    bb = {"x": 0.0, "y": 0.0, "w": 10.0, "h": 10.0}
+    assert _point_in_bbox(5.0, 5.0, bb) is True
+    assert _point_in_bbox(10.0, 10.0, bb) is True   # inclusive edge
+    assert _point_in_bbox(11.0, 5.0, bb) is False
+
+
+def test_find_enclosing_block_picks_smallest_area():
+    item = {"x": 5.0, "y": 5.0, "w": 1.0, "h": 1.0}   # center (5.5, 5.5)
+    big = {"label": "text", "bbox": {"x": 0.0, "y": 0.0, "w": 100.0, "h": 100.0}}
+    small = {"label": "section_header", "bbox": {"x": 4.0, "y": 4.0, "w": 4.0, "h": 4.0}}
+    blocks = [big, small]
+    assert find_enclosing_block(item, blocks) is small
+
+
+def test_find_enclosing_block_none_when_outside():
+    item = {"x": 500.0, "y": 500.0, "w": 1.0, "h": 1.0}
+    blocks = [{"label": "text", "bbox": {"x": 0.0, "y": 0.0, "w": 10.0, "h": 10.0}}]
+    assert find_enclosing_block(item, blocks) is None
+
+
+def test_signature_rect_bboxes_filters_by_geometry():
+    rects = [
+        {"bbox": {"x": 50.0, "y": 760.0, "w": 120.0, "h": 10.0}},   # wide, short, bottom -> sig
+        {"bbox": {"x": 50.0, "y": 100.0, "w": 120.0, "h": 10.0}},   # top -> not sig
+        {"bbox": {"x": 50.0, "y": 760.0, "w": 40.0, "h": 10.0}},    # too narrow -> not sig
+    ]
+    out = signature_rect_bboxes(rects, page_h=800.0)
+    assert out == [{"x": 50.0, "y": 760.0, "w": 120.0, "h": 10.0}]
+
+
+def test_find_enclosing_cell_walks_grid():
+    item = {"x": 35.0, "y": 165.0, "w": 2.0, "h": 2.0}   # center (36,166)
+    table = {"label": "table", "bbox": {"x": 0.0, "y": 0.0, "w": 600.0, "h": 800.0},
+             "cells": [[{"bbox": {"x": 33.0, "y": 163.0, "w": 83.0, "h": 7.5},
+                         "column_header": True, "row_header": False}]]}
+    other = {"label": "text", "bbox": {"x": 0.0, "y": 0.0, "w": 10.0, "h": 10.0}, "cells": None}
+    cell = find_enclosing_cell(item, [other, table])
+    assert cell["column_header"] is True

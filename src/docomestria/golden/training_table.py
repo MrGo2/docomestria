@@ -11,6 +11,7 @@ from dataclasses import dataclass
 
 from docomestria.golden.engine_data import _norm, _contains
 from docomestria.text_features import content_flags
+from docomestria.engines.pdfplumber import _is_signature
 
 # Fixed column order. Provenance first, then label, then the feature vector.
 FIELDS = [
@@ -126,6 +127,60 @@ def _overlap_frac(a: dict, b: dict) -> float:
         return 0.0
     amin = min(a["w"] * a["h"], b["w"] * b["h"]) or 1.0
     return inter / amin
+
+
+def _bbox_center(bb: dict) -> tuple[float, float]:
+    return (bb["x"] + bb["w"] / 2.0, bb["y"] + bb["h"] / 2.0)
+
+
+def _point_in_bbox(px: float, py: float, bb: dict) -> bool:
+    return (bb["x"] <= px <= bb["x"] + bb["w"]
+            and bb["y"] <= py <= bb["y"] + bb["h"])
+
+
+def find_enclosing_block(item_bbox: dict, blocks: list[dict]) -> dict | None:
+    """Smallest-area Docling block whose bbox contains the item's center. None if outside all."""
+    cx, cy = _bbox_center(item_bbox)
+    best = None
+    best_area = None
+    for b in blocks:
+        bb = b.get("bbox")
+        if not bb or not _point_in_bbox(cx, cy, bb):
+            continue
+        area = bb["w"] * bb["h"]
+        if best_area is None or area < best_area:
+            best, best_area = b, area
+    return best
+
+
+def signature_rect_bboxes(rects: list[dict], page_h: float) -> list[dict]:
+    """Bboxes of rects classified as signature fields (wide, short, bottom-of-page)."""
+    out = []
+    for r in rects:
+        bb = r.get("bbox")
+        if not bb:
+            continue
+        if _is_signature(bb["w"], bb["h"], bb["y"], page_h):
+            out.append(bb)
+    return out
+
+
+def point_in_any_bbox(px: float, py: float, bboxes: list[dict]) -> bool:
+    return any(_point_in_bbox(px, py, bb) for bb in bboxes)
+
+
+def find_enclosing_cell(item_bbox: dict, blocks: list[dict]) -> dict | None:
+    """First Docling table cell whose bbox contains the item's center. None if not in a table cell."""
+    cx, cy = _bbox_center(item_bbox)
+    for b in blocks:
+        if b.get("label") != "table" or not b.get("cells"):
+            continue
+        for row in b["cells"]:
+            for cell in row:
+                cb = cell.get("bbox")
+                if cb and _point_in_bbox(cx, cy, cb):
+                    return cell
+    return None
 
 
 def rederive_signal(text: str, bbox: dict | None, spans: list[dict],
