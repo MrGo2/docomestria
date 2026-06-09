@@ -37,49 +37,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
-
-_NUM_TOKEN = re.compile(r"\b\d[\d.,/\-]*\b")
-_CURRENCY = re.compile(r"[€$£¥]|euros?")
-_DATE = re.compile(r"\b\d{1,2}[-/]\d{1,2}[-/]\d{2,4}\b")
-_PERCENT = re.compile(r"\d[\d.,]*\s*%")
-_IBAN = re.compile(r"\b[A-Z]{2}\d{2}[\d ]{15,}\b")
-_NIF = re.compile(r"\b\d{8}[A-Z]\b|\b[A-Z]\d{8}\b")
-
-
-def _case_class(text: str) -> str:
-    letters = [c for c in text if c.isalpha()]
-    if not letters:
-        return "none"
-    up = sum(1 for c in letters if c.isupper())
-    lo = sum(1 for c in letters if c.islower())
-    if up / len(letters) >= 0.80:
-        return "UPPER"
-    if lo / len(letters) >= 0.80:
-        return "lower"
-    words = [w for w in text.split() if any(ch.isalpha() for ch in w)]
-    if words:
-        starts_upper = sum(
-            1 for w in words
-            if next((c for c in w if c.isalpha()), "").isupper()
-        )
-        if starts_upper / len(words) >= 0.70:
-            return "Title"
-    return "mixed"
-
-
-def _content_flags(text: str) -> dict:
-    return {
-        "digit_ratio": sum(c.isdigit() for c in text) / max(1, len(text)),
-        "has_currency": bool(_CURRENCY.search(text)),
-        "has_date": bool(_DATE.search(text)),
-        "has_percent": bool(_PERCENT.search(text)),
-        "has_iban": bool(_IBAN.search(text)),
-        "has_nif": bool(_NIF.search(text)),
-        "starts_paren": text.startswith("("),
-        "ends_colon": text.rstrip().endswith(":"),
-        "n_numeric_tokens": len(_NUM_TOKEN.findall(text)),
-        "len_chars": len(text),
-    }
+from docomestria.text_features import case_class as _case_class, content_flags as _content_flags
 
 
 def collect_liteparse(pdf_path: Path, page_num: int) -> list[dict]:
