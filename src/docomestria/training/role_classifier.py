@@ -40,3 +40,20 @@ def dedupe_text_role(df: pd.DataFrame) -> tuple[pd.DataFrame, int]:
     before = len(df)
     out = df.drop_duplicates(subset=["text", LABEL_COL], keep="first").reset_index(drop=True)
     return out, before - len(out)
+
+
+def docling_baseline_predict(train: pd.DataFrame, test: pd.DataFrame) -> tuple[list, float]:
+    """Predict role = train-fold majority role per docling_label; missing/unseen -> global
+    train majority. Returns (predictions, share_of_test_rows_using_fallback)."""
+    global_majority = train[LABEL_COL].mode().iloc[0]
+    label_to_role = {}
+    for lab, grp in train.groupby(train["docling_label"], dropna=True):
+        label_to_role[lab] = grp[LABEL_COL].mode().iloc[0]
+    preds, fallback = [], 0
+    for lab in test["docling_label"]:
+        if pd.isna(lab) or lab not in label_to_role:
+            preds.append(global_majority)
+            fallback += 1
+        else:
+            preds.append(label_to_role[lab])
+    return preds, (fallback / len(test) if len(test) else 0.0)

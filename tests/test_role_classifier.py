@@ -34,3 +34,27 @@ def test_load_dataset_reads_empty_as_nan(tmp_path):
     p.write_text("pdf,text,role,x,docling_label\nA,Foo,key,,text\n", encoding="utf-8")
     df = load_dataset(p)
     assert pd.isna(df.loc[0, "x"])
+
+
+from docomestria.training.role_classifier import docling_baseline_predict
+
+
+def test_docling_baseline_majority_and_fallback():
+    train = pd.DataFrame([
+        {"docling_label": "section_header", "role": "section_header"},
+        {"docling_label": "section_header", "role": "section_header"},
+        {"docling_label": "text", "role": "prose"},
+        {"docling_label": "text", "role": "key"},
+        {"docling_label": "text", "role": "prose"},   # text -> prose majority
+        {"docling_label": None, "role": "noise"},
+        {"docling_label": None, "role": "noise"},      # global majority -> noise
+    ])
+    test = pd.DataFrame([
+        {"docling_label": "section_header"},   # -> section_header
+        {"docling_label": "text"},             # -> prose
+        {"docling_label": None},               # missing -> global majority (noise)
+        {"docling_label": "caption"},          # unseen -> global majority (noise)
+    ])
+    preds, fallback_share = docling_baseline_predict(train, test)
+    assert list(preds) == ["section_header", "prose", "noise", "noise"]
+    assert abs(fallback_share - 0.5) < 1e-9   # 2 of 4 test rows hit fallback
