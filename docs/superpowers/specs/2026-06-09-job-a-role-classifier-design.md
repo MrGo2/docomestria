@@ -55,21 +55,26 @@ wiring it into `classify.py` is Job-A phase 2.
 
 ## 3. The Data
 
-- **File:** `.planning/extraction/training/role_table.csv` — 4 668 rows × 45 cols, built
-  deterministically by `python3 scripts/build_training_table.py` from 46 golden pages.
+- **File:** `.planning/extraction/training/role_table.csv` — 4 668 data rows × 45 cols,
+  built deterministically by `python3 scripts/build_training_table.py`. The current table is
+  drawn from the **46 structure-format goldens**; 20 legacy goldens are skipped
+  (`build_training_table.py:47-49`) and are being re-scaffolded separately (46→66, Section 8).
 - **Label column:** `role` ∈ {`section_header`, `key`, `value`, `table_header`, `prose`,
   `signature`, `noise`}.
 - **Class histogram (imbalanced):** noise 2296 (49%), key 908, value 907, section_header 214,
   prose 173, table_header 139, signature 31.
 - **Provenance columns — EXCLUDED from features** (leak the answer or aren't real signals):
   `pdf, page, text, node_path, source_node_type, in_table, table_id, row_idx, col_id`.
-  `pdf` is retained as the **grouping key** for the train/test split (Section 5).
-- **Current feature columns (X):** geometry `x,y,w,h`; typography `font_size,
-  font_size_ratio, is_bold, case_upper/lower/title/mixed`; content `digit_ratio, has_currency/
-  date/iban/nif/percent, ends_colon, len_chars, n_numeric_tokens`; context `inside_rect,
-  colon_present, engine_agreement, pdfplumber/liteparse/docling_present,
-  docling_column/row_header, compound_span`; neighbour `is_centered, gap_above, gap_below,
-  font_ratio_vs_below, bold_above_nonbold_below`.
+  `pdf` is retained as the **grouping key** for the train/test split (Section 5); `text` is
+  retained for the cross-PDF dedup guard (Section 5).
+- **Current feature columns (X) — verbatim from the CSV header** (35 cols; the
+  authoritative source is `FIELDS` in `training_table.py:16-38`):
+  `x, y, w, h, font_size, font_size_ratio, is_bold, case_upper, case_lower, case_title,
+  case_mixed, digit_ratio, has_currency, has_date, has_percent, has_iban, has_nif,
+  starts_paren, ends_colon, n_numeric_tokens, len_chars, inside_rect, colon_present,
+  engine_agreement, pdfplumber_present, liteparse_present, docling_present,
+  docling_column_header, docling_row_header, compound_span, is_centered, gap_above,
+  gap_below, font_ratio_vs_below, bold_above_nonbold_below`.
 - **Missing values:** empty string `""` (read as NaN). ~56 keys have no typography
   (`liteparse_present=0`); many rows have empty neighbour/font features. The model must
   tolerate NaN (Section 5 model choice does, natively).
@@ -92,16 +97,27 @@ across 69 files / 2903 Docling blocks:
 - Block fields: `label, content_layer, bbox, text, formatting, heading_level, self_ref, cells`.
 
 ### Features to add
-Capture each via a **bbox join** — match every item to its enclosing Docling block using the
-existing helper `find_enclosing_docling_block` (`src/docomestria/structural/engine_data.py`).
-No new extraction.
+Capture each via a **bbox-containment join over cached atoms** — for every item, find the
+Docling block whose `bbox` encloses it and copy the fields below. **Do NOT use
+`find_enclosing_docling_block`**: it lives at `src/docomestria/golden/engine_data.py:385` as
+a method on `EngineData`, whose `__init__` re-opens the PDF via pdfplumber
+(`engine_data.py:64`) — that would break the "no engine re-run" guarantee. Instead, add a
+**pure containment helper** inside the builder that walks `atoms["atoms"]["blocks"]` (each
+block already carries `bbox, label, content_layer, heading_level`). No PDF open, no engine call.
 
-| New column | Source | Encoding | Why |
+| New column | Source (cached atoms) | Encoding | Why |
 |---|---|---|---|
-| `docling_label` | `block.label` | categorical (one-hot or ordinal) | Near-twin of the target — `page_footer`→noise, `section_header`→section_header, `list_item`/`text`→prose |
+| `docling_label` | `block.label` | categorical (ordinal-encoded, Section 5) | Near-twin of the target — `page_footer`→noise, `section_header`→section_header, `list_item`/`text`→prose |
 | `docling_heading_level` | `block.heading_level` | integer, NaN if absent | Separates headers + encodes hierarchy depth |
 | `docling_content_layer` | `block.content_layer` | categorical (body/furniture) | `furniture` = headers/footers/marginalia → noise |
-| `rect_is_signature_field` | pdfplumber rect classification (`engines/pdfplumber.py`) | boolean | Tall-thin bottom-of-page rect ≈ direct `signature` oracle |
+| `rect_is_signature_field` | re-run pure `_is_signature(w,h,top,page_h)` over cached atom rects | boolean | Tall-thin bottom-of-page rect ≈ direct `signature` oracle |
+
+**Note on `rect_is_signature_field`:** the signature classification is *not* persisted in the
+atoms cache (atoms `rects[]` carry only raw geometry + `is_substantial`/`is_checkbox_size`/
+`fill_color`/`stroke_color`). The classifier `_is_signature` (`engines/pdfplumber.py:37-42`)
+is a **pure function of `(w, h, top, page_h)`** — re-run it inside the builder over each
+cached rect's geometry (`page_h` is available from `page_size_pt` in the atoms top level). No
+pdfplumber re-open; just copy the ~5-line predicate or import it if it's import-safe.
 
 ### Silent-zero bug to fix (same pass)
 `docling_column_header` / `docling_row_header` are currently **forced to 0** for re-derived
@@ -132,38 +148,67 @@ we agreed the model ships into `classify.py` as a model object, not into `scorin
 constants. (A logistic baseline may be added later purely for a directional-story readout if
 desired — not in the first run.)
 
+### Categorical encoding contract (required — HGB will error without it)
+`docling_label` and `docling_content_layer` are **categorical strings**; passing raw
+object-dtype to HGB raises. Encode with
+`OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1)` fit **on the train fold
+only**, and pass their column indices via HGB's `categorical_features=[...]`. The
+`unknown_value=-1` policy handles a category that appears only in a test fold under GroupKFold
+(e.g. `caption`=6, `table`=15 blocks corpus-wide). Numeric columns keep their `""`→NaN parse
+(HGB handles numeric NaN natively); `docling_heading_level` stays numeric with NaN-when-absent.
+
 ### Baseline to beat
-**Raw Docling-label → role majority map.** Compute, on the training folds, the most-common
-`role` for each `docling_label` value; predict that on the test fold. This is the "just copy
-Docling" baseline. If the fused model can't beat its macro-F1, the fusion adds nothing — and
-we will have *learned* that. This also neutralizes the leakage worry around using
-`docling_label` as a feature (Section 7).
+**Raw Docling-label → role majority map.** Compute, **on the training folds only**, the
+most-common `role` for each `docling_label` value; predict that on the test fold. **Missing-
+label fallback:** items with no enclosing Docling block (`docling_label` = NaN — includes many
+noise/re-derived rows) predict the **global train-fold majority** (`noise`). Report the share
+of rows hitting the fallback. This is the "just copy Docling" baseline; if the fused model
+can't beat its macro-F1, the fusion adds nothing — and we will have *learned* that. It also
+neutralizes the leakage worry around using `docling_label` as a feature (Section 7).
 
 ### Train/test split
 **`sklearn.model_selection.GroupKFold(n_splits=5)`, grouped by `pdf`.** Never a random row
 split: rows on the same page share neighbour and page-median-derived features
-(`gap_above`, `font_size_ratio`, …), so a row split leaks page context into the test set and
-inflates the score. Grouping by `pdf` guarantees a page's rows never straddle the split.
-Report cross-validation mean ± std across folds.
+(`gap_above`, `font_ratio_vs_below`, `font_size_ratio` — all computed per-page in
+`training_table.py:444,462-480`), so a row split leaks page context. Grouping by `pdf`
+guarantees a page's rows never straddle the split (and is strictly safer than page-grouping
+for the page-local features).
+**Residual leak to guard:** identical boilerplate noise rows recur across *different* PDFs
+(e.g. BBVA header/footer text across `BBVA_0539/0544/0608/0686`) and would land in different
+groups, inflating noise scores. Before CV, **drop exact-duplicate `(text, role)` rows** (keep
+first) and report how many were dropped. `GroupKFold` does not shuffle → deterministic folds.
 
 ### Class imbalance
-noise ≈ 49%; signature only 31 samples. Use `class_weight="balanced"` (sample weights) so
-minority roles aren't drowned. Signature recall is expected to be weak (31 samples) — we
-report it honestly rather than hide it; improving it is a later-iteration concern.
+noise ≈ 49%; signature only 31 samples. `HistGradientBoostingClassifier` has **no
+`class_weight` parameter** — compute `sample_weight = compute_sample_weight("balanced",
+y_train)` and pass it to `.fit(X_train, y_train, sample_weight=...)`. Signature recall is
+expected to be weak (31 samples) — we report it honestly rather than hide it; improving it is
+a later-iteration concern.
+
+### Determinism
+Pin `HistGradientBoostingClassifier(random_state=0, categorical_features=...)`. `GroupKFold`
+is unshuffled (deterministic). Record the installed `sklearn` version in the report; the
+pickled `role_model.pkl` is sklearn-version-sensitive.
 
 ---
 
 ## 6. Step 3 — Report (definition of "done")
 
-A re-runnable `scripts/train_role_classifier.py` that produces:
+A re-runnable `scripts/train_role_classifier.py` that produces — headline metrics computed on
+**pooled out-of-fold predictions** (concatenate each row's prediction from the fold where it
+was in the test set → one prediction per row over all 4 668), NOT per-fold averages. With
+signature at n≈6/fold, per-fold macro-F1 is too noisy to headline; pooled OOF gives one stable
+number and one confusion matrix. Per-fold mean ± std is reported as a *secondary* spread.
 
-1. **Per-class precision / recall / F1 / support** — for all 7 roles.
-2. **Macro-F1** — the headline number (equal weight to all roles).
-3. **Confusion matrix** — to see *what* confuses with what (expected: key↔value,
+1. **Per-class precision / recall / F1 / support** — for all 7 roles, on pooled OOF.
+2. **Macro-F1 (pooled OOF)** — the headline number (equal weight to all roles). Per-fold
+   mean ± std reported alongside as secondary.
+3. **Confusion matrix (pooled OOF)** — to see *what* confuses with what (expected: key↔value,
    section_header↔table_header). Drives the next enrichment round.
-4. **vs-Docling-baseline delta** — model macro-F1 minus baseline macro-F1. The justification
-   number for the whole fusion approach.
-5. **Permutation feature importances** — ranked, to target the next features.
+4. **vs-Docling-baseline delta** — model pooled-OOF macro-F1 minus baseline pooled-OOF
+   macro-F1 (+ the fallback-bucket share). The justification number for the whole fusion approach.
+5. **Permutation feature importances** — ranked (computed on a held-out fold), to target the
+   next features.
 
 **Banned:** reporting raw accuracy as a headline — misleading at 49% noise (an all-noise
 predictor scores 49%).
@@ -185,7 +230,9 @@ Under `.planning/extraction/training/`:
 | **Feature noise** (a wrong Docling label) | Safe: a tree gives a useless feature ~0 importance, and *learns to correct* a systematically-wrong one using the other features. Worst case is harmless. |
 | **Label noise** (a mis-tagged `role`) | The real danger — corrupts ground truth. Defended by the golden review pipeline; handoff measured label leakage at 2.2% (labels sound). The 46→66 re-scaffold further improves this. |
 | **Row-split leakage** | GroupKFold by `pdf` (Section 5). |
-| **Signature underfit** (31 samples) | Reported honestly; `class_weight="balanced"`; deferred improvement. |
+| **Cross-PDF duplicate boilerplate** (same noise text in different PDFs → different folds, inflates noise score) | Drop exact-duplicate `(text, role)` rows before CV; report count dropped (Section 5). |
+| **HGB categorical / unseen-category error** | OrdinalEncoder `handle_unknown="use_encoded_value", unknown_value=-1` + `categorical_features` (Section 5). |
+| **Signature underfit** (31 samples) | Reported honestly; balanced `sample_weight`; deferred improvement. |
 
 ---
 
@@ -217,6 +264,9 @@ Done when:
 - `build_training_table.py` emits `role_table.csv` with the 4 new feature columns populated
   (non-trivial coverage, not all-NaN) and the docling-header silent-zero bug fixed.
 - `train_role_classifier.py` runs end-to-end and writes the three artifacts.
-- The report shows per-class P/R/F1, macro-F1, confusion matrix, feature importances, and a
-  **positive vs-Docling-baseline delta** (or, if negative, that result is surfaced, not hidden).
-- Both scripts are deterministic and re-runnable from a clean checkout.
+- The report shows per-class P/R/F1, pooled-OOF macro-F1, confusion matrix, feature
+  importances, and a **vs-Docling-baseline delta** (positive ideally; if negative, surfaced,
+  not hidden) plus the missing-label fallback share.
+- Both scripts are deterministic and re-runnable from a clean checkout: `random_state=0`,
+  unshuffled GroupKFold, recorded sklearn version, and byte-stable headline metrics across two
+  consecutive runs.
