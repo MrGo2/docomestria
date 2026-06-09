@@ -70,3 +70,46 @@ def write_csv(rows: list[dict], path) -> None:
         for r in rows:
             w.writerow([_fmt(f, r.get(f, "")) for f in FIELDS])
     os.replace(tmp, path)
+
+
+_CASE_ONEHOT = {
+    "UPPER": "case_upper",
+    "lower": "case_lower",
+    "Title": "case_title",
+    "mixed": "case_mixed",
+}
+
+
+def _onehot_case(value: str) -> dict:
+    out = {k: 0 for k in _CASE_ONEHOT.values()}
+    col = _CASE_ONEHOT.get(value)
+    if col:
+        out[col] = 1
+    return out  # an unrecognised value (incl. "none") leaves all four at 0
+
+
+def signal_features(signal: dict | None) -> dict:
+    """Extract typography/context features + span_id from a golden signal dict.
+
+    Returns "" for absent numeric features and 0 for absent flags. `span_id`
+    is the liteparse span index (or None) — used for compound detection and to
+    mark atoms consumed.
+    """
+    lp = (signal or {}).get("liteparse") or None
+    dl = (signal or {}).get("docling") or None
+    case = (lp or {}).get("case_class", "")
+    out = {
+        "font_size": (lp or {}).get("font_size", "") if lp else "",
+        "is_bold": bool((lp or {}).get("is_bold")) if lp else "",
+        "liteparse_present": 1 if lp else 0,
+        "pdfplumber_present": 1 if (signal or {}).get("pdfplumber") else 0,
+        "docling_present": 1 if dl else 0,
+        "docling_column_header": 1 if (dl or {}).get("column_header") else 0,
+        "docling_row_header": 1 if (dl or {}).get("row_header") else 0,
+        "inside_rect": 1 if (signal or {}).get("rect") else 0,
+        "colon_present": 1 if (signal or {}).get("colon_signal") else 0,
+        "engine_agreement": ((signal or {}).get("engine_agreement") or 0),
+        "span_id": (lp or {}).get("span_id") if lp else None,
+    }
+    out.update(_onehot_case(case))
+    return out

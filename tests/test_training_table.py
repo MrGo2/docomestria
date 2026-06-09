@@ -28,3 +28,40 @@ def test_write_csv_is_byte_deterministic(tmp_path):
     assert any(cell in ("0", "1") for cell in lines[1].split(","))
     # rows are written in the order given (sorting happens in the CLI, not here)
     assert lines[1].startswith("B,2,")
+
+
+from docomestria.golden.training_table import signal_features
+
+
+_SIGNAL = {
+    "text": "Nombre",
+    "pdfplumber": {"bbox": {"x": 1, "y": 2, "w": 3, "h": 4}},
+    "liteparse": {"span_id": 7, "bbox": {"x": 1, "y": 2, "w": 3, "h": 4},
+                  "case_class": "Title", "is_bold": True, "font_size": 10.0},
+    "docling": {"cell_ref": "#/texts/36", "bbox": {"x": 1, "y": 2, "w": 3, "h": 4},
+                "column_header": None, "row_header": None},
+    "rect": None,
+    "colon_signal": None,
+    "engine_agreement": 3,
+}
+
+
+def test_signal_features_reads_liteparse_and_presence():
+    f = signal_features(_SIGNAL)
+    assert f["font_size"] == 10.0
+    assert f["is_bold"] is True
+    assert f["case_title"] == 1 and f["case_upper"] == 0
+    assert f["liteparse_present"] == 1
+    assert f["pdfplumber_present"] == 1
+    assert f["docling_present"] == 1
+    assert f["inside_rect"] == 0
+    assert f["colon_present"] == 0
+    assert f["engine_agreement"] == 3
+    assert f["span_id"] == 7
+
+
+def test_signal_features_none_is_all_absent():
+    f = signal_features(None)
+    assert f["liteparse_present"] == 0
+    assert f["font_size"] == ""
+    assert f["span_id"] is None
