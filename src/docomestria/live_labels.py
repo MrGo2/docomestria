@@ -16,7 +16,9 @@ from __future__ import annotations
 from .golden.engine_data import _norm
 from .golden.training_table import _overlap_frac, walk_structure
 
-ANNOTATED_ROLES = {"key", "value", "section_header", "table_header", "signature", "prose"}
+ANNOTATED_ROLES = frozenset(
+    {"key", "value", "section_header", "table_header", "signature", "prose"}
+)
 _MIN_OVERLAP = 0.30
 
 
@@ -33,7 +35,7 @@ def golden_annotated_items(golden: dict, spans: list | None = None) -> list[dict
     back to golden["atoms"]["spans"], so a self-contained page works in tests; the
     Task 6 caller passes the real atoms doc spans explicitly.
     """
-    pw, ph = golden.get("page_size_pt", [1.0, 1.0])
+    pw, ph = golden.get("page_size_pt", (1.0, 1.0))
     pw = pw or 1.0
     ph = ph or 1.0
     if spans is None:
@@ -59,11 +61,13 @@ def transfer_labels(rows: list[dict], golden_items: list[dict]) -> tuple[list[di
     - golden item WITH bbox -> normalized-text equal AND overlap >= 0.30 (primary).
     - golden item WITHOUT bbox (e.g. table_header) -> normalized-text equal only.
 
-    Returns (labeled_rows, coverage_report). Input rows are not mutated (copies).
+    Returns (labeled_rows, coverage_report). Input rows are not mutated (shallow
+    copy; live rows are flat scalar dicts).
     """
     used: set[int] = set()
     labeled: list[dict] = []
     matched_per_role: dict[str, int] = {}
+    g_norms = [_norm(g["text"]) for g in golden_items]
 
     for row in rows:
         new = dict(row)
@@ -71,9 +75,11 @@ def transfer_labels(rows: list[dict], golden_items: list[dict]) -> tuple[list[di
         r_bb = {"x": row["x"], "y": row["y"], "w": row["w"], "h": row["h"]}
         best_idx, best_ov = -1, -1.0
         for gi, g in enumerate(golden_items):
-            if gi in used or _norm(g["text"]) != r_norm:
+            if gi in used or g_norms[gi] != r_norm:
                 continue
             if g["bbox"] is None:
+                # all bbox=None candidates are geometrically indistinguishable
+                # (ov=0.0); first text match wins
                 ov = 0.0
             else:
                 ov = _overlap_frac(r_bb, g["bbox"])

@@ -63,6 +63,40 @@ def test_golden_annotated_items_skips_non_string_text(monkeypatch):
     assert [g["text"] for g in items] == ["Nombre"]
 
 
+def test_golden_annotated_items_normalizes_bbox(monkeypatch):
+    import types
+
+    import docomestria.live_labels as ll
+
+    monkeypatch.setattr(
+        ll,
+        "walk_structure",
+        lambda structure, spans: [
+            types.SimpleNamespace(
+                text="Nombre", role="key", bbox={"x": 10.0, "y": 20.0, "w": 40.0, "h": 12.0}
+            ),
+        ],
+    )
+    items = ll.golden_annotated_items(
+        {"page_size_pt": [600.0, 800.0], "page": 1, "structure": [], "atoms": {"spans": []}}
+    )
+    assert items[0]["bbox"] == {
+        "x": 10.0 / 600.0,
+        "y": 20.0 / 800.0,
+        "w": 40.0 / 600.0,
+        "h": 12.0 / 800.0,
+    }
+
+
+def test_transfer_labels_used_set_prevents_double_match():
+    rows = [_row("Nombre", 0.1, 0.1), _row("Nombre", 0.1, 0.1)]
+    golden = [_gitem("nombre", 0.1, 0.1, "key")]
+    labeled, cov = transfer_labels(rows, golden)
+    roles = sorted(r["role"] for r in labeled)
+    assert roles == ["key", "noise"]
+    assert cov["per_role"]["key"]["matched"] == 1
+
+
 def test_annotated_roles_excludes_noise():
     assert "noise" not in ANNOTATED_ROLES
     assert {
