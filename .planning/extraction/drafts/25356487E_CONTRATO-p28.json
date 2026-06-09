@@ -1,0 +1,4313 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/25356487E_CONTRATO.pdf",
+  "page": 28,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "document_type": "informacion_normalizada_europea_credito_consumo",
+  "structure": [
+    {
+      "type": "table",
+      "id": "costes_relacionados",
+      "title": "Costes relacionados",
+      "y_hint": 28,
+      "columns": [
+        {
+          "id": "label",
+          "label": "Concepto",
+          "type": "text"
+        },
+        {
+          "id": "value",
+          "label": "Valor",
+          "type": "text"
+        }
+      ],
+      "rows": [
+        {
+          "label": {
+            "text": "Para mantener una o varias cuentas se requiere registrar tanto las transacciones de pago como la disposición del crédito.",
+            "evidence": {
+              "text": "Para mantener una o varias cuentas se requiere registrar tanto las transacciones de pago como la disposición del crédito.",
+              "row_y_hint": 39,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 1,
+                "bbox": {
+                  "x": 26.95730972290039,
+                  "y": 39.33990478515625,
+                  "w": 129.64828491210938,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1031",
+                "bbox": {
+                  "x": 26.957311999999998,
+                  "y": 42.13652800000011,
+                  "w": 129.64829696,
+                  "h": 20.55253365233625
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.95730972290039,
+                "y": 39.33990478515625,
+                "w": 129.64828491210938,
+                "h": 9.23748779296875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 39.33990478515625,
+              "w": 129.64828491210938,
+              "h": 9.23748779296875
+            }
+          },
+          "value": {
+            "text": "No aplica",
+            "evidence": {
+              "text": "No aplica",
+              "row_y_hint": 41,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 163.323776,
+                  "y": 42.960890240000026,
+                  "w": 25.747837440000012,
+                  "h": 7.704319999999939
+                },
+                "char_indices": [
+                  121,
+                  122,
+                  123,
+                  124,
+                  125,
+                  126,
+                  127,
+                  128
+                ],
+                "n_chars": 8,
+                "row_y": 40.88072384000009
+              },
+              "liteparse": {
+                "span_id": 2,
+                "bbox": {
+                  "x": 163.3237762451172,
+                  "y": 41.4200439453125,
+                  "w": 25.747833251953125,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1035",
+                "bbox": {
+                  "x": 163.323776,
+                  "y": 44.21669440000005,
+                  "w": 25.747837440000012,
+                  "h": 5.760239252336305
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": {
+                "rect_id": "p28-r0",
+                "bbox": {
+                  "x": 164.01716480000002,
+                  "y": 41.21200959999999,
+                  "w": 29.1223296,
+                  "h": 8.551795200000015
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 163.323776,
+                "y": 42.960890240000026,
+                "w": 25.747837440000012,
+                "h": 7.704319999999939
+              },
+              "engine_agreement": 3
+            },
+            "bbox": {
+              "x": 163.323776,
+              "y": 42.960890240000026,
+              "w": 25.747837440000012,
+              "h": 7.704319999999939
+            }
+          }
+        },
+        {
+          "label": {
+            "text": "Importe de los costes por utilizar un medio de pago específico (por ejemplo, una tarjeta de crédito).",
+            "evidence": {
+              "text": "Importe de los costes por utilizar un medio de pago específico (por ejemplo, una tarjeta de crédito).",
+              "row_y_hint": 65,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 5,
+                "bbox": {
+                  "x": 26.95730972290039,
+                  "y": 65.2264404296875,
+                  "w": 129.57896423339844,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1032",
+                "bbox": {
+                  "x": 26.957312,
+                  "y": 68.02304320000007,
+                  "w": 129.57895808,
+                  "h": 20.55253365233625
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.95730972290039,
+                "y": 65.2264404296875,
+                "w": 129.57896423339844,
+                "h": 9.23748779296875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 65.2264404296875,
+              "w": 129.57896423339844,
+              "h": 9.23748779296875
+            }
+          },
+          "value": {
+            "text": "No aplica",
+            "evidence": {
+              "text": "No aplica",
+              "row_y_hint": 64,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 163.323776,
+                  "y": 66.30497983999999,
+                  "w": 25.747837440000012,
+                  "h": 7.704319999999939
+                },
+                "char_indices": [
+                  214,
+                  215,
+                  216,
+                  217,
+                  218,
+                  219,
+                  220,
+                  221
+                ],
+                "n_chars": 8,
+                "row_y": 66.30497983999999
+              },
+              "liteparse": {
+                "span_id": 6,
+                "bbox": {
+                  "x": 163.3237762451172,
+                  "y": 64.76422119140625,
+                  "w": 25.747833251953125,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1036",
+                "bbox": {
+                  "x": 163.323776,
+                  "y": 67.56078400000001,
+                  "w": 25.747837440000012,
+                  "h": 5.760239252336419
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": {
+                "rect_id": "p28-r1",
+                "bbox": {
+                  "x": 164.01716480000002,
+                  "y": 65.94287680000002,
+                  "w": 29.1223296,
+                  "h": 8.551795200000015
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 163.323776,
+                "y": 66.30497983999999,
+                "w": 25.747837440000012,
+                "h": 7.704319999999939
+              },
+              "engine_agreement": 3
+            },
+            "bbox": {
+              "x": 163.323776,
+              "y": 66.30497983999999,
+              "w": 25.747837440000012,
+              "h": 7.704319999999939
+            }
+          }
+        },
+        {
+          "label": {
+            "text": "Condiciones en que pueden modificarse los gastos antes mencionados relacionados con el contrato de crédito.",
+            "evidence": {
+              "text": "Condiciones en que pueden modificarse los gastos antes mencionados relacionados con el contrato de crédito.",
+              "row_y_hint": 89,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 9,
+                "bbox": {
+                  "x": 26.95730972290039,
+                  "y": 89.7261962890625,
+                  "w": 129.65599060058594,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1033",
+                "bbox": {
+                  "x": 26.957312,
+                  "y": 92.52278080000008,
+                  "w": 129.65600128000005,
+                  "h": 20.55253365233625
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.95730972290039,
+                "y": 89.7261962890625,
+                "w": 129.65599060058594,
+                "h": 9.23748779296875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 89.7261962890625,
+              "w": 129.65599060058594,
+              "h": 9.23748779296875
+            }
+          },
+          "value": {
+            "text": "No aplica",
+            "evidence": {
+              "text": "No aplica",
+              "row_y_hint": 90,
+              "x_hint": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 163.323776,
+                  "y": 92.19149504000006,
+                  "w": 25.747837440000012,
+                  "h": 7.704319999999939
+                },
+                "char_indices": [
+                  315,
+                  316,
+                  317,
+                  318,
+                  319,
+                  320,
+                  321,
+                  322
+                ],
+                "n_chars": 8,
+                "row_y": 91.26697664000005
+              },
+              "liteparse": {
+                "span_id": 10,
+                "bbox": {
+                  "x": 163.3237762451172,
+                  "y": 90.6507568359375,
+                  "w": 25.747833251953125,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1037",
+                "bbox": {
+                  "x": 163.323776,
+                  "y": 93.44729920000009,
+                  "w": 25.747837440000012,
+                  "h": 5.760239252336305
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": {
+                "rect_id": "p28-r2",
+                "bbox": {
+                  "x": 164.01716480000002,
+                  "y": 90.44261440000002,
+                  "w": 29.1223296,
+                  "h": 8.551795200000015
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 163.323776,
+                "y": 92.19149504000006,
+                "w": 25.747837440000012,
+                "h": 7.704319999999939
+              },
+              "engine_agreement": 3
+            },
+            "bbox": {
+              "x": 163.323776,
+              "y": 92.19149504000006,
+              "w": 25.747837440000012,
+              "h": 7.704319999999939
+            }
+          }
+        },
+        {
+          "label": {
+            "text": "Costes en caso de pagos atrasados. La no realización de un pago podrá acarrearle graves consecuencias (por ejemplo, la inclusión en Sistemas de Información Crediticia, así como el embargo y la venta forzosa de sus bienes).",
+            "evidence": {
+              "text": "Costes en caso de pagos atrasados. La no realización de un pago podrá acarrearle graves consecuencias (por ejemplo, la inclusión en Sistemas de Información Crediticia, así como el embargo y la venta forzosa de sus bienes).",
+              "row_y_hint": 114,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 13,
+                "bbox": {
+                  "x": 26.95730972290039,
+                  "y": 114.45709228515625,
+                  "w": 99.78634643554688,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1034",
+                "bbox": {
+                  "x": 26.957312,
+                  "y": 117.25364800000011,
+                  "w": 99.78635263999999,
+                  "h": 5.760239252336305
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.95730972290039,
+                "y": 114.45709228515625,
+                "w": 99.78634643554688,
+                "h": 9.23748779296875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 114.45709228515625,
+              "w": 99.78634643554688,
+              "h": 9.23748779296875
+            }
+          },
+          "value": {
+            "text": "Interés de demora: TIN de cada disposición + dos puntos porcentuales. Compensación por costes de cobro ante un impago (retraso en el pago): 35€ por los recursos que CaixaBank Payments & Consumer destinará a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 60€. Si después de 15 días se mantiene el impago, CaixaBank Payments & Consumer podrá enviar al titular un burofax o equivalente con certificación de contenido y recibo. Actualmente tiene un coste de 24€ y CaixaBank Payments & Consumer reclamará al titular su coste en deudas superiores a 300€.",
+            "evidence": {
+              "text": "Interés de demora: TIN de cada disposición + dos puntos porcentuales. Compensación por costes de cobro ante un impago (retraso en el pago): 35€ por los recursos que CaixaBank Payments & Consumer destinará a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 60€. Si después de 15 días se mantiene el impago, CaixaBank Payments & Consumer podrá enviar al titular un burofax o equivalente con certificación de contenido y recibo. Actualmente tiene un coste de 24€ y CaixaBank Payments & Consumer reclamará al titular su coste en deudas superiores a 300€.",
+              "row_y_hint": 113,
+              "x_hint": 163.3,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 14,
+                "bbox": {
+                  "x": 163.3237762451172,
+                  "y": 113.763671875,
+                  "w": 199.15663146972656,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1038",
+                "bbox": {
+                  "x": 163.323776,
+                  "y": 116.56025920000002,
+                  "w": 199.1566719999999,
+                  "h": 5.760239252336419
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "rect": {
+                "rect_id": "p28-r3",
+                "bbox": {
+                  "x": 164.01716480000002,
+                  "y": 114.94235200000014,
+                  "w": 394.76935679999997,
+                  "h": 45.53253119999988
+                }
+              },
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 163.3237762451172,
+                "y": 113.763671875,
+                "w": 199.15663146972656,
+                "h": 9.23748779296875
+              },
+              "engine_agreement": 2
+            },
+            "bbox": {
+              "x": 163.3237762451172,
+              "y": 113.763671875,
+              "w": 199.15663146972656,
+              "h": 9.23748779296875
+            }
+          }
+        }
+      ],
+      "bbox": {
+        "x": 26.95730972290039,
+        "y": 39.33990478515625,
+        "w": 335.52309799194336,
+        "h": 84.35467529296875
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "Costes relacionados",
+          "pdfplumber": {
+            "bbox": {
+              "x": 26.957312,
+              "y": 30.0176326400001,
+              "w": 51.12586752,
+              "h": 7.704319999999939
+            },
+            "char_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "n_chars": 18,
+            "row_y": 30.0176326400001
+          },
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 28.476806640625,
+              "w": 51.12587356567383,
+              "h": 9.23748779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/1030",
+            "bbox": {
+              "x": 26.957312,
+              "y": 31.273436800000127,
+              "w": 51.12586752,
+              "h": 5.760239252336305
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 26.957312,
+            "y": 30.0176326400001,
+            "w": 51.12586752,
+            "h": 7.704319999999939
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 26.95730972290039,
+            "y": 39.33990478515625,
+            "w": 335.52309799194336,
+            "h": 84.35467529296875
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 42,
+            "horizontal": 47
+          },
+          "colons_inside": 2,
+          "container_score": 1
+        },
+        "structural_signals": {
+          "kind": "table",
+          "n_columns_declared": 2,
+          "n_rows_declared": 4,
+          "n_columns_with_group": 0,
+          "header_levels": 1,
+          "vertical_edges_inside": 42,
+          "horizontal_edges_inside": 47,
+          "has_docling_table_block": false,
+          "has_pdfplumber_rect_frame": false
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "otros_aspectos_juridicos",
+      "title": "4. Otros aspectos jurídicos importantes",
+      "y_hint": 165,
+      "children": [
+        {
+          "type": "table",
+          "id": "aspectos_juridicos",
+          "title": "Otros aspectos jurídicos importantes",
+          "y_hint": 176,
+          "columns": [
+            {
+              "id": "label",
+              "label": "Concepto",
+              "type": "text"
+            },
+            {
+              "id": "value",
+              "label": "Valor",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "label": {
+                "text": "Derecho de desistimiento. Usted tiene derecho a desistir del contrato de crédito en el plazo de 14 días naturales.",
+                "evidence": {
+                  "text": "Derecho de desistimiento. Usted tiene derecho a desistir del contrato de crédito en el plazo de 14 días naturales.",
+                  "row_y_hint": 176,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 34,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 175.9375,
+                      "w": 72.0970230102539,
+                      "h": 9.23748779296875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1043",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 178.7341216000001,
+                      "w": 72.09702655999997,
+                      "h": 5.760239252336305
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 25.57053565979004,
+                    "y": 175.9375,
+                    "w": 72.0970230102539,
+                    "h": 9.23748779296875
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 175.9375,
+                  "w": 72.0970230102539,
+                  "h": 9.23748779296875
+                }
+              },
+              "value": {
+                "text": "Sí",
+                "evidence": {
+                  "text": "Sí",
+                  "row_y_hint": 178,
+                  "x_hint": 164.7,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 164.7105536,
+                      "y": 179.3273542400001,
+                      "w": 5.262050560000006,
+                      "h": 7.704319999999939
+                    },
+                    "char_indices": [
+                      1194,
+                      1195
+                    ],
+                    "n_chars": 2,
+                    "row_y": 177.47831744000007
+                  },
+                  "liteparse": {
+                    "span_id": 35,
+                    "bbox": {
+                      "x": 164.71055603027344,
+                      "y": 177.78656005859375,
+                      "w": 5.4546661376953125,
+                      "h": 9.23748779296875
+                    },
+                    "case_class": "Title",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1043",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 178.7341216000001,
+                      "w": 72.09702655999997,
+                      "h": 5.760239252336305
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p28-r5",
+                    "bbox": {
+                      "x": 162.6303872,
+                      "y": 178.9652512,
+                      "w": 15.485683199999983,
+                      "h": 9.938572800000088
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 164.7105536,
+                    "y": 179.3273542400001,
+                    "w": 5.262050560000006,
+                    "h": 7.704319999999939
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 164.7105536,
+                  "y": 179.3273542400001,
+                  "w": 5.262050560000006,
+                  "h": 7.704319999999939
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Reembolso anticipado. Usted tiene derecho a reembolsar anticipadamente el crédito total o parcialmente en cualquier momento.",
+                "evidence": {
+                  "text": "Reembolso anticipado. Usted tiene derecho a reembolsar anticipadamente el crédito total o parcialmente en cualquier momento.",
+                  "row_y_hint": 201,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 38,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 201.130615234375,
+                      "w": 62.55137634277344,
+                      "h": 9.23748779296875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1045",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 203.92724800000008,
+                      "w": 62.551374079999974,
+                      "h": 5.760239252336305
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 25.57053565979004,
+                    "y": 201.130615234375,
+                    "w": 62.55137634277344,
+                    "h": 9.23748779296875
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 201.130615234375,
+                  "w": 62.55137634277344,
+                  "h": 9.23748779296875
+                }
+              },
+              "value": {
+                "text": "Sí",
+                "evidence": {
+                  "text": "Sí",
+                  "row_y_hint": 203,
+                  "x_hint": 164.7,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 164.7105536,
+                      "y": 204.52048064000007,
+                      "w": 5.262050560000006,
+                      "h": 7.704319999999939
+                    },
+                    "char_indices": [
+                      1305,
+                      1306
+                    ],
+                    "n_chars": 2,
+                    "row_y": 202.67144384000005
+                  },
+                  "liteparse": {
+                    "span_id": 39,
+                    "bbox": {
+                      "x": 164.71055603027344,
+                      "y": 202.97967529296875,
+                      "w": 5.4546661376953125,
+                      "h": 9.23748779296875
+                    },
+                    "case_class": "Title",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1054",
+                    "bbox": {
+                      "x": 164.7105536,
+                      "y": 205.77628479999998,
+                      "w": 5.262050560000006,
+                      "h": 5.760239252336419
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p28-r6",
+                    "bbox": {
+                      "x": 162.6303872,
+                      "y": 204.1583776,
+                      "w": 15.485683199999983,
+                      "h": 9.938572799999974
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 164.7105536,
+                    "y": 204.52048064000007,
+                    "w": 5.262050560000006,
+                    "h": 7.704319999999939
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 164.7105536,
+                  "y": 204.52048064000007,
+                  "w": 5.262050560000006,
+                  "h": 7.704319999999939
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "El prestamista tiene derecho a compensación en caso de reembolso anticipado.",
+                "evidence": {
+                  "text": "El prestamista tiene derecho a compensación en caso de reembolso anticipado.",
+                  "row_y_hint": 234,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 51,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 233.95111083984375,
+                      "w": 129.65599060058594,
+                      "h": 9.23748779296875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1047",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 236.74765120000006,
+                      "w": 129.65600128000005,
+                      "h": 13.61864565233634
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 25.57053565979004,
+                    "y": 233.95111083984375,
+                    "w": 129.65599060058594,
+                    "h": 9.23748779296875
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 233.95111083984375,
+                  "w": 129.65599060058594,
+                  "h": 9.23748779296875
+                }
+              },
+              "value": {
+                "text": "Compensación por cancelación anticipada total o parcial : 1,00% del importe del crédito reembolsado anticipadamente si el periodo restante,",
+                "evidence": {
+                  "text": "Compensación por cancelación anticipada total o parcial : 1,00% del importe del crédito reembolsado anticipadamente si el periodo restante,",
+                  "row_y_hint": 235,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 236.41636544000005,
+                      "w": 395.89418752000006,
+                      "h": 7.704319999999939
+                    },
+                    "char_indices": [
+                      1373,
+                      1374,
+                      1375,
+                      1376,
+                      1377,
+                      1378,
+                      1379,
+                      1380,
+                      1381,
+                      1382,
+                      1383,
+                      1384,
+                      1385,
+                      1386,
+                      1387,
+                      1388,
+                      1389,
+                      1390,
+                      1391,
+                      1392
+                    ],
+                    "n_chars": 121,
+                    "row_y": 235.49184704000015
+                  },
+                  "liteparse": {
+                    "span_id": 52,
+                    "bbox": {
+                      "x": 161.93699645996094,
+                      "y": 234.87548828125,
+                      "w": 395.8941650390625,
+                      "h": 9.23748779296875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1055",
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 237.67216960000007,
+                      "w": 395.89418752000006,
+                      "h": 13.61864565233634
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p28-r7",
+                    "bbox": {
+                      "x": 162.6303872,
+                      "y": 236.74765119999995,
+                      "w": 394.7693568000001,
+                      "h": 15.48568320000004
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 161.93699840000002,
+                    "y": 236.41636544000005,
+                    "w": 395.89418752000006,
+                    "h": 7.704319999999939
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 161.93699840000002,
+                  "y": 236.41636544000005,
+                  "w": 395.89418752000006,
+                  "h": 7.704319999999939
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Consulta de una base de datos. El prestamista tiene que informarle de inmediato y sin cargo del resultado de una consulta de una base de datos si se rechaza la solicitud de crédito sobre la base de una consulta de ese tipo. Esto no se aplica si la difusión de esa información está prohibida por una ley o por el Derecho de la Unión Europea o es contraria a los objetivos de orden público o de la seguridad pública.",
+                "evidence": {
+                  "text": "Consulta de una base de datos. El prestamista tiene que informarle de inmediato y sin cargo del resultado de una consulta de una base de datos si se rechaza la solicitud de crédito sobre la base de una consulta de ese tipo. Esto no se aplica si la difusión de esa información está prohibida por una ley o por el Derecho de la Unión Europea o es contraria a los objetivos de orden público o de la seguridad pública.",
+                  "row_y_hint": 254,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 55,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 253.5970458984375,
+                      "w": 86.69670867919922,
+                      "h": 9.23748779296875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1048",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 256.3936672000001,
+                      "w": 86.69671295999999,
+                      "h": 5.760239252336305
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 25.57053565979004,
+                    "y": 253.5970458984375,
+                    "w": 86.69670867919922,
+                    "h": 9.23748779296875
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 253.5970458984375,
+                  "w": 86.69670867919922,
+                  "h": 9.23748779296875
+                }
+              },
+              "value": {
+                "text": "CaixaBank Payments & Consumer informa al titular del derecho que le asiste a consultar sus datos a fuentes reconocidas en derecho que considere",
+                "evidence": {
+                  "text": "CaixaBank Payments & Consumer informa al titular del derecho que le asiste a consultar sus datos a fuentes reconocidas en derecho que considere",
+                  "row_y_hint": 254,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 161.93699840000005,
+                      "y": 255.13786304000007,
+                      "w": 396.0944998400003,
+                      "h": 7.812180479999938
+                    },
+                    "char_indices": [
+                      1945,
+                      1946,
+                      1947,
+                      1948,
+                      1949,
+                      1950,
+                      1951,
+                      1952,
+                      1953,
+                      1954,
+                      1955,
+                      1956,
+                      1957,
+                      1958,
+                      1959,
+                      1960,
+                      1961,
+                      1962,
+                      1963,
+                      1964
+                    ],
+                    "n_chars": 121,
+                    "row_y": 255.13786304000007
+                  },
+                  "liteparse": {
+                    "span_id": 57,
+                    "bbox": {
+                      "x": 161.93704223632812,
+                      "y": 253.5970458984375,
+                      "w": 396.0942077636719,
+                      "h": 9.3453369140625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1056",
+                    "bbox": {
+                      "x": 161.93699840000005,
+                      "y": 256.3936672000001,
+                      "w": 396.2100646400011,
+                      "h": 26.33077365233646
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 161.93699840000005,
+                    "y": 255.13786304000007,
+                    "w": 396.0944998400003,
+                    "h": 7.812180479999938
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 161.93699840000005,
+                  "y": 255.13786304000007,
+                  "w": 396.0944998400003,
+                  "h": 7.812180479999938
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Derecho a un proyecto del contrato de crédito. Usted tiene derecho, previa petición, a obtener de forma gratuita una copia del proyecto de contrato de crédito. Esta disposición no se aplicará si en el momento de la solicitud el prestamista no está dispuesto a celebrar con usted el contrato de crédito.",
+                "evidence": {
+                  "text": "Derecho a un proyecto del contrato de crédito. Usted tiene derecho, previa petición, a obtener de forma gratuita una copia del proyecto de contrato de crédito. Esta disposición no se aplicará si en el momento de la solicitud el prestamista no está dispuesto a celebrar con usted el contrato de crédito.",
+                  "row_y_hint": 325,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 79,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 325.01611328125,
+                      "w": 128.59280395507812,
+                      "h": 9.237457275390625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1050",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 327.81271360000005,
+                      "w": 129.67140992000003,
+                      "h": 50.13712245233637
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 25.57053565979004,
+                    "y": 325.01611328125,
+                    "w": 128.59280395507812,
+                    "h": 9.237457275390625
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 325.01611328125,
+                  "w": 128.59280395507812,
+                  "h": 9.237457275390625
+                }
+              },
+              "value": {
+                "text": "CaixaBank Payments & Consumer, siempre que esté dispuesta a conceder la financiación, facilitará al titular, solicitante del crédito, de forma gratuita, previa",
+                "evidence": {
+                  "text": "CaixaBank Payments & Consumer, siempre que esté dispuesta a conceder la financiación, facilitará al titular, solicitante del crédito, de forma gratuita, previa",
+                  "row_y_hint": 326,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 327.94368704,
+                      "w": 396.2100646400004,
+                      "h": 7.812180479999938
+                    },
+                    "char_indices": [
+                      3367,
+                      3368,
+                      3369,
+                      3370,
+                      3371,
+                      3372,
+                      3373,
+                      3374,
+                      3375,
+                      3376,
+                      3377,
+                      3378,
+                      3379,
+                      3380,
+                      3381,
+                      3382,
+                      3383,
+                      3384,
+                      3385,
+                      3386
+                    ],
+                    "n_chars": 138,
+                    "row_y": 326.5569094399999
+                  },
+                  "liteparse": {
+                    "span_id": 80,
+                    "bbox": {
+                      "x": 161.93699645996094,
+                      "y": 326.40283203125,
+                      "w": 396.209716796875,
+                      "h": 9.345367431640625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1058",
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 329.1994912,
+                      "w": 396.2100646400004,
+                      "h": 13.156386452336392
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p28-r8",
+                    "bbox": {
+                      "x": 162.6303872,
+                      "y": 327.581584,
+                      "w": 394.7693568000001,
+                      "h": 15.485683199999983
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 161.93699840000002,
+                    "y": 327.94368704,
+                    "w": 396.2100646400004,
+                    "h": 7.812180479999938
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 161.93699840000002,
+                  "y": 327.94368704,
+                  "w": 396.2100646400004,
+                  "h": 7.812180479999938
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Período durante el cual el prestamista está vinculado por la información precontractual.",
+                "evidence": {
+                  "text": "Período durante el cual el prestamista está vinculado por la información precontractual.",
+                  "row_y_hint": 379,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 88,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 379.7937927246094,
+                      "w": 129.56353759765625,
+                      "h": 9.237457275390625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1051",
+                    "bbox": {
+                      "x": 25.570534399999985,
+                      "y": 382.5904287999999,
+                      "w": 129.56354944,
+                      "h": 12.925256852336474
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 25.57053565979004,
+                    "y": 379.7937927246094,
+                    "w": 129.56353759765625,
+                    "h": 9.237457275390625
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 379.7937927246094,
+                  "w": 129.56353759765625,
+                  "h": 9.237457275390625
+                }
+              },
+              "value": {
+                "text": "Esta información precontractual será válida desde la fecha que figura en el encabezamiento de este documento y hasta 30 días naturales",
+                "evidence": {
+                  "text": "Esta información precontractual será válida desde la fecha que figura en el encabezamiento de este documento y hasta 30 días naturales",
+                  "row_y_hint": 379,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 380.64123584,
+                      "w": 395.9095961600001,
+                      "h": 7.704319999999996
+                    },
+                    "char_indices": [
+                      3620,
+                      3621,
+                      3622,
+                      3623,
+                      3624,
+                      3625,
+                      3626,
+                      3627,
+                      3628,
+                      3629,
+                      3630,
+                      3631,
+                      3632,
+                      3633,
+                      3634,
+                      3635,
+                      3636,
+                      3637,
+                      3638,
+                      3639
+                    ],
+                    "n_chars": 114,
+                    "row_y": 379.93999999999943
+                  },
+                  "liteparse": {
+                    "span_id": 89,
+                    "bbox": {
+                      "x": 161.93699645996094,
+                      "y": 379.10040283203125,
+                      "w": 395.90960693359375,
+                      "h": 9.237457275390625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1059",
+                    "bbox": {
+                      "x": 161.93699839999994,
+                      "y": 381.89703999999995,
+                      "w": 395.90959616000004,
+                      "h": 13.156386452336505
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p28-r9",
+                    "bbox": {
+                      "x": 162.6303872,
+                      "y": 380.27913279999996,
+                      "w": 394.7693568000001,
+                      "h": 15.485683199999983
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 161.93699840000002,
+                    "y": 380.64123584,
+                    "w": 395.9095961600001,
+                    "h": 7.704319999999996
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 161.93699840000002,
+                  "y": 380.64123584,
+                  "w": 395.9095961600001,
+                  "h": 7.704319999999996
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Utilización de un instrumento de pago específico, como por ejemplo, una tarjeta de crédito.",
+                "evidence": {
+                  "text": "Utilización de un instrumento de pago específico, como por ejemplo, una tarjeta de crédito.",
+                  "row_y_hint": 398,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 92,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 398.7464599609375,
+                      "w": 27.943567276000977,
+                      "h": 9.237457275390625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1052",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 401.5430559999999,
+                      "w": 129.60977536000001,
+                      "h": 20.55253365233648
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 25.57053565979004,
+                    "y": 398.7464599609375,
+                    "w": 27.943567276000977,
+                    "h": 9.237457275390625
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 398.7464599609375,
+                  "w": 27.943567276000977,
+                  "h": 9.237457275390625
+                }
+              },
+              "value": {
+                "text": "No aplica",
+                "evidence": {
+                  "text": "No aplica",
+                  "row_y_hint": 398,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 399.82499263999995,
+                      "w": 23.860279040000023,
+                      "h": 7.704319999999996
+                    },
+                    "char_indices": [
+                      3833,
+                      3834,
+                      3835,
+                      3836,
+                      3837,
+                      3838,
+                      3839,
+                      3840
+                    ],
+                    "n_chars": 8,
+                    "row_y": 399.1399999999995
+                  },
+                  "liteparse": {
+                    "span_id": 96,
+                    "bbox": {
+                      "x": 161.93699645996094,
+                      "y": 398.2841796875,
+                      "w": 23.860275268554688,
+                      "h": 9.237457275390625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1060",
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 401.0807968,
+                      "w": 23.860279039999995,
+                      "h": 5.760239252336476
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p28-r10",
+                    "bbox": {
+                      "x": 162.6303872,
+                      "y": 399.4628896,
+                      "w": 29.12232960000003,
+                      "h": 8.551795200000015
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 161.93699840000002,
+                    "y": 399.82499263999995,
+                    "w": 23.860279040000023,
+                    "h": 7.704319999999996
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 161.93699840000002,
+                  "y": 399.82499263999995,
+                  "w": 23.860279040000023,
+                  "h": 7.704319999999996
+                }
+              }
+            }
+          ],
+          "bbox": {
+            "x": 25.57053565979004,
+            "y": 175.9375,
+            "w": 532.5765273802103,
+            "h": 232.04641723632812
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "Otros aspectos jurídicos importantes",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 38.05442192,
+                  "y": 167.26720432000002,
+                  "w": 128.38093631999996,
+                  "h": 8.66736000000003
+                },
+                "char_indices": [
+                  1062,
+                  1063,
+                  1064,
+                  1065,
+                  1066,
+                  1067,
+                  1068,
+                  1069,
+                  1070,
+                  1071,
+                  1072,
+                  1073,
+                  1074,
+                  1075,
+                  1076,
+                  1077,
+                  1078,
+                  1079,
+                  1080,
+                  1081
+                ],
+                "n_chars": 36,
+                "row_y": 167.26720432000002
+              },
+              "liteparse": {
+                "span_id": 35,
+                "bbox": {
+                  "x": 164.71055603027344,
+                  "y": 177.78656005859375,
+                  "w": 5.4546661376953125,
+                  "h": 9.23748779296875
+                },
+                "case_class": "Title",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1053",
+                "bbox": {
+                  "x": 164.7105536,
+                  "y": 180.58315840000012,
+                  "w": 5.262050560000006,
+                  "h": 5.760239252336305
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "bbox": {
+                "x": 38.05442192,
+                "y": 167.26720432000002,
+                "w": 128.38093631999996,
+                "h": 8.66736000000003
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 25.57053565979004,
+                "y": 175.9375,
+                "w": 532.5765273802103,
+                "h": 232.04641723632812
+              },
+              "pdfplumber_rect": null,
+              "docling_block": null,
+              "edges_inside": {
+                "vertical": 86,
+                "horizontal": 85
+              },
+              "colons_inside": 1,
+              "container_score": 1
+            },
+            "structural_signals": {
+              "kind": "table",
+              "n_columns_declared": 2,
+              "n_rows_declared": 7,
+              "n_columns_with_group": 0,
+              "header_levels": 1,
+              "vertical_edges_inside": 86,
+              "horizontal_edges_inside": 85,
+              "has_docling_table_block": false,
+              "has_pdfplumber_rect_frame": false
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 29.499737600000003,
+        "y": 167.26720432000002,
+        "w": 136.93562063999997,
+        "h": 8.66736000000003
+      },
+      "container_bbox": {
+        "x": 25.57053565979004,
+        "y": 175.9375,
+        "w": 532.5765273802103,
+        "h": 232.04641723632812
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "4. Otros aspectos jurídicos importantes",
+          "pdfplumber": {
+            "bbox": {
+              "x": 29.499737600000003,
+              "y": 167.26720432000002,
+              "w": 136.93562063999997,
+              "h": 8.66736000000003
+            },
+            "char_indices": [
+              1059,
+              1060,
+              1061,
+              1062,
+              1063,
+              1064,
+              1065,
+              1066,
+              1067,
+              1068,
+              1069,
+              1070,
+              1071,
+              1072,
+              1073,
+              1074,
+              1075,
+              1076,
+              1077,
+              1078
+            ],
+            "n_chars": 39,
+            "row_y": 167.26720432000002
+          },
+          "liteparse": {
+            "span_id": 33,
+            "bbox": {
+              "x": 29.499738693237305,
+              "y": 165.53375244140625,
+              "w": 136.9356231689453,
+              "h": 10.39215087890625
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 9.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/1042",
+            "bbox": {
+              "x": 29.499737600000003,
+              "y": 168.6799840000001,
+              "w": 136.93562063999997,
+              "h": 6.4802691588784
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 29.499737600000003,
+            "y": 167.26720432000002,
+            "w": 136.93562063999997,
+            "h": 8.66736000000003
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 25.57053565979004,
+            "y": 175.9375,
+            "w": 532.5765273802103,
+            "h": 232.04641723632812
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 86,
+            "horizontal": 85
+          },
+          "colons_inside": 1,
+          "container_score": 1
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 1,
+          "child_type_distribution": {
+            "table": 1
+          },
+          "path": "4. Otros aspectos jurídicos importantes"
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "info_adicional_distancia",
+      "title": "5. Información adicional en el caso de comercialización a distancia de servicios financieros",
+      "y_hint": 422,
+      "children": [
+        {
+          "type": "section",
+          "id": "relativa_prestamista",
+          "title": "a) Relativa al prestamista",
+          "y_hint": 435,
+          "children": [
+            {
+              "type": "table",
+              "id": "datos_prestamista",
+              "title": "Relativa al prestamista",
+              "y_hint": 446,
+              "columns": [
+                {
+                  "id": "label",
+                  "label": "Concepto",
+                  "type": "text"
+                },
+                {
+                  "id": "value",
+                  "label": "Valor",
+                  "type": "text"
+                }
+              ],
+              "rows": [
+                {
+                  "label": {
+                    "text": "Registro",
+                    "evidence": {
+                      "text": "Registro",
+                      "row_y_hint": 446,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 25.5705344,
+                          "y": 448.36220863999995,
+                          "w": 22.804787200000007,
+                          "h": 7.704319999999996
+                        },
+                        "char_indices": [
+                          3956,
+                          3957,
+                          3958,
+                          3959,
+                          3960,
+                          3961,
+                          3962,
+                          3963
+                        ],
+                        "n_chars": 8,
+                        "row_y": 447.1399999999996
+                      },
+                      "liteparse": {
+                        "span_id": 101,
+                        "bbox": {
+                          "x": 25.57053565979004,
+                          "y": 446.8214111328125,
+                          "w": 22.804792404174805,
+                          "h": 9.237457275390625
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1063",
+                        "bbox": {
+                          "x": 25.5705344,
+                          "y": 449.6180128,
+                          "w": 22.8047872,
+                          "h": 5.760239252336476
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 25.5705344,
+                        "y": 448.36220863999995,
+                        "w": 22.804787200000007,
+                        "h": 7.704319999999996
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 448.36220863999995,
+                      "w": 22.804787200000007,
+                      "h": 7.704319999999996
+                    }
+                  },
+                  "value": {
+                    "text": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492 e inscrita con el nº 8776 en el Registro de Establecimientos de Crédito del Banco de España.",
+                    "evidence": {
+                      "text": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492 e inscrita con el nº 8776 en el Registro de Establecimientos de Crédito del Banco de España.",
+                      "row_y_hint": 446,
+                      "x_hint": 161.9,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 102,
+                        "bbox": {
+                          "x": 161.93699645996094,
+                          "y": 446.8214111328125,
+                          "w": 395.9404296875,
+                          "h": 9.3453369140625
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1072",
+                        "bbox": {
+                          "x": 161.9369984,
+                          "y": 449.6180128,
+                          "w": 395.94041344000016,
+                          "h": 13.618645652336454
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 161.93699645996094,
+                        "y": 446.8214111328125,
+                        "w": 395.9404296875,
+                        "h": 9.3453369140625
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 161.93699645996094,
+                      "y": 446.8214111328125,
+                      "w": 395.9404296875,
+                      "h": 9.3453369140625
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Autoridad de supervisión",
+                    "evidence": {
+                      "text": "Autoridad de supervisión",
+                      "row_y_hint": 466,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 25.5705344,
+                          "y": 467.54596544,
+                          "w": 68.20634496000001,
+                          "h": 7.704319999999996
+                        },
+                        "char_indices": [
+                          4155,
+                          4156,
+                          4157,
+                          4158,
+                          4159,
+                          4160,
+                          4161,
+                          4162,
+                          4163,
+                          4164,
+                          4165,
+                          4166,
+                          4167,
+                          4168,
+                          4169,
+                          4170,
+                          4171,
+                          4172,
+                          4173,
+                          4174
+                        ],
+                        "n_chars": 22,
+                        "row_y": 466.33999999999963
+                      },
+                      "liteparse": {
+                        "span_id": 104,
+                        "bbox": {
+                          "x": 25.57053565979004,
+                          "y": 466.0051574707031,
+                          "w": 68.20635223388672,
+                          "h": 9.237457275390625
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1064",
+                        "bbox": {
+                          "x": 25.5705344,
+                          "y": 468.8017696,
+                          "w": 68.20634495999998,
+                          "h": 5.760239252336419
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 25.5705344,
+                        "y": 467.54596544,
+                        "w": 68.20634496000001,
+                        "h": 7.704319999999996
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 467.54596544,
+                      "w": 68.20634496000001,
+                      "h": 7.704319999999996
+                    }
+                  },
+                  "value": {
+                    "text": "CaixaBank Payments & Consumer está sometida a la supervisión del Banco de España, con domicilio en Madrid, calle Alcalá, 50.",
+                    "evidence": {
+                      "text": "CaixaBank Payments & Consumer está sometida a la supervisión del Banco de España, con domicilio en Madrid, calle Alcalá, 50.",
+                      "row_y_hint": 466,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 161.93699840000002,
+                          "y": 467.54596544,
+                          "w": 355.76238464000005,
+                          "h": 7.812180479999995
+                        },
+                        "char_indices": [
+                          4177,
+                          4178,
+                          4179,
+                          4180,
+                          4181,
+                          4182,
+                          4183,
+                          4184,
+                          4185,
+                          4186,
+                          4187,
+                          4188,
+                          4189,
+                          4190,
+                          4191,
+                          4192,
+                          4193,
+                          4194,
+                          4195,
+                          4196
+                        ],
+                        "n_chars": 105,
+                        "row_y": 466.33999999999963
+                      },
+                      "liteparse": {
+                        "span_id": 105,
+                        "bbox": {
+                          "x": 161.93699645996094,
+                          "y": 466.0051574707031,
+                          "w": 355.76239013671875,
+                          "h": 9.3453369140625
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1073",
+                        "bbox": {
+                          "x": 161.93699840000002,
+                          "y": 468.8017696,
+                          "w": 355.76238464000005,
+                          "h": 5.834995962382436
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 161.93699840000002,
+                        "y": 467.54596544,
+                        "w": 355.76238464000005,
+                        "h": 7.812180479999995
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 467.54596544,
+                      "w": 355.76238464000005,
+                      "h": 7.812180479999995
+                    }
+                  }
+                }
+              ],
+              "bbox": {
+                "x": 25.5705344,
+                "y": 446.8214111328125,
+                "w": 532.3068917474609,
+                "h": 28.53673478718747
+              },
+              "evidence": {
+                "title_signal": {
+                  "text": "Relativa al prestamista",
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 32.735552,
+                      "y": 436.8057286399999,
+                      "w": 62.782503680000005,
+                      "h": 7.704319999999996
+                    },
+                    "char_indices": [
+                      3935,
+                      3936,
+                      3937,
+                      3938,
+                      3939,
+                      3940,
+                      3941,
+                      3942,
+                      3943,
+                      3944,
+                      3945,
+                      3946,
+                      3947,
+                      3948,
+                      3949,
+                      3950,
+                      3951,
+                      3952,
+                      3953,
+                      3954
+                    ],
+                    "n_chars": 21,
+                    "row_y": 436.8057286399999
+                  },
+                  "liteparse": {
+                    "span_id": 100,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 435.264892578125,
+                      "w": 69.94751739501953,
+                      "h": 9.237457275390625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1062",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 438.06153279999995,
+                      "w": 69.94752127999999,
+                      "h": 5.760239252336476
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "bbox": {
+                    "x": 32.735552,
+                    "y": 436.8057286399999,
+                    "w": 62.782503680000005,
+                    "h": 7.704319999999996
+                  },
+                  "engine_agreement": 3
+                },
+                "container_signal": {
+                  "container_bbox": {
+                    "x": 25.5705344,
+                    "y": 446.8214111328125,
+                    "w": 532.3068917474609,
+                    "h": 28.53673478718747
+                  },
+                  "pdfplumber_rect": null,
+                  "docling_block": null,
+                  "edges_inside": {
+                    "vertical": 5,
+                    "horizontal": 4
+                  },
+                  "colons_inside": 0,
+                  "container_score": 1
+                },
+                "structural_signals": {
+                  "kind": "table",
+                  "n_columns_declared": 2,
+                  "n_rows_declared": 2,
+                  "n_columns_with_group": 0,
+                  "header_levels": 1,
+                  "vertical_edges_inside": 5,
+                  "horizontal_edges_inside": 4,
+                  "has_docling_table_block": false,
+                  "has_pdfplumber_rect_frame": false
+                }
+              }
+            }
+          ],
+          "title_bbox": {
+            "x": 25.5705344,
+            "y": 436.8057286399999,
+            "w": 69.94752128,
+            "h": 7.704319999999996
+          },
+          "container_bbox": {
+            "x": 25.5705344,
+            "y": 446.8214111328125,
+            "w": 532.3068917474609,
+            "h": 28.53673478718747
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "a) Relativa al prestamista",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 25.5705344,
+                  "y": 436.8057286399999,
+                  "w": 69.94752128,
+                  "h": 7.704319999999996
+                },
+                "char_indices": [
+                  3933,
+                  3934,
+                  3935,
+                  3936,
+                  3937,
+                  3938,
+                  3939,
+                  3940,
+                  3941,
+                  3942,
+                  3943,
+                  3944,
+                  3945,
+                  3946,
+                  3947,
+                  3948,
+                  3949,
+                  3950,
+                  3951,
+                  3952
+                ],
+                "n_chars": 23,
+                "row_y": 436.8057286399999
+              },
+              "liteparse": {
+                "span_id": 100,
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 435.264892578125,
+                  "w": 69.94751739501953,
+                  "h": 9.237457275390625
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1062",
+                "bbox": {
+                  "x": 25.5705344,
+                  "y": 438.06153279999995,
+                  "w": 69.94752127999999,
+                  "h": 5.760239252336476
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "bbox": {
+                "x": 25.5705344,
+                "y": 436.8057286399999,
+                "w": 69.94752128,
+                "h": 7.704319999999996
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 25.5705344,
+                "y": 446.8214111328125,
+                "w": 532.3068917474609,
+                "h": 28.53673478718747
+              },
+              "pdfplumber_rect": null,
+              "docling_block": null,
+              "edges_inside": {
+                "vertical": 5,
+                "horizontal": 4
+              },
+              "colons_inside": 0,
+              "container_score": 1
+            },
+            "structural_signals": {
+              "kind": "section",
+              "n_children": 1,
+              "child_type_distribution": {
+                "table": 1
+              },
+              "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/a) Relativa al prestamista"
+            }
+          }
+        },
+        {
+          "type": "section",
+          "id": "relativa_contrato",
+          "title": "b) Relativa al contrato de crédito",
+          "y_hint": 478,
+          "children": [
+            {
+              "type": "table",
+              "id": "datos_contrato",
+              "title": "Relativa al contrato de crédito",
+              "y_hint": 487,
+              "columns": [
+                {
+                  "id": "label",
+                  "label": "Concepto",
+                  "type": "text"
+                },
+                {
+                  "id": "value",
+                  "label": "Valor",
+                  "type": "text"
+                }
+              ],
+              "rows": [
+                {
+                  "label": {
+                    "text": "Ejercicio del derecho de desistimiento",
+                    "evidence": {
+                      "text": "Ejercicio del derecho de desistimiento",
+                      "row_y_hint": 487,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 25.5705344,
+                          "y": 489.27214783999995,
+                          "w": 104.30878847999999,
+                          "h": 7.704319999999996
+                        },
+                        "char_indices": [
+                          4311,
+                          4312,
+                          4313,
+                          4314,
+                          4315,
+                          4316,
+                          4317,
+                          4318,
+                          4319,
+                          4320,
+                          4321,
+                          4322,
+                          4323,
+                          4324,
+                          4325,
+                          4326,
+                          4327,
+                          4328,
+                          4329,
+                          4330
+                        ],
+                        "n_chars": 34,
+                        "row_y": 489.27214783999995
+                      },
+                      "liteparse": {
+                        "span_id": 107,
+                        "bbox": {
+                          "x": 25.57053565979004,
+                          "y": 487.7313537597656,
+                          "w": 104.30879974365234,
+                          "h": 9.237457275390625
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1066",
+                        "bbox": {
+                          "x": 25.5705344,
+                          "y": 490.52795199999997,
+                          "w": 104.30878847999996,
+                          "h": 5.760239252336476
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 25.5705344,
+                        "y": 489.27214783999995,
+                        "w": 104.30878847999999,
+                        "h": 7.704319999999996
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 489.27214783999995,
+                      "w": 104.30878847999999,
+                      "h": 7.704319999999996
+                    }
+                  },
+                  "value": {
+                    "text": "Conforme a lo establecido en la Ley 16/2011, de 24 de junio, de Contratos de Crédito al Consumo, en el supuesto de que el/los prestatario/s",
+                    "evidence": {
+                      "text": "Conforme a lo establecido en la Ley 16/2011, de 24 de junio, de Contratos de Crédito al Consumo, en el supuesto de que el/los prestatario/s",
+                      "row_y_hint": 487,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 161.9369984,
+                          "y": 489.27214783999995,
+                          "w": 395.9712307200007,
+                          "h": 7.704319999999996
+                        },
+                        "char_indices": [
+                          4345,
+                          4346,
+                          4347,
+                          4348,
+                          4349,
+                          4350,
+                          4351,
+                          4352,
+                          4353,
+                          4354,
+                          4355,
+                          4356,
+                          4357,
+                          4358,
+                          4359,
+                          4360,
+                          4361,
+                          4362,
+                          4363,
+                          4364
+                        ],
+                        "n_chars": 115,
+                        "row_y": 489.27214783999995
+                      },
+                      "liteparse": {
+                        "span_id": 108,
+                        "bbox": {
+                          "x": 161.93699645996094,
+                          "y": 487.7313537597656,
+                          "w": 395.9708251953125,
+                          "h": 9.237457275390625
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1074",
+                        "bbox": {
+                          "x": 161.9369984,
+                          "y": 490.52795199999997,
+                          "w": 396.0559782400014,
+                          "h": 30.953365652336572
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 161.9369984,
+                        "y": 489.27214783999995,
+                        "w": 395.9712307200007,
+                        "h": 7.704319999999996
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 161.9369984,
+                      "y": 489.27214783999995,
+                      "w": 395.9712307200007,
+                      "h": 7.704319999999996
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "La legislación que el prestamista acepta como base para el establecimiento de relaciones con usted antes de la celebración del contrato de crédito.",
+                    "evidence": {
+                      "text": "La legislación que el prestamista acepta como base para el establecimiento de relaciones con usted antes de la celebración del contrato de crédito.",
+                      "row_y_hint": 602,
+                      "x_hint": null,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 125,
+                        "bbox": {
+                          "x": 25.57053565979004,
+                          "y": 602.37158203125,
+                          "w": 129.60975646972656,
+                          "h": 9.23748779296875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1067",
+                        "bbox": {
+                          "x": 25.570534399999985,
+                          "y": 605.1682335999999,
+                          "w": 129.60977536000001,
+                          "h": 29.566588052336556
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 25.57053565979004,
+                        "y": 602.37158203125,
+                        "w": 129.60975646972656,
+                        "h": 9.23748779296875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 602.37158203125,
+                      "w": 129.60975646972656,
+                      "h": 9.23748779296875
+                    }
+                  },
+                  "value": {
+                    "text": "Legislación Española.",
+                    "evidence": {
+                      "text": "Legislación Española.",
+                      "row_y_hint": 602,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 161.93699840000002,
+                          "y": 603.91242944,
+                          "w": 58.45267583999998,
+                          "h": 7.704319999999939
+                        },
+                        "char_indices": [
+                          6160,
+                          6161,
+                          6162,
+                          6163,
+                          6164,
+                          6165,
+                          6166,
+                          6167,
+                          6168,
+                          6169,
+                          6170,
+                          6171,
+                          6172,
+                          6173,
+                          6174,
+                          6175,
+                          6176,
+                          6177,
+                          6178,
+                          6179
+                        ],
+                        "n_chars": 20,
+                        "row_y": 603.91242944
+                      },
+                      "liteparse": {
+                        "span_id": 126,
+                        "bbox": {
+                          "x": 161.93701171875,
+                          "y": 602.37158203125,
+                          "w": 58.452667236328125,
+                          "h": 9.23748779296875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1079",
+                        "bbox": {
+                          "x": 161.93699840000002,
+                          "y": 605.1682335999999,
+                          "w": 58.45267583999998,
+                          "h": 5.7602392523365324
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 161.93699840000002,
+                        "y": 603.91242944,
+                        "w": 58.45267583999998,
+                        "h": 7.704319999999939
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 603.91242944,
+                      "w": 58.45267583999998,
+                      "h": 7.704319999999939
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Cláusula sobre la legislación aplicable que rige en relación con el contrato de crédito y/o tribunal competente.",
+                    "evidence": {
+                      "text": "Cláusula sobre la legislación aplicable que rige en relación con el contrato de crédito y/o tribunal competente.",
+                      "row_y_hint": 638,
+                      "x_hint": null,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 130,
+                        "bbox": {
+                          "x": 25.57053565979004,
+                          "y": 637.965576171875,
+                          "w": 129.5789794921875,
+                          "h": 9.2374267578125
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1068",
+                        "bbox": {
+                          "x": 25.570534399999985,
+                          "y": 640.7621919999999,
+                          "w": 129.67140992,
+                          "h": 19.39688565233655
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 25.57053565979004,
+                        "y": 637.965576171875,
+                        "w": 129.5789794921875,
+                        "h": 9.2374267578125
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 637.965576171875,
+                      "w": 129.5789794921875,
+                      "h": 9.2374267578125
+                    }
+                  },
+                  "value": {
+                    "text": "El contrato de Préstamo se regirá e interpretará de conformidad con la ley española, incluyendo las disposiciones especiales reguladoras del",
+                    "evidence": {
+                      "text": "El contrato de Préstamo se regirá e interpretará de conformidad con la ley española, incluyendo las disposiciones especiales reguladoras del",
+                      "row_y_hint": 638,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 161.93699840000002,
+                          "y": 639.50638784,
+                          "w": 395.84796159999996,
+                          "h": 7.704319999999939
+                        },
+                        "char_indices": [
+                          6276,
+                          6277,
+                          6278,
+                          6279,
+                          6280,
+                          6281,
+                          6282,
+                          6283,
+                          6284,
+                          6285,
+                          6286,
+                          6287,
+                          6288,
+                          6289,
+                          6290,
+                          6291,
+                          6292,
+                          6293,
+                          6294,
+                          6295
+                        ],
+                        "n_chars": 121,
+                        "row_y": 639.14
+                      },
+                      "liteparse": {
+                        "span_id": 131,
+                        "bbox": {
+                          "x": 161.93699645996094,
+                          "y": 637.965576171875,
+                          "w": 395.847900390625,
+                          "h": 9.2374267578125
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1080",
+                        "bbox": {
+                          "x": 161.93699840000002,
+                          "y": 640.7621919999999,
+                          "w": 395.84796159999996,
+                          "h": 12.462997652336526
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 161.93699840000002,
+                        "y": 639.50638784,
+                        "w": 395.84796159999996,
+                        "h": 7.704319999999939
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 639.50638784,
+                      "w": 395.84796159999996,
+                      "h": 7.704319999999939
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "text": "Régimen lingüístico",
+                    "evidence": {
+                      "text": "Régimen lingüístico",
+                      "row_y_hint": 670,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 25.5705344,
+                          "y": 672.09566144,
+                          "w": 53.49879808,
+                          "h": 7.7043200000000525
+                        },
+                        "char_indices": [
+                          6641,
+                          6642,
+                          6643,
+                          6644,
+                          6645,
+                          6646,
+                          6647,
+                          6648,
+                          6649,
+                          6650,
+                          6651,
+                          6652,
+                          6653,
+                          6654,
+                          6655,
+                          6656,
+                          6657,
+                          6658
+                        ],
+                        "n_chars": 18,
+                        "row_y": 671.17114304
+                      },
+                      "liteparse": {
+                        "span_id": 137,
+                        "bbox": {
+                          "x": 25.57053565979004,
+                          "y": 670.5548095703125,
+                          "w": 53.49878692626953,
+                          "h": 9.23748779296875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1069",
+                        "bbox": {
+                          "x": 25.5705344,
+                          "y": 673.3514656,
+                          "w": 53.49879808,
+                          "h": 5.760239252336419
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 25.5705344,
+                        "y": 672.09566144,
+                        "w": 53.49879808,
+                        "h": 7.7043200000000525
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 672.09566144,
+                      "w": 53.49879808,
+                      "h": 7.7043200000000525
+                    }
+                  },
+                  "value": {
+                    "text": "La información y los términos contractuales se facilitarán en lengua castellana, salvo que lo solicite en otra lengua oficial autorizada del Estado",
+                    "evidence": {
+                      "text": "La información y los términos contractuales se facilitarán en lengua castellana, salvo que lo solicite en otra lengua oficial autorizada del Estado",
+                      "row_y_hint": 669,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 161.93699840000002,
+                          "y": 671.17114304,
+                          "w": 395.88648320000004,
+                          "h": 7.7043200000000525
+                        },
+                        "char_indices": [
+                          6659,
+                          6660,
+                          6661,
+                          6662,
+                          6663,
+                          6664,
+                          6665,
+                          6666,
+                          6667,
+                          6668,
+                          6669,
+                          6670,
+                          6671,
+                          6672,
+                          6673,
+                          6674,
+                          6675,
+                          6676,
+                          6677,
+                          6678
+                        ],
+                        "n_chars": 126,
+                        "row_y": 671.17114304
+                      },
+                      "liteparse": {
+                        "span_id": 138,
+                        "bbox": {
+                          "x": 161.93699645996094,
+                          "y": 669.6303100585938,
+                          "w": 395.88641357421875,
+                          "h": 9.23748779296875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1082",
+                        "bbox": {
+                          "x": 161.9369984,
+                          "y": 672.4269472,
+                          "w": 395.88648319999993,
+                          "h": 13.618645652336454
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p28-r12",
+                        "bbox": {
+                          "x": 162.6303872,
+                          "y": 670.80904,
+                          "w": 394.7693568000001,
+                          "h": 15.48568320000004
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 161.93699840000002,
+                        "y": 671.17114304,
+                        "w": 395.88648320000004,
+                        "h": 7.7043200000000525
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 671.17114304,
+                      "w": 395.88648320000004,
+                      "h": 7.7043200000000525
+                    }
+                  }
+                }
+              ],
+              "bbox": {
+                "x": 25.5705344,
+                "y": 489.27214783999995,
+                "w": 532.3376947200006,
+                "h": 190.52783360000006
+              },
+              "evidence": {
+                "title_signal": {
+                  "text": "Relativa al contrato de crédito",
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 32.735552,
+                      "y": 479.7958342399999,
+                      "w": 82.68276224,
+                      "h": 7.704319999999996
+                    },
+                    "char_indices": [
+                      4284,
+                      4285,
+                      4286,
+                      4287,
+                      4288,
+                      4289,
+                      4290,
+                      4291,
+                      4292,
+                      4293,
+                      4294,
+                      4295,
+                      4296,
+                      4297,
+                      4298,
+                      4299,
+                      4300,
+                      4301,
+                      4302,
+                      4303
+                    ],
+                    "n_chars": 27,
+                    "row_y": 479.7958342399999
+                  },
+                  "liteparse": {
+                    "span_id": 106,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 478.2550048828125,
+                      "w": 89.84777069091797,
+                      "h": 9.237457275390625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1065",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 481.05163839999994,
+                      "w": 89.84777983999999,
+                      "h": 5.760239252336476
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "bbox": {
+                    "x": 32.735552,
+                    "y": 479.7958342399999,
+                    "w": 82.68276224,
+                    "h": 7.704319999999996
+                  },
+                  "engine_agreement": 3
+                },
+                "container_signal": {
+                  "container_bbox": {
+                    "x": 25.5705344,
+                    "y": 489.27214783999995,
+                    "w": 532.3376947200006,
+                    "h": 190.52783360000006
+                  },
+                  "pdfplumber_rect": null,
+                  "docling_block": null,
+                  "edges_inside": {
+                    "vertical": 19,
+                    "horizontal": 17
+                  },
+                  "colons_inside": 1,
+                  "container_score": 1
+                },
+                "structural_signals": {
+                  "kind": "table",
+                  "n_columns_declared": 2,
+                  "n_rows_declared": 4,
+                  "n_columns_with_group": 0,
+                  "header_levels": 1,
+                  "vertical_edges_inside": 19,
+                  "horizontal_edges_inside": 17,
+                  "has_docling_table_block": false,
+                  "has_pdfplumber_rect_frame": false
+                }
+              }
+            }
+          ],
+          "title_bbox": {
+            "x": 25.5705344,
+            "y": 479.7958342399999,
+            "w": 89.84777984,
+            "h": 7.704319999999996
+          },
+          "container_bbox": {
+            "x": 25.5705344,
+            "y": 489.27214783999995,
+            "w": 532.3376947200006,
+            "h": 190.52783360000006
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "b) Relativa al contrato de crédito",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 25.5705344,
+                  "y": 479.7958342399999,
+                  "w": 89.84777984,
+                  "h": 7.704319999999996
+                },
+                "char_indices": [
+                  4282,
+                  4283,
+                  4284,
+                  4285,
+                  4286,
+                  4287,
+                  4288,
+                  4289,
+                  4290,
+                  4291,
+                  4292,
+                  4293,
+                  4294,
+                  4295,
+                  4296,
+                  4297,
+                  4298,
+                  4299,
+                  4300,
+                  4301
+                ],
+                "n_chars": 29,
+                "row_y": 479.7958342399999
+              },
+              "liteparse": {
+                "span_id": 106,
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 478.2550048828125,
+                  "w": 89.84777069091797,
+                  "h": 9.237457275390625
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1065",
+                "bbox": {
+                  "x": 25.5705344,
+                  "y": 481.05163839999994,
+                  "w": 89.84777983999999,
+                  "h": 5.760239252336476
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "bbox": {
+                "x": 25.5705344,
+                "y": 479.7958342399999,
+                "w": 89.84777984,
+                "h": 7.704319999999996
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 25.5705344,
+                "y": 489.27214783999995,
+                "w": 532.3376947200006,
+                "h": 190.52783360000006
+              },
+              "pdfplumber_rect": null,
+              "docling_block": null,
+              "edges_inside": {
+                "vertical": 19,
+                "horizontal": 17
+              },
+              "colons_inside": 1,
+              "container_score": 1
+            },
+            "structural_signals": {
+              "kind": "section",
+              "n_children": 1,
+              "child_type_distribution": {
+                "table": 1
+              },
+              "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/b) Relativa al contrato de crédito"
+            }
+          }
+        },
+        {
+          "type": "section",
+          "id": "relativa_recurso",
+          "title": "c) Relativa al recurso",
+          "y_hint": 687,
+          "children": [
+            {
+              "type": "table",
+              "id": "datos_recurso",
+              "title": "Relativa al recurso",
+              "y_hint": 698,
+              "columns": [
+                {
+                  "id": "label",
+                  "label": "Concepto",
+                  "type": "text"
+                },
+                {
+                  "id": "value",
+                  "label": "Valor",
+                  "type": "text"
+                }
+              ],
+              "rows": [
+                {
+                  "label": {
+                    "text": "Existencia o acceso a los procedimientos extrajudiciales de reclamación y recurso.",
+                    "evidence": {
+                      "text": "Existencia o acceso a los procedimientos extrajudiciales de reclamación y recurso.",
+                      "row_y_hint": 698,
+                      "x_hint": null,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 141,
+                        "bbox": {
+                          "x": 25.57053565979004,
+                          "y": 698.0592041015625,
+                          "w": 129.48651123046875,
+                          "h": 9.23748779296875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1071",
+                        "bbox": {
+                          "x": 25.5705344,
+                          "y": 700.8558879999999,
+                          "w": 129.48650624000004,
+                          "h": 13.618645652336454
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 25.57053565979004,
+                        "y": 698.0592041015625,
+                        "w": 129.48651123046875,
+                        "h": 9.23748779296875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 698.0592041015625,
+                      "w": 129.48651123046875,
+                      "h": 9.23748779296875
+                    }
+                  },
+                  "value": {
+                    "text": "CaixaBank Payments & Consumer, que no está adherida a la junta arbitral de consumo, tiene establecido un Servicio de Atención al Cliente del",
+                    "evidence": {
+                      "text": "CaixaBank Payments & Consumer, que no está adherida a la junta arbitral de consumo, tiene establecido un Servicio de Atención al Cliente del",
+                      "row_y_hint": 698,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 161.93699840000002,
+                          "y": 699.60008384,
+                          "w": 395.84796159999996,
+                          "h": 7.812180479999938
+                        },
+                        "char_indices": [
+                          6884,
+                          6885,
+                          6886,
+                          6887,
+                          6888,
+                          6889,
+                          6890,
+                          6891,
+                          6892,
+                          6893,
+                          6894,
+                          6895,
+                          6896,
+                          6897,
+                          6898,
+                          6899,
+                          6900,
+                          6901,
+                          6902,
+                          6903
+                        ],
+                        "n_chars": 118,
+                        "row_y": 696.74
+                      },
+                      "liteparse": {
+                        "span_id": 142,
+                        "bbox": {
+                          "x": 161.93699645996094,
+                          "y": 698.0592041015625,
+                          "w": 395.84783935546875,
+                          "h": 9.3453369140625
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 8.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/1083",
+                        "bbox": {
+                          "x": 161.93699840000002,
+                          "y": 700.8558879999999,
+                          "w": 57.412592639999986,
+                          "h": 5.7602392523365324
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": null,
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 161.93699840000002,
+                        "y": 699.60008384,
+                        "w": 395.84796159999996,
+                        "h": 7.812180479999938
+                      },
+                      "engine_agreement": 3
+                    },
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 699.60008384,
+                      "w": 395.84796159999996,
+                      "h": 7.812180479999938
+                    }
+                  }
+                }
+              ],
+              "bbox": {
+                "x": 25.57053565979004,
+                "y": 698.0592041015625,
+                "w": 532.2144243402099,
+                "h": 9.353060218437463
+              },
+              "evidence": {
+                "title_signal": {
+                  "text": "Relativa al recurso",
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 32.504422399999996,
+                      "y": 688.7369926399999,
+                      "w": 50.648199680000005,
+                      "h": 7.7043200000000525
+                    },
+                    "char_indices": [
+                      6795,
+                      6796,
+                      6797,
+                      6798,
+                      6799,
+                      6800,
+                      6801,
+                      6802,
+                      6803,
+                      6804,
+                      6805,
+                      6806,
+                      6807,
+                      6808,
+                      6809,
+                      6810,
+                      6811
+                    ],
+                    "n_chars": 17,
+                    "row_y": 687.14
+                  },
+                  "liteparse": {
+                    "span_id": 140,
+                    "bbox": {
+                      "x": 25.57053565979004,
+                      "y": 687.1961669921875,
+                      "w": 57.58208465576172,
+                      "h": 9.23748779296875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/1070",
+                    "bbox": {
+                      "x": 25.5705344,
+                      "y": 689.9927968,
+                      "w": 57.58208768,
+                      "h": 5.7602392523365324
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "bbox": {
+                    "x": 32.504422399999996,
+                    "y": 688.7369926399999,
+                    "w": 50.648199680000005,
+                    "h": 7.7043200000000525
+                  },
+                  "engine_agreement": 3
+                },
+                "container_signal": {
+                  "container_bbox": {
+                    "x": 25.57053565979004,
+                    "y": 698.0592041015625,
+                    "w": 532.2144243402099,
+                    "h": 9.353060218437463
+                  },
+                  "pdfplumber_rect": null,
+                  "docling_block": null,
+                  "edges_inside": {
+                    "vertical": 2,
+                    "horizontal": 0
+                  },
+                  "colons_inside": 0,
+                  "container_score": 1
+                },
+                "structural_signals": {
+                  "kind": "table",
+                  "n_columns_declared": 2,
+                  "n_rows_declared": 1,
+                  "n_columns_with_group": 0,
+                  "header_levels": 1,
+                  "vertical_edges_inside": 2,
+                  "horizontal_edges_inside": 0,
+                  "has_docling_table_block": false,
+                  "has_pdfplumber_rect_frame": false
+                }
+              }
+            }
+          ],
+          "title_bbox": {
+            "x": 25.5705344,
+            "y": 688.7369926399999,
+            "w": 57.58208768,
+            "h": 7.7043200000000525
+          },
+          "container_bbox": {
+            "x": 25.57053565979004,
+            "y": 698.0592041015625,
+            "w": 532.2144243402099,
+            "h": 9.353060218437463
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "c) Relativa al recurso",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 25.5705344,
+                  "y": 688.7369926399999,
+                  "w": 57.58208768,
+                  "h": 7.7043200000000525
+                },
+                "char_indices": [
+                  6793,
+                  6794,
+                  6795,
+                  6796,
+                  6797,
+                  6798,
+                  6799,
+                  6800,
+                  6801,
+                  6802,
+                  6803,
+                  6804,
+                  6805,
+                  6806,
+                  6807,
+                  6808,
+                  6809,
+                  6810,
+                  6811
+                ],
+                "n_chars": 19,
+                "row_y": 687.14
+              },
+              "liteparse": {
+                "span_id": 140,
+                "bbox": {
+                  "x": 25.57053565979004,
+                  "y": 687.1961669921875,
+                  "w": 57.58208465576172,
+                  "h": 9.23748779296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 8.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/1070",
+                "bbox": {
+                  "x": 25.5705344,
+                  "y": 689.9927968,
+                  "w": 57.58208768,
+                  "h": 5.7602392523365324
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "bbox": {
+                "x": 25.5705344,
+                "y": 688.7369926399999,
+                "w": 57.58208768,
+                "h": 7.7043200000000525
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 25.57053565979004,
+                "y": 698.0592041015625,
+                "w": 532.2144243402099,
+                "h": 9.353060218437463
+              },
+              "pdfplumber_rect": null,
+              "docling_block": null,
+              "edges_inside": {
+                "vertical": 2,
+                "horizontal": 0
+              },
+              "colons_inside": 0,
+              "container_score": 1
+            },
+            "structural_signals": {
+              "kind": "section",
+              "n_children": 1,
+              "child_type_distribution": {
+                "table": 1
+              },
+              "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/c) Relativa al recurso"
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 29.499737600000003,
+        "y": 423.82106031999996,
+        "w": 319.0715236800001,
+        "h": 8.667359999999974
+      },
+      "container_bbox": {
+        "x": 25.5705344,
+        "y": 446.8214111328125,
+        "w": 532.3376947200006,
+        "h": 260.59085318718746
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "5. Información adicional en el caso de comercialización a distancia de servicios financieros",
+          "pdfplumber": {
+            "bbox": {
+              "x": 29.499737600000003,
+              "y": 423.82106031999996,
+              "w": 319.0715236800001,
+              "h": 8.667359999999974
+            },
+            "char_indices": [
+              3841,
+              3842,
+              3843,
+              3844,
+              3845,
+              3846,
+              3847,
+              3848,
+              3849,
+              3850,
+              3851,
+              3852,
+              3853,
+              3854,
+              3855,
+              3856,
+              3857,
+              3858,
+              3859,
+              3860
+            ],
+            "n_chars": 92,
+            "row_y": 423.13999999999953
+          },
+          "liteparse": {
+            "span_id": 99,
+            "bbox": {
+              "x": 29.499738693237305,
+              "y": 422.08758544921875,
+              "w": 319.0713195800781,
+              "h": 10.392181396484375
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 9.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/1061",
+            "bbox": {
+              "x": 29.499737600000003,
+              "y": 425.23384,
+              "w": 319.07152368000027,
+              "h": 6.480269158878457
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 29.499737600000003,
+            "y": 423.82106031999996,
+            "w": 319.0715236800001,
+            "h": 8.667359999999974
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 25.5705344,
+            "y": 446.8214111328125,
+            "w": 532.3376947200006,
+            "h": 260.59085318718746
+          },
+          "pdfplumber_rect": null,
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 32,
+            "horizontal": 38
+          },
+          "colons_inside": 1,
+          "container_score": 1
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 3,
+          "child_type_distribution": {
+            "section": 3
+          },
+          "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros"
+        }
+      }
+    },
+    {
+      "type": "noise",
+      "id": "footer_pages_top",
+      "text": "28/40",
+      "kind": "page_number",
+      "y_hint": 269,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 269.54046630859375,
+        "w": 9.0560302734375,
+        "h": 23.99993896484375
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "28/40",
+          "row_y_hint": 269,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 168,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 269.54046630859375,
+              "w": 9.0560302734375,
+              "h": 23.99993896484375
+            },
+            "case_class": "none",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/1029",
+            "bbox": {
+              "x": 583.804,
+              "y": 269.5399999999995,
+              "w": 5.618213036565976,
+              "h": 484.8000000000004
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 269.54046630859375,
+            "w": 9.0560302734375,
+            "h": 23.99993896484375
+          },
+          "engine_agreement": 2
+        },
+        "kind": "page_number"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "sidebar_logalty",
+      "text": "Logalty Guid: 001001-0001-000000076308655.par - Date: 2022/07/11 T 19:08:36 CEST +0200 - Pages: 28/40",
+      "kind": "logalty_metadata",
+      "y_hint": 331,
+      "bbox": {
+        "x": 581.635986328125,
+        "y": 331.9403381347656,
+        "w": 9.0560302734375,
+        "h": 4.79998779296875
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Logalty Guid: 001001-0001-000000076308655.par - Date: 2022/07/11 T 19:08:36 CEST +0200 - Pages: 28/40",
+          "row_y_hint": 331,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 167,
+            "bbox": {
+              "x": 581.635986328125,
+              "y": 331.9403381347656,
+              "w": 9.0560302734375,
+              "h": 4.79998779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 581.635986328125,
+            "y": 331.9403381347656,
+            "w": 9.0560302734375,
+            "h": 4.79998779296875
+          },
+          "engine_agreement": 1
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "footer_pagina",
+      "text": "Página 2/2",
+      "kind": "page_number",
+      "y_hint": 799,
+      "bbox": {
+        "x": 522.4991744,
+        "y": 801.29710784,
+        "w": 32.77417728,
+        "h": 7.7043200000000525
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Página 2/2",
+          "row_y_hint": 799,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 522.4991744,
+              "y": 801.29710784,
+              "w": 32.77417728,
+              "h": 7.7043200000000525
+            },
+            "char_indices": [
+              8223,
+              8224,
+              8225,
+              8226,
+              8227,
+              8228,
+              8229,
+              8230,
+              8231,
+              8232
+            ],
+            "n_chars": 10,
+            "row_y": 801.29710784
+          },
+          "liteparse": {
+            "span_id": 158,
+            "bbox": {
+              "x": 522.4991455078125,
+              "y": 799.7562866210938,
+              "w": 32.774169921875,
+              "h": 9.23748779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": null,
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 522.4991744,
+            "y": 801.29710784,
+            "w": 32.77417728,
+            "h": 7.7043200000000525
+          },
+          "engine_agreement": 2
+        },
+        "kind": "page_number"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "otros_aspectos_juridicos",
+      "title": "4. Otros aspectos jurídicos importantes",
+      "title_bbox": {
+        "x": 29.499737600000003,
+        "y": 167.26720432000002,
+        "w": 136.93562063999997,
+        "h": 8.66736000000003
+      },
+      "container_bbox": {
+        "x": 25.57053565979004,
+        "y": 175.9375,
+        "w": 532.5765273802103,
+        "h": 232.04641723632812
+      },
+      "_view": "compat_flat"
+    },
+    {
+      "id": "info_adicional_distancia",
+      "title": "5. Información adicional en el caso de comercialización a distancia de servicios financieros",
+      "title_bbox": {
+        "x": 29.499737600000003,
+        "y": 423.82106031999996,
+        "w": 319.0715236800001,
+        "h": 8.667359999999974
+      },
+      "container_bbox": {
+        "x": 25.5705344,
+        "y": 446.8214111328125,
+        "w": 532.3376947200006,
+        "h": 260.59085318718746
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Para mantener una o varias cuentas se requiere registrar tanto las transacciones de pago como la disposición del crédito.",
+      "value": "No aplica",
+      "section": null,
+      "band": "Costes relacionados",
+      "column_header": "Valor",
+      "row_y": 39,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 26.95730972290039,
+        "y": 39.33990478515625,
+        "w": 129.64828491210938,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 163.323776,
+          "y": 42.960890240000026,
+          "w": 25.747837440000012,
+          "h": 7.704319999999939
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 0,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Importe de los costes por utilizar un medio de pago específico (por ejemplo, una tarjeta de crédito).",
+      "value": "No aplica",
+      "section": null,
+      "band": "Costes relacionados",
+      "column_header": "Valor",
+      "row_y": 65,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 26.95730972290039,
+        "y": 65.2264404296875,
+        "w": 129.57896423339844,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 163.323776,
+          "y": 66.30497983999999,
+          "w": 25.747837440000012,
+          "h": 7.704319999999939
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 1,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Condiciones en que pueden modificarse los gastos antes mencionados relacionados con el contrato de crédito.",
+      "value": "No aplica",
+      "section": null,
+      "band": "Costes relacionados",
+      "column_header": "Valor",
+      "row_y": 89,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 26.95730972290039,
+        "y": 89.7261962890625,
+        "w": 129.65599060058594,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 163.323776,
+          "y": 92.19149504000006,
+          "w": 25.747837440000012,
+          "h": 7.704319999999939
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 2,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Costes en caso de pagos atrasados. La no realización de un pago podrá acarrearle graves consecuencias (por ejemplo, la inclusión en Sistemas de Información Crediticia, así como el embargo y la venta forzosa de sus bienes).",
+      "value": "Interés de demora: TIN de cada disposición + dos puntos porcentuales. Compensación por costes de cobro ante un impago (retraso en el pago): 35€ por los recursos que CaixaBank Payments & Consumer destinará a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 60€. Si después de 15 días se mantiene el impago, CaixaBank Payments & Consumer podrá enviar al titular un burofax o equivalente con certificación de contenido y recibo. Actualmente tiene un coste de 24€ y CaixaBank Payments & Consumer reclamará al titular su coste en deudas superiores a 300€.",
+      "section": null,
+      "band": "Costes relacionados",
+      "column_header": "Valor",
+      "row_y": 114,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 26.95730972290039,
+        "y": 114.45709228515625,
+        "w": 99.78634643554688,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 163.3237762451172,
+          "y": 113.763671875,
+          "w": 199.15663146972656,
+          "h": 9.23748779296875
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "row": 3,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Derecho de desistimiento. Usted tiene derecho a desistir del contrato de crédito en el plazo de 14 días naturales.",
+      "value": "Sí",
+      "section": "4. Otros aspectos jurídicos importantes",
+      "band": "Otros aspectos jurídicos importantes",
+      "column_header": "Valor",
+      "row_y": 176,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 175.9375,
+        "w": 72.0970230102539,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 164.7105536,
+          "y": 179.3273542400001,
+          "w": 5.262050560000006,
+          "h": 7.704319999999939
+        }
+      ],
+      "evidence": {
+        "path": "4. Otros aspectos jurídicos importantes",
+        "row": 0,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Reembolso anticipado. Usted tiene derecho a reembolsar anticipadamente el crédito total o parcialmente en cualquier momento.",
+      "value": "Sí",
+      "section": "4. Otros aspectos jurídicos importantes",
+      "band": "Otros aspectos jurídicos importantes",
+      "column_header": "Valor",
+      "row_y": 201,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 201.130615234375,
+        "w": 62.55137634277344,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 164.7105536,
+          "y": 204.52048064000007,
+          "w": 5.262050560000006,
+          "h": 7.704319999999939
+        }
+      ],
+      "evidence": {
+        "path": "4. Otros aspectos jurídicos importantes",
+        "row": 1,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "El prestamista tiene derecho a compensación en caso de reembolso anticipado.",
+      "value": "Compensación por cancelación anticipada total o parcial : 1,00% del importe del crédito reembolsado anticipadamente si el periodo restante,",
+      "section": "4. Otros aspectos jurídicos importantes",
+      "band": "Otros aspectos jurídicos importantes",
+      "column_header": "Valor",
+      "row_y": 234,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 233.95111083984375,
+        "w": 129.65599060058594,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000002,
+          "y": 236.41636544000005,
+          "w": 395.89418752000006,
+          "h": 7.704319999999939
+        }
+      ],
+      "evidence": {
+        "path": "4. Otros aspectos jurídicos importantes",
+        "row": 2,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Consulta de una base de datos. El prestamista tiene que informarle de inmediato y sin cargo del resultado de una consulta de una base de datos si se rechaza la solicitud de crédito sobre la base de una consulta de ese tipo. Esto no se aplica si la difusión de esa información está prohibida por una ley o por el Derecho de la Unión Europea o es contraria a los objetivos de orden público o de la seguridad pública.",
+      "value": "CaixaBank Payments & Consumer informa al titular del derecho que le asiste a consultar sus datos a fuentes reconocidas en derecho que considere",
+      "section": "4. Otros aspectos jurídicos importantes",
+      "band": "Otros aspectos jurídicos importantes",
+      "column_header": "Valor",
+      "row_y": 254,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 253.5970458984375,
+        "w": 86.69670867919922,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000005,
+          "y": 255.13786304000007,
+          "w": 396.0944998400003,
+          "h": 7.812180479999938
+        }
+      ],
+      "evidence": {
+        "path": "4. Otros aspectos jurídicos importantes",
+        "row": 3,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Derecho a un proyecto del contrato de crédito. Usted tiene derecho, previa petición, a obtener de forma gratuita una copia del proyecto de contrato de crédito. Esta disposición no se aplicará si en el momento de la solicitud el prestamista no está dispuesto a celebrar con usted el contrato de crédito.",
+      "value": "CaixaBank Payments & Consumer, siempre que esté dispuesta a conceder la financiación, facilitará al titular, solicitante del crédito, de forma gratuita, previa",
+      "section": "4. Otros aspectos jurídicos importantes",
+      "band": "Otros aspectos jurídicos importantes",
+      "column_header": "Valor",
+      "row_y": 325,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 325.01611328125,
+        "w": 128.59280395507812,
+        "h": 9.237457275390625
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000002,
+          "y": 327.94368704,
+          "w": 396.2100646400004,
+          "h": 7.812180479999938
+        }
+      ],
+      "evidence": {
+        "path": "4. Otros aspectos jurídicos importantes",
+        "row": 4,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Período durante el cual el prestamista está vinculado por la información precontractual.",
+      "value": "Esta información precontractual será válida desde la fecha que figura en el encabezamiento de este documento y hasta 30 días naturales",
+      "section": "4. Otros aspectos jurídicos importantes",
+      "band": "Otros aspectos jurídicos importantes",
+      "column_header": "Valor",
+      "row_y": 379,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 379.7937927246094,
+        "w": 129.56353759765625,
+        "h": 9.237457275390625
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000002,
+          "y": 380.64123584,
+          "w": 395.9095961600001,
+          "h": 7.704319999999996
+        }
+      ],
+      "evidence": {
+        "path": "4. Otros aspectos jurídicos importantes",
+        "row": 5,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Utilización de un instrumento de pago específico, como por ejemplo, una tarjeta de crédito.",
+      "value": "No aplica",
+      "section": "4. Otros aspectos jurídicos importantes",
+      "band": "Otros aspectos jurídicos importantes",
+      "column_header": "Valor",
+      "row_y": 398,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 398.7464599609375,
+        "w": 27.943567276000977,
+        "h": 9.237457275390625
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000002,
+          "y": 399.82499263999995,
+          "w": 23.860279040000023,
+          "h": 7.704319999999996
+        }
+      ],
+      "evidence": {
+        "path": "4. Otros aspectos jurídicos importantes",
+        "row": 6,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Registro",
+      "value": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492 e inscrita con el nº 8776 en el Registro de Establecimientos de Crédito del Banco de España.",
+      "section": "a) Relativa al prestamista",
+      "band": "Relativa al prestamista",
+      "column_header": "Valor",
+      "row_y": 446,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.5705344,
+        "y": 448.36220863999995,
+        "w": 22.804787200000007,
+        "h": 7.704319999999996
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699645996094,
+          "y": 446.8214111328125,
+          "w": 395.9404296875,
+          "h": 9.3453369140625
+        }
+      ],
+      "evidence": {
+        "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/a) Relativa al prestamista",
+        "row": 0,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Autoridad de supervisión",
+      "value": "CaixaBank Payments & Consumer está sometida a la supervisión del Banco de España, con domicilio en Madrid, calle Alcalá, 50.",
+      "section": "a) Relativa al prestamista",
+      "band": "Relativa al prestamista",
+      "column_header": "Valor",
+      "row_y": 466,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.5705344,
+        "y": 467.54596544,
+        "w": 68.20634496000001,
+        "h": 7.704319999999996
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000002,
+          "y": 467.54596544,
+          "w": 355.76238464000005,
+          "h": 7.812180479999995
+        }
+      ],
+      "evidence": {
+        "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/a) Relativa al prestamista",
+        "row": 1,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Ejercicio del derecho de desistimiento",
+      "value": "Conforme a lo establecido en la Ley 16/2011, de 24 de junio, de Contratos de Crédito al Consumo, en el supuesto de que el/los prestatario/s",
+      "section": "b) Relativa al contrato de crédito",
+      "band": "Relativa al contrato de crédito",
+      "column_header": "Valor",
+      "row_y": 487,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.5705344,
+        "y": 489.27214783999995,
+        "w": 104.30878847999999,
+        "h": 7.704319999999996
+      },
+      "value_bboxes": [
+        {
+          "x": 161.9369984,
+          "y": 489.27214783999995,
+          "w": 395.9712307200007,
+          "h": 7.704319999999996
+        }
+      ],
+      "evidence": {
+        "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/b) Relativa al contrato de crédito",
+        "row": 0,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "La legislación que el prestamista acepta como base para el establecimiento de relaciones con usted antes de la celebración del contrato de crédito.",
+      "value": "Legislación Española.",
+      "section": "b) Relativa al contrato de crédito",
+      "band": "Relativa al contrato de crédito",
+      "column_header": "Valor",
+      "row_y": 602,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 602.37158203125,
+        "w": 129.60975646972656,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000002,
+          "y": 603.91242944,
+          "w": 58.45267583999998,
+          "h": 7.704319999999939
+        }
+      ],
+      "evidence": {
+        "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/b) Relativa al contrato de crédito",
+        "row": 1,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Cláusula sobre la legislación aplicable que rige en relación con el contrato de crédito y/o tribunal competente.",
+      "value": "El contrato de Préstamo se regirá e interpretará de conformidad con la ley española, incluyendo las disposiciones especiales reguladoras del",
+      "section": "b) Relativa al contrato de crédito",
+      "band": "Relativa al contrato de crédito",
+      "column_header": "Valor",
+      "row_y": 638,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 637.965576171875,
+        "w": 129.5789794921875,
+        "h": 9.2374267578125
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000002,
+          "y": 639.50638784,
+          "w": 395.84796159999996,
+          "h": 7.704319999999939
+        }
+      ],
+      "evidence": {
+        "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/b) Relativa al contrato de crédito",
+        "row": 2,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Régimen lingüístico",
+      "value": "La información y los términos contractuales se facilitarán en lengua castellana, salvo que lo solicite en otra lengua oficial autorizada del Estado",
+      "section": "b) Relativa al contrato de crédito",
+      "band": "Relativa al contrato de crédito",
+      "column_header": "Valor",
+      "row_y": 670,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.5705344,
+        "y": 672.09566144,
+        "w": 53.49879808,
+        "h": 7.7043200000000525
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000002,
+          "y": 671.17114304,
+          "w": 395.88648320000004,
+          "h": 7.7043200000000525
+        }
+      ],
+      "evidence": {
+        "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/b) Relativa al contrato de crédito",
+        "row": 3,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Existencia o acceso a los procedimientos extrajudiciales de reclamación y recurso.",
+      "value": "CaixaBank Payments & Consumer, que no está adherida a la junta arbitral de consumo, tiene establecido un Servicio de Atención al Cliente del",
+      "section": "c) Relativa al recurso",
+      "band": "Relativa al recurso",
+      "column_header": "Valor",
+      "row_y": 698,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 25.57053565979004,
+        "y": 698.0592041015625,
+        "w": 129.48651123046875,
+        "h": 9.23748779296875
+      },
+      "value_bboxes": [
+        {
+          "x": 161.93699840000002,
+          "y": 699.60008384,
+          "w": 395.84796159999996,
+          "h": 7.812180479999938
+        }
+      ],
+      "evidence": {
+        "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/c) Relativa al recurso",
+        "row": 0,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "scaffolder",
+    "n_chars": 8334,
+    "n_rows": 124,
+    "n_liteparse_spans": 169,
+    "n_docling_blocks": 65,
+    "n_rects": 106,
+    "kv_pair_breakdown": {
+      "3_eng": 16,
+      "2_eng": 2,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 0,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "scaffolder",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "sepi_two_column_label_value_table",
+      "multiline_value_fusion",
+      "binary_si_no_value",
+      "no_aplica_value",
+      "thematic_subsections",
+      "logalty_sidebar_noise",
+      "value_x_hint_disambiguation"
+    ],
+    "needs_review": false,
+    "document_type": "informacion_normalizada_europea_credito_consumo"
+  }
+}

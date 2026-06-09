@@ -36,6 +36,53 @@ result = pipe.run("form.pdf")              # free, ~1-3 seconds
 
 For free-text contracts or unstructured PDFs, use the [OpenRouter quickstart](#quickstart-with-openrouter) below.
 
+## Quickstart: structural extraction (no schema, no LLM)
+
+When you don't know the fields ahead of time — or the document is a Spanish
+judicial form, a banking contract, or any heterogeneous PDF — use
+`structural_extract` to auto-discover key-value pairs from the document's
+own layout. Three engines (Docling + LiteParse + pdfplumber), no LLM, no
+regex per field.
+
+```python
+from docomestria.structural import structural_extract
+
+result = structural_extract("contract.pdf")
+for pair in result.pairs:
+    print(
+        pair.label_text,
+        "→",
+        pair.value_text,
+        pair.confidence.value,   # 'high' | 'medium' | 'low'
+        pair.evidence,           # which rules fired: ('D-2col',), etc.
+        "section:", pair.section_title,
+        "subsection:", pair.subsection_title,
+    )
+```
+
+Each emitted pair carries:
+
+- `label_text` / `value_text` — extracted strings
+- `label_bbox` / `value_bbox` — geometry
+- `page`, `section_title`, `subsection_title` — context
+- `score` (0..1), `confidence` (HIGH / MEDIUM / LOW), `evidence`
+  (which rules contributed) — fully auditable
+
+Five candidate emitters cover the topologies seen in real Spanish PDFs:
+
+- `D-2col` — Docling 2-col cells (including N-col matrices reduced via
+  consistent-value rows and per-column annotation like
+  `'TAE (Sin nómina) → 12,6020%'`)
+- `L-inline-split` — labels with `:` mid-string (`Nº Procedimiento: 987-15`)
+- `L-horizontal` — Bold LABEL + Regular VALUE on same Y, outside tables
+- `L-twocol-form` — parallel Titular 1 / Titular 2 forms
+- `L-vertical` — reserved
+
+Structure detection layers add sections, table sub-section splits via
+pdfplumber rect boxes, prose-region suppression via Docling text/list_item
+blocks, and shadow-table dedup. See
+`.planning/structural-extraction-strategy.md` for the full design.
+
 ### Mode comparison
 
 | Mode          | LLM needed | Cost                       | Speed   | Best for                                       |

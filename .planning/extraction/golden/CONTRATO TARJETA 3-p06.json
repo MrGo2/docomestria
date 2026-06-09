@@ -1,0 +1,493 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA 3.pdf",
+  "page": 6,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 41,
+    "rects": 167,
+    "docling_blocks": 26,
+    "noise_dropped": 5
+  },
+  "sections": [
+    {
+      "title": "Día de pago inicialmente escogido",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "text"
+      },
+      "title_bbox": {"x": 59.55, "y": 59.10, "w": 220.0, "h": 10.20},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [50.0, 85.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [59.55, 270.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [270.0, 539.60], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [50.0, 85.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Día de pago inicialmente escogido:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 59.10, "w": 220.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "30",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 290.0, "y": 59.10, "w": 20.0, "h": 10.13},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Identificación del Establecimiento Afiliado",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.55, "y": 102.70, "w": 280.0, "h": 10.20},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [130.0, 240.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [59.55, 270.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [270.0, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [130.0, 163.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Denominación:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 140.60, "w": 80.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "MEDIA MARKT LAS PALMAS GRAN CANARIA, S.A",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 270.0, "y": 140.70, "w": 269.60, "h": 10.13},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [163.0, 200.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Domicilio social:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 175.10, "w": 90.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "AV. DE AYYO S/N <EDIFICIO MEDI , SN 38670 ADEJE",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 270.0, "y": 175.20, "w": 269.60, "h": 10.13},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r4",
+              "y_range": [200.0, 240.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Código del establecimiento:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 209.80, "w": 140.0, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    {"text": "Código del", "bbox": {"x": 59.55, "y": 209.80, "w": 70.0, "h": 10.20}},
+                    {"text": "establecimiento:", "bbox": {"x": 59.55, "y": 220.20, "w": 90.0, "h": 10.20}}
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "73566001",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 270.0, "y": 209.80, "w": 60.0, "h": 10.13},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 0,
+                  "text": "Empresa asociada y entidad colaboradora (identidad y domicilio):",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 207.0, "w": 200.0, "h": 30.80},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [265.0, 500.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [59.55, 270.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [270.0, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r5",
+              "y_range": [265.0, 320.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Disposición que realiza en este acto:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 277.20, "w": 210.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 0,
+                  "text": "Importe:",
+                  "role": "LABEL",
+                  "bbox": {"x": 270.0, "y": 277.20, "w": 60.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [302.0, 355.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Objeto financiado:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 312.80, "w": 100.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 0,
+                  "text": "Precio al contado:",
+                  "role": "LABEL",
+                  "bbox": {"x": 270.0, "y": 312.80, "w": 105.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r7",
+              "y_range": [333.0, 395.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Fecha de vencimiento de la primera cuota:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 342.0, "w": 240.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r8",
+              "y_range": [369.0, 420.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "TIN:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 379.40, "w": 30.0, "h": 10.20},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "TAE:",
+                  "role": "LABEL",
+                  "bbox": {"x": 270.0, "y": 379.40, "w": 30.0, "h": 10.20},
+                  "bold": false,
+                  "case": "UPPER",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r9",
+              "y_range": [407.0, 460.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Nº de cuotas:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 417.10, "w": 80.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 0,
+                  "text": "Importe 1ª cuota:",
+                  "role": "LABEL",
+                  "bbox": {"x": 180.0, "y": 417.10, "w": 100.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Importe última cuota:",
+                  "role": "LABEL",
+                  "bbox": {"x": 310.0, "y": 417.10, "w": 130.0, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    {"text": "Importe última", "bbox": {"x": 310.0, "y": 417.10, "w": 90.0, "h": 10.20}},
+                    {"text": "cuota:", "bbox": {"x": 310.0, "y": 427.50, "w": 40.0, "h": 10.20}}
+                  ]
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [443.0, 500.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Importe restantes cuotas:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 455.0, "w": 160.0, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    {"text": "Importe restantes", "bbox": {"x": 59.55, "y": 455.0, "w": 110.0, "h": 10.20}},
+                    {"text": "cuotas:", "bbox": {"x": 59.55, "y": 465.4, "w": 45.0, "h": 10.20}}
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "Modalidad de pago aplicable:",
+                  "role": "LABEL",
+                  "bbox": {"x": 270.0, "y": 455.0, "w": 180.0, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    {"text": "Modalidad de pago", "bbox": {"x": 270.0, "y": 455.0, "w": 120.0, "h": 10.20}},
+                    {"text": "aplicable:", "bbox": {"x": 270.0, "y": 465.4, "w": 65.0, "h": 10.20}}
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "Fraccionado",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 400.0, "y": 455.1, "w": 70.0, "h": 10.13},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r11",
+              "y_range": [483.0, 530.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Excepcionalidades:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 495.40, "w": 110.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Día de pago inicialmente escogido:",
+      "value": "30",
+      "section": "Día de pago inicialmente escogido",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 59.10,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_DiaPago", "value_span_ids": ["span_30"]}
+    },
+    {
+      "label": "Denominación:",
+      "value": "MEDIA MARKT LAS PALMAS GRAN CANARIA, S.A",
+      "section": "Identificación del Establecimiento Afiliado",
+      "band": "BAND_B",
+      "column_header": null,
+      "row_y": 140.60,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_Denominacion", "value_span_ids": ["span_MEDIA_MARKT"]}
+    },
+    {
+      "label": "Domicilio social:",
+      "value": "AV. DE AYYO S/N <EDIFICIO MEDI , SN 38670 ADEJE",
+      "section": "Identificación del Establecimiento Afiliado",
+      "band": "BAND_B",
+      "column_header": null,
+      "row_y": 175.10,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_DomicilioSocial", "value_span_ids": ["span_AV_AYYO"]}
+    },
+    {
+      "label": "Código del establecimiento:",
+      "value": "73566001",
+      "section": "Identificación del Establecimiento Afiliado",
+      "band": "BAND_B",
+      "column_header": null,
+      "row_y": 209.80,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_CodigoEstablecimiento", "value_span_ids": ["span_73566001"]}
+    },
+    {
+      "label": "Modalidad de pago aplicable:",
+      "value": "Fraccionado",
+      "section": "Identificación del Establecimiento Afiliado",
+      "band": "BAND_C",
+      "column_header": null,
+      "row_y": 455.0,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_ModalidadPago", "value_span_ids": ["span_Fraccionado"]}
+    }
+  ],
+  "noise": [
+    {
+      "text": "Logalty Guid: 001001-0001-000000140900869.par - Date: 2025/08/23 T 14:57:04 CEST +0200 - Pages: 6/61",
+      "bbox": {"x": 581.64, "y": 271.94, "w": 9.06, "h": 480.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "(Continúa en la siguiente página) >>",
+      "bbox": {"x": 381.74, "y": 793.70, "w": 147.48, "h": 10.13},
+      "reason": "page_footer"
+    },
+    {
+      "text": "",
+      "bbox": {"x": 0.0, "y": 784.10, "w": 50.0, "h": 50.0},
+      "reason": "picture_decorative"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 167, "lines": 0, "tables": 7, "checkboxes": 0},
+      "docling": {
+        "blocks": 26,
+        "labels": {
+          "page_header": 2, "text": 21, "section_header": 1, "picture": 1, "page_footer": 1
+        },
+        "section_headers": 1,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 41,
+        "bold": 0,
+        "cases": {"lower": 28, "none": 6, "UPPER": 6, "Title": 1}
+      }
+    },
+    "column_coherence": [
+      {"band": "BAND_A", "dominant_role": "LABEL", "coherence": 1.0},
+      {"band": "BAND_B", "dominant_role": "LABEL", "coherence": 1.0}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 1, "total": 2},
+      "cell_bold_flags": {"agree": 41, "disagree": 0}
+    }
+  }
+}

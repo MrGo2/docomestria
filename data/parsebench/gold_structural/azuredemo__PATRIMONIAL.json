@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "document_id": "azuredemo__PATRIMONIAL",
+  "document_type": "spanish_judicial_patrimonial",
+  "expected_pairs": [
+    {
+      "label": "Nº Procedimiento",
+      "value": "987/2015",
+      "page": 1,
+      "section": "Consulta Integral Patrimonio",
+      "confidence": "high",
+      "evidence": "L-inline-split"
+    },
+    {
+      "label": "AEAT - Consulta Percepciones:",
+      "value": "contains:0001 Operación Correcta",
+      "page": 1,
+      "subsection": "Servicios Consultados",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "AEAT - Consulta Actividades Economicas:",
+      "value": "contains:0001 Operación Correcta",
+      "page": 1,
+      "subsection": "Servicios Consultados",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "AEAT - CuentasAmpliadas (mod. 196):",
+      "value": "contains:0001 Operación Correcta",
+      "page": 1,
+      "subsection": "Servicios Consultados",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Nombre:",
+      "value": "GHEORGHE ADRIAN",
+      "page": 1,
+      "subsection": "Datos Personales",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Primer Apellido:",
+      "value": "OPREA",
+      "page": 1,
+      "subsection": "Datos Personales",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "DNI:",
+      "value": "X6573514E",
+      "page": 1,
+      "subsection": "Datos Personales",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Nacionalidad:",
+      "value": "RUMANIA",
+      "page": 1,
+      "subsection": "Datos Personales",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Nombre de la madre:",
+      "value": "MARIA",
+      "page": 2,
+      "section": "Consulta Integral Patrimonio",
+      "confidence": "high",
+      "evidence": "L-horizontal"
+    },
+    {
+      "label": "Código postal:",
+      "value": "08227",
+      "page": 2,
+      "section": "Consulta Integral Patrimonio",
+      "confidence": "high",
+      "evidence": "L-horizontal"
+    },
+    {
+      "label": "Teléfono:",
+      "value": "631723839",
+      "page": 3,
+      "section": "INSS - Consulta Prestaciones Tarjeta Social Digital",
+      "confidence": "high",
+      "evidence": "L-horizontal"
+    }
+  ],
+  "forbidden_pairs": [
+    {
+      "label": "DFNavarra - Consulta Capacidad Economica:",
+      "value": "DGP - Consulta DNI",
+      "page": 1,
+      "reason": "cascading_row_shift"
+    },
+    {
+      "label": "Datos Personales",
+      "value": "Nombre:",
+      "page": 1,
+      "reason": "subsection_header_is_not_label"
+    },
+    {
+      "label": "Nombre:",
+      "value": "Primer Apellido:",
+      "page": 1,
+      "reason": "row_shift"
+    },
+    {
+      "label": "IBAN",
+      "value": "Producto",
+      "page": 4,
+      "reason": "table_header_as_key_in_product_list"
+    }
+  ],
+  "known_gaps": []
+}

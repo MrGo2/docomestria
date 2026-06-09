@@ -1,0 +1,310 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 5,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)",
+  "structure": [
+    {
+      "type": "section",
+      "id": "calculo_cuota_minima",
+      "title": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+      "y_hint": 86,
+      "children": [
+        {
+          "type": "kv_leaf",
+          "id": "periodo_liquidacion",
+          "label": "Período de liquidación",
+          "value": "mensual",
+          "y_hint": 635,
+          "label_bbox": {
+            "x": 65.093696,
+            "y": 636.08615128,
+            "w": 98.121738,
+            "h": 9.148879999999963
+          },
+          "evidence": {
+            "text": "mensual",
+            "row_y_hint": 635,
+            "x_hint": null,
+            "pdfplumber": {
+              "bbox": {
+                "x": 272.6480768,
+                "y": 636.08615128,
+                "w": 34.57361751999997,
+                "h": 9.148879999999963
+              },
+              "char_indices": [
+                2455,
+                2456,
+                2457,
+                2458,
+                2459,
+                2460,
+                2461
+              ],
+              "n_chars": 7,
+              "row_y": 634.3399999999999
+            },
+            "liteparse": {
+              "span_id": 35,
+              "bbox": {
+                "x": 272.6481018066406,
+                "y": 635.1072387695312,
+                "w": 34.573638916015625,
+                "h": 10.1278076171875
+              },
+              "case_class": "lower",
+              "is_bold": false,
+              "font_size": 9.5
+            },
+            "docling": {
+              "cell_ref": "#/texts/165",
+              "bbox": {
+                "x": 272.6480768,
+                "y": 637.8152895999999,
+                "w": 34.573617519999914,
+                "h": 6.782015732142895
+              },
+              "column_header": null,
+              "row_header": null
+            },
+            "rect": {
+              "rect_id": "p5-r2",
+              "bbox": {
+                "x": 267.7943552,
+                "y": 629.87984,
+                "w": 272.2706688,
+                "h": 26.348774400000025
+              }
+            },
+            "colon_signal": {
+              "present": true,
+              "char_x": 163.21543400000002,
+              "char_y": 636.08615128
+            },
+            "value_extent": {
+              "boundary_type": "cell_edge",
+              "gap_pt": 274.63030568,
+              "ends_at_x": 581.852
+            },
+            "cell_bbox": {
+              "x": 272.6480768,
+              "y": 636.08615128,
+              "w": 34.57361751999997,
+              "h": 9.148879999999963
+            },
+            "engine_agreement": 3
+          },
+          "bbox": {
+            "x": 272.6480768,
+            "y": 636.08615128,
+            "w": 34.57361751999997,
+            "h": 9.148879999999963
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 59.5465856,
+        "y": 87.49860111999999,
+        "w": 378.5026481600002,
+        "h": 12.519519999999943
+      },
+      "container_bbox": {
+        "x": 272.6480768,
+        "y": 636.08615128,
+        "w": 34.57361751999997,
+        "h": 9.148879999999963
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+          "pdfplumber": {
+            "bbox": {
+              "x": 59.5465856,
+              "y": 87.49860111999999,
+              "w": 378.5026481600002,
+              "h": 12.519519999999943
+            },
+            "char_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "n_chars": 63,
+            "row_y": 87.49860111999999
+          },
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 59.54658889770508,
+              "y": 86.15911865234375,
+              "w": 378.5025939941406,
+              "h": 13.85906982421875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 13.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/148",
+            "bbox": {
+              "x": 59.5465856,
+              "y": 89.86479040000006,
+              "w": 378.5026481600002,
+              "h": 9.280653107142712
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 59.5465856,
+            "y": 87.49860111999999,
+            "w": 378.5026481600002,
+            "h": 12.519519999999943
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 272.6480768,
+            "y": 636.08615128,
+            "w": 34.57361751999997,
+            "h": 9.148879999999963
+          },
+          "pdfplumber_rect": {
+            "rect_id": "p5-r2",
+            "bbox": {
+              "x": 267.7943552,
+              "y": 629.87984,
+              "w": 272.2706688,
+              "h": 26.348774400000025
+            }
+          },
+          "docling_block": {
+            "self_ref": "#/texts/165",
+            "label": "text",
+            "bbox": {
+              "x": 272.6480768,
+              "y": 637.8152895999999,
+              "w": 34.573617519999914,
+              "h": 6.782015732142895
+            }
+          },
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 2
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 1,
+          "child_type_distribution": {
+            "kv_leaf": 1
+          },
+          "path": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):"
+        }
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "calculo_cuota_minima",
+      "title": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+      "title_bbox": {
+        "x": 59.5465856,
+        "y": 87.49860111999999,
+        "w": 378.5026481600002,
+        "h": 12.519519999999943
+      },
+      "container_bbox": {
+        "x": 272.6480768,
+        "y": 636.08615128,
+        "w": 34.57361751999997,
+        "h": 9.148879999999963
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Período de liquidación",
+      "value": "mensual",
+      "section": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+      "band": null,
+      "column_header": null,
+      "row_y": 635,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 636.08615128,
+        "w": 98.121738,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 636.08615128,
+          "w": 34.57361751999997,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+        "engine_agreement": 3
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "codex",
+    "n_chars": 2737,
+    "n_rows": 109,
+    "n_liteparse_spans": 49,
+    "n_docling_blocks": 23,
+    "n_rects": 15,
+    "kv_pair_breakdown": {
+      "3_eng": 1,
+      "2_eng": 0,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 0,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "codex",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "caixabank_ikea_prose_heavy_explanatory_page",
+      "caixabank_ikea_periodo_liquidacion_single_kv"
+    ],
+    "needs_review": false,
+    "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/42646161K_CONTRATO-p01.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/42646161K_CONTRATO.pdf",
+  "page": 1,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 56,
+    "populated_kv": 36,
+    "empty_kv": 11,
+    "high": 2,
+    "medium": 2,
+    "low": 2,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "HIGH",
+      "type": "missing_kv",
+      "spec_location": "section.id=financiador / kv_group=financiador_datos",
+      "evidence": {
+        "golden_label": "Financiador",
+        "golden_value": "CAIXABANK PAYMENTS & CONSUMER, E.F.C., E.P., S.A.U.",
+        "pdf_text_found": "FINANCIADOR CAIXABANK PAYMENTS & CONSUMER, E.F.C., E.P., S.A.U., y en su nombre y representación D. LUIS LAGARES PUIG",
+        "atoms_span_match": {
+          "text": "FINANCIADOR CAIXABANK PAYMENTS & CONSUMER, E.F.C., E.P., S.A.U., y en su nombre y representación D. LUIS LAGARES PUIG",
+          "y": 276.42,
+          "x": 26.96
+        },
+        "comment": "The financiador row in the PDF includes the legal representative 'D. LUIS LAGARES PUIG' on the same row (inline suffix after entity name). Neither the structure tree nor the flat kv_pairs contain this person. It is a named signatory — a key identity field."
+      },
+      "proposed_fix": {
+        "op": "add_kv",
+        "target": "financiador/financiador_datos",
+        "params": {
+          "label": "y en su nombre y representación D.",
+          "value": "LUIS LAGARES PUIG",
+          "y_hint": 276.4,
+          "x_hint": 350.0,
+          "section": "FINANCIADOR",
+          "insert_after_label": "Financiador",
+          "atoms_evidence": {
+            "span_text": "FINANCIADOR CAIXABANK PAYMENTS & CONSUMER, E.F.C., E.P., S.A.U., y en su nombre y representación D. LUIS LAGARES PUIG",
+            "y": 276.42
+          }
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "HIGH",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=condiciones_economicas / pair.label=Penalidad por cada cuota impagado",
+      "evidence": {
+        "golden_label": "Penalidad por cada cuota impagado",
+        "golden_value": "30 (se cobrará una sola vez para cada cuota)",
+        "pdf_text_found": "Penalidad por cada cuota impagado: 30 (se cobrará una sola vez para cada cuota)",
+        "atoms_span_match": {
+          "text": "Penalidad por cada cuota impagado: 30 (se cobrará una sola vez para cada cuota)",
+          "y": 548.7,
+          "x": 29.5
+        },
+        "comment": "The span contains chr(159) = 0x9F after '30', which is the € sign in CP-1252 encoding (confirmed by docling block showing '/U20AC'). The PDF image clearly shows '30€'. The golden value drops the currency symbol. Correct value is '30€ (se cobrará una sola vez para cada cuota)'."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "condiciones_economicas / Penalidad por cada cuota impagado",
+        "params": {
+          "old_value": "30 (se cobrará una sola vez para cada cuota)",
+          "new_value": "30€ (se cobrará una sola vez para cada cuota)",
+          "y_hint": 548.7,
+          "reason": "chr(0x9F) in pdfplumber span decodes to € (U+20AC) in CP-1252; docling block confirms '/U20AC'"
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "MEDIUM",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=comprador_prestatario / kv_group=comprador_datos / pair.label=Tel",
+      "evidence": {
+        "golden_label": "Tel",
+        "golden_value": "660594812",
+        "pdf_text_found": "Tel: 928334241 / 660594812",
+        "atoms_span_match": {
+          "text": "Domicilio JULIAN ROMERO BRIONES,24 PISO 2 - D - PALMAS DE GRAN CANARIA <LAS> < LAS PA Tel: 928334241",
+          "y": 161.32,
+          "x": 26.96
+        },
+        "comment": "The form field contains two phone numbers separated by '/': 928334241 (landline, embedded in inline prose span) and 660594812 (mobile, separate span at x=492.91). The golden captures only the mobile. Docling blocks confirm 'Tel: 928334241' / '660594812'. Complete value should be '928334241 / 660594812'."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "comprador_prestatario / comprador_datos / Tel",
+        "params": {
+          "old_value": "660594812",
+          "new_value": "928334241 / 660594812",
+          "y_hint": 161.3,
+          "reason": "Docling block at y=164.4 shows 'Tel: 928334241' then '/' then '660594812'; first number was dropped"
+        }
+      }
+    },
+    {
+      "id": "f04",
+      "severity": "MEDIUM",
+      "type": "missing_kv",
+      "spec_location": "section.id=condiciones_economicas (between Capital inicial y=373 and Importe Total y=456)",
+      "evidence": {
+        "golden_label": null,
+        "golden_value": null,
+        "pdf_text_found": "Financiadas: [Comisión apertura] 389,85€  [Comisión Estudio] 0,00€ | No Condicionantes: Coste del seguro mensual 15,59€",
+        "atoms_span_match": {
+          "text": "Financiadas: (x=40.59, y=396.67) | 389,85\\x9f (x=221.34, y=396.38) | 0,00\\x9f (x=417.10, y=396.38) | No Condicionantes: Coste del seguro mensual (x=40.59, y=445.43) | 15,59\\x9f (x=226.42, y=445.15)",
+          "y": 396.67,
+          "x": 40.59
+        },
+        "comment": "The fee table rows (y=385–456) are present in the flat kv_pairs as 'Financiadas'=389,85 and 'No Condicionantes'=15,59 (without € due to same encoding issue as f02), but are entirely absent from the structure tree. The condiciones_economicas section jumps from Capital inicial (y=373) directly to Importe Total (y=456), skipping the entire fee table block. Note also: fee values 389,85 and 15,59 are missing the € sign in kv_pairs."
+      },
+      "proposed_fix": {
+        "op": "add_kv",
+        "target": "condiciones_economicas (insert after Capital inicial, before importe_total_prestamo)",
+        "params": {
+          "suggested_section_id": "gastos_financiados",
+          "suggested_type": "table_block",
+          "rows": [
+            {"label": "Financiadas / Comisión apertura", "value": "389,85€", "y_hint": 396.4},
+            {"label": "Financiadas / Comisión Estudio", "value": "0,00€", "y_hint": 396.4},
+            {"label": "No Condicionantes / Coste del seguro mensual", "value": "15,59€", "y_hint": 445.2}
+          ],
+          "y_range": [385, 456],
+          "reason": "Populated monetary values in fee table not represented in structure tree; kv_pairs partial but also missing € sign"
+        }
+      }
+    },
+    {
+      "id": "f05",
+      "severity": "LOW",
+      "type": "label_bbox_partial",
+      "spec_location": "section.id=condiciones_economicas / pair.label=Intereses de demora",
+      "evidence": {
+        "golden_label": "Intereses de demora",
+        "golden_value": "10,990 %anual / 4.698,67€",
+        "pdf_text_found": "de demora (x=333.20, y=480.57) — only the 'de demora' fragment",
+        "atoms_span_match": {
+          "text": "de demora",
+          "y": 480.57,
+          "x": 333.20
+        },
+        "comment": "The label_bbox for 'Intereses de demora' (golden: x=333.20, y=480.57, w=37.47) corresponds to the span 'de demora' only — the 'Intereses' portion is on a different span. The liteparse evidence correctly spans the full text. Value extraction is correct. This is a label bbox coverage issue only, not a value error."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "condiciones_economicas / Intereses de demora / label_bbox",
+        "params": {
+          "note": "Extend label_bbox to include 'Intereses' span if a separate span exists at x~289-333, y~480; or accept liteparse bbox x=89.59, y=480.10 which covers full 'Variable Tipo deudor ... de demora' context. Low priority — value is correct."
+        }
+      }
+    },
+    {
+      "id": "f06",
+      "severity": "LOW",
+      "type": "possible_noise_misclassified",
+      "spec_location": "kv_pairs / row_y=728 / label=Financiador (signature area)",
+      "evidence": {
+        "golden_label": "Financiador",
+        "golden_value": "",
+        "pdf_text_found": "Prestatario/s | Fiador/es | Financiador (signature section labels at y=728)",
+        "atoms_span_match": {
+          "text": "Financiador",
+          "y": 728.11,
+          "x": 409.01
+        },
+        "comment": "The flat kv_pairs includes an empty 'Financiador' entry at row_y=728 which corresponds to the signature section label (not a data field). The structure tree correctly captures it as 'signature_placeholder' type. The kv_pairs flat view duplication is low impact since the value is empty, but it may confuse downstream consumers expecting unique labels."
+      },
+      "proposed_fix": {
+        "op": "mark_noise",
+        "target": "kv_pairs[row_y=728, label=Financiador]",
+        "params": {
+          "reason": "Signature section label, not a data field. Already correctly typed as signature_placeholder in structure tree. Suppress from kv_pairs flat output."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA 3.pdf",
+  "page": 4,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 82,
+    "rects": 106,
+    "docling_blocks": 28,
+    "noise_dropped": 4
+  },
+  "sections": [
+    {
+      "title": "DATOS ECONÓMICOS",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.55, "y": 75.47, "w": 98.10, "h": 10.20},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [84.0, 162.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 267.56], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.56, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [84.0, 119.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Número de contrato:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 99.74, "w": 89.97, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "202508441147936",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.65, "y": 99.81, "w": 76.30, "h": 10.13},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r2",
+              "y_range": [119.0, 148.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Fecha de firma:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 126.55, "w": 67.62, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "23/08/2025",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.65, "y": 126.62, "w": 45.78, "h": 10.13},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r3",
+              "y_range": [148.0, 167.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Límite de Crédito:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 148.28, "w": 77.77, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "1.500,00 euros",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.65, "y": 148.35, "w": 5.09, "h": 10.13},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [162.0, 248.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 267.56], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.56, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r4",
+              "y_range": [162.0, 192.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tipo de interés en las compras realizadas con modalidad de Pago Fraccionado.",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 167.46, "w": 256.27, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": [
+                    {"text": "Tipo de interés en las compras realizadas", "bbox": {"x": 65.09, "y": 167.46, "w": 191.01, "h": 10.20}},
+                    {"text": "con modalidad de Pago Fraccionado.", "bbox": {"x": 65.09, "y": 176.94, "w": 162.18, "h": 10.20}}
+                  ]
+                },
+                {
+                  "col": 1,
+                  "text": "TIN 21,72% anual (TAE 24,02%). En determinadas compras podrá ofrecerse un TIN inferior, incluso a 0%",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.65, "y": 168.92, "w": 259.27, "h": 20.40},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r5",
+              "y_range": [192.0, 248.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tipo de interés del Pago Fraccionado de las compras realizadas inicialmente bajo la modalidad de Pago Fin de Mes.",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 194.50, "w": 256.27, "h": 30.80},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "TIN 14,95% anual (TAE 16,02%) cuando se fraccione el importe a partir de 6 meses, inclusive. Cuando se fraccione el importe de las compras en 3 meses, el tipo de interés será 0%, aplicándose el coste indicado en el apartado \"Precio de los Servicios\" (TAE 19,77%).",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.65, "y": 194.57, "w": 259.28, "h": 51.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [248.0, 298.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 267.56], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.56, 539.60], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r6",
+              "y_range": [248.0, 298.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tipo de interés en las compras realizadas con modalidad de Pago Aplazado (Revolving).",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 257.60, "w": 256.27, "h": 30.80},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "TIN 21,72% anual (TAE 24,02%).",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.65, "y": 259.06, "w": 135.77, "h": 10.13},
+                  "bold": false,
+                  "case": "mixed",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [298.0, 358.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 267.56], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.56, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r7",
+              "y_range": [298.0, 358.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Tipo de interés por demora:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 302.21, "w": 120.99, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Tipo de interés aplicado a cada disposición/operación impagada más dos puntos porcentuales.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.65, "y": 298.12, "w": 259.51, "h": 20.40},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [358.0, 620.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 267.56], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.56, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r8",
+              "y_range": [358.0, 620.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Forma de pago:",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 355.37, "w": 68.63, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Si usted ha elegido la modalidad de pago Fin de Mes, realizará el pago total del crédito dispuesto durante el mes, sin intereses, a final de mes...",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.65, "y": 328.17, "w": 259.51, "h": 280.0},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        },
+        {
+          "y_range": [608.0, 700.0],
+          "layout": "2-col",
+          "columns": [
+            {"x_range": [60.24, 267.56], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [267.56, 539.60], "role": "VALUE_NUMERIC", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r9",
+              "y_range": [608.0, 660.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cuota mensual elegida inicialmente para la modalidad de Pago Aplazado (Revolving):",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 617.70, "w": 191.01, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "100,00€",
+                  "role": "VALUE_NUMERIC",
+                  "bbox": {"x": 272.65, "y": 617.80, "w": 35.0, "h": 10.13},
+                  "bold": false,
+                  "case": "none",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r10",
+              "y_range": [660.0, 700.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Cuota mínima para Pago Aplazado (Revolving):",
+                  "role": "LABEL",
+                  "bbox": {"x": 65.09, "y": 648.19, "w": 191.01, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 1,
+                  "text": "Usted podrá escoger qué cuota quiere pagar mensualmente, siempre a partir de una cuota mínima que nosotros fijamos aplicando una fórmula...",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 272.65, "y": 645.51, "w": 259.51, "h": 50.0},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Número de contrato:",
+      "value": "202508441147936",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 99.74,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": "#/texts/0", "label_span_id": "span_NroContrato", "value_span_ids": ["span_202508441147936_p4"]}
+    },
+    {
+      "label": "Fecha de firma:",
+      "value": "23/08/2025",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 126.55,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_FechaFirma", "value_span_ids": ["span_23082025"]}
+    },
+    {
+      "label": "Límite de Crédito:",
+      "value": "1.500,00 euros",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 148.28,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_LimiteCredito", "value_span_ids": ["span_1500_euros"]}
+    },
+    {
+      "label": "Tipo de interés en las compras realizadas con modalidad de Pago Fraccionado.",
+      "value": "TIN 21,72% anual (TAE 24,02%). En determinadas compras podrá ofrecerse un TIN inferior, incluso a 0%",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_B",
+      "column_header": null,
+      "row_y": 167.46,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_TipoInteresFraccionado", "value_span_ids": ["span_TIN_21_72"]}
+    },
+    {
+      "label": "Tipo de interés del Pago Fraccionado de las compras realizadas inicialmente bajo la modalidad de Pago Fin de Mes.",
+      "value": "TIN 14,95% anual (TAE 16,02%) cuando se fraccione el importe a partir de 6 meses, inclusive.",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_B",
+      "column_header": null,
+      "row_y": 194.50,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_TipoInteresPagoFin", "value_span_ids": ["span_TIN_14_95"]}
+    },
+    {
+      "label": "Tipo de interés en las compras realizadas con modalidad de Pago Aplazado (Revolving).",
+      "value": "TIN 21,72% anual (TAE 24,02%).",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_C",
+      "column_header": null,
+      "row_y": 257.60,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_TipoInteresRevolving", "value_span_ids": ["span_TIN_21_72_Revolving"]}
+    },
+    {
+      "label": "Tipo de interés por demora:",
+      "value": "Tipo de interés aplicado a cada disposición/operación impagada más dos puntos porcentuales.",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_D",
+      "column_header": null,
+      "row_y": 302.21,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_TipoInteresDemora", "value_span_ids": ["span_TipoInteresDemora_val"]}
+    },
+    {
+      "label": "Forma de pago:",
+      "value": "Si usted ha elegido la modalidad de pago Fin de Mes, realizará el pago total del crédito dispuesto durante el mes, sin intereses, a final de mes...",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_E",
+      "column_header": null,
+      "row_y": 355.37,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_FormaPago", "value_span_ids": ["span_FormaPago_val"]}
+    },
+    {
+      "label": "Cuota mensual elegida inicialmente para la modalidad de Pago Aplazado (Revolving):",
+      "value": "100,00€",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_F",
+      "column_header": null,
+      "row_y": 617.70,
+      "rule": "rect-aligned",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_CuotaMensual", "value_span_ids": ["span_100_euros"]}
+    },
+    {
+      "label": "Cuota mínima para Pago Aplazado (Revolving):",
+      "value": "Usted podrá escoger qué cuota quiere pagar mensualmente, siempre a partir de una cuota mínima que nosotros fijamos aplicando una fórmula...",
+      "section": "DATOS ECONÓMICOS",
+      "band": "BAND_F",
+      "column_header": null,
+      "row_y": 648.19,
+      "rule": "rect-aligned",
+      "confidence": "MEDIUM",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_CuotaMinima", "value_span_ids": ["span_CuotaMinima_val"]}
+    }
+  ],
+  "noise": [
+    {
+      "text": "Logalty Guid: 001001-0001-000000140900869.par - Date: 2025/08/23 T 14:57:04 CEST +0200 - Pages: 4/61",
+      "bbox": {"x": 581.64, "y": 271.94, "w": 9.06, "h": 480.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "(Continúa en la siguiente página) >>",
+      "bbox": {"x": 381.74, "y": 790.90, "w": 147.48, "h": 10.13},
+      "reason": "page_footer"
+    },
+    {
+      "text": "",
+      "bbox": {"x": 0.0, "y": 784.20, "w": 50.0, "h": 50.0},
+      "reason": "picture_decorative"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 106, "lines": 0, "tables": 4, "checkboxes": 0},
+      "docling": {
+        "blocks": 28,
+        "labels": {
+          "page_header": 1, "section_header": 1, "text": 24, "picture": 1, "page_footer": 1
+        },
+        "section_headers": 1,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 82,
+        "bold": 0,
+        "cases": {"UPPER": 3, "lower": 67, "none": 7, "mixed": 2, "Title": 3}
+      }
+    },
+    "column_coherence": [
+      {"band": "BAND_A", "dominant_role": "LABEL", "coherence": 1.0},
+      {"band": "BAND_B", "dominant_role": "LABEL", "coherence": 1.0}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 1, "total": 1},
+      "cell_bold_flags": {"agree": 82, "disagree": 0}
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "document_id": "azuredemo__LABORAL",
+  "document_type": "spanish_judicial_laboral",
+  "expected_pairs": [
+    {
+      "label": "Nº Procedimiento",
+      "value": "987-15",
+      "page": 1,
+      "section": "Consulta TGSS situacion",
+      "confidence": "high",
+      "evidence": "L-inline-split"
+    },
+    {
+      "label": "Nº Documento",
+      "value": "X6573514E",
+      "page": 1,
+      "section": "Consulta TGSS situacion",
+      "confidence": "high",
+      "evidence": "L-inline-split"
+    },
+    {
+      "label": "Titular:",
+      "value": "contains:GHEORGHE ADRIAN OPREA",
+      "page": 1,
+      "section": "Consulta TGSS situacion",
+      "subsection": "Respuesta",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Nº Seguridad Social:",
+      "value": "341005311371",
+      "page": 1,
+      "subsection": "Respuesta",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Situación actual:",
+      "value": "BAJA",
+      "page": 1,
+      "subsection": "Respuesta",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Fecha Situación:",
+      "value": "31.05.2019",
+      "page": 1,
+      "subsection": "Respuesta",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "CCC:",
+      "value": "<empty>",
+      "page": 1,
+      "subsection": "Situaciones",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Razón Social/Convenio/Régimen:",
+      "value": "contains:RGIMEN ESPECIAL",
+      "page": 1,
+      "subsection": "Situaciones",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "NIF/CIF - Domicilio de Empresa:",
+      "value": "No Consta",
+      "page": 1,
+      "subsection": "Situaciones",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Fecha Alta:",
+      "value": "10.04.2018",
+      "page": 1,
+      "subsection": "Situaciones",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Tipo Contrato:",
+      "value": "<empty>",
+      "page": 1,
+      "subsection": "Situaciones",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Grupo Cotización:",
+      "value": "<empty>",
+      "page": 1,
+      "subsection": "Situaciones",
+      "confidence": "high",
+      "evidence": "D-2col"
+    }
+  ],
+  "forbidden_pairs": [
+    {
+      "label": "CCC:",
+      "value": "Situaciones",
+      "page": 1,
+      "reason": "subheader_as_value"
+    },
+    {
+      "label": "Tipo Contrato:",
+      "value": "Grupo Cotización:",
+      "page": 1,
+      "reason": "empty_value_mispaired"
+    },
+    {
+      "label": "Situaciones",
+      "value": "CCC:",
+      "page": 1,
+      "reason": "subsection_header_is_not_label"
+    }
+  ],
+  "known_gaps": []
+}

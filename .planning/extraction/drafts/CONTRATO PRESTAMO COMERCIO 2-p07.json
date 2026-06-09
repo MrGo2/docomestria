@@ -1,0 +1,1148 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO PRESTAMO COMERCIO 2.pdf",
+  "page": 7,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "document_type": "Contrato de préstamo CaixaBank Payments & Consumer",
+  "structure": [
+    {
+      "type": "section",
+      "id": "consentimientos",
+      "title": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES",
+      "y_hint": 353,
+      "children": [
+        {
+          "type": "section",
+          "id": "resumen_autorizaciones",
+          "title": "Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+          "y_hint": 390,
+          "children": [
+            {
+              "type": "kv_group",
+              "id": "consentimientos_titular_1",
+              "pairs": [
+                {
+                  "label": "Personalización de la oferta de productos y servicios según el análisis de sus datos (Titular 1)",
+                  "value": "SI",
+                  "y_hint": 496,
+                  "evidence": {
+                    "label": {
+                      "text": "Personalización de la oferta de productos y servicios según el análisis de sus datos (Titular 1)",
+                      "row_y_hint": 496,
+                      "x_hint": null,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 24,
+                        "bbox": {
+                          "x": 316.3315734863281,
+                          "y": 481.3598937988281,
+                          "w": 49.220977783203125,
+                          "h": 10.737884521484375
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/317",
+                        "bbox": {
+                          "x": 316.3315712,
+                          "y": 484.2874528,
+                          "w": 49.220974400000046,
+                          "h": 7.126922123893792
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r2",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 447.9808448,
+                          "w": 269.4971136000001,
+                          "h": 67.25871359999996
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 316.3315734863281,
+                        "y": 481.3598937988281,
+                        "w": 49.220977783203125,
+                        "h": 10.737884521484375
+                      },
+                      "engine_agreement": 2
+                    },
+                    "value": {
+                      "text": "SI",
+                      "row_y_hint": 496,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 313.55801599999995,
+                          "y": 497.9529904,
+                          "w": 9.100728000000004,
+                          "h": 9.630399999999952
+                        },
+                        "char_indices": [
+                          1406,
+                          1407
+                        ],
+                        "n_chars": 2,
+                        "row_y": 495.1399999999997
+                      },
+                      "liteparse": {
+                        "span_id": 25,
+                        "bbox": {
+                          "x": 313.5580139160156,
+                          "y": 496.84552001953125,
+                          "w": 21.4468994140625,
+                          "h": 10.737884521484375
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/318",
+                        "bbox": {
+                          "x": 313.55801599999995,
+                          "y": 499.77313599999997,
+                          "w": 21.446900800000037,
+                          "h": 7.138963928571457
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r2",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 447.9808448,
+                          "w": 269.4971136000001,
+                          "h": 67.25871359999996
+                        }
+                      },
+                      "colon_signal": {
+                        "present": false
+                      },
+                      "value_extent": {
+                        "boundary_type": "next_colon_label",
+                        "gap_pt": 5.92269600000003,
+                        "next_label_text": "XNO",
+                        "next_colon_x": 581.852,
+                        "ends_at_x": 328.58144
+                      },
+                      "cell_bbox": {
+                        "x": 313.55801599999995,
+                        "y": 497.9529904,
+                        "w": 9.100728000000004,
+                        "h": 9.630399999999952
+                      },
+                      "engine_agreement": 3
+                    }
+                  },
+                  "label_bbox": {
+                    "x": 316.3315734863281,
+                    "y": 481.3598937988281,
+                    "w": 49.220977783203125,
+                    "h": 10.737884521484375
+                  },
+                  "bbox": {
+                    "x": 313.55801599999995,
+                    "y": 497.9529904,
+                    "w": 9.100728000000004,
+                    "h": 9.630399999999952
+                  }
+                },
+                {
+                  "label": "Comunicación de la oferta de productos y servicios — Por aplicaciones móviles, entornos digitales y canales electrónicos (Titular 1)",
+                  "value": "SI",
+                  "y_hint": 592,
+                  "evidence": {
+                    "label": {
+                      "text": "Comunicación de la oferta de productos y servicios — Por aplicaciones móviles, entornos digitales y canales electrónicos (Titular 1)",
+                      "row_y_hint": 592,
+                      "x_hint": null,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 35,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 592.1171875,
+                          "w": 82.7852783203125,
+                          "h": 10.1278076171875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 9.5
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/325",
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 594.825184,
+                          "w": 82.78532599999994,
+                          "h": 6.782015732142781
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r4",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 521.248928,
+                          "w": 269.4971136000001,
+                          "h": 132.89951999999994
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6481018066406,
+                        "y": 592.1171875,
+                        "w": 82.7852783203125,
+                        "h": 10.1278076171875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "value": {
+                      "text": "SI",
+                      "row_y_hint": 592,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 365.33104640000005,
+                          "y": 593.6406448,
+                          "w": 9.100728000000004,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          1679,
+                          1680
+                        ],
+                        "n_chars": 2,
+                        "row_y": 591.1399999999999
+                      },
+                      "liteparse": {
+                        "span_id": 36,
+                        "bbox": {
+                          "x": 365.3310241699219,
+                          "y": 592.533203125,
+                          "w": 44.492431640625,
+                          "h": 10.73785400390625
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/326",
+                        "bbox": {
+                          "x": 365.33104640000005,
+                          "y": 595.4607904,
+                          "w": 21.44690079999998,
+                          "h": 7.138963928571457
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r4",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 521.248928,
+                          "w": 269.4971136000001,
+                          "h": 132.89951999999994
+                        }
+                      },
+                      "colon_signal": {
+                        "present": false
+                      },
+                      "value_extent": {
+                        "boundary_type": "continuation",
+                        "gap_pt": 5.922695999999917,
+                        "next_text": "XNO0001"
+                      },
+                      "cell_bbox": {
+                        "x": 365.33104640000005,
+                        "y": 593.6406448,
+                        "w": 9.100728000000004,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 3
+                    }
+                  },
+                  "label_bbox": {
+                    "x": 272.6481018066406,
+                    "y": 592.1171875,
+                    "w": 82.7852783203125,
+                    "h": 10.1278076171875
+                  },
+                  "bbox": {
+                    "x": 365.33104640000005,
+                    "y": 593.6406448,
+                    "w": 9.100728000000004,
+                    "h": 9.630400000000009
+                  }
+                },
+                {
+                  "label": "Comunicación de la oferta de productos y servicios — Por teléfono (Titular 1)",
+                  "value": "SI",
+                  "y_hint": 607,
+                  "evidence": {
+                    "label": {
+                      "text": "Comunicación de la oferta de productos y servicios — Por teléfono (Titular 1)",
+                      "row_y_hint": 607,
+                      "x_hint": null,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 37,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 607.86474609375,
+                          "w": 51.927093505859375,
+                          "h": 10.660888671875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/328",
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 610.715344,
+                          "w": 51.927116799999965,
+                          "h": 7.138963928571457
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r4",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 521.248928,
+                          "w": 269.4971136000001,
+                          "h": 132.89951999999994
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6481018066406,
+                        "y": 607.86474609375,
+                        "w": 51.927093505859375,
+                        "h": 10.660888671875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "value": {
+                      "text": "SI",
+                      "row_y_hint": 607,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 365.33104640000005,
+                          "y": 608.8951984,
+                          "w": 9.100728000000004,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          1696,
+                          1697
+                        ],
+                        "n_chars": 2,
+                        "row_y": 608.8951984
+                      },
+                      "liteparse": {
+                        "span_id": 38,
+                        "bbox": {
+                          "x": 365.3310241699219,
+                          "y": 607.7877197265625,
+                          "w": 44.492431640625,
+                          "h": 10.7379150390625
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/329",
+                        "bbox": {
+                          "x": 365.33104640000005,
+                          "y": 610.715344,
+                          "w": 21.44690079999998,
+                          "h": 7.138963928571457
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r4",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 521.248928,
+                          "w": 269.4971136000001,
+                          "h": 132.89951999999994
+                        }
+                      },
+                      "colon_signal": {
+                        "present": false
+                      },
+                      "value_extent": {
+                        "boundary_type": "continuation",
+                        "gap_pt": 5.922695999999917,
+                        "next_text": "XNO000"
+                      },
+                      "cell_bbox": {
+                        "x": 365.33104640000005,
+                        "y": 608.8951984,
+                        "w": 9.100728000000004,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 3
+                    }
+                  },
+                  "label_bbox": {
+                    "x": 272.6481018066406,
+                    "y": 607.86474609375,
+                    "w": 51.927093505859375,
+                    "h": 10.660888671875
+                  },
+                  "bbox": {
+                    "x": 365.33104640000005,
+                    "y": 608.8951984,
+                    "w": 9.100728000000004,
+                    "h": 9.630400000000009
+                  }
+                },
+                {
+                  "label": "Comunicación de la oferta de productos y servicios — Por carta (Titular 1)",
+                  "value": "NO",
+                  "y_hint": 623,
+                  "evidence": {
+                    "label": {
+                      "text": "Comunicación de la oferta de productos y servicios — Por carta (Titular 1)",
+                      "row_y_hint": 623,
+                      "x_hint": null,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 39,
+                        "bbox": {
+                          "x": 272.6481018066406,
+                          "y": 623.3504638671875,
+                          "w": 39.070556640625,
+                          "h": 10.66082763671875
+                        },
+                        "case_class": "lower",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/331",
+                        "bbox": {
+                          "x": 272.6480768,
+                          "y": 626.2010272,
+                          "w": 39.07053279999997,
+                          "h": 7.138963928571457
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r4",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 521.248928,
+                          "w": 269.4971136000001,
+                          "h": 132.89951999999994
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 272.6481018066406,
+                        "y": 623.3504638671875,
+                        "w": 39.070556640625,
+                        "h": 10.66082763671875
+                      },
+                      "engine_agreement": 2
+                    },
+                    "value": {
+                      "text": "NO",
+                      "row_y_hint": 623,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 395.3778944,
+                          "y": 624.3808816,
+                          "w": 14.445600000000013,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          1712,
+                          1713
+                        ],
+                        "n_chars": 2,
+                        "row_y": 624.3808816
+                      },
+                      "liteparse": {
+                        "span_id": 41,
+                        "bbox": {
+                          "x": 395.37786865234375,
+                          "y": 623.2734375,
+                          "w": 26.9940185546875,
+                          "h": 10.73785400390625
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/333",
+                        "bbox": {
+                          "x": 395.3778944,
+                          "y": 626.2010272,
+                          "w": 26.994011200000045,
+                          "h": 7.138963928571457
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r4",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 521.248928,
+                          "w": 269.4971136000001,
+                          "h": 132.89951999999994
+                        }
+                      },
+                      "colon_signal": {
+                        "present": false
+                      },
+                      "value_extent": {
+                        "boundary_type": "continuation",
+                        "gap_pt": 6.124934400000029,
+                        "next_text": "X01-"
+                      },
+                      "cell_bbox": {
+                        "x": 395.3778944,
+                        "y": 624.3808816,
+                        "w": 14.445600000000013,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 3
+                    }
+                  },
+                  "label_bbox": {
+                    "x": 272.6481018066406,
+                    "y": 623.3504638671875,
+                    "w": 39.070556640625,
+                    "h": 10.66082763671875
+                  },
+                  "bbox": {
+                    "x": 395.3778944,
+                    "y": 624.3808816,
+                    "w": 14.445600000000013,
+                    "h": 9.630400000000009
+                  }
+                },
+                {
+                  "label": "Cesión de sus datos a otras empresas para la remisión de ofertas de productos y servicios (Titular 1)",
+                  "value": "SI",
+                  "y_hint": 704,
+                  "evidence": {
+                    "label": {
+                      "text": "Cesión de sus datos a otras empresas para la remisión de ofertas de productos y servicios (Titular 1)",
+                      "row_y_hint": 704,
+                      "x_hint": null,
+                      "pdfplumber": null,
+                      "liteparse": {
+                        "span_id": 49,
+                        "bbox": {
+                          "x": 316.3315734863281,
+                          "y": 689.1453247070312,
+                          "w": 49.220977783203125,
+                          "h": 10.7379150390625
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/336",
+                        "bbox": {
+                          "x": 316.3315712,
+                          "y": 692.0729632,
+                          "w": 49.220974400000046,
+                          "h": 7.126922123893792
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r6",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 658.5399103999999,
+                          "w": 269.4971136000001,
+                          "h": 67.25871360000008
+                        }
+                      },
+                      "colon_signal": null,
+                      "value_extent": null,
+                      "cell_bbox": {
+                        "x": 316.3315734863281,
+                        "y": 689.1453247070312,
+                        "w": 49.220977783203125,
+                        "h": 10.7379150390625
+                      },
+                      "engine_agreement": 2
+                    },
+                    "value": {
+                      "text": "SI",
+                      "row_y_hint": 704,
+                      "x_hint": null,
+                      "pdfplumber": {
+                        "bbox": {
+                          "x": 313.55801599999995,
+                          "y": 705.7385008,
+                          "w": 9.100728000000004,
+                          "h": 9.630400000000009
+                        },
+                        "char_indices": [
+                          1914,
+                          1915
+                        ],
+                        "n_chars": 2,
+                        "row_y": 705.7385008
+                      },
+                      "liteparse": {
+                        "span_id": 50,
+                        "bbox": {
+                          "x": 313.5580139160156,
+                          "y": 704.6310424804688,
+                          "w": 21.4468994140625,
+                          "h": 10.73785400390625
+                        },
+                        "case_class": "UPPER",
+                        "is_bold": false,
+                        "font_size": 10.0
+                      },
+                      "docling": {
+                        "cell_ref": "#/texts/337",
+                        "bbox": {
+                          "x": 313.55801599999995,
+                          "y": 707.5586464,
+                          "w": 21.446900800000037,
+                          "h": 7.138963928571343
+                        },
+                        "column_header": null,
+                        "row_header": null
+                      },
+                      "rect": {
+                        "rect_id": "p7-r6",
+                        "bbox": {
+                          "x": 267.7943552,
+                          "y": 658.5399103999999,
+                          "w": 269.4971136000001,
+                          "h": 67.25871360000008
+                        }
+                      },
+                      "colon_signal": {
+                        "present": false
+                      },
+                      "value_extent": {
+                        "boundary_type": "continuation",
+                        "gap_pt": 5.92269600000003,
+                        "next_text": "XNOy G"
+                      },
+                      "cell_bbox": {
+                        "x": 313.55801599999995,
+                        "y": 705.7385008,
+                        "w": 9.100728000000004,
+                        "h": 9.630400000000009
+                      },
+                      "engine_agreement": 3
+                    }
+                  },
+                  "label_bbox": {
+                    "x": 316.3315734863281,
+                    "y": 689.1453247070312,
+                    "w": 49.220977783203125,
+                    "h": 10.7379150390625
+                  },
+                  "bbox": {
+                    "x": 313.55801599999995,
+                    "y": 705.7385008,
+                    "w": 9.100728000000004,
+                    "h": 9.630400000000009
+                  }
+                }
+              ],
+              "container_bbox": {
+                "x": 272.6481018066406,
+                "y": 481.3598937988281,
+                "w": 137.1753925933594,
+                "h": 234.00900700117188
+              },
+              "evidence": {
+                "title_signal": null,
+                "container_signal": {
+                  "container_bbox": {
+                    "x": 272.6481018066406,
+                    "y": 481.3598937988281,
+                    "w": 137.1753925933594,
+                    "h": 234.00900700117188
+                  },
+                  "pdfplumber_rect": {
+                    "rect_id": "p7-r0",
+                    "bbox": {
+                      "x": 43.8297728,
+                      "y": 377.5055776,
+                      "w": 498.54654719999996,
+                      "h": 353.8594176
+                    }
+                  },
+                  "docling_block": null,
+                  "edges_inside": {
+                    "vertical": 56,
+                    "horizontal": 68
+                  },
+                  "colons_inside": 0,
+                  "container_score": 2
+                },
+                "structural_signals": {
+                  "kind": "kv_group",
+                  "n_pairs": 5,
+                  "layout": "stacked_vertical",
+                  "same_row_ratio": 0.2
+                }
+              }
+            }
+          ],
+          "title_bbox": {
+            "x": 51.457049600000005,
+            "y": 391.56692463999997,
+            "w": 438.616568,
+            "h": 10.593440000000044
+          },
+          "container_bbox": {
+            "x": 272.6481018066406,
+            "y": 481.3598937988281,
+            "w": 137.1753925933594,
+            "h": 234.00900700117188
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 51.457049600000005,
+                  "y": 391.56692463999997,
+                  "w": 438.616568,
+                  "h": 10.593440000000044
+                },
+                "char_indices": [
+                  964,
+                  965,
+                  966,
+                  967,
+                  968,
+                  969,
+                  970,
+                  971,
+                  972,
+                  973,
+                  974,
+                  975,
+                  976,
+                  977,
+                  978,
+                  979,
+                  980,
+                  981,
+                  982,
+                  983
+                ],
+                "n_chars": 72,
+                "row_y": 389.53999999999945
+              },
+              "liteparse": {
+                "span_id": 15,
+                "bbox": {
+                  "x": 51.45704650878906,
+                  "y": 390.3487243652344,
+                  "w": 438.61651611328125,
+                  "h": 11.81170654296875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 11.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/313",
+                "bbox": {
+                  "x": 51.457049600000005,
+                  "y": 393.5690848,
+                  "w": 438.61656799999986,
+                  "h": 7.839614336283205
+                },
+                "column_header": null,
+                "row_header": null
+              },
+              "bbox": {
+                "x": 51.457049600000005,
+                "y": 391.56692463999997,
+                "w": 438.616568,
+                "h": 10.593440000000044
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 272.6481018066406,
+                "y": 481.3598937988281,
+                "w": 137.1753925933594,
+                "h": 234.00900700117188
+              },
+              "pdfplumber_rect": {
+                "rect_id": "p7-r0",
+                "bbox": {
+                  "x": 43.8297728,
+                  "y": 377.5055776,
+                  "w": 498.54654719999996,
+                  "h": 353.8594176
+                }
+              },
+              "docling_block": null,
+              "edges_inside": {
+                "vertical": 56,
+                "horizontal": 68
+              },
+              "colons_inside": 0,
+              "container_score": 2
+            },
+            "structural_signals": {
+              "kind": "section",
+              "n_children": 1,
+              "child_type_distribution": {
+                "kv_group": 1
+              },
+              "path": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES/Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento"
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 59.5465856,
+        "y": 354.81731823999996,
+        "w": 382.7024655999999,
+        "h": 10.593440000000044
+      },
+      "container_bbox": {
+        "x": 272.6481018066406,
+        "y": 481.3598937988281,
+        "w": 137.1753925933594,
+        "h": 234.00900700117188
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES",
+          "pdfplumber": {
+            "bbox": {
+              "x": 59.5465856,
+              "y": 354.81731823999996,
+              "w": 382.7024655999999,
+              "h": 10.593440000000044
+            },
+            "char_indices": [
+              913,
+              914,
+              915,
+              916,
+              917,
+              918,
+              919,
+              920,
+              921,
+              922,
+              923,
+              924,
+              925,
+              926,
+              927,
+              928,
+              929,
+              930,
+              931,
+              932
+            ],
+            "n_chars": 51,
+            "row_y": 354.81731823999996
+          },
+          "liteparse": {
+            "span_id": 14,
+            "bbox": {
+              "x": 59.54658889770508,
+              "y": 353.5990905761719,
+              "w": 382.702392578125,
+              "h": 11.81170654296875
+            },
+            "case_class": "UPPER",
+            "is_bold": false,
+            "font_size": 11.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/312",
+            "bbox": {
+              "x": 59.5465856,
+              "y": 356.8194784,
+              "w": 382.7024655999999,
+              "h": 7.839614336283148
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 59.5465856,
+            "y": 354.81731823999996,
+            "w": 382.7024655999999,
+            "h": 10.593440000000044
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 272.6481018066406,
+            "y": 481.3598937988281,
+            "w": 137.1753925933594,
+            "h": 234.00900700117188
+          },
+          "pdfplumber_rect": {
+            "rect_id": "p7-r0",
+            "bbox": {
+              "x": 43.8297728,
+              "y": 377.5055776,
+              "w": 498.54654719999996,
+              "h": 353.8594176
+            }
+          },
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 56,
+            "horizontal": 68
+          },
+          "colons_inside": 0,
+          "container_score": 2
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 1,
+          "child_type_distribution": {
+            "section": 1
+          },
+          "path": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES"
+        }
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "consentimientos",
+      "title": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES",
+      "title_bbox": {
+        "x": 59.5465856,
+        "y": 354.81731823999996,
+        "w": 382.7024655999999,
+        "h": 10.593440000000044
+      },
+      "container_bbox": {
+        "x": 272.6481018066406,
+        "y": 481.3598937988281,
+        "w": 137.1753925933594,
+        "h": 234.00900700117188
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Personalización de la oferta de productos y servicios según el análisis de sus datos (Titular 1)",
+      "value": "SI",
+      "section": "Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+      "band": null,
+      "column_header": null,
+      "row_y": 496,
+      "rule": "structured-kv-group",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 316.3315734863281,
+        "y": 481.3598937988281,
+        "w": 49.220977783203125,
+        "h": 10.737884521484375
+      },
+      "value_bboxes": [
+        {
+          "x": 313.55801599999995,
+          "y": 497.9529904,
+          "w": 9.100728000000004,
+          "h": 9.630399999999952
+        }
+      ],
+      "evidence": {
+        "path": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES/Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Comunicación de la oferta de productos y servicios — Por aplicaciones móviles, entornos digitales y canales electrónicos (Titular 1)",
+      "value": "SI",
+      "section": "Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+      "band": null,
+      "column_header": null,
+      "row_y": 592,
+      "rule": "structured-kv-group",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 272.6481018066406,
+        "y": 592.1171875,
+        "w": 82.7852783203125,
+        "h": 10.1278076171875
+      },
+      "value_bboxes": [
+        {
+          "x": 365.33104640000005,
+          "y": 593.6406448,
+          "w": 9.100728000000004,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES/Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Comunicación de la oferta de productos y servicios — Por teléfono (Titular 1)",
+      "value": "SI",
+      "section": "Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+      "band": null,
+      "column_header": null,
+      "row_y": 607,
+      "rule": "structured-kv-group",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 272.6481018066406,
+        "y": 607.86474609375,
+        "w": 51.927093505859375,
+        "h": 10.660888671875
+      },
+      "value_bboxes": [
+        {
+          "x": 365.33104640000005,
+          "y": 608.8951984,
+          "w": 9.100728000000004,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES/Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Comunicación de la oferta de productos y servicios — Por carta (Titular 1)",
+      "value": "NO",
+      "section": "Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+      "band": null,
+      "column_header": null,
+      "row_y": 623,
+      "rule": "structured-kv-group",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 272.6481018066406,
+        "y": 623.3504638671875,
+        "w": 39.070556640625,
+        "h": 10.66082763671875
+      },
+      "value_bboxes": [
+        {
+          "x": 395.3778944,
+          "y": 624.3808816,
+          "w": 14.445600000000013,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES/Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+        "engine_agreement": 3
+      }
+    },
+    {
+      "label": "Cesión de sus datos a otras empresas para la remisión de ofertas de productos y servicios (Titular 1)",
+      "value": "SI",
+      "section": "Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+      "band": null,
+      "column_header": null,
+      "row_y": 704,
+      "rule": "structured-kv-group",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 316.3315734863281,
+        "y": 689.1453247070312,
+        "w": 49.220977783203125,
+        "h": 10.7379150390625
+      },
+      "value_bboxes": [
+        {
+          "x": 313.55801599999995,
+          "y": 705.7385008,
+          "w": 9.100728000000004,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "6. CONSENTIMIENTOS PARA EL TRATAMIENTO DE DATOS PERSONALES/Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento",
+        "engine_agreement": 3
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "codex",
+    "n_chars": 2071,
+    "n_rows": 107,
+    "n_liteparse_spans": 63,
+    "n_docling_blocks": 35,
+    "n_rects": 84,
+    "kv_pair_breakdown": {
+      "3_eng": 5,
+      "2_eng": 0,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 0,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "codex",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "caixabank_prestamo_consent_matrix_titular_1",
+      "caixabank_prestamo_consent_mixed_si_no",
+      "caixabank_prestamo_consent_three_channels_split"
+    ],
+    "needs_review": false,
+    "document_type": "Contrato de préstamo CaixaBank Payments & Consumer"
+  }
+}

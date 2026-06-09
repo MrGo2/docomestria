@@ -7,6 +7,98 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — Structural key-value extraction (v0.7.0 MVP)
+
+New sub-package `docomestria.structural` that fuses Docling + LiteParse +
+pdfplumber into auto-discovered key-value pairs and a page-level hierarchy.
+No LLM, no regex per field, no learned weights — rule-based scoring over
+the three engines' signals only.
+
+Public API:
+
+```python
+from docomestria.structural import structural_extract
+
+result = structural_extract("invoice.pdf")
+for pair in result.pairs:
+    print(pair.label_text, "→", pair.value_text,
+          pair.confidence, pair.evidence,
+          "section:", pair.section_title,
+          "subsection:", pair.subsection_title)
+
+for page in result.pages:
+    page.sections      # Docling section_header tree
+    page.tables        # fused Docling + pdfplumber tables, with subsections
+    page.boxes         # pdfplumber rect_type=box (sub-header bars)
+    page.furniture_regions / picture_regions / prose_regions
+```
+
+Five candidate emitters cover the topologies surfaced by the five-PDF
+benchmark (LABORAL, PATRIMONIAL, BBVA3 / BBVA4 / BBVA5):
+
+- `D-2col`         — Docling 2-col cells (col[0] != col[1]) including
+                     N-col matrices reduced via consistent-value rows
+                     and per-column-header annotation
+                     (`'TAE (Sin nómina)' → '12,6020%'`)
+- `L-inline-split` — labels with `:` mid-string (`Nº Procedimiento: 987-15`)
+- `L-horizontal`   — Bold LABEL + Regular VALUE on same Y, outside
+                     Docling tables
+- `L-twocol-form`  — parallel Titular 1 / Titular 2 forms re-extracted
+                     from LiteParse when Docling fused them into one
+                     cell each (BBVA contracts cover page)
+- `L-vertical`     — reserved, not yet wired
+
+Structure detection:
+
+- Sections from Docling section_header levels
+- Furniture / picture regions from Docling content_layer
+- Prose regions from Docling `text` / `list_item` blocks above length
+  thresholds — suppress KV emission inside them so contract clause
+  footnotes (`'1. - Cuota Sin nómina domiciliada → considerando el
+  Interés Nominal'`) don't get pair-extracted
+- Table fusion preferring Docling cells over pdfplumber when both
+  detect the same region
+- Sub-section split inside tables via pdfplumber box rects matching
+  table width (resolves the `Situaciones` case from LABORAL)
+- Shadow-table dedup via cell-content subset match — drops phantom
+  pdfplumber tables at off-page Y coordinates that mirror Docling's
+  matrix content
+
+Scoring + dedup:
+
+- Rule-based base scores per emitter, bonuses for ends-with-colon and
+  cross-engine agreement, penalties for long-prose values and
+  font-size mismatch
+- Three-band confidence: HIGH (>=0.80), MEDIUM (0.50-0.79), LOW (<0.50)
+- Dedup by (page, normalised_label, normalised_value) — collapses
+  whitespace/case artefacts between engines while preserving
+  intentional duplicates like parallel-form column pairs
+
+Classification (`classify.py`) detects ItemKind per LiteParse item from
+font weight, size relative to page dominant, and colon position;
+short enumeration markers (`1.`, `a)`, `-`) and bold prose (6+ words,
+no colon) are now classified as BODY before pairing.
+
+Validated end-to-end on five Spanish PDFs vs Azure Document Intelligence
+`prebuilt-layout`:
+
+| PDF | Pages | Docomestria pairs | Confidence | Regression |
+|---|---:|---:|---|---|
+| LABORAL judicial | 1 | 15 | all HIGH | 12/12 |
+| PATRIMONIAL judicial | 4 | 36 | all HIGH | 8/8 |
+| BBVA3 Tarjeta | 5 | 21 | all HIGH | — |
+| BBVA4 Repsol+Crédito | 12 | 34 | all HIGH | — |
+| BBVA5 Préstamo | 16 | 25 | all HIGH | — |
+
+Resolves the four systemic Azure DI failure modes on the same PDFs
+(sub-header-as-value, cascading row-shift, multi-line label
+fragmentation, empty-value mispairing) plus extracts BBVA5 fields Azure
+silently drops (TAE / Cuota / Comisión de Apertura / Vencimiento Final /
+Domiciliación de Cuotas).
+
+Strategy doc at `.planning/structural-extraction-strategy.md` captures
+the failure-mode taxonomy, fusion rules, and always-on regression set.
+
 ## [0.6.4] - 2026-06-05
 
 ### Added

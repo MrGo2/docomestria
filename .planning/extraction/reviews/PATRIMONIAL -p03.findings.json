@@ -1,0 +1,95 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/PATRIMONIAL -p03.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/2_Example/PATRIMONIAL .pdf",
+  "page": 3,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 5,
+    "populated_kv": 5,
+    "empty_kv": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 1,
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "LOW",
+      "type": "possible_noise_misclassified",
+      "spec_location": "structure.id=aviso_legal / prose_block",
+      "evidence": {
+        "golden_label": "Aviso legal",
+        "golden_value": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a dato de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acc información deberá realizarse respetando las correspondientes medidas de seguridad que gar",
+        "pdf_text_found": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+        "atoms_span_match": {"text": "La información obtenida a través del Punto Neutro Judicial ú...", "y": 771.3, "x": 32.0},
+        "comment": "The prose_block text in the golden is truncated mid-sentence ('que acc', 'que gar') compared to the full text in atoms (engine_agreement=0 in golden). The node type is correct (prose_block, not KV), and truncation is an annotation artifact with no downstream KV impact. Not a substantive extraction error."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "aviso_legal",
+        "params": {
+          "field": "text",
+          "new_value": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+          "note": "Update prose text to full content from atoms spans at y=771-792. Also set engine_agreement to correct value (4 spans visible in atoms: liteparse y=771/778/785/792, docling y=772). Low priority — does not affect KV extraction."
+        }
+      }
+    }
+  ],
+  "_kv_validation_detail": {
+    "Nombre": {
+      "value": "GHEORGHE ADRIAN",
+      "atoms_confirmed": true,
+      "atoms_span": {"text": "GHEORGHE ADRIAN", "x": 180.0, "y": 153.6, "font_size": 10.0, "bold": false},
+      "label_bbox": {"x": 126.89, "y": 154.78},
+      "value_bbox": {"x": 180.0, "y": 154.75},
+      "delta_y": 0.03,
+      "label_left_of_value": true,
+      "section_ok": true,
+      "verdict": "OK"
+    },
+    "Primer apellido": {
+      "value": "OPREA",
+      "atoms_confirmed": true,
+      "atoms_span": {"text": "OPREA", "x": 180.0, "y": 173.6, "font_size": 10.0, "bold": false},
+      "label_bbox": {"x": 92.42, "y": 174.78},
+      "value_bbox": {"x": 180.0, "y": 174.75},
+      "delta_y": 0.03,
+      "label_left_of_value": true,
+      "section_ok": true,
+      "verdict": "OK"
+    },
+    "Segundo apellido": {
+      "value": "---",
+      "atoms_confirmed": true,
+      "atoms_span": {"text": "---", "x": 180.0, "y": 193.6, "font_size": 10.0, "bold": false},
+      "label_bbox": {"x": 81.32, "y": 194.78},
+      "value_bbox": {"x": 180.0, "y": 194.75},
+      "delta_y": 0.03,
+      "label_left_of_value": true,
+      "section_ok": true,
+      "verdict": "OK"
+    },
+    "Teléfono": {
+      "value": "631723839",
+      "atoms_confirmed": true,
+      "atoms_span": {"text": "631723839", "x": 180.0, "y": 213.6, "font_size": 10.0, "bold": false},
+      "label_bbox": {"x": 123.0, "y": 214.78},
+      "value_bbox": {"x": 180.0, "y": 214.75},
+      "delta_y": 0.03,
+      "label_left_of_value": true,
+      "section_ok": true,
+      "verdict": "OK"
+    },
+    "Resultado": {
+      "value": "Sin Prestaciones",
+      "atoms_confirmed": true,
+      "atoms_span": {"text": "Sin Prestaciones", "x": 257.21, "y": 233.7, "font_size": 10.0, "bold": true},
+      "label_bbox": null,
+      "value_bbox": {"x": 257.21, "y": 234.78},
+      "note": "No 'Resultado' label span visible in atoms at y=233. Label is an inferred annotation. The bold span in a shaded row with no label is correctly modelled as kv_leaf. Acceptable for this document type.",
+      "section_ok": true,
+      "verdict": "OK"
+    }
+  }
+}

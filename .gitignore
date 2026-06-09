@@ -42,3 +42,27 @@ Thumbs.db
 # Project artifacts
 *.fused.json
 uploads/
+
+# ParseBench sample data — track scripts, INDEX.md, and committed gold fixtures only
+data/parsebench/pdfs/
+data/parsebench/ground_truth/
+data/parsebench/outputs/*
+!data/parsebench/outputs/docling/
+!data/parsebench/outputs/liteparse/
+!data/parsebench/outputs/pdfplumber/
+data/parsebench/outputs/docling/*
+data/parsebench/outputs/liteparse/*
+data/parsebench/outputs/pdfplumber/*
+!data/parsebench/outputs/docling/azuredemo__*.json
+!data/parsebench/outputs/liteparse/azuredemo__*.json
+!data/parsebench/outputs/pdfplumber/azuredemo__*.json
+data/parsebench/views/
+.viewer/
+
+# Generated KIE artifacts (rebuilt by scripts/extract_atoms.py + agents/specs)
+.planning/extraction/atoms/
+.planning/extraction/output/
+.planning/extraction/triage/
+
+# Python bytecode
+__pycache__/

@@ -1,0 +1,122 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/43631720F_CONTRATO-p01.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/43631720F_CONTRATO.pdf",
+  "page": 1,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 65,
+    "populated_kv": 48,
+    "empty_kv": 17,
+    "high": 1,
+    "medium": 2,
+    "low": 1,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "HIGH",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=comprador_prestatario / kv_group.id=comprador_datos / label=Penalidad por cada cuota impagado",
+      "evidence": {
+        "golden_label": "Penalidad por cada cuota impagado",
+        "golden_value": "30 (se cobrará una sola vez para cada cuota)",
+        "pdf_text_found": "Penalidad por cada cuota impagado: 30 (se cobrará una sola vez para cada cuota)",
+        "atoms_span_match": {
+          "text": "Penalidad por cada cuota impagado: 30 (se cobrará una sola vez para cada cuota)",
+          "y": 548.7,
+          "x": 29.5
+        },
+        "comment": "The atoms span contains '30' where  is the Euro currency character (U+009F as used in this PDF encoding). The golden value captures '30 (se cobrará...)' dropping the euro sign between '30' and the parenthetical. The correct value is '30€ (se cobrará una sola vez para cada cuota)' or at minimum '30€ (se cobrará una sola vez para cada cuota)'. Omitting the currency unit from a monetary penalty amount is a substantive error."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "Penalidad por cada cuota impagado",
+        "params": {
+          "new_value": "30€ (se cobrará una sola vez para cada cuota)",
+          "note": "Replace \\u009f with € — the PDF encodes the euro sign as byte 0x9F in this font. Normalize to UTF-8 euro sign."
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "kv_pairs / label=En (all 3 instances) / label_bbox",
+      "evidence": {
+        "golden_label": "En",
+        "golden_value": "GIRONA",
+        "pdf_text_found": "Three separate fused spans at x=27.0, x=280.7, x=409.0 all reading 'En GIRONA' at y=706.3",
+        "atoms_span_match": [
+          {"text": "En GIRONA", "y": 706.3, "x": 27.0},
+          {"text": "En GIRONA", "y": 706.3, "x": 280.7},
+          {"text": "En GIRONA", "y": 706.3, "x": 409.0}
+        ],
+        "comment": "All three 'En' kv_pairs share label_bbox.x=27.0 (the first column occurrence). The second and third instances should have label_bbox.x=280.7 and x=409.0 respectively, matching their actual PDF position. The value_bboxes are correctly differentiated (x=41.1, 295.1, 423.3) but the label_bbox is identical for all three, pointing to the wrong column for pairs 2 and 3. The same misalignment applies to the three 'Fecha' pairs where all label_bbox.x=27.0 but atoms show 'Fecha 24-09-2019' at x=27.0, x=280.7, x=409.0."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "En / Fecha signature triplicate pairs",
+        "params": {
+          "En_pair_2_label_bbox": {"x": 280.7, "y": 708.2, "w": 13.0, "h": 7.7},
+          "En_pair_3_label_bbox": {"x": 409.0, "y": 708.2, "w": 13.0, "h": 7.7},
+          "Fecha_pair_2_label_bbox": {"x": 280.7, "y": 718.1, "w": 24.0, "h": 7.7},
+          "Fecha_pair_3_label_bbox": {"x": 409.0, "y": 718.1, "w": 24.0, "h": 7.7},
+          "note": "Update label_bbox for En pairs 2+3 and Fecha pairs 2+3 to their respective column x positions. Atoms show three distinct 'En GIRONA' and 'Fecha 24-09-2019' fused spans at x=27.0/280.7/409.0."
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "MEDIUM",
+      "type": "wrong_value_text",
+      "spec_location": "kv_pairs / label=Importe diario derecho de desistimiento",
+      "evidence": {
+        "golden_label": "Importe diario derecho de desistimiento",
+        "golden_value": "4,34",
+        "pdf_text_found": "4,34 ",
+        "atoms_span_match": {
+          "text": "4,34 ",
+          "y": 568.3,
+          "x": 305.2
+        },
+        "comment": "The atoms span reads '4,34 ' where  is the Euro currency character. The golden captures '4,34' stripping the currency unit. Visual PDF confirms '4,34 €'. For a daily cost amount the unit is load-bearing. Consistent with f01, the euro char should be preserved. Severity MEDIUM (not HIGH) because '4,34' IS a valid substring match and this is an amount field where currency can be inferred from context, but it is still an inaccurate capture."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "Importe diario derecho de desistimiento",
+        "params": {
+          "new_value": "4,34€",
+          "note": "Normalize \\u009f to € — consistent with f01 treatment."
+        }
+      }
+    },
+    {
+      "id": "f04",
+      "severity": "LOW",
+      "type": "wrong_value_text",
+      "spec_location": "kv_pairs / label=Financiadas (first instance, value=507,00)",
+      "evidence": {
+        "golden_label": "Financiadas",
+        "golden_value": "507,00",
+        "pdf_text_found": "507,00",
+        "atoms_span_match": {
+          "text": "507,00",
+          "y": 396.4,
+          "x": 221.3
+        },
+        "comment": "Atoms span '507,00' — the  is the Euro currency character. Golden captures '507,00' without the unit. The substring '507,00' IS present in '507,00' so this is a match, but the unit is dropped. Similarly the second Financiadas value '0,00' is from '0,00'. Severity LOW because '507,00' is present as substring and context makes the currency clear, but ideally should be '507,00€'. Same note applies to the second Financiadas value='0,00' and No Condicionantes value='28,73' (atoms: '28,73')."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "Financiadas (507,00) and Financiadas (0,00) and No Condicionantes (28,73)",
+        "params": {
+          "Financiadas_1_new_value": "507,00€",
+          "Financiadas_2_new_value": "0,00€",
+          "No_Condicionantes_new_value": "28,73€",
+          "note": "Batch-normalize all \\u009f-terminated amount values. These three share the same pattern as f01/f03."
+        }
+      }
+    }
+  ]
+}

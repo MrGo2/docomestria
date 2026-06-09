@@ -1,0 +1,66 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/42646161K_CONTRATO-p13.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/42646161K_CONTRATO.pdf",
+  "page": 13,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 18,
+    "populated_kv": 17,
+    "empty_kv": 1,
+    "high": 0,
+    "medium": 1,
+    "low": 1,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "section.id=caracteristicas_producto / table.id=caracteristicas_importe_duracion / row=0 / label=Importe total del crédito.",
+      "evidence": {
+        "golden_label": "Importe total del crédito.",
+        "golden_value": "Importe del Préstamo Mercantil/AUTO: 13.384,85",
+        "pdf_text_found": "Atoms span 'Importe del Préstamo Mercantil/AUTO:' at x=152.46, y=566.08, w=107.55; separate span '13.384,85' at x=285.82, y=566.69, w=27.84",
+        "atoms_span_match": {"text": "13.384,85", "y": 566.69, "x": 285.82},
+        "comment": "The golden value text 'Importe del Préstamo Mercantil/AUTO: 13.384,85' is a correct fused representation of two atoms spans. However value_bboxes[0] covers only the sub-label span (x=152.46, w=107.55, right edge ~260pt). The numeric value '13.384,85' sits at x=285.82 — approximately 26pt outside the stated bbox right edge. The value_bbox should span both the sub-label and the numeric portion (right edge at x=313.67). engine_agreement=1 (liteparse only) for this row, so the bbox came from liteparse span_id=60 which only covers the sub-label text."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "caracteristicas_importe_duracion / row=0 / value",
+        "params": {
+          "value_bboxes": [
+            {
+              "x": 152.46067810058594,
+              "y": 566.084228515625,
+              "w": 161.204177856445,
+              "h": 9.2374267578125
+            }
+          ],
+          "comment": "Extend value_bbox right edge to cover '13.384,85' span (x=285.82 + w=27.84 = 313.67). New w = 313.67 - 152.46 = 161.21"
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "LOW",
+      "type": "low_engine_agreement",
+      "spec_location": "section.id=caracteristicas_producto / table.id=caracteristicas_importe_duracion / row=4 / label=Duración del contrato de crédito",
+      "evidence": {
+        "golden_label": "Duración del contrato de crédito",
+        "golden_value": "84 meses.",
+        "pdf_text_found": "Atom span '84 meses.' at x=424.04, y=689.65, w=6.97, font_size=6.5 — engine_agreement=1 (liteparse only, no pdfplumber/docling agreement)",
+        "atoms_span_match": {"text": "84 meses.", "y": 689.65, "x": 424.04},
+        "comment": "Value text '84 meses.' is confirmed in atoms and visible on the PDF. The bbox width (w=6.96) is narrow for 9 characters but plausible at font_size=6.5 condensed font (CZARIB0T1X01145). The only concern is engine_agreement=1 which means neither pdfplumber nor docling found this span independently. The extraction is fragile but the value is correct per visual confirmation."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "caracteristicas_importe_duracion / row=4 / value",
+        "params": {
+          "note": "No text fix needed. Consider adding a second evidence anchor using the pdfplumber char-level extraction at y=690.59 if available, to raise engine_agreement above 1.",
+          "confidence_note": "Value is correct; fragility is acceptable for a golden reference if visual confirmation is recorded."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/CONTRATO PRESTAMO COMERCIO 2-p02.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO PRESTAMO COMERCIO 2.pdf",
+  "page": 2,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 136,
+    "populated_kv": 17,
+    "empty_kv": 119,
+    "high": 0,
+    "medium": 3,
+    "low": 0,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "section='DATOS PERSONALES...' / row_y=241 / label='Nº empleados'",
+      "evidence": {
+        "golden_label": "Nº empleados",
+        "golden_value": "0",
+        "pdf_text_found": "Nº empleados: 0",
+        "atoms_span_match": {"text": "Nº empleados: 0", "y": 241.4, "x": 455.5},
+        "label_bbox_x": 455.5,
+        "value_bbox_x": 92.6,
+        "comment": "Value is correct ('0') and present in atoms span at y=241.4 x=455.5. But the value_bbox is placed at x=92.6 — far to the LEFT of the label_bbox (455.5). Expected value_x ≈ 505 (just after 'Nº empleados: '). The value text is right, only the bbox coordinate is wrong (programmatic builder mis-computed it)."
+      },
+      "proposed_fix": {
+        "op": "fix_value_bbox",
+        "target": "kv label='Nº empleados' row_y=241",
+        "params": {
+          "new_value_bbox": {
+            "x": 505.0,
+            "y": 243.5,
+            "w": 5.0,
+            "h": 9.63
+          },
+          "note": "Recompute x as label_bbox.x + label_bbox.w + ~1pt; or sub-locate after ': ' in atom span 'Nº empleados: 0' at x=455.5"
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "section='DATOS PERSONALES...' / row_y=297 / label='Sexo'",
+      "evidence": {
+        "golden_label": "Sexo",
+        "golden_value": "H",
+        "pdf_text_found": "Sexo:H",
+        "atoms_span_match": {"text": "Sexo:H", "y": 297.5, "x": 297.1},
+        "label_bbox_x": 297.1,
+        "value_bbox_x": 160.3,
+        "comment": "Value 'H' is correct and appears in atom span 'Sexo:H' at x=297.1. value_bbox is placed at x=160.3 (under 'Nacionalidad: UNION EUROPEA' band, wrong row content). Expected value_x ≈ 314 (right after 'Sexo:' label)."
+      },
+      "proposed_fix": {
+        "op": "fix_value_bbox",
+        "target": "kv label='Sexo' row_y=297",
+        "params": {
+          "new_value_bbox": {
+            "x": 314.3,
+            "y": 299.66,
+            "w": 5.43,
+            "h": 9.63
+          },
+          "note": "Recompute as label_bbox.x + label_bbox.w (~17.16) from atom span 'Sexo:H'"
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "section='DATOS PERSONALES...' / row_y=311 / label='Otros créditos'",
+      "evidence": {
+        "golden_label": "Otros créditos",
+        "golden_value": "0,00",
+        "pdf_text_found": "Otros créditos: 0,00",
+        "atoms_span_match": {"text": "Otros créditos: 0,00", "y": 311.6, "x": 482.7},
+        "label_bbox_x": 510.3,
+        "value_bbox_x": 437.9,
+        "comment": "Value '0,00' is correct. The atom span ('Otros créditos: 0,00€') starts at x=482.7, not 510.3 — label_bbox is off by ~27pt to the right (likely y_hint/x miscomputation). Worse: value_bbox is placed at x=437.9 (LEFT of label) — collides with 'Gastos vivienda' value column. Both bboxes should be repositioned along the atom span starting at x=482.7."
+      },
+      "proposed_fix": {
+        "op": "fix_label_and_value_bbox",
+        "target": "kv label='Otros créditos' row_y=311",
+        "params": {
+          "new_label_bbox": {
+            "x": 482.7,
+            "y": 313.76,
+            "w": 70.0,
+            "h": 9.63
+          },
+          "new_value_bbox": {
+            "x": 557.0,
+            "y": 313.76,
+            "w": 16.25,
+            "h": 9.63
+          },
+          "note": "Use atom span 'Otros créditos: 0,00€' at x=482.7 y=311.6 as ground truth; split at ': '"
+        }
+      }
+    }
+  ],
+  "notes": {
+    "verified_populated_values": [
+      "Apellidos=SPIRIEON SOLCAN",
+      "Nombre/Denominación=ADRIAN",
+      "NIF/CIF=X7891505K",
+      "Nacionalidad=UNION EUROPEA",
+      "Nº empleados=0",
+      "Domicilio=CL BAYEU",
+      "Nº=10",
+      "Población=TOLEDO",
+      "C.P.=45190",
+      "Teléfono fijo=634673967",
+      "Correo electrónico=NANI198731@HOTMAIL.COM",
+      "Sexo=H",
+      "Fecha de nacimiento=12/12/1984",
+      "Personas a su cargo=0",
+      "Gastos vivienda=0,00",
+      "Otros créditos=0,00",
+      "Importe ingresos=0,00"
+    ],
+    "value_text_check": "All 17 populated values match atoms exactly (substring match within the multi-label spans).",
+    "empty_slots_check": "Verified Titular 2 (y 353-478), Avalista/Fiador 1 (y 517-642), Avalista/Fiador 2 (y 656-781) are genuinely empty form fields — no values visible in atoms within those bands except label-only spans ending in ':'. Right-edge column at x=581 contains only Logalty stamp ('Logalty', 'Guid: 001001-0001-...', timestamps, '2/37') which is footer/sidebar noise correctly omitted from KVs.",
+    "section_check": "All 17 KVs correctly assigned to 'DATOS PERSONALES Y PROFESIONALES...' under 'A. INTERVINIENTES Y DATOS GENERALES' per evidence.path. Section header in atoms confirmed.",
+    "noise_check": "Zero noise items in golden. The right-column timestamp/Logalty stamp was correctly excluded.",
+    "label_bbox_quirks": "Labels 'Nacionalidad' (x=114.3) and 'Teléfono fijo' (x=297.1) have label_bbox x positions that differ from their atom-span anchors because they share a single atom span with prior labels ('NIF/CIF: X7891505K Nacionalidad: UNION EUROPEA' and 'C.P. 45190 Teléfono fijo: 634673967'). The builder correctly sub-positioned them inside the span — NOT a finding."
+  }
+}

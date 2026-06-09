@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "document_id": "azuredemo__BBVA5",
+  "document_type": "spanish_banking_personal_loan_contract",
+  "expected_pairs": [],
+  "expected_tables": [
+    {
+      "page": 3,
+      "min_rows": 15,
+      "min_cols": 4,
+      "contains_rows": [
+        ["Importe Total del Préstamo", "29.000,00"],
+        ["Fecha Entrada en Vigor", "29-03-2021"],
+        ["TAE", "12,6020%", "11,4813%"],
+        ["Cuota", "458,68€", "443,13€"],
+        ["Domiciliación de Cuotas", "0182-0719-22-0201514439"]
+      ]
+    }
+  ],
+  "forbidden_pages": [],
+  "forbidden_pairs": [
+    {
+      "label": "1. - Cuota Sin nómina domiciliada",
+      "value": "contains:Interés Nominal",
+      "page": 14,
+      "reason": "footnote_explanation_is_not_kv"
+    },
+    {
+      "label": "2. - Cuota Con Nómina",
+      "value": "contains:Interés",
+      "page": 14,
+      "reason": "footnote_explanation_is_not_kv"
+    },
+    {
+      "label": "Tómese su tiempo y léalo atentamente",
+      "value": "contains:contrato",
+      "page": 1,
+      "reason": "bold_disclaimer_is_body"
+    },
+    {
+      "label": "Interés Nominal Anual (Sin nómina)",
+      "value": "11,2000%",
+      "page": 3,
+      "reason": "dense_matrix_row_should_remain_table_data_not_kv_pair"
+    },
+    {
+      "label": "Interés Nominal Anual (Con nómina)",
+      "value": "10,2000%",
+      "page": 3,
+      "reason": "dense_matrix_row_should_remain_table_data_not_kv_pair"
+    },
+    {
+      "label": "TAE (Sin nómina)",
+      "value": "12,6020%",
+      "page": 3,
+      "reason": "dense_matrix_row_should_remain_table_data_not_kv_pair"
+    },
+    {
+      "label": "TAE (Con nómina)",
+      "value": "11,4813%",
+      "page": 3,
+      "reason": "dense_matrix_row_should_remain_table_data_not_kv_pair"
+    },
+    {
+      "label": "Cuota (Sin nómina)",
+      "value": "458,68€",
+      "page": 3,
+      "reason": "dense_matrix_row_should_remain_table_data_not_kv_pair"
+    },
+    {
+      "label": "Cuota (Con nómina)",
+      "value": "443,13€",
+      "page": 3,
+      "reason": "dense_matrix_row_should_remain_table_data_not_kv_pair"
+    }
+  ],
+  "known_gaps": []
+}

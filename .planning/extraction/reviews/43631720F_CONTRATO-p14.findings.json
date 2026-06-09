@@ -1,0 +1,114 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/43631720F_CONTRATO-p14.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/43631720F_CONTRATO.pdf",
+  "page": 14,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 20,
+    "populated_kv": 14,
+    "empty_kv": 6,
+    "high": 0,
+    "medium": 2,
+    "low": 2,
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "kv_pairs[row_y=318] / label=Importe Total",
+      "evidence": {
+        "golden_label": "Importe Total",
+        "golden_value": "27.231,36 euros.",
+        "pdf_text_found": "Atoms span at x=151.8, y=317.2: 'Importe Total:' (actual table label). Atoms span at x=25.6, y=318.3: 'Importe total que deberá usted pagar.' (left-margin explanatory note).",
+        "atoms_span_match": {"text": "Importe Total:", "y": 317.2, "x": 151.8},
+        "comment": "The kv_pair label_bbox (x=25.57, y=319.85, w=35.55) covers the left-margin explanatory note 'Importe total que deberá usted pagar.' instead of the actual table label 'Importe Total:' at x=151.8, y=317.2. The value bbox (x=212.6, y=318.5) is correct. This causes the label to appear at x=25.6 while the value is at x=212.6 — a valid horizontal pairing but pointing to the wrong label span."
+      },
+      "proposed_fix": {
+        "op": "update_label_bbox",
+        "target": "kv_pairs[label=Importe Total]",
+        "params": {
+          "label_bbox": {
+            "x": 151.76729600000002,
+            "y": 317.15637504,
+            "w": 52.0,
+            "h": 7.704319999999939
+          },
+          "note": "Use the 'Importe Total:' span at x=151.8, y=317.2 as label anchor. Also update structure node importe_total label_bbox accordingly."
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "costes_credito / kv_leaf id=tin_fraccionado / label=Tipo de interés Nominal del Préstamo AUTO / primera disposición (Fraccionado)",
+      "evidence": {
+        "golden_label": "Tipo de interés Nominal del Préstamo AUTO / primera disposición (Fraccionado)",
+        "golden_value": "8,99 % anual (tipo fijo).",
+        "pdf_text_found": "Atoms span at x=25.6, y=502.5, w=4.7: text='El' (only the word El from the left-margin). Actual label atoms span at x=151.1, y=501.4: 'Tipo de interés Nominal del Préstamo Mercantil, del Préstamo AUTO, o de la primera disposición de la Cuenta de Crédito en modalidad de pago'. Fill-line span at x=151.1, y=509.5: '\"Fraccionado\": ...........................' Value span at x=229.0, y=510.8: '8,99 % anual (tipo fijo).'",
+        "atoms_span_match": {"text": "Tipo de interés Nominal del Préstamo Mercantil, del Préstamo AUTO, o de la primera disposición de la Cuenta de Crédito en modalidad de pago", "y": 501.4, "x": 151.1},
+        "comment": "The kv_pair label_bbox (x=25.57, y=502.52, w=4.715) is only 4.7pt wide — it captures the single word 'El' from the left-margin explanatory text. The actual section-table label starts at x=151.1, y=501.4. The label_bbox should anchor to the table label span, not the margin note."
+      },
+      "proposed_fix": {
+        "op": "update_label_bbox",
+        "target": "costes_credito / tin_fraccionado",
+        "params": {
+          "label_bbox": {
+            "x": 151.07390719999998,
+            "y": 501.40179443359375,
+            "w": 406.7,
+            "h": 18.0
+          },
+          "note": "Label spans two rows: main label at y=501.4 and fill-line '\"Fraccionado\": ...' at y=509.5. Use multi-row bbox or anchor to y=501.4 span."
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "LOW",
+      "type": "wrong_value_text",
+      "spec_location": "importe_intereses_gastos / comision_apertura / label=Comisión de apertura - forma de pago",
+      "evidence": {
+        "golden_label": "Comisión de apertura - forma de pago",
+        "golden_value": "financiada, incluyéndose en el importe del crédito concedido",
+        "pdf_text_found": "Atoms span at x=375.0, y=278.6: 'financiada, incluyéndose en el importe del crédito concedido.' (includes trailing period).",
+        "atoms_span_match": {"text": "financiada, incluyéndose en el importe del crédito concedido.", "y": 278.6, "x": 375.0},
+        "comment": "Golden value is missing the trailing period present in the PDF span. The golden value is a substring of the atoms text so extraction is correct, but the value text is not an exact copy of what the PDF contains. Severity LOW because the semantic content is fully preserved."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "kv_pairs[label=Comisión de apertura - forma de pago]",
+        "params": {
+          "value": "financiada, incluyéndose en el importe del crédito concedido."
+        }
+      }
+    },
+    {
+      "id": "f04",
+      "severity": "LOW",
+      "type": "missing_kv",
+      "spec_location": "importe_intereses_gastos / comision_apertura / checkbox at y=280.8",
+      "evidence": {
+        "golden_label": null,
+        "golden_value": null,
+        "pdf_text_found": "Atoms span at x=366.7, y=280.8, fs=6.5: text='X'. This checkbox marker sits 8pt to the left of the 'financiada...' option text (x=375.0) in the comisión de apertura forma de pago row. A sibling 'X' is not present at the 'al contado' (x=187.4) or '1ª cuota' (x=255.0) options.",
+        "atoms_span_match": {"text": "X", "y": 280.8, "x": 366.7},
+        "comment": "The checkbox 'X' at y=280.8, x=366.7 indicating the selected payment form ('financiada') for the comisión de apertura is not captured as a standalone KV. It is semantically implied by the existing 'forma de pago' KV value, so this is LOW severity. A future spec could add a checkbox-selected KV pairing 'forma de pago seleccionada: financiada' with value 'X' to match the pattern used for seguro and suministro checkboxes."
+      },
+      "proposed_fix": {
+        "op": "add_kv",
+        "target": "importe_intereses_gastos / comision_apertura",
+        "params": {
+          "label": "Comisión de apertura - forma de pago - selección",
+          "value": "X",
+          "y_hint": 281,
+          "x_hint": 366.7,
+          "value_bbox": {"x": 366.7, "y": 280.8, "w": 4.2, "h": 6.5},
+          "note": "Optional: only add if uniform checkbox-selected pattern is desired across all option rows."
+        }
+      }
+    }
+  ]
+}

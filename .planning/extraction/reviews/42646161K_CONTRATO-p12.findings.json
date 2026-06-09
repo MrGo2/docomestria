@@ -1,0 +1,24 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/42646161K_CONTRATO-p12.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/42646161K_CONTRATO.pdf",
+  "page": 12,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 18,
+    "populated_kv": 17,
+    "empty_kv": 1,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "verdict": "PASS"
+  },
+  "findings": [],
+  "_review_notes": {
+    "kv_text_checks": "All 17 populated KV values verified verbatim in atoms.spans (pdfplumber engine). 3-engine agreement on all pairs.",
+    "bbox_checks": "All label_bbox.x < value_bbox.x for horizontal pairs. Row-delta within 15pt for all same-row pairs. Referencia value y=85.58 < label y=90.34 is correct: the large-font reference number extends upward beyond the label baseline.",
+    "empty_slot_check": "Firma del deudor correctly marked empty. Logalty digital tag @$FIRMALOGALTYTAG{...}$@ is system metadata, not a human-readable value — empty classification is correct.",
+    "missing_kv_check": "No unpaired value spans found in atoms. Date/time sidebar metadata (Date: 2020/01/27 T 14:22:49 CET +0100) correctly classified as logalty_metadata noise.",
+    "noise_check": "Pages:12/22, Guid, Logalty, footer texts all correctly in structure noise nodes. No noise misclassified as KV.",
+    "address_whitespace": "Docling span for Su dirección contains double space 'BRIONES,24  PISO 2 - D' vs golden single space. pdfplumber span (n_chars=36) matches golden exactly. Not a substantive error — single-engine whitespace artifact."
+  }
+}

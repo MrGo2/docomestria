@@ -1,0 +1,298 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA 3.pdf",
+  "page": 5,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 49,
+    "rects": 15,
+    "docling_blocks": 23,
+    "noise_dropped": 3
+  },
+  "sections": [
+    {
+      "title": "Cómo calculamos la cuota mínima para Pago Aplazado (Revolving):",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.55, "y": 86.20, "w": 300.0, "h": 10.20},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [86.0, 142.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [59.55, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [110.0, 142.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Usted podrá escoger qué cuota quiere pagar mensualmente, siempre a partir de una cuota mínima que nosotros fijamos para evitar que tenga que pagar lo que vaya gastando durante un período de tiempo muy prolongado.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 59.55, "y": 110.93, "w": 480.0, "h": 20.60},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PRIMERO, APLICAMOS UNA FÓRMULA",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.55, "y": 142.00, "w": 220.0, "h": 10.20},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [142.0, 215.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [59.55, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r2",
+              "y_range": [162.0, 215.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Calculamos esa cuota mínima con una fórmula que garantiza un período de amortización acuerdo con esa fórmula, la cuota mensual mínima que usted tendría que pagar por cada operación:",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 59.55, "y": 162.93, "w": 480.0, "h": 30.80},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[( Factor corrector + TIN mensual) x el importe pendiente desde su última liquidación]",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.55, "y": 204.40, "w": 480.0, "h": 10.20},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [204.0, 302.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [59.55, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r3",
+              "y_range": [225.0, 302.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Donde el Factor corrector será un porcentaje que dependerá del TIN de cualquier caso que se pague completamente la deuda en un plazo...",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 59.55, "y": 225.30, "w": 480.0, "h": 51.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ejemplo de funcionamiento:",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.55, "y": 298.10, "w": 150.0, "h": 10.20},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [298.0, 467.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [59.55, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r4",
+              "y_range": [318.0, 467.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Si su TIN mensual 1,81% y su factor corrector es el 0,81%, el porcentaje es el 2,62%. Por tanto, el importe a pagar cada mes será un 2,62% de la operación que haya realizado.",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 59.55, "y": 318.93, "w": 480.0, "h": 30.80},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SEGUNDO, SUMAMOS EL PRECIO DE LOS SERVICIOS PRESTADOS",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 59.55, "y": 464.50, "w": 400.0, "h": 10.20},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [467.0, 640.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [59.55, 539.60], "role": "VALUE_TEXT", "column_header": null, "coherence": 1.0}
+          ],
+          "rows": [
+            {
+              "row_id": "r5",
+              "y_range": [485.0, 600.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Después de efectuar la operación pertinente según la fórmula descrita, al resultado le sumaremos el precio de los servicios que le hayamos prestado durante el periodo de liquidación...",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 59.55, "y": 485.30, "w": 480.0, "h": 51.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r6",
+              "y_range": [627.0, 660.0],
+              "cells": [
+                {
+                  "col": 0,
+                  "text": "Período de liquidación:",
+                  "role": "LABEL",
+                  "bbox": {"x": 59.55, "y": 635.0, "w": 130.0, "h": 10.20},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                },
+                {
+                  "col": 0,
+                  "text": "mensual",
+                  "role": "VALUE_TEXT",
+                  "bbox": {"x": 200.0, "y": 635.1, "w": 50.0, "h": 10.13},
+                  "bold": false,
+                  "case": "lower",
+                  "docling_label": "text",
+                  "compound_parts": null
+                }
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Período de liquidación:",
+      "value": "mensual",
+      "section": "SEGUNDO, SUMAMOS EL PRECIO DE LOS SERVICIOS PRESTADOS",
+      "band": "BAND_A",
+      "column_header": null,
+      "row_y": 635.0,
+      "rule": "case-contrast",
+      "confidence": "HIGH",
+      "evidence": {"rect_id": null, "docling_block_id": null, "label_span_id": "span_PeriodoLiquidacion", "value_span_ids": ["span_mensual"]}
+    }
+  ],
+  "noise": [
+    {
+      "text": "Logalty Guid: 001001-0001-000000140900869.par - Date: 2025/08/23 T 14:57:04 CEST +0200 - Pages: 5/61",
+      "bbox": {"x": 581.64, "y": 271.94, "w": 9.06, "h": 480.0},
+      "reason": "furniture_layer"
+    },
+    {
+      "text": "(Continúa en la siguiente página) >>",
+      "bbox": {"x": 381.74, "y": 758.30, "w": 147.48, "h": 10.13},
+      "reason": "page_footer"
+    },
+    {
+      "text": "",
+      "bbox": {"x": 0.0, "y": 784.10, "w": 50.0, "h": 50.0},
+      "reason": "picture_decorative"
+    }
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 15, "lines": 0, "tables": 1, "checkboxes": 0},
+      "docling": {
+        "blocks": 23,
+        "labels": {
+          "page_header": 1, "section_header": 5, "text": 12, "list_item": 3, "picture": 2
+        },
+        "section_headers": 5,
+        "tables": 0,
+        "key_value_regions": 0,
+        "field_keys": 0,
+        "checkboxes_selected": 0
+      },
+      "liteparse": {
+        "spans": 49,
+        "bold": 0,
+        "cases": {"lower": 40, "UPPER": 4, "none": 4, "Title": 1}
+      }
+    },
+    "column_coherence": [
+      {"band": "BAND_A", "dominant_role": "VALUE_TEXT", "coherence": 1.0}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 5, "total": 5},
+      "cell_bold_flags": {"agree": 49, "disagree": 0}
+    }
+  }
+}

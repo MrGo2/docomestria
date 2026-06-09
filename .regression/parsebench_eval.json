@@ -1,0 +1,441 @@
+{
+  "schema_version": 1,
+  "totals": {
+    "pdfs": 51,
+    "high": 2483,
+    "medium": 69,
+    "low": 0
+  },
+  "family_count": 10,
+  "families": {
+    "azuredemo": [
+      {
+        "stem": "azuredemo__BBVA3",
+        "pages": 5,
+        "pair_count": 21,
+        "high": 21,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "azuredemo__BBVA4",
+        "pages": 11,
+        "pair_count": 35,
+        "high": 32,
+        "medium": 3,
+        "low": 0
+      },
+      {
+        "stem": "azuredemo__BBVA5",
+        "pages": 16,
+        "pair_count": 29,
+        "high": 25,
+        "medium": 4,
+        "low": 0
+      },
+      {
+        "stem": "azuredemo__LABORAL",
+        "pages": 1,
+        "pair_count": 15,
+        "high": 15,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "azuredemo__PATRIMONIAL",
+        "pages": 4,
+        "pair_count": 35,
+        "high": 35,
+        "medium": 0,
+        "low": 0
+      }
+    ],
+    "certificate": [
+      {
+        "stem": "certificate__bbva_titularidad",
+        "pages": 1,
+        "pair_count": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "certificate__empadronamiento",
+        "pages": 1,
+        "pair_count": 8,
+        "high": 1,
+        "medium": 7,
+        "low": 0
+      },
+      {
+        "stem": "certificate__energetica_2011",
+        "pages": 7,
+        "pair_count": 69,
+        "high": 68,
+        "medium": 1,
+        "low": 0
+      },
+      {
+        "stem": "certificate__spee_bonificacion",
+        "pages": 1,
+        "pair_count": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      }
+    ],
+    "contract": [
+      {
+        "stem": "contract__declaracion_resp",
+        "pages": 6,
+        "pair_count": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "contract__suministros_a",
+        "pages": 2,
+        "pair_count": 6,
+        "high": 6,
+        "medium": 0,
+        "low": 0
+      }
+    ],
+    "form": [
+      {
+        "stem": "form__sepe_cf01",
+        "pages": 1,
+        "pair_count": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "form__sepe_hoja_info",
+        "pages": 3,
+        "pair_count": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "form__sepe_solicitud",
+        "pages": 2,
+        "pair_count": 7,
+        "high": 1,
+        "medium": 6,
+        "low": 0
+      }
+    ],
+    "invoice": [
+      {
+        "stem": "invoice__mistra_FAA96CC1",
+        "pages": 1,
+        "pair_count": 3,
+        "high": 2,
+        "medium": 1,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16087209",
+        "pages": 17,
+        "pair_count": 130,
+        "high": 128,
+        "medium": 2,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16087225",
+        "pages": 25,
+        "pair_count": 239,
+        "high": 231,
+        "medium": 8,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16093101",
+        "pages": 13,
+        "pair_count": 140,
+        "high": 133,
+        "medium": 7,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16093180",
+        "pages": 13,
+        "pair_count": 143,
+        "high": 140,
+        "medium": 3,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16099167",
+        "pages": 11,
+        "pair_count": 100,
+        "high": 100,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16102779",
+        "pages": 19,
+        "pair_count": 186,
+        "high": 186,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16102792",
+        "pages": 12,
+        "pair_count": 135,
+        "high": 135,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16105031",
+        "pages": 14,
+        "pair_count": 138,
+        "high": 138,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16140464",
+        "pages": 13,
+        "pair_count": 119,
+        "high": 119,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_16140508",
+        "pages": 21,
+        "pair_count": 224,
+        "high": 220,
+        "medium": 4,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_alt_16140464",
+        "pages": 13,
+        "pair_count": 119,
+        "high": 119,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "invoice__ocr_test_2pages",
+        "pages": 2,
+        "pair_count": 12,
+        "high": 12,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "invoice__presupuesto_dario",
+        "pages": 8,
+        "pair_count": 3,
+        "high": 2,
+        "medium": 1,
+        "low": 0
+      }
+    ],
+    "layout": [
+      {
+        "stem": "layout__(Web_version)_E-Government_Survey_2024_1392024_p101",
+        "pages": 1,
+        "pair_count": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "layout__(Web_version)_E-Government_Survey_2024_1392024_p81",
+        "pages": 1,
+        "pair_count": 2,
+        "high": 2,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "layout__0000050863-25-000054_p7",
+        "pages": 1,
+        "pair_count": 13,
+        "high": 3,
+        "medium": 10,
+        "low": 0
+      },
+      {
+        "stem": "layout__02775267_p3",
+        "pages": 1,
+        "pair_count": 10,
+        "high": 4,
+        "medium": 6,
+        "low": 0
+      },
+      {
+        "stem": "layout__076523s007lbl_p2",
+        "pages": 1,
+        "pair_count": 1,
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      }
+    ],
+    "legal": [
+      {
+        "stem": "legal__mistra_81309345",
+        "pages": 2,
+        "pair_count": 64,
+        "high": 64,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "legal__pamplona_etj",
+        "pages": 13,
+        "pair_count": 130,
+        "high": 129,
+        "medium": 1,
+        "low": 0
+      },
+      {
+        "stem": "legal__sentenza_7055",
+        "pages": 87,
+        "pair_count": 171,
+        "high": 167,
+        "medium": 4,
+        "low": 0
+      }
+    ],
+    "manual": [
+      {
+        "stem": "manual__caja_seguridad",
+        "pages": 2,
+        "pair_count": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "manual__cuidados_producto",
+        "pages": 3,
+        "pair_count": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "manual__ingenium_ds343",
+        "pages": 1,
+        "pair_count": 6,
+        "high": 6,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "manual__puerta_acorazada",
+        "pages": 2,
+        "pair_count": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "manual__termostato",
+        "pages": 2,
+        "pair_count": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    ],
+    "table": [
+      {
+        "stem": "table__0000027_page1",
+        "pages": 1,
+        "pair_count": 45,
+        "high": 45,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "table__1 timetable (1)_page2",
+        "pages": 1,
+        "pair_count": 3,
+        "high": 3,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "table__1 timetable (1)_page27",
+        "pages": 1,
+        "pair_count": 6,
+        "high": 6,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "table__1 timetable (1)_page7",
+        "pages": 1,
+        "pair_count": 132,
+        "high": 132,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "table__1653739079_page34",
+        "pages": 1,
+        "pair_count": 37,
+        "high": 37,
+        "medium": 0,
+        "low": 0
+      }
+    ],
+    "text": [
+      {
+        "stem": "text__text_dense__canara",
+        "pages": 1,
+        "pair_count": 4,
+        "high": 4,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "text__text_dense__cn_article",
+        "pages": 1,
+        "pair_count": 3,
+        "high": 3,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "text__text_dense__de",
+        "pages": 1,
+        "pair_count": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      {
+        "stem": "text__text_misc__012-headline-certificate-fluidpower-group-uk-limited",
+        "pages": 1,
+        "pair_count": 4,
+        "high": 3,
+        "medium": 1,
+        "low": 0
+      },
+      {
+        "stem": "text__text_misc__6slides",
+        "pages": 1,
+        "pair_count": 3,
+        "high": 3,
+        "medium": 0,
+        "low": 0
+      }
+    ]
+  },
+  "pdf_count": 51
+}

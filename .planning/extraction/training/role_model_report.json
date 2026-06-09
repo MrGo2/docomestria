@@ -1,0 +1,287 @@
+{
+  "baseline_fallback_share": 0.11166460034095502,
+  "baseline_macro_f1": 0.1626857702255473,
+  "confusion": [
+    [
+      781,
+      24,
+      2,
+      16,
+      0,
+      28,
+      57
+    ],
+    [
+      11,
+      2266,
+      5,
+      2,
+      0,
+      5,
+      7
+    ],
+    [
+      2,
+      3,
+      146,
+      1,
+      2,
+      0,
+      19
+    ],
+    [
+      22,
+      3,
+      5,
+      153,
+      0,
+      18,
+      13
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      1
+    ],
+    [
+      4,
+      2,
+      0,
+      10,
+      0,
+      123,
+      0
+    ],
+    [
+      40,
+      5,
+      6,
+      3,
+      0,
+      0,
+      853
+    ]
+  ],
+  "labels": [
+    "key",
+    "noise",
+    "prose",
+    "section_header",
+    "signature",
+    "table_header",
+    "value"
+  ],
+  "macro_f1": 0.8799016302278007,
+  "n_rows": 4668,
+  "per_class": {
+    "key": {
+      "f1-score": 0.8834841628959276,
+      "precision": 0.9081395348837209,
+      "recall": 0.8601321585903083,
+      "support": 908.0
+    },
+    "noise": {
+      "f1-score": 0.9854316155686018,
+      "precision": 0.9839339991315675,
+      "recall": 0.9869337979094077,
+      "support": 2296.0
+    },
+    "prose": {
+      "f1-score": 0.8664688427299704,
+      "precision": 0.8902439024390244,
+      "recall": 0.8439306358381503,
+      "support": 173.0
+    },
+    "section_header": {
+      "f1-score": 0.7669172932330827,
+      "precision": 0.827027027027027,
+      "recall": 0.7149532710280374,
+      "support": 214.0
+    },
+    "signature": {
+      "f1-score": 0.9523809523809523,
+      "precision": 0.9375,
+      "recall": 0.967741935483871,
+      "support": 31.0
+    },
+    "table_header": {
+      "f1-score": 0.7859424920127795,
+      "precision": 0.7068965517241379,
+      "recall": 0.8848920863309353,
+      "support": 139.0
+    },
+    "value": {
+      "f1-score": 0.9186860527732903,
+      "precision": 0.8978947368421053,
+      "recall": 0.9404630650496141,
+      "support": 907.0
+    }
+  },
+  "sklearn_version": "1.8.0",
+  "top_importances": [
+    [
+      "len_chars",
+      0.3477102538694853
+    ],
+    [
+      "engine_agreement",
+      0.21060505471944255
+    ],
+    [
+      "x",
+      0.16093124265389672
+    ],
+    [
+      "font_size",
+      0.12089024919365336
+    ],
+    [
+      "h",
+      0.08186591617285062
+    ],
+    [
+      "w",
+      0.07424080418639019
+    ],
+    [
+      "colon_present",
+      0.07397925618103193
+    ],
+    [
+      "y",
+      0.03329762555204787
+    ],
+    [
+      "compound_span",
+      0.030514072167702945
+    ],
+    [
+      "digit_ratio",
+      0.020743653689472376
+    ],
+    [
+      "inside_rect",
+      0.01300081044456598
+    ],
+    [
+      "docling_label_list_item",
+      0.0035792522661173497
+    ],
+    [
+      "case_lower",
+      0.0028293379082162005
+    ],
+    [
+      "ends_colon",
+      0.0009859777086595133
+    ],
+    [
+      "docling_label_table",
+      0.0009080741498377343
+    ],
+    [
+      "pdfplumber_present",
+      0.0007771196383036915
+    ],
+    [
+      "starts_paren",
+      0.000740965271334515
+    ],
+    [
+      "docling_content_layer_furniture",
+      0.0006042574967435987
+    ],
+    [
+      "docling_present",
+      0.00034798639740987183
+    ],
+    [
+      "gap_below",
+      0.00033014376915339037
+    ],
+    [
+      "font_ratio_vs_below",
+      0.00016906082318370874
+    ],
+    [
+      "case_title",
+      0.0
+    ],
+    [
+      "case_mixed",
+      0.0
+    ],
+    [
+      "has_date",
+      0.0
+    ],
+    [
+      "has_percent",
+      0.0
+    ],
+    [
+      "has_iban",
+      0.0
+    ],
+    [
+      "has_nif",
+      0.0
+    ],
+    [
+      "liteparse_present",
+      0.0
+    ],
+    [
+      "docling_column_header",
+      0.0
+    ],
+    [
+      "docling_row_header",
+      0.0
+    ],
+    [
+      "rect_is_signature_field",
+      0.0
+    ],
+    [
+      "docling_label___nan__",
+      0.0
+    ],
+    [
+      "docling_label_caption",
+      0.0
+    ],
+    [
+      "docling_label_checkbox_selected",
+      0.0
+    ],
+    [
+      "docling_label_checkbox_unselected",
+      0.0
+    ],
+    [
+      "docling_label_footnote",
+      0.0
+    ],
+    [
+      "docling_label_page_footer",
+      0.0
+    ],
+    [
+      "docling_label_page_header",
+      0.0
+    ],
+    [
+      "docling_label_picture",
+      0.0
+    ],
+    [
+      "docling_label_section_header",
+      0.0
+    ]
+  ]
+}

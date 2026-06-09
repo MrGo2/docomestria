@@ -1,0 +1,148 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO TARJETA MEDIAMRKET.pdf",
+  "page": 8,
+  "page_size_pt": [595.3, 841.9],
+  "atoms_summary": {
+    "lite_spans": 51,
+    "rects": 144,
+    "docling_blocks": 36,
+    "noise_dropped": 12
+  },
+  "sections": [
+    {
+      "title": "TRATAMIENTO DE LOS DATOS DEL TITULAR",
+      "title_signal": {
+        "size": 11.0,
+        "bold": false,
+        "case": "UPPER",
+        "docling_level": 1,
+        "docling_label": "section_header"
+      },
+      "title_bbox": {"x": 60.0, "y": 88.0, "w": 360.0, "h": 11.0},
+      "container_bbox": null,
+      "bands": [
+        {
+          "y_range": [88.0, 155.0],
+          "layout": "free-text",
+          "columns": [
+            {"x_range": [60.0, 540.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.9}
+          ],
+          "rows": [
+            {
+              "row_id": "r0",
+              "y_range": [103.0, 120.0],
+              "cells": [
+                {"col": 0, "text": "Resumen de autorizaciones para el tratamiento de datos basados en el consentimiento del TITULAR", "role": "HEADER", "bbox": {"x": 60.0, "y": 103.0, "w": 460.0, "h": 11.0}, "bold": false, "case": "lower", "docling_label": "section_header", "compound_parts": null}
+              ],
+              "clarifiers": []
+            },
+            {
+              "row_id": "r0b",
+              "y_range": [125.0, 148.0],
+              "cells": [
+                {"col": 0, "text": "Usted nos ha autorizado, en este momento o con carácter previo, el tratamiento de sus datos para las finalidades que se detallan a continuación, en los términos que se establecen en la condición general 25 de este contrato.", "role": "VALUE_TEXT", "bbox": {"x": 60.0, "y": 125.0, "w": 470.0, "h": 22.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Consentimientos del titular",
+      "title_signal": {
+        "size": 9.5,
+        "bold": false,
+        "case": "lower",
+        "docling_level": null,
+        "docling_label": "text"
+      },
+      "title_bbox": {"x": 65.0, "y": 155.0, "w": 200.0, "h": 10.2},
+      "container_bbox": {"x": 59.963, "y": 155.0, "w": 479.842, "h": 265.0},
+      "bands": [
+        {
+          "y_range": [155.0, 420.0],
+          "layout": "3-col",
+          "columns": [
+            {"x_range": [65.0, 278.0], "role": "LABEL", "column_header": null, "coherence": 1.0},
+            {"x_range": [278.0, 372.0], "role": "VALUE_TEXT", "column_header": null, "coherence": 0.85},
+            {"x_range": [372.0, 460.0], "role": "VALUE_TEXT", "column_header": "TITULAR", "coherence": 0.95}
+          ],
+          "rows": [
+            {
+              "row_id": "r1",
+              "y_range": [155.0, 230.0],
+              "cells": [
+                {"col": 0, "text": "Personalización de la oferta de productos según el análisis de sus datos:", "role": "LABEL", "bbox": {"x": 65.09, "y": 166.0, "w": 200.0, "h": 22.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Personalización de la oferta de productos", "según el análisis de sus datos:"]},
+                {"col": 1, "text": "¿Usted consiente este tratamiento de sus datos en los términos de la condición general \"TRATAMIENTO DE DATOS DE CARÁCTER PERSONAL\"?", "role": "VALUE_TEXT", "bbox": {"x": 278.0, "y": 161.0, "w": 90.0, "h": 30.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 2, "text": "SI X", "role": "VALUE_TEXT", "bbox": {"x": 374.0, "y": 213.0, "w": 25.0, "h": 10.13}, "bold": false, "case": "UPPER", "docling_label": "checkbox_selected", "compound_parts": null}
+              ],
+              "clarifiers": ["TITULAR (col header)", "NO (no seleccionado)"]
+            },
+            {
+              "row_id": "r2",
+              "y_range": [230.0, 330.0],
+              "cells": [
+                {"col": 0, "text": "Comunicación de la oferta comercial por determinados canales:", "role": "LABEL", "bbox": {"x": 65.09, "y": 239.0, "w": 200.0, "h": 22.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": ["Comunicación de la oferta comercial por", "determinados canales:"]},
+                {"col": 1, "text": "¿Usted consiente que contactemos con usted con finalidades comerciales en los términos de la condición general \"TRATAMIENTO DE DATOS DE CARÁCTER PERSONAL\"?", "role": "VALUE_TEXT", "bbox": {"x": 278.0, "y": 234.0, "w": 90.0, "h": 32.0}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 2, "text": "Canales electrónicos: SI X / NO\nCanal telefónico: SI X / NO\nCanal postal: SI X / NO", "role": "VALUE_TEXT", "bbox": {"x": 278.0, "y": 286.0, "w": 150.0, "h": 45.0}, "bold": false, "case": "mixed", "docling_label": "text", "compound_parts": null}
+              ],
+              "clarifiers": ["TITULAR (col header)"]
+            },
+            {
+              "row_id": "r3",
+              "y_range": [330.0, 420.0],
+              "cells": [
+                {"col": 0, "text": "Cesión de datos a otras empresas:", "role": "LABEL", "bbox": {"x": 65.09, "y": 354.0, "w": 170.0, "h": 10.2}, "bold": false, "case": "lower", "docling_label": "text", "compound_parts": null},
+                {"col": 1, "text": "Usted acepta que cedamos sus datos a otras empresas en los términos de la condición general \"TRATAMIENTO DE DATOS DE CARÁCTER PERSONAL\"?", "role": "VALUE_TEXT", "bbox": {"x": 278.0, "y": 348.0, "w": 90.0, "h": 32.0}, "bold": false, "case": "mixed", "docling_label": "text", "compound_parts": null},
+                {"col": 2, "text": "SI X", "role": "VALUE_TEXT", "bbox": {"x": 374.0, "y": 400.0, "w": 25.0, "h": 10.13}, "bold": false, "case": "UPPER", "docling_label": "checkbox_selected", "compound_parts": null}
+              ],
+              "clarifiers": ["TITULAR (col header)", "NO (no seleccionado)"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kv_pairs": [
+    {"label": "Personalización de la oferta de productos según el análisis de sus datos:", "value": "SI X (TITULAR)", "section": "Consentimientos del titular", "band": "BAND_A", "column_header": "TITULAR", "row_y": 166.0, "rule": "header-projection", "confidence": "MEDIUM", "evidence": {"rect_id": "t0", "docling_block_id": null, "label_span_id": "s4", "value_span_ids": ["s11"]}},
+    {"label": "Comunicación de la oferta comercial por determinados canales: Canales electrónicos", "value": "SI X (TITULAR)", "section": "Consentimientos del titular", "band": "BAND_A", "column_header": "TITULAR", "row_y": 286.0, "rule": "header-projection", "confidence": "MEDIUM", "evidence": {"rect_id": "t1", "docling_block_id": null, "label_span_id": "s20", "value_span_ids": ["s21"]}},
+    {"label": "Comunicación de la oferta comercial por determinados canales: Canal telefónico", "value": "SI X (TITULAR)", "section": "Consentimientos del titular", "band": "BAND_A", "column_header": "TITULAR", "row_y": 301.0, "rule": "header-projection", "confidence": "MEDIUM", "evidence": {"rect_id": "t1", "docling_block_id": null, "label_span_id": "s23", "value_span_ids": ["s24"]}},
+    {"label": "Comunicación de la oferta comercial por determinados canales: Canal postal", "value": "SI X (TITULAR)", "section": "Consentimientos del titular", "band": "BAND_A", "column_header": "TITULAR", "row_y": 316.0, "rule": "header-projection", "confidence": "MEDIUM", "evidence": {"rect_id": "t1", "docling_block_id": null, "label_span_id": "s26", "value_span_ids": ["s27"]}},
+    {"label": "Cesión de datos a otras empresas:", "value": "SI X (TITULAR)", "section": "Consentimientos del titular", "band": "BAND_A", "column_header": "TITULAR", "row_y": 354.0, "rule": "header-projection", "confidence": "MEDIUM", "evidence": {"rect_id": "t2", "docling_block_id": null, "label_span_id": "s31", "value_span_ids": ["s34"]}}
+  ],
+  "noise": [
+    {"text": "Logalty", "bbox": {"x": 582.0, "y": 718.0, "w": 35.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "Guid: 001001-0001-000000073411266.par", "bbox": {"x": 582.0, "y": 690.0, "w": 35.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "-", "bbox": {"x": 582.0, "y": 526.0, "w": 5.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "Date:", "bbox": {"x": 582.0, "y": 498.0, "w": 20.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "2022/04/16 T", "bbox": {"x": 582.0, "y": 445.0, "w": 35.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "18:09:09", "bbox": {"x": 582.0, "y": 392.0, "w": 25.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "CEST", "bbox": {"x": 582.0, "y": 368.0, "w": 20.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "+0200", "bbox": {"x": 582.0, "y": 339.0, "w": 20.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "- Pages:", "bbox": {"x": 582.0, "y": 330.0, "w": 25.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "8/74", "bbox": {"x": 582.0, "y": 272.0, "w": 15.0, "h": 8.0}, "reason": "furniture_layer"},
+    {"text": "Firma del Titular / P.p. FJ. López Peig", "bbox": {"x": 49.0, "y": 748.0, "w": 250.0, "h": 8.0}, "reason": "size_lt_7"},
+    {"text": "MOD. (M) 006.PSCC.M.720 (05) - 15 de octubre de 2021", "bbox": {"x": 47.0, "y": 810.0, "w": 280.0, "h": 7.0}, "reason": "size_lt_7"}
+  ],
+  "diagnostics": {
+    "engines": {
+      "pdfplumber": {"rects": 144, "lines": 0, "tables": 0, "checkboxes": 0},
+      "docling": {"blocks": 36, "labels": {"page_header": 1, "section_header": 5, "picture": 4, "text": 13, "checkbox_selected": 5, "checkbox_unselected": 5, "caption": 2, "page_footer": 1}, "section_headers": 5, "tables": 0, "key_value_regions": 0, "field_keys": 0, "checkboxes_selected": 5},
+      "liteparse": {"spans": 51, "bold": 0, "cases": {"UPPER": 12, "lower": 28, "none": 5, "Title": 2, "mixed": 4}}
+    },
+    "column_coherence": [
+      {"band": "BAND_A", "columns": 3, "dominant_role_pct": 0.85}
+    ],
+    "agreement": {
+      "section_titles": {"docling_matches_ours": 1, "total": 2},
+      "cell_bold_flags": {"agree": 51, "disagree": 0}
+    }
+  },
+  "_meta": {
+    "annotator": "kie-extractor",
+    "annotated_at": "2026-06-06T22:58:02",
+    "covers_cases": [7],
+    "needs_review": true
+  }
+}

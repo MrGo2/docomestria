@@ -1,0 +1,243 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/5_Example/BBVA_0608-01491495_DOC2_CONTRATO.pdf",
+  "page": 1,
+  "page_size_pt": [
+    595.476,
+    842.6736
+  ],
+  "document_type": "Contrato de Préstamo Personal BBVA",
+  "structure": [
+    {
+      "type": "section",
+      "id": "cover_title",
+      "title": "Contrato de Préstamo Personal",
+      "y_hint": 397,
+      "children": [],
+      "title_bbox": {
+        "x": 178.50238600000006,
+        "y": 399.59700899999973,
+        "w": 322.08680400000003,
+        "h": 23.0
+      },
+      "container_bbox": null,
+      "evidence": {
+        "title_signal": {
+          "text": "Contrato de Préstamo Personal",
+          "pdfplumber": {
+            "bbox": {
+              "x": 178.50238600000006,
+              "y": 399.59700899999973,
+              "w": 322.08680400000003,
+              "h": 23.0
+            },
+            "char_indices": [
+              750,
+              751,
+              752,
+              753,
+              754,
+              755,
+              756,
+              757,
+              758,
+              759,
+              760,
+              761,
+              762,
+              763,
+              764,
+              765,
+              766,
+              767,
+              768,
+              769
+            ],
+            "n_chars": 26,
+            "row_y": 399.59700899999973
+          },
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 178.50238037109375,
+              "y": 396.928955078125,
+              "w": 322.0867919921875,
+              "h": 25.667999267578125
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 23.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/2",
+            "bbox": {
+              "x": 178.50238600000006,
+              "y": 401.2990089999998,
+              "w": 322.0868040000001,
+              "h": 44.26953812154699
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 178.50238600000006,
+            "y": 399.59700899999973,
+            "w": 322.08680400000003,
+            "h": 23.0
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": null,
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 0,
+          "child_type_distribution": {},
+          "path": "Contrato de Préstamo Personal"
+        }
+      }
+    },
+    {
+      "type": "section",
+      "id": "contract_parts",
+      "title": "El Contrato está compuesto por cinco partes:",
+      "y_hint": 617,
+      "children": [],
+      "title_bbox": {
+        "x": 187.50237599999997,
+        "y": 618.3660209999999,
+        "w": 216.66640099999995,
+        "h": 10.0
+      },
+      "container_bbox": null,
+      "evidence": {
+        "title_signal": {
+          "text": "El Contrato está compuesto por cinco partes:",
+          "pdfplumber": {
+            "bbox": {
+              "x": 187.50237599999997,
+              "y": 618.3660209999999,
+              "w": 216.66640099999995,
+              "h": 10.0
+            },
+            "char_indices": [
+              402,
+              403,
+              404,
+              405,
+              406,
+              407,
+              408,
+              409,
+              410,
+              411,
+              412,
+              413,
+              414,
+              415,
+              416,
+              417,
+              418,
+              419,
+              420,
+              421
+            ],
+            "n_chars": 38,
+            "row_y": 618.3660209999999
+          },
+          "liteparse": {
+            "span_id": 9,
+            "bbox": {
+              "x": 187.50234985351562,
+              "y": 617.2059326171875,
+              "w": 216.66641235351562,
+              "h": 11.15997314453125
+            },
+            "case_class": "lower",
+            "is_bold": true,
+            "font_size": 10.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/5",
+            "bbox": {
+              "x": 187.50237599999997,
+              "y": 619.1060209999999,
+              "w": 216.66640099999995,
+              "h": 8.817016574585637
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 187.50237599999997,
+            "y": 618.3660209999999,
+            "w": 216.66640099999995,
+            "h": 10.0
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": null,
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 0,
+          "child_type_distribution": {},
+          "path": "El Contrato está compuesto por cinco partes:"
+        }
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cover_title",
+      "title": "Contrato de Préstamo Personal",
+      "title_bbox": {
+        "x": 178.50238600000006,
+        "y": 399.59700899999973,
+        "w": 322.08680400000003,
+        "h": 23.0
+      },
+      "container_bbox": null,
+      "_view": "compat_flat"
+    },
+    {
+      "id": "contract_parts",
+      "title": "El Contrato está compuesto por cinco partes:",
+      "title_bbox": {
+        "x": 187.50237599999997,
+        "y": 618.3660209999999,
+        "w": 216.66640099999995,
+        "h": 10.0
+      },
+      "container_bbox": null,
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "codex",
+    "n_chars": 892,
+    "n_rows": 82,
+    "n_liteparse_spans": 21,
+    "n_docling_blocks": 16,
+    "n_rects": 334,
+    "kv_pair_breakdown": {
+      "3_eng": 0,
+      "2_eng": 0,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 0,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "codex",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "bbva_loan_cover_no_kv"
+    ],
+    "needs_review": false,
+    "document_type": "Contrato de Préstamo Personal BBVA"
+  }
+}

@@ -1,0 +1,2057 @@
+{
+  "pdf": "azuredemo__BBVA3.pdf",
+  "engine": "docling",
+  "elapsed_seconds": 7.689,
+  "count": 126,
+  "items": [
+    {
+      "bbox": {
+        "x": 12.533900000000001,
+        "y": 151.64160600000002,
+        "w": 4.849359116022098,
+        "h": 428.671199
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/0",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 30.64030647277832,
+        "y": 12.438486099243164,
+        "w": 135.65095329284668,
+        "h": 43.61629295349121
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/pictures/0",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.500025000000164,
+        "y": 65.52397099999996,
+        "w": 215.20879900000003,
+        "h": 7.053613259668509
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Contrato Marco de Operaciones Bancarias versión: 0006",
+      "self_ref": "#/texts/1",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 186.62402300000016,
+        "y": 98.64957100000004,
+        "w": 244.73280499999996,
+        "h": 10.580419889502764
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 1,
+      "text": "CONTRATO DE TARJETA DESPUES BBVA",
+      "self_ref": "#/texts/2",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 377.028008,
+        "y": 122.90079300000002,
+        "w": 197.45199699999966,
+        "h": 7.053613259668509
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Contrato Núm.: 0182 - 0539 - 0615 - 00000028350350",
+      "self_ref": "#/texts/3",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 28.497611000000063,
+        "y": 134.14719300000002,
+        "w": 131.609598,
+        "h": 7.053613259668509
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "En ALBERIC, a 04 de Abril de 2017",
+      "self_ref": "#/texts/4",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 181.512001,
+        "y": 370.767998,
+        "w": 44.92880100000002,
+        "h": 7.053613259668509
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Banco: 0182",
+      "self_ref": "#/texts/5",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 278.683193,
+        "y": 146.59159499999998,
+        "w": 41.67999999999995,
+        "h": 8.817016574585637
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Titulares",
+      "self_ref": "#/texts/6",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.81586456298828,
+        "y": 156.97607421875,
+        "w": 547.2746505737305,
+        "h": 186.43878173828125
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/tables/0",
+      "cells": [
+        [
+          "Datos Identificativos",
+          "Datos Identificativos"
+        ],
+        [
+          "N.I.F.: 009786573G Tipo Identificación: NIF PERSONA FISICA",
+          "Tipo Identificación: - N.I.F.: -"
+        ],
+        [
+          "Nombre y apellidos: JULIO ALVAREZ SALGUERO",
+          "Nombre y apellidos: -"
+        ],
+        [
+          "Datos Operativos de la Tarjeta",
+          "Datos Operativos de la Tarjeta"
+        ],
+        [
+          "Nombre y apellidos: JULIO ALVAREZ SALGUERO",
+          "Nombre y apellidos: -"
+        ],
+        [
+          "Límite Diario de Disposiciones de Efectivo en Cajeros: 1.000,00",
+          "Límite Diario de Disposiciones de Efectivo en Cajeros: -"
+        ],
+        [
+          "Limite Mensual de Disposiciones de Efectivo a Crédito (Cajeros y/o oficinas): 900,00 Clave Restricción: SIN RESTRICCIONES",
+          "Limite Mensual de Disposiciones de Efectivo a Crédito (Cajeros y/o oficinas): - Clave Restricción: -"
+        ],
+        [
+          "Datos Operativos",
+          "Datos Operativos"
+        ],
+        [
+          "Límite de Crédito: 900,00 Importes",
+          "EUR Sistema de reembolso: TOTAL"
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 273.484802,
+        "y": 358.415298,
+        "w": 55.266999999999996,
+        "h": 7.494464088397763
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Domiciliación",
+      "self_ref": "#/texts/7",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 233.121601,
+        "y": 370.767998,
+        "w": 47.14640099999991,
+        "h": 7.053613259668509
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Oficina: 0539",
+      "self_ref": "#/texts/8",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 286.948801,
+        "y": 370.767998,
+        "w": 27.119199999999978,
+        "h": 7.053613259668509
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "D.C: 18",
+      "self_ref": "#/texts/9",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 320.745601,
+        "y": 370.410498,
+        "w": 99.94959999999998,
+        "h": 7.494464088397763
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Núm. Cuenta: 0201535528",
+      "self_ref": "#/texts/10",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 237.44159500000004,
+        "y": 391.48049399999996,
+        "w": 126.61320300000014,
+        "h": 9.257867403314947
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Condiciones económicas",
+      "self_ref": "#/texts/11",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 26.56686782836914,
+        "y": 403.9010009765625,
+        "w": 545.1218528747559,
+        "h": 247.45654296875
+      },
+      "label": "table",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/tables/1",
+      "cells": [
+        [
+          "CUOTA ANUAL",
+          "",
+          "IMPORTE",
+          "",
+          "COMISIONES POR DISPOSICIÓN DE EFECTIVO",
+          "Contra Cuenta Corriente / Ahorro (Débito)",
+          "",
+          "Contra Cuenta de Tarjeta de Crédito",
+          ""
+        ],
+        [
+          "Primera Tarjeta Emitida",
+          "",
+          "40,00",
+          "",
+          "",
+          "%",
+          "Mínimo",
+          "%",
+          "Mínimo"
+        ],
+        [
+          "Resto de Tarjetas",
+          "",
+          "20,00",
+          "",
+          "Cajeros Grupo BBVA en España",
+          "0,0000",
+          "0,00",
+          "3,5000",
+          "3,00"
+        ],
+        [
+          "COMISIONES POR OTRAS OPERACIONES",
+          "",
+          "",
+          "IMPORTE",
+          "Cajeros de entidades distintas del Grupo BBVA en España",
+          "Nota 1",
+          "Nota 1",
+          "Nota 2",
+          "Nota 2"
+        ],
+        [
+          "Por Consultas en Cajeros no pertenecientes al grupo BBVA y UE en Euros",
+          "",
+          "",
+          "0,60",
+          "Cajeros fuera de España",
+          "4,5000",
+          "3,00",
+          "5,0000",
+          "3,00"
+        ],
+        [
+          "Por emisión de duplicados",
+          "",
+          "",
+          "4,00",
+          "Oficinas del Grupo BBVA en España",
+          "0,0000",
+          "0,00",
+          "3,0000",
+          "2,50"
+        ],
+        [
+          "INTERESES",
+          "Tipo Nominal Anual%",
+          "TAE %Anual",
+          "",
+          "Oficinas en otras Entidades ServiRed",
+          "5,0000",
+          "3,00",
+          "5,0000",
+          "3,00"
+        ],
+        [
+          "Pago Personalizado",
+          "18,0000",
+          "Detalle en cláusula",
+          "",
+          "Oficinas de otras Entidades Nacionales y Paises U.E. (en Euros)",
+          "5,0000",
+          "3,00",
+          "5,0000",
+          "3,00"
+        ],
+        [
+          "Cuenta de Crédito de la Tarjeta/Pago Aplazado",
+          "22,8000",
+          "Detalle contrato específica del contrato (1)",
+          "en cláusula específica del",
+          "Oficinas de Entidades en el Extranjero y U.E. (no Euro)",
+          "5,0000",
+          "3,00",
+          "5,0000",
+          "3,00"
+        ],
+        [
+          "Pago Total (para disposiciones de efectivo y/o traspasos a cuenta de domiciliación de pagos)",
+          "22,8000",
+          "Detalle en cláusula específica del contrato retirada (2) BBVA",
+          "",
+          "Por las retiradas de efectivo realizadas en un cajero perteneciente a una Entidad distinta del Grupo BBVA en España en Euros, BBVA repercutirá el mismo importe de la comisión cobrada por la entidad titular del cajero a BBVA. Dicho importe será informado por la entidad titular del cajero antes de la de efectivo. Por las retiradas de efectivo realizadas en un cajero perteneciente a una entidad distinta del Grupo en España en Euros, BBVA repercutirá el mismo importe de la comisión cobrada por la entidad titular del cajero a BBVA. Dicho importe será informado por la entidad titular del cajero antes de la retirada de efectivo. Asimismo, BBVA le cobrara la comisión por disposición a crédito indicada para",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Moratorio, sobre cuotas Vencidas y no satisfechas",
+          "Detalle en cláusula de Intereses",
+          "cajeros entidades",
+          "",
+          "Grupo BBVA en España . Esta comisión es distintas del Grupo BBVA en España.",
+          "adicional a la de retirada de efectivo en cajeros de",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "bbox": {
+        "x": 31.500014999999962,
+        "y": 658.892586,
+        "w": 279.83299900000003,
+        "h": 6.171911602209889
+      },
+      "label": "footnote",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "De apertura sobre excedido en el límite de crédito en tarjeta: 3,0000 %, Mínimo 6,00 euro.",
+      "self_ref": "#/texts/12",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 31.500008999999977,
+        "y": 669.3901860000001,
+        "w": 281.37639999999993,
+        "h": 6.171911602209889
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Por reclamación de posiciones vencidas hasta un máximo de 35,00 EUR por una sola vez.",
+      "self_ref": "#/texts/13",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 31.500008000000037,
+        "y": 679.887785,
+        "w": 282.16659999999996,
+        "h": 6.171911602209889
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Por utilización de la Tarjeta fuera de la Zona Euro: 3,0000 % sobre el contravalor en euros.",
+      "self_ref": "#/texts/14",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 31.500017999999898,
+        "y": 690.385385,
+        "w": 209.010998,
+        "h": 6.171911602209889
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Por gestión de aplazamiento de pagos: - euros por cada operación.",
+      "self_ref": "#/texts/15",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 31.50001299999994,
+        "y": 700.8901850000001,
+        "w": 318.370998,
+        "h": 6.171911602209889
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Compensación por cancelación anticipada de deuda: - % sobre el importe cancelado anticipadamente",
+      "self_ref": "#/texts/16",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 32.24880100000007,
+        "y": 713.2381819999999,
+        "w": 145.41959699999998,
+        "h": 6.171911602209889
+      },
+      "label": "footnote",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "COMISIONES POR TRASPASO DE FONDOS",
+      "self_ref": "#/texts/17",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 32.248796000000056,
+        "y": 721.2373819999999,
+        "w": 74.7088,
+        "h": 6.171911602209889
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "(Operaciones a Crédito)",
+      "self_ref": "#/texts/18",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 32.24879699999997,
+        "y": 732.786185,
+        "w": 79.386399,
+        "h": 6.171911602209889
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "A Cuenta Personal BBVA",
+      "self_ref": "#/texts/19",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 32.24879599999998,
+        "y": 745.8757850000001,
+        "w": 29.586999999999996,
+        "h": 6.171911602209889
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "3,0000 %",
+      "self_ref": "#/texts/20",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.5,
+        "y": 770.5673800000001,
+        "w": 506.91780400000016,
+        "h": 7.935314917127016
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "Las presentes condiciones junto con el Contrato Marco de Operaciones Bancarias que se identifica en el encabezamiento constituyen la totalidad de las condiciones aplicables a la Tarjeta que en este Contrato se regula.",
+      "self_ref": "#/texts/21",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.4803771972656,
+        "y": 15.992924690246582,
+        "w": 167.83486938476562,
+        "h": 30.877116203308105
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 1,
+      "text": "",
+      "self_ref": "#/pictures/1",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 800.528779,
+        "w": 215.58402800000013,
+        "h": 7.053631259668464
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016 Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "self_ref": "#/texts/22",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.8488000000001,
+        "y": 800.521579,
+        "w": 51.147207999999864,
+        "h": 7.053625259668479
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 1,
+      "text": "Página 1 de 5 Página 1 de 5",
+      "self_ref": "#/texts/23",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 12.533900000000001,
+        "y": 151.64160600000002,
+        "w": 4.849359116022098,
+        "h": 428.671199
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 2,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/24",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 30.342517852783203,
+        "y": 12.602102279663086,
+        "w": 135.66546249389648,
+        "h": 43.61968421936035
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "",
+      "self_ref": "#/pictures/2",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.48065185546875,
+        "y": 16.063505172729492,
+        "w": 167.88629150390625,
+        "h": 30.90678596496582
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "",
+      "self_ref": "#/pictures/3",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.048,
+        "y": 96.86340099999995,
+        "w": 211.54499999999996,
+        "h": 7.93531491712713
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "TARJETAS DE CRÉDITO - Condiciones Particulares",
+      "self_ref": "#/texts/25",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.048,
+        "y": 121.94819399999994,
+        "w": 65.51100000000001,
+        "h": 7.93531491712713
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "1. FUNCIONES.",
+      "self_ref": "#/texts/26",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.048,
+        "y": 139.53059300000007,
+        "w": 147.042,
+        "h": 7.935314917127016
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Servicio Tarjeta de Crédito/Débito",
+      "self_ref": "#/texts/27",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.048,
+        "y": 157.11300600000004,
+        "w": 239.103,
+        "h": 7.935314917127016
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Las Tarjetas podrán utilizarse para las siguientes funciones:",
+      "self_ref": "#/texts/28",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.048,
+        "y": 174.69540500000005,
+        "w": 505.403997,
+        "h": 16.72651491712702
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Para adquirir bienes u obtener la prestación de servicios en cualquiera de los establecimientos (físicos o virtuales) adheridos al sistema VISA o MASTERCARD y SERVIRED dependiendo del tipo de tarjeta emitido.",
+      "self_ref": "#/texts/29",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.047998,
+        "y": 201.06900400000006,
+        "w": 505.3319919999999,
+        "h": 16.72651491712702
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Para obtener dinero en efectivo en cualquiera de las Oficinas de los Bancos y Cajas afiliados a los sistemas VISA o MASTERCARD y SERVIRED.",
+      "self_ref": "#/texts/30",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.04798199999987,
+        "y": 227.44260300000008,
+        "w": 505.41119800000007,
+        "h": 16.72651491712702
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Para obtener dinero en efectivo en los Cajeros Automáticos del Banco y en los de otras Entidades cuyos Cajeros sean declarados accesibles a las Tarjetas.",
+      "self_ref": "#/texts/31",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.04797399999989,
+        "y": 253.8162020000001,
+        "w": 505.40040200000004,
+        "h": 25.517714917127023
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Para realizar en los Cajeros Automáticos del Banco y del resto de entidades afiliadas al Sistema Servired, así como en los de aquellas otras entidades que lo permitan, las distintas transacciones que el Banco vaya poniendo a disposición de los Titulares y/o Beneficiarios.",
+      "self_ref": "#/texts/32",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.048,
+        "y": 287.69219699999996,
+        "w": 158.03099999999995,
+        "h": 7.93531491712713
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "2. IMPORTE DE LAS OPERACIONES.",
+      "self_ref": "#/texts/33",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.499982999999986,
+        "y": 305.2745960000001,
+        "w": 507.004216,
+        "h": 43.10011491712703
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Los Titulares y los Beneficiarios aceptan como justificantes del importe de las operaciones el que se exprese en la factura firmada por el Titular o Beneficiario a cuyo nombre este expedida la Tarjeta utilizada, el comprobante interno del Cajero Automático en disposiciones por este medio, el comprobante del asiento en cuenta en disposiciones por teléfono (si las hubiere) y el registro conservado en el soporte informático correspondiente en el caso de servicios telemáticos, sirviendo dichos documentos o instrumentos como justificantes de cargo y medios de prueba, en caso necesario.",
+      "self_ref": "#/texts/34",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.49997999999982,
+        "y": 358.02179500000005,
+        "w": 506.90160000000014,
+        "h": 25.51771491712708
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "En las operaciones realizadas en el extranjero en divisas distintas del euro, se considerará el importe que resulte de su contravalor en euros según cambio obtenido por los Sistemas de Pago en la fecha en que practiquen la liquidación correspondiente, sin perjuicio de la comisión por cambio de divisa prevista anteriormente.",
+      "self_ref": "#/texts/35",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.048,
+        "y": 391.89059199999997,
+        "w": 116.51399999999998,
+        "h": 7.935314917127073
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "3. LÍMITE DE UTILIZACIÓN.",
+      "self_ref": "#/texts/36",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.5,
+        "y": 409.472991,
+        "w": 506.961,
+        "h": 34.30891491712708
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "El Banco podrá establecer límites de utilización de las Tarjetas. Los límites de utilización, a crédito y a débito, conocidos en cada momento por los Titulares y/o Beneficiarios, no podrán ser excedidos, salvo autorización del Banco, el cual podrá concederla para favorecer, o no perjudicar, intereses de los Titulares y/o de los Beneficiarios, o de cualquiera de ellos, aceptando todos los Titulares y Beneficiarios  expresamente tal posibilidad y sus consecuencias.",
+      "self_ref": "#/texts/37",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.4999950000003,
+        "y": 453.42899,
+        "w": 507.0060150000001,
+        "h": 34.30891491712708
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Los Titulares se facultan recíprocamente para que cualquiera de ellos, con su sola firma, pueda solicitar la modificación de los límites de utilización, dentro de los límites mínimo y máximo establecidos en cada momento por el Banco, aceptando expresamente, aquí y desde ahora, cualquier solicitud de modificación realizada por cualquiera de ellos, así como las consecuencias que de las mismas se deriven.",
+      "self_ref": "#/texts/38",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.4999950000003,
+        "y": 497.384989,
+        "w": 506.96460900000005,
+        "h": 25.517714917127023
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "El Banco podrá reducir el Límite de Crédito de la Tarjeta en el caso de incumplimiento de las obligaciones asumidas por los Titulares en el contrato, previa comunicación al Titular con una antelación de 10 días, sin perjuicio de la posibilidad del Banco de cancelar el contrato de Tarjeta según lo establecido en la cláusula de Duración.",
+      "self_ref": "#/texts/39",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.048,
+        "y": 531.253782,
+        "w": 78.512399,
+        "h": 7.935314917127016
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "4. CUOTA ANUAL .",
+      "self_ref": "#/texts/40",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.49999600000001,
+        "y": 548.836181,
+        "w": 506.970004,
+        "h": 16.72651491712702
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "La Cuota Anual que corresponda al primer año se deberá satisfacer a los cuatro (4) meses siguientes a la emisión de la Tarjeta. Las cuotas anuales sucesivas se percibirán al inicio de cada año contado desde su emisión.",
+      "self_ref": "#/texts/41",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.048,
+        "y": 573.921018,
+        "w": 72.52199999999998,
+        "h": 7.935314917127016
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "5. COMISIONES.",
+      "self_ref": "#/texts/42",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.49999099999991,
+        "y": 591.503417,
+        "w": 506.894411,
+        "h": 25.517714917127023
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "En caso de cancelación anticipada parcial o total de la deuda derivada de la utilización de las Tarjetas, el Banco, en el momento de la cancelación, percibirá la comisión por cancelación anticipada establecida en el apartado CONDICIONES ECONOMICAS de la página 1.",
+      "self_ref": "#/texts/43",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.49999099999991,
+        "y": 626.668216,
+        "w": 338.6340000000003,
+        "h": 7.935314917127016
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Asimismo el Banco percibirá el resto de comisiones establecidas en la citada página.",
+      "self_ref": "#/texts/44",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.5,
+        "y": 642.9545870000001,
+        "w": 297.03600000000006,
+        "h": 7.935314917127016
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 2,
+      "text": "6. INTERESES POR LA UTILIZACIÓN A CRÉDITO DE LAS TARJETAS.",
+      "self_ref": "#/texts/45",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.5,
+        "y": 660.5369860000001,
+        "w": 489.1950000000003,
+        "h": 7.935314917127016
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "El tipo de interés nominal anual de la Cuenta de Tarjeta de Crédito es el que figura en las CONDICIONES ECONOMICAS.",
+      "self_ref": "#/texts/46",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.49999399999996,
+        "y": 678.1193850000001,
+        "w": 506.997007,
+        "h": 16.72651491712702
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "En los sistemas de reembolso \"Pago Total\", \"Pago aplazado\" y \"Pago Personalizado\", se aplicará el tipo de interés que para cada caso figura en el apartado CONDICIONES ECONOMICAS de la página número 1.",
+      "self_ref": "#/texts/47",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.499976999999774,
+        "y": 704.4929840000001,
+        "w": 506.95200000000006,
+        "h": 25.517714917127023
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "En los sistemas de reembolso \"Pago Total\" se aplicará el tipo de interés que para caso figura en el apartado CONDICIONES ECONÓMICAS para disposiciones de efectivo y traspasos de efectivo desde la \"Cuenta de tarjeta de Crédito\" a la \"Cuenta de domiciliación de Pagos\".",
+      "self_ref": "#/texts/48",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.4999669999998,
+        "y": 739.6577830000001,
+        "w": 506.95920200000006,
+        "h": 25.517714917127023
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "Cuando se varíe el sistema de reembolso de \"Pago Aplazado\" a \"Pago Total\", el sistema de reembolso \"Pago Aplazado\" se mantendrá vigente durante todo el periodo mensual en que se produzca la variación, a los efectos de devengo y cálculo de intereses.",
+      "self_ref": "#/texts/49",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.4999669999998,
+        "y": 774.8225820000001,
+        "w": 506.89440200000007,
+        "h": 7.935314917127016
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 2,
+      "text": "La fórmula de cálculo para la determinación de los intereses devengados en cada período de liquidación será la siguiente:",
+      "self_ref": "#/texts/50",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 800.528779,
+        "w": 215.58400000000003,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 2,
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "self_ref": "#/texts/51",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848809,
+        "y": 800.521579,
+        "w": 51.147199,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 2,
+      "text": "Página 2 de 5",
+      "self_ref": "#/texts/52",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 12.533900000000001,
+        "y": 151.64160600000002,
+        "w": 4.849359116022098,
+        "h": 428.671199
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 3,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/53",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 30.37462615966797,
+        "y": 12.586759567260742,
+        "w": 135.5843734741211,
+        "h": 43.72661781311035
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "",
+      "self_ref": "#/pictures/4",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.563232421875,
+        "y": 16.11634635925293,
+        "w": 167.88336181640625,
+        "h": 30.83270835876465
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "",
+      "self_ref": "#/pictures/5",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.49999500000001,
+        "y": 80.35380299999997,
+        "w": 506.9484130000001,
+        "h": 16.726514917127133
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "importe o saldo medio, multiplicado por el tipo de interés mensual nominal establecido, multiplicado por el número de días del período de liquidación, multiplicado por 12, dividido por 36.000.",
+      "self_ref": "#/texts/54",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.49999100000002,
+        "y": 106.72740199999998,
+        "w": 506.91960300000005,
+        "h": 16.726514917127133
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "La fecha de valoración que el Banco aplicará, a efectos de cálculo de intereses, a las transacciones realizadas con las Tarjetas será la fecha de cada operación.",
+      "self_ref": "#/texts/55",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.49999100000002,
+        "y": 133.101001,
+        "w": 88.524,
+        "h": 7.93531491712713
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Intereses Moratorios",
+      "self_ref": "#/texts/56",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.49999100000002,
+        "y": 150.6834,
+        "w": 506.9321970000001,
+        "h": 16.726514917127133
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Las obligaciones dinerarias vencidas y no satisfechas devengarán desde el día siguiente a su vencimiento, un interés moratorio igual al Interés Nominal Anual aplicable a la Cuenta de Tarjeta de Crédito más dos puntos porcentuales.",
+      "self_ref": "#/texts/57",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.5,
+        "y": 175.76099899999997,
+        "w": 285.54300000000006,
+        "h": 7.93531491712713
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 3,
+      "text": "7. SISTEMAS DE REEMBOLSO. IMPORTE TOTAL A PAGAR Y TAE.",
+      "self_ref": "#/texts/58",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.4999840000001,
+        "y": 193.34339799999998,
+        "w": 506.9880130000001,
+        "h": 16.726514917127133
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "El importe total a pagar y la Tasa Anual Equivalente (TAE) estarán en función de los Sistemas de Reembolso que admita cada Contrato de Tarjeta y elijan los Titulares.",
+      "self_ref": "#/texts/59",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.4999840000001,
+        "y": 219.716997,
+        "w": 26.495999999999995,
+        "h": 7.93531491712713
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 3,
+      "text": "(TAE)",
+      "self_ref": "#/texts/60",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 40.4999840000001,
+        "y": 237.299396,
+        "w": 506.96640600000006,
+        "h": 16.726514917127133
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Se hace constar que la tasa o coste anual efectivo (TAE) ha sido calculada de conformidad con lo establecido en el Ley 16/2011, de 24 de junio, y en la Circular del Banco de España nº 5/2012, de 27 de junio, partiendo de los siguiente supuestos:",
+      "self_ref": "#/texts/61",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.79678500000009,
+        "y": 263.672995,
+        "w": 312.6510000000003,
+        "h": 7.935314917127016
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Que el Contrato de Tarjeta estará vigente conforme a la duración acordada.",
+      "self_ref": "#/texts/62",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.79678500000009,
+        "y": 281.255394,
+        "w": 504.59759800000006,
+        "h": 16.72651491712702
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Que el Banco y el/los Titular/es cumplirán sus obligaciones con exactitud en las condiciones y en los plazos acordados en el Contrato.",
+      "self_ref": "#/texts/63",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.79676800000013,
+        "y": 307.62899300000004,
+        "w": 471.69900000000064,
+        "h": 7.93531491712713
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Que el tipo de interés y las comisiones y gastos se computan al nivel fijado en el momento de la firma del Contrato.",
+      "self_ref": "#/texts/64",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.79676800000013,
+        "y": 325.21139200000005,
+        "w": 504.626401,
+        "h": 16.726514917127076
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Que se ha dispuesto del Límite de Crédito por el importe que se establece en los supuestos contemplados, al tipo de interés deudor aplicable a cada Sistema de Reembolso;",
+      "self_ref": "#/texts/65",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.79677600000011,
+        "y": 351.58499100000006,
+        "w": 207.59040199999993,
+        "h": 7.935314917127073
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Que no se aplique bonificación de interés alguna.",
+      "self_ref": "#/texts/66",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 41.248798,
+        "y": 367.871396,
+        "w": 116.04600000000002,
+        "h": 7.935314917127073
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 3,
+      "text": "1. Sistemas de Reembolso.",
+      "self_ref": "#/texts/67",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 41.248798,
+        "y": 385.453795,
+        "w": 413.19900000000047,
+        "h": 7.935314917127073
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "En función del Tipo de Tarjeta, los Titulares podrán optar por uno o algunos de los siguientes Sistemas:",
+      "self_ref": "#/texts/68",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.796798,
+        "y": 403.036194,
+        "w": 505.357196,
+        "h": 16.726514917127076
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Pago Total: Cada mes se adeuda en la \"Cuenta de Domiciliación de Pagos\" la totalidad del saldo pendiente que refleje el extracto mensual de  la \"Cuenta de Tarjeta de Crédito\".",
+      "self_ref": "#/texts/69",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49517799999995,
+        "y": 429.40979300000004,
+        "w": 495.7434140000001,
+        "h": 25.51771491712708
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Supuesto que el importe total de crédito de 900,00 Euros, dispuesto en su totalidad mediante compras en establecimientos, durante un periodo mensual, el importe total sería de 900,00 Euros, más la Cuota anual por emisión y renovación de 40,00 Euros en caso que corresponda.",
+      "self_ref": "#/texts/70",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49517100000003,
+        "y": 464.57459200000005,
+        "w": 495.718211,
+        "h": 25.51771491712708
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "En el caso de disposiciones de efectivo contra la \"Cuenta de Tarjeta de Crédito\" y/o traspasos de efectivo desde la \"Cuenta de Tarjeta de Crédito\" a la \"Cuenta de Domiciliación de Pagos\" se devengará a favor del Banco un tipo de interés nominal anual del 22,8000 % desde el momento de la disposición hasta el día de cierre del extracto.",
+      "self_ref": "#/texts/71",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49517100000003,
+        "y": 499.73939100000007,
+        "w": 495.7506209999999,
+        "h": 34.30891491712703
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Supuesto que el importe total del crédito de 900,00 Euros, dispuesto en su totalidad mediante una disposición única, durante un período mensual, a un tipo de interés nominal anual 22,8000 % el importe total a pagar, sería de 917,10 más 3,33 Euros correspondientes a una doceava parte de la Cuota anual por emisión y renovación, que en su caso corresponda. (La TAE resultante será 32,6400%).",
+      "self_ref": "#/texts/72",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.796780000000005,
+        "y": 543.6953910000001,
+        "w": 314.61120200000016,
+        "h": 7.935314917127016
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Pago Aplazado: Esta modalidad permite, a su vez, las siguientes opciones:",
+      "self_ref": "#/texts/73",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 54.050381000000016,
+        "y": 561.2777900000001,
+        "w": 494.1954020000002,
+        "h": 34.30891491712703
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "-Pago a plazos por un porcentaje mensual: Supone el reembolso mensual del 3,0000 % del saldo pendiente que refleje el extracto de la \"Cuenta de Tarjeta de Crédito\" antes de la liquidación más los intereses y comisiones devengados durante el periodo mensual correspondiente; despreciando los decimales del resultado de dicha suma. Se podrá optar por cualquier otro porcentaje, superior al  3,0000 %  e inferior al 100,0000 %.",
+      "self_ref": "#/texts/74",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 63.74877100000009,
+        "y": 605.2337890000001,
+        "w": 484.4970100000001,
+        "h": 34.30891491712703
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Supuesto el Límite de Crédito dispuesto por 900,00 Euros en compras en establecimientos durante un período mensual, al tipo de interés nominal anual del 22,8000 % y unos reembolsos mensuales del 25,0000% del importe dispuesto, el importe total a pagar, en 18 meses, sería de 967,28 Euros más la Cuota anual por emisión y renovación de 40,00 Euros en caso que corresponda. (La TAE resultante será   40,3700 %)",
+      "self_ref": "#/texts/75",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 54.05037100000009,
+        "y": 649.1897880000001,
+        "w": 494.14320200000003,
+        "h": 16.72651491712702
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "-Pago a plazos por una cantidad fija mensual: Supone el reembolso de una cantidad fija mensual. La cifra mínima de dicha cantidad fija mensual es  de 12,00 euros, y se podrá elegir cualquier cantidad superior.",
+      "self_ref": "#/texts/76",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 63.74877500000008,
+        "y": 675.5633870000001,
+        "w": 484.5042150000001,
+        "h": 43.10011491712703
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Supuesto el Importe total del crédito dispuesto 900,00 euros en compras en establecimientos durante un período mensual, a un tipo de interés nominal anual del 22,8000 % y unos reembolsos mensuales de 100,00 euros, (excepto el último mes, en el que el importe de reembolso será el que resulte de la diferencia entre el importe total a pagar y la suma de los reembolsos mensuales anteriores). El importe total a pagar, en 10 meses, sería de 996,07 más la Cuota anual por emisión y renovación de 40,00 euros en caso que corresponda. (La TAE resultante será 35,0300 %)",
+      "self_ref": "#/texts/77",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 63.748798000000136,
+        "y": 728.3105860000002,
+        "w": 484.4214030000001,
+        "h": 16.72651491712702
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "Para el cálculo del importe a liquidar, tanto en la modalidad de pago aplazado por un porcentaje mensual como Pago aplazado por una cantidad fija mensual, no se tendrán en cuenta las operaciones realizadas en el mes de la liquidación.",
+      "self_ref": "#/texts/78",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49517200000008,
+        "y": 754.6841860000002,
+        "w": 495.7020250000001,
+        "h": 25.517714917127023
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 3,
+      "text": "En ambas opciones el reembolso mínimo mensual vendrá determinado por el 1,0000 % del saldo pendiente que refleje el extracto de la \"Cuenta de Tarjeta de Crédito\" antes de la liquidación (sin considerar las operaciones incluidas en el mes de liquidación pero si los excedidos del Limite de Crédito no debidos a dichas operaciones) más los intereses y comisiones devengados durante el periodo mensual correspondiente; despreciando los decimales del resultado de dicha suma.",
+      "self_ref": "#/texts/79",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 800.528779,
+        "w": 215.58400000000003,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 3,
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "self_ref": "#/texts/80",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848809,
+        "y": 800.521579,
+        "w": 51.147199,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 3,
+      "text": "Página 3 de 5",
+      "self_ref": "#/texts/81",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 12.533900000000001,
+        "y": 151.64160600000002,
+        "w": 4.849359116022098,
+        "h": 428.671199
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 4,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/82",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 30.504343032836914,
+        "y": 12.544692039489746,
+        "w": 135.45323753356934,
+        "h": 43.74581241607666
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "",
+      "self_ref": "#/pictures/6",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.6109924316406,
+        "y": 16.08305549621582,
+        "w": 167.75930786132812,
+        "h": 30.8719425201416
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "",
+      "self_ref": "#/pictures/7",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.796801,
+        "y": 97.93620199999998,
+        "w": 505.4472,
+        "h": 78.26491491712704
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Pago Personalizado: Este sistema consiste en la posibilidad de que el reembolso del importe de una operación realizada con las Tarjetas o la totalidad del saldo mensual pendiente después de la liquidación, siempre que sea igual o superior a 50,00 euros, sea realizado mediante el pago de un cierto número de cuotas fijas mensuales (comprensivas de amortización de capital y pago de intereses). El importe de las cuotas dependerá del plazo que elijan los Titulares, dentro de un máximo de 36 cuotas y un mínimo de 3 Cualquiera de los Titulares podrá acogerse a este sistema, solicitándolo al Banco por los medios que éste tenga establecidos. Las cuotas mensuales de reembolso, incluirán capital y los intereses correspondientes al mes de liquidación. La primera cuota exclusivamente comprenderá los intereses devengados desde la fecha de la operación o desde la fecha de la liquidación en el caso del Saldo Mensual hasta el último día del mes en curso a la fecha que de estas últimas corresponda.",
+      "self_ref": "#/texts/83",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 53.24399100000005,
+        "y": 185.84820200000001,
+        "w": 494.9748169999999,
+        "h": 25.517714917127023
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Supuesta una compra de 900,00 Euros a satisfacer en 12 meses al tipo de interés nominal anual del 18,0000 % el importe total a pagar sería: 990,12 Euros; más la Cuota anual por emisión y renovación de 40,00 Euros en caso de que corresponda. (La TAE resultante será 30,2600 %)",
+      "self_ref": "#/texts/84",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.495187999999985,
+        "y": 221.01300100000003,
+        "w": 495.75781900000015,
+        "h": 60.68251491712715
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "El Banco podrá poner a disposición del cliente bajo el Sistema de Rembolso Pago Personalizado la posibilidad de que el reembolso del importe de una operación realizada con las Tarjetas o la totalidad del saldo mensual sea realizado mediante el pago de tres o seis cuotas fijas mensuales. Las cuotas mensuales de reembolso no incluirán intereses por aplazamiento, por lo que el importe de cada cuota será la parte proporcional del importe de la operación o saldo mensual correspondiente en función del plazo (3 o 6 meses) elegido por el Titular. El importe de la primera cuota se verá incrementado por el de la comisión de gestión por aplazamiento de pago que será de 7,00 euros o de 25,00 euros, según el plazo elegido, 3 o 6 meses respectivamente.",
+      "self_ref": "#/texts/85",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49518200000023,
+        "y": 291.34260000000006,
+        "w": 495.7308029999999,
+        "h": 25.517714917127023
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Supuesta una compra de 900,00 Euros a satisfacer en 6 meses, el importe total a pagar sería: 900,00 Euros; más la comisión de gestión de aplazamiento de 25,00 euros más la Cuota anual por emisión y renovación de 40,00 Euros en caso de que corresponda. (La TAE resultante será 29,1500 %)",
+      "self_ref": "#/texts/86",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49518100000023,
+        "y": 326.5073990000001,
+        "w": 495.755998,
+        "h": 43.10011491712709
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Las cuotas se adeudarán con valor del día 5 del mes siguiente, excepto si el sistema se aplicase el mes siguiente al de realización de la operación o de la liquidación en el caso del Saldo Mensual , en cuyo caso comprenderá los intereses devengados desde la fecha de la operación o de la liquidación en el caso de Saldo Mensual hasta el último día del mes en que es de aplicación y se adeudará con valor del día 5 del mes siguiente; las sucesivas en ambos supuestos, comprensivas de capital e intereses, se adeudarán el día 5 de cada mes sucesivo.",
+      "self_ref": "#/texts/87",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49520000000024,
+        "y": 379.2545990000001,
+        "w": 390.1950000000004,
+        "h": 7.935314917127073
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Este Sistema es de aplicación específica a cada operación o saldo para el que se haya solicitado.",
+      "self_ref": "#/texts/88",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.796799,
+        "y": 395.541013,
+        "w": 505.3536000000001,
+        "h": 16.726514917127076
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Pago Cero: Consiste en la posibilidad de diferir el pago mensual de dos liquidaciones de las modalidades de Sistema de Pago Aplazado conforme lo siguiente:",
+      "self_ref": "#/texts/89",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 54.05041300000009,
+        "y": 421.91461200000003,
+        "w": 494.101797,
+        "h": 16.726514917127076
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Las liquidaciones de intereses y comisiones se realizarán conforme lo establecido para el Sistema correspondiente pero su pago se efectúa junto con la liquidación del mes siguiente.",
+      "self_ref": "#/texts/90",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 54.05040100000007,
+        "y": 448.28821100000005,
+        "w": 370.66500000000036,
+        "h": 7.935314917127073
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Dentro de cada año natural se puede ejercitar respecto de dos liquidaciones como máximo.",
+      "self_ref": "#/texts/91",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 54.05040100000007,
+        "y": 465.87061000000006,
+        "w": 494.19359499999996,
+        "h": 16.726514917127076
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "En todo caso las liquidaciones no pueden ser consecutivas y el Contrato de Tarjeta debe encontrarse al corriente de pagos en el momento de realizarlas.",
+      "self_ref": "#/texts/92",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 54.050383000000004,
+        "y": 492.24420900000007,
+        "w": 494.1810079999999,
+        "h": 16.726514917127076
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "-El importe del saldo dispuesto que correspondería amortizar se mantiene como no amortizado y como tal será considerado en la siguiente liquidación.",
+      "self_ref": "#/texts/93",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49519099999993,
+        "y": 518.6178080000001,
+        "w": 401.19300000000044,
+        "h": 7.935314917127016
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Este Sistema es de aplicación específica a cada liquidación concreta para el que se haya solicitado.",
+      "self_ref": "#/texts/94",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49519099999993,
+        "y": 536.2002070000001,
+        "w": 495.72360399999985,
+        "h": 43.10011491712703
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Supuesto que el sistema en vigor es el Pago Aplazado por una cantidad fija mensual de 100,00 Euros (excepto el último mes, en el que el importe de reembolso será el que resulte de la diferencia entre el importe total a pagar y la suma de los reembolsos mensuales anteriores) con los parámetros indicados en este apartado 2 y que, se difiere el pago de la tercera liquidación, el importe total a pagar será de 1.012,43 Euros más la Cuota anual por emisión y renovación de 40,00 Euros en caso de que corresponda.",
+      "self_ref": "#/texts/95",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.495206999999596,
+        "y": 588.9474060000001,
+        "w": 495.6767950000001,
+        "h": 16.72651491712702
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "El Titular ha elegido como Sistema de Reembolso aplicable al Contrato el indicado en el apartado Datos Operativos, que será de aplicación mientras no se produzca su modificación de acuerdo con lo previsto en el mismo.",
+      "self_ref": "#/texts/96",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 41.248798,
+        "y": 614.025022,
+        "w": 215.58599999999993,
+        "h": 7.935314917127016
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 4,
+      "text": "2. Cuestiones comunes a los Sistemas de Reembolso",
+      "self_ref": "#/texts/97",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.796798,
+        "y": 631.607421,
+        "w": 505.4363960000001,
+        "h": 25.517714917127023
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Cualquier Titular podrá acogerse a aquellos Sistemas establecidos en el anterior apartado que estén previstos en las Condiciones Particulares correspondientes, si lo comunica al Banco con una antelación razonable a la fecha de emisión de los extractos mensuales.",
+      "self_ref": "#/texts/98",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 52.49519399999997,
+        "y": 666.7722200000001,
+        "w": 495.68040600000006,
+        "h": 16.72651491712702
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "El Sistema de Reembolso Pago Personalizado es de aplicación específica a petición de los Titulares y aplicables a la operación,  saldo o liquidación concreta solicitados.",
+      "self_ref": "#/texts/99",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.79679399999997,
+        "y": 693.1458190000001,
+        "w": 505.348202,
+        "h": 25.517714917127023
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Los cargos derivados de los Sistemas de Reembolso \"Pago Total\", \"Pago Aplazado\", y \"Pago Personalizado\" se adeudarán en la \"Cuenta de Domiciliación de Pagos\", con valor del quinto día siguiente al de finalización del periodo mensual de liquidación.",
+      "self_ref": "#/texts/100",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.79679499999991,
+        "y": 728.3106180000001,
+        "w": 400.2210000000004,
+        "h": 7.935314917127016
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Los pagos que se produzcan no presuponen que estén satisfechos los pagos anteriores debidos.",
+      "self_ref": "#/texts/101",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 42.79679499999991,
+        "y": 745.8930170000001,
+        "w": 505.42381099999994,
+        "h": 34.30891491712703
+      },
+      "label": "list_item",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 4,
+      "text": "Las condiciones pactadas en cada momento para el reembolso de la deuda pendiente en los Sistemas \"Pago Aplazado\" y \"Pago Personalizado\" figuran en la documentación, aviso de formalización, extractos o soportes técnicos de cualquier otro tipo remitidos por el Banco a los Titulares, los cuales tendrán, a todos los efectos, la consideración de documento contractual conjuntamente con el Contrato y las Condiciones Particulares.",
+      "self_ref": "#/texts/102",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 800.528779,
+        "w": 215.58400000000003,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 4,
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "self_ref": "#/texts/103",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848809,
+        "y": 800.521579,
+        "w": 51.147199,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 4,
+      "text": "Página 4 de 5",
+      "self_ref": "#/texts/104",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 12.533900000000001,
+        "y": 151.64160600000002,
+        "w": 4.849359116022098,
+        "h": 428.671199
+      },
+      "label": "page_header",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 5,
+      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.035 C.I.F.: A-48265169",
+      "self_ref": "#/texts/105",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 30.439960479736328,
+        "y": 12.517908096313477,
+        "w": 135.59260177612305,
+        "h": 43.78807258605957
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "",
+      "self_ref": "#/pictures/8",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 396.5805358886719,
+        "y": 16.042356491088867,
+        "w": 167.81710815429688,
+        "h": 30.940412521362305
+      },
+      "label": "picture",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "",
+      "self_ref": "#/pictures/9",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 41.248798,
+        "y": 89.14500199999998,
+        "w": 468.7110000000006,
+        "h": 7.93531491712713
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "El importe total a pagar estará en función de los sistemas de reembolso y se especifica en las presentes condiciones.",
+      "self_ref": "#/texts/106",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 41.248798,
+        "y": 105.43140200000005,
+        "w": 239.616,
+        "h": 7.935314917127016
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 5,
+      "text": "3. Sistema de reembolso en la función de Tarjeta de Débito.",
+      "self_ref": "#/texts/107",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 41.24878599999994,
+        "y": 123.01380099999994,
+        "w": 507.006004,
+        "h": 34.30891491712714
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "Las cantidades dispuestas en efectivo contra la \"Cuenta de Domiciliación de Pagos\", así como las comisiones y gastos de las referidas disposiciones, serán  adeudadas por el Banco en dicha cuenta a medida que se vayan realizando. La disposición en efectivo contra la \"Cuenta de Domiciliación de Pagos\" sólo es posible si dicha cuenta o la que la sustituya está abierta en el Banco.",
+      "self_ref": "#/texts/108",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 41.248798,
+        "y": 168.46740499999999,
+        "w": 101.988,
+        "h": 7.935314917127016
+      },
+      "label": "section_header",
+      "heading_level": 1,
+      "content_layer": "body",
+      "page": 5,
+      "text": "CLÁUSULA ADICIONAL",
+      "self_ref": "#/texts/109",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 41.24879699999997,
+        "y": 186.049804,
+        "w": 506.06279800000004,
+        "h": 16.72651491712702
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "Las partes convienen sustituir el punto primero de la cláusula 26 - Duración, del Contrato Marco de Operaciones Bancarias sin carácter retroactivo por el siguiente:",
+      "self_ref": "#/texts/110",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 41.24878799999988,
+        "y": 212.423403,
+        "w": 507.00060700000006,
+        "h": 51.89131491712703
+      },
+      "label": "text",
+      "heading_level": null,
+      "content_layer": "body",
+      "page": 5,
+      "text": "26.1. Las Condiciones Particulares de la Tarjeta tendrán una duración indefinida. No obstante lo anterior, el Banco podrá resolver el Contrato, sin alegar causa alguna, previo aviso por escrito al/los Titula/es con una antelación mínima de dos meses a la fecha de resolución. Por su parte, el Titular podrá resolver el Contrato en cualquier momento, en los términos establecido en el mismo, con un preaviso de un mes. Cancelado el contrato de tarjeta, el Banco procederá de forma automática a cancelar todas las tarjetas emitidas a su amparo, obligándose los Clientes a destruir dichas Tarjetas y a satisfacer la deuda pendiente conforme los plazos y modalidad de pago que sea de aplicación.",
+      "self_ref": "#/texts/111",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 27.7488,
+        "y": 800.528779,
+        "w": 215.58400000000003,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 5,
+      "text": "Mod. TJ CONTRATO VISA CREDITO CM V. 13 22-05-2016",
+      "self_ref": "#/texts/112",
+      "cells": null
+    },
+    {
+      "bbox": {
+        "x": 512.848809,
+        "y": 800.521579,
+        "w": 51.147199,
+        "h": 7.053613259668509
+      },
+      "label": "page_footer",
+      "heading_level": null,
+      "content_layer": "furniture",
+      "page": 5,
+      "text": "Página 5 de 5",
+      "self_ref": "#/texts/113",
+      "cells": null
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "document_id": "azuredemo__BBVA3",
+  "document_type": "spanish_banking_card_contract",
+  "expected_pairs": [
+    {
+      "label": "Contrato Núm.",
+      "value": "0182 - 0539 - 0615 - 00000028350350",
+      "page": 1,
+      "section": "CONTRATO DE TARJETA DESPUES BBVA",
+      "confidence": "high",
+      "evidence": "L-inline-split"
+    },
+    {
+      "label": "Tipo Identificación",
+      "value": "NIF PERSONA FISICA",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 1,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "N.I.F.",
+      "value": "009786573G",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 1,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "Nombre y apellidos",
+      "value": "JULIO ALVAREZ SALGUERO",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 1,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "Límite de Crédito",
+      "value": "900,00",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 1,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "Sistema de reembolso",
+      "value": "TOTAL",
+      "page": 1,
+      "section": "Titulares",
+      "column_index": 2,
+      "confidence": "high",
+      "evidence": "L-twocol-form"
+    },
+    {
+      "label": "Pago Personalizado",
+      "value": "18,0000",
+      "page": 1,
+      "section": "Condiciones económicas",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Cuenta de Crédito de la Tarjeta/Pago Aplazado",
+      "value": "22,8000",
+      "page": 1,
+      "section": "Condiciones económicas",
+      "confidence": "high",
+      "evidence": "D-2col"
+    },
+    {
+      "label": "Moratorio, sobre cuotas Vencidas y no satisfechas",
+      "value": "Detalle en cláusula de Intereses",
+      "page": 1,
+      "section": "Condiciones económicas",
+      "confidence": "high",
+      "evidence": "D-2col"
+    }
+  ],
+  "expected_tables": [],
+  "forbidden_pages": [
+    {
+      "start": 2,
+      "end": 5,
+      "reason": "contract_prose_pages_should_not_emit_pairs"
+    }
+  ],
+  "forbidden_pairs": [
+    {
+      "label": "b) Pago Aplazado:",
+      "value": "contains:Esta modalidad permite",
+      "page": 2,
+      "reason": "clause_heading_is_not_kv"
+    },
+    {
+      "label": "Nota 1",
+      "value": "contains:Tipo Nominal",
+      "page": 1,
+      "reason": "table_header_as_key"
+    },
+    {
+      "label": "CUOTA ANUAL",
+      "value": "IMPORTE",
+      "page": 1,
+      "reason": "table_header_as_key"
+    },
+    {
+      "label": "Nombre y apellidos (col 1)",
+      "value": "JULIO ALVAREZ SALGUERO",
+      "page": 1,
+      "reason": "column_suffix_should_not_be_baked_into_label_text"
+    },
+    {
+      "label": "Límite de Crédito (col 1)",
+      "value": "900,00",
+      "page": 1,
+      "reason": "column_suffix_should_not_be_baked_into_label_text"
+    },
+    {
+      "label": "Sistema de reembolso (col 2)",
+      "value": "TOTAL",
+      "page": 1,
+      "reason": "column_suffix_should_not_be_baked_into_label_text"
+    },
+    {
+      "label": "Tipo Identificación",
+      "value": "contains:N.I.F.: 009786573G",
+      "page": 1,
+      "column_index": 1,
+      "reason": "value_should_not_absorb_next_label"
+    }
+  ],
+  "known_gaps": []
+}

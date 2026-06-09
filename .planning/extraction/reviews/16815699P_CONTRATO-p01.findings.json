@@ -1,0 +1,113 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/16815699P_CONTRATO-p01.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/16815699P_CONTRATO.pdf",
+  "page": 1,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 47,
+    "populated_kv": 30,
+    "empty_kv": 17,
+    "high": 0,
+    "medium": 1,
+    "low": 3,
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "MEDIUM",
+      "type": "swapped_label_value",
+      "spec_location": "section.id=vendedor_intermediario / kv_group.id=vendedor_datos / pair.label=Observación",
+      "evidence": {
+        "golden_label": "Observación",
+        "golden_value": "(No interviene en este acto)",
+        "pdf_text_found": "Atoms at y=418.62 has two spans: (1) 'VENDEDOR/ INTERMEDIARIO FINANCIERO MOTOR ARI S.A.' at x=26.96 and (2) '(No interviene en este acto)' at x=443.22. No span with text 'Observación' exists at any y.",
+        "atoms_span_match": {"text": "(No interviene en este acto)", "y": 418.6177978515625, "x": 443.2217102050781},
+        "comment": "The label 'Observación' has null label_bbox and no atom evidence across all three engines. The value '(No interviene en este acto)' is real and confirmed. The label is a structural inference by the scaffolder — acceptable as a named slot, but the null label_bbox means the patcher cannot verify label position. Mark label_bbox as explicitly null/inferred rather than leaving it absent."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "vendedor_intermediario.vendedor_datos[label=Observación]",
+        "params": {
+          "action": "add_label_note",
+          "note": "label_inferred_no_atom_evidence",
+          "label_bbox": null
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "LOW",
+      "type": "wrong_value_text",
+      "spec_location": "structure.id=datos_financiador_footer / prose_block.text",
+      "evidence": {
+        "golden_label": "Datos del financiador (pie)",
+        "golden_value": "Datos del financiador: CaixaBank Payments & Consumer, E.F.C., E.P., S.A.U., domiciliada en Avenida de Manoteras nº 20. E Madrid, CIF A-08980153. Inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492 e inscrita co Establecimientos de Crédito del Banco de España.",
+        "pdf_text_found": "liteparse span at y=782.42 reads partial text ending in 'inscrita co' — missing 'mo' from 'como'. Docling had no match. pdfplumber was null. The visible text on the PDF reads '...inscrita como Establecimientos...'",
+        "atoms_span_match": {"text": "Datos del financiador: CaixaBank Payments & Consumer, E.F.C., E.P., S.A.U., ...", "y": 782.415771484375, "x": 26.95735740661621},
+        "comment": "Prose block text is truncated at the liteparse span boundary — missing 'mo' from 'como Establecimientos'. This is a liteparse span-truncation artifact. The prose block is noise/context, not a KV pair, so this does not affect extraction quality. Low severity."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "datos_financiador_footer.text",
+        "params": {
+          "old": "inscrita co Establecimientos",
+          "new": "inscrita como Establecimientos"
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "severity": "LOW",
+      "type": "wrong_value_text",
+      "spec_location": "structure.id=desglose_economico / table row label=Capital inicial del préstamo.",
+      "evidence": {
+        "golden_label": "Capital inicial del préstamo.",
+        "golden_value": "14.990,00",
+        "pdf_text_found": "Atoms docling block at y=316.048 (blocks layer) shows 'Capital  inicial del préstamo.' (double space). liteparse span at y=533.26 also confirms label. pdfplumber cell_bbox matches 'Capital inicial del préstamo.' with single space at y=535.18.",
+        "atoms_span_match": {"text": "Capital  inicial del préstamo.", "y": 533.258056640625, "x": 26.95730972290039},
+        "comment": "Golden label has single space; liteparse span has double space between 'Capital' and 'inicial'. pdfplumber version (single space) is used in the golden label, which is the correct normalized form. Value '14.990,00' is confirmed at x=511.17, y=534.41. Very minor normalization difference — not a training risk."
+      },
+      "proposed_fix": {
+        "op": "delete",
+        "target": "f03",
+        "params": {
+          "action": "no_change_needed",
+          "note": "pdfplumber text normalization is correct; golden label is fine as-is"
+        }
+      }
+    },
+    {
+      "id": "f04",
+      "severity": "LOW",
+      "type": "possible_noise_misclassified",
+      "spec_location": "kv_pairs[band=Desglose económico del préstamo] / column_header=Importe (€)",
+      "evidence": {
+        "golden_label": "Precio de compraventa (valor contado)",
+        "golden_value": "14.990,00",
+        "pdf_text_found": "No atoms span reads exactly 'Importe (€)' anywhere on the page. The column header is inferred from table structure. The amounts appear at x≈511-547, consistent with a right-aligned column. Atoms spans for amounts show trailing \\u009f (Windows-1252 euro symbol) stripped by pdfplumber.",
+        "atoms_span_match": {"text": "14.990,00", "y": 496.7395935058594, "x": 511.1737976074219},
+        "comment": "The 'column_header: Importe (€)' field is a scaffolder inference with no direct atom evidence. The euro suffix (\\u009f) in liteparse spans is correctly stripped in the golden values — pdfplumber extracts clean numeric strings. This is correct behavior. The column_header metadata is informative but not directly verifiable from atoms. Low severity — downstream consumers should treat it as structural metadata, not extracted text."
+      },
+      "proposed_fix": {
+        "op": "mark_noise",
+        "target": "kv_pairs[band=Desglose económico del préstamo].column_header",
+        "params": {
+          "action": "add_evidence_note",
+          "note": "column_header inferred from table structure; no direct atom span; euro suffix stripped correctly by pdfplumber"
+        }
+      }
+    }
+  ],
+  "_review_notes": {
+    "overall_quality": "Good. All 30 populated KV values are present in atoms. Bboxes are well-aligned. Empty slots in Fiador section correctly verified as genuinely empty (no hidden values). Noise sidebar items (Logalty metadata, page numbers, MOD code) correctly separated. The amounts table (Desglose económico) extracts correctly with pdfplumber stripping the euro suffix from liteparse spans. Structure hierarchy is accurate and covers all expected CaixaBank F_AS-5 form sections.",
+    "notable_strengths": [
+      "3-engine agreement on all critical identity and financial fields",
+      "FINANCIADOR block correctly captures multi-line representative name",
+      "Logalty sidebar noise correctly identified across 8+ noise items",
+      "Fiador empty slots confirmed empty by atom cross-check",
+      "Amount values match pdfplumber layer exactly (14.990,00, 0,00, 598,10, 15.588,10)"
+    ],
+    "training_risk": "LOW — this golden is suitable for training. The only MEDIUM issue (Observación null label_bbox) is a structural label with no atom grounding, acceptable as a named inferred slot."
+  }
+}

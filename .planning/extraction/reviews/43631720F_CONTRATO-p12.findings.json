@@ -1,0 +1,30 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/43631720F_CONTRATO-p12.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/43631720F_CONTRATO.pdf",
+  "page": 12,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 18,
+    "populated_kv": 17,
+    "empty_kv": 1,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "verdict": "PASS"
+  },
+  "findings": [],
+  "review_notes": {
+    "step1_load": "Golden: 18 KV pairs (17 populated, 1 empty). Atoms: 56 spans.",
+    "step2_inventories": {
+      "golden_populated_count": 17,
+      "golden_empty_count": 1,
+      "candidate_spans_scanned": 56
+    },
+    "step3_text_checks": "All 17 populated values confirmed present in atoms.spans. Exact matches: GIRONA (span y=89.0), 24-09-2019 (y=88.8), 20190923126609201 (y=84.0), EVA LINARES REBOLLO (y=219.5), GARRINADA,36 PISO 2 (y=238.7), 17800 OLOT (y=257.7), ESPAÑA (y=276.9), ES90 2100 3724 1321 0049 6694 (y=296.0), CaixaBank Payments & Consumer E.F.C. E.P. S.A.U. (y=365.9), A-08980153 (y=385.8), C/ Caleruega 102 (y=405.0), 28033 Madrid (y=424.2), España (y=443.4), Pago recurrente (y=462.3), 43631720F (y=521.4), GIRONA (y=549.4), 24-09-2019 (y=549.4).",
+    "step3_bbox_checks": "All label/value bbox pairs have label_x < value_x (correct left-label / right-value 2-col layout). All dy values are within 5 pt for inline KVs and within table rows. Referencia dy=4.76 pt (value bbox slightly above label bbox) — within tolerance for oversized reference number rendered in larger font. No misalignment issues.",
+    "step4_missing_kv": "No missing KVs detected. All distinctive spans (names, IBAN, NIF, dates, addresses, amounts) are captured. Right-side Logalty vertical sidebar spans (x=581.6) are correctly fused into the sidebar_logalty noise node.",
+    "step5_empty_slots": "Firma del deudor (row_y=575.1) is empty in golden. PDF visual confirms a handwritten signature is present but it is a bitmap graphic, not extractable text. Empty classification is correct.",
+    "step6_noise_check": "No KV pairs fall in the right-bottom corner (x>500, y>750) zone. Right-side Logalty text fragments (x=581.6) are all correctly classified as logalty_metadata noise in the structure. Footer items (uso_exclusivo, footer_modelo) at y=784.5 are correctly in noise.",
+    "step7_section_check": "Section assignments are correct: cabecera KVs (Lugar, Fecha, Referencia) have section=null as they are in the document header above any section box. Deudor table KVs correctly under 'Datos del deudor'. Acreedor table KVs correctly under 'Datos del acreedor'. NIF correctly under the full subyacente section title. Firma KVs have section=null (signature block has no section header)."
+  }
+}

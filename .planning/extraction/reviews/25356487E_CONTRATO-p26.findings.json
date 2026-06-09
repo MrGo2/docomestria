@@ -1,0 +1,25 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/25356487E_CONTRATO-p26.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/25356487E_CONTRATO.pdf",
+  "page": 26,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 17,
+    "populated_kv": 16,
+    "empty_kv": 1,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "verdict": "PASS"
+  },
+  "findings": [],
+  "review_notes": {
+    "text_in_pdf_checks": "All 15 non-empty kv values confirmed present in atoms.spans. Single-space 'DOCE DE OCTUBRE,36 PISO 2 - I' matches liteparse span exactly; docling block has double-space variant — whitespace-only difference, not flagged.",
+    "bbox_proximity_checks": "All label/value bbox pairs are on same row or adjacent rows (max delta-y ~5pt for Referencia value which is displayed larger/higher). All within tolerance.",
+    "label_value_direction": "All labels at x~29.5, values at x~243.8 (table layout) or inline colon-separated. No swapped pairs.",
+    "section_checks": "datos_deudor, datos_acreedor, relacion_subyacente section assignments match physical heading positions in atoms. Tipo de pago correctly placed under datos_acreedor (physically contained in that table).",
+    "empty_slot_check": "Firma del deudor marked empty (value=''). PDF shows handwritten signature as image/path. FIRMATAG span (font_size=2.0, y=650.7) is a hidden marker tag, not an extractable text value. signature_placeholder classification is correct.",
+    "noise_checks": "logalty_meta noise (y=691) correctly captures assembled right-margin Logalty metadata. Page number 26/40 (x=581.6, y=269.5) correctly classified as page_number noise. Right-margin timestamp fragments (2022/07/11 T, 19:08:36, CEST, +0200) are part of the logalty_meta noise block.",
+    "missing_kv_scan": "No uncovered value-bearing spans found. All content-bearing spans on the page are accounted for in the golden structure."
+  }
+}

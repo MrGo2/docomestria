@@ -70,6 +70,16 @@ class LiteItem:
 
 
 @dataclass(frozen=True)
+class WordItem:
+    """One whitespace-delimited word extracted by pdfplumber. Top-left origin,
+    y grows downward."""
+
+    text: str
+    bbox: BBox
+    page: int
+
+
+@dataclass(frozen=True)
 class DoclingBlock:
     """One semantic block from Docling.
 

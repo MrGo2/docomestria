@@ -1,0 +1,673 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/AZUREDOCUI/2_Example/PATRIMONIAL .pdf",
+  "page": 4,
+  "page_size_pt": [
+    595,
+    842
+  ],
+  "document_type": "averiguacion_patrimonial_pnj",
+  "structure": [
+    {
+      "type": "noise",
+      "id": "banner_consulta",
+      "text": "Consulta Integral Patrimonio",
+      "kind": "watermark",
+      "y_hint": 51,
+      "bbox": {
+        "x": 217.82,
+        "y": 53.08800000000008,
+        "w": 191.36599999999999,
+        "h": 14.0
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Consulta Integral Patrimonio",
+          "row_y_hint": 51,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 217.82,
+              "y": 53.08800000000008,
+              "w": 191.36599999999999,
+              "h": 14.0
+            },
+            "char_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "n_chars": 28,
+            "row_y": 53.08800000000008
+          },
+          "liteparse": {
+            "span_id": 3,
+            "bbox": {
+              "x": 217.82000732421875,
+              "y": 51.52001953125,
+              "w": 191.365966796875,
+              "h": 15.62396240234375
+            },
+            "case_class": "lower",
+            "is_bold": true,
+            "font_size": 14.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/48",
+            "bbox": {
+              "x": 217.82,
+              "y": 54.138000000000034,
+              "w": 191.36599999999981,
+              "h": 12.950000000000045
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 217.82,
+            "y": 53.08800000000008,
+            "w": 191.36599999999999,
+            "h": 14.0
+          },
+          "engine_agreement": 3
+        },
+        "kind": "watermark"
+      }
+    },
+    {
+      "type": "section",
+      "id": "entidades_financieras",
+      "title": "Entidades Financieras - Consultas por NIF",
+      "y_hint": 112,
+      "children": [
+        {
+          "type": "table",
+          "id": "lista_productos",
+          "title": "Lista de productos",
+          "y_hint": 133,
+          "columns": [
+            {
+              "id": "iban",
+              "label": "IBAN",
+              "type": "text"
+            },
+            {
+              "id": "entidad",
+              "label": "Entidad",
+              "type": "text"
+            },
+            {
+              "id": "producto",
+              "label": "Producto",
+              "type": "text"
+            },
+            {
+              "id": "fecha_apertura",
+              "label": "Fecha apertura",
+              "type": "text"
+            },
+            {
+              "id": "tipo_intervencion",
+              "label": "Tipo intervención",
+              "type": "text"
+            },
+            {
+              "id": "saldo",
+              "label": "Saldo",
+              "type": "text"
+            },
+            {
+              "id": "divisa",
+              "label": "Divisa",
+              "type": "text"
+            },
+            {
+              "id": "fecha_valor",
+              "label": "Fecha valor",
+              "type": "text"
+            }
+          ],
+          "rows": [],
+          "evidence": {
+            "title_signal": {
+              "text": "Lista de productos",
+              "pdfplumber": {
+                "bbox": {
+                  "x": 252.77,
+                  "y": 134.7800000000001,
+                  "w": 89.46000000000001,
+                  "h": 10.0
+                },
+                "char_indices": [
+                  115,
+                  116,
+                  117,
+                  118,
+                  119,
+                  120,
+                  121,
+                  122,
+                  123,
+                  124,
+                  125,
+                  126,
+                  127,
+                  128,
+                  129,
+                  130,
+                  131,
+                  132
+                ],
+                "n_chars": 18,
+                "row_y": 134.7800000000001
+              },
+              "liteparse": {
+                "span_id": 6,
+                "bbox": {
+                  "x": 252.77000427246094,
+                  "y": 133.6600341796875,
+                  "w": 89.46000671386719,
+                  "h": 11.15997314453125
+                },
+                "case_class": "lower",
+                "is_bold": true,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/tables/3/cells[1][0]",
+                "bbox": {
+                  "x": 252.77,
+                  "y": 135.5300000000001,
+                  "w": 89.45999999999995,
+                  "h": 9.25
+                },
+                "column_header": true,
+                "row_header": false
+              },
+              "bbox": {
+                "x": 252.77,
+                "y": 134.7800000000001,
+                "w": 89.46000000000001,
+                "h": 10.0
+              },
+              "engine_agreement": 3
+            },
+            "container_signal": null,
+            "structural_signals": {
+              "kind": "table",
+              "n_columns_declared": 8,
+              "n_rows_declared": 0,
+              "n_columns_with_group": 0,
+              "header_levels": 1,
+              "vertical_edges_inside": 0,
+              "horizontal_edges_inside": 0,
+              "has_docling_table_block": false,
+              "has_pdfplumber_rect_frame": false
+            }
+          }
+        },
+        {
+          "type": "prose_block",
+          "id": "aviso_pendiente",
+          "label": "Aviso solicitud pendiente",
+          "text": "Su solicitud a las entidades financieras está realizada pero faltan entidades por responder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a EEFF.",
+          "y_hint": 178,
+          "bbox": {
+            "x": 180.0,
+            "y": 178.0,
+            "w": 350.869873046875,
+            "h": 11.15997314453125
+          },
+          "evidence": {
+            "text_signal": {
+              "text": "Su solicitud a las entidades financieras está realizada pero faltan entidades por responder. Podrá ver las respuestas accediendo a la pantalla del listado de consultas a EEFF.",
+              "row_y_hint": 178,
+              "x_hint": null,
+              "pdfplumber": null,
+              "liteparse": {
+                "span_id": 17,
+                "bbox": {
+                  "x": 180.0,
+                  "y": 178.0,
+                  "w": 350.869873046875,
+                  "h": 11.15997314453125
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/tables/3/cells[3][1]",
+                "bbox": {
+                  "x": 180.0,
+                  "y": 179.87,
+                  "w": 391.2999999999995,
+                  "h": 32.520000000000095
+                },
+                "column_header": false,
+                "row_header": false
+              },
+              "rect": null,
+              "colon_signal": null,
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 180.0,
+                "y": 178.0,
+                "w": 350.869873046875,
+                "h": 11.15997314453125
+              },
+              "engine_agreement": 2
+            },
+            "structural_signals": {
+              "kind": "prose_block",
+              "label": "Aviso solicitud pendiente",
+              "engine_agreement": 2
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 176.8,
+        "y": 113.93400000000008,
+        "w": 241.392,
+        "h": 12.0
+      },
+      "container_bbox": {
+        "x": 180.0,
+        "y": 178.0,
+        "w": 350.869873046875,
+        "h": 11.15997314453125
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "Entidades Financieras - Consultas por NIF",
+          "pdfplumber": {
+            "bbox": {
+              "x": 176.8,
+              "y": 113.93400000000008,
+              "w": 241.392,
+              "h": 12.0
+            },
+            "char_indices": [
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              80,
+              81,
+              82,
+              83,
+              84,
+              85,
+              86,
+              87,
+              88,
+              89,
+              90,
+              91,
+              92,
+              93
+            ],
+            "n_chars": 41,
+            "row_y": 113.93400000000008
+          },
+          "liteparse": {
+            "span_id": 5,
+            "bbox": {
+              "x": 176.8000030517578,
+              "y": 112.59002685546875,
+              "w": 241.39198303222656,
+              "h": 13.3919677734375
+            },
+            "case_class": "lower",
+            "is_bold": true,
+            "font_size": 12.0
+          },
+          "docling": {
+            "cell_ref": "#/tables/3/cells[0][0]",
+            "bbox": {
+              "x": 176.8,
+              "y": 114.83400000000006,
+              "w": 241.39200000000017,
+              "h": 11.100000000000023
+            },
+            "column_header": true,
+            "row_header": false
+          },
+          "bbox": {
+            "x": 176.8,
+            "y": 113.93400000000008,
+            "w": 241.392,
+            "h": 12.0
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 180.0,
+            "y": 178.0,
+            "w": 350.869873046875,
+            "h": 11.15997314453125
+          },
+          "pdfplumber_rect": null,
+          "docling_block": {
+            "self_ref": "#/tables/3",
+            "label": "table",
+            "bbox": {
+              "x": 19.281164169311523,
+              "y": 108.44385528564453,
+              "w": 556.6423587799072,
+              "h": 105.52510833740234
+            }
+          },
+          "edges_inside": {
+            "vertical": 0,
+            "horizontal": 0
+          },
+          "colons_inside": 0,
+          "container_score": 1
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 2,
+          "child_type_distribution": {
+            "table": 1,
+            "prose_block": 1
+          },
+          "path": "Entidades Financieras - Consultas por NIF"
+        }
+      }
+    },
+    {
+      "type": "prose_block",
+      "id": "aviso_legal",
+      "label": "Aviso legal",
+      "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+      "y_hint": 771,
+      "bbox": {
+        "x": 32.0,
+        "y": 771.27001953125,
+        "w": 516.5637817382812,
+        "h": 6.69598388671875
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "La información obtenida a través del Punto Neutro Judicial únicamente puede utilizarse en el marco del procedimiento judicial correspondiente, sin que pueda comunicarse a terceros fuera de los casos permitidos por el ordenamiento jurídico. Dicha información, cuando se refiera a datos personales, está sometida al Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y Garantía de Derechos Digitales. El personal que acceda a esta información está sometido al cumplimiento del deber de secreto. El tratamiento de esta información deberá realizarse respetando las correspondientes medidas de seguridad que garanticen su integridad, disponibilidad y confidencialidad.",
+          "row_y_hint": 771,
+          "x_hint": null,
+          "pdfplumber": null,
+          "liteparse": {
+            "span_id": 20,
+            "bbox": {
+              "x": 32.0,
+              "y": 771.27001953125,
+              "w": 516.5637817382812,
+              "h": 6.69598388671875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 6.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/49",
+            "bbox": {
+              "x": 32.0,
+              "y": 772.392,
+              "w": 533.5620000000009,
+              "h": 26.5
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 32.0,
+            "y": 771.27001953125,
+            "w": 516.5637817382812,
+            "h": 6.69598388671875
+          },
+          "engine_agreement": 2
+        },
+        "structural_signals": {
+          "kind": "prose_block",
+          "label": "Aviso legal",
+          "engine_agreement": 2
+        }
+      }
+    },
+    {
+      "type": "noise",
+      "id": "footer_fecha",
+      "text": "17/04/26 17:13",
+      "kind": "logalty_metadata",
+      "y_hint": 806,
+      "bbox": {
+        "x": 20.0,
+        "y": 807.256,
+        "w": 53.376000000000005,
+        "h": 8.0
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "17/04/26 17:13",
+          "row_y_hint": 806,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 20.0,
+              "y": 807.256,
+              "w": 53.376000000000005,
+              "h": 8.0
+            },
+            "char_indices": [
+              387,
+              388,
+              389,
+              390,
+              391,
+              392,
+              393,
+              394,
+              395,
+              396,
+              397,
+              398,
+              399,
+              400
+            ],
+            "n_chars": 14,
+            "row_y": 807.256
+          },
+          "liteparse": {
+            "span_id": 24,
+            "bbox": {
+              "x": 20.0,
+              "y": 806.3599853515625,
+              "w": 53.37599182128906,
+              "h": 8.92803955078125
+            },
+            "case_class": "none",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/50",
+            "bbox": {
+              "x": 20.0,
+              "y": 807.856,
+              "w": 53.376000000000005,
+              "h": 7.399999999999977
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 20.0,
+            "y": 807.256,
+            "w": 53.376000000000005,
+            "h": 8.0
+          },
+          "engine_agreement": 3
+        },
+        "kind": "logalty_metadata"
+      }
+    },
+    {
+      "type": "noise",
+      "id": "footer_pagina",
+      "text": "Página 4 de 4",
+      "kind": "page_number",
+      "y_hint": 806,
+      "bbox": {
+        "x": 490.3,
+        "y": 807.256,
+        "w": 49.372000000000014,
+        "h": 8.0
+      },
+      "evidence": {
+        "text_signal": {
+          "text": "Página 4 de 4",
+          "row_y_hint": 806,
+          "x_hint": null,
+          "pdfplumber": {
+            "bbox": {
+              "x": 490.3,
+              "y": 807.256,
+              "w": 49.372000000000014,
+              "h": 8.0
+            },
+            "char_indices": [
+              376,
+              377,
+              378,
+              379,
+              380,
+              381,
+              382,
+              383,
+              384,
+              385,
+              386,
+              401,
+              402
+            ],
+            "n_chars": 13,
+            "row_y": 807.256
+          },
+          "liteparse": {
+            "span_id": 25,
+            "bbox": {
+              "x": 490.29998779296875,
+              "y": 806.3599853515625,
+              "w": 49.37200927734375,
+              "h": 8.92803955078125
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
+          "docling": {
+            "cell_ref": "#/texts/51",
+            "bbox": {
+              "x": 490.3,
+              "y": 807.856,
+              "w": 49.372000000000014,
+              "h": 7.399999999999977
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "rect": null,
+          "colon_signal": null,
+          "value_extent": null,
+          "cell_bbox": {
+            "x": 490.3,
+            "y": 807.256,
+            "w": 49.372000000000014,
+            "h": 8.0
+          },
+          "engine_agreement": 3
+        },
+        "kind": "page_number"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "entidades_financieras",
+      "title": "Entidades Financieras - Consultas por NIF",
+      "title_bbox": {
+        "x": 176.8,
+        "y": 113.93400000000008,
+        "w": 241.392,
+        "h": 12.0
+      },
+      "container_bbox": {
+        "x": 180.0,
+        "y": 178.0,
+        "w": 350.869873046875,
+        "h": 11.15997314453125
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "scaffolder",
+    "n_chars": 1123,
+    "n_rows": 17,
+    "n_liteparse_spans": 26,
+    "n_docling_blocks": 6,
+    "n_rects": 10,
+    "kv_pair_breakdown": {
+      "3_eng": 0,
+      "2_eng": 0,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 0,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "scaffolder",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "empty_result_table",
+      "table_header_no_rows",
+      "pending_response_notice",
+      "legal_disclaimer_prose"
+    ],
+    "needs_review": false,
+    "document_type": "averiguacion_patrimonial_pnj"
+  }
+}

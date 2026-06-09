@@ -1,0 +1,1920 @@
+{
+  "pdf": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/CONTRATO IKEA.pdf",
+  "page": 7,
+  "page_size_pt": [
+    595.3,
+    841.9
+  ],
+  "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)",
+  "structure": [
+    {
+      "type": "section",
+      "id": "precio_servicios",
+      "title": "Precio de los servicios",
+      "y_hint": 75,
+      "children": [
+        {
+          "type": "table",
+          "id": "precio_servicios_table",
+          "title": "Tarifas de servicios",
+          "y_hint": 94,
+          "columns": [
+            {
+              "id": "label",
+              "label": "Servicio",
+              "type": "text"
+            },
+            {
+              "id": "value",
+              "label": "Precio",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "label": {
+                "text": "Mantenimiento de la Tarjeta IKEA",
+                "evidence": {
+                  "text": "Mantenimiento de la Tarjeta IKEA",
+                  "row_y_hint": 94,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 95.2428872800001,
+                      "w": 144.81762152000002,
+                      "h": 9.148879999999963
+                    },
+                    "char_indices": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40
+                    ],
+                    "n_chars": 28,
+                    "row_y": 95.2428872800001
+                  },
+                  "liteparse": {
+                    "span_id": 1,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 94.19085693359375,
+                      "w": 147.86416625976562,
+                      "h": 10.20098876953125
+                    },
+                    "case_class": "mixed",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/195",
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 96.97202560000005,
+                      "w": 147.86419856000003,
+                      "h": 6.770576017699113
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r1",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 89.51809600000001,
+                      "w": 206.3987328,
+                      "h": 18.02810880000004
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.093696,
+                    "y": 95.2428872800001,
+                    "w": 144.81762152000002,
+                    "h": 9.148879999999963
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 65.093696,
+                  "y": 95.2428872800001,
+                  "w": 144.81762152000002,
+                  "h": 9.148879999999963
+                }
+              },
+              "value": {
+                "text": "0€.",
+                "evidence": {
+                  "text": "0€.",
+                  "row_y_hint": 94,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 95.2428872800001,
+                      "w": 12.716943200000003,
+                      "h": 9.148879999999963
+                    },
+                    "char_indices": [
+                      50,
+                      51,
+                      52
+                    ],
+                    "n_chars": 3,
+                    "row_y": 95.2428872800001
+                  },
+                  "liteparse": {
+                    "span_id": 2,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 94.2640380859375,
+                      "w": 12.71697998046875,
+                      "h": 10.1278076171875
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/196",
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 96.97202560000005,
+                      "w": 12.716943200000003,
+                      "h": 6.782015732142781
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r2",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 89.03657599999997,
+                      "w": 269.4971136000001,
+                      "h": 18.02810880000004
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6480768,
+                    "y": 95.2428872800001,
+                    "w": 12.716943200000003,
+                    "h": 9.148879999999963
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 272.6480768,
+                  "y": 95.2428872800001,
+                  "w": 12.716943200000003,
+                  "h": 9.148879999999963
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Duplicado de Tarjeta IKEA",
+                "evidence": {
+                  "text": "Duplicado de Tarjeta IKEA",
+                  "row_y_hint": 115,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 116.96906968000008,
+                      "w": 114.30851432,
+                      "h": 9.148879999999963
+                    },
+                    "char_indices": [
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60,
+                      61,
+                      62,
+                      63,
+                      64,
+                      65,
+                      66,
+                      67,
+                      68,
+                      69,
+                      70,
+                      71,
+                      72
+                    ],
+                    "n_chars": 22,
+                    "row_y": 116.96906968000008
+                  },
+                  "liteparse": {
+                    "span_id": 3,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 115.9169921875,
+                      "w": 117.35509490966797,
+                      "h": 10.20098876953125
+                    },
+                    "case_class": "Title",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/197",
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 118.69820799999991,
+                      "w": 117.35509136000002,
+                      "h": 6.770576017699227
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r3",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 111.24427839999998,
+                      "w": 206.3987328,
+                      "h": 18.02810880000004
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.093696,
+                    "y": 116.96906968000008,
+                    "w": 114.30851432,
+                    "h": 9.148879999999963
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 65.093696,
+                  "y": 116.96906968000008,
+                  "w": 114.30851432,
+                  "h": 9.148879999999963
+                }
+              },
+              "value": {
+                "text": "0€.",
+                "evidence": {
+                  "text": "0€.",
+                  "row_y_hint": 116,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 116.96906968000008,
+                      "w": 12.716943200000003,
+                      "h": 9.148879999999963
+                    },
+                    "char_indices": [
+                      76,
+                      77,
+                      78
+                    ],
+                    "n_chars": 3,
+                    "row_y": 116.96906968000008
+                  },
+                  "liteparse": {
+                    "span_id": 4,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 115.99017333984375,
+                      "w": 12.71697998046875,
+                      "h": 10.1278076171875
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/198",
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 118.69820799999991,
+                      "w": 12.716943200000003,
+                      "h": 6.782015732142895
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r4",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 110.76275839999994,
+                      "w": 269.4971136000001,
+                      "h": 18.02810880000004
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6480768,
+                    "y": 116.96906968000008,
+                    "w": 12.716943200000003,
+                    "h": 9.148879999999963
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 272.6480768,
+                  "y": 116.96906968000008,
+                  "w": 12.716943200000003,
+                  "h": 9.148879999999963
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Cancelación anticipada de la deuda",
+                "evidence": {
+                  "text": "Cancelación anticipada de la deuda",
+                  "row_y_hint": 137,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 138.92638168000008,
+                      "w": 154.52699080000002,
+                      "h": 9.148879999999963
+                    },
+                    "char_indices": [
+                      79,
+                      80,
+                      81,
+                      82,
+                      83,
+                      84,
+                      85,
+                      86,
+                      87,
+                      88,
+                      89,
+                      90,
+                      91,
+                      92,
+                      93,
+                      94,
+                      95,
+                      96,
+                      97,
+                      98
+                    ],
+                    "n_chars": 30,
+                    "row_y": 138.92638168000008
+                  },
+                  "liteparse": {
+                    "span_id": 5,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 137.8743896484375,
+                      "w": 157.57357788085938,
+                      "h": 10.20098876953125
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/199",
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 140.65552000000002,
+                      "w": 157.57356784,
+                      "h": 6.770576017699113
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r5",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 132.97046079999996,
+                      "w": 206.3987328,
+                      "h": 18.02810880000004
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.093696,
+                    "y": 138.92638168000008,
+                    "w": 154.52699080000002,
+                    "h": 9.148879999999963
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 65.093696,
+                  "y": 138.92638168000008,
+                  "w": 154.52699080000002,
+                  "h": 9.148879999999963
+                }
+              },
+              "value": {
+                "text": "0€.",
+                "evidence": {
+                  "text": "0€.",
+                  "row_y_hint": 137,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 138.92638168000008,
+                      "w": 12.716943200000003,
+                      "h": 9.148879999999963
+                    },
+                    "char_indices": [
+                      110,
+                      111,
+                      112
+                    ],
+                    "n_chars": 3,
+                    "row_y": 138.92638168000008
+                  },
+                  "liteparse": {
+                    "span_id": 6,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 137.94757080078125,
+                      "w": 12.71697998046875,
+                      "h": 10.1278076171875
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/200",
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 140.65552000000002,
+                      "w": 12.716943200000003,
+                      "h": 6.782015732142895
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r6",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 132.48894080000002,
+                      "w": 269.4971136000001,
+                      "h": 18.02810880000004
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6480768,
+                    "y": 138.92638168000008,
+                    "w": 12.716943200000003,
+                    "h": 9.148879999999963
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 272.6480768,
+                  "y": 138.92638168000008,
+                  "w": 12.716943200000003,
+                  "h": 9.148879999999963
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Retirada de dinero en efectivo a crédito en cajeros, a través de la Tarjeta IKEA",
+                "evidence": {
+                  "text": "Retirada de dinero en efectivo a crédito en cajeros, a través de la Tarjeta IKEA",
+                  "row_y_hint": 159,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 7,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 159.60052490234375,
+                      "w": 196.50494384765625,
+                      "h": 10.20098876953125
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/201",
+                    "bbox": {
+                      "x": 65.09369599999998,
+                      "y": 162.3817024,
+                      "w": 196.50494136000003,
+                      "h": 17.171408017699036
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r7",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 157.701328,
+                      "w": 206.3987328,
+                      "h": 23.575219199999992
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.09369659423828,
+                    "y": 159.60052490234375,
+                    "w": 196.50494384765625,
+                    "h": 10.20098876953125
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 65.09369659423828,
+                  "y": 159.60052490234375,
+                  "w": 196.50494384765625,
+                  "h": 10.20098876953125
+                }
+              },
+              "value": {
+                "text": "5% del importe dispuesto, mínimo 4€",
+                "evidence": {
+                  "text": "5% del importe dispuesto, mínimo 4€",
+                  "row_y_hint": 159,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 160.65256408000005,
+                      "w": 150.46922175999998,
+                      "h": 9.148879999999963
+                    },
+                    "char_indices": [
+                      180,
+                      181,
+                      182,
+                      183,
+                      184,
+                      185,
+                      186,
+                      187,
+                      188,
+                      189,
+                      190,
+                      191,
+                      192,
+                      193,
+                      194,
+                      195,
+                      196,
+                      197,
+                      198,
+                      199
+                    ],
+                    "n_chars": 30,
+                    "row_y": 160.65256408000005
+                  },
+                  "liteparse": {
+                    "span_id": 8,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 159.6737060546875,
+                      "w": 150.46917724609375,
+                      "h": 10.1278076171875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/202",
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 162.3817024,
+                      "w": 150.46922175999998,
+                      "h": 6.782015732142895
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r8",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 157.21980799999994,
+                      "w": 269.4971136000001,
+                      "h": 23.575219199999992
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6480768,
+                    "y": 160.65256408000005,
+                    "w": 150.46922175999998,
+                    "h": 9.148879999999963
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 272.6480768,
+                  "y": 160.65256408000005,
+                  "w": 150.46922175999998,
+                  "h": 9.148879999999963
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Retirada de efectivo a crédito a través de teléfono",
+                "evidence": {
+                  "text": "Retirada de efectivo a crédito a través de teléfono",
+                  "row_y_hint": 187,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 10,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 187.10491943359375,
+                      "w": 196.50494384765625,
+                      "h": 10.20098876953125
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/203",
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 189.88612480000006,
+                      "w": 196.50494136,
+                      "h": 17.171408017699036
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r9",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 184.97462080000003,
+                      "w": 206.3987328,
+                      "h": 23.575219199999992
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.09369659423828,
+                    "y": 187.10491943359375,
+                    "w": 196.50494384765625,
+                    "h": 10.20098876953125
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 65.09369659423828,
+                  "y": 187.10491943359375,
+                  "w": 196.50494384765625,
+                  "h": 10.20098876953125
+                }
+              },
+              "value": {
+                "text": "4% del importe dispuesto, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+                "evidence": {
+                  "text": "4% del importe dispuesto, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+                  "row_y_hint": 187,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 11,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 187.1781005859375,
+                      "w": 259.2802429199219,
+                      "h": 10.1278076171875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/204",
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 189.88612480000006,
+                      "w": 259.28022224000017,
+                      "h": 17.182847732142818
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r10",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 184.49310079999998,
+                      "w": 269.4971136000001,
+                      "h": 23.575219199999992
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6481018066406,
+                    "y": 187.1781005859375,
+                    "w": 259.2802429199219,
+                    "h": 10.1278076171875
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 272.6481018066406,
+                  "y": 187.1781005859375,
+                  "w": 259.2802429199219,
+                  "h": 10.1278076171875
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Retirada de efectivo a crédito a través de web",
+                "evidence": {
+                  "text": "Retirada de efectivo a crédito a través de web",
+                  "row_y_hint": 214,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 14,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 214.84051513671875,
+                      "w": 196.50494384765625,
+                      "h": 10.20098876953125
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/205",
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 217.62167679999993,
+                      "w": 196.50494136,
+                      "h": 17.17140801769915
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r11",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 212.7101728,
+                      "w": 206.3987328,
+                      "h": 23.575219199999992
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.09369659423828,
+                    "y": 214.84051513671875,
+                    "w": 196.50494384765625,
+                    "h": 10.20098876953125
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 65.09369659423828,
+                  "y": 214.84051513671875,
+                  "w": 196.50494384765625,
+                  "h": 10.20098876953125
+                }
+              },
+              "value": {
+                "text": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+                "evidence": {
+                  "text": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+                  "row_y_hint": 214,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 15,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 214.9136962890625,
+                      "w": 259.2811584472656,
+                      "h": 10.1278076171875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/206",
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 217.62167679999993,
+                      "w": 259.28118528000016,
+                      "h": 17.182847732142932
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r12",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 212.22865279999996,
+                      "w": 269.4971136000001,
+                      "h": 23.575219199999992
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6481018066406,
+                    "y": 214.9136962890625,
+                    "w": 259.2811584472656,
+                    "h": 10.1278076171875
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 272.6481018066406,
+                  "y": 214.9136962890625,
+                  "w": 259.2811584472656,
+                  "h": 10.1278076171875
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes",
+                "evidence": {
+                  "text": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes",
+                  "row_y_hint": 241,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 18,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 240.9581298828125,
+                      "w": 196.50494384765625,
+                      "h": 10.20098876953125
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/207",
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 243.73932160000004,
+                      "w": 196.50494136,
+                      "h": 27.57224001769896
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r13",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 240.4457248,
+                      "w": 206.3987328,
+                      "h": 34.43831039999998
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.09369659423828,
+                    "y": 240.9581298828125,
+                    "w": 196.50494384765625,
+                    "h": 10.20098876953125
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 65.09369659423828,
+                  "y": 240.9581298828125,
+                  "w": 196.50494384765625,
+                  "h": 10.20098876953125
+                }
+              },
+              "value": {
+                "text": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.",
+                "evidence": {
+                  "text": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.",
+                  "row_y_hint": 241,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 19,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 241.03131103515625,
+                      "w": 259.2811584472656,
+                      "h": 10.1278076171875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/208",
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 243.73932160000004,
+                      "w": 259.28118528000005,
+                      "h": 17.182847732142818
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r14",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 239.96420480000006,
+                      "w": 269.4971136000001,
+                      "h": 34.43831039999998
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6481018066406,
+                    "y": 241.03131103515625,
+                    "w": 259.2811584472656,
+                    "h": 10.1278076171875
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 272.6481018066406,
+                  "y": 241.03131103515625,
+                  "w": 259.2811584472656,
+                  "h": 10.1278076171875
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro",
+                "evidence": {
+                  "text": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro",
+                  "row_y_hint": 281,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 23,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 281.1746826171875,
+                      "w": 196.5030517578125,
+                      "h": 10.20098876953125
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/209",
+                    "bbox": {
+                      "x": 65.09369599999995,
+                      "y": 283.955872,
+                      "w": 196.50301528000006,
+                      "h": 27.572240017699073
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r15",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 279.04436799999996,
+                      "w": 206.3987328,
+                      "h": 44.145753600000035
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.09369659423828,
+                    "y": 281.1746826171875,
+                    "w": 196.5030517578125,
+                    "h": 10.20098876953125
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 65.09369659423828,
+                  "y": 281.1746826171875,
+                  "w": 196.5030517578125,
+                  "h": 10.20098876953125
+                }
+              },
+              "value": {
+                "text": "aplicamos el tipo de cambio que la marca de la tarjeta (Visa) tiene publicado en su página web en el momento en que recibimos información de que usted ha realizado la operación incrementado en un 3,95%.",
+                "evidence": {
+                  "text": "aplicamos el tipo de cambio que la marca de la tarjeta (Visa) tiene publicado en su página web en el momento en que recibimos información de que usted ha realizado la operación incrementado en un 3,95%.",
+                  "row_y_hint": 281,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 24,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 281.24786376953125,
+                      "w": 259.1776428222656,
+                      "h": 10.1278076171875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/210",
+                    "bbox": {
+                      "x": 272.64807679999984,
+                      "y": 283.955872,
+                      "w": 259.3331894400001,
+                      "h": 37.984511732142664
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r16",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 278.5628479999999,
+                      "w": 269.4971136000001,
+                      "h": 44.145753600000035
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6481018066406,
+                    "y": 281.24786376953125,
+                    "w": 259.1776428222656,
+                    "h": 10.1278076171875
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 272.6481018066406,
+                  "y": 281.24786376953125,
+                  "w": 259.1776428222656,
+                  "h": 10.1278076171875
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Reclamación de cuota impagada",
+                "evidence": {
+                  "text": "Reclamación de cuota impagada",
+                  "row_y_hint": 330,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 331.91959768,
+                      "w": 141.86157024000005,
+                      "h": 9.14888000000002
+                    },
+                    "char_indices": [
+                      890,
+                      891,
+                      892,
+                      893,
+                      894,
+                      895,
+                      896,
+                      897,
+                      898,
+                      899,
+                      900,
+                      901,
+                      902,
+                      903,
+                      904,
+                      905,
+                      906,
+                      907,
+                      908,
+                      909
+                    ],
+                    "n_chars": 26,
+                    "row_y": 327.1399999999993
+                  },
+                  "liteparse": {
+                    "span_id": 30,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 330.86749267578125,
+                      "w": 144.90814208984375,
+                      "h": 10.201019287109375
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/211",
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 333.648736,
+                      "w": 144.90814728000004,
+                      "h": 6.770576017699113
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r17",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 326.19480639999995,
+                      "w": 206.3987328,
+                      "h": 94.5320064
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.093696,
+                    "y": 331.91959768,
+                    "w": 141.86157024000005,
+                    "h": 9.14888000000002
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 65.093696,
+                  "y": 331.91959768,
+                  "w": 141.86157024000005,
+                  "h": 9.14888000000002
+                }
+              },
+              "value": {
+                "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
+                "evidence": {
+                  "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
+                  "row_y_hint": 328,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 31,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 328.39825439453125,
+                      "w": 259.3370056152344,
+                      "h": 10.127838134765625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/212",
+                    "bbox": {
+                      "x": 272.6480767999997,
+                      "y": 331.1063104,
+                      "w": 259.3370416000004,
+                      "h": 79.58783973214292
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r18",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 325.7132864,
+                      "w": 269.4971136000001,
+                      "h": 94.53200639999994
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6481018066406,
+                    "y": 328.39825439453125,
+                    "w": 259.3370056152344,
+                    "h": 10.127838134765625
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 272.6481018066406,
+                  "y": 328.39825439453125,
+                  "w": 259.3370056152344,
+                  "h": 10.127838134765625
+                }
+              }
+            },
+            {
+              "label": {
+                "text": "Envío de documentación relativa al contrato por correo postal a petición de usted",
+                "evidence": {
+                  "text": "Envío de documentación relativa al contrato por correo postal a petición de usted",
+                  "row_y_hint": 430,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": {
+                    "span_id": 39,
+                    "bbox": {
+                      "x": 65.09369659423828,
+                      "y": 430.71551513671875,
+                      "w": 196.53717041015625,
+                      "h": 10.201019287109375
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/213",
+                    "bbox": {
+                      "x": 65.093696,
+                      "y": 433.49672319999996,
+                      "w": 196.53720320000005,
+                      "h": 17.171408017699093
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r19",
+                    "bbox": {
+                      "x": 60.2399744,
+                      "y": 428.5852191999999,
+                      "w": 206.3987328,
+                      "h": 26.348774400000025
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 65.09369659423828,
+                    "y": 430.71551513671875,
+                    "w": 196.53717041015625,
+                    "h": 10.201019287109375
+                  },
+                  "engine_agreement": 2
+                },
+                "bbox": {
+                  "x": 65.09369659423828,
+                  "y": 430.71551513671875,
+                  "w": 196.53717041015625,
+                  "h": 10.201019287109375
+                }
+              },
+              "value": {
+                "text": "0,60€ por comunicado.",
+                "evidence": {
+                  "text": "0,60€ por comunicado.",
+                  "row_y_hint": 436,
+                  "x_hint": null,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 437.08356568,
+                      "w": 91.99054383999982,
+                      "h": 9.14888000000002
+                    },
+                    "char_indices": [
+                      1365,
+                      1366,
+                      1367,
+                      1368,
+                      1369,
+                      1370,
+                      1371,
+                      1372,
+                      1373,
+                      1374,
+                      1375,
+                      1376,
+                      1377,
+                      1378,
+                      1379,
+                      1380,
+                      1381,
+                      1382,
+                      1383
+                    ],
+                    "n_chars": 19,
+                    "row_y": 437.08356568
+                  },
+                  "liteparse": {
+                    "span_id": 40,
+                    "bbox": {
+                      "x": 272.6481018066406,
+                      "y": 436.10467529296875,
+                      "w": 91.99057006835938,
+                      "h": 10.1278076171875
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 9.5
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/214",
+                    "bbox": {
+                      "x": 272.6480768,
+                      "y": 438.812704,
+                      "w": 91.99054383999987,
+                      "h": 6.782015732142838
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": {
+                    "rect_id": "p7-r20",
+                    "bbox": {
+                      "x": 267.7943552,
+                      "y": 428.10369919999994,
+                      "w": 269.4971136000001,
+                      "h": 26.348774400000025
+                    }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 272.6480768,
+                    "y": 437.08356568,
+                    "w": 91.99054383999982,
+                    "h": 9.14888000000002
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 272.6480768,
+                  "y": 437.08356568,
+                  "w": 91.99054383999982,
+                  "h": 9.14888000000002
+                }
+              }
+            }
+          ],
+          "bbox": {
+            "x": 65.093696,
+            "y": 95.2428872800001,
+            "w": 466.891411421875,
+            "h": 350.9895583999999
+          },
+          "evidence": {
+            "title_signal": {
+              "text": "Tarifas de servicios",
+              "pdfplumber": null,
+              "liteparse": null,
+              "docling": null,
+              "bbox": null,
+              "engine_agreement": 0
+            },
+            "container_signal": {
+              "container_bbox": {
+                "x": 65.093696,
+                "y": 95.2428872800001,
+                "w": 466.891411421875,
+                "h": 350.9895583999999
+              },
+              "pdfplumber_rect": {
+                "rect_id": "p7-r0",
+                "bbox": {
+                  "x": 46.603328000000005,
+                  "y": 70.79659840000011,
+                  "w": 498.54654719999996,
+                  "h": 667.9645439999998
+                }
+              },
+              "docling_block": null,
+              "edges_inside": {
+                "vertical": 96,
+                "horizontal": 144
+              },
+              "colons_inside": 12,
+              "container_score": 2
+            },
+            "structural_signals": {
+              "kind": "table",
+              "n_columns_declared": 2,
+              "n_rows_declared": 10,
+              "n_columns_with_group": 0,
+              "header_levels": 1,
+              "vertical_edges_inside": 96,
+              "horizontal_edges_inside": 144,
+              "has_docling_table_block": false,
+              "has_pdfplumber_rect_frame": true
+            }
+          }
+        }
+      ],
+      "title_bbox": {
+        "x": 59.5465856,
+        "y": 76.52138968000008,
+        "w": 99.30098048,
+        "h": 9.148879999999963
+      },
+      "container_bbox": {
+        "x": 65.093696,
+        "y": 95.2428872800001,
+        "w": 466.891411421875,
+        "h": 350.9895583999999
+      },
+      "evidence": {
+        "title_signal": {
+          "text": "Precio de los servicios",
+          "pdfplumber": {
+            "bbox": {
+              "x": 59.5465856,
+              "y": 76.52138968000008,
+              "w": 99.30098048,
+              "h": 9.148879999999963
+            },
+            "char_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "n_chars": 20,
+            "row_y": 76.52138968000008
+          },
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 59.54658889770508,
+              "y": 75.4693603515625,
+              "w": 102.34754943847656,
+              "h": 10.20098876953125
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 9.5
+          },
+          "docling": {
+            "cell_ref": "#/texts/194",
+            "bbox": {
+              "x": 59.5465856,
+              "y": 78.25052799999992,
+              "w": 102.34755752,
+              "h": 6.770576017699227
+            },
+            "column_header": null,
+            "row_header": null
+          },
+          "bbox": {
+            "x": 59.5465856,
+            "y": 76.52138968000008,
+            "w": 99.30098048,
+            "h": 9.148879999999963
+          },
+          "engine_agreement": 3
+        },
+        "container_signal": {
+          "container_bbox": {
+            "x": 65.093696,
+            "y": 95.2428872800001,
+            "w": 466.891411421875,
+            "h": 350.9895583999999
+          },
+          "pdfplumber_rect": {
+            "rect_id": "p7-r0",
+            "bbox": {
+              "x": 46.603328000000005,
+              "y": 70.79659840000011,
+              "w": 498.54654719999996,
+              "h": 667.9645439999998
+            }
+          },
+          "docling_block": null,
+          "edges_inside": {
+            "vertical": 96,
+            "horizontal": 144
+          },
+          "colons_inside": 12,
+          "container_score": 2
+        },
+        "structural_signals": {
+          "kind": "section",
+          "n_children": 1,
+          "child_type_distribution": {
+            "table": 1
+          },
+          "path": "Precio de los servicios"
+        }
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "precio_servicios",
+      "title": "Precio de los servicios",
+      "title_bbox": {
+        "x": 59.5465856,
+        "y": 76.52138968000008,
+        "w": 99.30098048,
+        "h": 9.148879999999963
+      },
+      "container_bbox": {
+        "x": 65.093696,
+        "y": 95.2428872800001,
+        "w": 466.891411421875,
+        "h": 350.9895583999999
+      },
+      "_view": "compat_flat"
+    }
+  ],
+  "kv_pairs": [
+    {
+      "label": "Mantenimiento de la Tarjeta IKEA",
+      "value": "0€.",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 94,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 95.2428872800001,
+        "w": 144.81762152000002,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 95.2428872800001,
+          "w": 12.716943200000003,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 0,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Duplicado de Tarjeta IKEA",
+      "value": "0€.",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 115,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 116.96906968000008,
+        "w": 114.30851432,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 116.96906968000008,
+          "w": 12.716943200000003,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 1,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Cancelación anticipada de la deuda",
+      "value": "0€.",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 137,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 138.92638168000008,
+        "w": 154.52699080000002,
+        "h": 9.148879999999963
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 138.92638168000008,
+          "w": 12.716943200000003,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 2,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Retirada de dinero en efectivo a crédito en cajeros, a través de la Tarjeta IKEA",
+      "value": "5% del importe dispuesto, mínimo 4€",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 159,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.09369659423828,
+        "y": 159.60052490234375,
+        "w": 196.50494384765625,
+        "h": 10.20098876953125
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 160.65256408000005,
+          "w": 150.46922175999998,
+          "h": 9.148879999999963
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 3,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Retirada de efectivo a crédito a través de teléfono",
+      "value": "4% del importe dispuesto, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 187,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.09369659423828,
+        "y": 187.10491943359375,
+        "w": 196.50494384765625,
+        "h": 10.20098876953125
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6481018066406,
+          "y": 187.1781005859375,
+          "w": 259.2802429199219,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 4,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Retirada de efectivo a crédito a través de web",
+      "value": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 214,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.09369659423828,
+        "y": 214.84051513671875,
+        "w": 196.50494384765625,
+        "h": 10.20098876953125
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6481018066406,
+          "y": 214.9136962890625,
+          "w": 259.2811584472656,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 5,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes",
+      "value": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 241,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.09369659423828,
+        "y": 240.9581298828125,
+        "w": 196.50494384765625,
+        "h": 10.20098876953125
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6481018066406,
+          "y": 241.03131103515625,
+          "w": 259.2811584472656,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 6,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro",
+      "value": "aplicamos el tipo de cambio que la marca de la tarjeta (Visa) tiene publicado en su página web en el momento en que recibimos información de que usted ha realizado la operación incrementado en un 3,95%.",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 281,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.09369659423828,
+        "y": 281.1746826171875,
+        "w": 196.5030517578125,
+        "h": 10.20098876953125
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6481018066406,
+          "y": 281.24786376953125,
+          "w": 259.1776428222656,
+          "h": 10.1278076171875
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 7,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Reclamación de cuota impagada",
+      "value": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 330,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.093696,
+        "y": 331.91959768,
+        "w": 141.86157024000005,
+        "h": 9.14888000000002
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6481018066406,
+          "y": 328.39825439453125,
+          "w": 259.3370056152344,
+          "h": 10.127838134765625
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 8,
+        "engine_agreement": 2,
+        "bucket": "2_eng"
+      }
+    },
+    {
+      "label": "Envío de documentación relativa al contrato por correo postal a petición de usted",
+      "value": "0,60€ por comunicado.",
+      "section": "Precio de los servicios",
+      "band": "Tarifas de servicios",
+      "column_header": "Precio",
+      "row_y": 430,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 65.09369659423828,
+        "y": 430.71551513671875,
+        "w": 196.53717041015625,
+        "h": 10.201019287109375
+      },
+      "value_bboxes": [
+        {
+          "x": 272.6480768,
+          "y": 437.08356568,
+          "w": 91.99054383999982,
+          "h": 9.14888000000002
+        }
+      ],
+      "evidence": {
+        "path": "Precio de los servicios",
+        "row": 9,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    }
+  ],
+  "noise": [],
+  "diagnostics": {
+    "method": "hand-curated structured-model golden, 3-engine linked",
+    "annotator": "codex",
+    "n_chars": 1483,
+    "n_rows": 110,
+    "n_liteparse_spans": 52,
+    "n_docling_blocks": 23,
+    "n_rects": 106,
+    "kv_pair_breakdown": {
+      "3_eng": 5,
+      "2_eng": 5,
+      "1_eng": 0,
+      "0_eng": 0,
+      "empty": 0,
+      "footnote": 0,
+      "footnote_ref": 0
+    }
+  },
+  "_meta": {
+    "annotator": "codex",
+    "annotated_at": "2026-06-07",
+    "method": "hand-curated reference (structured + 3-engine linked)",
+    "covers_cases": [
+      "caixabank_ikea_precio_servicios_table",
+      "caixabank_ikea_multi_line_label_pricing",
+      "caixabank_ikea_long_text_value_pricing"
+    ],
+    "needs_review": false,
+    "document_type": "Contrato de cuenta de crédito con o sin Tarjeta IKEA (CaixaBank Payments & Consumer)"
+  }
+}

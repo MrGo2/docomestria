@@ -1,0 +1,87 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/25356487E_CONTRATO-p01.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/25356487E_CONTRATO.pdf",
+  "page": 1,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 36,
+    "populated_kv": 32,
+    "empty_kv": 4,
+    "high": 1,
+    "medium": 1,
+    "low": 0,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "HIGH",
+      "type": "wrong_value_text",
+      "spec_location": "section.id=condiciones_economicas / kv_group.id=importes_base / label=Capital inicial del préstamo.",
+      "evidence": {
+        "golden_label": "Capital inicial del préstamo.",
+        "golden_value": "20.780,00€",
+        "pdf_text_found": "20.780,00€€",
+        "atoms_span_match": {
+          "text": "20.780,00€€",
+          "y": 532.44,
+          "x": 488.99,
+          "source": "liteparse span + docling block",
+          "engine_agreement": 2
+        },
+        "comment": "The atoms liteparse span (y=532.4, x=489.0) and docling block (#/texts/51, y=536.3) both show '20.780,00€€' (double euro sign). The PDF visually confirms the double euro. The golden stores '20.780,00€' (single euro), which matches only the pdfplumber extraction. Per quality rule 5, amounts must match exactly — '20.780,00€€' ≠ '20.780,00€'."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "condiciones_economicas / importes_base / Capital inicial del préstamo.",
+        "params": {
+          "field": "value",
+          "old": "20.780,00€",
+          "new": "20.780,00€€"
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "missing_kv",
+      "spec_location": "section.id=financiador / kv_group.id=financiador_datos",
+      "evidence": {
+        "golden_label": null,
+        "golden_value": null,
+        "pdf_text_found": "FINANCIADOR CAIXABANK PAYMENTS & CONSUMER, E.F.C., E.P., S.A.U., y en su nombre y representación D. LUIS LAGARES PUIG",
+        "atoms_span_match": {
+          "text": "FINANCIADOR CAIXABANK PAYMENTS & CONSUMER, E.F.C., E.P., S.A.U., y en su nombre y representación D. LUIS LAGARES PUIG",
+          "y": 366.72,
+          "x": 26.96,
+          "source": "liteparse span"
+        },
+        "comment": "The representative acting for the financiador ('D. LUIS LAGARES PUIG') appears on the financiador header line (y=366.7) but is not extracted as a KV pair. The golden captures the company name ('CAIXABANK PAYMENTS & CONSUMER, E.F.C., E.P., S.A.U.') from this row but stops at the comma before 'y en su nombre y representación D. LUIS LAGARES PUIG'. LUIS LAGARES PUIG is a named person (representative/apoderado) — a substantive identity field in a loan contract. Note: LUIS LAGARES PUIG only exists in this fused full-sentence span; there is no standalone atom for it, so extraction requires substring parsing of the financiador sentence."
+      },
+      "proposed_fix": {
+        "op": "add_kv",
+        "target": "financiador / financiador_datos",
+        "params": {
+          "insert_after": "Financiador",
+          "label": "D. (representante)",
+          "value": "LUIS LAGARES PUIG",
+          "y_hint": 366.7,
+          "rule": "substring-of-fused-span",
+          "label_bbox": {
+            "x": 294.37,
+            "y": 369.0,
+            "w": 30.0,
+            "h": 9.6
+          },
+          "value_bbox": {
+            "x": 326.0,
+            "y": 369.0,
+            "w": 100.0,
+            "h": 9.6
+          },
+          "note": "Bboxes are approximate — full sentence span is x=26.96 w=532.48 y=366.72. Exact sub-bbox requires char-level pdfplumber extraction."
+        }
+      }
+    }
+  ]
+}

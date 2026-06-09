@@ -1,0 +1,113 @@
+{
+  "golden_path": "/Users/carlos/Edelwyss/Projects/_WORKTREES/docomestria-structural/.planning/extraction/golden/25356487E_CONTRATO-p27.json",
+  "pdf_path": "/Users/carlos/Edelwyss/Projects/docomestria/Dataset/25356487E_CONTRATO.pdf",
+  "page": 27,
+  "reviewed_at": "2026-06-07",
+  "summary": {
+    "total_kv": 29,
+    "populated_kv": 29,
+    "empty_kv": 0,
+    "high": 1,
+    "medium": 1,
+    "low": 0,
+    "verdict": "FIX_REQUIRED"
+  },
+  "findings": [
+    {
+      "id": "f01",
+      "severity": "HIGH",
+      "type": "label_value_misaligned",
+      "spec_location": "structure[nro_solicitud] / kv_pairs[label=Nº SOLICITUD]",
+      "evidence": {
+        "golden_label": "Nº SOLICITUD",
+        "golden_value": "202207590875462",
+        "golden_row_y": 318.9,
+        "pdf_text_found": "Nº SOLICITUD 202207590875462",
+        "atoms_span_match": {
+          "text": "Nº SOLICITUD 202207590875462",
+          "y": 90.41949462890625,
+          "x": 318.87396240234375,
+          "font_size": 8.0,
+          "engine": "liteparse"
+        },
+        "comment": "The golden places nro_solicitud at row_y=318.9 with label_bbox=null, value_bboxes=[], engine_agreement=0. The actual fused span 'Nº SOLICITUD 202207590875462' is at y=90.4 — the same header line as the location/date row (En FUENLABRADA a 11 de Julio de 2022). The row_y anchor is off by ~228pt. In the PDF visual, 'Nº SOLICITUD 202207590875462' appears top-right on the header line, not in the body of section 2 at y≈319."
+      },
+      "proposed_fix": {
+        "op": "update_y_hint",
+        "target": "nro_solicitud",
+        "params": {
+          "new_y_hint": 90.4,
+          "new_row_y": 90.4,
+          "new_label_bbox": {
+            "x": 318.87396240234375,
+            "y": 90.41949462890625,
+            "w": 110.94223022460938,
+            "h": 9.23748779296875
+          },
+          "new_value_bboxes": [
+            {
+              "x": 318.87396240234375,
+              "y": 90.41949462890625,
+              "w": 110.94223022460938,
+              "h": 9.23748779296875
+            }
+          ],
+          "note": "Label and value are fused in a single span 'Nº SOLICITUD 202207590875462'. Use the full span bbox for both label_bbox and value_bbox, or split at the space after 'SOLICITUD' (x≈393 based on proportional estimate). The span is on the header row, not in section 2 body."
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "severity": "MEDIUM",
+      "type": "label_value_misaligned",
+      "spec_location": "structure[garantias] / kv_pairs[label=Garantías requeridas.]",
+      "evidence": {
+        "golden_label": "Garantías requeridas.",
+        "golden_value": "No aplica Reserva de dominio Cuando aplique.",
+        "golden_value_bbox": {
+          "x": 163.3237762451172,
+          "y": 561.461669921875,
+          "w": 25.786361694335938,
+          "h": 9.2374267578125
+        },
+        "pdf_text_found": "No aplica | Reserva de dominio | Cuando aplique.",
+        "atoms_span_match": [
+          {
+            "text": "No aplica",
+            "y": 561.461669921875,
+            "x": 163.3237762451172,
+            "engine": "liteparse"
+          },
+          {
+            "text": "Reserva de dominio",
+            "y": 571.8624877929688,
+            "x": 163.3237762451172,
+            "engine": "liteparse"
+          },
+          {
+            "text": "Cuando aplique.",
+            "y": 578.79638671875,
+            "x": 163.3237762451172,
+            "engine": "liteparse"
+          }
+        ],
+        "comment": "The value 'No aplica Reserva de dominio Cuando aplique.' spans three separate spans across ~27pt of vertical space (y=561.5 to y=588.0). The golden value_bbox only covers the first span height (h=9.24), missing 'Reserva de dominio' and 'Cuando aplique.' entirely. The bbox needs to extend downward to encompass all three spans."
+      },
+      "proposed_fix": {
+        "op": "fix_value",
+        "target": "garantias",
+        "params": {
+          "new_value_bboxes": [
+            {
+              "x": 163.3237762451172,
+              "y": 561.461669921875,
+              "w": 54.32316589355469,
+              "h": 26.571044921875
+            }
+          ],
+          "note": "Extend height from 9.24 to ~26.57 to cover all three spans: 'No aplica' (y=561.46), 'Reserva de dominio' (y=571.86), 'Cuando aplique.' (y=578.80). Width should match the widest span (Reserva de dominio, w=54.32)."
+        }
+      }
+    }
+  ]
+}
