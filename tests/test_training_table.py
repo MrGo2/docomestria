@@ -474,6 +474,28 @@ def test_build_page_rows_no_blocks_key_is_safe():
 
 
 # ---------------------------------------------------------------------------
+# Task 4 — recover docling column/row-header for noise rows in table cells
+# ---------------------------------------------------------------------------
+def test_build_page_rows_recovers_docling_header_for_noise_in_table_cell():
+    a = _atoms_two_spans()
+    # a noise span landing inside a table header cell
+    a["atoms"]["spans"].append(
+        {"text": "Concepto", "bbox": {"x": 35.0, "y": 165.0, "w": 50.0, "h": 7.0},
+         "font_size": 9.0, "is_bold": True, "case_class": "Title"})
+    a["atoms"]["blocks"] = [
+        {"label": "table", "content_layer": "body", "heading_level": None,
+         "bbox": {"x": 0.0, "y": 0.0, "w": 600.0, "h": 800.0},
+         "cells": [[{"bbox": {"x": 33.0, "y": 163.0, "w": 83.0, "h": 7.5},
+                     "column_header": True, "row_header": False}]]},
+    ]
+    rows, _ = build_page_rows(_golden_with_two_kv(), a)
+    noise = [r for r in rows if r["text"] == "Concepto"][0]
+    assert noise["docling_present"] == 0          # still no full docling signal
+    assert noise["docling_column_header"] == 1     # recovered from the enclosing cell
+    assert noise["docling_row_header"] == 0
+
+
+# ---------------------------------------------------------------------------
 # Task 2 — new feature columns in FIELDS
 # ---------------------------------------------------------------------------
 def test_fields_has_new_docling_and_signature_columns():

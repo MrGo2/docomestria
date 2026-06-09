@@ -525,6 +525,11 @@ def build_page_rows(golden: dict, atoms: dict):
                 row["docling_heading_level"] = hl if hl is not None else ""
                 row["docling_content_layer"] = blk.get("content_layer") or ""
             row["rect_is_signature_field"] = 1 if point_in_any_bbox(cx, cy, _sig_bboxes) else 0
+            if row["docling_present"] == 0:
+                cell = find_enclosing_cell(bb, _blocks)
+                if cell is not None:
+                    row["docling_column_header"] = 1 if cell.get("column_header") else 0
+                    row["docling_row_header"] = 1 if cell.get("row_header") else 0
         fs = row["font_size"]
         row["font_size_ratio"] = (fs / median_font) if (median_font and isinstance(fs, (int, float))) else ""
         partial.append((it, row))
