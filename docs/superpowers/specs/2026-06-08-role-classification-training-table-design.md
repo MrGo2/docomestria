@@ -31,6 +31,11 @@ The goldens are **page-level JSONs** (one file per PDF page), not one file per d
   count is unexpectedly low (guards against a silently-empty glob).
 - Each golden page-file has a sibling atoms file at
   `.planning/extraction/atoms/<stem>-p<NN>.atoms.json`.
+- **Legacy format:** ~20 of the 66 page-files predate the `structure` tree and carry only
+  top-level `sections`/`kv_pairs` (which lack per-engine evidence). These are **skipped
+  with a loud report** this round — they cannot supply the feature vector — leaving ~46
+  structure-format pages. Re-scaffolding the legacy pages is a follow-up. A structure-format
+  golden missing its atoms file is a **hard error** (abort before writing), not a skip.
 
 ## Unit of a row
 

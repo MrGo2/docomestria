@@ -133,7 +133,15 @@ def content_flags(text: str) -> dict:
     }
 ```
 
-> NOTE: Copy the regex patterns verbatim from `scripts/extract_atoms.py:41-46`. If they differ from the block above, the file's versions win — they are the ones that produced the existing atoms. Verify by eye before saving.
+> CRITICAL — MOVE, DON'T RETYPE: the regex block above is **illustrative only**. The
+> existing atoms were produced by the exact regexes at `scripts/extract_atoms.py:41-46` and
+> the functions at `:49-82`. **Physically cut those exact lines** and paste them into
+> `text_features.py` (renaming `_case_class`→`case_class`, `_content_flags`→`content_flags`).
+> Do not hand-retype the regexes — any drift in the `/ - € ¥ % IBAN NIF` patterns silently
+> changes feature semantics. After moving, verify:
+> `python3 -c "import ast,sys; ast.parse(open('src/docomestria/text_features.py').read())"`
+> and confirm the 6 regex lines are byte-identical to the originals (e.g. `git diff` of the
+> deleted lines vs the added ones).
 
 - [ ] **Step 4: Run test to verify it passes**
 
@@ -274,17 +282,24 @@ def _fmt(field_name: str, value) -> str:
 
 
 def write_csv(rows: list[dict], path) -> None:
-    """Write rows to `path` atomically (temp + rename). Byte-deterministic."""
+    """Write rows to `path` atomically (temp + rename). Byte-deterministic.
+
+    Uses csv.writer for RFC-correct quoting: the provenance `text` field can
+    contain commas, embedded newlines or CRs (real corpus has both), and the
+    writer quotes those cells so the column layout never breaks. Cell *values*
+    are pre-formatted by `_fmt` (bool->0/1, float->4dp, missing->"") first.
+    """
     path = os.fspath(path)
     tmp = path + ".tmp"
-    with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
-        fh.write(",".join(FIELDS) + "\n")
+    with open(tmp, "w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh, lineterminator="\n", quoting=csv.QUOTE_MINIMAL)
+        w.writerow(FIELDS)
         for r in rows:
-            fh.write(",".join(_fmt(f, r.get(f, "")) for f in FIELDS) + "\n")
+            w.writerow([_fmt(f, r.get(f, "")) for f in FIELDS])
     os.replace(tmp, path)
 ```
 
-> NOTE: We use a hand-rolled writer (not `csv.writer`) so the missing-sentinel, bool, float-precision and `\n` policy are explicit and byte-stable. None of the values in this table contain commas or quotes (text provenance is the only free field; see Task 7 where `text` commas are stripped to keep the CSV unquoted-safe).
+> NOTE: `_fmt` enforces the missing-sentinel / bool / float-precision policy; `csv.writer(lineterminator="\n", QUOTE_MINIMAL)` enforces the newline dialect and quotes only cells that need it. Same rows in → byte-identical CSV out. Because the writer handles commas/newlines, Task 7 does NOT strip commas from `text`.
 
 - [ ] **Step 4: Run test to verify it passes**
 
@@ -394,7 +409,7 @@ def signal_features(signal: dict | None) -> dict:
         "docling_row_header": 1 if (dl or {}).get("row_header") else 0,
         "inside_rect": 1 if (signal or {}).get("rect") else 0,
         "colon_present": 1 if (signal or {}).get("colon_signal") else 0,
-        "engine_agreement": (signal or {}).get("engine_agreement", 0) if signal else 0,
+        "engine_agreement": ((signal or {}).get("engine_agreement") or 0),
         "span_id": (lp or {}).get("span_id") if lp else None,
     }
     out.update(_onehot_case(case))
@@ -666,6 +681,7 @@ class Item:
     row_idx: str = ""
     col_id: str = ""
     compound_span: int = 0
+    pair_id: str = ""           # links a key+value emitted from the same pair
     # filled later in build_page_rows:
     unresolved: int = 0
 
@@ -701,13 +717,14 @@ def _emit_pair(pair, path, items):
     val_sig = _as_signal(ev.get("value")) if isinstance(ev.get("value"), dict) else _as_signal(ev)
     key = Item(text=pair.get("label", ""), role="key",
                bbox=pair.get("label_bbox"), signal=lab_sig,
-               node_path=path + ".key", source_node_type="kv")
+               node_path=path + ".key", source_node_type="kv", pair_id=path)
     val = Item(text=pair.get("value", ""), role="value",
                bbox=pair.get("bbox"), signal=val_sig,
-               node_path=path + ".value", source_node_type="kv")
-    # compound: key and value share one liteparse span
-    ks = (lab_sig or {}).get("liteparse", {}).get("span_id") if lab_sig else None
-    vs = (val_sig or {}).get("liteparse", {}).get("span_id") if val_sig else None
+               node_path=path + ".value", source_node_type="kv", pair_id=path)
+    # initial compound detection (both signals present); recomputed in
+    # build_page_rows after rederive resolves label-only keys.
+    ks = ((lab_sig or {}).get("liteparse") or {}).get("span_id") if lab_sig else None
+    vs = ((val_sig or {}).get("liteparse") or {}).get("span_id") if val_sig else None
     if ks is not None and ks == vs:
         key.compound_span = val.compound_span = 1
     items.append(key)
@@ -991,7 +1008,7 @@ def _item_to_partial_row(it: Item, pdf: str, page) -> dict:
     sf = signal_features(sig)
     row = {f: "" for f in FIELDS}
     row.update({
-        "pdf": pdf, "page": page, "text": it.text.replace(",", " ").strip(),
+        "pdf": pdf, "page": page, "text": it.text.strip(),
         "node_path": it.node_path, "source_node_type": it.source_node_type,
         "in_table": it.in_table, "table_id": it.table_id,
         "row_idx": it.row_idx, "col_id": it.col_id, "role": it.role,
@@ -1032,10 +1049,23 @@ def build_page_rows(golden: dict, atoms: dict):
             else:
                 unresolved += 1
 
+    # recompute compound_span now that label-only keys are resolved: a pair is
+    # compound iff its emitted items share exactly one liteparse span_id.
+    by_pair: dict = {}
+    for it in items:
+        if it.pair_id:
+            by_pair.setdefault(it.pair_id, []).append(it)
+    for grp in by_pair.values():
+        sids = [((m.signal or {}).get("liteparse") or {}).get("span_id") for m in grp]
+        sids = [s for s in sids if s is not None]
+        compound = 1 if len(sids) >= 2 and len(set(sids)) == 1 else 0
+        for m in grp:
+            m.compound_span = compound
+
     consumed = set()
     annotated: list[tuple[str, dict]] = []
     for it in items:
-        sid = (it.signal or {}).get("liteparse", {}).get("span_id") if it.signal else None
+        sid = ((it.signal or {}).get("liteparse") or {}).get("span_id")
         if sid is not None:
             consumed.add(sid)
         if it.bbox:
@@ -1079,7 +1109,11 @@ def build_page_rows(golden: dict, atoms: dict):
             row["gap_below"] = max(0.0, nxt["y"] - (row["y"] + (row["h"] or 0)))
         if nxt and isinstance(row["font_size"], (int, float)) and isinstance(nxt["font_size"], (int, float)) and nxt["font_size"]:
             row["font_ratio_vs_below"] = row["font_size"] / nxt["font_size"]
-        row["bold_above_nonbold_below"] = 1 if (row["is_bold"] == 1 or row["is_bold"] is True) and nxt and not (nxt["is_bold"] == 1 or nxt["is_bold"] is True) else 0
+        # only decide bold-above/nonbold-below when the next row's bold is KNOWN
+        cur_bold = row["is_bold"] in (1, True)
+        nxt_known = nxt is not None and nxt["is_bold"] in (0, 1, True, False)
+        nxt_bold = nxt is not None and nxt["is_bold"] in (1, True)
+        row["bold_above_nonbold_below"] = 1 if (cur_bold and nxt_known and not nxt_bold) else 0
 
     rows = [row for _, row in partial]
     diag = {"unresolved_keys": unresolved,
@@ -1088,7 +1122,10 @@ def build_page_rows(golden: dict, atoms: dict):
     return rows, diag
 ```
 
-> NOTE on `text` commas: provenance `text` has commas replaced by spaces (`it.text.replace(",", " ")`) so the unquoted CSV stays column-stable. Spanish amounts like `14.990,00` lose the comma in the *provenance* column only — the content features (`digit_ratio`, `n_numeric_tokens`, `has_currency`) are computed from the original `it.text` before this, so signal is preserved.
+> NOTE on `text`: provenance `text` is kept raw (only surrounding whitespace stripped).
+> Commas and embedded newlines are preserved and safely quoted by `csv.writer` (Task 2), so
+> Spanish amounts like `14.990,00` survive intact. Content features (`digit_ratio`,
+> `n_numeric_tokens`, `has_currency`) are computed from the original `it.text`.
 
 - [ ] **Step 4: Run test to verify it passes**
 
@@ -1142,6 +1179,16 @@ OUT = OUT_DIR / "role_table.csv"
 MIN_EXPECTED_PAGES = 50  # corpus is 66 page-files; fail loud if the glob is near-empty
 
 
+def _has_structure(golden: dict) -> bool:
+    """True for structure-format goldens (a non-empty `structure` tree).
+
+    Legacy goldens carry only top-level `sections`/`kv_pairs` (no per-engine
+    evidence) and must be skipped — walking them would emit nothing and turn
+    every atom on the page into noise.
+    """
+    return isinstance(golden.get("structure"), list) and len(golden["structure"]) > 0
+
+
 def main() -> int:
     golden_files = sorted(GOLDEN_DIR.glob("*.json"))
     if len(golden_files) < MIN_EXPECTED_PAGES:
@@ -1150,13 +1197,17 @@ def main() -> int:
         return 1
 
     all_rows = []
-    totals = {"unresolved_keys": 0, "noise_atoms": 0, "pages": 0, "missing_atoms": 0}
+    totals = {"unresolved_keys": 0, "noise_atoms": 0, "pages": 0}
+    legacy_skipped: list[str] = []
+    missing_atoms: list[str] = []
     for gp in golden_files:
         golden = json.loads(gp.read_text(encoding="utf-8"))
+        if not _has_structure(golden):
+            legacy_skipped.append(gp.name)
+            continue
         atoms_path = ATOMS_DIR / f"{gp.stem}.atoms.json"
         if not atoms_path.exists():
-            totals["missing_atoms"] += 1
-            print(f"WARN: no atoms for {gp.name}; skipping", file=sys.stderr)
+            missing_atoms.append(gp.name)   # a STRUCTURE golden with no atoms = error
             continue
         atoms = json.loads(atoms_path.read_text(encoding="utf-8"))
         rows, diag = build_page_rows(golden, atoms)
@@ -1172,6 +1223,19 @@ def main() -> int:
         r["y"] if r["y"] != "" else 9.9, r["x"] if r["x"] != "" else 9.9,
     ))
 
+    # A structure-format golden with no atoms is a hard error — abort before
+    # writing so we never emit a partial table.
+    if missing_atoms:
+        print(f"ERROR: {len(missing_atoms)} structure goldens have no atoms file:",
+              file=sys.stderr)
+        for n in missing_atoms:
+            print(f"  - {n}", file=sys.stderr)
+        return 1
+    if totals["pages"] == 0:
+        print("ERROR: no structure-format goldens processed; nothing to write.",
+              file=sys.stderr)
+        return 1
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     write_csv(all_rows, OUT)
 
@@ -1186,8 +1250,12 @@ def main() -> int:
     for role in sorted(other):
         print(f"  {role:<16} {hist[role]}  (UNEXPECTED)")
     print(f"\nunresolved_keys={totals['unresolved_keys']}  "
-          f"noise_atoms={totals['noise_atoms']}  "
-          f"missing_atoms_pages={totals['missing_atoms']}")
+          f"noise_atoms={totals['noise_atoms']}")
+    if legacy_skipped:
+        print(f"\nSKIPPED {len(legacy_skipped)} legacy goldens (no `structure` tree — "
+              f"re-scaffold to include them):")
+        for n in legacy_skipped:
+            print(f"  - {n}")
     return 0
 
 
@@ -1198,7 +1266,7 @@ if __name__ == "__main__":
 - [ ] **Step 2: Run it over the real corpus**
 
 Run: `python3 scripts/build_training_table.py`
-Expected: prints `Wrote N rows from ~66 pages`, a histogram with non-zero counts for `key`, `value`, `noise` (at minimum), and `unresolved_keys` low (single/low-double digits, not hundreds). No `(UNEXPECTED)` roles. No traceback.
+Expected: prints `Wrote N rows from ~46 pages` (the ~20 legacy goldens are listed under "SKIPPED … legacy goldens"), a histogram with non-zero counts for `key`, `value`, `noise` (at minimum), and `unresolved_keys` low (single/low-double digits, not hundreds). No `(UNEXPECTED)` roles. Exit code 0. No traceback. (If it exits 1 with "structure goldens have no atoms", generate the missing atoms first or investigate — that is a real error, not legacy.)
 
 - [ ] **Step 3: Sanity-check the output exists and is non-trivial**
 
@@ -1259,7 +1327,7 @@ git commit -m "test: determinism guard for training-table builder"
 ## Final Verification (Definition of Done)
 
 - [ ] `pytest tests/test_training_table.py tests/test_text_features.py -v` — all green.
-- [ ] `python3 scripts/build_training_table.py` runs clean over ~66 pages, prints histogram + `unresolved_keys`/`noise_atoms` counts, no `(UNEXPECTED)` roles.
+- [ ] `python3 scripts/build_training_table.py` runs clean over ~46 structure pages (exit 0), prints histogram + `unresolved_keys`/`noise_atoms` counts + the list of ~20 skipped legacy goldens, no `(UNEXPECTED)` roles.
 - [ ] CSV is byte-identical across two runs (`BYTE-IDENTICAL`).
 - [ ] Spot-check 3 rows against the viewer: start `PYTHONPATH=src python3 scripts/view_goldens.py --port 8772`, pick a page, find 3 rows in the CSV by `text`, confirm their `role` and `is_bold`/`font_size` match what the page shows.
 - [ ] Row count ≈ (annotated items + unmatched atoms) across the corpus — sanity, not exact.
