@@ -1,152 +1,120 @@
-# Live Engine-Fusion Substrate — Design (v2, post-review)
+# Job A — Production Live-Feature Pipeline & Retrain (v3)
 
 **Date:** 2026-06-09
 **Branch:** `feature/structural-extraction`
-**Status:** Design — pending review (rewritten after Codex review of v1 found 3 blockers)
+**Status:** Design — pending review
+**Supersedes** the v1/v2 "fusion substrate" framing (see *Reframe* below). Filename kept
+for git continuity; the project is now the live-feature pipeline + retrain.
 
 ## Purpose
 
-Produce, for every text item on a **live** PDF, the same fused three-engine "signal"
-the trained Job A role classifier consumes — a signal that today exists **only offline**
-in the golden builder. Then **prove faithfulness** by rebuilding the feature table from
-the live path and re-running the model's own cross-validation, requiring macro-F1 ≥ 0.86
-(offline baseline 0.88).
+Build the **live feature pipeline** that computes role-classification features for
+production PDFs directly from the three engines, **retrain** the role classifier on those
+live-computable features (labeled from the golden annotations), and validate it with the
+model's own cross-validation. The output is a role classifier trained on **exactly the
+features production computes** — ready to wire into the live extractor (separate follow-on).
 
-This delivers the substrate and its proof. It does **not** wire the model into the live
-extractor (separate follow-on, "A-wiring").
+## Reframe — why v3 differs from v1/v2
 
-## Why v1 was wrong (review corrections)
+v1/v2 tried to reproduce the offline *golden* features live so the **existing** 0.88 model
+would run unchanged. Two Codex reviews showed the golden feature construction is deeply
+coupled to the atoms/annotation world and even encodes **quirks the model relies on** — e.g.
+`colon_present` is `1` even when no colon exists (286/381 golden cases;
+`golden/cell_linker.py:81` emits `{present: False}`, but `signal_features`
+`golden/training_table.py:114` counts any dict as present). Faithfully reproducing that —
+bugs included — is intricate and wrong-headed.
 
-A Codex review + re-investigation corrected three false assumptions:
-
-1. **A fusion layer already exists and ships in production** — `src/docomestria/fusion.py`
-   `fuse_from_engines(lite_items, docling_blocks, visual_rects) -> FusedItem` (used by
-   `pipeline/_stream.py:98,136`, `pipeline/pipeline.py:158`). **But it is VisualRect-only.**
-   `FusedItem` (`models.py:111`) carries `font_size`, `docling_label/heading_level`, an
-   enclosing-box id — and **none** of the model's strongest signals: no `is_bold`, no
-   `case_class`, no `colon_present`, no char-based `engine_agreement` (the model's #2
-   feature, importance 0.21). Wrapping it would feed the model ~6 blank/wrong features, so
-   the live score would not reflect 0.88. → **build new**, do not wrap.
-
-2. **A live engine capability is missing entirely.** `colon_present` and the pdfplumber
-   side of `engine_agreement` are computed from pdfplumber **raw characters**
-   (`golden/engine_data.py:64`, `golden/cell_linker.py:82`). The production pdfplumber
-   engine (`engines/pdfplumber.py`) exposes **only** `extract_visual_rects` — **no live
-   char/word extraction exists.** Adding it is work item #1.
-   - Note: `value_extent` is **not** a model feature (annotation artifact) — we do **not**
-     need it. Only `colon_present` + per-item pdfplumber char/word *presence* are needed.
-
-3. **The v1 acceptance gate was invalid.** `role_model.pkl` is refit on **all** rows
-   (`role_classifier.py:111`); the 0.8799 is pooled out-of-fold from
-   `evaluate_oof(df, n_splits=5, random_state=0)` under GroupKFold-by-pdf
-   (`role_classifier.py:67`). Scoring the .pkl on the golden PDFs is in-sample (inflated),
-   not comparable. The faithful gate **rebuilds the feature table from the live path and
-   re-runs `evaluate_oof`** — never scores the .pkl.
+**Decision (user-approved): don't match golden. Build clean live features, retrain on them,
+measure honestly.** The production model *should* train on what production computes, not on
+golden-only artifacts.
 
 ## Scope
 
 ### In scope
-1. **Live char emitter** — add char/word extraction to `engines/pdfplumber.py` (per-page
-   chars/words with bbox), so `colon_present` and pdfplumber per-item presence exist
-   outside the atoms cache.
-2. **Shared feature-row function** — factor the pure per-item signal→feature-row
-   computation out of `golden/training_table.py:build_page_rows` into a shared function
-   (new `src/docomestria/feature_rows.py`), imported by **both** the golden builder and the
-   live path. Golden behavior must be preserved (byte-parity, below).
-3. **Live signal-builder** — new `src/docomestria/live_signals.py`:
-   `build_signals(lite_items, docling_blocks, visual_rects, chars) -> list[signal]`
-   producing per-item signal dicts shaped exactly like the golden ones. Reuses `fusion.py`'s
-   geometric matching for the parts it covers (Docling block via IoU, containing rect,
-   table cell) and **adds** the missing fields: `is_bold` (from `font_name` via
-   `classify.is_bold`), `case_class` (from text), `colon_present` + pdfplumber presence
-   (from chars), `engine_agreement` (count of the three engines per item),
-   `rect_is_signature_field` (from `VisualRect.rect_type == "signature_field"`).
-4. **Alignment + faithful gate harness** — align live LiteParse spans to golden truth roles
-   (normalized-text + bbox overlap ≥ 0.30, reusing `_overlap_frac` `training_table.py:122`
-   and `_norm` `engine_data.py:25`); build the feature table via the live path; run
-   `evaluate_oof`; assert macro-F1 ≥ 0.86. On failure, emit a per-feature divergence report
-   (live table vs golden table for aligned items) to localize the drift.
+1. **Live char emitter** — `engines/pdfplumber.py`: per-page chars/words with bboxes. The
+   pdfplumber engine currently exposes only `extract_visual_rects`; char/word output is
+   needed for a real colon flag, per-item pdfplumber presence, and char-bbox geometry.
+2. **Live feature builder** — per-item features for a live PDF from `{liteparse spans,
+   docling blocks, visual rects, chars}`. Same feature **schema** as the current model
+   where live-computable; **drop** features that can't be computed live **and** have ~0
+   importance (`docling_column_header`/`row_header` = 0.0 importance in the model report).
+   Reuse `fusion.py` geometric helpers (`_best_docling_block`, `_smallest_containing_rect`,
+   `_find_cell`) and pure golden helpers by import; pull `docling_content_layer` /
+   `rect_type` directly from the raw `DoclingBlock`/`VisualRect` (not via the lossy
+   `FusedItem`). `is_bold` from `font_name` (reuse `classify.is_bold`); `case_class` from
+   text; **`colon_present` = a real colon test** (fixing the golden quirk).
+3. **Label transfer** — attach golden truth roles to live items. LiteParse is deterministic
+   for a given PDF, so a live span maps to its golden role by span identity, with a
+   normalized-text + bbox-overlap ≥ 0.30 fallback (reuse `_overlap_frac`
+   `training_table.py:122`, `_norm` `engine_data.py:25`). Track and report **coverage**
+   (aligned share, per role and per page).
+4. **Retrain + evaluate** — run `evaluate_oof(df)` (GroupKFold-by-pdf — the exact protocol
+   that produced 0.88, `role_classifier.py:67`) on the live-feature table → pooled-OOF
+   macro-F1 + per-role. Fit the final model on all rows for the artifact.
 
 ### Out of scope (follow-on "A-wiring")
 - Production model loader under `src/`; replacing `classify()` with model inference.
-- 7→5 role-vocabulary mapping (`signature`/`table_header` have no `ItemKind`); `ItemKind`/
+- 7→5 role-vocabulary mapping (`signature`/`table_header` have no `ItemKind`);
   `candidates.py` changes.
-- Regression-benchmark (5-PDF Azure DI + ParseBench) production before/after.
-
-This project **ends** when the live-path feature table holds macro-F1 ≥ 0.86 under
-`evaluate_oof`.
+- Regression-benchmark (5-PDF Azure DI + ParseBench) before/after.
 
 ## Architecture
 
 ```
 src/docomestria/
 ├── engines/pdfplumber.py   (CHANGE — add char/word extraction)
-├── fusion.py               (REUSE — geometric matching; ships in pipeline, untouched)
-├── feature_rows.py         (NEW — shared pure signal→feature-row fn)
-├── live_signals.py         (NEW — build_signals(...): live golden-shaped signals)
-├── golden/training_table.py(REFACTOR — call shared feature_rows; behavior-preserving)
-└── training/role_classifier.py (REUSE — evaluate_oof for the gate)
+├── fusion.py               (REUSE helpers — geometric matching; untouched)
+├── live_features.py        (NEW — build_live_feature_table(engine outputs) → rows)
+├── golden/training_table.py(REUSE pure helpers by import; NOT modified)
+└── training/role_classifier.py (REUSE — evaluate_oof + fit_final_model)
+scripts/
+└── build_live_feature_table.py / train_live_role_classifier.py  (NEW — gate + artifact)
 ```
+
+The golden builder is **not modified** (no byte-parity guard needed). We import its pure,
+already-reusable helpers; we do not fork or rewrite them.
 
 ### Data flow
 ```
 PDF → engines: liteparse spans + docling blocks + visual rects + NEW chars
-    → live_signals.build_signals(...)        → per-item golden-shaped signals   (NEW)
-    → feature_rows (shared)                   → feature table                    (shared)
-    → [gate] align to golden truth → evaluate_oof (GroupKFold) → macro-F1 ≥ 0.86
+    → live_features.build(...)              → per-item live features            (NEW)
+    → label transfer (golden roles)         → labeled live-feature table        (NEW)
+    → evaluate_oof (GroupKFold)             → pooled-OOF macro-F1 + per-role     (gate)
+    → fit_final_model(all rows)            → production-ready model artifact
 ```
-
-The engine-**join** legitimately differs between golden (atoms + annotation anchors) and
-live (engine geometry + chars); that is expected. What is **shared** is the downstream
-signal→feature computation — the part that must be identical to avoid drift.
 
 ## Acceptance gate (definition of done)
 
-1. For the golden PDFs, build per-item signals via the **live** path (`build_signals`).
-2. Align each live item to a golden truth role (norm-text + overlap ≥ 0.30); unmatched
-   live items are excluded from scoring (reported, not silently dropped).
-3. Build the feature table from these live signals via the shared `feature_rows`.
-4. Run `evaluate_oof(df)` (GroupKFold-by-pdf, the same protocol that produced 0.88).
-5. **PASS if pooled-OOF macro-F1 ≥ 0.86.** On failure, the divergence report names which
-   features differ from the golden-path table for aligned items.
+1. Build the live-feature table for the golden PDFs and transfer golden roles.
+2. **Coverage floor** (guards against a biased subset): ≥ 90% of golden labeled items
+   align overall, and ≥ 70% per role. Below floor → gate **FAILS** (the score would be on
+   an unrepresentative subset), independent of macro-F1.
+3. `evaluate_oof` pooled macro-F1 **≥ 0.85**, and **every role F1 > 0.5** (all usable).
+4. Report: per-role F1, coverage table, and feature-importance readout (to confirm live
+   features carry the signal — and that no alignment artifact leaks).
 
-The harness lives under `scripts/` (and a thinned integration test); it does **not** load
-the refit `.pkl`.
-
-## Behavior-preserving guard
-
-The only golden change is extracting a pure feature-row function and having
-`build_page_rows` call it. After the refactor, regenerate the golden training table and
-assert byte-parity against a **committed baseline fixture** pinned to an immutable SHA
-(never a relative git ref). Any intended diff must be documented and the fixture re-pinned.
+The model fit on all aligned rows is the deliverable artifact for A-wiring.
 
 ## Risks
 
-1. **Char-derived feature parity (primary).** `colon_present` and the pdfplumber share of
-   `engine_agreement` are rebuilt live from a new char emitter; they may not match the
-   golden values, and `engine_agreement` is the #2 feature. The gate is designed to catch
-   exactly this; the divergence report localizes it. This is the main reason the gate could
-   return < 0.86 and send us back to the emitter.
-2. **Docling per-cell header flags absent live.** `docling_column_header`/`row_header` are
-   per-cell in golden but `DoclingBlock` has no per-cell header info, so they would be
-   blank live. **Impact: negligible** — both features have **0.0 importance** in the model
-   report. We leave them blank and document it.
-3. **Alignment ambiguity.** Live LiteParse spans are not 1:1 with golden annotated items.
-   The matcher (norm-text + overlap ≥ 0.30) mirrors `rederive_signal`/`noise_items`; items
-   with no match are excluded from the gate score and reported, so the gate stays honest
-   about coverage.
+1. **Live feature quality < golden → lower macro-F1.** Char-bbox geometry, a corrected
+   colon flag, and live engine pairing may yield a weaker (or simply different) model.
+   `evaluate_oof` measures this directly and honestly; the importance/coverage report
+   localizes any weak feature. If < 0.85, we fix the emitter/feature, not the metric.
+2. **Alignment coverage.** Too few live items matching golden labels shrinks/biases the
+   training set. The coverage floor in the gate guards this explicitly.
+3. **Engine availability at inference.** Some pages may lack a Docling block or pdfplumber
+   chars; features must degrade gracefully via the `*_present` flags (the model already
+   trained across varied presence).
 
 ## Testing
-- **Unit:** char emitter (fixtured page → chars/words with bbox); `build_signals`
-  (fixtured engine outputs → expected signal dict, covering item-in-no-block, item-in-cell,
-  item-over-signature-rect, missing-engine); the shared `feature_rows` (signal → row).
-- **Integration:** the gate harness — live feature table → `evaluate_oof` ≥ 0.86 on the
-  golden set.
-- **Regression guard:** golden-table byte-parity vs the committed baseline fixture.
+- **Unit:** char emitter (fixtured page → chars/words+bbox); live feature builder
+  (fixtured engine outputs → expected feature row, incl. item-in-cell, over-signature-rect,
+  missing-engine); label-transfer matcher (live span ↔ golden role, incl. no-match).
+- **Integration:** the gate — live table → `evaluate_oof` ≥ 0.85 + coverage floor met.
 
 ## Open questions for review
-- Pass bar 0.86 — right tolerance, or 0.87 (stricter) / 0.85 (looser)?
-- Shared feature fn at `src/docomestria/feature_rows.py` (neutral root) vs inside `golden/`
-  — recommendation: neutral root, since live is not "golden."
-- Char emitter: extend `engines/pdfplumber.py` in place vs a sibling `engines/pdfplumber_chars.py`
-  — recommendation: in place, it's the same engine boundary.
+- Acceptance: 0.85 macro-F1 + per-role > 0.5 — right bar, or 0.86?
+- Coverage floor: 90% overall / 70% per role — sensible, or tune?
+- Reuse golden helpers by import vs copy — recommendation: import the pure ones
+  (`_overlap_frac`, `_norm`, `signal_features` sub-helpers, `is_bold`); don't fork.
