@@ -142,7 +142,10 @@ def _point_in_bbox(px: float, py: float, bb: dict) -> bool:
 
 
 def find_enclosing_block(item_bbox: dict, blocks: list[dict]) -> dict | None:
-    """Smallest-area Docling block whose bbox contains the item's center. None if outside all."""
+    """Smallest-area Docling block whose bbox contains the item's center. None if outside all.
+
+    Ties on equal area resolve to first-in-list order (deterministic given stable block order).
+    """
     cx, cy = _bbox_center(item_bbox)
     best = None
     best_area = None
@@ -164,7 +167,7 @@ def signature_rect_bboxes(rects: list[dict], page_h: float) -> list[dict]:
         if not bb:
             continue
         if _is_signature(bb["w"], bb["h"], bb["y"], page_h):
-            out.append(bb)
+            out.append({**bb})
     return out
 
 
@@ -517,14 +520,16 @@ def build_page_rows(golden: dict, atoms: dict):
             row["h"] = bb["h"] / ph
             cx = (bb["x"] + bb["w"] / 2) / pw
             row["is_centered"] = 1 if abs(cx - 0.5) <= _CENTER_TOL else 0
-            cx, cy = _bbox_center(bb)
+            # raw point-space center, matching block/rect bbox coordinates
+            raw_cx, raw_cy = _bbox_center(bb)
             blk = find_enclosing_block(bb, _blocks)
             if blk is not None:
                 row["docling_label"] = blk.get("label") or ""
                 hl = blk.get("heading_level")
                 row["docling_heading_level"] = hl if hl is not None else ""
                 row["docling_content_layer"] = blk.get("content_layer") or ""
-            row["rect_is_signature_field"] = 1 if point_in_any_bbox(cx, cy, _sig_bboxes) else 0
+            row["rect_is_signature_field"] = 1 if point_in_any_bbox(raw_cx, raw_cy, _sig_bboxes) else 0
+            # only recover headers for non-Docling items; real docling signals already set these
             if row["docling_present"] == 0:
                 cell = find_enclosing_cell(bb, _blocks)
                 if cell is not None:
