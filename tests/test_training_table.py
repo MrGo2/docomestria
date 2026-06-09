@@ -323,3 +323,24 @@ def test_build_page_rows_survives_null_liteparse_signal():
     atoms = {"atoms": {"spans": [], "rects": []}}
     rows, diag = build_page_rows(golden, atoms)   # must not raise
     assert any(r["role"] == "noise" for r in rows)
+
+
+def test_build_page_rows_drops_nonstring_text_cells():
+    # a table cell whose value is a footnote-reference object {"ref": ...}
+    golden = {
+        "pdf": "D", "page": 1, "page_size_pt": [600.0, 800.0],
+        "structure": [{
+            "type": "table", "id": "t", "columns": [{"id": "label"}, {"id": "value"}],
+            "rows": [{
+                "label": {"text": "Concepto", "evidence": {"liteparse": None},
+                          "bbox": {"x": 1, "y": 9, "w": 2, "h": 2}},
+                "value": {"text": {"ref": "nota_1"}, "evidence": {"liteparse": None},
+                          "bbox": {"x": 4, "y": 9, "w": 2, "h": 2}},
+            }],
+        }],
+    }
+    atoms = {"atoms": {"spans": [], "rects": []}}
+    rows, diag = build_page_rows(golden, atoms)   # must not raise
+    assert diag["dropped_nonstr_text"] == 1
+    assert all(isinstance(r["text"], str) for r in rows)
+    assert any(r["text"] == "Concepto" for r in rows)
