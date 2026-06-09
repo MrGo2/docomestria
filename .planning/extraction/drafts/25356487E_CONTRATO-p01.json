@@ -3418,6 +3418,98 @@
               }
             },
             {
+              "label": "D. (representante)",
+              "value": "LUIS LAGARES PUIG",
+              "y_hint": 366.7,
+              "x_hint": 326.0,
+              "evidence": {
+                "label": {
+                  "text": "D. (representante)",
+                  "row_y_hint": 366.7,
+                  "x_hint": null,
+                  "pdfplumber": null,
+                  "liteparse": null,
+                  "docling": null,
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null
+                },
+                "value": {
+                  "text": "LUIS LAGARES PUIG",
+                  "row_y_hint": 366.7,
+                  "x_hint": 326.0,
+                  "pdfplumber": {
+                    "bbox": {
+                      "x": 459.8630528,
+                      "y": 368.7226528,
+                      "w": 99.57833600000004,
+                      "h": 9.630400000000009
+                    },
+                    "char_indices": [
+                      983,
+                      984,
+                      985,
+                      986,
+                      987,
+                      988,
+                      989,
+                      990,
+                      991,
+                      992,
+                      993,
+                      994,
+                      995,
+                      996,
+                      997,
+                      998,
+                      999
+                    ],
+                    "n_chars": 17,
+                    "row_y": 367.93999999999943
+                  },
+                  "liteparse": {
+                    "span_id": 36,
+                    "bbox": {
+                      "x": 26.95730972290039,
+                      "y": 366.7195739746094,
+                      "w": 532.4840698242188,
+                      "h": 12.037994384765625
+                    },
+                    "case_class": "mixed",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/texts/35",
+                    "bbox": {
+                      "x": 26.957312,
+                      "y": 370.57168959999996,
+                      "w": 532.4840768000001,
+                      "h": 7.293744952978102
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
+                  "rect": null,
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 459.8630528,
+                    "y": 368.7226528,
+                    "w": 99.57833600000004,
+                    "h": 9.630400000000009
+                  },
+                  "engine_agreement": 3
+                }
+              },
+              "bbox": {
+                "x": 459.8630528,
+                "y": 368.7226528,
+                "w": 99.57833600000004,
+                "h": 9.630400000000009
+              }
+            },
+            {
               "label": "NIF",
               "value": "35063208F",
               "y_hint": 383.4,
@@ -4005,33 +4097,33 @@
           ],
           "container_bbox": {
             "x": 26.957312,
-            "y": 369.0019344,
-            "w": 479.59392,
-            "h": 43.837580799999955
+            "y": 368.7226528,
+            "w": 532.4840768,
+            "h": 44.116862399999945
           },
           "evidence": {
             "title_signal": null,
             "container_signal": {
               "container_bbox": {
                 "x": 26.957312,
-                "y": 369.0019344,
-                "w": 479.59392,
-                "h": 43.837580799999955
+                "y": 368.7226528,
+                "w": 532.4840768,
+                "h": 44.116862399999945
               },
               "pdfplumber_rect": null,
               "docling_block": null,
               "edges_inside": {
-                "vertical": 1070,
-                "horizontal": 1070
+                "vertical": 1222,
+                "horizontal": 1222
               },
               "colons_inside": 0,
               "container_score": 1
             },
             "structural_signals": {
               "kind": "kv_group",
-              "n_pairs": 5,
+              "n_pairs": 6,
               "layout": "stacked_vertical",
-              "same_row_ratio": 0.2
+              "same_row_ratio": 0.3333333333333333
             }
           }
         }
@@ -4044,9 +4136,9 @@
       },
       "container_bbox": {
         "x": 26.957312,
-        "y": 369.0019344,
-        "w": 479.59392,
-        "h": 43.837580799999955
+        "y": 368.7226528,
+        "w": 532.4840768,
+        "h": 44.116862399999945
       },
       "evidence": {
         "title_signal": {
@@ -4108,15 +4200,15 @@
         "container_signal": {
           "container_bbox": {
             "x": 26.957312,
-            "y": 369.0019344,
-            "w": 479.59392,
-            "h": 43.837580799999955
+            "y": 368.7226528,
+            "w": 532.4840768,
+            "h": 44.116862399999945
           },
           "pdfplumber_rect": null,
           "docling_block": null,
           "edges_inside": {
-            "vertical": 1070,
-            "horizontal": 1070
+            "vertical": 1222,
+            "horizontal": 1222
           },
           "colons_inside": 0,
           "container_score": 1
@@ -4150,30 +4242,71 @@
                   "text": "Vendedor/Intermediario financiero",
                   "row_y_hint": 417.6,
                   "x_hint": null,
-                  "pdfplumber": null,
-                  "liteparse": {
-                    "span_id": 83,
+                  "pdfplumber": {
                     "bbox": {
-                      "x": 581.635986328125,
-                      "y": 435.14007568359375,
-                      "w": 9.0560302734375,
-                      "h": 4.79998779296875
+                      "x": 26.957312,
+                      "y": 419.85044639999995,
+                      "w": 169.38910560000005,
+                      "h": 9.630400000000009
+                    },
+                    "char_indices": [
+                      1095,
+                      1096,
+                      1097,
+                      1098,
+                      1099,
+                      1100,
+                      1101,
+                      1102,
+                      1103,
+                      1104,
+                      1105,
+                      1106,
+                      1107,
+                      1108,
+                      1109,
+                      1110,
+                      1111,
+                      1112,
+                      1113,
+                      1114
+                    ],
+                    "n_chars": 35,
+                    "row_y": 419.57116479999996
+                  },
+                  "liteparse": {
+                    "span_id": 41,
+                    "bbox": {
+                      "x": 26.95730972290039,
+                      "y": 417.5680847167969,
+                      "w": 285.4354248046875,
+                      "h": 11.903167724609375
                     },
                     "case_class": "UPPER",
                     "is_bold": false,
-                    "font_size": 8.0
+                    "font_size": 10.0
                   },
-                  "docling": null,
+                  "docling": {
+                    "cell_ref": "#/texts/39",
+                    "bbox": {
+                      "x": 26.957312,
+                      "y": 421.4202016,
+                      "w": 285.43542559999986,
+                      "h": 7.200299065420609
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
                   "rect": null,
                   "colon_signal": null,
                   "value_extent": null,
                   "cell_bbox": {
-                    "x": 581.635986328125,
-                    "y": 435.14007568359375,
-                    "w": 9.0560302734375,
-                    "h": 4.79998779296875
+                    "x": 26.957312,
+                    "y": 419.85044639999995,
+                    "w": 169.38910560000005,
+                    "h": 9.630400000000009
                   },
-                  "engine_agreement": 1
+                  "engine_agreement": 3
                 },
                 "value": {
                   "text": "FLEXICAR CAPITAL SL.",
@@ -4253,10 +4386,10 @@
                 }
               },
               "label_bbox": {
-                "x": 581.635986328125,
-                "y": 435.14007568359375,
-                "w": 9.0560302734375,
-                "h": 4.79998779296875
+                "x": 26.957312,
+                "y": 419.85044639999995,
+                "w": 169.38910560000005,
+                "h": 9.630400000000009
               },
               "bbox": {
                 "x": 201.46016,
@@ -4428,25 +4561,25 @@
             }
           ],
           "container_bbox": {
-            "x": 26.957312000000012,
+            "x": 26.957312,
             "y": 419.57116479999996,
-            "w": 563.7347046015625,
+            "w": 285.4354256,
             "h": 26.55101280000008
           },
           "evidence": {
             "title_signal": null,
             "container_signal": {
               "container_bbox": {
-                "x": 26.957312000000012,
+                "x": 26.957312,
                 "y": 419.57116479999996,
-                "w": 563.7347046015625,
+                "w": 285.4354256,
                 "h": 26.55101280000008
               },
               "pdfplumber_rect": null,
               "docling_block": null,
               "edges_inside": {
-                "vertical": 1376,
-                "horizontal": 1376
+                "vertical": 909,
+                "horizontal": 910
               },
               "colons_inside": 0,
               "container_score": 1
@@ -4467,9 +4600,9 @@
         "h": 9.630400000000009
       },
       "container_bbox": {
-        "x": 26.957312000000012,
+        "x": 26.957312,
         "y": 419.57116479999996,
-        "w": 563.7347046015625,
+        "w": 285.4354256,
         "h": 26.55101280000008
       },
       "evidence": {
@@ -4540,16 +4673,16 @@
         },
         "container_signal": {
           "container_bbox": {
-            "x": 26.957312000000012,
+            "x": 26.957312,
             "y": 419.57116479999996,
-            "w": 563.7347046015625,
+            "w": 285.4354256,
             "h": 26.55101280000008
           },
           "pdfplumber_rect": null,
           "docling_block": null,
           "edges_inside": {
-            "vertical": 1376,
-            "horizontal": 1376
+            "vertical": 909,
+            "horizontal": 910
           },
           "colons_inside": 0,
           "container_score": 1
@@ -5786,7 +5919,7 @@
             },
             {
               "label": "Capital inicial del préstamo.",
-              "value": "20.780,00€",
+              "value": "20.780,00€€",
               "y_hint": 532.4,
               "evidence": {
                 "label": {
@@ -5860,14 +5993,14 @@
                   "engine_agreement": 3
                 },
                 "value": {
-                  "text": "20.780,00€",
+                  "text": "20.780,00€€",
                   "row_y_hint": 532.4,
                   "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 488.9853824,
                       "y": 534.4425759999999,
-                      "w": 56.01040640000002,
+                      "w": 62.13534080000005,
                       "h": 9.630400000000009
                     },
                     "char_indices": [
@@ -5880,9 +6013,10 @@
                       1482,
                       1483,
                       1484,
-                      1485
+                      1485,
+                      1486
                     ],
-                    "n_chars": 10,
+                    "n_chars": 11,
                     "row_y": 531.1399999999999
                   },
                   "liteparse": {
@@ -5913,14 +6047,14 @@
                     "present": false
                   },
                   "value_extent": {
-                    "boundary_type": "continuation",
-                    "gap_pt": 0.0,
-                    "next_text": "€par"
+                    "boundary_type": "cell_edge",
+                    "gap_pt": 30.731276799999932,
+                    "ends_at_x": 581.852
                   },
                   "cell_bbox": {
                     "x": 488.9853824,
                     "y": 534.4425759999999,
-                    "w": 56.01040640000002,
+                    "w": 62.13534080000005,
                     "h": 9.630400000000009
                   },
                   "engine_agreement": 3
@@ -5935,7 +6069,7 @@
               "bbox": {
                 "x": 488.9853824,
                 "y": 534.4425759999999,
-                "w": 56.01040640000002,
+                "w": 62.13534080000005,
                 "h": 9.630400000000009
               }
             }
@@ -7105,9 +7239,9 @@
       },
       "container_bbox": {
         "x": 26.957312,
-        "y": 369.0019344,
-        "w": 479.59392,
-        "h": 43.837580799999955
+        "y": 368.7226528,
+        "w": 532.4840768,
+        "h": 44.116862399999945
       },
       "_view": "compat_flat"
     },
@@ -7121,9 +7255,9 @@
         "h": 9.630400000000009
       },
       "container_bbox": {
-        "x": 26.957312000000012,
+        "x": 26.957312,
         "y": 419.57116479999996,
-        "w": 563.7347046015625,
+        "w": 285.4354256,
         "h": 26.55101280000008
       },
       "_view": "compat_flat"
@@ -7720,6 +7854,29 @@
       }
     },
     {
+      "label": "D. (representante)",
+      "value": "LUIS LAGARES PUIG",
+      "section": "FINANCIADOR",
+      "band": null,
+      "column_header": null,
+      "row_y": 366.7,
+      "rule": "structured-kv-group",
+      "confidence": "HIGH",
+      "label_bbox": null,
+      "value_bboxes": [
+        {
+          "x": 459.8630528,
+          "y": 368.7226528,
+          "w": 99.57833600000004,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "FINANCIADOR",
+        "engine_agreement": 3
+      }
+    },
+    {
       "label": "NIF",
       "value": "35063208F",
       "section": "FINANCIADOR",
@@ -7841,10 +7998,10 @@
       "rule": "structured-kv-group",
       "confidence": "HIGH",
       "label_bbox": {
-        "x": 581.635986328125,
-        "y": 435.14007568359375,
-        "w": 9.0560302734375,
-        "h": 4.79998779296875
+        "x": 26.957312,
+        "y": 419.85044639999995,
+        "w": 169.38910560000005,
+        "h": 9.630400000000009
       },
       "value_bboxes": [
         {
@@ -8085,7 +8242,7 @@
     },
     {
       "label": "Capital inicial del préstamo.",
-      "value": "20.780,00€",
+      "value": "20.780,00€€",
       "section": "Condiciones económicas",
       "band": null,
       "column_header": null,
@@ -8102,7 +8259,7 @@
         {
           "x": 488.9853824,
           "y": 534.4425759999999,
-          "w": 56.01040640000002,
+          "w": 62.13534080000005,
           "h": 9.630400000000009
         }
       ],
@@ -8309,7 +8466,7 @@
     "n_docling_blocks": 76,
     "n_rects": 7634,
     "kv_pair_breakdown": {
-      "3_eng": 34,
+      "3_eng": 35,
       "2_eng": 1,
       "1_eng": 0,
       "0_eng": 0,

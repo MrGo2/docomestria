@@ -71,8 +71,8 @@ class LiteItem:
 
 @dataclass(frozen=True)
 class WordItem:
-    """One whitespace-delimited word extracted by pdfplumber (for colon tests
-    and per-item pdfplumber presence). Top-left origin, y grows downward."""
+    """One whitespace-delimited word extracted by pdfplumber. Top-left origin,
+    y grows downward."""
 
     text: str
     bbox: BBox

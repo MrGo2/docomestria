@@ -22,6 +22,7 @@
           "evidence": {
             "text": "0006",
             "row_y_hint": 64,
+            "x_hint": null,
             "pdfplumber": {
               "bbox": {
                 "x": 237.91682400000016,
@@ -88,6 +89,7 @@
           "evidence": {
             "text": "CONTRATO DE TARJETA DESPUES BBVA",
             "row_y_hint": 99,
+            "x_hint": null,
             "pdfplumber": {
               "bbox": {
                 "x": 186.62402300000016,
@@ -176,6 +178,7 @@
           "evidence": {
             "text": "0182 - 0539 - 0615 - 00000028350350",
             "row_y_hint": 122,
+            "x_hint": null,
             "pdfplumber": {
               "bbox": {
                 "x": 437.472008,
@@ -265,6 +268,7 @@
           "evidence": {
             "text": "ALBERIC",
             "row_y_hint": 133,
+            "x_hint": null,
             "pdfplumber": {
               "bbox": {
                 "x": 40.94641100000006,
@@ -334,6 +338,7 @@
           "evidence": {
             "text": "04 de Abril de 2017",
             "row_y_hint": 133,
+            "x_hint": null,
             "pdfplumber": {
               "bbox": {
                 "x": 87.61680900000006,
@@ -467,6 +472,7 @@
                   "evidence": {
                     "text": "NIF PERSONA FISICA",
                     "row_y_hint": 180,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 100.454414,
@@ -549,6 +555,7 @@
                   "evidence": {
                     "text": "009786573G",
                     "row_y_hint": 180,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 212.229617,
@@ -625,6 +632,7 @@
                   "evidence": {
                     "text": "JULIO ALVAREZ SALGUERO",
                     "row_y_hint": 199,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 105.18481200000002,
@@ -715,6 +723,7 @@
                   "evidence": {
                     "text": "JULIO ALVAREZ SALGUERO",
                     "row_y_hint": 240,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 105.18478900000011,
@@ -801,6 +810,7 @@
                   "evidence": {
                     "text": "1.000,00",
                     "row_y_hint": 256,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 227.05919899999995,
@@ -875,6 +885,7 @@
                   "evidence": {
                     "text": "900,00",
                     "row_y_hint": 290,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 145.80000099999995,
@@ -947,6 +958,7 @@
                   "evidence": {
                     "text": "SIN RESTRICCIONES",
                     "row_y_hint": 301,
+                    "x_hint": null,
                     "pdfplumber": {
                       "bbox": {
                         "x": 98.20799799999995,
@@ -1304,6 +1316,7 @@
                 "label": {
                   "text": "Límite de Crédito",
                   "row_y_hint": 351,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 152.654416,
@@ -1376,6 +1389,7 @@
                 "value": {
                   "text": "900,00",
                   "row_y_hint": 351,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 218.030415,
@@ -1469,6 +1483,7 @@
                 "label": {
                   "text": "Importes en",
                   "row_y_hint": 351,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 253.627217,
@@ -1526,6 +1541,7 @@
                 "value": {
                   "text": "EUR",
                   "row_y_hint": 351,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 300.326416,
@@ -1616,6 +1632,7 @@
                 "label": {
                   "text": "Sistema de reembolso",
                   "row_y_hint": 351,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 328.334415,
@@ -1691,6 +1708,7 @@
                 "value": {
                   "text": "TOTAL",
                   "row_y_hint": 351,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 413.496015,
@@ -1957,6 +1975,7 @@
                 "label": {
                   "text": "Banco",
                   "row_y_hint": 373,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 181.512001,
@@ -2019,6 +2038,7 @@
                 "value": {
                   "text": "0182",
                   "row_y_hint": 373,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 208.648802,
@@ -2110,6 +2130,7 @@
                 "label": {
                   "text": "Oficina",
                   "row_y_hint": 373,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 233.121601,
@@ -2174,6 +2195,7 @@
                 "value": {
                   "text": "0539",
                   "row_y_hint": 373,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 262.476002,
@@ -2265,6 +2287,7 @@
                 "label": {
                   "text": "D.C.",
                   "row_y_hint": 373,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": null,
                   "docling": null,
@@ -2275,6 +2298,7 @@
                 "value": {
                   "text": "18",
                   "row_y_hint": 373,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 213.096802,
@@ -2348,6 +2372,7 @@
                 "label": {
                   "text": "Núm. Cuenta",
                   "row_y_hint": 373,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 320.745601,
@@ -2415,6 +2440,7 @@
                 "value": {
                   "text": "0201535528",
                   "row_y_hint": 373,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 373.435201,
@@ -2678,6 +2704,7 @@
                 "evidence": {
                   "text": "Primera Tarjeta Emitida",
                   "row_y_hint": 426,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 33.75360299999999,
@@ -2764,6 +2791,7 @@
                 "evidence": {
                   "text": "40,00",
                   "row_y_hint": 426,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 182.728798,
@@ -2837,6 +2865,7 @@
                 "evidence": {
                   "text": "Resto de Tarjetas",
                   "row_y_hint": 443,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 33.75360200000001,
@@ -2918,6 +2947,7 @@
                 "evidence": {
                   "text": "20,00",
                   "row_y_hint": 443,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 182.728798,
@@ -3118,6 +3148,7 @@
                 "evidence": {
                   "text": "Por Consultas en Cajeros no pertenecientes al grupo BBVA y UE en Euros",
                   "row_y_hint": 489,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 64,
@@ -3173,6 +3204,7 @@
                 "evidence": {
                   "text": "0,60",
                   "row_y_hint": 492,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 205.207199,
@@ -3245,6 +3277,7 @@
                 "evidence": {
                   "text": "Por emisión de duplicados",
                   "row_y_hint": 510,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 35.251201000000066,
@@ -3331,6 +3364,7 @@
                 "evidence": {
                   "text": "4,00",
                   "row_y_hint": 510,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 205.207199,
@@ -3545,6 +3579,7 @@
                 "evidence": {
                   "text": "Pago Personalizado",
                   "row_y_hint": 549,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 33.75359300000002,
@@ -3628,6 +3663,7 @@
                 "evidence": {
                   "text": "18,0000",
                   "row_y_hint": 549,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 128.037598,
@@ -3701,6 +3737,7 @@
                 "evidence": {
                   "text": "Detalle en cláusula",
                   "row_y_hint": 549,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 171.74879300000003,
@@ -3786,6 +3823,7 @@
                 "evidence": {
                   "text": "Cuenta de Crédito de la",
                   "row_y_hint": 575,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 34.502394,
@@ -3871,6 +3909,7 @@
                 "evidence": {
                   "text": "22,8000",
                   "row_y_hint": 580,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 128.037598,
@@ -3944,6 +3983,7 @@
                 "evidence": {
                   "text": "Detalle en cláusula",
                   "row_y_hint": 580,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 171.74880200000007,
@@ -4029,6 +4069,7 @@
                 "evidence": {
                   "text": "Pago Total",
                   "row_y_hint": 605,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 32.99759800000007,
@@ -4104,6 +4145,7 @@
                 "evidence": {
                   "text": "22,8000",
                   "row_y_hint": 615,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 128.037598,
@@ -4177,6 +4219,7 @@
                 "evidence": {
                   "text": "Detalle en cláusula",
                   "row_y_hint": 615,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 171.74880200000007,
@@ -4262,6 +4305,7 @@
                 "evidence": {
                   "text": "Moratorio, sobre cuotas",
                   "row_y_hint": 627,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 32.99759799999998,
@@ -4348,6 +4392,7 @@
                 "evidence": {
                   "text": "Detalle en",
                   "row_y_hint": 632,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 120.75119800000006,
@@ -4572,6 +4617,7 @@
                 "evidence": {
                   "text": "Cajeros Grupo BBVA en España",
                   "row_y_hint": 448,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 247.50000400000005,
@@ -4658,6 +4704,7 @@
                 "evidence": {
                   "text": "0,0000",
                   "row_y_hint": 448,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -4730,6 +4777,7 @@
                 "evidence": {
                   "text": "0,00",
                   "row_y_hint": 448,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -4759,14 +4807,14 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[1][2]",
+                    "cell_ref": "#/tables/1/cells[2][5]",
                     "bbox": {
-                      "x": 182.7741779088974,
-                      "y": 424.77924974262714,
-                      "w": 44.40161168575287,
-                      "h": 10.044976562261581
+                      "x": 412.0405150651932,
+                      "y": 448.08912743628025,
+                      "w": 25.72235643863678,
+                      "h": 10.048583537340164
                     },
-                    "column_header": true,
+                    "column_header": false,
                     "row_header": false
                   },
                   "rect": {
@@ -4800,6 +4848,7 @@
                 "evidence": {
                   "text": "3,5000",
                   "row_y_hint": 448,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 495.51120000000003,
@@ -4872,6 +4921,7 @@
                 "evidence": {
                   "text": "3,00",
                   "row_y_hint": 448,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 540.079201,
@@ -4944,6 +4994,7 @@
                 "evidence": {
                   "text": "Cajeros de entidades distintas del Grupo BBVA en España",
                   "row_y_hint": 468,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 59,
@@ -5003,6 +5054,7 @@
                     "ref": "nota_1"
                   },
                   "row_y_hint": 468,
+                  "x_hint": null,
                   "pdfplumber": {
                     "note": "reference to nota_1"
                   },
@@ -5024,6 +5076,7 @@
                     "ref": "nota_1"
                   },
                   "row_y_hint": 468,
+                  "x_hint": null,
                   "pdfplumber": {
                     "note": "reference to nota_1"
                   },
@@ -5045,6 +5098,7 @@
                     "ref": "nota_2"
                   },
                   "row_y_hint": 468,
+                  "x_hint": null,
                   "pdfplumber": {
                     "note": "reference to nota_2"
                   },
@@ -5066,6 +5120,7 @@
                     "ref": "nota_2"
                   },
                   "row_y_hint": 468,
+                  "x_hint": null,
                   "pdfplumber": {
                     "note": "reference to nota_2"
                   },
@@ -5085,6 +5140,7 @@
                 "evidence": {
                   "text": "Cajeros fuera de España",
                   "row_y_hint": 494,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 248.24880700000006,
@@ -5171,6 +5227,7 @@
                 "evidence": {
                   "text": "4,5000",
                   "row_y_hint": 494,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -5243,6 +5300,7 @@
                 "evidence": {
                   "text": "3,00",
                   "row_y_hint": 494,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 495.51120000000003,
@@ -5272,12 +5330,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[4][6]",
+                    "cell_ref": "#/tables/1/cells[5][7]",
                     "bbox": {
-                      "x": 457.93066543340683,
-                      "y": 482.00847697257996,
-                      "w": 17.33939826488495,
-                      "h": 10.223845720291138
+                      "x": 492.8838587999344,
+                      "y": 498.1446112394333,
+                      "w": 27.48197853565216,
+                      "h": 10.12376320362091
                     },
                     "column_header": false,
                     "row_header": false
@@ -5313,6 +5371,7 @@
                 "evidence": {
                   "text": "5,0000",
                   "row_y_hint": 494,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 495.51120000000003,
@@ -5385,6 +5444,7 @@
                 "evidence": {
                   "text": "3,00",
                   "row_y_hint": 494,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 495.51120000000003,
@@ -5414,12 +5474,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[4][6]",
+                    "cell_ref": "#/tables/1/cells[5][7]",
                     "bbox": {
-                      "x": 457.93066543340683,
-                      "y": 482.00847697257996,
-                      "w": 17.33939826488495,
-                      "h": 10.223845720291138
+                      "x": 492.8838587999344,
+                      "y": 498.1446112394333,
+                      "w": 27.48197853565216,
+                      "h": 10.12376320362091
                     },
                     "column_header": false,
                     "row_header": false
@@ -5457,6 +5517,7 @@
                 "evidence": {
                   "text": "Oficinas del Grupo BBVA en España",
                   "row_y_hint": 514,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 248.24880500000006,
@@ -5543,6 +5604,7 @@
                 "evidence": {
                   "text": "0,0000",
                   "row_y_hint": 514,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -5615,6 +5677,7 @@
                 "evidence": {
                   "text": "0,00",
                   "row_y_hint": 514,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -5685,6 +5748,7 @@
                 "evidence": {
                   "text": "3,0000",
                   "row_y_hint": 514,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 495.51120000000003,
@@ -5716,12 +5780,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[5][7]",
+                    "cell_ref": "#/tables/1/cells[6][6]",
                     "bbox": {
-                      "x": 492.8838587999344,
-                      "y": 498.1446112394333,
-                      "w": 27.48197853565216,
-                      "h": 10.12376320362091
+                      "x": 458.3856437802315,
+                      "y": 515.3292710781097,
+                      "w": 16.38831615447998,
+                      "h": 10.261579096317291
                     },
                     "column_header": false,
                     "row_header": false
@@ -5757,6 +5821,7 @@
                 "evidence": {
                   "text": "2,50",
                   "row_y_hint": 514,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 540.079201,
@@ -5829,6 +5894,7 @@
                 "evidence": {
                   "text": "Oficinas en otras Entidades ServiRed",
                   "row_y_hint": 530,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 248.24880200000004,
@@ -5915,6 +5981,7 @@
                 "evidence": {
                   "text": "5,0000",
                   "row_y_hint": 530,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -5946,12 +6013,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[6][5]",
+                    "cell_ref": "#/tables/1/cells[7][5]",
                     "bbox": {
-                      "x": 412.31117618083954,
-                      "y": 515.4901789724827,
-                      "w": 26.46469295024872,
-                      "h": 10.19853800535202
+                      "x": 413.3826134800911,
+                      "y": 531.4793768525124,
+                      "w": 25.515689849853516,
+                      "h": 9.789271473884583
                     },
                     "column_header": false,
                     "row_header": false
@@ -5987,6 +6054,7 @@
                 "evidence": {
                   "text": "3,00",
                   "row_y_hint": 530,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 459.82799900000003,
@@ -6016,12 +6084,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[6][6]",
+                    "cell_ref": "#/tables/1/cells[7][6]",
                     "bbox": {
-                      "x": 458.3856437802315,
-                      "y": 515.3292710781097,
-                      "w": 16.38831615447998,
-                      "h": 10.261579096317291
+                      "x": 458.4651983976364,
+                      "y": 531.3635561466217,
+                      "w": 16.45783305168152,
+                      "h": 10.050151467323303
                     },
                     "column_header": false,
                     "row_header": false
@@ -6057,6 +6125,7 @@
                 "evidence": {
                   "text": "5,0000",
                   "row_y_hint": 530,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -6088,12 +6157,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[6][5]",
+                    "cell_ref": "#/tables/1/cells[7][5]",
                     "bbox": {
-                      "x": 412.31117618083954,
-                      "y": 515.4901789724827,
-                      "w": 26.46469295024872,
-                      "h": 10.19853800535202
+                      "x": 413.3826134800911,
+                      "y": 531.4793768525124,
+                      "w": 25.515689849853516,
+                      "h": 9.789271473884583
                     },
                     "column_header": false,
                     "row_header": false
@@ -6129,6 +6198,7 @@
                 "evidence": {
                   "text": "3,00",
                   "row_y_hint": 530,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 459.82799900000003,
@@ -6158,12 +6228,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[6][6]",
+                    "cell_ref": "#/tables/1/cells[7][6]",
                     "bbox": {
-                      "x": 458.3856437802315,
-                      "y": 515.3292710781097,
-                      "w": 16.38831615447998,
-                      "h": 10.261579096317291
+                      "x": 458.4651983976364,
+                      "y": 531.3635561466217,
+                      "w": 16.45783305168152,
+                      "h": 10.050151467323303
                     },
                     "column_header": false,
                     "row_header": false
@@ -6201,6 +6271,7 @@
                 "evidence": {
                   "text": "Oficinas de otras Entidades Nacionales y Paises",
                   "row_y_hint": 546,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 247.50000500000002,
@@ -6287,6 +6358,7 @@
                 "evidence": {
                   "text": "5,0000",
                   "row_y_hint": 546,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -6318,12 +6390,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[7][5]",
+                    "cell_ref": "#/tables/1/cells[8][5]",
                     "bbox": {
-                      "x": 413.3826134800911,
-                      "y": 531.4793768525124,
-                      "w": 25.515689849853516,
-                      "h": 9.789271473884583
+                      "x": 411.07621175050735,
+                      "y": 548.3634505271912,
+                      "w": 27.85568058490753,
+                      "h": 9.62779676914215
                     },
                     "column_header": false,
                     "row_header": false
@@ -6359,6 +6431,7 @@
                 "evidence": {
                   "text": "3,00",
                   "row_y_hint": 546,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 459.82799900000003,
@@ -6388,12 +6461,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[7][6]",
+                    "cell_ref": "#/tables/1/cells[8][8]",
                     "bbox": {
-                      "x": 458.4651983976364,
-                      "y": 531.3635561466217,
-                      "w": 16.45783305168152,
-                      "h": 10.050151467323303
+                      "x": 536.9404847621918,
+                      "y": 548.1731936335564,
+                      "w": 17.931201457977295,
+                      "h": 10.092905163764954
                     },
                     "column_header": false,
                     "row_header": false
@@ -6429,6 +6502,7 @@
                 "evidence": {
                   "text": "5,0000",
                   "row_y_hint": 546,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -6460,12 +6534,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[7][5]",
+                    "cell_ref": "#/tables/1/cells[8][5]",
                     "bbox": {
-                      "x": 413.3826134800911,
-                      "y": 531.4793768525124,
-                      "w": 25.515689849853516,
-                      "h": 9.789271473884583
+                      "x": 411.07621175050735,
+                      "y": 548.3634505271912,
+                      "w": 27.85568058490753,
+                      "h": 9.62779676914215
                     },
                     "column_header": false,
                     "row_header": false
@@ -6501,6 +6575,7 @@
                 "evidence": {
                   "text": "3,00",
                   "row_y_hint": 546,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 459.82799900000003,
@@ -6530,12 +6605,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[7][6]",
+                    "cell_ref": "#/tables/1/cells[8][8]",
                     "bbox": {
-                      "x": 458.4651983976364,
-                      "y": 531.3635561466217,
-                      "w": 16.45783305168152,
-                      "h": 10.050151467323303
+                      "x": 536.9404847621918,
+                      "y": 548.1731936335564,
+                      "w": 17.931201457977295,
+                      "h": 10.092905163764954
                     },
                     "column_header": false,
                     "row_header": false
@@ -6573,6 +6648,7 @@
                 "evidence": {
                   "text": "Oficinas de Entidades en el Extranjero y U.E.",
                   "row_y_hint": 562,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 248.24880100000001,
@@ -6659,6 +6735,7 @@
                 "evidence": {
                   "text": "5,0000",
                   "row_y_hint": 562,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -6690,12 +6767,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[8][5]",
+                    "cell_ref": "#/tables/1/cells[8][7]",
                     "bbox": {
-                      "x": 411.07621175050735,
-                      "y": 548.3634505271912,
-                      "w": 27.85568058490753,
-                      "h": 9.62779676914215
+                      "x": 492.8730089664459,
+                      "y": 548.40224391222,
+                      "w": 27.21709966659546,
+                      "h": 9.775314688682556
                     },
                     "column_header": false,
                     "row_header": false
@@ -6731,6 +6808,7 @@
                 "evidence": {
                   "text": "3,00",
                   "row_y_hint": 562,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 459.82799900000003,
@@ -6801,6 +6879,7 @@
                 "evidence": {
                   "text": "5,0000",
                   "row_y_hint": 562,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 414.51120000000003,
@@ -6832,12 +6911,12 @@
                     "font_size": 8.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/1/cells[8][5]",
+                    "cell_ref": "#/tables/1/cells[8][7]",
                     "bbox": {
-                      "x": 411.07621175050735,
-                      "y": 548.3634505271912,
-                      "w": 27.85568058490753,
-                      "h": 9.62779676914215
+                      "x": 492.8730089664459,
+                      "y": 548.40224391222,
+                      "w": 27.21709966659546,
+                      "h": 9.775314688682556
                     },
                     "column_header": false,
                     "row_header": false
@@ -6873,6 +6952,7 @@
                 "evidence": {
                   "text": "3,00",
                   "row_y_hint": 562,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 459.82799900000003,
@@ -7046,6 +7126,7 @@
               "label_evidence": {
                 "text": "De apertura sobre excedido en el límite de crédito en tarjeta",
                 "row_y_hint": 670,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 31.500014999999962,
@@ -7123,6 +7204,7 @@
               "value_evidence": {
                 "text": "3,0000 %",
                 "row_y_hint": 670,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 189.51121,
@@ -7155,11 +7237,11 @@
                   "font_size": 7.0
                 },
                 "docling": {
-                  "cell_ref": "#/texts/12",
+                  "cell_ref": "#/texts/14",
                   "bbox": {
-                    "x": 31.500014999999962,
-                    "y": 658.892586,
-                    "w": 279.83299900000003,
+                    "x": 31.500008000000037,
+                    "y": 679.887785,
+                    "w": 282.16659999999996,
                     "h": 6.171911602209889
                   },
                   "column_header": null,
@@ -7211,6 +7293,7 @@
               "label_evidence": {
                 "text": "Por reclamación de posiciones vencidas",
                 "row_y_hint": 681,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 31.500008999999977,
@@ -7288,6 +7371,7 @@
               "value_evidence": {
                 "text": "hasta un máximo de 35,00 EUR por una sola vez",
                 "row_y_hint": 681,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 158.37120899999996,
@@ -7389,6 +7473,7 @@
               "label_evidence": {
                 "text": "Por utilización de la Tarjeta fuera de la Zona Euro",
                 "row_y_hint": 691,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 31.500008000000037,
@@ -7466,6 +7551,7 @@
               "value_evidence": {
                 "text": "3,0000 %",
                 "row_y_hint": 691,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 189.51121,
@@ -7498,11 +7584,11 @@
                   "font_size": 7.0
                 },
                 "docling": {
-                  "cell_ref": "#/texts/12",
+                  "cell_ref": "#/texts/14",
                   "bbox": {
-                    "x": 31.500014999999962,
-                    "y": 658.892586,
-                    "w": 279.83299900000003,
+                    "x": 31.500008000000037,
+                    "y": 679.887785,
+                    "w": 282.16659999999996,
                     "h": 6.171911602209889
                   },
                   "column_header": null,
@@ -7556,6 +7642,7 @@
               "label_evidence": {
                 "text": "Por gestión de aplazamiento de pagos",
                 "row_y_hint": 700,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 31.500017999999898,
@@ -7646,6 +7733,7 @@
               "label_evidence": {
                 "text": "Compensación por cancelación anticipada de deuda",
                 "row_y_hint": 710,
+                "x_hint": null,
                 "pdfplumber": {
                   "bbox": {
                     "x": 31.50001299999994,
@@ -7909,6 +7997,7 @@
           "evidence": {
             "text": "3,0000",
             "row_y_hint": 754,
+            "x_hint": null,
             "pdfplumber": {
               "bbox": {
                 "x": 32.24879599999998,
@@ -8007,11 +8096,11 @@
             "font_size": 7.0
           },
           "docling": {
-            "cell_ref": "#/texts/17",
+            "cell_ref": "#/texts/18",
             "bbox": {
-              "x": 32.24880100000007,
-              "y": 713.2381819999999,
-              "w": 145.41959699999998,
+              "x": 32.248796000000056,
+              "y": 721.2373819999999,
+              "w": 74.7088,
               "h": 6.171911602209889
             },
             "column_header": null,
@@ -8781,7 +8870,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -8810,7 +8900,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -8839,7 +8930,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -8868,7 +8960,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -8897,7 +8990,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -8926,7 +9020,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -8955,7 +9050,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -8984,7 +9080,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9013,7 +9110,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 2,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9042,7 +9140,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 2,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9071,7 +9170,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 3,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9100,7 +9200,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9129,7 +9230,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9158,7 +9260,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9187,7 +9290,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 0,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9209,7 +9313,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 3
+        "engine_agreement": 0,
+        "bucket": "footnote_ref"
       }
     },
     {
@@ -9231,7 +9336,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 3
+        "engine_agreement": 0,
+        "bucket": "footnote_ref"
       }
     },
     {
@@ -9253,7 +9359,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 3
+        "engine_agreement": 0,
+        "bucket": "footnote_ref"
       }
     },
     {
@@ -9275,7 +9382,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 1,
-        "engine_agreement": 3
+        "engine_agreement": 0,
+        "bucket": "footnote_ref"
       }
     },
     {
@@ -9304,7 +9412,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 2,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9333,7 +9442,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 2,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9362,7 +9472,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 2,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9391,7 +9502,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 2,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9420,7 +9532,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 3,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9449,7 +9562,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 3,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9478,7 +9592,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 3,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9507,7 +9622,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 3,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9536,7 +9652,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 4,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9565,7 +9682,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 4,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9594,7 +9712,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 4,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9623,7 +9742,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 4,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9652,7 +9772,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 5,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9681,7 +9802,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 5,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9710,7 +9832,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 5,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9739,7 +9862,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 5,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9768,7 +9892,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 6,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9797,7 +9922,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 6,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9826,7 +9952,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 6,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -9855,7 +9982,8 @@
       "evidence": {
         "path": "Condiciones económicas",
         "row": 6,
-        "engine_agreement": 3
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {

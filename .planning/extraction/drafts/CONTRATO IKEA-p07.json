@@ -37,6 +37,7 @@
                 "evidence": {
                   "text": "Mantenimiento de la Tarjeta IKEA",
                   "row_y_hint": 94,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -123,6 +124,7 @@
                 "evidence": {
                   "text": "0€.",
                   "row_y_hint": 94,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -194,6 +196,7 @@
                 "evidence": {
                   "text": "Duplicado de Tarjeta IKEA",
                   "row_y_hint": 115,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -280,6 +283,7 @@
                 "evidence": {
                   "text": "0€.",
                   "row_y_hint": 116,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -308,12 +312,12 @@
                     "font_size": 9.5
                   },
                   "docling": {
-                    "cell_ref": "#/texts/196",
+                    "cell_ref": "#/texts/198",
                     "bbox": {
                       "x": 272.6480768,
-                      "y": 96.97202560000005,
+                      "y": 118.69820799999991,
                       "w": 12.716943200000003,
-                      "h": 6.782015732142781
+                      "h": 6.782015732142895
                     },
                     "column_header": null,
                     "row_header": null
@@ -351,6 +355,7 @@
                 "evidence": {
                   "text": "Cancelación anticipada de la deuda",
                   "row_y_hint": 137,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -437,6 +442,7 @@
                 "evidence": {
                   "text": "0€.",
                   "row_y_hint": 137,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -465,12 +471,12 @@
                     "font_size": 9.5
                   },
                   "docling": {
-                    "cell_ref": "#/texts/196",
+                    "cell_ref": "#/texts/200",
                     "bbox": {
                       "x": 272.6480768,
-                      "y": 96.97202560000005,
+                      "y": 140.65552000000002,
                       "w": 12.716943200000003,
-                      "h": 6.782015732142781
+                      "h": 6.782015732142895
                     },
                     "column_header": null,
                     "row_header": null
@@ -508,6 +514,7 @@
                 "evidence": {
                   "text": "Retirada de dinero en efectivo a crédito en cajeros, a través de la Tarjeta IKEA",
                   "row_y_hint": 159,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 7,
@@ -563,6 +570,7 @@
                 "evidence": {
                   "text": "5% del importe dispuesto, mínimo 4€",
                   "row_y_hint": 159,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -651,6 +659,7 @@
                 "evidence": {
                   "text": "Retirada de efectivo a crédito a través de teléfono",
                   "row_y_hint": 187,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 10,
@@ -706,6 +715,7 @@
                 "evidence": {
                   "text": "4% del importe dispuesto, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
                   "row_y_hint": 187,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 11,
@@ -720,12 +730,12 @@
                     "font_size": 9.5
                   },
                   "docling": {
-                    "cell_ref": "#/texts/200",
+                    "cell_ref": "#/texts/204",
                     "bbox": {
                       "x": 272.6480768,
-                      "y": 140.65552000000002,
-                      "w": 12.716943200000003,
-                      "h": 6.782015732142895
+                      "y": 189.88612480000006,
+                      "w": 259.28022224000017,
+                      "h": 17.182847732142818
                     },
                     "column_header": null,
                     "row_header": null
@@ -763,6 +773,7 @@
                 "evidence": {
                   "text": "Retirada de efectivo a crédito a través de web",
                   "row_y_hint": 214,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 14,
@@ -818,6 +829,7 @@
                 "evidence": {
                   "text": "4% del importe dispuesto, mínimo 3€, o porcentaje inferior si se indica en la campaña. Importe mínimo de disposición: 100€.",
                   "row_y_hint": 214,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 15,
@@ -875,6 +887,7 @@
                 "evidence": {
                   "text": "Servicio de fraccionamiento del importe de las compras realizadas con modalidad de pago Fin de Mes",
                   "row_y_hint": 241,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 18,
@@ -930,6 +943,7 @@
                 "evidence": {
                   "text": "3% del importe nominal de la compra realizada cuando se fraccione el importe en 3 meses.",
                   "row_y_hint": 241,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 19,
@@ -987,6 +1001,7 @@
                 "evidence": {
                   "text": "Cambio de divisa de las disposiciones o compras realizadas en moneda diferente al euro",
                   "row_y_hint": 281,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 23,
@@ -1042,6 +1057,7 @@
                 "evidence": {
                   "text": "aplicamos el tipo de cambio que la marca de la tarjeta (Visa) tiene publicado en su página web en el momento en que recibimos información de que usted ha realizado la operación incrementado en un 3,95%.",
                   "row_y_hint": 281,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 24,
@@ -1099,6 +1115,7 @@
                 "evidence": {
                   "text": "Reclamación de cuota impagada",
                   "row_y_hint": 330,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1185,6 +1202,7 @@
                 "evidence": {
                   "text": "15€ por los recursos que destinaremos a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 20€. Si después de 15 días se mantiene el impago, podemos enviarle un burofax o equivalente con certificación de contenido y recibo. Actualmente el precio del envío del burofax es de 24 euros y le reclamaremos su coste únicamente en deudas superiores a 300€.",
                   "row_y_hint": 328,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 31,
@@ -1242,6 +1260,7 @@
                 "evidence": {
                   "text": "Envío de documentación relativa al contrato por correo postal a petición de usted",
                   "row_y_hint": 430,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 39,
@@ -1297,6 +1316,7 @@
                 "evidence": {
                   "text": "0,60€ por comunicado.",
                   "row_y_hint": 436,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,

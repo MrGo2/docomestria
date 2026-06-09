@@ -28,6 +28,7 @@
           "evidence": {
             "text": "30",
             "row_y_hint": 89,
+            "x_hint": null,
             "pdfplumber": {
               "bbox": {
                 "x": 272.6480768,
@@ -230,6 +231,7 @@
                 "label": {
                   "text": "Denominación",
                   "row_y_hint": 173,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -299,6 +301,7 @@
                 "value": {
                   "text": "IKEA IBERICA",
                   "row_y_hint": 173,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 174.1868672,
@@ -395,6 +398,7 @@
                 "label": {
                   "text": "Domicilio social",
                   "row_y_hint": 210,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -468,6 +472,7 @@
                 "value": {
                   "text": "AUTOVIA SEVILLA-HUELVA , A-49 41950 CASTILLEJA CUESTA",
                   "row_y_hint": 210,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 174.1868672,
@@ -572,6 +577,7 @@
                 "label": {
                   "text": "Empresa asociada y entidad colaboradora (identidad y domicilio)",
                   "row_y_hint": 246,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 9,
@@ -618,6 +624,7 @@
                 "value": {
                   "text": "Ikea Ibérica, S.A. con CIF A28812618, AVENIDA MATAPIÑONERA , 9 28703 SAN SEBASTIAN DE LOS REYES MADRID",
                   "row_y_hint": 246,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 10,
@@ -689,6 +696,7 @@
                 "label": {
                   "text": "Código del establecimiento",
                   "row_y_hint": 248,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 7,
@@ -735,6 +743,7 @@
                 "value": {
                   "text": "32383005",
                   "row_y_hint": 248,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 174.1868672,
@@ -989,6 +998,7 @@
                 "label": {
                   "text": "Disposición que realiza en este acto",
                   "row_y_hint": 305,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 59.5465856,
@@ -1080,6 +1090,7 @@
                 "label": {
                   "text": "Importe",
                   "row_y_hint": 305,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 273.11033599999996,
@@ -1158,6 +1169,7 @@
                 "label": {
                   "text": "Fecha de vencimiento de la primera cuota",
                   "row_y_hint": 332,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1249,6 +1261,7 @@
                 "label": {
                   "text": "TIN",
                   "row_y_hint": 370,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1323,6 +1336,7 @@
                 "label": {
                   "text": "TAE",
                   "row_y_hint": 370,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 272.6480768,
@@ -1397,6 +1411,7 @@
                 "label": {
                   "text": "Nº de cuotas",
                   "row_y_hint": 408,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,
@@ -1480,6 +1495,7 @@
                 "label": {
                   "text": "Importe 1ª cuota",
                   "row_y_hint": 408,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 237.05411840000002,
@@ -1565,6 +1581,7 @@
                 "label": {
                   "text": "Importe última cuota",
                   "row_y_hint": 408,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 23,
@@ -1625,6 +1642,7 @@
                 "label": {
                   "text": "Importe restantes cuotas",
                   "row_y_hint": 446,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 25,
@@ -1685,6 +1703,7 @@
                 "label": {
                   "text": "Modalidad de pago aplicable",
                   "row_y_hint": 446,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 26,
@@ -1731,6 +1750,7 @@
                 "value": {
                   "text": "Fraccionado",
                   "row_y_hint": 446,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 381.741248,
@@ -1824,6 +1844,7 @@
                 "label": {
                   "text": "Excepcionalidades",
                   "row_y_hint": 486,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 65.093696,

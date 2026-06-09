@@ -37,6 +37,7 @@
                 "evidence": {
                   "text": "Nombre",
                   "row_y_hint": 130,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -108,6 +109,7 @@
                 "evidence": {
                   "text": "NIF",
                   "row_y_hint": 146,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -176,6 +178,7 @@
                 "evidence": {
                   "text": "Dirección",
                   "row_y_hint": 163,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -250,6 +253,7 @@
                 "evidence": {
                   "text": "Teléfono",
                   "row_y_hint": 179,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -323,6 +327,7 @@
                 "evidence": {
                   "text": "E-mail",
                   "row_y_hint": 196,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -457,6 +462,7 @@
                 "evidence": {
                   "text": "Nombre",
                   "row_y_hint": 235,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -528,6 +534,7 @@
                 "evidence": {
                   "text": "NIF",
                   "row_y_hint": 251,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -596,6 +603,7 @@
                 "evidence": {
                   "text": "Dirección",
                   "row_y_hint": 268,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -670,6 +678,7 @@
                 "evidence": {
                   "text": "Teléfono",
                   "row_y_hint": 284,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -743,6 +752,7 @@
                 "evidence": {
                   "text": "E-mail",
                   "row_y_hint": 301,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 37.8204032,
@@ -1023,6 +1033,7 @@
           "evidence": {
             "text": "202501120127220",
             "row_y_hint": 603,
+            "x_hint": null,
             "pdfplumber": {
               "bbox": {
                 "x": 51.457049600000005,
@@ -1117,6 +1128,7 @@
                 "label": {
                   "text": "Cuenta de pago y domiciliación (IBAN)",
                   "row_y_hint": 679,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 23,
@@ -1163,6 +1175,7 @@
                 "value": {
                   "text": "ES16 2100 3876 9101 0041 9936",
                   "row_y_hint": 679,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 51.457049600000005,
@@ -1267,6 +1280,7 @@
                 "label": {
                   "text": "Tarjeta para la domiciliación",
                   "row_y_hint": 671,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": null,
                   "docling": {
@@ -1294,6 +1308,7 @@
                 "value": {
                   "text": "NO",
                   "row_y_hint": 671,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 359.783936,

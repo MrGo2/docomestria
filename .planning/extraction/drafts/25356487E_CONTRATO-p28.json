@@ -450,43 +450,12 @@
             }
           },
           "value": {
-            "text": "Interés de demora: TIN de cada disposición + dos puntos porcentuales.",
+            "text": "Interés de demora: TIN de cada disposición + dos puntos porcentuales. Compensación por costes de cobro ante un impago (retraso en el pago): 35€ por los recursos que CaixaBank Payments & Consumer destinará a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 60€. Si después de 15 días se mantiene el impago, CaixaBank Payments & Consumer podrá enviar al titular un burofax o equivalente con certificación de contenido y recibo. Actualmente tiene un coste de 24€ y CaixaBank Payments & Consumer reclamará al titular su coste en deudas superiores a 300€.",
             "evidence": {
-              "text": "Interés de demora: TIN de cada disposición + dos puntos porcentuales.",
+              "text": "Interés de demora: TIN de cada disposición + dos puntos porcentuales. Compensación por costes de cobro ante un impago (retraso en el pago): 35€ por los recursos que CaixaBank Payments & Consumer destinará a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 60€. Si después de 15 días se mantiene el impago, CaixaBank Payments & Consumer podrá enviar al titular un burofax o equivalente con certificación de contenido y recibo. Actualmente tiene un coste de 24€ y CaixaBank Payments & Consumer reclamará al titular su coste en deudas superiores a 300€.",
               "row_y_hint": 113,
-              "x_hint": null,
-              "pdfplumber": {
-                "bbox": {
-                  "x": 163.323776,
-                  "y": 115.30445504,
-                  "w": 199.15667200000001,
-                  "h": 7.704319999999939
-                },
-                "char_indices": [
-                  510,
-                  511,
-                  512,
-                  513,
-                  514,
-                  515,
-                  516,
-                  517,
-                  518,
-                  519,
-                  520,
-                  521,
-                  522,
-                  523,
-                  524,
-                  525,
-                  526,
-                  527,
-                  528,
-                  529
-                ],
-                "n_chars": 59,
-                "row_y": 115.30445504
-              },
+              "x_hint": 163.3,
+              "pdfplumber": null,
               "liteparse": {
                 "span_id": 14,
                 "bbox": {
@@ -522,18 +491,18 @@
               "colon_signal": null,
               "value_extent": null,
               "cell_bbox": {
-                "x": 163.323776,
-                "y": 115.30445504,
-                "w": 199.15667200000001,
-                "h": 7.704319999999939
+                "x": 163.3237762451172,
+                "y": 113.763671875,
+                "w": 199.15663146972656,
+                "h": 9.23748779296875
               },
-              "engine_agreement": 3
+              "engine_agreement": 2
             },
             "bbox": {
-              "x": 163.323776,
-              "y": 115.30445504,
-              "w": 199.15667200000001,
-              "h": 7.704319999999939
+              "x": 163.3237762451172,
+              "y": 113.763671875,
+              "w": 199.15663146972656,
+              "h": 9.23748779296875
             }
           }
         }
@@ -541,7 +510,7 @@
       "bbox": {
         "x": 26.95730972290039,
         "y": 39.33990478515625,
-        "w": 335.52313827709963,
+        "w": 335.52309799194336,
         "h": 84.35467529296875
       },
       "evidence": {
@@ -577,7 +546,18 @@
             "n_chars": 18,
             "row_y": 30.0176326400001
           },
-          "liteparse": null,
+          "liteparse": {
+            "span_id": 0,
+            "bbox": {
+              "x": 26.95730972290039,
+              "y": 28.476806640625,
+              "w": 51.12587356567383,
+              "h": 9.23748779296875
+            },
+            "case_class": "lower",
+            "is_bold": false,
+            "font_size": 8.0
+          },
           "docling": {
             "cell_ref": "#/texts/1030",
             "bbox": {
@@ -595,13 +575,13 @@
             "w": 51.12586752,
             "h": 7.704319999999939
           },
-          "engine_agreement": 2
+          "engine_agreement": 3
         },
         "container_signal": {
           "container_bbox": {
             "x": 26.95730972290039,
             "y": 39.33990478515625,
-            "w": 335.52313827709963,
+            "w": 335.52309799194336,
             "h": 84.35467529296875
           },
           "pdfplumber_rect": null,
@@ -704,17 +684,17 @@
                 "evidence": {
                   "text": "Sí",
                   "row_y_hint": 178,
-                  "x_hint": null,
+                  "x_hint": 164.7,
                   "pdfplumber": {
                     "bbox": {
-                      "x": 65.70233728,
-                      "y": 177.47831744000007,
-                      "w": 4.4453926400000086,
+                      "x": 164.7105536,
+                      "y": 179.3273542400001,
+                      "w": 5.262050560000006,
                       "h": 7.704319999999939
                     },
                     "char_indices": [
-                      1109,
-                      1110
+                      1194,
+                      1195
                     ],
                     "n_chars": 2,
                     "row_y": 177.47831744000007
@@ -742,21 +722,29 @@
                     "column_header": null,
                     "row_header": null
                   },
-                  "rect": null,
+                  "rect": {
+                    "rect_id": "p28-r5",
+                    "bbox": {
+                      "x": 162.6303872,
+                      "y": 178.9652512,
+                      "w": 15.485683199999983,
+                      "h": 9.938572800000088
+                    }
+                  },
                   "colon_signal": null,
                   "value_extent": null,
                   "cell_bbox": {
-                    "x": 65.70233728,
-                    "y": 177.47831744000007,
-                    "w": 4.4453926400000086,
+                    "x": 164.7105536,
+                    "y": 179.3273542400001,
+                    "w": 5.262050560000006,
                     "h": 7.704319999999939
                   },
                   "engine_agreement": 3
                 },
                 "bbox": {
-                  "x": 65.70233728,
-                  "y": 177.47831744000007,
-                  "w": 4.4453926400000086,
+                  "x": 164.7105536,
+                  "y": 179.3273542400001,
+                  "w": 5.262050560000006,
                   "h": 7.704319999999939
                 }
               }
@@ -815,7 +803,7 @@
                 "evidence": {
                   "text": "Sí",
                   "row_y_hint": 203,
-                  "x_hint": null,
+                  "x_hint": 164.7,
                   "pdfplumber": {
                     "bbox": {
                       "x": 164.7105536,
@@ -1233,7 +1221,18 @@
                     "n_chars": 138,
                     "row_y": 326.5569094399999
                   },
-                  "liteparse": null,
+                  "liteparse": {
+                    "span_id": 80,
+                    "bbox": {
+                      "x": 161.93699645996094,
+                      "y": 326.40283203125,
+                      "w": 396.209716796875,
+                      "h": 9.345367431640625
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 8.0
+                  },
                   "docling": {
                     "cell_ref": "#/texts/1058",
                     "bbox": {
@@ -1262,7 +1261,7 @@
                     "w": 396.2100646400004,
                     "h": 7.812180479999938
                   },
-                  "engine_agreement": 2
+                  "engine_agreement": 3
                 },
                 "bbox": {
                   "x": 161.93699840000002,
@@ -1496,7 +1495,17 @@
                     "is_bold": false,
                     "font_size": 8.0
                   },
-                  "docling": null,
+                  "docling": {
+                    "cell_ref": "#/texts/1060",
+                    "bbox": {
+                      "x": 161.93699840000002,
+                      "y": 401.0807968,
+                      "w": 23.860279039999995,
+                      "h": 5.760239252336476
+                    },
+                    "column_header": null,
+                    "row_header": null
+                  },
                   "rect": {
                     "rect_id": "p28-r10",
                     "bbox": {
@@ -1514,7 +1523,7 @@
                     "w": 23.860279040000023,
                     "h": 7.704319999999996
                   },
-                  "engine_agreement": 2
+                  "engine_agreement": 3
                 },
                 "bbox": {
                   "x": 161.93699840000002,
@@ -1567,24 +1576,24 @@
                 "row_y": 167.26720432000002
               },
               "liteparse": {
-                "span_id": 33,
+                "span_id": 35,
                 "bbox": {
-                  "x": 29.499738693237305,
-                  "y": 165.53375244140625,
-                  "w": 136.9356231689453,
-                  "h": 10.39215087890625
+                  "x": 164.71055603027344,
+                  "y": 177.78656005859375,
+                  "w": 5.4546661376953125,
+                  "h": 9.23748779296875
                 },
-                "case_class": "lower",
+                "case_class": "Title",
                 "is_bold": false,
-                "font_size": 9.0
+                "font_size": 8.0
               },
               "docling": {
-                "cell_ref": "#/texts/1042",
+                "cell_ref": "#/texts/1053",
                 "bbox": {
-                  "x": 29.499737600000003,
-                  "y": 168.6799840000001,
-                  "w": 136.93562063999997,
-                  "h": 6.4802691588784
+                  "x": 164.7105536,
+                  "y": 180.58315840000012,
+                  "w": 5.262050560000006,
+                  "h": 5.760239252336305
                 },
                 "column_header": null,
                 "row_header": null
@@ -1830,62 +1839,31 @@
                     }
                   },
                   "value": {
-                    "text": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492",
+                    "text": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492 e inscrita con el nº 8776 en el Registro de Establecimientos de Crédito del Banco de España.",
                     "evidence": {
-                      "text": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492",
+                      "text": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492 e inscrita con el nº 8776 en el Registro de Establecimientos de Crédito del Banco de España.",
                       "row_y_hint": 446,
-                      "x_hint": null,
-                      "pdfplumber": {
-                        "bbox": {
-                          "x": 161.9369984,
-                          "y": 448.36220863999995,
-                          "w": 395.94041343999993,
-                          "h": 7.812180479999995
-                        },
-                        "char_indices": [
-                          3964,
-                          3965,
-                          3966,
-                          3967,
-                          3968,
-                          3969,
-                          3970,
-                          3971,
-                          3972,
-                          3973,
-                          3974,
-                          3975,
-                          3976,
-                          3977,
-                          3978,
-                          3979,
-                          3980,
-                          3981,
-                          3982,
-                          3983
-                        ],
-                        "n_chars": 115,
-                        "row_y": 447.1399999999996
-                      },
+                      "x_hint": 161.9,
+                      "pdfplumber": null,
                       "liteparse": {
-                        "span_id": 101,
+                        "span_id": 102,
                         "bbox": {
-                          "x": 25.57053565979004,
+                          "x": 161.93699645996094,
                           "y": 446.8214111328125,
-                          "w": 22.804792404174805,
-                          "h": 9.237457275390625
+                          "w": 395.9404296875,
+                          "h": 9.3453369140625
                         },
                         "case_class": "lower",
                         "is_bold": false,
                         "font_size": 8.0
                       },
                       "docling": {
-                        "cell_ref": "#/texts/1063",
+                        "cell_ref": "#/texts/1072",
                         "bbox": {
-                          "x": 25.5705344,
+                          "x": 161.9369984,
                           "y": 449.6180128,
-                          "w": 22.8047872,
-                          "h": 5.760239252336476
+                          "w": 395.94041344000016,
+                          "h": 13.618645652336454
                         },
                         "column_header": null,
                         "row_header": null
@@ -1894,18 +1872,18 @@
                       "colon_signal": null,
                       "value_extent": null,
                       "cell_bbox": {
-                        "x": 161.9369984,
-                        "y": 448.36220863999995,
-                        "w": 395.94041343999993,
-                        "h": 7.812180479999995
+                        "x": 161.93699645996094,
+                        "y": 446.8214111328125,
+                        "w": 395.9404296875,
+                        "h": 9.3453369140625
                       },
-                      "engine_agreement": 3
+                      "engine_agreement": 2
                     },
                     "bbox": {
-                      "x": 161.9369984,
-                      "y": 448.36220863999995,
-                      "w": 395.94041343999993,
-                      "h": 7.812180479999995
+                      "x": 161.93699645996094,
+                      "y": 446.8214111328125,
+                      "w": 395.9404296875,
+                      "h": 9.3453369140625
                     }
                   }
                 },
@@ -2072,9 +2050,9 @@
               ],
               "bbox": {
                 "x": 25.5705344,
-                "y": 448.36220863999995,
-                "w": 532.3068774399999,
-                "h": 26.99593728000002
+                "y": 446.8214111328125,
+                "w": 532.3068917474609,
+                "h": 28.53673478718747
               },
               "evidence": {
                 "title_signal": {
@@ -2145,9 +2123,9 @@
                 "container_signal": {
                   "container_bbox": {
                     "x": 25.5705344,
-                    "y": 448.36220863999995,
-                    "w": 532.3068774399999,
-                    "h": 26.99593728000002
+                    "y": 446.8214111328125,
+                    "w": 532.3068917474609,
+                    "h": 28.53673478718747
                   },
                   "pdfplumber_rect": null,
                   "docling_block": null,
@@ -2180,9 +2158,9 @@
           },
           "container_bbox": {
             "x": 25.5705344,
-            "y": 448.36220863999995,
-            "w": 532.3068774399999,
-            "h": 26.99593728000002
+            "y": 446.8214111328125,
+            "w": 532.3068917474609,
+            "h": 28.53673478718747
           },
           "evidence": {
             "title_signal": {
@@ -2253,9 +2231,9 @@
             "container_signal": {
               "container_bbox": {
                 "x": 25.5705344,
-                "y": 448.36220863999995,
-                "w": 532.3068774399999,
-                "h": 26.99593728000002
+                "y": 446.8214111328125,
+                "w": 532.3068917474609,
+                "h": 28.53673478718747
               },
               "pdfplumber_rect": null,
               "docling_block": null,
@@ -3456,9 +3434,9 @@
       },
       "container_bbox": {
         "x": 25.5705344,
-        "y": 448.36220863999995,
+        "y": 446.8214111328125,
         "w": 532.3376947200006,
-        "h": 259.05005568
+        "h": 260.59085318718746
       },
       "evidence": {
         "title_signal": {
@@ -3529,9 +3507,9 @@
         "container_signal": {
           "container_bbox": {
             "x": 25.5705344,
-            "y": 448.36220863999995,
+            "y": 446.8214111328125,
             "w": 532.3376947200006,
-            "h": 259.05005568
+            "h": 260.59085318718746
           },
           "pdfplumber_rect": null,
           "docling_block": null,
@@ -3748,9 +3726,9 @@
       },
       "container_bbox": {
         "x": 25.5705344,
-        "y": 448.36220863999995,
+        "y": 446.8214111328125,
         "w": 532.3376947200006,
-        "h": 259.05005568
+        "h": 260.59085318718746
       },
       "_view": "compat_flat"
     }
@@ -3848,7 +3826,7 @@
     },
     {
       "label": "Costes en caso de pagos atrasados. La no realización de un pago podrá acarrearle graves consecuencias (por ejemplo, la inclusión en Sistemas de Información Crediticia, así como el embargo y la venta forzosa de sus bienes).",
-      "value": "Interés de demora: TIN de cada disposición + dos puntos porcentuales.",
+      "value": "Interés de demora: TIN de cada disposición + dos puntos porcentuales. Compensación por costes de cobro ante un impago (retraso en el pago): 35€ por los recursos que CaixaBank Payments & Consumer destinará a poner al día la deuda impagada. Un mismo impago no podrá generar más de una compensación. Sólo se cobrará esta compensación en deudas iguales o superiores a 60€. Si después de 15 días se mantiene el impago, CaixaBank Payments & Consumer podrá enviar al titular un burofax o equivalente con certificación de contenido y recibo. Actualmente tiene un coste de 24€ y CaixaBank Payments & Consumer reclamará al titular su coste en deudas superiores a 300€.",
       "section": null,
       "band": "Costes relacionados",
       "column_header": "Valor",
@@ -3863,17 +3841,17 @@
       },
       "value_bboxes": [
         {
-          "x": 163.323776,
-          "y": 115.30445504,
-          "w": 199.15667200000001,
-          "h": 7.704319999999939
+          "x": 163.3237762451172,
+          "y": 113.763671875,
+          "w": 199.15663146972656,
+          "h": 9.23748779296875
         }
       ],
       "evidence": {
         "path": "",
         "row": 3,
-        "engine_agreement": 3,
-        "bucket": "3_eng"
+        "engine_agreement": 2,
+        "bucket": "2_eng"
       }
     },
     {
@@ -3893,9 +3871,9 @@
       },
       "value_bboxes": [
         {
-          "x": 65.70233728,
-          "y": 177.47831744000007,
-          "w": 4.4453926400000086,
+          "x": 164.7105536,
+          "y": 179.3273542400001,
+          "w": 5.262050560000006,
           "h": 7.704319999999939
         }
       ],
@@ -4022,8 +4000,8 @@
       "evidence": {
         "path": "4. Otros aspectos jurídicos importantes",
         "row": 4,
-        "engine_agreement": 2,
-        "bucket": "2_eng"
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
@@ -4082,13 +4060,13 @@
       "evidence": {
         "path": "4. Otros aspectos jurídicos importantes",
         "row": 6,
-        "engine_agreement": 2,
-        "bucket": "2_eng"
+        "engine_agreement": 3,
+        "bucket": "3_eng"
       }
     },
     {
       "label": "Registro",
-      "value": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492",
+      "value": "CaixaBank Payments & Consumer (NIF A-08980153) está inscrita en el Registro Mercantil de Madrid, Tomo 36.556, Folio 29, Hoja M-656.492 e inscrita con el nº 8776 en el Registro de Establecimientos de Crédito del Banco de España.",
       "section": "a) Relativa al prestamista",
       "band": "Relativa al prestamista",
       "column_header": "Valor",
@@ -4103,17 +4081,17 @@
       },
       "value_bboxes": [
         {
-          "x": 161.9369984,
-          "y": 448.36220863999995,
-          "w": 395.94041343999993,
-          "h": 7.812180479999995
+          "x": 161.93699645996094,
+          "y": 446.8214111328125,
+          "w": 395.9404296875,
+          "h": 9.3453369140625
         }
       ],
       "evidence": {
         "path": "5. Información adicional en el caso de comercialización a distancia de servicios financieros/a) Relativa al prestamista",
         "row": 0,
-        "engine_agreement": 3,
-        "bucket": "3_eng"
+        "engine_agreement": 2,
+        "bucket": "2_eng"
       }
     },
     {
@@ -4326,7 +4304,8 @@
       "binary_si_no_value",
       "no_aplica_value",
       "thematic_subsections",
-      "logalty_sidebar_noise"
+      "logalty_sidebar_noise",
+      "value_x_hint_disambiguation"
     ],
     "needs_review": false,
     "document_type": "informacion_normalizada_europea_credito_consumo"

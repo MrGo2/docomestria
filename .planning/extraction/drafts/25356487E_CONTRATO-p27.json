@@ -393,19 +393,90 @@
       "id": "nro_solicitud",
       "label": "Nº SOLICITUD",
       "value": "202207590875462",
-      "y_hint": 318.9,
+      "y_hint": 90.4,
       "x_hint": 318.9,
       "label_x_hint": 318.9,
+      "label_bbox": {
+        "x": 318.87399680000004,
+        "y": 91.96036544000003,
+        "w": 44.122640639999986,
+        "h": 7.704319999999939
+      },
       "evidence": {
         "text": "202207590875462",
-        "row_y_hint": 318.9,
+        "row_y_hint": 90.4,
         "x_hint": 318.9,
-        "pdfplumber": null,
-        "liteparse": null,
-        "docling": null,
+        "pdfplumber": {
+          "bbox": {
+            "x": 365.56217599999997,
+            "y": 91.76005311999995,
+            "w": 64.25402880000001,
+            "h": 7.7043200000000525
+          },
+          "char_indices": [
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144
+          ],
+          "n_chars": 15,
+          "row_y": 91.76005311999995
+        },
+        "liteparse": {
+          "span_id": 7,
+          "bbox": {
+            "x": 318.87396240234375,
+            "y": 90.41949462890625,
+            "w": 110.94223022460938,
+            "h": 9.23748779296875
+          },
+          "case_class": "UPPER",
+          "is_bold": false,
+          "font_size": 8.0
+        },
+        "docling": {
+          "cell_ref": "#/texts/949",
+          "bbox": {
+            "x": 318.87399680000004,
+            "y": 93.21616960000006,
+            "w": 110.94220799999965,
+            "h": 5.760239252336305
+          },
+          "column_header": null,
+          "row_header": null
+        },
         "rect": null,
-        "colon_signal": null,
-        "value_extent": null
+        "colon_signal": {
+          "present": false
+        },
+        "value_extent": {
+          "boundary_type": "row_end",
+          "gap_pt": null
+        },
+        "cell_bbox": {
+          "x": 365.56217599999997,
+          "y": 91.76005311999995,
+          "w": 64.25402880000001,
+          "h": 7.7043200000000525
+        },
+        "engine_agreement": 3
+      },
+      "bbox": {
+        "x": 365.56217599999997,
+        "y": 91.76005311999995,
+        "w": 64.25402880000001,
+        "h": 7.7043200000000525
       }
     },
     {
@@ -2243,6 +2314,7 @@
           "value": "No aplica Reserva de dominio Cuando aplique.",
           "y_hint": 561.5,
           "x_hint": 163.3,
+          "label_x_hint": 27.0,
           "label_bbox": {
             "x": 26.957312,
             "y": 563.6958790399999,
@@ -3385,14 +3457,26 @@
       "section": null,
       "band": null,
       "column_header": null,
-      "row_y": 318.9,
+      "row_y": 90.4,
       "rule": "structured-kv-leaf",
       "confidence": "HIGH",
-      "label_bbox": null,
-      "value_bboxes": [],
+      "label_bbox": {
+        "x": 318.87399680000004,
+        "y": 91.96036544000003,
+        "w": 44.122640639999986,
+        "h": 7.704319999999939
+      },
+      "value_bboxes": [
+        {
+          "x": 365.56217599999997,
+          "y": 91.76005311999995,
+          "w": 64.25402880000001,
+          "h": 7.7043200000000525
+        }
+      ],
       "evidence": {
         "path": "",
-        "engine_agreement": 0
+        "engine_agreement": 3
       }
     },
     {
@@ -4053,10 +4137,10 @@
     "n_docling_blocks": 90,
     "n_rects": 166,
     "kv_pair_breakdown": {
-      "3_eng": 12,
+      "3_eng": 13,
       "2_eng": 13,
       "1_eng": 3,
-      "0_eng": 1,
+      "0_eng": 0,
       "empty": 0,
       "footnote": 0,
       "footnote_ref": 0

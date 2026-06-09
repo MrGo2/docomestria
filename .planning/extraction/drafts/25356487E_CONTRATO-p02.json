@@ -352,12 +352,67 @@
               "text": "TAE/ TAE Variable",
               "row_y_hint": 165.9,
               "x_hint": null,
-              "pdfplumber": null,
-              "liteparse": null,
-              "docling": null,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 261.553856,
+                  "y": 168.15031199999999,
+                  "w": 74.780056,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  350,
+                  351,
+                  352,
+                  353,
+                  354,
+                  355,
+                  356,
+                  357,
+                  358,
+                  359,
+                  360,
+                  361,
+                  362,
+                  363,
+                  364,
+                  365
+                ],
+                "n_chars": 16,
+                "row_y": 167.8710304
+              },
+              "liteparse": {
+                "span_id": 11,
+                "bbox": {
+                  "x": 261.5538635253906,
+                  "y": 165.86798095703125,
+                  "w": 115.48773193359375,
+                  "h": 11.90313720703125
+                },
+                "case_class": "Title",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/81",
+                "bbox": {
+                  "x": 261.553856,
+                  "y": 169.72006720000002,
+                  "w": 115.4877568,
+                  "h": 7.200299065420495
+                },
+                "column_header": null,
+                "row_header": null
+              },
               "rect": null,
               "colon_signal": null,
-              "value_extent": null
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 261.553856,
+                "y": 168.15031199999999,
+                "w": 74.780056,
+                "h": 9.630400000000009
+              },
+              "engine_agreement": 3
             },
             "value": {
               "text": "11,58",
@@ -404,8 +459,14 @@
                 "row_header": null
               },
               "rect": null,
-              "colon_signal": null,
-              "value_extent": null,
+              "colon_signal": {
+                "present": false
+              },
+              "value_extent": {
+                "boundary_type": "continuation",
+                "gap_pt": 2.7350336000000084,
+                "next_text": "%de demo"
+              },
               "cell_bbox": {
                 "x": 336.90210559999997,
                 "y": 167.8710304,
@@ -414,6 +475,12 @@
               },
               "engine_agreement": 3
             }
+          },
+          "label_bbox": {
+            "x": 261.553856,
+            "y": 168.15031199999999,
+            "w": 74.780056,
+            "h": 9.630400000000009
           },
           "bbox": {
             "x": 336.90210559999997,
@@ -672,7 +739,7 @@
         "x": 137.6683904,
         "y": 155.59234619140625,
         "w": 422.4663872,
-        "h": 21.909084208593754
+        "h": 22.188365808593744
       },
       "evidence": {
         "title_signal": null,
@@ -681,7 +748,7 @@
             "x": 137.6683904,
             "y": 155.59234619140625,
             "w": 422.4663872,
-            "h": 21.909084208593754
+            "h": 22.188365808593744
           },
           "pdfplumber_rect": null,
           "docling_block": null,
@@ -1510,13 +1577,21 @@
     {
       "type": "kv_leaf",
       "id": "domicilio_pago_entidad",
-      "label": "Domicilio de pago - Entidad",
+      "label": "Entidad",
       "value": "BANCO BILBAO VIZCAYA ARGENTARIA",
       "y_hint": 380.6,
+      "label_x_hint": 27.0,
+      "x_hint": 148.0,
+      "label_bbox": {
+        "x": 115.94220800000001,
+        "y": 382.8697103999999,
+        "w": 32.87818559999998,
+        "h": 9.630400000000009
+      },
       "evidence": {
         "text": "BANCO BILBAO VIZCAYA ARGENTARIA",
         "row_y_hint": 380.6,
-        "x_hint": null,
+        "x_hint": 148.0,
         "pdfplumber": null,
         "liteparse": {
           "span_id": 31,
@@ -1542,8 +1617,14 @@
           "row_header": null
         },
         "rect": null,
-        "colon_signal": null,
-        "value_extent": null,
+        "colon_signal": {
+          "present": false
+        },
+        "value_extent": {
+          "boundary_type": "cell_edge",
+          "gap_pt": 87.33875155639646,
+          "ends_at_x": 581.852
+        },
         "cell_bbox": {
           "x": 26.95730972290039,
           "y": 380.58734130859375,
@@ -1561,10 +1642,107 @@
     },
     {
       "type": "kv_leaf",
+      "id": "domicilio_pago_direccion",
+      "label": "con domicilio en",
+      "value": "AV. TENOR FLETA, 55",
+      "y_hint": 380.6,
+      "label_x_hint": 280.0,
+      "x_hint": 340.0,
+      "label_bbox": {
+        "x": 26.95730972290039,
+        "y": 380.58734130859375,
+        "w": 467.5559387207031,
+        "h": 13.058837890625
+      },
+      "evidence": {
+        "text": "AV. TENOR FLETA, 55",
+        "row_y_hint": 380.6,
+        "x_hint": 340.0,
+        "pdfplumber": {
+          "bbox": {
+            "x": 388.9062656,
+            "y": 383.74607679999997,
+            "w": 105.60696640000003,
+            "h": 9.630400000000009
+          },
+          "char_indices": [
+            1206,
+            1207,
+            1208,
+            1209,
+            1210,
+            1211,
+            1212,
+            1213,
+            1214,
+            1215,
+            1216,
+            1217,
+            1218,
+            1219,
+            1220,
+            1221,
+            1222,
+            1223,
+            1224
+          ],
+          "n_chars": 19,
+          "row_y": 382.3399999999994
+        },
+        "liteparse": {
+          "span_id": 31,
+          "bbox": {
+            "x": 26.95730972290039,
+            "y": 380.58734130859375,
+            "w": 467.5559387207031,
+            "h": 13.058837890625
+          },
+          "case_class": "Title",
+          "is_bold": false,
+          "font_size": 10.0
+        },
+        "docling": {
+          "cell_ref": "#/texts/100",
+          "bbox": {
+            "x": 26.957312,
+            "y": 384.43946559999995,
+            "w": 467.5559199999999,
+            "h": 8.355947065420594
+          },
+          "column_header": null,
+          "row_header": null
+        },
+        "rect": null,
+        "colon_signal": {
+          "present": false
+        },
+        "value_extent": {
+          "boundary_type": "cell_edge",
+          "gap_pt": 87.33876799999996,
+          "ends_at_x": 581.852
+        },
+        "cell_bbox": {
+          "x": 388.9062656,
+          "y": 383.74607679999997,
+          "w": 105.60696640000003,
+          "h": 9.630400000000009
+        },
+        "engine_agreement": 3
+      },
+      "bbox": {
+        "x": 388.9062656,
+        "y": 383.74607679999997,
+        "w": 105.60696640000003,
+        "h": 9.630400000000009
+      }
+    },
+    {
+      "type": "kv_leaf",
       "id": "domicilio_pago_localidad",
       "label": "Localidad",
       "value": "ZARAGOZA-TENOR FLETA - ZA",
       "y_hint": 396.5,
+      "label_x_hint": 127.7,
       "label_bbox": {
         "x": 127.7298176,
         "y": 398.81765279999996,
@@ -1881,14 +2059,14 @@
         {
           "type": "kv_leaf",
           "id": "num_hojas",
-          "label": "Firman en (hojas)",
+          "label": "firman las partes el presente contrato en",
           "value": "24 hojas",
           "y_hint": 557.4,
           "label_bbox": {
-            "x": 409.01454079999996,
-            "y": 579.512848,
-            "w": 11.257937600000048,
-            "h": 7.200299065420609
+            "x": 147.60696319999994,
+            "y": 559.6838544,
+            "w": 175.54293119999994,
+            "h": 9.630400000000009
           },
           "evidence": {
             "text": "24 hojas",
@@ -2061,23 +2239,48 @@
       "id": "lugar_fecha_firma",
       "pairs": [
         {
-          "label": "En (Prestatario)",
+          "label": "En",
           "value": "FUENLABRADA",
           "y_hint": 575.7,
-          "x_hint": 27.0,
+          "label_x_hint": 27.0,
+          "x_hint": 43.0,
           "evidence": {
             "label": {
-              "text": "En (Prestatario)",
+              "text": "En",
               "row_y_hint": 575.7,
-              "x_hint": null,
-              "pdfplumber": null,
-              "liteparse": null,
-              "docling": {
-                "cell_ref": "#/texts/110",
+              "x_hint": 27.0,
+              "pdfplumber": {
                 "bbox": {
-                  "x": 409.01454079999996,
+                  "x": 26.957312000000012,
+                  "y": 577.9430927999999,
+                  "w": 11.257937600000002,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  2118,
+                  2119
+                ],
+                "n_chars": 2,
+                "row_y": 577.6638112
+              },
+              "liteparse": {
+                "span_id": 44,
+                "bbox": {
+                  "x": 26.95732879638672,
+                  "y": 575.6607055664062,
+                  "w": 88.13739776611328,
+                  "h": 11.90313720703125
+                },
+                "case_class": "UPPER",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/108",
+                "bbox": {
+                  "x": 26.957312000000012,
                   "y": 579.512848,
-                  "w": 11.257937600000048,
+                  "w": 88.13742079999999,
                   "h": 7.200299065420609
                 },
                 "column_header": null,
@@ -2087,17 +2290,17 @@
               "colon_signal": null,
               "value_extent": null,
               "cell_bbox": {
-                "x": 409.01454079999996,
-                "y": 579.512848,
-                "w": 11.257937600000048,
-                "h": 7.200299065420609
+                "x": 26.957312000000012,
+                "y": 577.9430927999999,
+                "w": 11.257937600000002,
+                "h": 9.630400000000009
               },
-              "engine_agreement": 1
+              "engine_agreement": 3
             },
             "value": {
               "text": "FUENLABRADA",
               "row_y_hint": 575.7,
-              "x_hint": 27.0,
+              "x_hint": 43.0,
               "pdfplumber": {
                 "bbox": {
                   "x": 43.3675136,
@@ -2163,10 +2366,10 @@
             }
           },
           "label_bbox": {
-            "x": 409.01454079999996,
-            "y": 579.512848,
-            "w": 11.257937600000048,
-            "h": 7.200299065420609
+            "x": 26.957312000000012,
+            "y": 577.9430927999999,
+            "w": 11.257937600000002,
+            "h": 9.630400000000009
           },
           "bbox": {
             "x": 43.3675136,
@@ -2176,23 +2379,48 @@
           }
         },
         {
-          "label": "En (Fiador)",
+          "label": "En",
           "value": "FUENLABRADA",
           "y_hint": 575.7,
-          "x_hint": 280.7,
+          "label_x_hint": 280.7,
+          "x_hint": 297.0,
           "evidence": {
             "label": {
-              "text": "En (Fiador)",
+              "text": "En",
               "row_y_hint": 575.7,
-              "x_hint": null,
-              "pdfplumber": null,
-              "liteparse": null,
-              "docling": {
-                "cell_ref": "#/texts/110",
+              "x_hint": 280.7,
+              "pdfplumber": {
                 "bbox": {
-                  "x": 409.01454079999996,
+                  "x": 280.7376128,
+                  "y": 577.9430927999999,
+                  "w": 11.257937599999991,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  2131,
+                  2132
+                ],
+                "n_chars": 2,
+                "row_y": 577.6638112
+              },
+              "liteparse": {
+                "span_id": 45,
+                "bbox": {
+                  "x": 280.73760986328125,
+                  "y": 575.6607055664062,
+                  "w": 88.3685302734375,
+                  "h": 11.9031982421875
+                },
+                "case_class": "UPPER",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/109",
+                "bbox": {
+                  "x": 280.7376128,
                   "y": 579.512848,
-                  "w": 11.257937600000048,
+                  "w": 88.36855039999989,
                   "h": 7.200299065420609
                 },
                 "column_header": null,
@@ -2202,17 +2430,17 @@
               "colon_signal": null,
               "value_extent": null,
               "cell_bbox": {
-                "x": 409.01454079999996,
-                "y": 579.512848,
-                "w": 11.257937600000048,
-                "h": 7.200299065420609
+                "x": 280.7376128,
+                "y": 577.9430927999999,
+                "w": 11.257937599999991,
+                "h": 9.630400000000009
               },
-              "engine_agreement": 1
+              "engine_agreement": 3
             },
             "value": {
               "text": "FUENLABRADA",
               "row_y_hint": 575.7,
-              "x_hint": 280.7,
+              "x_hint": 297.0,
               "pdfplumber": {
                 "bbox": {
                   "x": 297.37894400000005,
@@ -2278,10 +2506,10 @@
             }
           },
           "label_bbox": {
-            "x": 409.01454079999996,
-            "y": 579.512848,
-            "w": 11.257937600000048,
-            "h": 7.200299065420609
+            "x": 280.7376128,
+            "y": 577.9430927999999,
+            "w": 11.257937599999991,
+            "h": 9.630400000000009
           },
           "bbox": {
             "x": 297.37894400000005,
@@ -2291,17 +2519,42 @@
           }
         },
         {
-          "label": "En (Financiador)",
+          "label": "En",
           "value": "FUENLABRADA",
           "y_hint": 575.7,
-          "x_hint": 409.0,
+          "label_x_hint": 409.0,
+          "x_hint": 425.0,
           "evidence": {
             "label": {
-              "text": "En (Financiador)",
+              "text": "En",
               "row_y_hint": 575.7,
-              "x_hint": null,
-              "pdfplumber": null,
-              "liteparse": null,
+              "x_hint": 409.0,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 409.01454079999996,
+                  "y": 577.9430927999999,
+                  "w": 11.257937599999991,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  2144,
+                  2145
+                ],
+                "n_chars": 2,
+                "row_y": 577.6638112
+              },
+              "liteparse": {
+                "span_id": 46,
+                "bbox": {
+                  "x": 409.0145263671875,
+                  "y": 575.6607055664062,
+                  "w": 88.3685302734375,
+                  "h": 11.9031982421875
+                },
+                "case_class": "UPPER",
+                "is_bold": false,
+                "font_size": 10.0
+              },
               "docling": {
                 "cell_ref": "#/texts/110",
                 "bbox": {
@@ -2318,16 +2571,16 @@
               "value_extent": null,
               "cell_bbox": {
                 "x": 409.01454079999996,
-                "y": 579.512848,
-                "w": 11.257937600000048,
-                "h": 7.200299065420609
+                "y": 577.9430927999999,
+                "w": 11.257937599999991,
+                "h": 9.630400000000009
               },
-              "engine_agreement": 1
+              "engine_agreement": 3
             },
             "value": {
               "text": "FUENLABRADA",
               "row_y_hint": 575.7,
-              "x_hint": 409.0,
+              "x_hint": 425.0,
               "pdfplumber": {
                 "bbox": {
                   "x": 425.655872,
@@ -2364,12 +2617,12 @@
                 "font_size": 10.0
               },
               "docling": {
-                "cell_ref": "#/texts/110",
+                "cell_ref": "#/texts/111",
                 "bbox": {
-                  "x": 409.01454079999996,
+                  "x": 425.655872,
                   "y": 579.512848,
-                  "w": 11.257937600000048,
-                  "h": 7.200299065420609
+                  "w": 71.72721919999992,
+                  "h": 6.980113920000008
                 },
                 "column_header": null,
                 "row_header": null
@@ -2394,9 +2647,9 @@
           },
           "label_bbox": {
             "x": 409.01454079999996,
-            "y": 579.512848,
-            "w": 11.257937600000048,
-            "h": 7.200299065420609
+            "y": 577.9430927999999,
+            "w": 11.257937599999991,
+            "h": 9.630400000000009
           },
           "bbox": {
             "x": 425.655872,
@@ -2406,26 +2659,71 @@
           }
         },
         {
-          "label": "Fecha (Prestatario)",
+          "label": "Fecha",
           "value": "11-07-2022",
           "y_hint": 594.8,
-          "x_hint": 27.0,
+          "label_x_hint": 27.0,
+          "x_hint": 57.0,
           "evidence": {
             "label": {
-              "text": "Fecha (Prestatario)",
+              "text": "Fecha",
               "row_y_hint": 594.8,
-              "x_hint": null,
-              "pdfplumber": null,
-              "liteparse": null,
-              "docling": null,
+              "x_hint": 27.0,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 26.957312,
+                  "y": 597.1268496,
+                  "w": 26.0598624,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  2157,
+                  2158,
+                  2159,
+                  2160,
+                  2161
+                ],
+                "n_chars": 5,
+                "row_y": 596.8475679999999
+              },
+              "liteparse": {
+                "span_id": 47,
+                "bbox": {
+                  "x": 26.95730972290039,
+                  "y": 594.844482421875,
+                  "w": 88.94638061523438,
+                  "h": 11.9031982421875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/112",
+                "bbox": {
+                  "x": 26.957312,
+                  "y": 598.6966047999999,
+                  "w": 88.94637440000001,
+                  "h": 7.200299065420609
+                },
+                "column_header": null,
+                "row_header": null
+              },
               "rect": null,
               "colon_signal": null,
-              "value_extent": null
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 26.957312,
+                "y": 597.1268496,
+                "w": 26.0598624,
+                "h": 9.630400000000009
+              },
+              "engine_agreement": 3
             },
             "value": {
               "text": "11-07-2022",
               "row_y_hint": 594.8,
-              "x_hint": 27.0,
+              "x_hint": 57.0,
               "pdfplumber": {
                 "bbox": {
                   "x": 58.159808000000005,
@@ -2472,8 +2770,14 @@
                 "row_header": null
               },
               "rect": null,
-              "colon_signal": null,
-              "value_extent": null,
+              "colon_signal": {
+                "present": false
+              },
+              "value_extent": {
+                "boundary_type": "cell_edge",
+                "gap_pt": 164.83392640000002,
+                "ends_at_x": 280.7376128
+              },
               "cell_bbox": {
                 "x": 58.159808000000005,
                 "y": 596.8475679999999,
@@ -2483,6 +2787,12 @@
               "engine_agreement": 3
             }
           },
+          "label_bbox": {
+            "x": 26.957312,
+            "y": 597.1268496,
+            "w": 26.0598624,
+            "h": 9.630400000000009
+          },
           "bbox": {
             "x": 58.159808000000005,
             "y": 596.8475679999999,
@@ -2491,26 +2801,71 @@
           }
         },
         {
-          "label": "Fecha (Fiador)",
+          "label": "Fecha",
           "value": "11-07-2022",
           "y_hint": 594.8,
-          "x_hint": 280.7,
+          "label_x_hint": 280.7,
+          "x_hint": 310.0,
           "evidence": {
             "label": {
-              "text": "Fecha (Fiador)",
+              "text": "Fecha",
               "row_y_hint": 594.8,
-              "x_hint": null,
-              "pdfplumber": null,
-              "liteparse": null,
-              "docling": null,
+              "x_hint": 280.7,
+              "pdfplumber": {
+                "bbox": {
+                  "x": 280.7376128,
+                  "y": 597.1268496,
+                  "w": 26.059862399999986,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  2172,
+                  2173,
+                  2174,
+                  2175,
+                  2176
+                ],
+                "n_chars": 5,
+                "row_y": 596.8475679999999
+              },
+              "liteparse": {
+                "span_id": 48,
+                "bbox": {
+                  "x": 280.73760986328125,
+                  "y": 594.844482421875,
+                  "w": 89.177490234375,
+                  "h": 11.9031982421875
+                },
+                "case_class": "lower",
+                "is_bold": false,
+                "font_size": 10.0
+              },
+              "docling": {
+                "cell_ref": "#/texts/113",
+                "bbox": {
+                  "x": 280.7376128,
+                  "y": 598.6966047999999,
+                  "w": 89.17750400000011,
+                  "h": 7.200299065420609
+                },
+                "column_header": null,
+                "row_header": null
+              },
               "rect": null,
               "colon_signal": null,
-              "value_extent": null
+              "value_extent": null,
+              "cell_bbox": {
+                "x": 280.7376128,
+                "y": 597.1268496,
+                "w": 26.059862399999986,
+                "h": 9.630400000000009
+              },
+              "engine_agreement": 3
             },
             "value": {
               "text": "11-07-2022",
               "row_y_hint": 594.8,
-              "x_hint": 280.7,
+              "x_hint": 310.0,
               "pdfplumber": {
                 "bbox": {
                   "x": 312.1712384,
@@ -2557,8 +2912,14 @@
                 "row_header": null
               },
               "rect": null,
-              "colon_signal": null,
-              "value_extent": null,
+              "colon_signal": {
+                "present": false
+              },
+              "value_extent": {
+                "boundary_type": "cell_edge",
+                "gap_pt": 39.099424,
+                "ends_at_x": 409.01454079999996
+              },
               "cell_bbox": {
                 "x": 312.1712384,
                 "y": 596.8475679999999,
@@ -2568,6 +2929,12 @@
               "engine_agreement": 3
             }
           },
+          "label_bbox": {
+            "x": 280.7376128,
+            "y": 597.1268496,
+            "w": 26.059862399999986,
+            "h": 9.630400000000009
+          },
           "bbox": {
             "x": 312.1712384,
             "y": 596.8475679999999,
@@ -2576,35 +2943,52 @@
           }
         },
         {
-          "label": "Fecha (Financiador)",
+          "label": "Fecha",
           "value": "11-07-2022",
           "y_hint": 594.8,
-          "x_hint": 409.0,
+          "label_x_hint": 409.0,
+          "x_hint": 439.0,
           "evidence": {
             "label": {
-              "text": "Fecha (Financiador)",
+              "text": "Fecha",
               "row_y_hint": 594.8,
-              "x_hint": null,
-              "pdfplumber": null,
-              "liteparse": {
-                "span_id": 52,
+              "x_hint": 409.0,
+              "pdfplumber": {
                 "bbox": {
-                  "x": 409.0144958496094,
-                  "y": 614.384521484375,
-                  "w": 50.0299072265625,
-                  "h": 11.546875
+                  "x": 409.01454079999996,
+                  "y": 597.1268496,
+                  "w": 26.059862399999986,
+                  "h": 9.630400000000009
+                },
+                "char_indices": [
+                  2187,
+                  2188,
+                  2189,
+                  2190,
+                  2191
+                ],
+                "n_chars": 5,
+                "row_y": 596.8475679999999
+              },
+              "liteparse": {
+                "span_id": 49,
+                "bbox": {
+                  "x": 409.0145263671875,
+                  "y": 594.844482421875,
+                  "w": 89.17755126953125,
+                  "h": 11.9031982421875
                 },
                 "case_class": "lower",
                 "is_bold": false,
                 "font_size": 10.0
               },
               "docling": {
-                "cell_ref": "#/texts/117",
+                "cell_ref": "#/texts/114",
                 "bbox": {
                   "x": 409.01454079999996,
-                  "y": 617.8803616,
-                  "w": 50.029927999999984,
-                  "h": 7.200299065420495
+                  "y": 598.6966047999999,
+                  "w": 89.17750400000017,
+                  "h": 7.200299065420609
                 },
                 "column_header": null,
                 "row_header": null
@@ -2613,17 +2997,17 @@
               "colon_signal": null,
               "value_extent": null,
               "cell_bbox": {
-                "x": 409.0144958496094,
-                "y": 614.384521484375,
-                "w": 50.0299072265625,
-                "h": 11.546875
+                "x": 409.01454079999996,
+                "y": 597.1268496,
+                "w": 26.059862399999986,
+                "h": 9.630400000000009
               },
-              "engine_agreement": 2
+              "engine_agreement": 3
             },
             "value": {
               "text": "11-07-2022",
               "row_y_hint": 594.8,
-              "x_hint": 409.0,
+              "x_hint": 439.0,
               "pdfplumber": {
                 "bbox": {
                   "x": 440.44816640000005,
@@ -2688,10 +3072,10 @@
             }
           },
           "label_bbox": {
-            "x": 409.0144958496094,
-            "y": 614.384521484375,
-            "w": 50.0299072265625,
-            "h": 11.546875
+            "x": 409.01454079999996,
+            "y": 597.1268496,
+            "w": 26.059862399999986,
+            "h": 9.630400000000009
           },
           "bbox": {
             "x": 440.44816640000005,
@@ -2702,25 +3086,25 @@
         }
       ],
       "container_bbox": {
-        "x": 43.3675136,
+        "x": 26.957312,
         "y": 577.6638112,
-        "w": 454.8245312000001,
-        "h": 48.267585284374945
+        "w": 471.2347328000001,
+        "h": 29.093438399999968
       },
       "evidence": {
         "title_signal": null,
         "container_signal": {
           "container_bbox": {
-            "x": 43.3675136,
+            "x": 26.957312,
             "y": 577.6638112,
-            "w": 454.8245312000001,
-            "h": 48.267585284374945
+            "w": 471.2347328000001,
+            "h": 29.093438399999968
           },
           "pdfplumber_rect": null,
           "docling_block": null,
           "edges_inside": {
-            "vertical": 2204,
-            "horizontal": 2204
+            "vertical": 2212,
+            "horizontal": 2212
           },
           "colons_inside": 0,
           "container_score": 1
@@ -3380,7 +3764,12 @@
       "row_y": 165.9,
       "rule": "structured-kv-group",
       "confidence": "HIGH",
-      "label_bbox": null,
+      "label_bbox": {
+        "x": 261.553856,
+        "y": 168.15031199999999,
+        "w": 74.780056,
+        "h": 9.630400000000009
+      },
       "value_bboxes": [
         {
           "x": 336.90210559999997,
@@ -3660,7 +4049,7 @@
       }
     },
     {
-      "label": "Domicilio de pago - Entidad",
+      "label": "Entidad",
       "value": "BANCO BILBAO VIZCAYA ARGENTARIA",
       "section": null,
       "band": null,
@@ -3668,7 +4057,12 @@
       "row_y": 380.6,
       "rule": "structured-kv-leaf",
       "confidence": "HIGH",
-      "label_bbox": null,
+      "label_bbox": {
+        "x": 115.94220800000001,
+        "y": 382.8697103999999,
+        "w": 32.87818559999998,
+        "h": 9.630400000000009
+      },
       "value_bboxes": [
         {
           "x": 26.95730972290039,
@@ -3680,6 +4074,34 @@
       "evidence": {
         "path": "",
         "engine_agreement": 2
+      }
+    },
+    {
+      "label": "con domicilio en",
+      "value": "AV. TENOR FLETA, 55",
+      "section": null,
+      "band": null,
+      "column_header": null,
+      "row_y": 380.6,
+      "rule": "structured-kv-leaf",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 26.95730972290039,
+        "y": 380.58734130859375,
+        "w": 467.5559387207031,
+        "h": 13.058837890625
+      },
+      "value_bboxes": [
+        {
+          "x": 388.9062656,
+          "y": 383.74607679999997,
+          "w": 105.60696640000003,
+          "h": 9.630400000000009
+        }
+      ],
+      "evidence": {
+        "path": "",
+        "engine_agreement": 3
       }
     },
     {
@@ -3739,7 +4161,7 @@
       }
     },
     {
-      "label": "Firman en (hojas)",
+      "label": "firman las partes el presente contrato en",
       "value": "24 hojas",
       "section": "Duración del contrato – (ver anexo I) Cuadro de amortización del contrato",
       "band": null,
@@ -3748,10 +4170,10 @@
       "rule": "structured-kv-leaf",
       "confidence": "HIGH",
       "label_bbox": {
-        "x": 409.01454079999996,
-        "y": 579.512848,
-        "w": 11.257937600000048,
-        "h": 7.200299065420609
+        "x": 147.60696319999994,
+        "y": 559.6838544,
+        "w": 175.54293119999994,
+        "h": 9.630400000000009
       },
       "value_bboxes": [
         {
@@ -3767,7 +4189,7 @@
       }
     },
     {
-      "label": "En (Prestatario)",
+      "label": "En",
       "value": "FUENLABRADA",
       "section": null,
       "band": null,
@@ -3776,10 +4198,10 @@
       "rule": "structured-kv-group",
       "confidence": "HIGH",
       "label_bbox": {
-        "x": 409.01454079999996,
-        "y": 579.512848,
-        "w": 11.257937600000048,
-        "h": 7.200299065420609
+        "x": 26.957312000000012,
+        "y": 577.9430927999999,
+        "w": 11.257937600000002,
+        "h": 9.630400000000009
       },
       "value_bboxes": [
         {
@@ -3795,7 +4217,7 @@
       }
     },
     {
-      "label": "En (Fiador)",
+      "label": "En",
       "value": "FUENLABRADA",
       "section": null,
       "band": null,
@@ -3804,10 +4226,10 @@
       "rule": "structured-kv-group",
       "confidence": "HIGH",
       "label_bbox": {
-        "x": 409.01454079999996,
-        "y": 579.512848,
-        "w": 11.257937600000048,
-        "h": 7.200299065420609
+        "x": 280.7376128,
+        "y": 577.9430927999999,
+        "w": 11.257937599999991,
+        "h": 9.630400000000009
       },
       "value_bboxes": [
         {
@@ -3823,7 +4245,7 @@
       }
     },
     {
-      "label": "En (Financiador)",
+      "label": "En",
       "value": "FUENLABRADA",
       "section": null,
       "band": null,
@@ -3833,9 +4255,9 @@
       "confidence": "HIGH",
       "label_bbox": {
         "x": 409.01454079999996,
-        "y": 579.512848,
-        "w": 11.257937600000048,
-        "h": 7.200299065420609
+        "y": 577.9430927999999,
+        "w": 11.257937599999991,
+        "h": 9.630400000000009
       },
       "value_bboxes": [
         {
@@ -3851,7 +4273,7 @@
       }
     },
     {
-      "label": "Fecha (Prestatario)",
+      "label": "Fecha",
       "value": "11-07-2022",
       "section": null,
       "band": null,
@@ -3859,7 +4281,12 @@
       "row_y": 594.8,
       "rule": "structured-kv-group",
       "confidence": "HIGH",
-      "label_bbox": null,
+      "label_bbox": {
+        "x": 26.957312,
+        "y": 597.1268496,
+        "w": 26.0598624,
+        "h": 9.630400000000009
+      },
       "value_bboxes": [
         {
           "x": 58.159808000000005,
@@ -3874,7 +4301,7 @@
       }
     },
     {
-      "label": "Fecha (Fiador)",
+      "label": "Fecha",
       "value": "11-07-2022",
       "section": null,
       "band": null,
@@ -3882,7 +4309,12 @@
       "row_y": 594.8,
       "rule": "structured-kv-group",
       "confidence": "HIGH",
-      "label_bbox": null,
+      "label_bbox": {
+        "x": 280.7376128,
+        "y": 597.1268496,
+        "w": 26.059862399999986,
+        "h": 9.630400000000009
+      },
       "value_bboxes": [
         {
           "x": 312.1712384,
@@ -3897,7 +4329,7 @@
       }
     },
     {
-      "label": "Fecha (Financiador)",
+      "label": "Fecha",
       "value": "11-07-2022",
       "section": null,
       "band": null,
@@ -3906,10 +4338,10 @@
       "rule": "structured-kv-group",
       "confidence": "HIGH",
       "label_bbox": {
-        "x": 409.0144958496094,
-        "y": 614.384521484375,
-        "w": 50.0299072265625,
-        "h": 11.546875
+        "x": 409.01454079999996,
+        "y": 597.1268496,
+        "w": 26.059862399999986,
+        "h": 9.630400000000009
       },
       "value_bboxes": [
         {
@@ -4001,7 +4433,7 @@
     "n_docling_blocks": 58,
     "n_rects": 3293,
     "kv_pair_breakdown": {
-      "3_eng": 21,
+      "3_eng": 22,
       "2_eng": 1,
       "1_eng": 0,
       "0_eng": 0,

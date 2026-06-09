@@ -970,7 +970,17 @@
                 "is_bold": false,
                 "font_size": 9.5
               },
-              "docling": null,
+              "docling": {
+                "cell_ref": "#/texts/329",
+                "bbox": {
+                  "x": 45.90993919999958,
+                  "y": 530.108896,
+                  "w": 368.6536380800002,
+                  "h": 37.98451173214289
+                },
+                "column_header": null,
+                "row_header": null
+              },
               "rect": null,
               "colon_signal": null,
               "value_extent": null,
@@ -980,12 +990,12 @@
                 "w": 368.6536865234375,
                 "h": 10.2010498046875
               },
-              "engine_agreement": 1
+              "engine_agreement": 2
             },
             "structural_signals": {
               "kind": "prose_block",
               "label": "Descripción retirada efectivo",
-              "engine_agreement": 1
+              "engine_agreement": 2
             }
           }
         }
@@ -1212,7 +1222,17 @@
                 "is_bold": false,
                 "font_size": 9.5
               },
-              "docling": null,
+              "docling": {
+                "cell_ref": "#/texts/333",
+                "bbox": {
+                  "x": 45.909939199999414,
+                  "y": 696.522208,
+                  "w": 368.69456728000034,
+                  "h": 48.385343732142815
+                },
+                "column_header": null,
+                "row_header": null
+              },
               "rect": null,
               "colon_signal": null,
               "value_extent": null,
@@ -1222,12 +1242,12 @@
                 "w": 368.65362548828125,
                 "h": 10.20098876953125
               },
-              "engine_agreement": 1
+              "engine_agreement": 2
             },
             "structural_signals": {
               "kind": "prose_block",
               "label": "Intereses Pago Aplazado y Fraccionado",
-              "engine_agreement": 1
+              "engine_agreement": 2
             }
           }
         }

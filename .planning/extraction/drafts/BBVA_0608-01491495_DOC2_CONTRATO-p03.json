@@ -37,6 +37,7 @@
                 "evidence": {
                   "text": "Importe Total del Préstamo",
                   "row_y_hint": 112,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 183.311996,
@@ -123,6 +124,7 @@
                 "evidence": {
                   "text": "29.000,00 Veintinueve mil euros",
                   "row_y_hint": 123,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 354.002411,
@@ -211,6 +213,7 @@
                 "evidence": {
                   "text": "Fecha Entrada en Vigor",
                   "row_y_hint": 153,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 183.311996,
@@ -296,6 +299,7 @@
                 "evidence": {
                   "text": "29-03-2021",
                   "row_y_hint": 153,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 354.088806,
@@ -374,6 +378,7 @@
                 "evidence": {
                   "text": "Vencimiento Final",
                   "row_y_hint": 176,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 183.311996,
@@ -456,6 +461,7 @@
                 "evidence": {
                   "text": "31-03-2029",
                   "row_y_hint": 176,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 354.088806,
@@ -534,6 +540,7 @@
                 "evidence": {
                   "text": "Entrega del Importe del Préstamo",
                   "row_y_hint": 201,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 177.753616,
@@ -620,6 +627,7 @@
                 "evidence": {
                   "text": "ABONO EN CUENTA 0182-0719-22-0201514439",
                   "row_y_hint": 192,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 8,
@@ -677,6 +685,7 @@
                 "evidence": {
                   "text": "Interés Nominal de Demora",
                   "row_y_hint": 236,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 183.311996,
@@ -763,6 +772,7 @@
                 "evidence": {
                   "text": "Tipo de Interés Nominal + 2 puntos",
                   "row_y_hint": 236,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 354.09119,
@@ -851,6 +861,7 @@
                 "evidence": {
                   "text": "Comisión de Apertura",
                   "row_y_hint": 259,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 183.311996,
@@ -935,6 +946,7 @@
                 "evidence": {
                   "text": "2,3000 %",
                   "row_y_hint": 259,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 354.313601,
@@ -966,7 +978,17 @@
                     "is_bold": false,
                     "font_size": 10.0
                   },
-                  "docling": null,
+                  "docling": {
+                    "cell_ref": "#/tables/0/cells[5][1]",
+                    "bbox": {
+                      "x": 354.31360099999995,
+                      "y": 260.8555910000001,
+                      "w": 42.23879800000003,
+                      "h": 8.817016574585523
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
                   "rect": {
                     "rect_id": "p3-r350",
                     "bbox": {
@@ -984,7 +1006,7 @@
                     "w": 42.238797999999974,
                     "h": 10.0
                   },
-                  "engine_agreement": 2
+                  "engine_agreement": 3
                 },
                 "bbox": {
                   "x": 354.313601,
@@ -992,158 +1014,158 @@
                   "w": 42.238797999999974,
                   "h": 10.0
                 }
-              },
-              "sub_rows": [
-                {
-                  "label": {
-                    "text": "Mínimo",
-                    "evidence": {
-                      "text": "Mínimo",
-                      "row_y_hint": 259,
-                      "pdfplumber": {
-                        "bbox": {
-                          "x": 423.482399,
-                          "y": 260.1155909999999,
-                          "w": 32.78000000000003,
-                          "h": 10.0
-                        },
-                        "char_indices": [
-                          529,
-                          530,
-                          531,
-                          532,
-                          533,
-                          534
-                        ],
-                        "n_chars": 6,
-                        "row_y": 259.1147910000001
-                      },
-                      "liteparse": {
-                        "span_id": 16,
-                        "bbox": {
-                          "x": 423.482421875,
-                          "y": 258.9555969238281,
-                          "w": 32.779998779296875,
-                          "h": 11.15997314453125
-                        },
-                        "case_class": "lower",
-                        "is_bold": false,
-                        "font_size": 10.0
-                      },
-                      "docling": {
-                        "cell_ref": "#/tables/0/cells[5][2]",
-                        "bbox": {
-                          "x": 423.482399,
-                          "y": 260.8555910000001,
-                          "w": 32.77999999999997,
-                          "h": 8.817016574585523
-                        },
-                        "column_header": false,
-                        "row_header": false
-                      },
-                      "rect": {
-                        "rect_id": "p3-r350",
-                        "bbox": {
-                          "x": 345.75119,
-                          "y": 252.0072019999999,
-                          "w": 215.25119,
-                          "h": 22.5
-                        }
-                      },
-                      "colon_signal": null,
-                      "value_extent": null,
-                      "cell_bbox": {
-                        "x": 423.482399,
-                        "y": 260.1155909999999,
-                        "w": 32.78000000000003,
-                        "h": 10.0
-                      },
-                      "engine_agreement": 3
-                    },
+              }
+            },
+            {
+              "label": {
+                "text": "Mínimo",
+                "evidence": {
+                  "text": "Mínimo",
+                  "row_y_hint": 259,
+                  "x_hint": null,
+                  "pdfplumber": {
                     "bbox": {
                       "x": 423.482399,
                       "y": 260.1155909999999,
                       "w": 32.78000000000003,
                       "h": 10.0
+                    },
+                    "char_indices": [
+                      529,
+                      530,
+                      531,
+                      532,
+                      533,
+                      534
+                    ],
+                    "n_chars": 6,
+                    "row_y": 259.1147910000001
+                  },
+                  "liteparse": {
+                    "span_id": 16,
+                    "bbox": {
+                      "x": 423.482421875,
+                      "y": 258.9555969238281,
+                      "w": 32.779998779296875,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "lower",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/0/cells[5][2]",
+                    "bbox": {
+                      "x": 423.482399,
+                      "y": 260.8555910000001,
+                      "w": 32.77999999999997,
+                      "h": 8.817016574585523
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": {
+                    "rect_id": "p3-r350",
+                    "bbox": {
+                      "x": 345.75119,
+                      "y": 252.0072019999999,
+                      "w": 215.25119,
+                      "h": 22.5
                     }
                   },
-                  "value": {
-                    "text": "0,00 euros",
-                    "evidence": {
-                      "text": "0,00 euros",
-                      "row_y_hint": 258,
-                      "pdfplumber": {
-                        "bbox": {
-                          "x": 484.142395,
-                          "y": 259.1147910000001,
-                          "w": 56.25080699999995,
-                          "h": 10.252011000000039
-                        },
-                        "char_indices": [
-                          516,
-                          517,
-                          518,
-                          519,
-                          511,
-                          512,
-                          513,
-                          514,
-                          515
-                        ],
-                        "n_chars": 9,
-                        "row_y": 259.1147910000001
-                      },
-                      "liteparse": {
-                        "span_id": 17,
-                        "bbox": {
-                          "x": 484.14239501953125,
-                          "y": 257.9548034667969,
-                          "w": 19.459991455078125,
-                          "h": 11.15997314453125
-                        },
-                        "case_class": "none",
-                        "is_bold": false,
-                        "font_size": 10.0
-                      },
-                      "docling": {
-                        "cell_ref": "#/tables/0/cells[5][3]",
-                        "bbox": {
-                          "x": 515.383202,
-                          "y": 260.106802,
-                          "w": 25.009999999999877,
-                          "h": 8.817016574585637
-                        },
-                        "column_header": false,
-                        "row_header": false
-                      },
-                      "rect": {
-                        "rect_id": "p3-r350",
-                        "bbox": {
-                          "x": 345.75119,
-                          "y": 252.0072019999999,
-                          "w": 215.25119,
-                          "h": 22.5
-                        }
-                      },
-                      "colon_signal": null,
-                      "value_extent": null,
-                      "cell_bbox": {
-                        "x": 484.142395,
-                        "y": 259.1147910000001,
-                        "w": 56.25080699999995,
-                        "h": 10.252011000000039
-                      },
-                      "engine_agreement": 3
-                    },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 423.482399,
+                    "y": 260.1155909999999,
+                    "w": 32.78000000000003,
+                    "h": 10.0
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 423.482399,
+                  "y": 260.1155909999999,
+                  "w": 32.78000000000003,
+                  "h": 10.0
+                }
+              },
+              "value": {
+                "text": "0,00 euros",
+                "evidence": {
+                  "text": "0,00 euros",
+                  "row_y_hint": 258,
+                  "x_hint": null,
+                  "pdfplumber": {
                     "bbox": {
                       "x": 484.142395,
                       "y": 259.1147910000001,
                       "w": 56.25080699999995,
                       "h": 10.252011000000039
+                    },
+                    "char_indices": [
+                      516,
+                      517,
+                      518,
+                      519,
+                      511,
+                      512,
+                      513,
+                      514,
+                      515
+                    ],
+                    "n_chars": 9,
+                    "row_y": 259.1147910000001
+                  },
+                  "liteparse": {
+                    "span_id": 17,
+                    "bbox": {
+                      "x": 484.14239501953125,
+                      "y": 257.9548034667969,
+                      "w": 19.459991455078125,
+                      "h": 11.15997314453125
+                    },
+                    "case_class": "none",
+                    "is_bold": false,
+                    "font_size": 10.0
+                  },
+                  "docling": {
+                    "cell_ref": "#/tables/0/cells[5][3]",
+                    "bbox": {
+                      "x": 515.383202,
+                      "y": 260.106802,
+                      "w": 25.009999999999877,
+                      "h": 8.817016574585637
+                    },
+                    "column_header": false,
+                    "row_header": false
+                  },
+                  "rect": {
+                    "rect_id": "p3-r350",
+                    "bbox": {
+                      "x": 345.75119,
+                      "y": 252.0072019999999,
+                      "w": 215.25119,
+                      "h": 22.5
                     }
-                  }
+                  },
+                  "colon_signal": null,
+                  "value_extent": null,
+                  "cell_bbox": {
+                    "x": 484.142395,
+                    "y": 259.1147910000001,
+                    "w": 56.25080699999995,
+                    "h": 10.252011000000039
+                  },
+                  "engine_agreement": 3
+                },
+                "bbox": {
+                  "x": 484.142395,
+                  "y": 259.1147910000001,
+                  "w": 56.25080699999995,
+                  "h": 10.252011000000039
                 }
-              ]
+              }
             },
             {
               "label": {
@@ -1151,6 +1173,7 @@
                 "evidence": {
                   "text": "Comisión de Cancelación Anticipada Total",
                   "row_y_hint": 291,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 20,
@@ -1206,6 +1229,7 @@
                 "evidence": {
                   "text": "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación.",
                   "row_y_hint": 278,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 19,
@@ -1220,12 +1244,12 @@
                     "font_size": 10.0
                   },
                   "docling": {
-                    "cell_ref": "#/tables/0/cells[5][2]",
+                    "cell_ref": "#/tables/0/cells[6][1]",
                     "bbox": {
-                      "x": 423.482399,
-                      "y": 260.8555910000001,
-                      "w": 32.77999999999997,
-                      "h": 8.817016574585523
+                      "x": 350.25119,
+                      "y": 279.35241099999996,
+                      "w": 201.2215989999999,
+                      "h": 32.82181657458568
                     },
                     "column_header": false,
                     "row_header": false
@@ -1263,6 +1287,7 @@
                 "evidence": {
                   "text": "Comisión de Cancelación Anticipada Parcial",
                   "row_y_hint": 351,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 24,
@@ -1318,6 +1343,7 @@
                 "evidence": {
                   "text": "1,0000% máximo, con un mínimo de 11,50 euros en concepto de coste administrativo de cancelación.",
                   "row_y_hint": 345,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 25,
@@ -1452,6 +1478,7 @@
                 "evidence": {
                   "text": "Interés Nominal Anual",
                   "row_y_hint": 430,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 183.311996,
@@ -1537,6 +1564,7 @@
                 "evidence": {
                   "text": "11,2000%",
                   "row_y_hint": 428,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 375.472809,
@@ -1611,6 +1639,7 @@
                 "evidence": {
                   "text": "10,2000%",
                   "row_y_hint": 428,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 484.488007,
@@ -1687,6 +1716,7 @@
                 "evidence": {
                   "text": "TAE",
                   "row_y_hint": 452,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 183.311996,
@@ -1756,6 +1786,7 @@
                 "evidence": {
                   "text": "12,6020%",
                   "row_y_hint": 449,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 376.862396,
@@ -1830,6 +1861,7 @@
                 "evidence": {
                   "text": "11,4813%",
                   "row_y_hint": 451,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 483.098396,
@@ -1906,6 +1938,7 @@
                 "evidence": {
                   "text": "Importe Total Adeudado",
                   "row_y_hint": 487,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 186.091202,
@@ -1992,6 +2025,7 @@
                 "evidence": {
                   "text": "44.794,73€",
                   "row_y_hint": 490,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 374.364014,
@@ -2068,6 +2102,7 @@
                 "evidence": {
                   "text": "43.299,05€",
                   "row_y_hint": 490,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 481.98961599999996,
@@ -2146,6 +2181,7 @@
                 "evidence": {
                   "text": "Cuota",
                   "row_y_hint": 534,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 183.311996,
@@ -2217,6 +2253,7 @@
                 "evidence": {
                   "text": "458,68€",
                   "row_y_hint": 531,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 381.312012,
@@ -2290,6 +2327,7 @@
                 "evidence": {
                   "text": "443,13€",
                   "row_y_hint": 533,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 488.93760899999995,
@@ -2437,6 +2475,7 @@
                 "evidence": {
                   "text": "Gasto Reclamación Posiciones Deudoras",
                   "row_y_hint": 553,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 45,
@@ -2492,6 +2531,7 @@
                 "evidence": {
                   "text": "30,00 euros",
                   "row_y_hint": 554,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 354.08879,
@@ -2571,6 +2611,7 @@
                 "evidence": {
                   "text": "Domiciliación de Cuotas",
                   "row_y_hint": 598,
+                  "x_hint": null,
                   "pdfplumber": {
                     "bbox": {
                       "x": 183.311996,
@@ -2657,6 +2698,7 @@
                 "evidence": {
                   "text": "CUENTA 0182-0719-22-0201514439 BBVA OVIEDO-PRIMO DE RIVERA PL. PRIMO RIVERA, 3",
                   "row_y_hint": 587,
+                  "x_hint": null,
                   "pdfplumber": null,
                   "liteparse": {
                     "span_id": 48,
@@ -3073,30 +3115,39 @@
       "evidence": {
         "path": "Condiciones Económicas del Préstamo",
         "row": 5,
-        "engine_agreement": 2,
-        "bucket": "2_eng"
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
+    },
+    {
+      "label": "Mínimo",
+      "value": "0,00 euros",
+      "section": "Condiciones Económicas del Préstamo",
+      "band": "Condiciones base",
+      "column_header": "Valor",
+      "row_y": 259,
+      "rule": "structured-table-cell",
+      "confidence": "HIGH",
+      "label_bbox": {
+        "x": 423.482399,
+        "y": 260.1155909999999,
+        "w": 32.78000000000003,
+        "h": 10.0
       },
-      "sub_values": [
+      "value_bboxes": [
         {
-          "label": "Mínimo",
-          "value": "0,00 euros",
-          "label_bbox": {
-            "x": 423.482399,
-            "y": 260.1155909999999,
-            "w": 32.78000000000003,
-            "h": 10.0
-          },
-          "value_bboxes": [
-            {
-              "x": 484.142395,
-              "y": 259.1147910000001,
-              "w": 56.25080699999995,
-              "h": 10.252011000000039
-            }
-          ],
-          "note": "Sub-field of Comisión de Apertura (same row, composite value)"
+          "x": 484.142395,
+          "y": 259.1147910000001,
+          "w": 56.25080699999995,
+          "h": 10.252011000000039
         }
-      ]
+      ],
+      "evidence": {
+        "path": "Condiciones Económicas del Préstamo",
+        "row": 6,
+        "engine_agreement": 3,
+        "bucket": "3_eng"
+      }
     },
     {
       "label": "Comisión de Cancelación Anticipada Total",
@@ -3459,168 +3510,7 @@
       }
     }
   ],
-  "noise": [
-    {
-      "type": "noise",
-      "id": "legal_sidebar",
-      "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.0",
-      "kind": "rotated_legal_sidebar",
-      "bbox": {
-        "x": 143.818705,
-        "y": 214.836003,
-        "w": 4.8493591160221,
-        "h": 428.663997
-      },
-      "evidence": {
-        "text_signal": {
-          "text": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. Plaza San Nicolás, 4 48005 BILBAO Reg. Mer. Bizkaia Tomo 2.083, Folio 1, hoja BI-17 A, Inscripción 1.0",
-          "docling": {
-            "cell_ref": "#/texts/40",
-            "bbox": {
-              "x": 143.818705,
-              "y": 214.836003,
-              "w": 4.8493591160221,
-              "h": 428.663997
-            },
-            "label": "page_header"
-          },
-          "bbox": {
-            "x": 143.818705,
-            "y": 214.836003,
-            "w": 4.8493591160221,
-            "h": 428.663997
-          },
-          "engine_agreement": 1
-        }
-      }
-    },
-    {
-      "type": "noise",
-      "id": "footer_left",
-      "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
-      "kind": "footer",
-      "bbox": {
-        "x": 27.74880027770996,
-        "y": 827.4487890625,
-        "w": 186.25120544433594,
-        "h": 7.767978515625
-      },
-      "evidence": {
-        "text_signal": {
-          "text": "Mod. CS POLIZA BONIFICACION V.19 14-03-2021",
-          "liteparse": {
-            "span_id": null,
-            "bbox": {
-              "x": 27.74880027770996,
-              "y": 826.0087890625,
-              "w": 186.25120544433594,
-              "h": 8.927978515625
-            },
-            "case_class": "UPPER",
-            "is_bold": true,
-            "font_size": 8.0,
-            "n_spans_fused": 1
-          },
-          "docling": {
-            "cell_ref": "#/texts/42",
-            "bbox": {
-              "x": 27.7488,
-              "y": 827.528779,
-              "w": 186.25119800000004,
-              "h": 7.053613259668509
-            },
-            "label": "page_footer"
-          },
-          "pdfplumber": {
-            "bbox": {
-              "x": 27.74880027770996,
-              "y": 827.4487890625,
-              "w": 186.25120544433594,
-              "h": 7.767978515625
-            },
-            "n_chars": 43
-          },
-          "bbox": {
-            "x": 27.74880027770996,
-            "y": 827.4487890625,
-            "w": 186.25120544433594,
-            "h": 7.767978515625
-          },
-          "engine_agreement": 3
-        }
-      }
-    },
-    {
-      "type": "noise",
-      "id": "footer_right",
-      "text": "Página 3 de 16",
-      "kind": "page_number",
-      "bbox": {
-        "x": 512.8488159179688,
-        "y": 827.4487890625,
-        "w": 55.59515380859375,
-        "h": 7.767978515625
-      },
-      "evidence": {
-        "text_signal": {
-          "text": "Página 3 de 16",
-          "liteparse": {
-            "span_id": null,
-            "bbox": {
-              "x": 512.8488159179688,
-              "y": 826.0087890625,
-              "w": 55.59515380859375,
-              "h": 8.927978515625
-            },
-            "case_class": "lower",
-            "is_bold": true,
-            "font_size": 8.0,
-            "n_spans_fused": 1
-          },
-          "docling": {
-            "cell_ref": "#/texts/43",
-            "bbox": {
-              "x": 512.848801,
-              "y": 827.528779,
-              "w": 55.59519899999998,
-              "h": 7.053613259668509
-            },
-            "label": "page_footer"
-          },
-          "pdfplumber": {
-            "bbox": {
-              "x": 512.8488159179688,
-              "y": 827.4487890625,
-              "w": 55.59515380859375,
-              "h": 7.767978515625
-            },
-            "n_chars": 14
-          },
-          "bbox": {
-            "x": 512.8488159179688,
-            "y": 827.4487890625,
-            "w": 55.59515380859375,
-            "h": 7.767978515625
-          },
-          "engine_agreement": 3
-        }
-      }
-    },
-    {
-      "type": "noise",
-      "id": "bbva_logo",
-      "kind": "logo_image",
-      "bbox": {
-        "x": 177.753601,
-        "y": 21.39839900000004,
-        "w": 85.5,
-        "h": 28.454398999999967
-      },
-      "evidence": {
-        "source": "image"
-      }
-    }
-  ],
+  "noise": [],
   "diagnostics": {
     "method": "hand-curated structured-model golden, 3-engine linked",
     "annotator": "codex",
@@ -3630,8 +3520,8 @@
     "n_docling_blocks": 7,
     "n_rects": 368,
     "kv_pair_breakdown": {
-      "3_eng": 13,
-      "2_eng": 5,
+      "3_eng": 15,
+      "2_eng": 4,
       "1_eng": 0,
       "0_eng": 0,
       "empty": 0,
@@ -3644,10 +3534,9 @@
     "annotated_at": "2026-06-07",
     "method": "hand-curated reference (structured + 3-engine linked)",
     "covers_cases": [
-      "bbva_loan_condiciones_economicas",
-      "bbva_loan_bonificacion_multi_column",
-      "bbva_loan_comision_with_sub_minimo",
-      "bbva_loan_footer_noise"
+      "bbva_loan_conditions",
+      "bbva_loan_multicolumn_matrix",
+      "bbva_loan_repeated_value_rows"
     ],
     "needs_review": false,
     "document_type": "Contrato de Préstamo Personal BBVA"
