@@ -1,4 +1,9 @@
-from docomestria.live_features import _base_row, _bbox_to_dict, _engine_features
+from docomestria.live_features import (
+    _base_row,
+    _bbox_to_dict,
+    _engine_features,
+    build_live_rows,
+)
 from docomestria.models import BBox, DoclingBlock, LiteItem, VisualRect, WordItem
 
 
@@ -142,3 +147,54 @@ def test_engine_features_compound_span_interior_colon():
     assert feats["compound_span"] == 1
     feats2 = _engine_features(_item(text="Total:"), blocks=[], rects=[], words=[])
     assert feats2["compound_span"] == 0
+
+
+def test_build_live_rows_full_schema_and_neighbour_order():
+    from docomestria.golden.training_table import FIELDS
+
+    items = [
+        LiteItem(
+            text="SECCION",
+            bbox=BBox(x=60.0, y=100.0, w=120.0, h=14.0),
+            font_name="Helvetica-Bold",
+            font_size=12.0,
+            page=1,
+        ),
+        LiteItem(
+            text="cuerpo normal",
+            bbox=BBox(x=60.0, y=130.0, w=200.0, h=10.0),
+            font_name="Helvetica",
+            font_size=10.0,
+            page=1,
+        ),
+    ]
+    rows = build_live_rows(
+        "DOC.pdf",
+        page=1,
+        lite_items=items,
+        docling_blocks=[],
+        visual_rects=[],
+        words=[],
+        page_size_pt=(600.0, 800.0),
+    )
+    assert len(rows) == 2
+    for r in rows:
+        assert set(r.keys()) == set(FIELDS)
+        assert r["pdf"] == "DOC.pdf"
+    top, _below = rows[0], rows[1]  # sorted by (y, x)
+    assert top["bold_above_nonbold_below"] == 1
+    assert abs(top["font_ratio_vs_below"] - 1.2) < 1e-9
+    assert top["font_size_ratio"] != ""
+    assert top["gap_below"] > 0
+
+
+def test_build_live_rows_is_centered():
+    it = LiteItem(
+        text="TITULO",
+        bbox=BBox(x=270.0, y=50.0, w=60.0, h=14.0),
+        font_name="Helvetica-Bold",
+        font_size=12.0,
+        page=1,
+    )
+    rows = build_live_rows("D.pdf", 1, [it], [], [], [], (600.0, 800.0))
+    assert rows[0]["is_centered"] == 1
