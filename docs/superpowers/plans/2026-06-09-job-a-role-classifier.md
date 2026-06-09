@@ -1196,3 +1196,10 @@ git commit -m "test: determinism guard for role-classifier OOF pipeline"
 **Note on two deliberate refinements (flagged to the user, both preserve spec intent):**
 1. Categorical encoding uses `OneHotEncoder(handle_unknown="ignore")` rather than the spec's `OrdinalEncoder(unknown_value=-1)` — `-1` violates HGB's categorical contract (`0..n-1`/NaN). One-hot is robust to unseen categories and needs no `categorical_features` wiring.
 2. `docling_heading_level` is treated as numeric (not categorical) — it's ordinal depth.
+
+**Post-execution amendment (2026-06-09):** Tasks 7 & 10 originally added a `dedupe_text_role`
+step (drop exact-duplicate `(text, role)` rows). On the real corpus this removed 46% of rows
+and collapsed the signature class 31→1, so by user decision the dedup was **removed**:
+`dedupe_text_role` and its test were deleted, `evaluate_oof`/`feature_importances` keep all
+rows (just `reset_index(drop=True)` for positional alignment), and `GroupKFold`-by-`pdf` is
+the sole leakage guard. See the spec's revised Section 5.

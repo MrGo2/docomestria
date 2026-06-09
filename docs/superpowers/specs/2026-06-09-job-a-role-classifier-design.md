@@ -173,10 +173,14 @@ split: rows on the same page share neighbour and page-median-derived features
 `training_table.py:444,462-480`), so a row split leaks page context. Grouping by `pdf`
 guarantees a page's rows never straddle the split (and is strictly safer than page-grouping
 for the page-local features).
-**Residual leak to guard:** identical boilerplate noise rows recur across *different* PDFs
-(e.g. BBVA header/footer text across `BBVA_0539/0544/0608/0686`) and would land in different
-groups, inflating noise scores. Before CV, **drop exact-duplicate `(text, role)` rows** (keep
-first) and report how many were dropped. `GroupKFold` does not shuffle → deterministic folds.
+**Dedup considered & rejected (empirical, 2026-06-09):** we considered dropping duplicate rows
+before CV to guard against identical boilerplate recurring across PDFs. Measured impact:
+`(text, role)` dedup removed **46%** of rows (4668→2503) and collapsed the **signature class
+31→1** — far more destructive than the leakage it prevents (it also deletes legitimate
+same-text/different-geometry examples). A stricter full-feature-vector dedup dropped 25%
+(signature 31→21). **Decision: keep all rows; rely on `GroupKFold`-by-`pdf` alone** (a
+document's pages never straddle the train/test split, which is the realistic generalization
+test). `GroupKFold` does not shuffle → deterministic folds.
 
 ### Class imbalance
 noise ≈ 49%; signature only 31 samples. `HistGradientBoostingClassifier` has **no
@@ -230,7 +234,7 @@ Under `.planning/extraction/training/`:
 | **Feature noise** (a wrong Docling label) | Safe: a tree gives a useless feature ~0 importance, and *learns to correct* a systematically-wrong one using the other features. Worst case is harmless. |
 | **Label noise** (a mis-tagged `role`) | The real danger — corrupts ground truth. Defended by the golden review pipeline; handoff measured label leakage at 2.2% (labels sound). The 46→66 re-scaffold further improves this. |
 | **Row-split leakage** | GroupKFold by `pdf` (Section 5). |
-| **Cross-PDF duplicate boilerplate** (same noise text in different PDFs → different folds, inflates noise score) | Drop exact-duplicate `(text, role)` rows before CV; report count dropped (Section 5). |
+| **Cross-PDF duplicate boilerplate** (same noise text in different PDFs → different folds, inflates noise score) | Dedup empirically destroyed 46% of rows incl. the signature class, so it was rejected; `GroupKFold`-by-`pdf` is the sole leakage guard (Section 5). |
 | **HGB categorical / unseen-category error** | OrdinalEncoder `handle_unknown="use_encoded_value", unknown_value=-1` + `categorical_features` (Section 5). |
 | **Signature underfit** (31 samples) | Reported honestly; balanced `sample_weight`; deferred improvement. |
 
