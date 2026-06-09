@@ -171,3 +171,30 @@ def encode_features(ohe, X: pd.DataFrame, numeric: list[str], categorical: list[
     num = X[numeric].apply(pd.to_numeric, errors="coerce").to_numpy(dtype=float)
     cat = ohe.transform(X[categorical].astype("string").fillna("__nan__"))
     return np.hstack([num, cat])
+
+
+def render_report_md(result: dict, importances: list[tuple[str, float]]) -> str:
+    lines = ["# Role Classifier — Report (Job A)", ""]
+    delta = result["macro_f1"] - result["baseline_macro_f1"]
+    lines += [
+        f"- **Macro-F1 (pooled OOF):** {result['macro_f1']:.4f}",
+        f"- **vs Docling baseline:** {result['baseline_macro_f1']:.4f} "
+        f"(delta {delta:+.4f}, fallback share {result['baseline_fallback_share']:.3f})",
+        f"- Rows: {result['n_rows']} (dropped {result['n_dropped_dups']} dup text/role) "
+        f"| sklearn {result['sklearn_version']}",
+        "", "## Per-class", "", "| role | precision | recall | f1 | support |",
+        "|---|---|---|---|---|",
+    ]
+    for lab in result["labels"]:
+        m = result["per_class"][lab]
+        lines.append(f"| {lab} | {m['precision']:.3f} | {m['recall']:.3f} "
+                     f"| {m['f1-score']:.3f} | {int(m['support'])} |")
+    lines += ["", "## Confusion (rows=true, cols=pred)", "",
+              "| | " + " | ".join(result["labels"]) + " |",
+              "|" + "---|" * (len(result["labels"]) + 1)]
+    for lab, row in zip(result["labels"], result["confusion"]):
+        lines.append(f"| **{lab}** | " + " | ".join(str(v) for v in row) + " |")
+    lines += ["", "## Top feature importances", ""]
+    for name, imp in importances[:25]:
+        lines.append(f"- {name}: {imp:.4f}")
+    return "\n".join(lines) + "\n"
