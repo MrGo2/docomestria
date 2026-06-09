@@ -82,7 +82,10 @@ def test_encode_features_onehot_and_numeric_nan():
     assert Xte[0, 1:].sum() == 0.0
 
 
-from docomestria.training.role_classifier import evaluate_oof, FEATURE_COLS
+import pickle
+from docomestria.training.role_classifier import (
+    evaluate_oof, FEATURE_COLS, fit_final_model, feature_importances, dedupe_text_role,
+)
 
 
 def _synthetic_dataset(n_pdfs=6, per_pdf=40):
@@ -131,3 +134,25 @@ def test_evaluate_oof_is_deterministic():
     b = evaluate_oof(df, n_splits=3, random_state=0)
     assert a["macro_f1"] == b["macro_f1"]
     assert a["confusion"] == b["confusion"]
+
+
+def test_fit_final_model_pickles_and_predicts(tmp_path):
+    df, _ = dedupe_text_role(_synthetic_dataset())
+    artifact = fit_final_model(df, random_state=0)
+    assert set(artifact) >= {"model", "ohe", "feature_cols", "numeric_cols",
+                             "categorical_cols", "labels", "sklearn_version"}
+    p = tmp_path / "m.pkl"
+    p.write_bytes(pickle.dumps(artifact))
+    loaded = pickle.loads(p.read_bytes())
+    X = encode_features(loaded["ohe"], df[FEATURE_COLS].head(3),
+                        loaded["numeric_cols"], loaded["categorical_cols"])
+    preds = loaded["model"].predict(X)
+    assert len(preds) == 3
+
+
+def test_feature_importances_ranked_named():
+    df = _synthetic_dataset()
+    imps = feature_importances(df, n_splits=3, random_state=0, n_repeats=2)
+    # list of (feature_name, importance) sorted desc; names are real feature cols (or one-hot expansions)
+    assert imps[0][1] >= imps[-1][1]
+    assert all(isinstance(name, str) for name, _ in imps)

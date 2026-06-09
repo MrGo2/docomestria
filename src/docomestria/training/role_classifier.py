@@ -115,6 +115,49 @@ def evaluate_oof(df: pd.DataFrame, n_splits: int = 5, random_state: int = 0) -> 
     }
 
 
+def fit_final_model(df: pd.DataFrame, random_state: int = 0) -> dict:
+    """Refit the encoder + model on ALL rows; return a picklable artifact dict."""
+    ohe = build_encoder(df[FEATURE_COLS], NUMERIC_COLS, CATEGORICAL_COLS)
+    X = encode_features(ohe, df[FEATURE_COLS], NUMERIC_COLS, CATEGORICAL_COLS)
+    y = df[LABEL_COL].to_numpy()
+    sw = compute_sample_weight("balanced", y)
+    model = _new_model(random_state)
+    model.fit(X, y, sample_weight=sw)
+    return {
+        "model": model, "ohe": ohe, "feature_cols": FEATURE_COLS,
+        "numeric_cols": NUMERIC_COLS, "categorical_cols": CATEGORICAL_COLS,
+        "labels": sorted(pd.unique(y).tolist()), "sklearn_version": sklearn.__version__,
+    }
+
+
+def _encoded_feature_names(ohe) -> list[str]:
+    cat_names = ohe.get_feature_names_out(CATEGORICAL_COLS).tolist()
+    return list(NUMERIC_COLS) + cat_names
+
+
+def feature_importances(df: pd.DataFrame, n_splits: int = 5, random_state: int = 0,
+                        n_repeats: int = 5) -> list[tuple[str, float]]:
+    """Permutation importances computed on one held-out GroupKFold fold."""
+    df, _ = dedupe_text_role(df)
+    y = df[LABEL_COL].to_numpy()
+    groups = df[GROUP_COL].to_numpy()
+    gkf = GroupKFold(n_splits=n_splits)
+    tr_idx, te_idx = next(gkf.split(df, y, groups))
+    tr, te = df.iloc[tr_idx], df.iloc[te_idx]
+    ohe = build_encoder(tr[FEATURE_COLS], NUMERIC_COLS, CATEGORICAL_COLS)
+    Xtr = encode_features(ohe, tr[FEATURE_COLS], NUMERIC_COLS, CATEGORICAL_COLS)
+    Xte = encode_features(ohe, te[FEATURE_COLS], NUMERIC_COLS, CATEGORICAL_COLS)
+    model = _new_model(random_state)
+    model.fit(Xtr, tr[LABEL_COL].to_numpy(),
+              sample_weight=compute_sample_weight("balanced", tr[LABEL_COL].to_numpy()))
+    r = permutation_importance(model, Xte, te[LABEL_COL].to_numpy(),
+                               n_repeats=n_repeats, random_state=random_state,
+                               scoring="f1_macro")
+    names = _encoded_feature_names(ohe)
+    pairs = sorted(zip(names, r.importances_mean.tolist()), key=lambda t: t[1], reverse=True)
+    return pairs
+
+
 def build_encoder(train_X: pd.DataFrame, numeric: list[str], categorical: list[str]):
     """Fit a OneHotEncoder on the categorical columns of the TRAIN fold only."""
     ohe = OneHotEncoder(handle_unknown="ignore", sparse_output=False)
