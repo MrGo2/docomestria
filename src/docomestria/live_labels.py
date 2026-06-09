@@ -13,7 +13,7 @@ golden["atoms"]["spans"] so a self-contained golden page still works.
 
 from __future__ import annotations
 
-from .golden.engine_data import _norm
+from .golden.engine_data import _contains, _norm
 from .golden.training_table import _overlap_frac, walk_structure
 
 ANNOTATED_ROLES = frozenset(
@@ -75,7 +75,7 @@ def transfer_labels(rows: list[dict], golden_items: list[dict]) -> tuple[list[di
         r_bb = {"x": row["x"], "y": row["y"], "w": row["w"], "h": row["h"]}
         best_idx, best_ov = -1, -1.0
         for gi, g in enumerate(golden_items):
-            if gi in used or g_norms[gi] != r_norm:
+            if gi in used or not _contains(r_norm, g_norms[gi]):
                 continue
             if g["bbox"] is None:
                 # all bbox=None candidates are geometrically indistinguishable

@@ -107,3 +107,12 @@ def test_annotated_roles_excludes_noise():
         "signature",
         "prose",
     } <= ANNOTATED_ROLES
+
+
+def test_transfer_labels_fused_span_matches_contained_golden_key():
+    # LiteParse fuses key+value into one span; substring match must still pair it.
+    rows = [_row("Nº Modelo F_AS-5", 0.1, 0.1)]
+    golden = [_gitem("Nº Modelo", 0.1, 0.1, "key")]
+    labeled, cov = transfer_labels(rows, golden)
+    assert labeled[0]["role"] == "key"
+    assert cov["per_role"]["key"]["matched"] == 1
