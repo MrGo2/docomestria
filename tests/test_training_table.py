@@ -351,3 +351,20 @@ def test_build_page_rows_is_deterministic():
     r1, _ = build_page_rows(g, a)
     r2, _ = build_page_rows(g, a)
     assert r1 == r2  # same input -> identical rows, identical order
+
+
+def test_build_page_rows_font_ratio_empty_when_no_fonts():
+    # a page where the only item has no liteparse font -> font_size_ratio is ""
+    golden = {
+        "pdf": "D", "page": 1, "page_size_pt": [600.0, 800.0],
+        "structure": [{
+            "type": "prose_block", "id": "p", "text": "sin fuente",
+            "bbox": {"x": 10.0, "y": 20.0, "w": 30.0, "h": 8.0},
+            "evidence": {"text_signal": {"liteparse": None, "engine_agreement": 1}},
+        }],
+    }
+    atoms = {"atoms": {"spans": [], "rects": []}}
+    rows, _ = build_page_rows(golden, atoms)
+    prose = [r for r in rows if r["role"] == "prose"][0]
+    assert prose["font_size"] == ""
+    assert prose["font_size_ratio"] == ""

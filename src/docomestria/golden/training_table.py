@@ -7,10 +7,10 @@ from __future__ import annotations
 import csv
 import os
 import statistics
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 from docomestria.golden.engine_data import _norm, _contains
-from docomestria.text_features import case_class as _case_class, content_flags
+from docomestria.text_features import content_flags
 
 # Fixed column order. Provenance first, then label, then the feature vector.
 FIELDS = [
@@ -181,8 +181,6 @@ class Item:
     col_id: str = ""
     compound_span: int = 0
     pair_id: str = ""           # links a key+value emitted from the same pair
-    # filled later in build_page_rows:
-    unresolved: int = 0
 
 
 def _as_signal(ev) -> dict | None:
@@ -202,11 +200,6 @@ def _as_signal(ev) -> dict | None:
         if isinstance(ev.get(k), dict):
             return ev[k]
     return None
-
-
-_VALUE_ROLES = {"value"}
-_KNOWN = {"section", "kv_group", "kv_leaf", "kv_pair", "table",
-          "prose_block", "free_text_list", "signature_placeholder", "noise"}
 
 
 def _emit_pair(pair, path, items):
@@ -341,6 +334,9 @@ def noise_items(spans: list[dict], consumed_span_ids: set,
         spn = _norm(sp.get("text", ""))
         matched = False
         for tn, bb in ann:
+            # _contains is bidirectional, so very short atoms ("ES", "%") can
+            # text-match generously; the >= min_overlap geometric guard is the
+            # real discriminator that keeps this from over-suppressing.
             if bb and _contains(tn, spn) and _overlap_frac(sp["bbox"], bb) >= min_overlap:
                 matched = True
                 break
