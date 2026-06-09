@@ -1,16 +1,8 @@
 import pandas as pd
 from docomestria.training.role_classifier import (
     FEATURE_COLS, CATEGORICAL_COLS, LABEL_COL, GROUP_COL,
-    load_dataset, dedupe_text_role,
+    load_dataset,
 )
-
-
-def _tiny_df():
-    return pd.DataFrame([
-        {"pdf": "A", "text": "Total", "role": "key", "x": 0.1, "docling_label": "text"},
-        {"pdf": "A", "text": "Total", "role": "key", "x": 0.1, "docling_label": "text"},  # dup
-        {"pdf": "B", "text": "100 EUR", "role": "value", "x": 0.5, "docling_label": "text"},
-    ])
 
 
 def test_column_constants_partition_cleanly():
@@ -20,12 +12,6 @@ def test_column_constants_partition_cleanly():
     assert "docling_label" in CATEGORICAL_COLS
     assert "role" not in FEATURE_COLS and "pdf" not in FEATURE_COLS
     assert "text" not in FEATURE_COLS
-
-
-def test_dedupe_text_role_drops_exact_dups():
-    df, dropped = dedupe_text_role(_tiny_df())
-    assert dropped == 1
-    assert len(df) == 2
 
 
 def test_load_dataset_reads_empty_as_nan(tmp_path):
@@ -84,7 +70,7 @@ def test_encode_features_onehot_and_numeric_nan():
 
 import pickle
 from docomestria.training.role_classifier import (
-    evaluate_oof, FEATURE_COLS, fit_final_model, feature_importances, dedupe_text_role,
+    evaluate_oof, FEATURE_COLS, fit_final_model, feature_importances,
 )
 
 
@@ -137,7 +123,7 @@ def test_evaluate_oof_is_deterministic():
 
 
 def test_fit_final_model_pickles_and_predicts(tmp_path):
-    df, _ = dedupe_text_role(_synthetic_dataset())
+    df = _synthetic_dataset().reset_index(drop=True)
     artifact = fit_final_model(df, random_state=0)
     assert set(artifact) >= {"model", "ohe", "feature_cols", "numeric_cols",
                              "categorical_cols", "labels", "sklearn_version"}

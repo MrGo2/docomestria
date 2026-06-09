@@ -43,13 +43,6 @@ def load_dataset(path) -> pd.DataFrame:
     return df
 
 
-def dedupe_text_role(df: pd.DataFrame) -> tuple[pd.DataFrame, int]:
-    """Drop exact-duplicate (text, role) rows (keep first). Returns (df, n_dropped)."""
-    before = len(df)
-    out = df.drop_duplicates(subset=["text", LABEL_COL], keep="first").reset_index(drop=True)
-    return out, before - len(out)
-
-
 def docling_baseline_predict(train: pd.DataFrame, test: pd.DataFrame) -> tuple[list, float]:
     """Predict role = train-fold majority role per docling_label; missing/unseen -> global
     train majority. Returns (predictions, share_of_test_rows_using_fallback)."""
@@ -72,9 +65,11 @@ def _new_model(random_state: int) -> HistGradientBoostingClassifier:
 
 
 def evaluate_oof(df: pd.DataFrame, n_splits: int = 5, random_state: int = 0) -> dict:
-    """Dedup, then GroupKFold-by-pdf; collect pooled out-of-fold predictions for the model
-    and the Docling baseline; return a metrics dict (all computed on pooled OOF)."""
-    df, n_dropped = dedupe_text_role(df)
+    """GroupKFold-by-pdf; collect pooled out-of-fold predictions for the model and the
+    Docling baseline; return a metrics dict (all computed on pooled OOF). No (text,role)
+    dedup — leakage is prevented by GroupKFold-by-pdf alone (per user decision)."""
+    df = df.reset_index(drop=True)
+    n_dropped = 0
     y = df[LABEL_COL].to_numpy()
     groups = df[GROUP_COL].to_numpy()
     labels = sorted(pd.unique(y).tolist())
@@ -138,7 +133,7 @@ def _encoded_feature_names(ohe) -> list[str]:
 def feature_importances(df: pd.DataFrame, n_splits: int = 5, random_state: int = 0,
                         n_repeats: int = 5) -> list[tuple[str, float]]:
     """Permutation importances computed on one held-out GroupKFold fold."""
-    df, _ = dedupe_text_role(df)
+    df = df.reset_index(drop=True)
     y = df[LABEL_COL].to_numpy()
     groups = df[GROUP_COL].to_numpy()
     gkf = GroupKFold(n_splits=n_splits)
