@@ -344,3 +344,10 @@ def test_build_page_rows_drops_nonstring_text_cells():
     assert diag["dropped_nonstr_text"] == 1
     assert all(isinstance(r["text"], str) for r in rows)
     assert any(r["text"] == "Concepto" for r in rows)
+
+
+def test_build_page_rows_is_deterministic():
+    g, a = _golden_with_two_kv(), _atoms_two_spans()
+    r1, _ = build_page_rows(g, a)
+    r2, _ = build_page_rows(g, a)
+    assert r1 == r2  # same input -> identical rows, identical order

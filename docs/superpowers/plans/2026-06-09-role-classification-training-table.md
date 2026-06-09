@@ -1061,6 +1061,12 @@ def build_page_rows(golden: dict, atoms: dict):
 
     items = walk_structure(golden.get("structure", []), spans)
 
+    # A few golden leaves carry a non-string text (e.g. a footnote-reference
+    # table cell {"ref": "nota_1"} instead of a literal). Drop them here; their
+    # real on-page glyph is recaptured by the unmatched-atom noise pass below.
+    dropped_nonstr = sum(1 for it in items if not isinstance(it.text, str))
+    items = [it for it in items if isinstance(it.text, str)]
+
     # resolve missing signals via atoms re-derivation; track consumption
     unresolved = 0
     for it in items:
@@ -1140,6 +1146,7 @@ def build_page_rows(golden: dict, atoms: dict):
     rows = [row for _, row in partial]
     diag = {"unresolved_keys": unresolved,
             "noise_atoms": sum(1 for r in rows if r["source_node_type"] == "atom"),
+            "dropped_nonstr_text": dropped_nonstr,
             "n_rows": len(rows)}
     return rows, diag
 ```
