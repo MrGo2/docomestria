@@ -414,17 +414,19 @@ Run:
 ```bash
 python3 -c "
 import pandas as pd
+from docomestria.golden.training_table import FIELDS
 df = pd.read_csv('.planning/extraction/training/role_table.csv')
-print('rows', len(df), 'cols', df.shape[1])
+print('rows', len(df), 'cols', df.shape[1], 'expected', len(FIELDS))
+assert df.shape[1] == len(FIELDS), 'CSV col count must equal len(FIELDS)'
 for c in ['docling_label','docling_heading_level','docling_content_layer','rect_is_signature_field']:
-    nonempty = df[c].notna().sum()
-    print(c, 'non-empty:', int(nonempty))
+    assert c in df.columns, f'missing new column {c}'
+    print(c, 'non-empty:', int(df[c].notna().sum()))
 print('docling_label values:')
 print(df['docling_label'].value_counts(dropna=False).to_string())
 print('signature rows:', int((df['rect_is_signature_field']==1).sum()))
 "
 ```
-Expected: `cols` == 49 (45 + 4). `docling_label` non-empty for a large fraction (most items fall inside a Docling block); value_counts shows `text/section_header/list_item/...`. `rect_is_signature_field` has some 1s (signatures exist on contract pages). If `docling_label` is ~all empty → the bbox join is mis-aligned (coordinate space) — STOP and debug before Phase 2.
+Expected: `cols` equals `expected` (== `len(FIELDS)`, which is 45 base + 4 appended = 49). `docling_label` non-empty for a large fraction (most items fall inside a Docling block); value_counts shows `text/section_header/list_item/...`. `rect_is_signature_field` has some 1s (signatures exist on contract pages). If `docling_label` is ~all empty → the bbox join is mis-aligned (coordinate space) — STOP and debug before Phase 2.
 
 - [ ] **Step 3: Commit the regenerated CSV**
 
@@ -437,26 +439,32 @@ git commit -m "data: regenerate role_table.csv with docling-block + signature fe
 
 ## Phase 2 — Training & report
 
-### Task 6: Ensure scikit-learn + pandas are available
+### Task 6: Declare scikit-learn + pandas as core dependencies
 
 **Files:**
-- Modify: `pyproject.toml` (only if missing)
+- Modify: `pyproject.toml` (+ `uv.lock`)
 
-- [ ] **Step 1: Check availability**
+**Context:** `pandas` is not declared anywhere and `scikit-learn` currently only appears in an
+extras group — but the new `role_classifier.py` module imports both at module load (and is
+imported by tests), so they must be **core** `[project.dependencies]`, not optional extras.
 
-Run: `python3 -c "import sklearn, pandas; print(sklearn.__version__, pandas.__version__)"`
-Expected: prints two versions. If `ModuleNotFoundError`, go to Step 2; else skip to Task 7.
-
-- [ ] **Step 2: Add the deps**
+- [ ] **Step 1: Declare both as core deps (idempotent — run regardless of current import state)**
 
 Run: `uv add scikit-learn pandas`
-Expected: updates `pyproject.toml` + lockfile, installs. Re-run Step 1 to confirm.
+Expected: adds `scikit-learn` and `pandas` to `[project.dependencies]` in `pyproject.toml`,
+updates `uv.lock`, and installs into the env. (`uv add` is idempotent; if already present it
+just pins/confirms.)
 
-- [ ] **Step 3: Commit (only if pyproject changed)**
+- [ ] **Step 2: Confirm importable**
+
+Run: `python3 -c "import sklearn, pandas; print(sklearn.__version__, pandas.__version__)"`
+Expected: prints two versions (sklearn ≥ 1.3, so `OneHotEncoder(sparse_output=...)` is valid).
+
+- [ ] **Step 3: Commit**
 
 ```bash
 git add pyproject.toml uv.lock
-git commit -m "chore: add scikit-learn + pandas for role-classifier training"
+git commit -m "chore: declare scikit-learn + pandas as core deps for role-classifier"
 ```
 
 ---
@@ -545,21 +553,12 @@ PROVENANCE_COLS = [
 # Low-cardinality categorical strings (one-hot encoded; rest are numeric).
 CATEGORICAL_COLS = ["docling_label", "docling_content_layer"]
 
-# The 35 original + 4 new feature columns, minus provenance. Built at import from a
-# canonical list so it stays in sync with the CSV header.
-_ALL_FEATURES = [
-    "x", "y", "w", "h", "font_size", "font_size_ratio", "is_bold",
-    "case_upper", "case_lower", "case_title", "case_mixed",
-    "digit_ratio", "has_currency", "has_date", "has_percent", "has_iban",
-    "has_nif", "starts_paren", "ends_colon", "n_numeric_tokens", "len_chars",
-    "inside_rect", "colon_present", "engine_agreement", "pdfplumber_present",
-    "liteparse_present", "docling_present", "docling_column_header",
-    "docling_row_header", "compound_span", "is_centered", "gap_above",
-    "gap_below", "font_ratio_vs_below", "bold_above_nonbold_below",
-    "docling_label", "docling_heading_level", "docling_content_layer",
-    "rect_is_signature_field",
-]
-FEATURE_COLS = list(_ALL_FEATURES)
+# Single source of truth: feature columns = the builder's FIELDS minus provenance.
+# This auto-tracks the 4 docling/signature columns appended in Phase 1 (Task 2) and can
+# never drift from the CSV header (write_csv writes FIELDS as the header row).
+from docomestria.golden.training_table import FIELDS as _FIELDS
+
+FEATURE_COLS = [c for c in _FIELDS if c not in PROVENANCE_COLS]
 NUMERIC_COLS = [c for c in FEATURE_COLS if c not in CATEGORICAL_COLS]
 
 
