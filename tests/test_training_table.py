@@ -223,3 +223,63 @@ def test_atom_matched_by_text_bbox_not_double_counted():
     # not in consumed set, but text+bbox match an annotated item -> NOT noise
     annotated = [("Nombre", {"x": 1, "y": 2, "w": 3, "h": 4})]
     assert noise_items(spans, set(), annotated) == []
+
+
+from docomestria.golden.training_table import build_page_rows
+
+
+def _golden_with_two_kv():
+    return {
+        "pdf": "DOC", "page": 1, "page_size_pt": [600.0, 800.0],
+        "structure": [{
+            "type": "kv_group", "id": "g",
+            "pairs": [{
+                "label": "Nº Modelo", "value": "F_AS-5",
+                "label_bbox": {"x": 60.0, "y": 24.0, "w": 60.0, "h": 10.0},
+                "bbox": {"x": 300.0, "y": 24.0, "w": 40.0, "h": 10.0},
+                "evidence": {
+                    "label": {"liteparse": {"span_id": 0, "bbox": {"x": 60.0, "y": 24.0, "w": 60.0, "h": 10.0},
+                              "case_class": "Title", "is_bold": False, "font_size": 10.0},
+                              "engine_agreement": 2},
+                    "value": {"liteparse": {"span_id": 1, "bbox": {"x": 300.0, "y": 24.0, "w": 40.0, "h": 10.0},
+                              "case_class": "Title", "is_bold": False, "font_size": 10.0},
+                              "engine_agreement": 2},
+                },
+            }],
+        }],
+    }
+
+
+def _atoms_two_spans():
+    return {"atoms": {"spans": [
+        {"text": "Nº Modelo", "bbox": {"x": 60.0, "y": 24.0, "w": 60.0, "h": 10.0},
+         "font_size": 10.0, "is_bold": False, "case_class": "Title"},
+        {"text": "F_AS-5", "bbox": {"x": 300.0, "y": 24.0, "w": 40.0, "h": 10.0},
+         "font_size": 10.0, "is_bold": False, "case_class": "Title"},
+    ], "rects": []}}
+
+
+def test_build_page_rows_geometry_and_label_and_content():
+    rows, diag = build_page_rows(_golden_with_two_kv(), _atoms_two_spans())
+    assert len(rows) == 2  # both atoms consumed -> no extra noise
+    by_role = {r["role"]: r for r in rows}
+    key = by_role["key"]
+    # geometry normalised by page size [600,800]
+    assert abs(key["x"] - 60.0 / 600.0) < 1e-9
+    assert abs(key["w"] - 60.0 / 600.0) < 1e-9
+    # content computed from the item's own text
+    assert by_role["value"]["digit_ratio"] > 0  # "F_AS-5" has a digit
+    assert key["digit_ratio"] == 0.0            # "Nº Modelo" has none
+    # font_size_ratio: both items have font 10 -> median 10 -> ratio 1.0
+    assert abs(key["font_size_ratio"] - 1.0) < 1e-9
+    assert diag["unresolved_keys"] == 0
+
+
+def test_build_page_rows_emits_noise_for_extra_atom():
+    g = _golden_with_two_kv()
+    atoms = _atoms_two_spans()
+    atoms["atoms"]["spans"].append(
+        {"text": "WATERMARK", "bbox": {"x": 10.0, "y": 700.0, "w": 80.0, "h": 8.0},
+         "font_size": 6.0, "is_bold": False, "case_class": "UPPER"})
+    rows, diag = build_page_rows(g, atoms)
+    assert any(r["role"] == "noise" and r["text"] == "WATERMARK" for r in rows)

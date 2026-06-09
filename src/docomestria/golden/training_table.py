@@ -338,3 +338,126 @@ def noise_items(spans: list[dict], consumed_span_ids: set,
                         bbox=sp["bbox"], signal=sig,
                         node_path=f"/atom[{i}]", source_node_type="atom"))
     return out
+
+
+_CENTER_TOL = 0.06  # fraction of page width
+
+
+def _item_to_partial_row(it: Item, pdf: str, page) -> dict:
+    """Everything except page-level (font_size_ratio) and neighbour features."""
+    sig = it.signal
+    sf = signal_features(sig)
+    row = {f: "" for f in FIELDS}
+    row.update({
+        "pdf": pdf, "page": page, "text": it.text.strip(),
+        "node_path": it.node_path, "source_node_type": it.source_node_type,
+        "in_table": it.in_table, "table_id": it.table_id,
+        "row_idx": it.row_idx, "col_id": it.col_id, "role": it.role,
+        "font_size": sf["font_size"], "is_bold": sf["is_bold"],
+        "case_upper": sf["case_upper"], "case_lower": sf["case_lower"],
+        "case_title": sf["case_title"], "case_mixed": sf["case_mixed"],
+        "inside_rect": sf["inside_rect"], "colon_present": sf["colon_present"],
+        "engine_agreement": sf["engine_agreement"],
+        "pdfplumber_present": sf["pdfplumber_present"],
+        "liteparse_present": sf["liteparse_present"],
+        "docling_present": sf["docling_present"],
+        "docling_column_header": sf["docling_column_header"],
+        "docling_row_header": sf["docling_row_header"],
+        "compound_span": it.compound_span,
+    })
+    row.update(content_flags(it.text))   # content from the item's OWN text
+    return row
+
+
+def build_page_rows(golden: dict, atoms: dict):
+    """Return (rows, diagnostics) for one golden page-file + its atoms doc."""
+    pdf = golden.get("pdf", "")
+    page = golden.get("page", "")
+    pw, ph = golden.get("page_size_pt", [1.0, 1.0])
+    pw = pw or 1.0
+    ph = ph or 1.0
+    spans = (atoms.get("atoms") or {}).get("spans", [])
+
+    items = walk_structure(golden.get("structure", []), spans)
+
+    # resolve missing signals via atoms re-derivation; track consumption
+    unresolved = 0
+    for it in items:
+        if (it.signal is None or not (it.signal or {}).get("liteparse")) and it.bbox:
+            sig, status = rederive_signal(it.text, it.bbox, spans)
+            if status == "resolved":
+                it.signal = sig
+            else:
+                unresolved += 1
+
+    # recompute compound_span now that label-only keys are resolved: a pair is
+    # compound iff its emitted items share exactly one liteparse span_id.
+    by_pair: dict = {}
+    for it in items:
+        if it.pair_id:
+            by_pair.setdefault(it.pair_id, []).append(it)
+    for grp in by_pair.values():
+        sids = [((m.signal or {}).get("liteparse") or {}).get("span_id") for m in grp]
+        sids = [s for s in sids if s is not None]
+        compound = 1 if len(sids) >= 2 and len(set(sids)) == 1 else 0
+        for m in grp:
+            m.compound_span = compound
+
+    consumed = set()
+    annotated: list[tuple[str, dict]] = []
+    for it in items:
+        sid = ((it.signal or {}).get("liteparse") or {}).get("span_id")
+        if sid is not None:
+            consumed.add(sid)
+        if it.bbox:
+            annotated.append((it.text, it.bbox))
+
+    items += noise_items(spans, consumed, annotated)
+
+    # --- page-level: font_size_ratio over items that have a font_size ---
+    fonts = [it.signal["liteparse"]["font_size"] for it in items
+             if it.signal and (it.signal.get("liteparse") or {}).get("font_size")
+             and isinstance(it.signal["liteparse"]["font_size"], (int, float))]
+    median_font = statistics.median(fonts) if fonts else 0.0
+
+    # build partial rows, attach normalised geometry
+    partial = []
+    for it in items:
+        row = _item_to_partial_row(it, pdf, page)
+        bb = it.bbox or (it.signal or {}).get("liteparse", {}).get("bbox")
+        if bb:
+            row["x"] = bb["x"] / pw
+            row["y"] = bb["y"] / ph
+            row["w"] = bb["w"] / pw
+            row["h"] = bb["h"] / ph
+            cx = (bb["x"] + bb["w"] / 2) / pw
+            row["is_centered"] = 1 if abs(cx - 0.5) <= _CENTER_TOL else 0
+        fs = row["font_size"]
+        row["font_size_ratio"] = (fs / median_font) if (median_font and isinstance(fs, (int, float))) else ""
+        partial.append((it, row))
+
+    # --- neighbour features: sort by (y, x) in normalised space ---
+    def _yx(pr):
+        r = pr[1]
+        return (r["y"] if r["y"] != "" else 9.9, r["x"] if r["x"] != "" else 9.9)
+    ordered = sorted(partial, key=_yx)
+    for idx, (it, row) in enumerate(ordered):
+        nxt = ordered[idx + 1][1] if idx + 1 < len(ordered) else None
+        prv = ordered[idx - 1][1] if idx > 0 else None
+        if prv and prv["y"] != "" and row["y"] != "":
+            row["gap_above"] = max(0.0, row["y"] - (prv["y"] + (prv["h"] or 0)))
+        if nxt and nxt["y"] != "" and row["y"] != "":
+            row["gap_below"] = max(0.0, nxt["y"] - (row["y"] + (row["h"] or 0)))
+        if nxt and isinstance(row["font_size"], (int, float)) and isinstance(nxt["font_size"], (int, float)) and nxt["font_size"]:
+            row["font_ratio_vs_below"] = row["font_size"] / nxt["font_size"]
+        # only decide bold-above/nonbold-below when the next row's bold is KNOWN
+        cur_bold = row["is_bold"] in (1, True)
+        nxt_known = nxt is not None and nxt["is_bold"] in (0, 1, True, False)
+        nxt_bold = nxt is not None and nxt["is_bold"] in (1, True)
+        row["bold_above_nonbold_below"] = 1 if (cur_bold and nxt_known and not nxt_bold) else 0
+
+    rows = [row for _, row in partial]
+    diag = {"unresolved_keys": unresolved,
+            "noise_atoms": sum(1 for r in rows if r["source_node_type"] == "atom"),
+            "n_rows": len(rows)}
+    return rows, diag
