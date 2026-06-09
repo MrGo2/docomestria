@@ -298,6 +298,27 @@ def walk_structure(structure: list, spans: list, path: str = "") -> list[Item]:
                               bbox=node.get("bbox"),
                               signal=_as_signal(node.get("evidence")),
                               node_path=npath, source_node_type="noise"))
+        elif t == "array":
+            # Repeated record blocks: items[] -> named groups -> named fields.
+            # A filled field is {text, evidence, bbox} (a VALUE on the page); an
+            # empty field is [None, y_hint]. The field *name* is a schema label
+            # with no on-page geometry, so we emit only the filled values.
+            for ai, item in enumerate(node.get("items", []) or []):
+                if not isinstance(item, dict):
+                    continue
+                for gkey, group in item.items():
+                    if gkey in ("index", "filled") or not isinstance(group, dict):
+                        continue
+                    for fkey, fld in group.items():
+                        if fkey in ("title", "y_hint") or not isinstance(fld, dict):
+                            continue
+                        if not fld.get("text"):
+                            continue
+                        items.append(Item(text=fld["text"], role="value",
+                                          bbox=fld.get("bbox"),
+                                          signal=_as_signal(fld.get("evidence")),
+                                          node_path=f"{npath}/item[{ai}].{gkey}.{fkey}",
+                                          source_node_type="array"))
         else:
             raise ValueError(f"unknown structure node type {t!r} at {npath}")
     return items
@@ -424,7 +445,7 @@ def build_page_rows(golden: dict, atoms: dict):
     partial = []
     for it in items:
         row = _item_to_partial_row(it, pdf, page)
-        bb = it.bbox or (it.signal or {}).get("liteparse", {}).get("bbox")
+        bb = it.bbox or ((it.signal or {}).get("liteparse") or {}).get("bbox")
         if bb:
             row["x"] = bb["x"] / pw
             row["y"] = bb["y"] / ph

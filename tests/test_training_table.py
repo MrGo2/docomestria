@@ -283,3 +283,43 @@ def test_build_page_rows_emits_noise_for_extra_atom():
          "font_size": 6.0, "is_bold": False, "case_class": "UPPER"})
     rows, diag = build_page_rows(g, atoms)
     assert any(r["role"] == "noise" and r["text"] == "WATERMARK" for r in rows)
+
+
+def test_walk_array_emits_value_rows_for_filled_fields():
+    # real goldens (e.g. BBVA_0539) use an `array` node: items[] -> groups -> fields.
+    structure = [{
+        "type": "array", "id": "titulares", "title": "Titulares",
+        "items": [
+            {"index": 1, "filled": True,
+             "datos": {"title": "Datos", "y_hint": 1,
+                       "nif": {"text": "009786573G",
+                               "evidence": {"liteparse": None},
+                               "bbox": {"x": 1, "y": 2, "w": 3, "h": 4}},
+                       "vacio": [None, 180]}},
+            {"index": 2, "filled": False,
+             "datos": {"title": "Datos", "y_hint": 1, "nif": [None, 180]}},
+        ],
+    }]
+    items = walk_structure(structure, spans=[])
+    assert len(items) == 1                     # only the filled field
+    assert items[0].role == "value"
+    assert items[0].text == "009786573G"
+    assert items[0].source_node_type == "array"
+
+
+def test_build_page_rows_survives_null_liteparse_signal():
+    # a real golden leaf carries `liteparse: null` (key present, value None);
+    # geometry resolution must not crash on it.
+    golden = {
+        "pdf": "D", "page": 1, "page_size_pt": [600.0, 800.0],
+        "structure": [{
+            "type": "noise", "id": "n", "text": "Encabezado modelo", "bbox": None,
+            "evidence": {"text_signal": {
+                "text": "Encabezado modelo",
+                "pdfplumber": {"bbox": {"x": 10.0, "y": 20.0, "w": 30.0, "h": 8.0}},
+                "liteparse": None, "docling": None, "engine_agreement": 1}},
+        }],
+    }
+    atoms = {"atoms": {"spans": [], "rects": []}}
+    rows, diag = build_page_rows(golden, atoms)   # must not raise
+    assert any(r["role"] == "noise" for r in rows)
