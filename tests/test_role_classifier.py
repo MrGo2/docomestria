@@ -174,3 +174,13 @@ def test_render_report_md_contains_headline_and_table():
     assert "vs Docling baseline" in md and "0.71" in md
     assert "docling_label_section_header" in md
     assert "key" in md   # per-class row
+
+
+def test_full_pipeline_determinism_on_synthetic():
+    df = _synthetic_dataset()
+    a = evaluate_oof(df, n_splits=3, random_state=0)
+    b = evaluate_oof(df, n_splits=3, random_state=0)
+    assert a["macro_f1"] == b["macro_f1"]
+    assert a["baseline_macro_f1"] == b["baseline_macro_f1"]
+    assert a["confusion"] == b["confusion"]
+    assert a["oof_pred"] == b["oof_pred"]
