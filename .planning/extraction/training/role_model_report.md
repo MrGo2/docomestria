@@ -1,56 +1,56 @@
 # Role Classifier — Report (Job A)
 
-- **Macro-F1 (pooled OOF):** 0.6519
-- **vs Docling baseline:** 0.1718 (delta +0.4801, fallback share 0.051)
-- Rows: 2503 (dropped 2165 dup text/role) | sklearn 1.8.0
+- **Macro-F1 (pooled OOF):** 0.8799
+- **vs Docling baseline:** 0.1627 (delta +0.7172, fallback share 0.112)
+- Rows: 4668 (dropped 0 dup text/role) | sklearn 1.8.0
 
 ## Per-class
 
 | role | precision | recall | f1 | support |
 |---|---|---|---|---|
-| key | 0.783 | 0.741 | 0.761 | 409 |
-| noise | 0.964 | 0.974 | 0.969 | 1366 |
-| prose | 0.679 | 0.654 | 0.667 | 81 |
-| section_header | 0.739 | 0.649 | 0.691 | 131 |
-| signature | 0.000 | 0.000 | 0.000 | 1 |
-| table_header | 0.492 | 0.727 | 0.587 | 44 |
-| value | 0.883 | 0.894 | 0.888 | 471 |
+| key | 0.908 | 0.860 | 0.883 | 908 |
+| noise | 0.984 | 0.987 | 0.985 | 2296 |
+| prose | 0.890 | 0.844 | 0.866 | 173 |
+| section_header | 0.827 | 0.715 | 0.767 | 214 |
+| signature | 0.938 | 0.968 | 0.952 | 31 |
+| table_header | 0.707 | 0.885 | 0.786 | 139 |
+| value | 0.898 | 0.940 | 0.919 | 907 |
 
 ## Confusion (rows=true, cols=pred)
 
 | | key | noise | prose | section_header | signature | table_header | value |
 |---|---|---|---|---|---|---|---|
-| **key** | 303 | 27 | 2 | 12 | 0 | 20 | 45 |
-| **noise** | 19 | 1331 | 8 | 4 | 0 | 0 | 4 |
-| **prose** | 7 | 11 | 53 | 5 | 0 | 0 | 5 |
-| **section_header** | 23 | 3 | 7 | 85 | 0 | 12 | 1 |
-| **signature** | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **table_header** | 4 | 0 | 0 | 7 | 0 | 32 | 1 |
-| **value** | 30 | 9 | 8 | 2 | 0 | 1 | 421 |
+| **key** | 781 | 24 | 2 | 16 | 0 | 28 | 57 |
+| **noise** | 11 | 2266 | 5 | 2 | 0 | 5 | 7 |
+| **prose** | 2 | 3 | 146 | 1 | 2 | 0 | 19 |
+| **section_header** | 22 | 3 | 5 | 153 | 0 | 18 | 13 |
+| **signature** | 0 | 0 | 0 | 0 | 30 | 0 | 1 |
+| **table_header** | 4 | 2 | 0 | 10 | 0 | 123 | 0 |
+| **value** | 40 | 5 | 6 | 3 | 0 | 0 | 853 |
 
 ## Top feature importances
 
-- engine_agreement: 0.1829
-- x: 0.1706
-- inside_rect: 0.1154
-- len_chars: 0.1118
-- font_size: 0.0908
-- w: 0.0574
-- digit_ratio: 0.0498
-- case_lower: 0.0291
-- colon_present: 0.0289
-- docling_present: 0.0134
-- h: 0.0122
-- n_numeric_tokens: 0.0097
-- docling_heading_level: 0.0068
-- has_currency: 0.0063
-- docling_column_header: 0.0054
-- compound_span: 0.0041
-- gap_below: 0.0040
-- is_centered: 0.0034
-- docling_label_list_item: 0.0011
-- docling_content_layer_furniture: 0.0004
-- is_bold: 0.0000
+- len_chars: 0.3477
+- engine_agreement: 0.2106
+- x: 0.1609
+- font_size: 0.1209
+- h: 0.0819
+- w: 0.0742
+- colon_present: 0.0740
+- y: 0.0333
+- compound_span: 0.0305
+- digit_ratio: 0.0207
+- inside_rect: 0.0130
+- docling_label_list_item: 0.0036
+- case_lower: 0.0028
+- ends_colon: 0.0010
+- docling_label_table: 0.0009
+- pdfplumber_present: 0.0008
+- starts_paren: 0.0007
+- docling_content_layer_furniture: 0.0006
+- docling_present: 0.0003
+- gap_below: 0.0003
+- font_ratio_vs_below: 0.0002
 - case_title: 0.0000
 - case_mixed: 0.0000
 - has_date: 0.0000
