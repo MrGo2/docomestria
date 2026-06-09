@@ -208,6 +208,7 @@ def build_live_rows(
             row["gap_above"] = max(0.0, row["y"] - (prv["y"] + (prv["h"] or 0)))
         if nxt is not None:
             row["gap_below"] = max(0.0, nxt["y"] - (row["y"] + (row["h"] or 0)))
+        # row["font_size"] is raw point size (font_size_ratio holds the normalized value)
         if (
             nxt is not None
             and isinstance(row["font_size"], (int, float))
@@ -216,8 +217,9 @@ def build_live_rows(
         ):
             row["font_ratio_vs_below"] = row["font_size"] / nxt["font_size"]
         cur_bold = row["is_bold"] in (1, True)
-        nxt_known = nxt is not None and nxt["is_bold"] in (0, 1, True, False)
         nxt_bold = nxt is not None and nxt["is_bold"] in (1, True)
+        # nxt_known mirrors golden parity (is_bold is always 0/1 live, so it never filters — keep for parity)
+        nxt_known = nxt is not None and nxt["is_bold"] in (0, 1, True, False)
         row["bold_above_nonbold_below"] = 1 if (cur_bold and nxt_known and not nxt_bold) else 0
 
-    return [row for _it, row in rows]
+    return [row for _it, row in ordered]

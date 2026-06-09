@@ -186,6 +186,7 @@ def test_build_live_rows_full_schema_and_neighbour_order():
     assert abs(top["font_ratio_vs_below"] - 1.2) < 1e-9
     assert top["font_size_ratio"] != ""
     assert top["gap_below"] > 0
+    assert _below["gap_above"] > 0  # second row has a previous item
 
 
 def test_build_live_rows_is_centered():
@@ -198,3 +199,6 @@ def test_build_live_rows_is_centered():
     )
     rows = build_live_rows("D.pdf", 1, [it], [], [], [], (600.0, 800.0))
     assert rows[0]["is_centered"] == 1
+    # golden-parity: lone items carry the blank sentinel, not 0.0
+    assert rows[0]["gap_above"] == ""
+    assert rows[0]["gap_below"] == ""
