@@ -113,3 +113,55 @@ def signal_features(signal: dict | None) -> dict:
     }
     out.update(_onehot_case(case))
     return out
+
+
+def _overlap_frac(a: dict, b: dict) -> float:
+    """Intersection area / min(area) of two bboxes (0..1)."""
+    ax2, ay2 = a["x"] + a["w"], a["y"] + a["h"]
+    bx2, by2 = b["x"] + b["w"], b["y"] + b["h"]
+    ix = max(0.0, min(ax2, bx2) - max(a["x"], b["x"]))
+    iy = max(0.0, min(ay2, by2) - max(a["y"], b["y"]))
+    inter = ix * iy
+    if inter <= 0:
+        return 0.0
+    amin = min(a["w"] * a["h"], b["w"] * b["h"]) or 1.0
+    return inter / amin
+
+
+def rederive_signal(text: str, bbox: dict | None, spans: list[dict],
+                    min_overlap: float = 0.30):
+    """Find the atoms span matching `text` whose bbox overlaps `bbox`.
+
+    Fail-closed: returns (signal, "resolved") only when exactly one candidate
+    span both text-matches and overlaps >= min_overlap. Otherwise
+    (None, "unresolved"). Builds a liteparse-only signal dict from the span.
+    """
+    if not bbox:
+        return None, "unresolved"
+    tn = _norm(text)
+    cands = []
+    for i, sp in enumerate(spans):
+        if not _contains(tn, _norm(sp.get("text", ""))):
+            continue
+        ov = _overlap_frac(bbox, sp["bbox"])
+        if ov >= min_overlap:
+            cands.append((ov, i, sp))
+    if len(cands) != 1:
+        return None, "unresolved"
+    _, idx, sp = cands[0]
+    sig = {
+        "text": text,
+        "pdfplumber": None,
+        "liteparse": {
+            "span_id": idx,
+            "bbox": sp["bbox"],
+            "case_class": sp.get("case_class", ""),
+            "is_bold": sp.get("is_bold", False),
+            "font_size": sp.get("font_size", ""),
+        },
+        "docling": None,
+        "rect": None,
+        "colon_signal": None,
+        "engine_agreement": 1,
+    }
+    return sig, "resolved"

@@ -65,3 +65,42 @@ def test_signal_features_none_is_all_absent():
     assert f["liteparse_present"] == 0
     assert f["font_size"] == ""
     assert f["span_id"] is None
+
+
+from docomestria.golden.training_table import rederive_signal
+
+
+_SPANS = [
+    {"text": "Nº Modelo", "bbox": {"x": 477.0, "y": 24.0, "w": 47.0, "h": 9.0},
+     "font_size": 10.0, "is_bold": False, "case_class": "Title"},
+    {"text": "Nombre", "bbox": {"x": 100.0, "y": 24.0, "w": 30.0, "h": 9.0},
+     "font_size": 10.0, "is_bold": True, "case_class": "Title"},
+    {"text": "Nombre", "bbox": {"x": 400.0, "y": 24.0, "w": 30.0, "h": 9.0},
+     "font_size": 9.0, "is_bold": False, "case_class": "Title"},
+]
+
+
+def test_rederive_resolves_by_text_and_bbox_overlap():
+    sig, status = rederive_signal("Nº Modelo",
+                                  {"x": 478.0, "y": 24.0, "w": 47.0, "h": 9.0},
+                                  _SPANS)
+    assert status == "resolved"
+    assert sig["liteparse"]["span_id"] == 0
+    assert sig["liteparse"]["font_size"] == 10.0
+
+
+def test_rederive_ambiguous_when_two_spans_overlap_same_text():
+    # both "Nombre" spans match text; neither overlaps the query bbox -> unresolved
+    sig, status = rederive_signal("Nombre",
+                                  {"x": 250.0, "y": 24.0, "w": 30.0, "h": 9.0},
+                                  _SPANS)
+    assert status == "unresolved"
+    assert sig is None
+
+
+def test_rederive_picks_the_overlapping_one_when_unambiguous():
+    sig, status = rederive_signal("Nombre",
+                                  {"x": 101.0, "y": 24.0, "w": 30.0, "h": 9.0},
+                                  _SPANS)
+    assert status == "resolved"
+    assert sig["liteparse"]["span_id"] == 1
