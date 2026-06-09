@@ -6,7 +6,9 @@ raw-Docling-label baseline. See docs/superpowers/specs/2026-06-09-role-classifie
 """
 from __future__ import annotations
 
+import numpy as np
 import pandas as pd
+from sklearn.preprocessing import OneHotEncoder
 
 LABEL_COL = "role"
 GROUP_COL = "pdf"
@@ -57,3 +59,18 @@ def docling_baseline_predict(train: pd.DataFrame, test: pd.DataFrame) -> tuple[l
         else:
             preds.append(label_to_role[lab])
     return preds, (fallback / len(test) if len(test) else 0.0)
+
+
+def build_encoder(train_X: pd.DataFrame, numeric: list[str], categorical: list[str]):
+    """Fit a OneHotEncoder on the categorical columns of the TRAIN fold only."""
+    ohe = OneHotEncoder(handle_unknown="ignore", sparse_output=False)
+    ohe.fit(train_X[categorical].astype("string").fillna("__nan__"))
+    return ohe
+
+
+def encode_features(ohe, X: pd.DataFrame, numeric: list[str], categorical: list[str]) -> np.ndarray:
+    """Numeric block (float, NaN preserved) hstacked with the one-hot categorical block.
+    Column order: numeric columns first (in `numeric` order), then one-hot block."""
+    num = X[numeric].apply(pd.to_numeric, errors="coerce").to_numpy(dtype=float)
+    cat = ohe.transform(X[categorical].astype("string").fillna("__nan__"))
+    return np.hstack([num, cat])

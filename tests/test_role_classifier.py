@@ -36,7 +36,8 @@ def test_load_dataset_reads_empty_as_nan(tmp_path):
     assert pd.isna(df.loc[0, "x"])
 
 
-from docomestria.training.role_classifier import docling_baseline_predict
+import numpy as np
+from docomestria.training.role_classifier import docling_baseline_predict, build_encoder, encode_features
 
 
 def test_docling_baseline_majority_and_fallback():
@@ -58,3 +59,24 @@ def test_docling_baseline_majority_and_fallback():
     preds, fallback_share = docling_baseline_predict(train, test)
     assert list(preds) == ["section_header", "prose", "noise", "noise"]
     assert abs(fallback_share - 0.5) < 1e-9   # 2 of 4 test rows hit fallback
+
+
+def test_encode_features_onehot_and_numeric_nan():
+    train = pd.DataFrame([
+        {"x": 0.1, "docling_label": "text", "docling_content_layer": "body"},
+        {"x": 0.2, "docling_label": "section_header", "docling_content_layer": "body"},
+    ])
+    test = pd.DataFrame([
+        {"x": np.nan, "docling_label": "caption", "docling_content_layer": "furniture"},  # all unseen
+    ])
+    enc = build_encoder(train[["x", "docling_label", "docling_content_layer"]],
+                        numeric=["x"], categorical=["docling_label", "docling_content_layer"])
+    Xtr = encode_features(enc, train[["x", "docling_label", "docling_content_layer"]],
+                          numeric=["x"], categorical=["docling_label", "docling_content_layer"])
+    Xte = encode_features(enc, test[["x", "docling_label", "docling_content_layer"]],
+                          numeric=["x"], categorical=["docling_label", "docling_content_layer"])
+    assert Xtr.shape[0] == 2 and Xte.shape[0] == 1
+    assert Xtr.shape[1] == Xte.shape[1]          # same width despite unseen categories
+    assert np.isnan(Xte[0, 0])                    # numeric NaN preserved (first col = x)
+    # unseen categories -> all-zero one-hot block (handle_unknown="ignore")
+    assert Xte[0, 1:].sum() == 0.0
